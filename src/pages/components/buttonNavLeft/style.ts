@@ -1,22 +1,22 @@
-import styled, { css } from 'styled-components'
+import styled from 'styled-components'
 
-export const ButtonNavLeftContainer = styled.div<{ imageClass?: boolean }>`
+export const ButtonNavLeftContainer = styled.div`
   display: flex;
   flex-direction: row;
-  justify-content: start;
+  justify-content: flex-start;
   align-items: center;
   transition: 0.3s;
   max-width: 300px;
+`
 
-  ${props => props.imageClass && css`
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-items: center;
-    transition: 0.3s;
-    max-width: 100%;
-    text-align: start;
-  `}
+export const ButtonNavLeftTopImgContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  transition: 0.3s;
+  max-width: 100%;
+  text-align: start;
 `
 
 export const ButtonNavLeftContainerImg = styled.img`

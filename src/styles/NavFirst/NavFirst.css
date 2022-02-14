@@ -12,11 +12,11 @@
   justify-content: space-between;
   align-items: center;
   padding: 10px 30px;
+  height: 100%;
 }
 
 .Nav__header img {
-  -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
   height: 40px;
 }
 
@@ -48,4 +48,6 @@ a p {
 a .Nav__headerLogoText {
   line-height: 15px;
   padding-top: 18px;
-}/*# sourceMappingURL=NavFirst.css.map */
+}
+
+/*# sourceMappingURL=NavFirst.css.map */

@@ -61,20 +61,21 @@ const Slider = () => {
                 index={activeStep}
                 onChangeIndex={handleStepChange}
                 enableMouseEvents
+
             >
                 {images.map((step, index) => (
                     <div className="Slider__container" key={step.label}>
                         {Math.abs(activeStep - index) <= 2
                           ? (
-                            <div className="img__container">
-                                {step.image
-                                  ? (
-                                    <img src={step.imgPath} alt={step.label}/>
-                                    )
-                                  : (
-                                    <video muted={true} autoPlay={true} src={step.imgPath}></video>
-                                    )}
-                            </div>
+                                <div className="img__container">
+                                    {step.image
+                                      ? (
+                                            <img src={step.imgPath} alt={step.label}/>
+                                        )
+                                      : (
+                                            <video muted={true} autoPlay={true} src={step.imgPath}></video>
+                                        )}
+                                </div>
                             )
                           : null}
                     </div>
