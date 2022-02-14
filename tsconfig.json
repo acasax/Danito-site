@@ -1,0 +1,43 @@
+{
+  "ts-node": {
+    "transpileOnly": true,
+    "compilerOptions": {
+      "module": "commonjs"
+    }
+  },
+  "compilerOptions": {
+    "target": "es2016",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "noImplicitAny": false,
+    "keyofStringsOnly": true,
+    "resolveJsonModule": true,
+    "experimentalDecorators": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react-jsx",
+    "baseUrl": "src",
+    "typeRoots": [
+      "./src/@types",
+      "./node_modules/@types"
+    ],
+    "noFallthroughCasesInSwitch": true
+  },
+  "exclude": [
+    "../*.test.*"
+  ],
+  "include": [
+    "src"
+  ]
+}
