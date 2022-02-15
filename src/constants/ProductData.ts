@@ -1,17 +1,17 @@
-import Products from '../constants/imgObjects/imgProducts'
-import PANEL from '../constants/imgObjects/ImgPanels'
-import PRODUCTS from './components/NavBar/NavProducts/productNames'
+import Products from './imgObjects/imgProducts'
+import PANEL from './imgObjects/ImgPanels'
+import PRODUCTS from '../pages/components/NavBar/NavProducts/productNames'
 // @ts-ignore
-import veka70Video from '../constants/video/VEKA70.mp4'
+import veka70Video from './video/VEKA70.mp4'
 // @ts-ignore
-import veka82Video from '../constants/video/VEKA82.mp4'
+import veka82Video from './video/VEKA82.mp4'
 // @ts-ignore
-import PvcUlaznaVrata from '../constants/video/PvcUlaznaVrata.mp4'
+import PvcUlaznaVrata from './video/PvcUlaznaVrata.mp4'
 // @ts-ignore
-import PvcPregradnaVrata from '../constants/video/PvcPregradnaVrata.mp4'
+import PvcPregradnaVrata from './video/PvcPregradnaVrata.mp4'
 // @ts-ignore
-import VrataSkrivenioKrilo from '../constants/video/VrataSkrivenioKrilo.mp4'
-import SigurnosnaVrataSlika from '../constants/video/SigurnosnaVrata.jpg'
+import VrataSkrivenioKrilo from './video/VrataSkrivenioKrilo.mp4'
+import SigurnosnaVrataSlika from './video/SigurnosnaVrata.jpg'
 
 export const ProductData = [
   {

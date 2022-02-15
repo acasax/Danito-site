@@ -20,7 +20,7 @@
   color: white;
   transition: 0.5s;
   text-align: center;
-  font-size: 28px;
+  font-size: 30px;
 }
 
 .LineAnimation__headingHiden {
@@ -40,4 +40,6 @@
   background-color: white;
   width: 32%;
   transition: 0.5s;
-}/*# sourceMappingURL=Index.css.map */
+}
+
+/*# sourceMappingURL=LineAnimation.css.map */

@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import '../../../../styles/NavProducts/NavProducs.css'
-import ButtonNavLeft from '../../buttonNavLeft'
-import { ProductData } from '../../../ProductData'
+import SideNavBarItem from '../../sideNavBarItem'
+import { ProductData } from '../../../../constants/ProductData'
 
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos'
 import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward'
@@ -17,16 +17,18 @@ const NavProducts = ({ navRightOpen, setPathTo, setPageName, setData }: any) => 
     PRODUCTS.prozori,
     PRODUCTS.vrata,
     PRODUCTS.roletne,
+    PRODUCTS.solomaticVenecijaneri,
     PRODUCTS.fasade,
     PRODUCTS.klizniSistemi
   ]
-  const initialImgState = [IMAGES.windowImg, IMAGES.doorsImg, IMAGES.roletneImg, IMAGES.fasadeImg, IMAGES.teraseImg]
+  const initialImgState = [IMAGES.windowImg, IMAGES.doorsImg, IMAGES.roletneImg, IMAGES.solomaticVenecijaneri, IMAGES.fasadeImg, IMAGES.teraseImg]
 
   const [selected, setSelected] = useState('')
   const [buttons, setButtons] = useState([
     PRODUCTS.prozori,
     PRODUCTS.vrata,
     PRODUCTS.roletne,
+    PRODUCTS.solomaticVenecijaneri,
     PRODUCTS.fasade,
     PRODUCTS.klizniSistemi
   ])
@@ -34,10 +36,11 @@ const NavProducts = ({ navRightOpen, setPathTo, setPageName, setData }: any) => 
     IMAGES.windowImg,
     IMAGES.doorsImg,
     IMAGES.roletneImg,
+    IMAGES.solomaticVenecijaneri,
     IMAGES.fasadePVC,
     IMAGES.teraseImg
   ])
-  const [imgClass, setImgClass] = useState('')
+  const [flexDirection, setFlexDirection] = useState('row')
 
   useEffect(() => {
     // -----------> 2. Stepenik
@@ -46,19 +49,19 @@ const NavProducts = ({ navRightOpen, setPathTo, setPageName, setData }: any) => 
     if (selected === PRODUCTS.prozori) {
       setButtons([PRODUCTS.pvcProzori, PRODUCTS.aluminiumProzori, PRODUCTS.drvoAluminiumProzori])
       setImg([IMAGES.windowPvcImg, IMAGES.windowAluminiumImg, IMAGES.windowWoodAluminiumImg])
-      setImgClass('ButtonNavLeftTopImg')
+      setFlexDirection('column')
     }
     // Vrata
     if (selected === PRODUCTS.vrata) {
       setButtons([PRODUCTS.pvcVrata, PRODUCTS.aluminiumVrata, PRODUCTS.sigurnosnaVrata])
       setImg([IMAGES.doorPvcImg, IMAGES.doorAluminiumImg, IMAGES.doorSafeImg])
-      setImgClass('ButtonNavLeftTopImg')
+      setFlexDirection('column')
     }
     // Roletne
     if (selected === PRODUCTS.roletne) {
-      setButtons([PRODUCTS.pvcRoletne, PRODUCTS.aluminiumRoletne, PRODUCTS.solomaticVenecijaneri])
-      setImg([IMAGES.roletnePVCImg, IMAGES.roletneAluminiumImg, IMAGES.solomaticVenecijaneri])
-      setImgClass('ButtonNavLeftTopImg')
+      setButtons([PRODUCTS.pvcRoletne, PRODUCTS.aluminiumRoletne])
+      setImg([IMAGES.roletnePVCImg, IMAGES.roletneAluminiumImg])
+      setFlexDirection('column')
     }
     // Fasade
     if (selected === PRODUCTS.fasade) {
@@ -69,13 +72,13 @@ const NavProducts = ({ navRightOpen, setPathTo, setPageName, setData }: any) => 
         PRODUCTS.granitFasade
       ])
       setImg([IMAGES.fasadePVC, IMAGES.fasadePVC, IMAGES.fasadePVC, IMAGES.fasadePVC])
-      setImgClass('ButtonNavLeftTopImg')
+      setFlexDirection('column')
     }
     // Terasni Sistemi
     if (selected === PRODUCTS.klizniSistemi) {
       setButtons([PRODUCTS.podnoKlizni, PRODUCTS.uskocnoKlizni, PRODUCTS.acordianHarmonika])
       setImg([IMAGES.terasePVC, IMAGES.teraseDRVO, IMAGES.teraseALUMINIUM])
-      setImgClass('ButtonNavLeftTopImg')
+      setFlexDirection('column')
     }
 
     // -----------> 3. Stepenik
@@ -196,7 +199,7 @@ const NavProducts = ({ navRightOpen, setPathTo, setPageName, setData }: any) => 
     setImg(initialImgState)
     // @ts-ignore
     setSelected(false)
-    setImgClass('')
+    setFlexDirection('row')
   }
 
   const setProductPath = (value, productDatum: any) => {
@@ -212,7 +215,6 @@ const NavProducts = ({ navRightOpen, setPathTo, setPageName, setData }: any) => 
     })
   }
 
-  console.log(buttons)
   return (
         <div className={navRightOpen ? 'Nav__productsVisible' : 'Nav__productsHiden'}>
             {selected
@@ -235,8 +237,8 @@ const NavProducts = ({ navRightOpen, setPathTo, setPageName, setData }: any) => 
                 {buttons.map((but, i) => {
                   return (
                         <Link to={`/${but.replace(/\s/g, '')}`} onClick={() => setProductPath(but, ProductData[i])} key={i}>
-                            <ButtonNavLeft
-                                imgClass={imgClass}
+                            <SideNavBarItem
+                                flexDirection={flexDirection}
                                 img={img[i]}
                                 selected={selected}
                                 setSelected={setSelected}

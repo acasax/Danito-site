@@ -1,6 +1,6 @@
 import * as React from 'react'
 import '../../../../styles/Tips/Tips.css'
-import { TipsData } from '../../../TipsData'
+import { TipsData } from '../../../../constants/TipsData'
 import { Link } from 'react-router-dom'
 import Card from '@mui/material/Card'
 import CardContent from '@mui/material/CardContent'

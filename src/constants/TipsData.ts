@@ -1,6 +1,6 @@
-import windowImg4 from '../constants/img/imgProduct/ImgPageProduct/WindowImg4.jpg'
-import windowImg5 from '../constants/img/imgProduct/ImgPageProduct/WindowImg5.jpg'
-import windowImg6 from '../constants/img/imgProduct/ImgPageProduct/WindowImg6.jpg'
+import windowImg4 from './img/imgProduct/ImgPageProduct/WindowImg4.jpg'
+import windowImg5 from './img/imgProduct/ImgPageProduct/WindowImg5.jpg'
+import windowImg6 from './img/imgProduct/ImgPageProduct/WindowImg6.jpg'
 
 export const TipsData = [
   {

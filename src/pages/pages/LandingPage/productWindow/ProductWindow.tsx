@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import '../../../../styles/ProductWindow/ProductWindow.css'
-import { ProductData } from '../../../ProductData'
+import { ProductData } from '../../../../constants/ProductData'
 import PRODUCTS from '../../../components/NavBar/NavProducts/productNames'
 import IMAGES from '../../../components/NavBar/NavProducts/productImg'
 
