@@ -11,7 +11,7 @@ const About = ({ scroll }: any) => {
         <div className="About">
             <div className="About__container">
                 <img className="About__coverImg" src={CompanyImgCover} alt="company img cover"/>
-                <LineAnimation header1="DANITO" scroll={scroll} scrollY={300}/>
+                <LineAnimation header="DANITO" scroll={scroll} scrollY={300}/>
                 <p className="About__headerText">
                     Jedinstvena prilika da na jednom mestu pogledate salon i prozivodnju i shvatite da smo mi najbolji u
                     svom

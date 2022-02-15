@@ -8,7 +8,7 @@ const Gallery = ({ scroll }: any) => {
   return (
         <div className="Galerija">
             <div className="Galerija__container">
-                <LineAnimation header1={'Index'} scroll={scroll} scrollY={400}/>
+                <LineAnimation header={'Index'} scroll={scroll} scrollY={400}/>
                 <div className="Galerija__objekti">
                     <div className="Galerija__objekat">
                         <div className="Galerija__objekatInformacije">

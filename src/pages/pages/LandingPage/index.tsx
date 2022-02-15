@@ -20,7 +20,7 @@ const LandingPage = ({
   return (
         <div>
             <Slider/>
-            <LineAnimation header1={'Select your windows'} scroll={scroll} scrollY={200}/>
+            <LineAnimation header={'Select your windows'} scroll={scroll} scrollY={200}/>
             <ProductWindow
                 setPageName={setPageName}
                 pathTo={pathTo}
@@ -28,10 +28,10 @@ const LandingPage = ({
                 setData={setData}
                 pageName={pageName}
             />
-            <LineAnimation header1={'Inspiration'} scroll={scroll} scrollY={800}/>
+            <LineAnimation header={'Inspiration'} scroll={scroll} scrollY={800}/>
             <Inspiration/>
             <CompanyPresentation scroll={scroll} scrollY={2000}/>
-            <LineAnimation header1={'Tips'} scroll={scroll} scrollY={3000}/>
+            <LineAnimation header={'Tips'} scroll={scroll} scrollY={3000}/>
             <Tips setTipsData={setTipsData} setPathToTipsPage={setPathToTipsPage}/>
             <Footer/>
         </div>

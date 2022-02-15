@@ -1,11 +1,11 @@
 import React from 'react'
-import '../../../../styles/NavSecond/NavSecond.css'
+import '../../../styles/NavSecond/NavSecond.css'
 import { Link } from 'react-router-dom'
 
 import MenuIcon from '@mui/icons-material/Menu'
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos'
 
-const NavSecond = ({ setNavRightOpen, navRightOpen }: any) => {
+const NavSecondPart = ({ setNavRightOpen, navRightOpen }: any) => {
   return (
         <div className="NavSecond">
             <div className="Nav__body">
@@ -29,4 +29,4 @@ const NavSecond = ({ setNavRightOpen, navRightOpen }: any) => {
   )
 }
 
-export default NavSecond
+export default NavSecondPart

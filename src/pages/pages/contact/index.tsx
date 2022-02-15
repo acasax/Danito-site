@@ -14,7 +14,7 @@ const Contact = ({ scroll }: any) => {
         <div className="Kontakt">
             <div className="Kontakt__container">
                 <img src={kontaktImg} alt="kontakt cover img"/>
-                <LineAnimation header1={'Contact'} scroll={scroll} scrollY={200}/>
+                <LineAnimation header={'Contact'} scroll={scroll} scrollY={200}/>
                 <div className="Kontakt__info">
                     <div className="Kontakt__infoLogo">
                         <img src={Logo} alt="datito logo"/>

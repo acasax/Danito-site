@@ -1,5 +1,5 @@
 export type TSideNavBatItem = {
-    buttonName: string,
+    buttonText: string,
     img: string,
     selected: string,
     setSelected: (buttonName: string) => void,

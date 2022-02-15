@@ -11,7 +11,7 @@ const CompanyPresentation = ({ scroll, scrollY }: any) => {
           alt="danito presentation"
         />
         <div className="CompanyPresentation__lineVideo">
-          <LineAnimation header1="Company presentation" scroll={scroll} scrollY={scrollY} />
+          <LineAnimation header="Company presentation" scroll={scroll} scrollY={scrollY} />
           <button
             className={scroll >= scrollY ? 'CompanyPresentation__buttonVisible' : 'CompanyPresentation__buttonHidden'}
           >

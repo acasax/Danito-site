@@ -1,5 +1,5 @@
 export type TLiveAnimation = {
-    header1: string,
+    header: string,
     scroll: number,
     scrollY: number,
 }

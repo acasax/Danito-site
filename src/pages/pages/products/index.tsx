@@ -19,7 +19,7 @@ const ProductPage = ({ scroll, pageName, data }: any) => {
         <div className="ProductPage__imgContainer">
           <img src={data.imgCover} alt="danito window cover" />
         </div>
-        <LineAnimation header1={pageName} scroll={scroll} scrollY={200} />
+        <LineAnimation header={pageName} scroll={scroll} scrollY={200} />
         <div className="ProductPage__videoOptionsContainer">
           <div className="ProductPage__videoContainer">
             {data.video || data.imgVideo
@@ -34,7 +34,7 @@ const ProductPage = ({ scroll, pageName, data }: any) => {
             <Options optionsContent={data} pageName={pageName} />
           </div>
         </div>
-        <LineAnimation header1={'Karakteristike'} scroll={scroll} scrollY={1000} />
+        <LineAnimation header={'Karakteristike'} scroll={scroll} scrollY={1000} />
         <div className="ProductPage__materialContainer">
           <div className="ProductPage__material">
             <img src={ProfileIcon} alt="profile icon" />
@@ -52,7 +52,7 @@ const ProductPage = ({ scroll, pageName, data }: any) => {
             <p>{data.material.third}</p>
           </div>
         </div>
-        {data.panel ? <LineAnimation header1={'panels'} scroll={scroll} scrollY={1600} /> : null}
+        {data.panel ? <LineAnimation header={'panels'} scroll={scroll} scrollY={1600} /> : null}
         {data.panel
           ? (
           <div className="ProductPage__profiles">

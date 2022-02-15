@@ -9,7 +9,7 @@ const TipsPage = ({ tipsData, scroll }: any) => {
                 <div className="TipsPage__imgContainer">
                     <img src={tipsData.coverImg} alt="some img"/>
                 </div>
-                <LineAnimation header1={tipsData.name} scroll={scroll} scrollY={200}/>
+                <LineAnimation header={tipsData.name} scroll={scroll} scrollY={200}/>
                 <div className="TipsPage__articleText">
                     <h3>{tipsData.header}</h3>
                     <div className="TipsPage__text">

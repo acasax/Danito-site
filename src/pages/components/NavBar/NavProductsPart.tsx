@@ -1,18 +1,16 @@
 import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
-import '../../../../styles/NavProducts/NavProducs.css'
-import SideNavBarItem from '../../sideNavBarItem'
-import { ProductData } from '../../../../constants/ProductData'
+import '../../../styles/NavProducts/NavProducs.css'
+import SideNavBarItem from '../sideNavBarItem'
+import { ProductData } from '../../../constants/ProductData'
 
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos'
 import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward'
 
-// Importovanje naziva svih proizvoda iz ProductNames
-import PRODUCTS from './productNames'
-// Importovanje slika svih proizvoda iz ProductImg
-import IMAGES from './productImg'
+// @ts-ignore
+import { IMAGES, PRODUCTS } from '../../../constants/ProductNavBarData'
 
-const NavProducts = ({ navRightOpen, setPathTo, setPageName, setData }: any) => {
+const NavProductsPart = ({ navRightOpen, setPathTo, setPageName, setData }: any) => {
   const initialButtonsState = [
     PRODUCTS.prozori,
     PRODUCTS.vrata,
@@ -236,13 +234,14 @@ const NavProducts = ({ navRightOpen, setPathTo, setPageName, setData }: any) => 
             <div className="Nav__productsContainer">
                 {buttons.map((but, i) => {
                   return (
-                        <Link to={`/${but.replace(/\s/g, '')}`} onClick={() => setProductPath(but, ProductData[i])} key={i}>
+                        <Link to={`/${but.replace(/\s/g, '')}`} onClick={() => setProductPath(but, ProductData[i])}
+                              key={i}>
                             <SideNavBarItem
                                 flexDirection={flexDirection}
                                 img={img[i]}
                                 selected={selected}
                                 setSelected={setSelected}
-                                buttonName={but}
+                                buttonText={but}
                             />
                         </Link>
                   )
@@ -252,4 +251,4 @@ const NavProducts = ({ navRightOpen, setPathTo, setPageName, setData }: any) => 
   )
 }
 
-export default NavProducts
+export default NavProductsPart

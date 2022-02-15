@@ -2,8 +2,7 @@ import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import '../../../../styles/ProductWindow/ProductWindow.css'
 import { ProductData } from '../../../../constants/ProductData'
-import PRODUCTS from '../../../components/NavBar/NavProducts/productNames'
-import IMAGES from '../../../components/NavBar/NavProducts/productImg'
+import { IMAGES, PRODUCTS } from '../../../../constants/ProductNavBarData'
 
 const ProductWindow = ({ setPageName, setPathTo, setData }: any) => {
   const [windowsPvc, setWindowsPvc] = useState(true)

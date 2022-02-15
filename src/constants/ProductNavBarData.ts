@@ -1,4 +1,33 @@
-const PRODUCTS = {
+export const IMAGES = {
+  windowImg: require('./img/imgProduct/window.png').default,
+  doorsImg: require('./img/imgProduct/door.png').default,
+  roletneImg: require('./img/imgProduct/roletne.png').default,
+  fasadeImg: require('./img/imgProduct/fasadaPVC.png').default,
+  teraseImg: require('./img/imgProduct/terasniSistemi.png').default,
+  dodatnoImg: require('./img/imgProduct/dodatno.png').default,
+
+  windowPvcImg: require('./img/imgProduct/windowPVC.png').default,
+  windowWoodImg: require('./img/imgProduct/windowWOOD.png').default,
+  windowWoodAluminiumImg: require('./img/imgProduct/windowWOODALUMINIUM.png').default,
+  windowAluminiumImg: require('./img/imgProduct/windowALUMINIUM.png').default,
+
+  doorPvcImg: require('./img/imgProduct/doorPVC.png').default,
+  doorAluminiumImg: require('./img/imgProduct/doorALUMINIUM.png').default,
+  doorSafeImg: require('./img/imgProduct/doorWOOD.png').default,
+
+  roletneAluminiumImg: require('./img/imgProduct/roletneAluminium.png').default,
+  roletnePVCImg: require('./img/imgProduct/roletnePvc.png').default,
+  solomaticVenecijaneri: require('./img/imgProduct/solomaticVenecijaneri.png').default,
+
+  fasadePVC: require('./img/imgProduct/fasadaPVC.png').default,
+  fasadeALUMINIUM: require('./img/imgProduct/fasadaAluminium.png').default,
+
+  terasePVC: require('./img/imgProduct/terasePvc.png').default,
+  teraseDRVO: require('./img/imgProduct/teraseDrvo.png').default,
+  teraseALUMINIUM: require('./img/imgProduct/teraseAluminium.png').default
+}
+
+export const PRODUCTS = {
   prozori: 'PROZORI',
   vrata: 'VRATA',
   roletne: 'ROLETNE',
@@ -74,5 +103,3 @@ const PRODUCTS = {
     panoramaAliplast: 'ALU - SMARTIA M19800'
   }
 }
-
-export default PRODUCTS
