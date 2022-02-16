@@ -1,5 +1,5 @@
 import styled, { css } from 'styled-components'
-import { Styles } from '../../../constants/StyleConstants'
+import { Styles } from 'constants/StyleConstants'
 
 export const LiveAnimationContainer = styled.div`
   background-color: ${Styles.Colours.PALETTE.DANITO._black};

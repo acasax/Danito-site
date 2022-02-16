@@ -1,5 +1,5 @@
 import React from 'react'
-import Logo from '../../../constants/img/Logo.png'
+import Logo from 'constants/img/Logo.png'
 import {
   NavFirstPartContainer,
   NavFirstPartLogoPart,
@@ -13,7 +13,7 @@ import {
  *
  * About component
  *
- * this component is a part of NavBar of WebPage
+ * this component is a part of navBar of WebPage
  *
  * in this case this is black part of navBar
  * */

@@ -2,7 +2,7 @@ import React from 'react'
 import '../../../styles/Kontakt/Kontakt.css'
 import kontaktImg from '../../../constants/img/showRoom/19.jpg'
 import Logo from '../../../constants/img/Danito_logo.jpg'
-import LineAnimation from '../../components/lineAnimation'
+import LineAnimation from 'components/lineAnimation'
 
 import RoomIcon from '@mui/icons-material/Room'
 import LocalPhoneIcon from '@mui/icons-material/LocalPhone'

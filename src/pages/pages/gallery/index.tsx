@@ -1,6 +1,6 @@
 import React from 'react'
 import '../../../styles/Galerija/Galerija.css'
-import LineAnimation from '../../components/lineAnimation'
+import LineAnimation from 'components/lineAnimation'
 import GalerijaFunc from './galerijaFunc'
 import ImgObjekti from '../../../constants/imgObjects/ImgObject'
 

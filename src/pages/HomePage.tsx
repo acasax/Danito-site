@@ -1,12 +1,14 @@
 import React, { useEffect, useState } from 'react'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import { useSelector } from 'react-redux'
+import { _selectorAllCategory } from 'store/Products/helpers'
 import Proizvodi from './pages/products'
 import '../styles/AppLang/AppLang.css'
 import ScrollToTop from '../ScrollToTop'
 
-import NavBarFirstPart from './components/NavBar/NavBarFirstPart'
-import NavBarSecondPart from './components/NavBar/NavBarSecondPart'
-import NavProduct from './components/NavBar/NavBarProductsPart'
+import NavBarFirstPart from '../components/navBar/NavBarFirstPart'
+import NavBarSecondPart from '../components/navBar/NavBarSecondPart'
+import NavProduct from '../components/navBar/NavBarProductsPart'
 
 import LandingPage from './pages/LandingPage'
 import About from './pages/about'
@@ -15,6 +17,8 @@ import TipsPage from './pages/tipsPage/TipsPage'
 import Contact from './pages/contact'
 
 const HomePage = () => {
+  const categorys = useSelector(_selectorAllCategory)
+
   const [scroll, setScroll] = useState(0)
   const [navRightOpen, setNavRightOpen] = useState(false)
 
@@ -27,6 +31,7 @@ const HomePage = () => {
   const [data, setData] = useState('')
 
   useEffect(() => {
+    console.log('kategorije', categorys)
     window.onscroll = () => {
       setScroll(window.scrollY)
     }

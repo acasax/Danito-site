@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import '../../../styles/Proizvodi/Proizvodi.css'
 
-import LineAnimation from '../../components/lineAnimation'
+import LineAnimation from 'components/lineAnimation'
 import Options from './Options'
 
 import ProfileIcon from '../../../constants/img/icons/Profile.png'

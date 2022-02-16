@@ -1,5 +1,5 @@
-import styled from 'styled-components'
-import { Styles } from '../../../constants/StyleConstants'
+import styled, { css } from 'styled-components'
+import { Styles } from '../../constants/StyleConstants'
 
 /** Style for NavBarFirstPart component */
 export const NavFirstPartContainer = styled.div`
@@ -72,7 +72,7 @@ export const NavSecondPartMenuBody = styled.div`
 `
 
 export const NavSecondPartMenuBodyButton = styled.button`
-  color: ${Styles.Colours.PALETTE.DANITO._gray};
+  color: ${Styles.Colours.PALETTE.DANITO._darkGray};
   border: none;
   background: none;
   font-size: 16px;
@@ -88,7 +88,7 @@ export const NavSecondPartMenuBodyButton = styled.button`
 
 export const NavSecondPartMenuBodyLink = styled.a`
   text-decoration: none;
-  color: ${Styles.Colours.PALETTE.DANITO._gray};
+  color: ${Styles.Colours.PALETTE.DANITO._darkGray};
   transition: 0.5s ease-in-out;
   letter-spacing: 1px;
   font-weight: 700;
@@ -98,3 +98,55 @@ export const NavSecondPartMenuBodyLink = styled.a`
     opacity: 0.5;
   }
 `
+
+/** Style for NavBarProductPart component */
+
+export const NavBarProductSideBarContainer = styled.div<{ isDisplay: boolean }>`
+  display: flex;
+  flex-direction: column;
+  background-color: ${Styles.Colours.PALETTE.DANITO._white};
+  position: sticky;
+  top: 70px;
+  height: 100%;
+  gap: 20px;
+  width: 0;
+  transition: 0.5s;
+  opacity: 0;
+
+  ${props => props.isDisplay && css`
+    width: 300px;
+    opacity: 1;
+  `}
+`
+
+export const NavBarProductContainerText = styled.p`
+  letter-spacing: 2px;
+`
+
+export const NavBarProductPartProductContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  background-color: ${Styles.Colours.PALETTE.DANITO._white};
+`
+
+export const NavBarProductPartHeaderContainer = styled.div`
+  display: flex;
+  height: 90px;
+  background-color: ${Styles.Colours.PALETTE.DANITO._liteGray};
+  align-items: center;
+  justify-content: center;
+  min-width: 300px;
+  width: 100%;
+  font-weight: 500;
+`
+
+export const NavBarProductsPartProductsContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px;
+  gap: 10px;
+`
+
+export const NavBarProductsPartProductsText = {
+  textDecoration: 'none'
+}

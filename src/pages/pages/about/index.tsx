@@ -1,7 +1,7 @@
 import React from 'react'
 import '../../../styles/About/About.css'
 
-import LineAnimation from '../../components/lineAnimation'
+import LineAnimation from 'components/lineAnimation'
 import GalerijaFunc from '../gallery/galerijaFunc'
 import ImgCompany from '../../../constants/imgObjects/ImgCompany'
 import CompanyImgCover from '../../../constants/img/showRoom/19.jpg'

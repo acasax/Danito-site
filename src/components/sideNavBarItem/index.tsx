@@ -18,9 +18,11 @@ import { SideNavBarItemButton, SideNavBarItemContainer, SideNavBarItemContainerI
 const SideNavBarItem = ({ buttonText, setSelected, img, flexDirection }: TSideNavBatItem) => {
   return (
         <SideNavBarItemContainer onClick={() => setSelected(buttonText)} flexDirection={flexDirection}>
-            {img && flexDirection === 'row'
-              ? <SideNavBarItemContainerImg src={img} alt="img icon"/>
-              : <img src={img} alt="img icon"/>}
+            {img
+              ? flexDirection === 'row'
+                ? <SideNavBarItemContainerImg src={img} alt="img icon"/>
+                : <img src={img} alt="img icon"/>
+              : null}
             <SideNavBarItemButton
                 textAlign={flexDirection === 'column' ? 'center' : 'left'}>{buttonText}</SideNavBarItemButton>
         </SideNavBarItemContainer>

@@ -1,6 +1,6 @@
 import React from 'react'
 import '../../../styles/TipsPage/TipsPage.css'
-import LineAnimation from '../../components/lineAnimation'
+import LineAnimation from 'components/lineAnimation'
 
 const TipsPage = ({ tipsData, scroll }: any) => {
   return (

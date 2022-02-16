@@ -1,6 +1,6 @@
 import React from 'react'
 import '../../../../styles/CompanyPresentation/CompanyPresentation.css'
-import LineAnimation from '../../../components/lineAnimation'
+import LineAnimation from 'components/lineAnimation'
 
 const CompanyPresentation = ({ scroll, scrollY }: any) => {
   return (

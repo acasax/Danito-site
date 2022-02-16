@@ -1,14 +1,20 @@
 import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
-import '../../../styles/NavProducts/NavProducs.css'
+import '../../styles/NavProducts/NavProducs.css'
 import SideNavBarItem from '../sideNavBarItem'
-import { ProductData } from '../../../constants/ProductData'
+import { ProductData } from '../../constants/ProductData'
 
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos'
 import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward'
 
 // @ts-ignore
-import { IMAGES, PRODUCTS } from '../../../constants/ProductNavBarData'
+import { IMAGES, PRODUCTS } from '../../constants/ProductNavBarData'
+import {
+  NavBarProductContainerText,
+  NavBarProductPartHeaderContainer,
+  NavBarProductSideBarContainer,
+  NavBarProductsPartProductsContainer, NavBarProductsPartProductsText
+} from './style'
 
 const NavBarProductsPart = ({ navRightOpen, setPathTo, setPageName, setData }: any) => {
   const initialButtonsState = [
@@ -214,28 +220,19 @@ const NavBarProductsPart = ({ navRightOpen, setPathTo, setPageName, setData }: a
   }
 
   return (
-        <div className={navRightOpen ? 'Nav__productsVisible' : 'Nav__productsHiden'}>
-            {selected
-              ? (
-                    <div className="Nav__productsSelected">
-                        <ArrowBackIosIcon className="Nav__productsSelectedSvg" onClick={backHandler}
-                                          sx={{ fontSize: 35 }}/>
-                        <p>{selected}</p>
-                    </div>
-                )
-              : (
-                    <div className="Nav__searchContainer">
-                        <div className="Nav__search">
-                            <ArrowDownwardIcon/>
-                            <p>Izaberite proizvod</p>
-                        </div>
-                    </div>
-                )}
-            <div className="Nav__productsContainer">
+        <NavBarProductSideBarContainer isDisplay={navRightOpen}>
+            <NavBarProductPartHeaderContainer>
+                {
+                    selected
+                      ? <ArrowBackIosIcon onClick={backHandler} sx={{ fontSize: 35 }}/>
+                      : <ArrowDownwardIcon/>
+                }
+                <NavBarProductContainerText>{!selected ? 'Izaberite kategoriju' : selected}</NavBarProductContainerText>
+            </NavBarProductPartHeaderContainer>
+            <NavBarProductsPartProductsContainer>
                 {buttons.map((but, i) => {
                   return (
-                        <Link to={`/${but.replace(/\s/g, '')}`} onClick={() => setProductPath(but, ProductData[i])}
-                              key={i}>
+                        <Link to={`/${but.replace(/\s/g, '')}`} onClick={() => setProductPath(but, ProductData[i])} key={i} style={NavBarProductsPartProductsText}>
                             <SideNavBarItem
                                 flexDirection={flexDirection}
                                 img={img[i]}
@@ -246,8 +243,8 @@ const NavBarProductsPart = ({ navRightOpen, setPathTo, setPageName, setData }: a
                         </Link>
                   )
                 })}
-            </div>
-        </div>
+            </NavBarProductsPartProductsContainer>
+        </NavBarProductSideBarContainer>
   )
 }
 

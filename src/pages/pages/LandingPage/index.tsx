@@ -1,11 +1,11 @@
 import React from 'react'
 import Slider from './slider/Slider'
-import LineAnimation from '../../components/lineAnimation'
+import LineAnimation from 'components/lineAnimation'
 import ProductWindow from './productWindow/ProductWindow'
 import Inspiration from './Inspiration/inspiration'
 import CompanyPresentation from './companyPresentation/companyPresentation'
 import Tips from './tips/Tips'
-import Footer from '../../components/footer'
+import Footer from 'components/footer'
 
 const LandingPage = ({
   scroll,

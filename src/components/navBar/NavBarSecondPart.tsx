@@ -1,5 +1,4 @@
 import React from 'react'
-import '../../../styles/NavSecond/NavSecond.css'
 
 import MenuIcon from '@mui/icons-material/Menu'
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos'
