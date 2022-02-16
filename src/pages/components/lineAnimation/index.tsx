@@ -22,10 +22,10 @@ const LineAnimation = ({ header, scroll, scrollY }: TLiveAnimation) => {
   return (
         <LiveAnimationContainer>
             <LiveAnimationContentContainer>
-                <LiveAnimationHeading scale={scroll >= scrollY}>
+                <LiveAnimationHeading scaleTransform={scroll >= scrollY}>
                     {header}
                 </LiveAnimationHeading>
-                <LiveAnimationHeaderBottomLine scale={scroll >= scrollY}/>
+                <LiveAnimationHeaderBottomLine scaleTransform={scroll >= scrollY}/>
             </LiveAnimationContentContainer>
         </LiveAnimationContainer>
   )

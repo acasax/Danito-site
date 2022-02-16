@@ -10,7 +10,7 @@ import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward'
 // @ts-ignore
 import { IMAGES, PRODUCTS } from '../../../constants/ProductNavBarData'
 
-const NavProductsPart = ({ navRightOpen, setPathTo, setPageName, setData }: any) => {
+const NavBarProductsPart = ({ navRightOpen, setPathTo, setPageName, setData }: any) => {
   const initialButtonsState = [
     PRODUCTS.prozori,
     PRODUCTS.vrata,
@@ -251,4 +251,4 @@ const NavProductsPart = ({ navRightOpen, setPathTo, setPageName, setData }: any)
   )
 }
 
-export default NavProductsPart
+export default NavBarProductsPart

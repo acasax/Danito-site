@@ -9,7 +9,16 @@ import {
   NavFirstPartLogoPartTextPart
 } from './style'
 
-const NavFirstPart = () => {
+/**
+ *
+ * About component
+ *
+ * this component is a part of NavBar of WebPage
+ *
+ * in this case this is black part of navBar
+ * */
+
+const NavBarFirstPart = () => {
   return (
         <NavFirstPartContainer>
             <NavFirstPartLogoPart href="/">
@@ -23,4 +32,4 @@ const NavFirstPart = () => {
   )
 }
 
-export default NavFirstPart
+export default NavBarFirstPart

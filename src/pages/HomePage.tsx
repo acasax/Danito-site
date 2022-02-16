@@ -4,9 +4,9 @@ import Proizvodi from './pages/products'
 import '../styles/AppLang/AppLang.css'
 import ScrollToTop from '../ScrollToTop'
 
-import NavFirstPart from './components/NavBar/NavFirstPart'
-import NavSecondPart from './components/NavBar/NavSecondPart'
-import NavProduct from './components/NavBar/NavProductsPart'
+import NavBarFirstPart from './components/NavBar/NavBarFirstPart'
+import NavBarSecondPart from './components/NavBar/NavBarSecondPart'
+import NavProduct from './components/NavBar/NavBarProductsPart'
 
 import LandingPage from './pages/LandingPage'
 import About from './pages/about'
@@ -36,7 +36,7 @@ const HomePage = () => {
         <div className="AppLang">
             <Router>
                 <ScrollToTop/>
-                <NavFirstPart/>
+                <NavBarFirstPart/>
                 <div className="AppLang__containerFirst">
                     <NavProduct
                         setData={setData}
@@ -46,7 +46,7 @@ const HomePage = () => {
                         navRightOpen={navRightOpen}
                     />
                     <div className="AppLang__right">
-                        <NavSecondPart navRightOpen={navRightOpen} setNavRightOpen={setNavRightOpen}/>
+                        <NavBarSecondPart navRightOpen={navRightOpen} setNavRightOpen={setNavRightOpen}/>
                         <Switch>
                             <Route path={pathTo}>
                                 <Proizvodi data={data} pageName={pageName} scroll={scroll}/>

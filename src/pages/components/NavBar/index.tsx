@@ -1,8 +1,10 @@
 import React from 'react'
+import NavBarFirstPart from './NavBarFirstPart'
+import NavBarSecondPart from "./NavBarSecondPart";
 
 const NavBar = () => {
   return (
-        <div><h2>ASDASD</h2></div>
+        <NavBarFirstPart/>
   )
 }
 

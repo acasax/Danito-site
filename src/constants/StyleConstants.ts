@@ -114,7 +114,8 @@ export const Styles = {
       DANITO: {
         _black: '#272727',
         _white: '#fefefe',
-        _yellow: '#f7fb3f'
+        _yellow: '#f7fb3f',
+        _gray: '#3e4444'
       }
 
     }
