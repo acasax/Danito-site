@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import { useSelector } from 'react-redux'
-import { _selectorAllCategory } from 'store/Products/helpers'
+import { _selectorAllCategory, _selectorSelectedCategory } from 'store/Products/helpers'
 import Proizvodi from './pages/products'
 import '../styles/AppLang/AppLang.css'
 import ScrollToTop from '../ScrollToTop'
@@ -18,6 +18,7 @@ import Contact from './pages/contact'
 
 const HomePage = () => {
   const categorys = useSelector(_selectorAllCategory)
+  const selectedCategory = useSelector(_selectorSelectedCategory)
 
   const [scroll, setScroll] = useState(0)
   const [navRightOpen, setNavRightOpen] = useState(false)
@@ -32,6 +33,7 @@ const HomePage = () => {
 
   useEffect(() => {
     console.log('kategorije', categorys)
+    console.log('kategorija selektovana', selectedCategory)
     window.onscroll = () => {
       setScroll(window.scrollY)
     }

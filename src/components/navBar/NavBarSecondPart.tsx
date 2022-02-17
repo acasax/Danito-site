@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useCallback } from 'react'
 
 import MenuIcon from '@mui/icons-material/Menu'
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos'
@@ -9,8 +9,17 @@ import {
   NavSecondPartMenuBodyButton,
   NavSecondPartMenuBodyLink
 } from './style'
+import { UseProducts } from 'hooks/Products/useProducts'
+import { ProductsCategory, ProductsCategoryImages, TProductData } from '../../store/Products/d'
 
 const NavBarSecondPart = ({ setNavRightOpen, navRightOpen }: TNavBarSecondPart) => {
+  const { setSelectedCategory } = UseProducts()
+
+  const handleSetSelectedCategory = useCallback(
+    () => {
+      setSelectedCategory({ name: ProductsCategory.window, image: ProductsCategoryImages.window } as TProductData)
+    }, [setSelectedCategory, ProductsCategory, ProductsCategoryImages]
+  )
   return (
         <NavSecondPartContainer>
             <NavSecondPartMenuBody>
@@ -24,6 +33,9 @@ const NavBarSecondPart = ({ setNavRightOpen, navRightOpen }: TNavBarSecondPart) 
 
                 <NavSecondPartMenuBodyButton
                     onClick={() => setNavRightOpen(!navRightOpen)}>PROIZVODI</NavSecondPartMenuBodyButton>
+
+                <NavSecondPartMenuBodyButton
+                    onClick={handleSetSelectedCategory}>kategorijal</NavSecondPartMenuBodyButton>
 
                 <NavSecondPartMenuBodyLink href="/onama">O NAMA</NavSecondPartMenuBodyLink>
                 <NavSecondPartMenuBodyLink href="/galerija"> GALERIJA</NavSecondPartMenuBodyLink>
