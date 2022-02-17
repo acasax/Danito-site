@@ -1,6 +1,7 @@
 import {
   ProductsCategory,
   ProductsCategoryImages,
+  ProductsDataInfo,
   ProductsSubCategory,
   ProductsSubCategoryImages,
   TActionEvent,
@@ -21,28 +22,45 @@ const init = {
             name: ProductsSubCategory.pvcWindow,
             image: ProductsSubCategoryImages.pvcWindow
           },
-          products: [{}]
-        },
-        {
-          subCategoryInfo: {
-            name: ProductsSubCategory.woodWindow,
-            image: ProductsSubCategoryImages.woodWindow
-          },
-          products: [{}]
+          products: [
+            {
+              name: ProductsDataInfo.veka70
+            },
+            {
+              name: ProductsDataInfo.veka82
+            }
+          ]
         },
         {
           subCategoryInfo: {
             name: ProductsSubCategory.woodAluminumWindow,
             image: ProductsSubCategoryImages.woodAluminumWindow
           },
-          products: [{}]
+          products: [
+            {
+              name: ProductsDataInfo.woodAluminiumWindows1
+            }
+          ]
         },
         {
           subCategoryInfo: {
             name: ProductsSubCategory.aluminumWindow,
             image: ProductsSubCategoryImages.aluminumWindow
           },
-          products: [{}]
+          products: [
+            {
+              name: ProductsDataInfo.aluminiumWindows1
+            },
+            {
+              name: ProductsDataInfo.aluminiumWindows2
+            },
+            {
+              name: ProductsDataInfo.aluminiumWindows3
+            },
+            {
+              name: ProductsDataInfo.aluminiumWindows4
+            }
+          ]
         }
       ]
     },
@@ -57,21 +75,42 @@ const init = {
             name: ProductsSubCategory.pvcDoor,
             image: ProductsSubCategoryImages.pvcDoor
           },
-          products: [{}]
+          products: [
+            {
+              name: ProductsDataInfo.entrancePvcDoor
+            },
+            {
+              name: ProductsDataInfo.partitionPvcDoor
+            }
+          ]
         },
         {
           subCategoryInfo: {
             name: ProductsSubCategory.aluminumDoor,
             image: ProductsSubCategoryImages.aluminumDoor
           },
-          products: [{}]
+          products: [
+            {
+              name: ProductsDataInfo.profileWithoutThermalBreakAluminiumDoor
+            },
+            {
+              name: ProductsDataInfo.profileWithThermalBreakAluminiumDoor
+            },
+            {
+              name: ProductsDataInfo.doorWithHiddenWingAluminiumDoor
+            }
+          ]
         },
         {
           subCategoryInfo: {
             name: ProductsSubCategory.securityDoor,
             image: ProductsSubCategoryImages.securityDoor
           },
-          products: [{}]
+          products: [
+            {
+              name: ProductsDataInfo.customSecurityDoor
+            }
+          ]
         }
       ]
     },
@@ -86,14 +125,28 @@ const init = {
             name: ProductsSubCategory.insideBlinds,
             image: ProductsSubCategoryImages.insideBlinds
           },
-          products: [{}]
+          products: [
+            {
+              name: ProductsDataInfo.aluminiumThermoBlindsInsideBlinds
+            },
+            {
+              name: ProductsDataInfo.pvcBlindsInsideBlinds
+            }
+          ]
         },
         {
           subCategoryInfo: {
             name: ProductsSubCategory.outsideBlinds,
             image: ProductsSubCategoryImages.outsideBlinds
           },
-          products: [{}]
+          products: [
+            {
+              name: ProductsDataInfo.aluminiumOutsideBlindsRoundedOutsideBlinds
+            },
+            {
+              name: ProductsDataInfo.aluminiumOutsideBlindsPentagonalOutsideBlinds
+            }
+          ]
         }
       ]
     },
@@ -128,28 +181,47 @@ const init = {
             name: ProductsSubCategory.fundermaxFacade,
             image: ProductsSubCategoryImages.fundermaxFacade
           },
-          products: [{}]
+          products: [
+            {
+              name: ProductsDataInfo.fundermaxFacadeFundermaxFacade
+            }
+          ]
         },
         {
           subCategoryInfo: {
             name: ProductsSubCategory.ventilatedAlucobondFacade,
             image: ProductsSubCategoryImages.ventilatedAlucobondFacade
           },
-          products: [{}]
+          products: [
+            {
+              name: ProductsDataInfo.ventilatedAlucobondFacadeVentilatedAlucobondFacade
+            }
+          ]
         },
         {
           subCategoryInfo: {
             name: ProductsSubCategory.glassFacade,
             image: ProductsSubCategoryImages.glassFacade
           },
-          products: [{}]
+          products: [
+            {
+              name: ProductsDataInfo.structuralGlassFacade
+            },
+            {
+              name: ProductsDataInfo.standardGlassFacade
+            }
+          ]
         },
         {
           subCategoryInfo: {
             name: ProductsSubCategory.graniteFacade,
             image: ProductsSubCategoryImages.graniteFacade
           },
-          products: [{}]
+          products: [
+            {
+              name: ProductsDataInfo.granitFacadeGranitFacade
+            }
+          ]
         }
       ]
     },
@@ -164,21 +236,48 @@ const init = {
             name: ProductsSubCategory.liftingSlidingSystems,
             image: ProductsSubCategoryImages.liftingSlidingSystems
           },
-          products: [{}]
+          products: [
+            {
+              name: ProductsDataInfo.pvcVekaSlideSlidingSystem
+            },
+            {
+              name: ProductsDataInfo.aluUltraSlideSlidingSystem
+            },
+            {
+              name: ProductsDataInfo.aluVgPlusSlidingSystem
+            }
+          ]
         },
         {
           subCategoryInfo: {
             name: ProductsSubCategory.inRowSlidingSystems,
             image: ProductsSubCategoryImages.inRowSlidingSystems
           },
-          products: [{}]
+          products: [
+            {
+              name: ProductsDataInfo.pvcVekaSoftline7082InRowSlidingSystem
+            },
+            {
+              name: ProductsDataInfo.aluInRowSlidingSystem
+            }
+          ]
         },
         {
           subCategoryInfo: {
             name: ProductsSubCategory.accordionSlidingSystems,
             image: ProductsSubCategoryImages.accordionSlidingSystems
           },
-          products: [{}]
+          products: [
+            {
+              name: ProductsDataInfo.pvcAccordionSlidingSystems
+            },
+            {
+              name: ProductsDataInfo.aluSmartiaM9800AccordionSlidingSystems
+            },
+            {
+              name: ProductsDataInfo.aluSmartiaM19800AccordionSlidingSystems
+            }
+          ]
         }
       ]
     },

@@ -112,9 +112,56 @@ export enum ProductsDataInfo {
     aluminiumWindows2 = 'ALUMINIUMSKI PROZOR 2',
     aluminiumWindows3 = 'ALUMINIUMSKI PROZOR 3',
     aluminiumWindows4 = 'ALUMINIUMSKI PROZOR 4',
+
     /** Products for Category windows SubCategory wood Aluminium Windows */
     woodAluminiumWindows1 = 'DRVO ALUMINIUM PROZOR 1',
 
+    /** Products for Category doors SubCategory pvc door */
+    entrancePvcDoor = 'ULAZNA VRATE',
+    partitionPvcDoor = 'PREGRADNA VRATA',
+
+    /** Products for Category doors SubCategory aluminium door */
+    profileWithoutThermalBreakAluminiumDoor = 'PROFIL BEZ TERMO PREKIDA',
+    profileWithThermalBreakAluminiumDoor = 'PROFIL SA TERMO PREKIDOM',
+    doorWithHiddenWingAluminiumDoor = 'VRATA SA SKRIVENIM KRILOM',
+
+    /** Products for Category doors SubCategory security door */
+    customSecurityDoor = 'SIGURNOSNA VRATA PO MERI',
+
+    /** Products for Category blinds SubCategory inside Blinds */
+    aluminiumThermoBlindsInsideBlinds = 'ALU TERMO ROLENTE',
+    pvcBlindsInsideBlinds = 'PVC ROLETNE',
+
+    /** Products for Category blinds SubCategory outsideBlinds */
+    aluminiumOutsideBlindsRoundedOutsideBlinds = 'ALU SPOLJNE ROLETNE ZAOBLJENE',
+    aluminiumOutsideBlindsPentagonalOutsideBlinds = 'ALU SPOLJNE ROLETNE PETOUGAONE',
+
+    /** Products for Category facade SubCategory fundermax facade */
+    fundermaxFacadeFundermaxFacade = 'FUNDERMAX FASADE',
+
+    /** Products for Category facade SubCategory ventilated alucobond facade */
+    ventilatedAlucobondFacadeVentilatedAlucobondFacade = 'VENTILISANE ALUCOBOND FASADE',
+
+    /** Products for Category facade SubCategory glass facade */
+    structuralGlassFacade = 'STRUKTURNA',
+    standardGlassFacade = 'STANDARDNA',
+
+    /** Products for Category facade SubCategory granit facade */
+    granitFacadeGranitFacade = 'GRANIT FASADE',
+
+    /** Products for Category slidingSystems SubCategory lifting sliding systems */
+    pvcVekaSlideSlidingSystem = 'PVC - VEKA SLIDE',
+    aluUltraSlideSlidingSystem = 'ALU - ULTRA SLIDE',
+    aluVgPlusSlidingSystem = 'ALU - VG PLUS',
+
+    /** Products for Category slidingSystems SubCategory in Row sliding systems */
+    pvcVekaSoftline7082InRowSlidingSystem = 'PVC -VEKA SOFTLINE 70/82',
+    aluInRowSlidingSystem = 'ALU - USKOČNO KLIZNI',
+
+    /** Products for Category slidingSystems SubCategory accordion sliding systems */
+    pvcAccordionSlidingSystems = 'ALU - HARMONIKA',
+    aluSmartiaM9800AccordionSlidingSystems = 'ALU - SMARTIA M9800',
+    aluSmartiaM19800AccordionSlidingSystems = 'ALU - SMARTIA M19800',
 }
 
 export type TActionEvent = {
