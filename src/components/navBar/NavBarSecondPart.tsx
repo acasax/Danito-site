@@ -12,6 +12,17 @@ import {
 import { UseProducts } from 'hooks/Products/useProducts'
 import { ProductsCategory, ProductsCategoryImages, TProductData } from '../../store/Products/d'
 
+/**
+ *
+ * About Component
+ *
+ * this component is a part od navBar of WebPage
+ * functionality of this component is to navigate to primary pages
+ *
+ * component is has tabs to link to another pages
+ *
+ * */
+
 const NavBarSecondPart = ({ setNavRightOpen, navRightOpen }: TNavBarSecondPart) => {
   const { setSelectedCategory } = UseProducts()
 
