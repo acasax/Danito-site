@@ -1,6 +1,7 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { TSideNavBatItem } from './d'
 import { SideNavBarItemButton, SideNavBarItemContainer, SideNavBarItemContainerImg } from './style'
+import { NavBarContext } from '../context'
 
 /**
  * About Component
@@ -15,9 +16,10 @@ import { SideNavBarItemButton, SideNavBarItemContainer, SideNavBarItemContainerI
  * in this case subcategory is column display other is row
  * */
 
-const SideNavBarItem = ({ buttonText, setSelected, img, flexDirection }: TSideNavBatItem) => {
+const SideNavBarItem = ({ buttonText, img }: TSideNavBatItem) => {
+  const { handleSetSelectedSideNavBarItem, flexDirection } = useContext(NavBarContext)
   return (
-        <SideNavBarItemContainer onClick={() => setSelected(buttonText)} flexDirection={flexDirection}>
+        <SideNavBarItemContainer onClick={() => handleSetSelectedSideNavBarItem(buttonText)} flexDirection={flexDirection}>
             {img
               ? flexDirection === 'row'
                 ? <SideNavBarItemContainerImg src={img} alt="img icon"/>

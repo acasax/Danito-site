@@ -1,15 +1,31 @@
 import { useDispatch } from 'react-redux'
 import { useCallback, useMemo } from 'react'
-import { _actionCategorySetSelected, _actionProductRemove } from '../../store/Products/action'
-import { TProductData } from '../../store/Products/d'
+import {
+  _actionCategorySetSelected,
+  _actionProductRemove,
+  _actionSelectedItem,
+  _actionSubCategorySetSelected
+} from '../../store/Products/action'
 
 export const UseProducts = () => {
   const dispatch = useDispatch()
 
   const setSelectedCategory = useCallback(
-    (categoryName: TProductData) => {
+    (categoryName: string) => {
       dispatch(_actionCategorySetSelected(categoryName))
     }, [_actionCategorySetSelected]
+  )
+
+  const setSelectedSubCategory = useCallback(
+    (subCategoryName: string) => {
+      dispatch(_actionSubCategorySetSelected(subCategoryName))
+    }, [_actionSubCategorySetSelected]
+  )
+
+  const setSelectedItem = useCallback(
+    (selected: string) => {
+      dispatch(_actionSelectedItem(selected))
+    }, [_actionSelectedItem]
   )
 
   const clearState = useCallback(
@@ -21,10 +37,14 @@ export const UseProducts = () => {
   const data = useMemo(
     () => ({
       clearState,
-      setSelectedCategory
+      setSelectedCategory,
+      setSelectedSubCategory,
+      setSelectedItem
     }), [
       clearState,
-      setSelectedCategory
+      setSelectedCategory,
+      setSelectedSubCategory,
+      setSelectedItem
     ]
   )
 

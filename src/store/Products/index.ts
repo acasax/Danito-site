@@ -6,6 +6,7 @@ import {
   ProductsSubCategoryImages,
   TActionEvent,
   TProductCategory,
+  TProductSubCategory,
   TStateProducts
 } from './d'
 
@@ -289,7 +290,9 @@ const init = {
       subCategory: []
     }
   ],
-  selectedCategory: {} as TProductCategory
+  selectedCategory: {} as TProductCategory,
+  selectedSubCategory: {} as TProductSubCategory,
+  selected: ''
 } as TStateProducts
 
 export default (
@@ -298,9 +301,23 @@ export default (
 ) => {
   switch (action.type) {
     case 'CATEGORY_SET_SELECTED': {
+      const selectedCategory = init.data.filter(x => x.categoryInfo.name === action.payload)
       return {
         ...state,
-        selectedCategory: action.payload
+        selectedCategory: selectedCategory
+      }
+    }
+    case 'SUB_CATEGORY_SET_SELECTED': {
+      const selectedSubCategory = state.selectedCategory[0].subCategory.filter(x => x.subCategoryInfo.name === action.payload)
+      return {
+        ...state,
+        selectedSubCategory: selectedSubCategory
+      }
+    }
+    case 'SELECTED_ITEM': {
+      return {
+        ...state,
+        selected: action.payload
       }
     }
     case 'CLEAR_STATE': {

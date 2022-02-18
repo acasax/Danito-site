@@ -120,6 +120,7 @@ export const NavBarProductSideBarContainer = styled.div<{ isDisplay: boolean }>`
 `
 
 export const NavBarProductContainerText = styled.p`
+  font-size: 15px;
   letter-spacing: 2px;
 `
 

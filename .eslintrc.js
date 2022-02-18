@@ -22,6 +22,7 @@ module.exports = {
   rules: {
     'no-use-before-define': 'off',
     '@typescript-eslint/no-use-before-define': ['error'],
-    'no-unused-vars': 'off'
+    'no-unused-vars': 'off',
+    'react/react-in-jsx-scope': 'off'
   }
 }

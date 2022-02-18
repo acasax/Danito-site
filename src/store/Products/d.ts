@@ -1,8 +1,10 @@
-import { CATEGORY_SET_SELECTED, CLEAR_STATE } from './types'
+import { CATEGORY_SET_SELECTED, CLEAR_STATE, SELECTED_ITEM, SUB_CATEGORY_SET_SELECTED } from './types'
 
 export type TStateProducts = {
     data: TProductCategory[],
-    selectedCategory: TProductCategory
+    selectedCategory: TProductCategory,
+    selectedSubCategory: TProductSubCategory,
+    selected: string
 }
 
 export type TProductCategory = {
@@ -165,6 +167,16 @@ export enum ProductsDataInfo {
 }
 
 export type TActionEvent = {
-    type: typeof CATEGORY_SET_SELECTED | typeof CLEAR_STATE;
-    payload?: undefined | TStateProducts | TProductCategory | TProductData;
+    type:
+        typeof CATEGORY_SET_SELECTED
+        | typeof CLEAR_STATE
+        | typeof SUB_CATEGORY_SET_SELECTED
+        | typeof SELECTED_ITEM;
+    payload?:
+        undefined
+        | string
+        | TStateProducts
+        | TProductCategory
+        | TProductData
+        | TProductSubCategory;
 }

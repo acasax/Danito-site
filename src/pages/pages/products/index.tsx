@@ -12,7 +12,6 @@ const ProductPage = ({ scroll, pageName, data }: any) => {
   useEffect(() => {
     window.scrollTo(0, 0)
   }, [data])
-  console.log(data)
   return (
     <div className="ProductPage">
       <div className="ProductPage__container">

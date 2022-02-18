@@ -1,7 +1,5 @@
 import React, { useEffect, useState } from 'react'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
-import { useSelector } from 'react-redux'
-import { _selectorAllCategory, _selectorSelectedCategory } from 'store/Products/helpers'
 import Proizvodi from './pages/products'
 import '../styles/AppLang/AppLang.css'
 import ScrollToTop from '../ScrollToTop'
@@ -15,13 +13,10 @@ import About from './pages/about'
 import Gallery from './pages/gallery'
 import TipsPage from './pages/tipsPage/TipsPage'
 import Contact from './pages/contact'
+import NavBarContextContainer from '../components/navBar/context'
 
 const HomePage = () => {
-  const categorys = useSelector(_selectorAllCategory)
-  const selectedCategory = useSelector(_selectorSelectedCategory)
-
   const [scroll, setScroll] = useState(0)
-  const [navRightOpen, setNavRightOpen] = useState(false)
 
   const [pathTo, setPathTo] = useState('false')
   const [pageName, setPageName] = useState('')
@@ -32,14 +27,13 @@ const HomePage = () => {
   const [data, setData] = useState('')
 
   useEffect(() => {
-    console.log('kategorije', categorys)
-    console.log('kategorija selektovana', selectedCategory)
     window.onscroll = () => {
       setScroll(window.scrollY)
     }
   }, [scroll])
 
   return (
+      <NavBarContextContainer>
         <div className="AppLang">
             <Router>
                 <ScrollToTop/>
@@ -50,10 +44,9 @@ const HomePage = () => {
                         setPageName={setPageName}
                         pathTo={pathTo}
                         setPathTo={setPathTo}
-                        navRightOpen={navRightOpen}
                     />
                     <div className="AppLang__right">
-                        <NavBarSecondPart navRightOpen={navRightOpen} setNavRightOpen={setNavRightOpen}/>
+                        <NavBarSecondPart />
                         <Switch>
                             <Route path={pathTo}>
                                 <Proizvodi data={data} pageName={pageName} scroll={scroll}/>
@@ -87,6 +80,7 @@ const HomePage = () => {
                 </div>
             </Router>
         </div>
+      </NavBarContextContainer>
   )
 }
 
