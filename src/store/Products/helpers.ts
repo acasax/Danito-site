@@ -42,6 +42,11 @@ export const _selectorIsSubCategorySelected = createSelector(
   products => !!products?.selectedSubCategory[0]?.subCategoryInfo
 )
 
+export const _selectorSelectedPath = createSelector(
+  (state: TReduxState): TStateProducts => state.products,
+  products => products?.selectedPath
+)
+
 export const _selectorSelectedItem = createSelector(
   (state: TReduxState): TStateProducts => state.products,
   products => products?.selected

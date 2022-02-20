@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react'
+import React, { useContext } from 'react'
 import { Link } from 'react-router-dom'
 import '../../styles/NavProducts/NavProducs.css'
 import SideNavBarItem from './sideNavBarItem'
@@ -19,16 +19,7 @@ import {
 import { NavBarContext } from './context'
 
 const NavBarProductsPart = ({ setPathTo, setPageName, setData }: any) => {
-  const [flexDirection, setFlexDirection] = useState('row')
-  const { navRightOpen, sideNavBarItems, selected } = useContext(NavBarContext)
-
-  const backHandler = () => {
-    // setButtons(initialButtonsState)
-    // setImg(initialImgState)
-    // @ts-ignore
-    // setSelected(false)
-    setFlexDirection('row')
-  }
+  const { navRightOpen, sideNavBarItems, selected, goBack } = useContext(NavBarContext)
 
   /** funkcija za stranicu proizvodi */
   const setProductPath = (value, productDatum: any) => {
@@ -49,7 +40,7 @@ const NavBarProductsPart = ({ setPathTo, setPageName, setData }: any) => {
             <NavBarProductPartHeaderContainer>
                 {
                     selected
-                      ? <ArrowBackIosIcon onClick={backHandler} sx={{ fontSize: 35 }}/>
+                      ? <ArrowBackIosIcon onClick={goBack} sx={{ fontSize: 35 }}/>
                       : <ArrowDownwardIcon/>
                 }
                 <NavBarProductContainerText>{!selected ? 'Izaberite kategoriju' : selected}</NavBarProductContainerText>

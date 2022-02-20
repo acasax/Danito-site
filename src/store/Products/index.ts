@@ -292,6 +292,7 @@ const init = {
   ],
   selectedCategory: {} as TProductCategory,
   selectedSubCategory: {} as TProductSubCategory,
+  selectedPath: '',
   selected: ''
 } as TStateProducts
 
@@ -314,6 +315,13 @@ export default (
         selectedSubCategory: selectedSubCategory
       }
     }
+    case 'SELECTED_PATH_ITEM': {
+      const path = state.selectedPath
+      return {
+        ...state,
+        selectedPath: path ? `${path}/${action.payload}` : action.payload
+      }
+    }
     case 'SELECTED_ITEM': {
       return {
         ...state,
@@ -324,7 +332,9 @@ export default (
       return {
         ...state,
         data: undefined,
-        selected: undefined
+        selectedCategory: undefined,
+        selectedSubCategory: undefined,
+        selectedPath: undefined
       }
     }
     default:

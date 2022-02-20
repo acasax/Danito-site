@@ -7,6 +7,7 @@ import {
   _selectorIsSubCategorySelected,
   _selectorProductsOdSelectedSubCategory,
   _selectorSelectedItem,
+  _selectorSelectedPath,
   _selectorSubCategoryOfSelectedCategory
 } from '../../store/Products/helpers'
 import { TProductData } from '../../store/Products/d'
@@ -15,16 +16,22 @@ import { UseProducts } from '../../hooks/Products/useProducts'
 export const NavBarContext = createContext({} as TNavBarContext)
 
 const NavBarContextContainer = ({ children }: { children: ReactNode }) => {
+  /** Selectors from store */
   const category = useSelector(_selectorAllCategory)
   const subCategoryOfSelectedCategory = useSelector(_selectorSubCategoryOfSelectedCategory)
   const productsOfSelectedSubCategory = useSelector(_selectorProductsOdSelectedSubCategory)
   const isSelectedCategory = useSelector(_selectorIsCategorySelected)
   const isSelectedSubCategory = useSelector(_selectorIsSubCategorySelected)
+  const selected = useSelector(_selectorSelectedItem)
+  const path = useSelector(_selectorSelectedPath)
+
+  /** Local state */
   const [flexDirection, setFlexDirection] = useState('row')
   const [sideNavBarItems, setSideNavBarItems] = useState({} as TProductData[])
   const [navRightOpen, setNavRightOpen] = useState(false)
-  const selected = useSelector(_selectorSelectedItem)
-  const { setSelectedCategory, setSelectedSubCategory, setSelectedItem } = UseProducts()
+
+  /** Functions from hook */
+  const { setSelectedCategory, setSelectedSubCategory, setSelectedItem, setSelectedPathItem } = UseProducts()
 
   useEffect(() => {
     if (isSelectedSubCategory) {
@@ -39,13 +46,14 @@ const NavBarContextContainer = ({ children }: { children: ReactNode }) => {
     }
     setFlexDirection('row')
     setSideNavBarItems(category)
-  }, [category, setSideNavBarItems, isSelectedCategory])
+  }, [category, setSideNavBarItems, isSelectedCategory, selected])
 
   const handleNavRightOpen = useCallback(() => {
     setNavRightOpen(!navRightOpen)
   }, [setNavRightOpen, navRightOpen])
 
   const handleSetSelectedSideNavBarItem = useCallback((selectedName: string) => {
+    setSelectedPathItem(selectedName)
     if (isSelectedSubCategory) {
       setSelectedItem(selectedName)
       return
@@ -59,6 +67,13 @@ const NavBarContextContainer = ({ children }: { children: ReactNode }) => {
     setSelectedItem(selectedName)
   }, [setSelectedItem, setSelectedCategory, isSelectedCategory, isSelectedSubCategory])
 
+  /** */
+  const goBack = useCallback(() => {
+    const arr = path.split('/')
+    const backTo = arr[arr.length - 1]
+    setSelectedItem(backTo)
+  }, [path, setSelectedItem])
+
   const data = useMemo(
     () => (
       {
@@ -68,7 +83,8 @@ const NavBarContextContainer = ({ children }: { children: ReactNode }) => {
         handleNavRightOpen,
         handleSetSelectedSideNavBarItem,
         selected,
-        flexDirection
+        flexDirection,
+        goBack
       }),
     [
       setFlexDirection,
@@ -77,7 +93,8 @@ const NavBarContextContainer = ({ children }: { children: ReactNode }) => {
       handleNavRightOpen,
       handleSetSelectedSideNavBarItem,
       selected,
-      flexDirection
+      flexDirection,
+      goBack
     ]
   )
   return (

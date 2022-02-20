@@ -11,5 +11,6 @@ export type TNavBarContext = {
     sideNavBarItems: TProductData[],
     handleSetSelectedSideNavBarItem: (s: string) => void,
     selected: string,
-    flexDirection: string
+    flexDirection: string,
+    goBack: () => void
 }

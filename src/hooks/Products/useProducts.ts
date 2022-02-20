@@ -4,6 +4,7 @@ import {
   _actionCategorySetSelected,
   _actionProductRemove,
   _actionSelectedItem,
+  _actionSelectedPathItem,
   _actionSubCategorySetSelected
 } from '../../store/Products/action'
 
@@ -28,6 +29,11 @@ export const UseProducts = () => {
     }, [_actionSelectedItem]
   )
 
+  const setSelectedPathItem = useCallback(
+    (selected: string) => {
+      dispatch(_actionSelectedPathItem(selected))
+    }, [_actionSelectedPathItem]
+  )
   const clearState = useCallback(
     () => {
       dispatch(_actionProductRemove())
@@ -39,12 +45,14 @@ export const UseProducts = () => {
       clearState,
       setSelectedCategory,
       setSelectedSubCategory,
-      setSelectedItem
+      setSelectedItem,
+      setSelectedPathItem
     }), [
       clearState,
       setSelectedCategory,
       setSelectedSubCategory,
-      setSelectedItem
+      setSelectedItem,
+      setSelectedPathItem
     ]
   )
 
