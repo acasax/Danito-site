@@ -31,7 +31,7 @@ const NavBarContextContainer = ({ children }: { children: ReactNode }) => {
   const [navRightOpen, setNavRightOpen] = useState(false)
 
   /** Functions from hook */
-  const { setSelectedCategory, setSelectedSubCategory, setSelectedItem, setSelectedPathItem } = UseProducts()
+  const { setSelectedCategory, setSelectedSubCategory, setSelectedItem, setSelectedPathItem, setGoBack } = UseProducts()
 
   useEffect(() => {
     if (isSelectedSubCategory) {
@@ -67,12 +67,9 @@ const NavBarContextContainer = ({ children }: { children: ReactNode }) => {
     setSelectedItem(selectedName)
   }, [setSelectedItem, setSelectedCategory, isSelectedCategory, isSelectedSubCategory])
 
-  /** */
   const goBack = useCallback(() => {
-    const arr = path.split('/')
-    const backTo = arr[arr.length - 1]
-    setSelectedItem(backTo)
-  }, [path, setSelectedItem])
+    setGoBack()
+  }, [setGoBack])
 
   const data = useMemo(
     () => (

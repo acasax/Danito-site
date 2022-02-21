@@ -1,4 +1,11 @@
-import { CATEGORY_SET_SELECTED, CLEAR_STATE, SELECTED_ITEM, SELECTED_PATH_ITEM, SUB_CATEGORY_SET_SELECTED } from './types'
+import {
+  CATEGORY_SET_SELECTED,
+  CLEAR_STATE,
+  GO_BACK,
+  SELECTED_ITEM,
+  SELECTED_PATH_ITEM,
+  SUB_CATEGORY_SET_SELECTED
+} from './types'
 
 export type TStateProducts = {
     data: TProductCategory[],
@@ -173,7 +180,8 @@ export type TActionEvent = {
         | typeof CLEAR_STATE
         | typeof SUB_CATEGORY_SET_SELECTED
         | typeof SELECTED_PATH_ITEM
-        | typeof SELECTED_ITEM;
+        | typeof SELECTED_ITEM
+        | typeof GO_BACK;
     payload?:
         undefined
         | string

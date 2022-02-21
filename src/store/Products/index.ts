@@ -328,6 +328,13 @@ export default (
         selected: action.payload
       }
     }
+    case 'GO_BACK': {
+      return {
+        ...state,
+        selected: '',
+        selectedPath: ''
+      }
+    }
     case 'CLEAR_STATE': {
       return {
         ...state,

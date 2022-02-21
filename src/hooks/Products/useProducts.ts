@@ -2,6 +2,7 @@ import { useDispatch } from 'react-redux'
 import { useCallback, useMemo } from 'react'
 import {
   _actionCategorySetSelected,
+  _actionGoBack,
   _actionProductRemove,
   _actionSelectedItem,
   _actionSelectedPathItem,
@@ -34,6 +35,13 @@ export const UseProducts = () => {
       dispatch(_actionSelectedPathItem(selected))
     }, [_actionSelectedPathItem]
   )
+
+  const setGoBack = useCallback(
+    () => {
+      dispatch(_actionGoBack())
+    }, [_actionGoBack()]
+  )
+
   const clearState = useCallback(
     () => {
       dispatch(_actionProductRemove())
@@ -46,13 +54,15 @@ export const UseProducts = () => {
       setSelectedCategory,
       setSelectedSubCategory,
       setSelectedItem,
-      setSelectedPathItem
+      setSelectedPathItem,
+      setGoBack
     }), [
       clearState,
       setSelectedCategory,
       setSelectedSubCategory,
       setSelectedItem,
-      setSelectedPathItem
+      setSelectedPathItem,
+      setGoBack
     ]
   )
 

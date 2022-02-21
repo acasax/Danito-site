@@ -1,5 +1,12 @@
 import { TActionEvent } from './d'
-import { CATEGORY_SET_SELECTED, CLEAR_STATE, SELECTED_ITEM, SELECTED_PATH_ITEM, SUB_CATEGORY_SET_SELECTED } from './types'
+import {
+  CATEGORY_SET_SELECTED,
+  CLEAR_STATE,
+  GO_BACK,
+  SELECTED_ITEM,
+  SELECTED_PATH_ITEM,
+  SUB_CATEGORY_SET_SELECTED
+} from './types'
 
 export const _actionCategorySetSelected = (category: string): TActionEvent => ({
   type: CATEGORY_SET_SELECTED,
@@ -23,4 +30,8 @@ export const _actionSelectedItem = (selectedName: string): TActionEvent => ({
 
 export const _actionProductRemove = (): TActionEvent => ({
   type: CLEAR_STATE
+})
+
+export const _actionGoBack = (): TActionEvent => ({
+  type: GO_BACK
 })
