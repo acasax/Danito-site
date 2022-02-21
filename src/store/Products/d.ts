@@ -8,11 +8,8 @@ import {
 } from './types'
 
 export type TStateProducts = {
-    data: TProductCategory[],
-    selectedCategory: TProductCategory,
-    selectedSubCategory: TProductSubCategory,
-    selectedPath: string,
-    selected: string
+    data: TProductData[],
+    selectedItem: TProductData,
 }
 
 export type TProductCategory = {
@@ -27,7 +24,10 @@ export type TProductSubCategory = {
 
 export type TProductData = {
     name: string,
-    image?: string | any
+    parent: string,
+    parentPath: string,
+    image?: string | any,
+    children?: TProductData[]
 }
 
 export enum ProductsCategory {
