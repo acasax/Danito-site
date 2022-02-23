@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import React, { useContext, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import '../../styles/NavProducts/NavProducs.css'
 import SideNavBarItem from './sideNavBarItem'
@@ -20,7 +20,9 @@ import { NavBarContext } from './context'
 
 const NavBarProductsPart = ({ setPathTo, setPageName, setData }: any) => {
   const { navRightOpen, sideNavBarItems, selected, goBack } = useContext(NavBarContext)
-
+  useEffect(() => {
+    console.log(sideNavBarItems)
+  }, [sideNavBarItems])
   /** funkcija za stranicu proizvodi */
   const setProductPath = (value, productDatum: any) => {
     const newData = ProductData.filter((product) => {

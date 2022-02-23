@@ -5,7 +5,6 @@ import {
   ProductsSubCategory,
   ProductsSubCategoryImages,
   TActionEvent,
-  TProductData,
   TStateProducts
 } from './d'
 
@@ -189,19 +188,7 @@ const init = {
       name: ProductsCategory.solomaticVenetians,
       parent: '',
       parentPath: '',
-      image: ProductsCategoryImages.solomaticVenetians,
-      children: [
-        {
-          name: ProductsSubCategory.outsideSolomaticVenetians,
-          parent: ProductsCategory.solomaticVenetians,
-          parentPath: `${ProductsCategory.solomaticVenetians}/`
-        },
-        {
-          name: ProductsSubCategory.underTheFacadeSolomaticVenetians,
-          parent: ProductsCategory.solomaticVenetians,
-          parentPath: `${ProductsCategory.solomaticVenetians}/`
-        }
-      ]
+      image: ProductsCategoryImages.solomaticVenetians
     },
     {
       name: ProductsCategory.facade,
@@ -339,16 +326,10 @@ const init = {
           ]
         }
       ]
-    },
-    {
-      name: ProductsCategory.additions,
-      parent: '',
-      parentPath: '',
-      image: ProductsCategoryImages.additions
     }
   ],
-  selectedItem: {} as TProductData
-
+  selectedItem: '',
+  flexDirection: 'row'
 } as TStateProducts
 
 export default (
@@ -356,31 +337,10 @@ export default (
   action: TActionEvent = {} as TActionEvent
 ) => {
   switch (action.type) {
-    case 'CATEGORY_SET_SELECTED': {
-      const selectedCategory = init.data.filter(x => x.categoryInfo.name === action.payload)
-      return {
-        ...state,
-        selectedCategory: selectedCategory
-      }
-    }
-    case 'SUB_CATEGORY_SET_SELECTED': {
-      const selectedSubCategory = state.selectedCategory[0].subCategory.filter(x => x.subCategoryInfo.name === action.payload)
-      return {
-        ...state,
-        selectedSubCategory: selectedSubCategory
-      }
-    }
-    case 'SELECTED_PATH_ITEM': {
-      const path = state.selectedPath
-      return {
-        ...state,
-        selectedPath: path ? `${path}/${action.payload}` : action.payload
-      }
-    }
     case 'SELECTED_ITEM': {
       return {
         ...state,
-        selected: action.payload
+        selectedItem: action.payload
       }
     }
     case 'GO_BACK': {

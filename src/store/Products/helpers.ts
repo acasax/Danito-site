@@ -7,6 +7,16 @@ export const _selectorAllProductsData = createSelector(
   products => products.data
 )
 
+export const _selectorFlexDirection = createSelector(
+  (state: TReduxState): TStateProducts => state.products,
+  products => products.flexDirection
+)
+
+export const _selectNavBarItems = createSelector(
+  (state: TReduxState): TStateProducts => state.products,
+  products => products
+)
+/*
 export const _selectorAllCategory = createSelector(
   (state: TReduxState): TStateProducts => state.products,
   products => products.data.map(x => x.categoryInfo)
@@ -51,3 +61,4 @@ export const _selectorSelectedItem = createSelector(
   (state: TReduxState): TStateProducts => state.products,
   products => products?.selected
 )
+*/

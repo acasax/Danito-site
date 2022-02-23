@@ -1,15 +1,9 @@
-import {
-  CATEGORY_SET_SELECTED,
-  CLEAR_STATE,
-  GO_BACK,
-  SELECTED_ITEM,
-  SELECTED_PATH_ITEM,
-  SUB_CATEGORY_SET_SELECTED
-} from './types'
+import { CLEAR_STATE, GO_BACK, SELECTED_FLEX_DIRECTION, SELECTED_ITEM } from './types'
 
 export type TStateProducts = {
     data: TProductData[],
-    selectedItem: TProductData,
+    selectedItem: string,
+    flexDirection: string
 }
 
 export type TProductCategory = {
@@ -37,7 +31,6 @@ export enum ProductsCategory {
     solomaticVenetians = 'SOLOMATIC VENECIJANERI',
     facade = 'FASADE',
     slidingSystems = 'KLIZNI SISTEMI',
-    additions = 'DODATNO',
 }
 
 export const ProductsCategoryImages = {
@@ -46,14 +39,12 @@ export const ProductsCategoryImages = {
   blinds: require('constants/img/imgProduct/roletne.png').default,
   solomaticVenetians: require('constants/img/imgProduct/solomaticVenecijaneri.png').default,
   facade: require('constants/img/imgProduct/fasadaPVC.png').default,
-  slidingSystems: require('constants/img/imgProduct/terasniSistemi.png').default,
-  additions: require('constants/img/imgProduct/dodatno.png').default
+  slidingSystems: require('constants/img/imgProduct/terasniSistemi.png').default
 }
 
 export enum ProductsSubCategory {
     /** SubCategory windows */
     pvcWindow = 'PVC PROZORI',
-    woodWindow = 'DRVENI PROZORI',
     woodAluminumWindow = 'ALUMINIUM DRVO PROZORI',
     aluminumWindow = 'ALUMINIUM PROZORI',
 
@@ -85,7 +76,6 @@ export enum ProductsSubCategory {
 export const ProductsSubCategoryImages = {
   /** SubCategory windows */
   pvcWindow: require('constants/img/imgProduct/windowPVC.png').default,
-  woodWindow: require('constants/img/imgProduct/windowWOOD.png').default,
   woodAluminumWindow: require('constants/img/imgProduct/windowWOODALUMINIUM.png').default,
   aluminumWindow: require('constants/img/imgProduct/windowALUMINIUM.png').default,
 
@@ -176,17 +166,13 @@ export enum ProductsDataInfo {
 
 export type TActionEvent = {
     type:
-        typeof CATEGORY_SET_SELECTED
-        | typeof CLEAR_STATE
-        | typeof SUB_CATEGORY_SET_SELECTED
-        | typeof SELECTED_PATH_ITEM
+        typeof SELECTED_FLEX_DIRECTION
         | typeof SELECTED_ITEM
-        | typeof GO_BACK;
+        | typeof GO_BACK
+        | typeof CLEAR_STATE;
     payload?:
         undefined
         | string
         | TStateProducts
-        | TProductCategory
-        | TProductData
-        | TProductSubCategory;
+        | TProductData;
 }

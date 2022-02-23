@@ -1,39 +1,24 @@
 import { useDispatch } from 'react-redux'
 import { useCallback, useMemo } from 'react'
 import {
-  _actionCategorySetSelected,
   _actionGoBack,
   _actionProductRemove,
-  _actionSelectedItem,
-  _actionSelectedPathItem,
-  _actionSubCategorySetSelected
+  _actionSetFlexDirection,
+  _actionSetSelectedItem
 } from '../../store/Products/action'
 
 export const UseProducts = () => {
   const dispatch = useDispatch()
 
-  const setSelectedCategory = useCallback(
-    (categoryName: string) => {
-      dispatch(_actionCategorySetSelected(categoryName))
-    }, [_actionCategorySetSelected]
-  )
-
-  const setSelectedSubCategory = useCallback(
-    (subCategoryName: string) => {
-      dispatch(_actionSubCategorySetSelected(subCategoryName))
-    }, [_actionSubCategorySetSelected]
-  )
-
   const setSelectedItem = useCallback(
     (selected: string) => {
-      dispatch(_actionSelectedItem(selected))
-    }, [_actionSelectedItem]
+      dispatch(_actionSetSelectedItem(selected))
+    }, [_actionSetSelectedItem]
   )
-
-  const setSelectedPathItem = useCallback(
-    (selected: string) => {
-      dispatch(_actionSelectedPathItem(selected))
-    }, [_actionSelectedPathItem]
+  const setFlexDirection = useCallback(
+    (flexDirection: string) => {
+      dispatch(_actionSetFlexDirection(flexDirection))
+    }, [_actionSetFlexDirection]
   )
 
   const setGoBack = useCallback(
@@ -51,17 +36,13 @@ export const UseProducts = () => {
   const data = useMemo(
     () => ({
       clearState,
-      setSelectedCategory,
-      setSelectedSubCategory,
       setSelectedItem,
-      setSelectedPathItem,
-      setGoBack
+      setGoBack,
+      setFlexDirection
     }), [
       clearState,
-      setSelectedCategory,
-      setSelectedSubCategory,
+      setFlexDirection,
       setSelectedItem,
-      setSelectedPathItem,
       setGoBack
     ]
   )
