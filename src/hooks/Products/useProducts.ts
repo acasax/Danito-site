@@ -1,11 +1,6 @@
 import { useDispatch } from 'react-redux'
 import { useCallback, useMemo } from 'react'
-import {
-  _actionGoBack,
-  _actionProductRemove,
-  _actionSetFlexDirection,
-  _actionSetSelectedItem
-} from '../../store/Products/action'
+import { _actionGoBack, _actionProductRemove, _actionSetSelectedItem } from '../../store/Products/action'
 
 export const UseProducts = () => {
   const dispatch = useDispatch()
@@ -14,11 +9,6 @@ export const UseProducts = () => {
     (selected: string) => {
       dispatch(_actionSetSelectedItem(selected))
     }, [_actionSetSelectedItem]
-  )
-  const setFlexDirection = useCallback(
-    (flexDirection: string) => {
-      dispatch(_actionSetFlexDirection(flexDirection))
-    }, [_actionSetFlexDirection]
   )
 
   const setGoBack = useCallback(
@@ -37,11 +27,9 @@ export const UseProducts = () => {
     () => ({
       clearState,
       setSelectedItem,
-      setGoBack,
-      setFlexDirection
+      setGoBack
     }), [
       clearState,
-      setFlexDirection,
       setSelectedItem,
       setGoBack
     ]

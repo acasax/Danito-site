@@ -8,9 +8,9 @@ export type TNavBarSecondPart = {
 export type TNavBarContext = {
     handleNavRightOpen: () => void,
     navRightOpen: boolean,
-    sideNavBarItems: TProductData[],
     handleSetSelectedSideNavBarItem: (s: string) => void,
     selected: string,
     flexDirection: string,
-    goBack: () => void
+    goBack: () => void,
+    selectedItems: TProductData[]
 }

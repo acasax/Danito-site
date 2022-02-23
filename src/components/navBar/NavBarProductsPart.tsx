@@ -1,4 +1,4 @@
-import React, { useContext, useEffect } from 'react'
+import React, { useContext } from 'react'
 import { Link } from 'react-router-dom'
 import '../../styles/NavProducts/NavProducs.css'
 import SideNavBarItem from './sideNavBarItem'
@@ -17,12 +17,13 @@ import {
   NavBarProductsPartProductsText
 } from './style'
 import { NavBarContext } from './context'
+import { useSelector } from 'react-redux'
+import { _selectNavBarItems } from '../../store/Products/helpers'
 
 const NavBarProductsPart = ({ setPathTo, setPageName, setData }: any) => {
-  const { navRightOpen, sideNavBarItems, selected, goBack } = useContext(NavBarContext)
-  useEffect(() => {
-    console.log(sideNavBarItems)
-  }, [sideNavBarItems])
+  const selectedItems = useSelector(_selectNavBarItems)
+  const { navRightOpen, selected, goBack } = useContext(NavBarContext)
+
   /** funkcija za stranicu proizvodi */
   const setProductPath = (value, productDatum: any) => {
     const newData = ProductData.filter((product) => {
@@ -48,7 +49,7 @@ const NavBarProductsPart = ({ setPathTo, setPageName, setData }: any) => {
                 <NavBarProductContainerText>{!selected ? 'Izaberite kategoriju' : selected}</NavBarProductContainerText>
             </NavBarProductPartHeaderContainer>
             <NavBarProductsPartProductsContainer>
-                {sideNavBarItems.length > 1 && sideNavBarItems.map((x, key) => {
+                {selectedItems.length > 1 && selectedItems.map((x, key) => {
                   return (
                         <Link to={`/${x.name.replace(/\s/g, '')}`}
                               onClick={() => setProductPath(x.name, ProductData[key])} key={key}

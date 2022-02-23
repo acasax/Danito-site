@@ -6,11 +6,6 @@ export const _actionSetSelectedItem = (itemName: string): TActionEvent => ({
   payload: itemName
 })
 
-export const _actionSetFlexDirection = (flexDirection: string): TActionEvent => ({
-  type: SELECTED_FLEX_DIRECTION,
-  payload: flexDirection
-})
-
 export const _actionGoBack = (): TActionEvent => ({
   type: GO_BACK
 })

@@ -1,7 +1,8 @@
-import { CLEAR_STATE, GO_BACK, SELECTED_FLEX_DIRECTION, SELECTED_ITEM } from './types'
+import { CLEAR_STATE, GO_BACK, SELECTED_ITEM } from './types'
 
 export type TStateProducts = {
     data: TProductData[],
+    selectedItems: TProductData[],
     selectedItem: string,
     flexDirection: string
 }
@@ -21,7 +22,6 @@ export type TProductData = {
     parent: string,
     parentPath: string,
     image?: string | any,
-    children?: TProductData[]
 }
 
 export enum ProductsCategory {
@@ -164,15 +164,306 @@ export enum ProductsDataInfo {
     aluSmartiaM19800AccordionSlidingSystems = 'ALU - SMARTIA M19800',
 }
 
+export const navBarData = [
+  {
+    name: ProductsCategory.window,
+    parent: '',
+    parentPath: '',
+    image: ProductsCategoryImages.window
+  },
+  {
+    name: ProductsSubCategory.pvcWindow,
+    parent: ProductsCategory.window,
+    parentPath: `${ProductsCategory.window}/`,
+    image: ProductsSubCategoryImages.pvcWindow
+  },
+  {
+    name: ProductsDataInfo.veka70,
+    parent: ProductsSubCategory.pvcWindow,
+    parentPath: `${ProductsCategory.window}/${ProductsSubCategory.pvcWindow}/`
+  },
+  {
+    name: ProductsDataInfo.veka82,
+    parent: ProductsSubCategory.pvcWindow,
+    parentPath: `${ProductsCategory.window}/${ProductsSubCategory.pvcWindow}/`
+  },
+
+  {
+    name: ProductsSubCategory.woodAluminumWindow,
+    parent: ProductsCategory.window,
+    parentPath: `${ProductsCategory.window}/`,
+    image: ProductsSubCategoryImages.woodAluminumWindow
+  },
+  {
+    name: ProductsDataInfo.woodAluminiumWindows1,
+    parent: ProductsSubCategory.woodAluminumWindow,
+    parentPath: `${ProductsCategory.window}/${ProductsSubCategory.woodAluminumWindow}/`
+
+  },
+  {
+    name: ProductsSubCategory.aluminumWindow,
+    parent: ProductsCategory.window,
+    parentPath: `${ProductsCategory.window}/`,
+    image: ProductsSubCategoryImages.aluminumWindow
+  },
+
+  {
+    name: ProductsDataInfo.aluminiumWindows1,
+    parent: ProductsSubCategory.aluminumWindow,
+    parentPath: `${ProductsCategory.window}/${ProductsSubCategory.aluminumWindow}/`
+  },
+  {
+    name: ProductsDataInfo.aluminiumWindows2,
+    parent: ProductsSubCategory.aluminumWindow,
+    parentPath: `${ProductsCategory.window}/${ProductsSubCategory.aluminumWindow}/`
+  },
+  {
+    name: ProductsDataInfo.aluminiumWindows3,
+    parent: ProductsSubCategory.aluminumWindow,
+    parentPath: `${ProductsCategory.window}/${ProductsSubCategory.aluminumWindow}/`
+  },
+
+  {
+    name: ProductsDataInfo.aluminiumWindows4,
+    parent: ProductsSubCategory.aluminumWindow,
+    parentPath: `${ProductsCategory.window}/${ProductsSubCategory.aluminumWindow}/`
+  },
+  {
+    name: ProductsCategory.door,
+    parent: '',
+    parentPath: '',
+    image: ProductsCategoryImages.door
+  },
+  {
+    name: ProductsSubCategory.pvcDoor,
+    parent: ProductsCategory.door,
+    parentPath: `${ProductsCategory.door}/`,
+    image: ProductsSubCategoryImages.pvcDoor
+  },
+  {
+    name: ProductsDataInfo.entrancePvcDoor,
+    parent: ProductsSubCategory.pvcDoor,
+    parentPath: `${ProductsCategory.door}/${ProductsSubCategory.pvcDoor}/`
+  },
+  {
+    name: ProductsDataInfo.partitionPvcDoor,
+    parent: ProductsSubCategory.pvcDoor,
+    parentPath: `${ProductsCategory.door}/${ProductsSubCategory.pvcDoor}/`
+
+  },
+  {
+    name: ProductsSubCategory.aluminumDoor,
+    parent: ProductsCategory.door,
+    parentPath: `${ProductsCategory.door}/`,
+    image: ProductsSubCategoryImages.aluminumDoor
+  },
+  {
+    name: ProductsDataInfo.profileWithoutThermalBreakAluminiumDoor,
+    parent: ProductsSubCategory.aluminumDoor,
+    parentPath: `${ProductsCategory.door}/${ProductsSubCategory.aluminumDoor}/`
+  },
+  {
+    name: ProductsDataInfo.profileWithThermalBreakAluminiumDoor,
+    parent: ProductsSubCategory.aluminumDoor,
+    parentPath: `${ProductsCategory.door}/${ProductsSubCategory.aluminumDoor}/`
+  },
+  {
+    name: ProductsDataInfo.doorWithHiddenWingAluminiumDoor,
+    parent: ProductsSubCategory.aluminumDoor,
+    parentPath: `${ProductsCategory.door}/${ProductsSubCategory.aluminumDoor}/`
+
+  },
+  {
+    name: ProductsSubCategory.securityDoor,
+    parent: ProductsCategory.door,
+    parentPath: `${ProductsCategory.door}/`,
+    image: ProductsSubCategoryImages.securityDoor
+  },
+
+  {
+    name: ProductsDataInfo.customSecurityDoor,
+    parent: ProductsSubCategory.securityDoor,
+    parentPath: `${ProductsCategory.door}/${ProductsSubCategory.securityDoor}/`
+  },
+  {
+    name: ProductsCategory.blinds,
+    parent: '',
+    parentPath: '',
+    image: ProductsCategoryImages.blinds
+  },
+  {
+    name: ProductsSubCategory.insideBlinds,
+    parent: ProductsCategory.blinds,
+    parentPath: `${ProductsCategory.blinds}/`,
+    image: ProductsSubCategoryImages.insideBlinds
+  },
+
+  {
+    name: ProductsDataInfo.aluminiumThermoBlindsInsideBlinds,
+    parent: ProductsSubCategory.insideBlinds,
+    parentPath: `${ProductsCategory.blinds}/${ProductsSubCategory.insideBlinds}/`
+  },
+  {
+    name: ProductsDataInfo.pvcBlindsInsideBlinds,
+    parent: ProductsSubCategory.insideBlinds,
+    parentPath: `${ProductsCategory.blinds}/${ProductsSubCategory.insideBlinds}/`
+  },
+  {
+    name: ProductsSubCategory.outsideBlinds,
+    parent: ProductsCategory.blinds,
+    parentPath: `${ProductsCategory.blinds}/`,
+    image: ProductsSubCategoryImages.outsideBlinds
+  },
+
+  {
+    name: ProductsDataInfo.aluminiumOutsideBlindsRoundedOutsideBlinds,
+    parent: ProductsSubCategory.outsideBlinds,
+    parentPath: `${ProductsCategory.blinds}/${ProductsSubCategory.outsideBlinds}/`
+  },
+  {
+    name: ProductsDataInfo.aluminiumOutsideBlindsPentagonalOutsideBlinds,
+    parent: ProductsSubCategory.outsideBlinds,
+    parentPath: `${ProductsCategory.blinds}/${ProductsSubCategory.outsideBlinds}/`
+  },
+
+  {
+    name: ProductsCategory.solomaticVenetians,
+    parent: '',
+    parentPath: '',
+    image: ProductsCategoryImages.solomaticVenetians
+  },
+  {
+    name: ProductsCategory.facade,
+    parent: '',
+    parentPath: '',
+    image: ProductsCategoryImages.facade
+  },
+
+  {
+    name: ProductsSubCategory.fundermaxFacade,
+    parent: ProductsCategory.facade,
+    parentPath: `${ProductsCategory.facade}/`,
+    image: ProductsSubCategoryImages.fundermaxFacade
+  },
+  {
+    name: ProductsDataInfo.fundermaxFacadeFundermaxFacade,
+    parent: ProductsSubCategory.fundermaxFacade,
+    parentPath: `${ProductsCategory.facade}/${ProductsSubCategory.fundermaxFacade}/`
+  },
+  {
+    name: ProductsSubCategory.ventilatedAlucobondFacade,
+    parent: ProductsCategory.facade,
+    parentPath: `${ProductsCategory.facade}/`,
+    image: ProductsSubCategoryImages.ventilatedAlucobondFacade
+  },
+  {
+    name: ProductsDataInfo.ventilatedAlucobondFacadeVentilatedAlucobondFacade,
+    parent: ProductsSubCategory.ventilatedAlucobondFacade,
+    parentPath: `${ProductsCategory.facade}/${ProductsSubCategory.ventilatedAlucobondFacade}/`
+  },
+
+  {
+    name: ProductsSubCategory.glassFacade,
+    parent: ProductsCategory.facade,
+    parentPath: `${ProductsCategory.facade}/`,
+    image: ProductsSubCategoryImages.glassFacade
+  },
+  {
+    name: ProductsDataInfo.structuralGlassFacade,
+    parent: ProductsSubCategory.glassFacade,
+    parentPath: `${ProductsCategory.facade}/${ProductsSubCategory.glassFacade}/`
+  },
+  {
+    name: ProductsDataInfo.standardGlassFacade,
+    parent: ProductsSubCategory.glassFacade,
+    parentPath: `${ProductsCategory.facade}/${ProductsSubCategory.glassFacade}/`
+  },
+  {
+    name: ProductsSubCategory.graniteFacade,
+    parent: ProductsCategory.facade,
+    parentPath: `${ProductsCategory.facade}/`,
+    image: ProductsSubCategoryImages.graniteFacade
+  },
+
+  {
+    name: ProductsDataInfo.granitFacadeGranitFacade,
+    parent: ProductsSubCategory.graniteFacade,
+    parentPath: `${ProductsCategory.facade}/${ProductsSubCategory.graniteFacade}/`
+  },
+  {
+    name: ProductsCategory.slidingSystems,
+    parent: '',
+    parentPath: '',
+    image: ProductsCategoryImages.slidingSystems
+  },
+  {
+    name: ProductsSubCategory.liftingSlidingSystems,
+    parent: ProductsCategory.slidingSystems,
+    parentPath: `${ProductsCategory.slidingSystems}/`,
+    image: ProductsSubCategoryImages.liftingSlidingSystems
+  },
+  {
+    name: ProductsDataInfo.pvcVekaSlideSlidingSystem,
+    parent: ProductsSubCategory.liftingSlidingSystems,
+    parentPath: `${ProductsCategory.slidingSystems}/${ProductsSubCategory.liftingSlidingSystems}/`
+  },
+  {
+    name: ProductsDataInfo.aluUltraSlideSlidingSystem,
+    parent: ProductsSubCategory.liftingSlidingSystems,
+    parentPath: `${ProductsCategory.slidingSystems}/${ProductsSubCategory.liftingSlidingSystems}/`
+  },
+  {
+    name: ProductsDataInfo.aluVgPlusSlidingSystem,
+    parent: ProductsSubCategory.liftingSlidingSystems,
+    parentPath: `${ProductsCategory.slidingSystems}/${ProductsSubCategory.liftingSlidingSystems}/`
+  },
+  {
+    name: ProductsSubCategory.inRowSlidingSystems,
+    parent: ProductsCategory.slidingSystems,
+    parentPath: `${ProductsCategory.slidingSystems}/`,
+    image: ProductsSubCategoryImages.inRowSlidingSystems
+  },
+  {
+    name: ProductsDataInfo.pvcVekaSoftline7082InRowSlidingSystem,
+    parent: ProductsSubCategory.inRowSlidingSystems,
+    parentPath: `${ProductsCategory.slidingSystems}/${ProductsSubCategory.inRowSlidingSystems}/`
+  },
+  {
+    name: ProductsDataInfo.aluInRowSlidingSystem,
+    parent: ProductsSubCategory.inRowSlidingSystems,
+    parentPath: `${ProductsCategory.slidingSystems}/${ProductsSubCategory.inRowSlidingSystems}/`
+  },
+  {
+    name: ProductsSubCategory.accordionSlidingSystems,
+    parent: ProductsCategory.slidingSystems,
+    parentPath: `${ProductsCategory.slidingSystems}/`,
+    image: ProductsSubCategoryImages.accordionSlidingSystems
+  },
+  {
+    name: ProductsDataInfo.pvcAccordionSlidingSystems,
+    parent: ProductsSubCategory.accordionSlidingSystems,
+    parentPath: `${ProductsCategory.slidingSystems}/${ProductsSubCategory.accordionSlidingSystems}/`
+  },
+  {
+    name: ProductsDataInfo.aluSmartiaM9800AccordionSlidingSystems,
+    parent: ProductsSubCategory.accordionSlidingSystems,
+    parentPath: `${ProductsCategory.slidingSystems}/${ProductsSubCategory.accordionSlidingSystems}/`
+  },
+  {
+    name: ProductsDataInfo.aluSmartiaM19800AccordionSlidingSystems,
+    parent: ProductsSubCategory.accordionSlidingSystems,
+    parentPath: `${ProductsCategory.slidingSystems}/${ProductsSubCategory.accordionSlidingSystems}/`
+  }]
+
 export type TActionEvent = {
     type:
-        typeof SELECTED_FLEX_DIRECTION
-        | typeof SELECTED_ITEM
+         typeof SELECTED_ITEM
         | typeof GO_BACK
         | typeof CLEAR_STATE;
     payload?:
         undefined
         | string
         | TStateProducts
-        | TProductData;
+        | TProductData
+        | ProductsSubCategory;
 }

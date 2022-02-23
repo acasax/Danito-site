@@ -1,8 +1,7 @@
-import { createContext, ReactNode, useCallback, useEffect, useMemo, useState } from 'react'
+import { createContext, ReactNode, useCallback, useMemo, useState } from 'react'
 import { TNavBarContext } from './d'
 import { useSelector } from 'react-redux'
-import { _selectNavBarItems, _selectorFlexDirection } from '../../store/Products/helpers'
-import { TProductData } from '../../store/Products/d'
+import { _selectNavBarItems, _selectorFlexDirection, _selectSelectedItem } from '../../store/Products/helpers'
 import { UseProducts } from '../../hooks/Products/useProducts'
 
 export const NavBarContext = createContext({} as TNavBarContext)
@@ -10,24 +9,14 @@ export const NavBarContext = createContext({} as TNavBarContext)
 const NavBarContextContainer = ({ children }: { children: ReactNode }) => {
   /** Selectors from store */
   const selectedItems = useSelector(_selectNavBarItems)
-  /*  const subCategoryOfSelectedCategory = useSelector(_selectorSubCategoryOfSelectedCategory)
-  const productsOfSelectedSubCategory = useSelector(_selectorProductsOdSelectedSubCategory)
-  const isSelectedCategory = useSelector(_selectorIsCategorySelected)
-  const isSelectedSubCategory = useSelector(_selectorIsSubCategorySelected)
-  const path = useSelector(_selectorSelectedPath) */
   const flexDirection = useSelector(_selectorFlexDirection)
-  const selected = ''
-  /** Local state */
+  const selected = useSelector(_selectSelectedItem)
 
-  const [sideNavBarItems, setSideNavBarItems] = useState({} as TProductData[])
+  /** Local state */
   const [navRightOpen, setNavRightOpen] = useState(false)
 
   /** Functions from hook */
-  const { setFlexDirection, setSelectedItem, setGoBack } = UseProducts()
-
-  useEffect(() => {
-    setSideNavBarItems(selectedItems)
-  }, [setSideNavBarItems])
+  const { setSelectedItem, setGoBack } = UseProducts()
 
   const handleNavRightOpen = useCallback(() => {
     setNavRightOpen(!navRightOpen)
@@ -35,34 +24,31 @@ const NavBarContextContainer = ({ children }: { children: ReactNode }) => {
 
   const handleSetSelectedSideNavBarItem = useCallback((selectedName: string) => {
     setSelectedItem(selectedName)
-    setSideNavBarItems(selectedItems)
-  }, [setSelectedItem, setSideNavBarItems, selectedItems])
+  }, [setSelectedItem])
 
   const goBack = useCallback(() => {
     setGoBack()
-  }, [setGoBack])
+  }, [selectedItems])
 
   const data = useMemo(
     () => (
       {
-        setFlexDirection,
-        sideNavBarItems,
         navRightOpen,
         handleNavRightOpen,
         flexDirection,
         goBack,
         selected,
-        handleSetSelectedSideNavBarItem
+        handleSetSelectedSideNavBarItem,
+        selectedItems
       }),
     [
-      setFlexDirection,
-      sideNavBarItems,
       navRightOpen,
       handleNavRightOpen,
       flexDirection,
       goBack,
       selected,
-      handleSetSelectedSideNavBarItem
+      handleSetSelectedSideNavBarItem,
+      selectedItems
     ]
   )
   return (
