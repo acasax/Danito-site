@@ -10,6 +10,8 @@ import {
 /**
  * About Component
  *
+ * @author saxDev 02.14.2022
+ *
  * This is component for display header of sections with scale transition of text and bottom line
  *
  * header - text to display

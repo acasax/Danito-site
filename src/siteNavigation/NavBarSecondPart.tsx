@@ -8,11 +8,13 @@ import {
   NavSecondPartMenuBodyButton,
   NavSecondPartMenuBodyLink
 } from './style'
-import { NavBarContext } from './context'
+import { SiteNavigationContext } from './context'
 
 /**
  *
  * About Component
+ *
+ * @author saxDev 02.16.2022
  *
  * this component is a part od navBar of WebPage
  * functionality of this component is to navigate to primary pages
@@ -22,7 +24,7 @@ import { NavBarContext } from './context'
  * */
 
 const NavBarSecondPart = () => {
-  const { navRightOpen, handleNavRightOpen } = useContext(NavBarContext)
+  const { navRightOpen, handleNavRightOpen } = useContext(SiteNavigationContext)
   return (
         <NavSecondPartContainer>
             <NavSecondPartMenuBody>
@@ -37,9 +39,10 @@ const NavBarSecondPart = () => {
                 <NavSecondPartMenuBodyButton
                     onClick={handleNavRightOpen}>PROIZVODI</NavSecondPartMenuBodyButton>
 
+                <NavSecondPartMenuBodyLink href="/">POČETNA</NavSecondPartMenuBodyLink>
                 <NavSecondPartMenuBodyLink href="/onama">O NAMA</NavSecondPartMenuBodyLink>
-                <NavSecondPartMenuBodyLink href="/galerija"> GALERIJA</NavSecondPartMenuBodyLink>
-                <NavSecondPartMenuBodyLink href="/kontakt"> KONTAKT</NavSecondPartMenuBodyLink>
+                <NavSecondPartMenuBodyLink href="/galerija">GALERIJA</NavSecondPartMenuBodyLink>
+                <NavSecondPartMenuBodyLink href="/kontakt">KONTAKT</NavSecondPartMenuBodyLink>
             </NavSecondPartMenuBody>
         </NavSecondPartContainer>
   )

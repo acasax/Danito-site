@@ -1,10 +1,18 @@
 import styled, { css } from 'styled-components'
-import { Styles } from '../../constants/StyleConstants'
+import { Styles } from '../constants/StyleConstants'
+
+/** Style for NavBar */
+
+export const NavBarContainer = styled.div`
+  position: relative;
+  display: flex;
+  flex-direction: column;
+`
 
 /** Style for NavBarFirstPart component */
 export const NavFirstPartContainer = styled.div`
-  position: fixed;
   width: 100%;
+  position: fixed;
   top: 0;
   height: 70px;
   z-index: 1;
@@ -114,14 +122,15 @@ export const NavBarProductSideBarContainer = styled.div<{ isDisplay: boolean }>`
   opacity: 0;
 
   ${props => props.isDisplay && css`
-    width: 300px;
+    width: 320px;
     opacity: 1;
   `}
 `
 
 export const NavBarProductContainerText = styled.p`
-  font-size: 15px;
-  letter-spacing: 2px;
+  font-size: 14px;
+  letter-spacing: 1px;
+  text-align: center;
 `
 
 export const NavBarProductPartProductContainer = styled.div`
@@ -139,6 +148,8 @@ export const NavBarProductPartHeaderContainer = styled.div`
   min-width: 300px;
   width: 100%;
   font-weight: 500;
+  padding-left: 5px;
+  padding-right: 5px;
 `
 
 export const NavBarProductsPartProductsContainer = styled.div`

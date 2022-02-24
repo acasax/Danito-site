@@ -1,6 +1,16 @@
 import { useDispatch } from 'react-redux'
 import { useCallback, useMemo } from 'react'
-import { _actionGoBack, _actionProductRemove, _actionSetSelectedItem } from '../../store/Products/action'
+import { _actionGoBack, _actionProductRemove, _actionSetSelectedItem } from '../../store/NavBar/action'
+
+/**
+ *
+ * About
+ *
+ * @author saxDev 02.19.2022
+ *
+ * hook for actions on store for navigation for website
+ *
+ * */
 
 export const UseProducts = () => {
   const dispatch = useDispatch()

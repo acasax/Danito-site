@@ -114,7 +114,7 @@ export enum ProductsDataInfo {
     aluminiumWindows4 = 'ALUMINIUMSKI PROZOR 4',
 
     /** Products for Category windows SubCategory wood Aluminium Windows */
-    woodAluminiumWindows1 = 'DRVO ALUMINIUM PROZOR 1',
+    woodAluminiumWindows1 = 'ALUMINIUM DRVO PROZORI',
 
     /** Products for Category doors SubCategory pvc door */
     entrancePvcDoor = 'ULAZNA VRATE',
@@ -135,6 +135,7 @@ export enum ProductsDataInfo {
     /** Products for Category blinds SubCategory outsideBlinds */
     aluminiumOutsideBlindsRoundedOutsideBlinds = 'ALU SPOLJNE ROLETNE ZAOBLJENE',
     aluminiumOutsideBlindsPentagonalOutsideBlinds = 'ALU SPOLJNE ROLETNE PETOUGAONE',
+    subFacadeAluminiumBlinds = 'ALU PODFASADNE ROLETNE',
 
     /** Products for Category facade SubCategory fundermax facade */
     fundermaxFacadeFundermaxFacade = 'FUNDERMAX FASADE',
@@ -314,7 +315,6 @@ export const navBarData = [
     parentPath: `${ProductsCategory.blinds}/`,
     image: ProductsSubCategoryImages.outsideBlinds
   },
-
   {
     name: ProductsDataInfo.aluminiumOutsideBlindsRoundedOutsideBlinds,
     parent: ProductsSubCategory.outsideBlinds,
@@ -325,7 +325,11 @@ export const navBarData = [
     parent: ProductsSubCategory.outsideBlinds,
     parentPath: `${ProductsCategory.blinds}/${ProductsSubCategory.outsideBlinds}/`
   },
-
+  {
+    name: ProductsDataInfo.subFacadeAluminiumBlinds,
+    parent: ProductsSubCategory.outsideBlinds,
+    parentPath: `${ProductsCategory.blinds}/${ProductsSubCategory.outsideBlinds}/`
+  },
   {
     name: ProductsCategory.solomaticVenetians,
     parent: '',

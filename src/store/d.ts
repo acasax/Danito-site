@@ -1,4 +1,4 @@
-import { TStateProducts } from './Products/d'
+import { TStateProducts } from './NavBar/d'
 import { Dispatch } from 'redux'
 
 export type TReduxState = {

@@ -2,7 +2,7 @@ import { applyMiddleware, combineReducers, createStore } from 'redux'
 import thunk from 'redux-thunk'
 
 /** Reducers */
-import products from './Products'
+import products from './NavBar'
 import { composeWithDevTools } from 'redux-devtools-extension'
 
 const reducer = combineReducers({

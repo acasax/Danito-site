@@ -11,7 +11,9 @@ import FittingsIcon from '../../../constants/img/icons/Fittings.png'
 const ProductPage = ({ scroll, pageName, data }: any) => {
   useEffect(() => {
     window.scrollTo(0, 0)
+    console.log(data)
   }, [data])
+
   return (
     <div className="ProductPage">
       <div className="ProductPage__container">
