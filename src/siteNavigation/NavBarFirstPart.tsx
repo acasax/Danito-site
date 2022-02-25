@@ -1,13 +1,6 @@
 import React from 'react'
-import Logo from 'constants/img/Logo.png'
-import {
-  NavFirstPartContainer,
-  NavFirstPartLogoPart,
-  NavFirstPartLogoPartImg,
-  NavFirstPartLogoPartTextHeading,
-  NavFirstPartLogoPartTextParagraph,
-  NavFirstPartLogoPartTextPart
-} from './style'
+import { NavFirstPartContainer } from './style'
+import LogoComponent from '../components/logo'
 
 /**
  *
@@ -23,13 +16,7 @@ import {
 const NavBarFirstPart = () => {
   return (
         <NavFirstPartContainer>
-            <NavFirstPartLogoPart href="/">
-                <NavFirstPartLogoPartImg src={Logo} alt="datito logo"/>
-                <NavFirstPartLogoPartTextPart>
-                    <NavFirstPartLogoPartTextHeading>DANITO</NavFirstPartLogoPartTextHeading>
-                    <NavFirstPartLogoPartTextParagraph>construction</NavFirstPartLogoPartTextParagraph>
-                </NavFirstPartLogoPartTextPart>
-            </NavFirstPartLogoPart>
+            <LogoComponent />
         </NavFirstPartContainer>
   )
 }
