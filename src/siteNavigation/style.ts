@@ -63,7 +63,7 @@ export const NavFirstPartLogoPartTextParagraph = styled.p`
 export const NavSecondPartContainer = styled.div`
   width: 100%;
   z-index: 1;
-  background-color: rgba(255, 255, 255, 0.77);
+  background-color: rgba(255, 255, 255, 0.85);
   padding: 20px 30px;
   display: flex;
   justify-content: space-between;
@@ -122,13 +122,13 @@ export const NavBarProductSideBarContainer = styled.div<{ isDisplay: boolean }>`
   opacity: 0;
 
   ${props => props.isDisplay && css`
-    width: 320px;
+    width: 300px;
     opacity: 1;
   `}
 `
 
 export const NavBarProductContainerText = styled.p`
-  font-size: 14px;
+  font-size: 16px;
   letter-spacing: 1px;
   text-align: center;
 `
@@ -144,7 +144,7 @@ export const NavBarProductPartHeaderContainer = styled.div`
   height: 90px;
   background-color: ${Styles.Colours.PALETTE.DANITO._liteGray};
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   min-width: 300px;
   width: 100%;
   font-weight: 500;

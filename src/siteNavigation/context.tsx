@@ -26,7 +26,7 @@ const siteNavigationContextContainer = ({ children }: { children: ReactNode }) =
   const [scroll, setScroll] = useState(0)
   const [pathTo, setPathTo] = useState('false')
   const [pageName, setPageName] = useState('')
-  // const [pathToTipsPage, setPathToTipsPage] = useState('')
+  const [pathToTipsPage, setPathToTipsPage] = useState('')
   const [tipsData, setTipsData] = useState('')
   const [data, setData] = useState('')
 
@@ -55,7 +55,6 @@ const siteNavigationContextContainer = ({ children }: { children: ReactNode }) =
   const setProductPath = (value: string) => {
     const newData = ProductData.filter(product => product.name === value)
     setData(newData[0] as any)
-    console.log(newData[0])
     Object.values(ProductsDataInfo).forEach((product) => {
       if (product === value) {
         setPathTo(`/${product.replace(/\s/g, '')}`)
@@ -83,7 +82,9 @@ const siteNavigationContextContainer = ({ children }: { children: ReactNode }) =
         setTipsData,
         data,
         setData,
-        setProductPath
+        setProductPath,
+        pathToTipsPage,
+        setPathToTipsPage
       }),
     [
       navRightOpen,
@@ -102,7 +103,9 @@ const siteNavigationContextContainer = ({ children }: { children: ReactNode }) =
       setTipsData,
       data,
       setData,
-      setProductPath
+      setProductPath,
+      pathToTipsPage,
+      setPathToTipsPage
     ]
   )
   return (

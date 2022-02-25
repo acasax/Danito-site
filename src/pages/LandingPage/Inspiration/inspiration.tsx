@@ -1,5 +1,5 @@
 import React from 'react'
-import '../../../../styles/Inspiration/Inspiration.css'
+import '../../../styles/Inspiration/Inspiration.css'
 
 const Inspiration = () => {
   return (

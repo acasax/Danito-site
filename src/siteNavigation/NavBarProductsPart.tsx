@@ -29,7 +29,7 @@ const NavBarProductsPart = () => {
                 {
                     selected
                       ? <ArrowBackIosIcon onClick={goBack} sx={{ fontSize: 30 }}/>
-                      : <ArrowDownwardIcon/>
+                      : <ArrowDownwardIcon sx={{ fontSize: 30 }}/>
                 }
                 <NavBarProductContainerText>{!selected ? 'Izaberite kategoriju' : selected}</NavBarProductContainerText>
             </NavBarProductPartHeaderContainer>

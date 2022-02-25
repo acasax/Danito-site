@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import Slider from './slider/Slider'
 import LineAnimation from 'components/lineAnimation'
 import ProductWindow from './productWindow/ProductWindow'
@@ -6,17 +6,11 @@ import Inspiration from './Inspiration/inspiration'
 import CompanyPresentation from './companyPresentation/companyPresentation'
 import Tips from './tips/Tips'
 import Footer from 'components/footer'
+import { SiteNavigationContext } from 'siteNavigation/context'
 
-const LandingPage = ({
-  scroll,
-  setTipsData,
-  setPathToTipsPage,
-  setPageName,
-  pathTo,
-  setPathTo,
-  setData,
-  pageName
-}: any) => {
+const LandingPage = () => {
+  const { scroll, setTipsData, setPathToTipsPage, setPageName, pathTo, setPathTo, setData, pageName } = useContext(SiteNavigationContext)
+
   return (
         <div>
             <Slider/>
@@ -33,7 +27,7 @@ const LandingPage = ({
             <CompanyPresentation scroll={scroll} scrollY={2000}/>
             <LineAnimation header={'Tips'} scroll={scroll} scrollY={3000}/>
             <Tips setTipsData={setTipsData} setPathToTipsPage={setPathToTipsPage}/>
-            <Footer/>
+            <Footer />
         </div>
   )
 }

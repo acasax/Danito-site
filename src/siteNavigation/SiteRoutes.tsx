@@ -4,7 +4,7 @@ import Gallery from 'pages/layout/gallery'
 import About from 'pages/layout/about'
 import TipsPage from 'pages/layout/tipsPage/TipsPage'
 import Contact from 'pages/layout/contact'
-import LandingPage from 'pages/layout/LandingPage'
+import LandingPage from 'pages/LandingPage'
 import Proizvodi from 'pages/layout/products'
 import { SiteNavigationContext } from './context'
 
@@ -38,16 +38,7 @@ const SiteRoutes = () => {
                 <Contact scroll={scroll}/>
             </Route>
             <Route path="/">
-                <LandingPage
-                    setPageName={setPageName}
-                    pathTo={pathTo}
-                    setPathTo={setPathTo}
-                    setTipsData={setTipsData}
-                    setData={setData}
-                    // setPathToTipsPage={setPathToTipsPage}
-                    scroll={scroll}
-                    pageName={pageName}
-                />
+                <LandingPage />
             </Route>
         </Switch>
   )

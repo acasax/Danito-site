@@ -17,5 +17,7 @@ export type TSiteNavigationContext = {
     setTipsData: (s: any) => void,
     data: any,
     setData: (s: any) => void,
-    setProductPath: (s:string) => void
+    setProductPath: (s:string) => void,
+    pathToTipsPage: string,
+    setPathToTipsPage: (s: string) => void
 }

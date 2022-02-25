@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
-import '../../../../styles/Slider/Slider.css'
-import SliderImg from '../../../../constants/img/slider1.jpg'
+import '../../../styles/Slider/Slider.css'
+import SliderImg from '../../../constants/img/slider1.jpg'
 import { useTheme } from '@mui/material/styles'
 import SwipeableViews from 'react-swipeable-views'
 import { autoPlay } from 'react-swipeable-views-utils'
