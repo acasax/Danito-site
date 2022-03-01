@@ -21,3 +21,8 @@ export const _selectSelectedItem = createSelector(
   (state: TReduxState): TStateProducts => state.products,
   products => products.selectedItem
 )
+
+export const _selectProductSectionData = createSelector(
+  (state: TReduxState): TStateProducts => state.products,
+  products => products.productSectionData
+)

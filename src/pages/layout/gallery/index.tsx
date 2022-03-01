@@ -3,6 +3,7 @@ import '../../../styles/Galerija/Galerija.css'
 import LineAnimation from 'components/lineAnimation'
 import GalerijaFunc from './galerijaFunc'
 import ImgObjekti from '../../../constants/imgObjects/ImgObject'
+import Footer from 'components/footer'
 
 const Gallery = ({ scroll }: any) => {
   return (
@@ -61,6 +62,7 @@ const Gallery = ({ scroll }: any) => {
                     </div>
                 </div>
             </div>
+            <Footer/>
         </div>
   )
 }

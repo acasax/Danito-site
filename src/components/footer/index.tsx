@@ -19,6 +19,17 @@ import MailIcon from '@mui/icons-material/Mail'
 import LanguageIcon from '@mui/icons-material/Language'
 import LogoComponent from '../logo'
 
+/**
+ *
+ * About Component
+ *
+ * @author SaxDev 03.01.2022
+ *
+ * This is component for display important information about company.
+ * Located is on bottom of site
+ *
+ * */
+
 const Footer = () => {
   return (
         <FooterContainer>

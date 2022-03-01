@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import '../../../styles/Slider/Slider.css'
-import SliderImg from '../../../constants/img/slider1.jpg'
 import { useTheme } from '@mui/material/styles'
 import SwipeableViews from 'react-swipeable-views'
 import { autoPlay } from 'react-swipeable-views-utils'
@@ -18,6 +17,17 @@ import { _selectorAllSliderElements } from 'store/SiteData/helpers'
 import { TSliderElements } from 'store/SiteData/d'
 
 const AutoPlaySwipeableViews = autoPlay(SwipeableViews)
+
+/**
+ *
+ * About component
+ *
+ * @author SaxDev 03.01.2022
+ *
+ * This component is a Slider of image and video.
+ * On website is located on landing page just below the nav bar like first section
+ *
+ * */
 
 const Slider = () => {
   const theme = useTheme()

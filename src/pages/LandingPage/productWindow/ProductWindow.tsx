@@ -1,10 +1,12 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 import { Link } from 'react-router-dom'
 import '../../../styles/ProductWindow/ProductWindow.css'
-import { ProductData } from '../../../constants/ProductData'
 import { IMAGES, PRODUCTS } from '../../../constants/ProductNavBarData'
+import { SiteNavigationContext } from 'siteNavigation/context'
 
-const ProductWindow = ({ setPageName, setPathTo, setData }: any) => {
+const ProductWindow = () => {
+  const { setProductPath } = useContext(SiteNavigationContext)
+
   const [windowsPvc, setWindowsPvc] = useState(true)
   const [windowsWoodAluminium, setWindowsWoodAluminium] = useState(true)
   const [windowsAluminium, setWindowsAluminium] = useState(true)
@@ -96,18 +98,18 @@ const ProductWindow = ({ setPageName, setPathTo, setData }: any) => {
     }
   }
 
-  const setProductPath = (value) => {
-    const newData = ProductData.filter((product) => {
-      return product.name === value
-    })
-    setData(...newData)
-    Object.values(PRODUCTS.allProducts).forEach((product) => {
-      if (product === value) {
-        setPathTo(`/${product}`)
-        setPageName(value)
-      } else return ''
-    })
-  }
+  // const setProductPath = (value) => {
+  //   const newData = ProductData.filter((product) => {
+  //     return product.name === value
+  //   })
+  //   setData(...newData)
+  //   Object.values(PRODUCTS.allProducts).forEach((product) => {
+  //     if (product === value) {
+  //       setPathTo(`/${product}`)
+  //       setPageName(value)
+  //     } else return ''
+  //   })
+  // }
 
   return (
         <div className="ProductWindow">
@@ -126,7 +128,7 @@ const ProductWindow = ({ setPageName, setPathTo, setData }: any) => {
                               : (
                                 <div className="ProductWindow__ButtonsSecond">
                                     <Link
-                                        to={`/${PRODUCTS.allProducts.pvcProzor1}`}
+                                        to={`/${PRODUCTS.allProducts.pvcProzor1.replace(/\s/g, '')}`}
                                         onClick={(event) => setProductPath(event.currentTarget.innerHTML)}
                                     >
                                         {PRODUCTS.allProducts.pvcProzor1}

@@ -5,6 +5,7 @@ import LineAnimation from 'components/lineAnimation'
 import GalerijaFunc from '../gallery/galerijaFunc'
 import ImgCompany from '../../../constants/imgObjects/ImgCompany'
 import CompanyImgCover from '../../../constants/img/showRoom/19.jpg'
+import Footer from 'components/footer'
 
 const About = ({ scroll }: any) => {
   return (
@@ -57,6 +58,7 @@ const About = ({ scroll }: any) => {
                     </div>
                 </div>
             </div>
+            <Footer/>
         </div>
   )
 }

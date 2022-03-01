@@ -1,6 +1,7 @@
 import React from 'react'
 import '../../../styles/TipsPage/TipsPage.css'
 import LineAnimation from 'components/lineAnimation'
+import Footer from '../../../components/footer'
 
 const TipsPage = ({ tipsData, scroll }: any) => {
   return (
@@ -20,6 +21,7 @@ const TipsPage = ({ tipsData, scroll }: any) => {
                     <p className="TipsPage__datePosted">{tipsData.date}</p>
                 </div>
             </div>
+            <Footer/>
         </div>
   )
 }

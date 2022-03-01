@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import React, { useContext, useEffect } from 'react'
 import Slider from './slider/Slider'
 import LineAnimation from 'components/lineAnimation'
 import ProductWindow from './productWindow/ProductWindow'
@@ -8,30 +8,22 @@ import Tips from './tips/Tips'
 import Footer from 'components/footer'
 import { SiteNavigationContext } from 'siteNavigation/context'
 import { LandingPageContainer } from './style'
+import { useSelector } from 'react-redux'
+import { _selectProductSectionData } from 'store/SiteNavigation/helpers'
 
 const LandingPage = () => {
-  const {
-    scroll,
-    setTipsData,
-    setPathToTipsPage,
-    setPageName,
-    pathTo,
-    setPathTo,
-    setData,
-    pageName
-  } = useContext(SiteNavigationContext)
+  const { scroll, setTipsData, setPathToTipsPage } = useContext(SiteNavigationContext)
+  const productData = useSelector(_selectProductSectionData)
+
+  useEffect(() => {
+    console.log(productData)
+  }, [productData])
 
   return (
         <LandingPageContainer>
             <Slider/>
             <LineAnimation header={'Select your windows'} scroll={scroll} scrollY={200}/>
-            <ProductWindow
-                setPageName={setPageName}
-                pathTo={pathTo}
-                setPathTo={setPathTo}
-                setData={setData}
-                pageName={pageName}
-            />
+            <ProductWindow />
             <LineAnimation header={'Inspiration'} scroll={scroll} scrollY={800}/>
             <Inspiration/>
             <CompanyPresentation scroll={scroll} scrollY={2000}/>

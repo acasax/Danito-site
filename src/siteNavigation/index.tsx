@@ -5,7 +5,7 @@ import NavBarSecondPart from './NavBarSecondPart'
 import NavProduct from './NavBarProductsPart'
 import { NavBarContainer } from './style'
 import ScrollToTop from 'ScrollToTop'
-import { FlexContainer } from 'style'
+import { FlexContainer, RelativeContainer } from 'style'
 import { BrowserRouter as Router } from 'react-router-dom'
 import SiteRoutes from 'siteNavigation/SiteRoutes'
 
@@ -18,10 +18,10 @@ const SiteNavigation = () => {
                 <NavBarFirstPart/>
                 <FlexContainer>
                     <NavProduct />
-                    <div style={{ position: 'relative' }}>
+                    <RelativeContainer>
                         <NavBarSecondPart/>
                         <SiteRoutes />
-                    </div>
+                    </RelativeContainer>
                 </FlexContainer>
             </Router>
           </NavBarContainer>
