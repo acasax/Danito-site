@@ -7,12 +7,22 @@ import CompanyPresentation from './companyPresentation/companyPresentation'
 import Tips from './tips/Tips'
 import Footer from 'components/footer'
 import { SiteNavigationContext } from 'siteNavigation/context'
+import { LandingPageContainer } from './style'
 
 const LandingPage = () => {
-  const { scroll, setTipsData, setPathToTipsPage, setPageName, pathTo, setPathTo, setData, pageName } = useContext(SiteNavigationContext)
+  const {
+    scroll,
+    setTipsData,
+    setPathToTipsPage,
+    setPageName,
+    pathTo,
+    setPathTo,
+    setData,
+    pageName
+  } = useContext(SiteNavigationContext)
 
   return (
-        <div>
+        <LandingPageContainer>
             <Slider/>
             <LineAnimation header={'Select your windows'} scroll={scroll} scrollY={200}/>
             <ProductWindow
@@ -27,8 +37,8 @@ const LandingPage = () => {
             <CompanyPresentation scroll={scroll} scrollY={2000}/>
             <LineAnimation header={'Tips'} scroll={scroll} scrollY={3000}/>
             <Tips setTipsData={setTipsData} setPathToTipsPage={setPathToTipsPage}/>
-            <Footer />
-        </div>
+            <Footer/>
+        </LandingPageContainer>
   )
 }
 

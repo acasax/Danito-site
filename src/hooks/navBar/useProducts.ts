@@ -1,6 +1,6 @@
 import { useDispatch } from 'react-redux'
 import { useCallback, useMemo } from 'react'
-import { _actionGoBack, _actionProductRemove, _actionSetSelectedItem } from '../../store/NavBar/action'
+import { _actionGoBack, _actionProductRemove, _actionSetSelectedItem } from '../../store/SiteNavigation/action'
 
 /**
  *

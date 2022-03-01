@@ -1,5 +1,5 @@
 import { TActionEvent } from './d'
-import { CLEAR_STATE, GO_BACK, SELECTED_FLEX_DIRECTION, SELECTED_ITEM } from './types'
+import { CLEAR_STATE, GO_BACK, SELECTED_ITEM } from './types'
 
 export const _actionSetSelectedItem = (itemName: string): TActionEvent => ({
   type: SELECTED_ITEM,

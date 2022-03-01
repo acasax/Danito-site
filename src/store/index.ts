@@ -1,12 +1,14 @@
 import { applyMiddleware, combineReducers, createStore } from 'redux'
+import { composeWithDevTools } from 'redux-devtools-extension'
 import thunk from 'redux-thunk'
 
 /** Reducers */
-import products from './NavBar'
-import { composeWithDevTools } from 'redux-devtools-extension'
+import products from './SiteNavigation'
+import webSiteData from './SiteData'
 
 const reducer = combineReducers({
-  products
+  products,
+  webSiteData
 })
 
 /** Applying middleware */

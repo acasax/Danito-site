@@ -104,6 +104,22 @@ export const FooterSecondPartContainer = styled.div`
   flex-direction: row;
   height: 50px;
   background-color: ${Styles.Colours.PALETTE.DANITO._darkGray};
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  padding: 0 20px;
+`
+
+export const FooterSecondPartText = styled.p`
+  font-size: 13px;
+  color: ${Styles.Colours.PALETTE.DANITO._white};
+  font-weight: normal;
+`
+
+export const FooterSecondPartLinkText = styled.a`
+  font-size: 13px;
+  color: ${Styles.Colours.PALETTE.DANITO._white};
+  font-weight: bold;
+  text-decoration: none;
+  margin-right: 5px;
+  margin-left: 5px;
 `

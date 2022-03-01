@@ -4,7 +4,7 @@ import { Styles } from 'constants/StyleConstants'
 export const LiveAnimationContainer = styled.div`
   background-color: ${Styles.Colours.PALETTE.DANITO._black};
   position: relative;
-  height: 100px;
+  height: 140px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -24,6 +24,7 @@ export const LiveAnimationHeading = styled.h2<{ scaleTransform: boolean }>`
   text-align: center;
   font-size: 30px;
   transform: scale(0);
+  font-weight: normal;
 
   ${props => props.scaleTransform && css`
     transform: scale(1);

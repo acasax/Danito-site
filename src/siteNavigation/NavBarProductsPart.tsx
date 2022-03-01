@@ -17,7 +17,7 @@ import {
 } from './style'
 import { SiteNavigationContext } from './context'
 import { useSelector } from 'react-redux'
-import { _selectNavBarItems } from '../store/NavBar/helpers'
+import { _selectNavBarItems } from '../store/SiteNavigation/helpers'
 
 const NavBarProductsPart = () => {
   const selectedItems = useSelector(_selectNavBarItems)

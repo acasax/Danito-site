@@ -1,7 +1,7 @@
 import Products from './imgObjects/imgProducts'
 import PANEL from './imgObjects/ImgPanels'
 import { PRODUCTS } from './ProductNavBarData'
-import { ProductsDataInfo } from 'store/NavBar/d'
+import { ProductsDataInfo } from 'store/SiteNavigation/d'
 // @ts-ignore
 import veka70Video from './video/VEKA70.mp4'
 // @ts-ignore

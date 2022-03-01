@@ -8,7 +8,9 @@ import {
   FooterFirstPartImagePartContainer,
   FooterFirstPartRow,
   FooterFirstPartTextContainer,
-  FooterSecondPartContainer
+  FooterSecondPartContainer,
+  FooterSecondPartLinkText,
+  FooterSecondPartText
 } from './style'
 import { Styles } from 'constants/StyleConstants'
 import RoomIcon from '@mui/icons-material/Room'
@@ -122,7 +124,15 @@ const Footer = () => {
                 </FooterFirstPartRow>
             </FooterFirstPartContainer>
             <FooterSecondPartContainer>
-                <p style={{ color: 'white' }}>Radi</p>
+                <FooterSecondPartText>
+                    Copyright Danito Constraction All Right Reserved
+                    <FooterSecondPartLinkText href={'https://github.com/acasax'}>SaxDev</FooterSecondPartLinkText>
+                </FooterSecondPartText>
+                <FooterSecondPartText>
+                    <FooterSecondPartLinkText>PRIVACY POLICY</FooterSecondPartLinkText>
+                    <FooterSecondPartLinkText>COOKIES POLICY</FooterSecondPartLinkText>
+                    <FooterSecondPartLinkText>GDPR</FooterSecondPartLinkText>
+                </FooterSecondPartText>
             </FooterSecondPartContainer>
         </FooterContainer>
   )
