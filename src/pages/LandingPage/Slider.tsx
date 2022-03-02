@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import '../../../styles/Slider/Slider.css'
+import '../../styles/Slider/Slider.css'
 import { useTheme } from '@mui/material/styles'
 import SwipeableViews from 'react-swipeable-views'
 import { autoPlay } from 'react-swipeable-views-utils'
@@ -11,7 +11,7 @@ import {
   SliderElementContentContainer,
   SliderElementContentImg,
   SliderElementContentVideo
-} from '../style'
+} from './style'
 import { useSelector } from 'react-redux'
 import { _selectorAllSliderElements } from 'store/SiteData/helpers'
 import { TSliderElements } from 'store/SiteData/d'

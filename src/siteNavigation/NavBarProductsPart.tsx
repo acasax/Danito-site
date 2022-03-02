@@ -5,9 +5,6 @@ import SideNavBarItem from './sideBarItem'
 
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos'
 import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward'
-
-// @ts-ignore
-import { IMAGES, PRODUCTS } from '../constants/ProductNavBarData'
 import {
   NavBarProductContainerText,
   NavBarProductPartHeaderContainer,
@@ -18,6 +15,20 @@ import {
 import { SiteNavigationContext } from './context'
 import { useSelector } from 'react-redux'
 import { _selectNavBarItems } from '../store/SiteNavigation/helpers'
+
+/**
+ *
+ * About Component
+ *
+ * @author SaxDev 02.25.2022
+ *
+ * This component using to display side menu of products.
+ *
+ * Work Method
+ *
+ * To products layout send data to render based on selected at menu
+ *
+ * */
 
 const NavBarProductsPart = () => {
   const selectedItems = useSelector(_selectNavBarItems)

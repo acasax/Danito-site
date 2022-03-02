@@ -9,6 +9,20 @@ import { FlexContainer, RelativeContainer } from 'style'
 import { BrowserRouter as Router } from 'react-router-dom'
 import SiteRoutes from 'siteNavigation/SiteRoutes'
 
+/**
+ *
+ * About Component
+ * @author SaxDev 02.25.2022
+ *
+ * This is component main component of website.
+ * Used for navigate to page od website.
+ *
+ * Work method
+ *
+ * Render the chosen one layout.
+ *
+ * */
+
 const SiteNavigation = () => {
   return (
       <SiteNavigationContainer>

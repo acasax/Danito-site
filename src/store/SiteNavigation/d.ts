@@ -34,13 +34,6 @@ export const ProductsCategoryImages = {
   slidingSystems: require('constants/img/imgProduct/terasniSistemi.png').default
 }
 
-export const ProductSectionImages = {
-  window: require('constants/img/landingPageCategoryPart/prozori.png'),
-  door: require('constants/img/landingPageCategoryPart/vrata.png'),
-  facade: require('constants/img/landingPageCategoryPart/fasade.png'),
-  slidingSystems: require('constants/img/landingPageCategoryPart/klizni-sistemi.png')
-}
-
 export enum ProductsSubCategory {
     /** SubCategory windows */
     pvcWindow = 'PVC PROZORI',
@@ -461,6 +454,14 @@ export const navBarData = [
 ]
 
 /** Part of Product Section Landing Page */
+
+export const ProductSectionImages = {
+  window: require('constants/img/landingPageCategoryPart/prozori.png').default,
+  door: require('constants/img/landingPageCategoryPart/vrata.png').default,
+  facade: require('constants/img/landingPageCategoryPart/fasade.png').default,
+  slidingSystems: require('constants/img/landingPageCategoryPart/klizni-sistemi.png').default
+}
+
 export type TProductSectionSubCategory = {
     name: string,
     children?: string[]
@@ -486,7 +487,10 @@ export const productSectionData = [
         ]
       },
       {
-        name: ProductsSubCategory.woodAluminumWindow
+        name: ProductsSubCategory.woodAluminumWindow,
+        children: [
+          ProductsDataInfo.woodAluminiumWindows1
+        ]
       },
       {
         name: ProductsSubCategory.aluminumWindow,
@@ -551,7 +555,7 @@ export const productSectionData = [
   },
   {
     image: ProductSectionImages.slidingSystems,
-    header: ProductSectionImages.slidingSystems,
+    header: ProductsCategory.slidingSystems,
     subCategory: [
       {
         name: ProductsSubCategory.liftingSlidingSystems,
