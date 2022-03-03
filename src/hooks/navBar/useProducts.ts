@@ -4,7 +4,7 @@ import { _actionGoBack, _actionProductRemove, _actionSetSelectedItem } from '../
 
 /**
  *
- * About
+ * About hook
  *
  * @author saxDev 02.19.2022
  *

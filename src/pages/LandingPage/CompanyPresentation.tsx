@@ -1,12 +1,12 @@
 import React from 'react'
-import '../../../styles/CompanyPresentation/CompanyPresentation.css'
+import '../../styles/CompanyPresentation/CompanyPresentation.css'
 import LineAnimation from 'components/lineAnimation'
 import {
   CompanyPresentationButton,
   CompanyPresentationContainer,
   CompanyPresentationContentContainer,
   CompanyPresentationImage
-} from '../style'
+} from './style'
 
 /**
  *

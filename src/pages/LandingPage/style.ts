@@ -1,4 +1,4 @@
-import styled, { css } from 'styled-components'
+import styled, { css, keyframes } from 'styled-components'
 import { Styles } from 'constants/StyleConstants'
 
 /** Style for main part of landing page */
@@ -219,4 +219,156 @@ export const CompanyPresentationButton = styled.div<{ scaleTransform: boolean }>
   ${props => props.scaleTransform && css`
     transform: scale(1);
   `}
+`
+
+/** Style for tips part of landing page */
+
+export const TipsContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  padding: 50px 0;
+  background-color: ${Styles.Colours.PALETTE.DANITO._black};
+`
+
+const fadeIn = keyframes`
+  from {
+    transform: scale(.25);
+    opacity: 0;
+  }
+
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+`
+
+const fadeOut = keyframes`
+  from {
+    transform: scale(1);
+    opacity: 1;
+  }
+
+  to {
+    transform: scale(.25);
+    opacity: 0;
+  }
+`
+
+export const CardContainer = styled.div<{ out: boolean }>`
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: ${Styles.Colours.PALETTE.DANITO._white};
+  max-height: 500px;
+  max-width: 400px;
+  padding: 10px;
+  border-radius: 10px;
+
+  visibility: ${props => props.out ? 'visible' : 'hidden'};
+  animation: ${props => props.out ? fadeIn : fadeOut} 1s linear;
+  transition: visibility 1s linear;
+`
+
+export const CardImageContainer = styled.div`
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+`
+
+export const CardImage = styled.img`
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+`
+
+export const CardContentContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  padding: 15px 0;
+`
+
+export const CardHeaderContainer = styled.div`
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: ${Styles.Colours.PALETTE.DANITO._yellow};
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: ${Styles.Colours.PALETTE.DANITO._yellow};
+  min-height: 50px;
+  padding: 20px 0;
+`
+
+export const CardHeaderText = styled.h3`
+  font-size: 20px;
+  font-weight: bold;
+  color: ${Styles.Colours.PALETTE.DANITO._black};
+  text-align: center;
+  margin: 0;
+`
+
+export const CardTextContainer = styled.div`
+  display: flex;
+  align-items: center;
+  width: 100%;
+`
+
+export const CardText = styled.p`
+  text-align: left;
+  font-size: 17px;
+  font-weight: normal;
+  color: ${Styles.Colours.PALETTE.DANITO._black};
+`
+
+export const CardFooter = styled.div`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  min-height: 50px;
+`
+
+export const CardFooterMoreButton = {
+  textDecoration: 'none',
+  borderWidth: 2,
+  borderStyle: 'solid',
+  borderColor: Styles.Colours.PALETTE.DANITO._yellow,
+  paddingHorizontal: 4,
+  paddingVertical: 20,
+  color: Styles.Colours.PALETTE.DANITO._black,
+  fontSize: 15,
+  fontWeight: 600,
+  height: 30,
+  minWidth: 80,
+  display: 'flex',
+  justifyContent: 'center',
+  alignItems: 'center'
+}
+
+export const CardFooterDateContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  background-color: ${Styles.Colours.PALETTE.DANITO._darkGray};
+  height: 35px;
+  width: 150px;
+`
+
+export const CardFooterDateText = styled.p`
+  font-size: 15px;
+  color: ${Styles.Colours.PALETTE.DANITO._white};
 `
