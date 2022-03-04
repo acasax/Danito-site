@@ -1,9 +1,8 @@
 import styled from 'styled-components'
 import { Styles } from 'constants/StyleConstants'
-import '~react-image-gallery/styles/scss/image-gallery.scss'
 
 export const AboutContainer = styled.div`
-  background-color: ${Styles.Colours.PALETTE.DANITO._liteGray};
+  background-color: ${Styles.Colours.PALETTE.DANITO._white};
 `
 
 export const AboutHeaderImageContainer = styled.div`
@@ -38,6 +37,7 @@ export const AboutHeaderText = styled.h1`
 
 export const AboutInfoContainer = styled.div`
   display: flex;
+  flex: 1;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -58,6 +58,22 @@ export const AboutInfoText = styled.p`
   width: 100%;
 `
 
+export const AboutInfoRow = styled.div`
+  display: flex;
+  flex-direction: row;
+`
+
 export const AboutInfoGalleyContainer = styled.div`
   display: flex;
+  flex: 1;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  max-height: 800px;
+  padding: 50px 30px;
 `
+
+export const AboutInfoCarousel = {
+  maxHeight: 667,
+  maxWidth: 1000
+}
