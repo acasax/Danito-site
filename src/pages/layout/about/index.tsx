@@ -1,28 +1,56 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import '../../../styles/About/About.css'
-
 import LineAnimation from 'components/lineAnimation'
-import GalerijaFunc from '../gallery/galerijaFunc'
-import ImgCompany from '../../../constants/imgObjects/ImgCompany'
 import CompanyImgCover from '../../../constants/img/showRoom/19.jpg'
 import Footer from 'components/footer'
+import {
+  AboutContainer,
+  AboutContentContainer,
+  AboutHeaderImage,
+  AboutHeaderImageContainer,
+  AboutHeaderText,
+  AboutHeaderTextContainer,
+  AboutInfoContainer,
+  AboutInfoGalleyContainer,
+  AboutInfoHeaderText,
+  AboutInfoText
+} from './style'
+import { SiteNavigationContext } from 'siteNavigation/context'
+import ImageGallery from 'react-image-gallery'
 
-const About = ({ scroll }: any) => {
+const images = [
+  {
+    original: 'https://picsum.photos/id/1018/1000/600/',
+    thumbnail: 'https://picsum.photos/id/1018/250/150/'
+  },
+  {
+    original: 'https://picsum.photos/id/1015/1000/600/',
+    thumbnail: 'https://picsum.photos/id/1015/250/150/'
+  },
+  {
+    original: 'https://picsum.photos/id/1019/1000/600/',
+    thumbnail: 'https://picsum.photos/id/1019/250/150/'
+  }
+]
+
+const AboutLayout = () => {
+  const { scroll } = useContext(SiteNavigationContext)
+
   return (
-        <div className="About">
-            <div className="About__container">
-                <img className="About__coverImg" src={CompanyImgCover} alt="company img cover"/>
-                <LineAnimation header="DANITO" scroll={scroll} scrollY={300}/>
-                <p className="About__headerText">
-                    Jedinstvena prilika da na jednom mestu pogledate salon i prozivodnju i shvatite da smo mi najbolji u
-                    svom
-                    poslu.
-                </p>
-                <div className="About__companyProfile">
-                    <div className="About__aboutDanito">
-                        <div className="About__companyInfo">
-                            <h2>O nama</h2>
-                            <p>
+        <AboutContainer>
+            <AboutHeaderImageContainer>
+                <AboutHeaderImage src={CompanyImgCover} alt="company img cover"/>
+            </ AboutHeaderImageContainer>
+            <LineAnimation header="O NAMA" scroll={scroll} scrollY={300}/>
+            <AboutContentContainer>
+                <AboutHeaderTextContainer>
+                    <AboutHeaderText>
+                         Jedinstvena prilika da na jednom mestu pogledate salon i prozivodnju
+                        i shvatite da smo mi najbolji u svom poslu.
+                    </AboutHeaderText>
+                </AboutHeaderTextContainer>
+                        <AboutInfoContainer>
+                            <AboutInfoText>
                                 Danito je firma koja se razvijala prethodnih 15 godina i postala jedna od najvećih firmi
                                 u zemlji. Nas
                                 cilj od samog osnivanja pa do danas je ostao isti, a to je da svaki nas proizvod mora
@@ -36,31 +64,27 @@ const About = ({ scroll }: any) => {
                                 usluge ne obuhvata samo dobar proizvod već i potpuno ispunjenje rokova, dogovora i
                                 pojedinačnih želja
                                 kupaca.
-                            </p>
-                            <p>
+                            </AboutInfoText>
+                            <AboutInfoText>
                                 Svaki naš kupac ima mogućnost da se uveri u kvalitet koji pružamo obilaskom kroz salon i
                                 proizvodnju,
                                 gde će mu detaljno biti prikazne sve sitnice koje čine da prozor od dobrog pređe u
                                 najbolji.
-                            </p>
-                        </div>
-                        <GalerijaFunc className="AboutPage" ImgObjekti={ImgCompany.company1}/>
-                    </div>
-                    <div className="About__aboutDanito">
-                        <div className="About__companyInfo">
-                            <h2>Klijenti</h2>
-                            <p>
+                            </AboutInfoText>
+                            <AboutInfoGalleyContainer>
+                                <ImageGallery items={images} />
+                            </AboutInfoGalleyContainer>
+                            <AboutInfoHeaderText>Klijenti</AboutInfoHeaderText>
+                            <AboutInfoText>
                                 Možemo se pohvaliti činjenicom da se većina naših poslova zasniva na preporuci
                                 zadovoljnih kupaca i
                                 poslovanjem bez reklamacije.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+                            </AboutInfoText>
+                        </AboutInfoContainer>
+            </AboutContentContainer>
             <Footer/>
-        </div>
+        </AboutContainer>
   )
 }
 
-export default About
+export default AboutLayout

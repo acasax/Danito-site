@@ -155,6 +155,9 @@ export enum ProductsDataInfo {
     pvcAccordionSlidingSystems = 'ALU - HARMONIKA',
     aluSmartiaM9800AccordionSlidingSystems = 'ALU - SMARTIA M9800',
     aluSmartiaM19800AccordionSlidingSystems = 'ALU - SMARTIA M19800',
+
+    /** Products for Category solomatic Venetians */
+    solomaticVenetians = 'SOLOMATIC VENECIJANERI',
 }
 
 /** Init NavBar data */

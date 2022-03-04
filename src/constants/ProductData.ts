@@ -1497,5 +1497,43 @@ export const ProductData = [
       third:
                 'Koristimo najkvalitetniji nemacki okov renomiranog proizvođača ROTO, koji osigurava kvalitetno zatvaranje i poseduje veći stepen protivprovalne zaštite.'
     }
+  },
+  {
+    name: ProductsDataInfo.solomaticVenetians,
+    nameHeader: PRODUCTS.allProducts.solomaticVenecijaneri,
+    imgCover: Products.solomaticVenecijaneri,
+    optionHeaders: {
+      first: 'OPIS',
+      second: 'PREDNOSTI'
+    },
+    imgVideo: 'https://www.drutex.eu/media/_upload/produkty/zaluzje_fasadowe/zaluzje_drutex.mp4',
+    options: {
+      firstOption: [
+        'Fasadne roletne su savršeno rešenje koje štiti prostorije pri primeni velikih zastakljivanja.',
+        'Tehnicki detalji',
+        'beskonačna regulacija ugla nagiba lamela',
+        'Somfi motori kao standard sa funkcijom preopterećenja',
+        'detekcijom prepreka i opcijom upravljanja pomoću pametnog telefona ili tableta',
+        'mogućnost primene vanredne kontrole koja predstavlja važnu zaštitu od požara',
+        'letvice širine 80 mm (C 80) sa uvijenim stranama',
+        'širok spektar boja letvica',
+        'primena skrivenih ili samonosećih vodilica',
+        'proizvod je dostupan u fasadnom ili montažnom sistemu.'
+      ],
+      secondOption: ['Fasadne vezice su savršeno rešenje koje štiti prostorije od preteranog sunčevog zračenja.',
+        'Osiguravaju veću privatnost kao i značajno smanjenje računa za struju za klimatizaciju.',
+        'Mogućnost povezivanja sa meteorološkim stanicama što značajno povećava udobnost korišćenja..',
+        'U skladu sa aktuelnim arhitektonskim trendovima koji se opredeljuju za veliko zastakljivanje.',
+        'Proizvod se može koristiti u postojećim zgradama i zgradama u izgradnji.',
+        'Mogućnost integracije sa pametnim kontrolnim sistemima koji omogućavaju upravljanje njima pomoću tableta ili pametnog telefona.'],
+      thirdOption: {
+        opis: 'Tralala'
+      }
+    },
+    material: {
+      first: 'tralala.',
+      second: 'tralala.',
+      third: 'tralala.'
+    }
   }
 ]

@@ -9,7 +9,7 @@ import { SiteNavigationContext } from 'siteNavigation/context'
 import { LandingPageContainer } from './style'
 
 const LandingPage = () => {
-  const { scroll, setTipsData, setPathToTipsPage } = useContext(SiteNavigationContext)
+  const { scroll } = useContext(SiteNavigationContext)
 
   return (
         <LandingPageContainer>
