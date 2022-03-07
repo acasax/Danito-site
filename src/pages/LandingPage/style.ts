@@ -88,6 +88,9 @@ export const ProductPartElementContainer = styled.div`
   align-items: center;
   justify-content: space-around;
   position: relative;
+  border-style: solid;
+  border-width: 1px;
+  border-color: ${Styles.Colours.PALETTE.DANITO._darkGray};
 `
 
 export const ProductPartElementImageContainer = styled.div`
@@ -101,6 +104,7 @@ export const ProductPartElementImageContainer = styled.div`
 
 export const ProductPartElementImage = styled.img`
   width: 80%;
+  max-height: 350px;
 `
 
 export const ProductPartChildrenContainer = styled.div`
