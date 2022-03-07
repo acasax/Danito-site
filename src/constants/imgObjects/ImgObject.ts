@@ -13,6 +13,7 @@ const Objects = {
     require('../img/objects/1/11.jpg').default,
     require('../img/objects/1/12.jpg').default,
     require('../img/objects/1/13.jpg').default,
+    require('../img/objects/1/13.jpg').default,
     require('../img/objects/1/14.jpg').default
   ],
   object2: [
@@ -28,6 +29,7 @@ const Objects = {
     require('../img/objects/2/10.jpg').default,
     require('../img/objects/2/11.jpg').default,
     require('../img/objects/2/12.jpg').default,
+    require('../img/objects/2/13.jpg').default,
     require('../img/objects/2/13.jpg').default,
     require('../img/objects/2/14.jpg').default
   ],
@@ -48,7 +50,6 @@ const Objects = {
     require('../img/objects/3/14.jpg').default,
     require('../img/objects/3/15.jpg').default,
     require('../img/objects/3/16.jpg').default,
-    require('../img/objects/3/17.jpg').default,
     require('../img/objects/3/18.jpg').default,
     require('../img/objects/3/19.jpg').default,
     require('../img/objects/3/20.jpg').default,
@@ -74,7 +75,6 @@ const Objects = {
     require('../img/objects/4/17.jpg').default,
     require('../img/objects/4/18.jpg').default,
     require('../img/objects/4/19.jpg').default,
-    require('../img/objects/4/20.jpg').default,
     require('../img/objects/4/21.jpg').default
   ]
 }
