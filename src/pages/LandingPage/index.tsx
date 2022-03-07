@@ -8,6 +8,17 @@ import Footer from 'components/footer'
 import { SiteNavigationContext } from 'siteNavigation/context'
 import { LandingPageContainer } from './style'
 
+/**
+ *
+ * About component
+ *
+ * @author SaxDev 02.27.2022
+ *
+ * This component is a main layout of website.
+ * In this component nested a section component slider, product windows, company presentation, Tips, Footer
+ *
+ * */
+
 const LandingPage = () => {
   const { scroll } = useContext(SiteNavigationContext)
 

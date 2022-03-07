@@ -25,6 +25,17 @@ import 'react-gallery-carousel/dist/index.css'
 import { useSelector } from 'react-redux'
 import { _selectAllAboutInfoCarouselImages, _selectAllAboutTechnologyCarouselImages } from 'store/SiteData/helpers'
 
+/**
+ *
+ * About component
+ *
+ * @author SaxDev 03.07.2022
+ *
+ * This is display about page layout.
+ * This component have two part about us and technology part.
+ *
+ * */
+
 const AboutLayout = () => {
   const { scroll } = useContext(SiteNavigationContext)
   const images = useSelector(_selectAllAboutInfoCarouselImages)

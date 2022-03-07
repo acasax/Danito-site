@@ -22,6 +22,21 @@ import {
 import { SiteNavigationContext } from 'siteNavigation/context'
 import { UseTips } from 'hooks/siteData/useTips'
 
+/**
+ *
+ * About component
+ *
+ * @author SaxDev 02.26.2022
+ *
+ * This component is a section of tips card.
+ * This component is a part of landing page.
+ *
+ * Work methode
+ *
+ * On click on read more, set tips header to store and go to single tips page with data of tips.
+ *
+ * */
+
 const Tips = () => {
   const { scroll } = useContext(SiteNavigationContext)
   const tipsData = useSelector(_selectorAllTipsData)

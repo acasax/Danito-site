@@ -1,6 +1,6 @@
 import React, { useContext } from 'react'
 import { Route, Switch } from 'react-router-dom'
-import GalleryLayout from 'pages/layout/gallery'
+import GalleryLayout from 'pages/gallery'
 import About from 'pages/about'
 import TipsPage from 'pages/layout/tipsPage/TipsPage'
 import Contact from 'pages/layout/contact'
