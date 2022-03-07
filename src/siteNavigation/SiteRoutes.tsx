@@ -1,7 +1,7 @@
 import React, { useContext } from 'react'
 import { Route, Switch } from 'react-router-dom'
-import Gallery from 'pages/layout/gallery'
-import About from 'pages/layout/about'
+import GalleryLayout from 'pages/layout/gallery'
+import About from 'pages/about'
 import TipsPage from 'pages/layout/tipsPage/TipsPage'
 import Contact from 'pages/layout/contact'
 import LandingPage from 'pages/LandingPage'
@@ -26,7 +26,7 @@ const SiteRoutes = () => {
                 <Proizvodi data={data} pageName={pageName} scroll={scroll}/>
             </Route>
             <Route path="/galerija">
-                <Gallery scroll={scroll}/>
+                <GalleryLayout scroll={scroll}/>
             </Route>
             <Route path="/onama">
                 <About/>

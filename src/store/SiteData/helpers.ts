@@ -7,12 +7,12 @@ export const _selectorAllSliderElements = createSelector(
   webSiteData => webSiteData.sliderElements
 )
 
-export const _selectorAllTipsData = createSelector(
+export const _selectAllAboutInfoCarouselImages = createSelector(
   (state: TReduxState): TStateWebSiteData => state.webSiteData,
-  webSiteData => webSiteData.tipsData
+  webSiteData => webSiteData.aboutInfoImages
 )
 
-export const _selectorSelectedTip = createSelector(
+export const _selectAllAboutTechnologyCarouselImages = createSelector(
   (state: TReduxState): TStateWebSiteData => state.webSiteData,
-  webSiteData => webSiteData.selectedTip
+  webSiteData => webSiteData.aboutTechnologyImages
 )

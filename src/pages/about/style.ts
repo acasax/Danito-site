@@ -58,6 +58,19 @@ export const AboutInfoText = styled.p`
   width: 100%;
 `
 
+export const AboutInfoTextHeaderContainer = styled.div`
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  text-align: left;
+`
+
+export const AboutInfoTextHeader = styled.h3`
+  font-size: 18px;
+  font-weight: bold;
+  color: ${Styles.Colours.PALETTE.DANITO._darkGray}
+`
+
 export const AboutInfoRow = styled.div`
   display: flex;
   flex-direction: row;

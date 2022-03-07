@@ -1,9 +1,16 @@
-import { SliderElements, TActionEvent, TipsInitData, TStateWebSiteData, TTipsData } from './d'
+import {
+  AboutInfoCarouselImages,
+  AboutTechnologyCarouselImages,
+  SliderElements,
+  TActionEvent,
+  TStateWebSiteData
+} from './d'
+import { CLEAR_STATE } from './types'
 
 const init = {
   sliderElements: SliderElements,
-  tipsData: TipsInitData,
-  selectedTip: {} as TTipsData
+  aboutInfoImages: AboutInfoCarouselImages,
+  aboutTechnologyImages: AboutTechnologyCarouselImages
 } as TStateWebSiteData
 
 export default (
@@ -11,19 +18,13 @@ export default (
   action: TActionEvent = {} as TActionEvent
 ) => {
   switch (action.type) {
-    case 'CLEAR_STATE': {
+    case CLEAR_STATE: {
       return {
         ...state,
         sliderElements: undefined
       }
     }
-    case 'SET_SELECTED_TIPS': {
-      const selectedTip = init.tipsData.filter(x => action.payload === x.header)
-      return {
-        ...state,
-        selectedTip: selectedTip
-      }
-    }
+
     default:
       return state
   }

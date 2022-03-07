@@ -1,2 +1,1 @@
 export const CLEAR_STATE = 'CLEAR_STATE'
-export const SET_SELECTED_TIPS = 'SET_SELECTED_TIPS'

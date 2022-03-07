@@ -9,7 +9,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #272727;
 }
 
 .Galerija__objekat {
@@ -23,6 +22,7 @@
   justify-content: center;
   width: 70%;
   margin: auto;
+
   .Images {
     .Images__rowImg {
       width: 250px;
@@ -34,6 +34,7 @@
     }
   }
 }
+
 .Galerija__objekatInformacije {
   text-align: center;
 

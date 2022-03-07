@@ -26,3 +26,13 @@ export const _selectProductSectionData = createSelector(
   (state: TReduxState): TStateProducts => state.products,
   products => products.productSectionData
 )
+
+export const _selectorAllTipsData = createSelector(
+  (state: TReduxState): TStateProducts => state.products,
+  products => products.tipsData
+)
+
+export const _selectorSelectedTip = createSelector(
+  (state: TReduxState): TStateProducts => state.products,
+  products => products.selectedTip
+)

@@ -3,9 +3,9 @@ import '../../../styles/TipsPage/TipsPage.css'
 import LineAnimation from 'components/lineAnimation'
 import Footer from '../../../components/footer'
 import { useSelector } from 'react-redux'
-import { _selectorSelectedTip } from 'store/SiteData/helpers'
+import { _selectorSelectedTip } from 'store/SiteNavigation/helpers'
 
-const TipsPage = ({ tipsData, scroll }: any) => {
+const TipsPage = ({ scroll }: any) => {
   const selectedTip = useSelector(_selectorSelectedTip)
 
   return (

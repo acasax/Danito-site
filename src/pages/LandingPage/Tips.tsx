@@ -3,7 +3,7 @@ import { useContext } from 'react'
 import '../../styles/Tips/Tips.css'
 import { Link } from 'react-router-dom'
 import { useSelector } from 'react-redux'
-import { _selectorAllTipsData } from 'store/SiteData/helpers'
+import { _selectorAllTipsData } from 'store/SiteNavigation/helpers'
 import {
   CardContainer,
   CardContentContainer,
@@ -23,7 +23,7 @@ import { SiteNavigationContext } from 'siteNavigation/context'
 import { UseTips } from 'hooks/siteData/useTips'
 
 const Tips = () => {
-  const { scroll, setTipsData } = useContext(SiteNavigationContext)
+  const { scroll } = useContext(SiteNavigationContext)
   const tipsData = useSelector(_selectorAllTipsData)
   const { setSelectedTip } = UseTips()
 

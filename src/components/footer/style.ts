@@ -5,6 +5,8 @@ import FooterBackground from 'constants/img/footerBackground.png'
 export const FooterContainer = styled.div`
   display: flex;
   flex-direction: column;
+  flex: 1;
+  width: 100%;
 `
 
 export const FooterFirstPartContainer = styled.div`
