@@ -1,10 +1,11 @@
-import { navBarData, ProductsCategory, TActionEvent, TProductData, TStateProducts } from './d'
+import { navBarData, ProductsCategory, productSectionData, TActionEvent, TProductData, TStateProducts } from './d'
 
 const init = {
   data: navBarData,
   selectedItems: navBarData.filter(x => x.parent === '') as TProductData[],
   selectedItem: '',
-  flexDirection: 'row'
+  flexDirection: 'row',
+  productSectionData: productSectionData
 } as TStateProducts
 
 export default (

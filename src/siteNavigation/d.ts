@@ -1,4 +1,4 @@
-import { TProductData } from 'store/NavBar/d'
+import { TProductData } from 'store/SiteNavigation/d'
 
 export type TSiteNavigationContext = {
     handleNavRightOpen: () => void,

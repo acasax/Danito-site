@@ -19,7 +19,7 @@ import { SiteNavigationContext } from './context'
  * */
 
 const SiteRoutes = () => {
-  const { pathTo, data, pageName, tipsData, scroll, setPageName, setPathTo, setTipsData, setData } = useContext(SiteNavigationContext)
+  const { pathTo, data, pageName, tipsData, scroll } = useContext(SiteNavigationContext)
   return (
         <Switch>
             <Route path={pathTo}>
@@ -29,7 +29,7 @@ const SiteRoutes = () => {
                 <Gallery scroll={scroll}/>
             </Route>
             <Route path="/onama">
-                <About scroll={scroll}/>
+                <About/>
             </Route>
             <Route path="/TipsPage">
                 <TipsPage scroll={scroll} tipsData={tipsData}/>

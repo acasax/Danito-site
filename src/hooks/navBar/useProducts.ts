@@ -1,10 +1,10 @@
 import { useDispatch } from 'react-redux'
 import { useCallback, useMemo } from 'react'
-import { _actionGoBack, _actionProductRemove, _actionSetSelectedItem } from '../../store/NavBar/action'
+import { _actionGoBack, _actionProductRemove, _actionSetSelectedItem } from '../../store/SiteNavigation/action'
 
 /**
  *
- * About
+ * About hook
  *
  * @author saxDev 02.19.2022
  *

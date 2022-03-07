@@ -1,10 +1,10 @@
 import { createContext, ReactNode, useCallback, useEffect, useMemo, useState } from 'react'
 import { TSiteNavigationContext } from './d'
 import { useSelector } from 'react-redux'
-import { _selectNavBarItems, _selectorFlexDirection, _selectSelectedItem } from 'store/NavBar/helpers'
+import { _selectNavBarItems, _selectorFlexDirection, _selectSelectedItem } from 'store/SiteNavigation/helpers'
 import { UseProducts } from '../hooks/navBar/useProducts'
 import { ProductData } from 'constants/ProductData'
-import { ProductsDataInfo } from 'store/NavBar/d'
+import { ProductsDataInfo } from 'store/SiteNavigation/d'
 
 export const SiteNavigationContext = createContext({} as TSiteNavigationContext)
 

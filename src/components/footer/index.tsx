@@ -8,7 +8,9 @@ import {
   FooterFirstPartImagePartContainer,
   FooterFirstPartRow,
   FooterFirstPartTextContainer,
-  FooterSecondPartContainer
+  FooterSecondPartContainer,
+  FooterSecondPartLinkText,
+  FooterSecondPartText
 } from './style'
 import { Styles } from 'constants/StyleConstants'
 import RoomIcon from '@mui/icons-material/Room'
@@ -16,6 +18,17 @@ import LocalPhoneIcon from '@mui/icons-material/LocalPhone'
 import MailIcon from '@mui/icons-material/Mail'
 import LanguageIcon from '@mui/icons-material/Language'
 import LogoComponent from '../logo'
+
+/**
+ *
+ * About Component
+ *
+ * @author SaxDev 03.01.2022
+ *
+ * This is component for display important information about company.
+ * Located is on bottom of site
+ *
+ * */
 
 const Footer = () => {
   return (
@@ -122,7 +135,15 @@ const Footer = () => {
                 </FooterFirstPartRow>
             </FooterFirstPartContainer>
             <FooterSecondPartContainer>
-                <p style={{ color: 'white' }}>Radi</p>
+                <FooterSecondPartText>
+                    Copyright Danito Constraction All Right Reserved
+                    <FooterSecondPartLinkText href={'https://github.com/acasax'}>SaxDev</FooterSecondPartLinkText>
+                </FooterSecondPartText>
+                <FooterSecondPartText>
+                    <FooterSecondPartLinkText>PRIVACY POLICY</FooterSecondPartLinkText>
+                    <FooterSecondPartLinkText>COOKIES POLICY</FooterSecondPartLinkText>
+                    <FooterSecondPartLinkText>GDPR</FooterSecondPartLinkText>
+                </FooterSecondPartText>
             </FooterSecondPartContainer>
         </FooterContainer>
   )

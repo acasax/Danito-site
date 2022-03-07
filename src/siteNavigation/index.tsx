@@ -5,9 +5,23 @@ import NavBarSecondPart from './NavBarSecondPart'
 import NavProduct from './NavBarProductsPart'
 import { NavBarContainer } from './style'
 import ScrollToTop from 'ScrollToTop'
-import { FlexContainer } from 'style'
+import { FlexContainer, RelativeContainer } from 'style'
 import { BrowserRouter as Router } from 'react-router-dom'
 import SiteRoutes from 'siteNavigation/SiteRoutes'
+
+/**
+ *
+ * About Component
+ * @author SaxDev 02.25.2022
+ *
+ * This is component main component of website.
+ * Used for navigate to page od website.
+ *
+ * Work method
+ *
+ * Render the chosen one layout.
+ *
+ * */
 
 const SiteNavigation = () => {
   return (
@@ -18,10 +32,10 @@ const SiteNavigation = () => {
                 <NavBarFirstPart/>
                 <FlexContainer>
                     <NavProduct />
-                    <div style={{ position: 'relative' }}>
+                    <RelativeContainer>
                         <NavBarSecondPart/>
                         <SiteRoutes />
-                    </div>
+                    </RelativeContainer>
                 </FlexContainer>
             </Router>
           </NavBarContainer>

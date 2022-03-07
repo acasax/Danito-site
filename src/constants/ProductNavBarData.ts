@@ -100,6 +100,8 @@ export const PRODUCTS = {
     aluVisoglide: 'ALU - USKOCNO KLIZNI',
     pvcSmatiaM9800: 'PVC - HRAMONIKA',
     pvcSmatiaM1980: 'ALU - SMARTIA M9800',
-    panoramaAliplast: 'ALU - SMARTIA M19800'
+    panoramaAliplast: 'ALU - SMARTIA M19800',
+    // Solomatik venecijaneri
+    solomaticVenecijaneri: 'SOLOMATIK VENECIJANERI'
   }
 }

@@ -1,13 +1,73 @@
-import windowImg4 from './img/imgProduct/ImgPageProduct/WindowImg4.jpg'
-import windowImg5 from './img/imgProduct/ImgPageProduct/WindowImg5.jpg'
-import windowImg6 from './img/imgProduct/ImgPageProduct/WindowImg6.jpg'
+import SliderImg from 'constants/img/slider1.jpg'
+import { CLEAR_STATE, SET_SELECTED_TIPS } from './types'
 
-export const TipsData = [
+export type TStateWebSiteData = {
+    sliderElements: TSliderElements[],
+    tipsData: TTipsData[],
+    selectedTip: TTipsData
+}
+
+/** Part of data for slider */
+export type TSliderElements = {
+    label: string,
+    path: string,
+    isVideo: boolean
+}
+
+export const SliderElements = [
   {
-    coverImg: windowImg4,
-    name: 'How to choose the best door?',
+    label: 'Slider image 1',
+    path: SliderImg,
+    isVideo: false
+  },
+  {
+    label: 'Slider image 1',
+    path: 'https://www.drutex.eu/media/_upload/glowna_strona/banery/20171219/video/1920x940-firma-animacja.mp4',
+    isVideo: true
+  },
+  {
+    label: 'Slider image 2',
+    path: 'https://www.drutex.eu/media/_upload/promocja_mb86/animacja_mb86si_promocjana_www__2.mp4',
+    isVideo: true
+  },
+  {
+    label: 'Slider image 3',
+    path: 'https://www.drutex.eu/media/_upload/glowna_strona/banery/animacja_iglo_energy_classic_masa_antracyt.mp4',
+    isVideo: true
+  },
+  {
+    label: 'Slider image 4',
+    path: 'https://www.drutex.eu/media/_upload/glowna_strona/banery/20171219/video/1920x940-rolety.mp4',
+    isVideo: true
+  },
+  {
+    label: 'Slider image 5',
+    path: 'https://www.drutex.eu/media/_upload/praca_handlowiec_2021.jpg',
+    isVideo: false
+  }
+]
+
+/** Part of data for tips */
+export type TTipsData = {
+    coverImg: string | any,
+    header: string,
+    date: Date | string,
+    landingPageText: string,
+    text: string[]
+}
+
+export const TipsImages = {
+  tip1: require('constants/img/imgProduct/ImgPageProduct/WindowImg4.jpg').default,
+  tip2: require('constants/img/imgProduct/ImgPageProduct/WindowImg5.jpg').default,
+  tip3: require('constants/img/imgProduct/ImgPageProduct/WindowImg6.jpg').default
+}
+
+export const TipsInitData = [
+  {
+    coverImg: TipsImages.tip1,
+    header: 'How to choose the best door?',
     date: new Date().toDateString(),
-    header:
+    landingPageText:
             'Front door is not just a key technical element of the building, but also the showcase of the house. Therefore, it must be pretty, and at the same time it should fulfil our expectations regarding sound insulation, energy efficiency and safety.',
     text: [
       'DRUTEX has been one of the best-known Polish brands for ages, trusted by clients and business partners worldwide. The position has been confirmed by the Superbrands title, given by a globally famous organization that for 25 years has been awarding the strongest most trusted brands in the world. The research was conducted in over 90 countries,  selecting the winners in each market and presenting their success stories. DRUTEX has gained the title for the seventh time.',
@@ -17,10 +77,10 @@ export const TipsData = [
     ]
   },
   {
-    coverImg: windowImg5,
-    name: 'Are you tired of noise from the street or the yard? Choosing the right windows will help!',
+    coverImg: TipsImages.tip2,
+    header: 'Are you tired of noise from the street or the yard? Choosing the right windows will help!',
     date: new Date().toDateString(),
-    header:
+    landingPageText:
             'Drutex SA yet again has been awarded the European Medal in the prestigious contest held by Business Centre Club. This time the leading European producer of woodwork was appreciated for the MB-86 SI aluminum doors.',
     text: [
       'This is 32nd edition of the initiative organized by BCC under the aegis of the European Economic and Social Committee which aims at awarding and promoting top-quality products and services offered by companies operating in Poland. This year Drutex received the award for the MB-86 SI aluminum doors. Previously, the Bytów company was awarded i.a. for PVC windows, Iglo-HS lift and slide doors, as well as innovative system of roller shutters. ',
@@ -31,10 +91,10 @@ export const TipsData = [
     ]
   },
   {
-    coverImg: windowImg6,
-    name: 'A good window is not all. How about the installation?',
+    coverImg: TipsImages.tip3,
+    header: 'A good window is not all. How about the installation?',
     date: new Date().toDateString(),
-    header:
+    landingPageText:
             ' DRUTEX yet again has been awarded the Golden Construction Brand of the Year in the ‘elevation windows’ category. The title is given basing on national surveys conducted among construction companies in Poland.',
     text: [
       'The award given to Drutex is a confirmation of top quality of the products, as well as their reputation and popularity with professionals. The Golden Construction Brand ranking has therefore an exceptionally unique and impartial character, and it has been considered to be the most reliable in Poland for many years.',
@@ -45,3 +105,13 @@ export const TipsData = [
     ]
   }
 ]
+
+export type TActionEvent = {
+    type:
+        typeof CLEAR_STATE
+        | typeof SET_SELECTED_TIPS;
+    payload?:
+        undefined
+        | TTipsData
+        | string
+}

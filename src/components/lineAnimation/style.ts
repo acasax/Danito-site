@@ -1,13 +1,17 @@
 import styled, { css } from 'styled-components'
 import { Styles } from 'constants/StyleConstants'
 
-export const LiveAnimationContainer = styled.div`
+export const LiveAnimationContainer = styled.div<{ backgroundColor?: string }>`
   background-color: ${Styles.Colours.PALETTE.DANITO._black};
   position: relative;
-  height: 100px;
+  height: 140px;
   display: flex;
   align-items: center;
   justify-content: center;
+
+  ${props => props.backgroundColor && css`
+    background-color: ${props.backgroundColor};
+  `}
 `
 
 export const LiveAnimationContentContainer = styled.div`
@@ -18,15 +22,20 @@ export const LiveAnimationContentContainer = styled.div`
   transition: 2s ease-in-out;
 `
 
-export const LiveAnimationHeading = styled.h2<{ scaleTransform: boolean }>`
+export const LiveAnimationHeading = styled.h2<{ scaleTransform: boolean, fontSize?: number }>`
   color: ${Styles.Colours.WHITE};
   transition: 1s;
   text-align: center;
   font-size: 30px;
   transform: scale(0);
+  font-weight: normal;
 
   ${props => props.scaleTransform && css`
     transform: scale(1);
+  `}
+
+  ${props => props.fontSize && css`
+    font-size: ${props.fontSize}px;
   `}
 `
 

@@ -34,7 +34,9 @@ const Products = {
   aluVisoglide: require('../img/imgProduct/ImgPageProduct/TerasniSistemi9.jpg').default,
   pvcSmatiaM9800: require('../img/imgProduct/ImgPageProduct/TerasniSistemi10.jpg').default,
   pvcSmatiaM1980: require('../img/imgProduct/ImgPageProduct/TerasniSistemi11.jpg').default,
-  panoramaAliplast: require('../img/imgProduct/ImgPageProduct/TerasniSistemi12.jpg').default
+  panoramaAliplast: require('../img/imgProduct/ImgPageProduct/TerasniSistemi12.jpg').default,
+
+  solomaticVenecijaneri: require('../img/imgProduct/ImgPageProduct/SolomatikVenecijaneri.jpg').default
 }
 
 export default Products

@@ -7,6 +7,7 @@ import Options from './Options'
 import ProfileIcon from '../../../constants/img/icons/Profile.png'
 import GlassIcon from '../../../constants/img/icons/Glass.png'
 import FittingsIcon from '../../../constants/img/icons/Fittings.png'
+import Footer from 'components/footer'
 
 const ProductPage = ({ scroll, pageName, data }: any) => {
   useEffect(() => {
@@ -80,6 +81,7 @@ const ProductPage = ({ scroll, pageName, data }: any) => {
             )
           : null}
       </div>
+      <Footer/>
     </div>
   )
 }

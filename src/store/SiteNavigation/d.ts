@@ -4,17 +4,8 @@ export type TStateProducts = {
     data: TProductData[],
     selectedItems: TProductData[],
     selectedItem: string,
-    flexDirection: string
-}
-
-export type TProductCategory = {
-    categoryInfo: TProductData,
-    subCategory: TProductSubCategory[],
-}
-
-export type TProductSubCategory = {
-    subCategoryInfo: TProductData,
-    products: TProductData[],
+    flexDirection: string,
+    productSectionData: TProductSectionData[]
 }
 
 export type TProductData = {
@@ -22,6 +13,7 @@ export type TProductData = {
     parent: string,
     parentPath: string,
     image?: string | any,
+    productSectionImage?: string | any
 }
 
 export enum ProductsCategory {
@@ -163,8 +155,12 @@ export enum ProductsDataInfo {
     pvcAccordionSlidingSystems = 'ALU - HARMONIKA',
     aluSmartiaM9800AccordionSlidingSystems = 'ALU - SMARTIA M9800',
     aluSmartiaM19800AccordionSlidingSystems = 'ALU - SMARTIA M19800',
+
+    /** Products for Category solomatic Venetians */
+    solomaticVenetians = 'SOLOMATIC VENECIJANERI',
 }
 
+/** Init NavBar data */
 export const navBarData = [
   {
     name: ProductsCategory.window,
@@ -457,11 +453,143 @@ export const navBarData = [
     name: ProductsDataInfo.aluSmartiaM19800AccordionSlidingSystems,
     parent: ProductsSubCategory.accordionSlidingSystems,
     parentPath: `${ProductsCategory.slidingSystems}/${ProductsSubCategory.accordionSlidingSystems}/`
-  }]
+  }
+]
+
+/** Part of Product Section Landing Page */
+
+export const ProductSectionImages = {
+  window: require('constants/img/landingPageCategoryPart/prozori.png').default,
+  door: require('constants/img/landingPageCategoryPart/vrata.png').default,
+  facade: require('constants/img/landingPageCategoryPart/fasade.png').default,
+  slidingSystems: require('constants/img/landingPageCategoryPart/klizni-sistemi.png').default
+}
+
+export type TProductSectionSubCategory = {
+    name: string,
+    children?: string[]
+}
+
+export type TProductSectionData = {
+    image: string | any,
+    header: string,
+    subCategory: TProductSectionSubCategory[]
+}
+
+/** Init data od Product Section Landing Page */
+export const productSectionData = [
+  {
+    image: ProductSectionImages.window,
+    header: ProductsCategory.window,
+    subCategory: [
+      {
+        name: ProductsSubCategory.pvcWindow,
+        children: [
+          ProductsDataInfo.veka70,
+          ProductsDataInfo.veka82
+        ]
+      },
+      {
+        name: ProductsSubCategory.woodAluminumWindow,
+        children: [
+          ProductsDataInfo.woodAluminiumWindows1
+        ]
+      },
+      {
+        name: ProductsSubCategory.aluminumWindow,
+        children: [
+          ProductsDataInfo.aluminiumWindows1,
+          ProductsDataInfo.aluminiumWindows2,
+          ProductsDataInfo.aluminiumWindows3,
+          ProductsDataInfo.aluminiumWindows4
+        ]
+      }
+    ]
+  },
+  {
+    image: ProductSectionImages.door,
+    header: ProductsCategory.door,
+    subCategory: [
+      {
+        name: ProductsSubCategory.pvcDoor,
+        children: [
+          ProductsDataInfo.entrancePvcDoor,
+          ProductsDataInfo.partitionPvcDoor
+        ]
+      },
+      {
+        name: ProductsSubCategory.aluminumDoor,
+        children: [
+          ProductsDataInfo.profileWithoutThermalBreakAluminiumDoor,
+          ProductsDataInfo.profileWithThermalBreakAluminiumDoor,
+          ProductsDataInfo.doorWithHiddenWingAluminiumDoor
+        ]
+      },
+      {
+        name: ProductsSubCategory.securityDoor,
+        children: [ProductsDataInfo.customSecurityDoor]
+      }
+    ]
+  },
+  {
+    image: ProductSectionImages.facade,
+    header: ProductsCategory.facade,
+    subCategory: [
+      {
+        name: ProductsSubCategory.fundermaxFacade,
+        children: [ProductsDataInfo.fundermaxFacadeFundermaxFacade]
+      },
+      {
+        name: ProductsSubCategory.ventilatedAlucobondFacade,
+        children: [ProductsDataInfo.ventilatedAlucobondFacadeVentilatedAlucobondFacade]
+      },
+      {
+        name: ProductsSubCategory.glassFacade,
+        children: [
+          ProductsDataInfo.structuralGlassFacade,
+          ProductsDataInfo.standardGlassFacade
+        ]
+      },
+      {
+        name: ProductsSubCategory.graniteFacade,
+        children: [ProductsDataInfo.granitFacadeGranitFacade]
+      }
+    ]
+  },
+  {
+    image: ProductSectionImages.slidingSystems,
+    header: ProductsCategory.slidingSystems,
+    subCategory: [
+      {
+        name: ProductsSubCategory.liftingSlidingSystems,
+        children: [
+          ProductsDataInfo.pvcVekaSlideSlidingSystem,
+          ProductsDataInfo.aluUltraSlideSlidingSystem,
+          ProductsDataInfo.aluVgPlusSlidingSystem
+        ]
+      },
+      {
+        name: ProductsSubCategory.inRowSlidingSystems,
+        children: [
+          ProductsDataInfo.pvcVekaSoftline7082InRowSlidingSystem,
+          ProductsDataInfo.aluInRowSlidingSystem
+        ]
+      },
+      {
+        name: ProductsSubCategory.accordionSlidingSystems,
+        children: [
+          ProductsDataInfo.pvcAccordionSlidingSystems,
+          ProductsDataInfo.aluSmartiaM9800AccordionSlidingSystems,
+          ProductsDataInfo.aluSmartiaM19800AccordionSlidingSystems
+        ]
+      }
+    ]
+  }
+]
 
 export type TActionEvent = {
     type:
-         typeof SELECTED_ITEM
+        typeof SELECTED_ITEM
         | typeof GO_BACK
         | typeof CLEAR_STATE;
     payload?:
