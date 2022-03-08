@@ -14,6 +14,20 @@ import {
   GalleyCarouselSelectedImageContainerIcons
 } from './style'
 
+/**
+ *
+ *  About Component
+ *
+ *  @author SaxDev 03.08.2022
+ *
+ *  This component is a display image on galley layout.
+ *
+ *  work method
+ *
+ *  list of image on click open big image on carousel
+ *
+ * */
+
 const GalleyCarousel = ({ ImgObj, ImgHeader }: any) => {
   const [open, setOpen] = useState(false)
   const [imageModal, setImageModal] = useState('')
@@ -53,7 +67,7 @@ const GalleyCarousel = ({ ImgObj, ImgHeader }: any) => {
                     <GalleyCarouselImage
                         onClick={() => setModalOpenImage(item.src)}
                         key={key}
-                        alt="objekti images" // Dodaj u opjekat iz stora opis slika
+                        alt={item.name}// Dodaj u opjekat iz stora opis slika
                         src={item.src}
                     />
               )
