@@ -1,10 +1,11 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import '../../styles/Galerija/Galerija.css'
 import GalleyCarousel from './galleyCarousel'
-import ImgObjekti from '../../constants/imgObjects/ImgObject'
 import Footer from 'components/footer'
 import { GalleryContentContainer, GalleryElementContainer, GalleyContainer } from './style'
 import LineAnimation from '../../components/lineAnimation'
+import { useSelector } from 'react-redux'
+import { _selectorGalleyContent } from 'store/SiteData/helpers'
 
 /**
  *
@@ -18,25 +19,25 @@ import LineAnimation from '../../components/lineAnimation'
  * */
 
 const GalleryLayout = ({ scroll }: any) => {
+  const galleryContent = useSelector(_selectorGalleyContent)
+
+  useEffect(() => {
+    console.log(galleryContent)
+  })
+
   return (
         <GalleyContainer>
             <GalleryContentContainer>
-                <GalleryElementContainer>
-                    <LineAnimation header={'Žarka Zrenjanina 114, 26000 Pančevo'} scroll={scroll} scrollY={0}/>
-                    <GalleyCarousel ImgObjekti={ImgObjekti.object1}/>
-                </GalleryElementContainer>
-                <GalleryElementContainer>
-                    <LineAnimation header={'Žarka Zrenjanina 114, 26000 Pančevo'} scroll={scroll} scrollY={550}/>
-                    <GalleyCarousel ImgObjekti={ImgObjekti.object2}/>
-                </GalleryElementContainer>
-                <GalleryElementContainer>
-                    <LineAnimation header={'Žarka Zrenjanina 114, 26000 Pančevo'} scroll={scroll} scrollY={1100}/>
-                    <GalleyCarousel ImgObjekti={ImgObjekti.object3}/>
-                </GalleryElementContainer>
-                <GalleryElementContainer>
-                    <LineAnimation header={'Žarka Zrenjanina 114, 26000 Pančevo'} scroll={scroll} scrollY={1750}/>
-                    <GalleyCarousel ImgObjekti={ImgObjekti.object4}/>
-                </GalleryElementContainer>
+                {
+                    galleryContent.map((item, key) => {
+                      return (
+                            <GalleryElementContainer key={key}>
+                                <LineAnimation header={item.header} scroll={scroll} scrollY={item.scroll}/>
+                                <GalleyCarousel ImgObj={item.images} ImgHeader={item.header}/>
+                            </GalleryElementContainer>
+                      )
+                    })
+                }
             </GalleryContentContainer>
             <Footer/>
         </GalleyContainer>

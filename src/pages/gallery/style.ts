@@ -53,6 +53,7 @@ export const GalleyCarouselImage = styled.img`
 
 export const GalleyCarouselSelectedImageContainer = styled.div`
   display: flex;
+  justify-content: center;
   position: fixed;
   top: 250px;
   z-index: 100000;
@@ -80,3 +81,20 @@ export const GalleyCarouselSelectedImageContainerIconsLeft = {
 export const GalleyCarouselSelectedImageContainerIconsRight = {
   right: 70
 }
+
+export const GalleryCarouselSelectedImageHeaderContainer = styled.div`
+  position: absolute;
+  bottom: 0;
+  width: 900px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.50);
+`
+
+export const GalleryCarouselSelectedImageHeader = styled.h1`
+  font-size: 20px;
+  color: ${Styles.Colours.PALETTE.DANITO._white};
+  text-transform: uppercase;
+  letter-spacing: 2px;
+`

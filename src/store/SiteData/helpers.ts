@@ -16,3 +16,8 @@ export const _selectAllAboutTechnologyCarouselImages = createSelector(
   (state: TReduxState): TStateWebSiteData => state.webSiteData,
   webSiteData => webSiteData.aboutTechnologyImages
 )
+
+export const _selectorGalleyContent = createSelector(
+  (state: TReduxState): TStateWebSiteData => state.webSiteData,
+  webSiteData => webSiteData.galleryContent
+)

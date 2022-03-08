@@ -30,7 +30,6 @@ const Objects = {
     require('../img/objects/2/11.jpg').default,
     require('../img/objects/2/12.jpg').default,
     require('../img/objects/2/13.jpg').default,
-    require('../img/objects/2/13.jpg').default,
     require('../img/objects/2/14.jpg').default
   ],
   object3: [

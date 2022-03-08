@@ -1,6 +1,6 @@
 import {
   AboutInfoCarouselImages,
-  AboutTechnologyCarouselImages,
+  AboutTechnologyCarouselImages, GalleryContent,
   SliderElements,
   TActionEvent,
   TStateWebSiteData
@@ -10,7 +10,8 @@ import { CLEAR_STATE } from './types'
 const init = {
   sliderElements: SliderElements,
   aboutInfoImages: AboutInfoCarouselImages,
-  aboutTechnologyImages: AboutTechnologyCarouselImages
+  aboutTechnologyImages: AboutTechnologyCarouselImages,
+  galleryContent: GalleryContent
 } as TStateWebSiteData
 
 export default (
