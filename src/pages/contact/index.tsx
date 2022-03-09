@@ -1,8 +1,8 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import Footer from 'components/footer'
 import { ContactFormContainer, ContactLayoutContainer, ContactMapContainer } from './style'
-import { AboutHeaderImage, AboutHeaderImageContainer } from '../../about/style'
-import LineAnimation from '../../../components/lineAnimation'
+import { AboutHeaderImage, AboutHeaderImageContainer } from '../about/style'
+import LineAnimation from '../../components/lineAnimation'
 import CompanyImgCover from 'constants/img/showRoom/19.jpg'
 import Container from '@mui/material/Container'
 import Box from '@mui/material/Box'
@@ -10,8 +10,10 @@ import Grid from '@mui/material/Grid'
 import TextField from '@mui/material/TextField'
 import { TextareaAutosize } from '@mui/material'
 import Button from '@mui/material/Button'
+import { SiteNavigationContext } from 'siteNavigation/context'
 
-const Contact = ({ scroll }: any) => {
+const Contact = () => {
+  const { scroll } = useContext(SiteNavigationContext)
   return (
         <ContactLayoutContainer>
             <AboutHeaderImageContainer>
@@ -28,7 +30,8 @@ const Contact = ({ scroll }: any) => {
                           alignItems: 'center'
                         }}
                     >
-                        <Box component="form" noValidate onSubmit={() => {}} sx={{ mt: 3, width: '100%' }}>
+                        <Box component="form" noValidate onSubmit={() => {
+                        }} sx={{ mt: 3, width: '100%' }}>
                             <Grid item xs={12} sx={{ mb: 2 }}>
                                 <TextField
                                     required

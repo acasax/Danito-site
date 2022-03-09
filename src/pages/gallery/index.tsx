@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useContext, useEffect } from 'react'
 import '../../styles/Galerija/Galerija.css'
 import GalleyCarousel from './galleyCarousel'
 import Footer from 'components/footer'
@@ -6,6 +6,7 @@ import { GalleryContentContainer, GalleryElementContainer, GalleyContainer } fro
 import LineAnimation from '../../components/lineAnimation'
 import { useSelector } from 'react-redux'
 import { _selectorGalleyContent } from 'store/SiteData/helpers'
+import { SiteNavigationContext } from 'siteNavigation/context'
 
 /**
  *
@@ -18,12 +19,9 @@ import { _selectorGalleyContent } from 'store/SiteData/helpers'
  *
  * */
 
-const GalleryLayout = ({ scroll }: any) => {
+const GalleryLayout = () => {
   const galleryContent = useSelector(_selectorGalleyContent)
-
-  useEffect(() => {
-    console.log(galleryContent)
-  })
+  const { scroll } = useContext(SiteNavigationContext)
 
   return (
         <GalleyContainer>

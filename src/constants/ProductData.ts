@@ -158,11 +158,11 @@ export const ProductData = [
         ]
       }
     },
-    material: [
-      'Possibility to choose between profiles with three installation depths: 68mm, 78mm, 88 mm in two types of wood: three- or four-layer solid square timber: meranti 450+, pine, with aluminum clad on the outside.',
-      'Glass – Two-glass package with 24 mm thickness in standard, with thermal transmittance coefficient Ug = 1,0 W/(m2K) according to the PN-EN674 norm; the possibility to apply two- or three-glass packages For Duoline 68 mm – max. glass package thickness is 46 mm with thermal transmittance coefficient - Ug = 0,6 W/(m2K). For Duoline 78 mm – max. glass package thickness is 50 mm with thermal transmittance coefficient - Ug = 0,5 W/(m2K) For Duoline 88 mm – max. glass package thickness is 50 mm with thermal transmittance coefficient - Ug = 0,5 W/(m2K) The possibility to apply glass with enhanced sound insulation, tempered, safety, anti-burglary, ornament or solar protective..',
-      'Maco Multi Matic KS; Two anti-burglary bolts in standard; window is equipped with sash lifting and handle missplacement blockage*; micro-ventilation in a slot **; optionally hidden hinges.'
-    ]
+    material: {
+      first: 'Possibility to choose between profiles with three installation depths: 68mm, 78mm, 88 mm in two types of wood: three- or four-layer solid square timber: meranti 450+, pine, with aluminum clad on the outside.',
+      second: 'Glass – Two-glass package with 24 mm thickness in standard, with thermal transmittance coefficient Ug = 1,0 W/(m2K) according to the PN-EN674 norm; the possibility to apply two- or three-glass packages For Duoline 68 mm – max. glass package thickness is 46 mm with thermal transmittance coefficient - Ug = 0,6 W/(m2K). For Duoline 78 mm – max. glass package thickness is 50 mm with thermal transmittance coefficient - Ug = 0,5 W/(m2K) For Duoline 88 mm – max. glass package thickness is 50 mm with thermal transmittance coefficient - Ug = 0,5 W/(m2K) The possibility to apply glass with enhanced sound insulation, tempered, safety, anti-burglary, ornament or solar protective..',
+      third: 'Maco Multi Matic KS; Two anti-burglary bolts in standard; window is equipped with sash lifting and handle missplacement blockage*; micro-ventilation in a slot **; optionally hidden hinges.'
+    }
   },
   {
     name: ProductsDataInfo.aluminiumWindows1,

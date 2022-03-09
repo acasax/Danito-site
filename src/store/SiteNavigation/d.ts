@@ -120,7 +120,7 @@ export enum ProductsDataInfo {
     doorWithHiddenWingAluminiumDoor = 'VRATA SA SKRIVENIM KRILOM',
 
     /** Products for Category doors SubCategory security door */
-    customSecurityDoor = 'SIGURNOSNA VRATA PO MERI',
+    customSecurityDoor = 'SIGURNOSNA VRATA',
 
     /** Products for Category blinds SubCategory inside Blinds */
     aluminiumThermoBlindsInsideBlinds = 'ALU TERMO ROLENTE',

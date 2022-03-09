@@ -3,9 +3,9 @@ import { Route, Switch } from 'react-router-dom'
 import GalleryLayout from 'pages/gallery'
 import About from 'pages/about'
 import TipsPage from 'pages/layout/tipsPage/TipsPage'
-import Contact from 'pages/layout/contact'
+import Contact from 'pages/contact'
 import LandingPage from 'pages/LandingPage'
-import Proizvodi from 'pages/layout/products'
+import ProductPage from 'pages/layout/products'
 import { SiteNavigationContext } from './context'
 
 /**
@@ -23,10 +23,10 @@ const SiteRoutes = () => {
   return (
         <Switch>
             <Route path={pathTo}>
-                <Proizvodi data={data} pageName={pageName} scroll={scroll}/>
+                <ProductPage data={data} pageName={pageName} scroll={scroll}/>
             </Route>
             <Route path="/galerija">
-                <GalleryLayout scroll={scroll}/>
+                <GalleryLayout/>
             </Route>
             <Route path="/onama">
                 <About/>
@@ -35,10 +35,10 @@ const SiteRoutes = () => {
                 <TipsPage scroll={scroll} tipsData={tipsData}/>
             </Route>
             <Route path="/kontakt">
-                <Contact scroll={scroll}/>
+                <Contact/>
             </Route>
             <Route path="/">
-                <LandingPage />
+                <LandingPage/>
             </Route>
         </Switch>
   )
