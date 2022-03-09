@@ -1,11 +1,11 @@
-import React, { useEffect } from 'react'
+import React, { useContext, useEffect } from 'react'
 
 import LineAnimation from 'components/lineAnimation'
 import Options from './Options'
 
-import ProfileIcon from '../../../constants/img/icons/Profile.png'
-import GlassIcon from '../../../constants/img/icons/Glass.png'
-import FittingsIcon from '../../../constants/img/icons/Fittings.png'
+import ProfileIcon from '../../constants/img/icons/Profile.png'
+import GlassIcon from '../../constants/img/icons/Glass.png'
+import FittingsIcon from '../../constants/img/icons/Fittings.png'
 import Footer from 'components/footer'
 import {
   ProductPageCharacteristicItemContainer,
@@ -27,12 +27,13 @@ import {
   ProductPageProfileInfo,
   ProductPageProfilesContainer
 } from './style'
+import { SiteNavigationContext } from 'siteNavigation/context'
 
-const ProductPage = ({ scroll, pageName, data }: any) => {
+const ProductPage = () => {
+  const { scroll, data, pageName } = useContext(SiteNavigationContext)
   useEffect(() => {
     window.scrollTo(0, 0)
-    console.log(data)
-  }, [data])
+  }, [])
 
   return (
         <ProductPageContainer>

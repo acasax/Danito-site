@@ -23,8 +23,8 @@ export enum ProductsCategory {
     door = 'VRATA',
     blinds = 'ROLETNA',
     solomaticVenetians = 'SOLOMATIC VENECIJANERI',
-    facade = 'FASADE',
     slidingSystems = 'KLIZNI SISTEMI',
+    facade = 'FASADE',
 }
 
 export const ProductsCategoryImages = {
@@ -335,64 +335,6 @@ export const navBarData = [
     image: ProductsCategoryImages.solomaticVenetians
   },
   {
-    name: ProductsCategory.facade,
-    parent: '',
-    parentPath: '',
-    image: ProductsCategoryImages.facade
-  },
-
-  {
-    name: ProductsSubCategory.fundermaxFacade,
-    parent: ProductsCategory.facade,
-    parentPath: `${ProductsCategory.facade}/`,
-    image: ProductsSubCategoryImages.fundermaxFacade
-  },
-  {
-    name: ProductsDataInfo.fundermaxFacadeFundermaxFacade,
-    parent: ProductsSubCategory.fundermaxFacade,
-    parentPath: `${ProductsCategory.facade}/${ProductsSubCategory.fundermaxFacade}/`
-  },
-  {
-    name: ProductsSubCategory.ventilatedAlucobondFacade,
-    parent: ProductsCategory.facade,
-    parentPath: `${ProductsCategory.facade}/`,
-    image: ProductsSubCategoryImages.ventilatedAlucobondFacade
-  },
-  {
-    name: ProductsDataInfo.ventilatedAlucobondFacadeVentilatedAlucobondFacade,
-    parent: ProductsSubCategory.ventilatedAlucobondFacade,
-    parentPath: `${ProductsCategory.facade}/${ProductsSubCategory.ventilatedAlucobondFacade}/`
-  },
-
-  {
-    name: ProductsSubCategory.glassFacade,
-    parent: ProductsCategory.facade,
-    parentPath: `${ProductsCategory.facade}/`,
-    image: ProductsSubCategoryImages.glassFacade
-  },
-  {
-    name: ProductsDataInfo.structuralGlassFacade,
-    parent: ProductsSubCategory.glassFacade,
-    parentPath: `${ProductsCategory.facade}/${ProductsSubCategory.glassFacade}/`
-  },
-  {
-    name: ProductsDataInfo.standardGlassFacade,
-    parent: ProductsSubCategory.glassFacade,
-    parentPath: `${ProductsCategory.facade}/${ProductsSubCategory.glassFacade}/`
-  },
-  {
-    name: ProductsSubCategory.graniteFacade,
-    parent: ProductsCategory.facade,
-    parentPath: `${ProductsCategory.facade}/`,
-    image: ProductsSubCategoryImages.graniteFacade
-  },
-
-  {
-    name: ProductsDataInfo.granitFacadeGranitFacade,
-    parent: ProductsSubCategory.graniteFacade,
-    parentPath: `${ProductsCategory.facade}/${ProductsSubCategory.graniteFacade}/`
-  },
-  {
     name: ProductsCategory.slidingSystems,
     parent: '',
     parentPath: '',
@@ -455,7 +397,66 @@ export const navBarData = [
     name: ProductsDataInfo.aluSmartiaM19800AccordionSlidingSystems,
     parent: ProductsSubCategory.accordionSlidingSystems,
     parentPath: `${ProductsCategory.slidingSystems}/${ProductsSubCategory.accordionSlidingSystems}/`
+  },
+  {
+    name: ProductsCategory.facade,
+    parent: '',
+    parentPath: '',
+    image: ProductsCategoryImages.facade
+  },
+
+  {
+    name: ProductsSubCategory.fundermaxFacade,
+    parent: ProductsCategory.facade,
+    parentPath: `${ProductsCategory.facade}/`,
+    image: ProductsSubCategoryImages.fundermaxFacade
+  },
+  {
+    name: ProductsDataInfo.fundermaxFacadeFundermaxFacade,
+    parent: ProductsSubCategory.fundermaxFacade,
+    parentPath: `${ProductsCategory.facade}/${ProductsSubCategory.fundermaxFacade}/`
+  },
+  {
+    name: ProductsSubCategory.ventilatedAlucobondFacade,
+    parent: ProductsCategory.facade,
+    parentPath: `${ProductsCategory.facade}/`,
+    image: ProductsSubCategoryImages.ventilatedAlucobondFacade
+  },
+  {
+    name: ProductsDataInfo.ventilatedAlucobondFacadeVentilatedAlucobondFacade,
+    parent: ProductsSubCategory.ventilatedAlucobondFacade,
+    parentPath: `${ProductsCategory.facade}/${ProductsSubCategory.ventilatedAlucobondFacade}/`
+  },
+
+  {
+    name: ProductsSubCategory.glassFacade,
+    parent: ProductsCategory.facade,
+    parentPath: `${ProductsCategory.facade}/`,
+    image: ProductsSubCategoryImages.glassFacade
+  },
+  {
+    name: ProductsDataInfo.structuralGlassFacade,
+    parent: ProductsSubCategory.glassFacade,
+    parentPath: `${ProductsCategory.facade}/${ProductsSubCategory.glassFacade}/`
+  },
+  {
+    name: ProductsDataInfo.standardGlassFacade,
+    parent: ProductsSubCategory.glassFacade,
+    parentPath: `${ProductsCategory.facade}/${ProductsSubCategory.glassFacade}/`
+  },
+  {
+    name: ProductsSubCategory.graniteFacade,
+    parent: ProductsCategory.facade,
+    parentPath: `${ProductsCategory.facade}/`,
+    image: ProductsSubCategoryImages.graniteFacade
+  },
+
+  {
+    name: ProductsDataInfo.granitFacadeGranitFacade,
+    parent: ProductsSubCategory.graniteFacade,
+    parentPath: `${ProductsCategory.facade}/${ProductsSubCategory.graniteFacade}/`
   }
+
 ]
 
 /** Part of Product Section Landing Page */

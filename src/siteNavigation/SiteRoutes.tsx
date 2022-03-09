@@ -2,10 +2,10 @@ import React, { useContext } from 'react'
 import { Route, Switch } from 'react-router-dom'
 import GalleryLayout from 'pages/gallery'
 import About from 'pages/about'
-import TipsPage from 'pages/layout/tipsPage/TipsPage'
+import TipsPageLayout from 'pages/tipsPage'
 import Contact from 'pages/contact'
 import LandingPage from 'pages/LandingPage'
-import ProductPage from 'pages/layout/products'
+import ProductPage from 'pages/products'
 import { SiteNavigationContext } from './context'
 
 /**
@@ -16,14 +16,21 @@ import { SiteNavigationContext } from './context'
  *
  * this is component which use reactDom lib to navigate to component
  *
+ *
+ * Update Component
+ *
+ * @author saxDev 03.09.2022
+ *
+ * Now all layout use data from context and don't must send with props
+ *
  * */
 
 const SiteRoutes = () => {
-  const { pathTo, data, pageName, tipsData, scroll } = useContext(SiteNavigationContext)
+  const { pathTo } = useContext(SiteNavigationContext)
   return (
         <Switch>
             <Route path={pathTo}>
-                <ProductPage data={data} pageName={pageName} scroll={scroll}/>
+                <ProductPage />
             </Route>
             <Route path="/galerija">
                 <GalleryLayout/>
@@ -32,7 +39,7 @@ const SiteRoutes = () => {
                 <About/>
             </Route>
             <Route path="/TipsPage">
-                <TipsPage scroll={scroll} tipsData={tipsData}/>
+                <TipsPageLayout />
             </Route>
             <Route path="/kontakt">
                 <Contact/>
