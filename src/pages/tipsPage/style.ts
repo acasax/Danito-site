@@ -51,7 +51,6 @@ export const TipsPageDatePosted = styled.p`
   padding: 5px;
   border-radius: 5px;
   font-size: 12px;
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
 `
