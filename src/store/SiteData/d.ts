@@ -1,4 +1,8 @@
-import SliderImg from 'constants/img/slider1.jpg'
+import SliderImg1 from 'constants/slider/1.jpg'
+import SliderImg2 from 'constants/slider/2.jpg'
+import SliderImg3 from 'constants/slider/3.jpg'
+import SliderImg4 from 'constants/slider/4.jpg'
+import SliderImg5 from 'constants/slider/5.jpg'
 import { CLEAR_STATE } from './types'
 
 export type TStateWebSiteData = {
@@ -18,32 +22,32 @@ export type TSliderElements = {
 export const SliderElements = [
   {
     label: 'Slider image 1',
-    path: SliderImg,
+    path: SliderImg1,
     isVideo: false
   },
   {
-    label: 'Slider image 1',
-    path: 'https://www.drutex.eu/media/_upload/glowna_strona/banery/20171219/video/1920x940-firma-animacja.mp4',
-    isVideo: true
-  },
-  {
     label: 'Slider image 2',
-    path: 'https://www.drutex.eu/media/_upload/promocja_mb86/animacja_mb86si_promocjana_www__2.mp4',
-    isVideo: true
+    path: SliderImg2,
+    isVideo: false
   },
   {
     label: 'Slider image 3',
+    path: SliderImg3,
+    isVideo: false
+  },
+  {
+    label: 'Slider image 4',
     path: 'https://www.drutex.eu/media/_upload/glowna_strona/banery/animacja_iglo_energy_classic_masa_antracyt.mp4',
     isVideo: true
   },
   {
-    label: 'Slider image 4',
-    path: 'https://www.drutex.eu/media/_upload/glowna_strona/banery/20171219/video/1920x940-rolety.mp4',
-    isVideo: true
+    label: 'Slider image 5',
+    path: SliderImg4,
+    isVideo: false
   },
   {
-    label: 'Slider image 5',
-    path: 'https://www.drutex.eu/media/_upload/praca_handlowiec_2021.jpg',
+    label: 'Slider image 6',
+    path: SliderImg5,
     isVideo: false
   }
 ]

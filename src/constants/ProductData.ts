@@ -363,9 +363,9 @@ export const ProductData = [
     video: PvcUlaznaVrata,
     imgVideo: 'https://www.drutex.eu/media/_upload/produkty/drzwi-iglo5/video/drzwi_iglo_5.mp4',
     optionHeaders: {
-      first: 'ULAZNA VRATA/OPIS',
-      second: 'ULAZNA VRATA/PREDNOSTI',
-      third: 'ULAZNA VRATA/DEKORI'
+      first: 'OPIS',
+      second: 'PREDNOSTI',
+      third: 'DEKORI'
     },
     options: {
       firstOption: [

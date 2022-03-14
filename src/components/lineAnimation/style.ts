@@ -28,7 +28,8 @@ export const LiveAnimationHeading = styled.h2<{ scaleTransform: boolean, fontSiz
   text-align: center;
   font-size: 30px;
   transform: scale(0);
-  font-weight: normal;
+  font-weight: bolder;
+  letter-spacing: 3px;
 
   ${props => props.scaleTransform && css`
     transform: scale(1);

@@ -27,7 +27,7 @@ const LandingPage = () => {
             <Slider/>
             <LineAnimation header={'Select your windows'} scroll={scroll} scrollY={200}/>
             <ProductWindow/>
-            <CompanyPresentation scroll={scroll} scrollY={800}/>
+            <CompanyPresentation />
             <LineAnimation header={'Tips'} scroll={scroll} scrollY={1200}/>
             <Tips/>
             <Footer/>

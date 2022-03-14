@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import '../../styles/Slider/Slider.css'
 import { useTheme } from '@mui/material/styles'
 import SwipeableViews from 'react-swipeable-views'
 import { autoPlay } from 'react-swipeable-views-utils'
@@ -26,6 +25,12 @@ const AutoPlaySwipeableViews = autoPlay(SwipeableViews)
  *
  * This component is a Slider of image and video.
  * On website is located on landing page just below the nav bar like first section
+ *
+ * Update component
+ *
+ * @author SaxDev 03.14.2022
+ *
+ * Fix image height and add danito images
  *
  * */
 

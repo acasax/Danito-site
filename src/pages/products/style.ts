@@ -89,6 +89,7 @@ export const ProductPageCharacteristicItemTextContainer = styled.div`
 export const ProductPageCharacteristicItemText = styled.p`
   font-size: 17px;
   color: ${Styles.Colours.PALETTE.DANITO._black};
+  padding: 10px;
 `
 
 export const ProductPageProfilesContainer = styled.div`

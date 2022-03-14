@@ -36,6 +36,7 @@ const GalleyCarousel = ({ ImgObj, ImgHeader }: any) => {
     setImageModal(image)
     setOpen(true)
   }
+
   const handleClose = () => {
     setOpen(false)
     setImageModal('')

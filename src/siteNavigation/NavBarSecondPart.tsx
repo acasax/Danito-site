@@ -9,6 +9,7 @@ import {
   NavSecondPartMenuBodyLink
 } from './style'
 import { SiteNavigationContext } from './context'
+import { Styles } from 'constants/StyleConstants'
 
 /**
  *
@@ -30,10 +31,11 @@ const NavBarSecondPart = () => {
             <NavSecondPartMenuBody>
                 {navRightOpen
                   ? (
-                        <ArrowBackIosIcon onClick={handleNavRightOpen} sx={{ fontSize: 35 }}/>
+                        <ArrowBackIosIcon onClick={handleNavRightOpen}
+                                          sx={{ fontSize: 35, color: Styles.Colours.PALETTE.DANITO._white }}/>
                     )
                   : (
-                        <MenuIcon onClick={handleNavRightOpen} sx={{ fontSize: 35 }}/>
+                        <MenuIcon onClick={handleNavRightOpen} sx={{ fontSize: 35, color: Styles.Colours.PALETTE.DANITO._white }}/>
                     )}
 
                 <NavSecondPartMenuBodyButton

@@ -11,6 +11,7 @@ export const SliderContainer = styled.div`
   max-width: 100%;
   position: relative;
   margin-top: 70px;
+  height: 850px;
 `
 
 export const SliderElementContainer = styled.div`
@@ -204,7 +205,7 @@ export const CompanyPresentationContentContainer = styled.div`
   position: absolute;
 `
 
-export const CompanyPresentationButton = styled.div<{ scaleTransform: boolean }>`
+export const CompanyPresentationButton = styled.button<{ scaleTransform: boolean }>`
   background: rgba(0, 0, 0, 0.3);
   border: 3px solid ${Styles.Colours.PALETTE.DANITO._yellow};
   font-size: 18px;
@@ -225,6 +226,21 @@ export const CompanyPresentationButton = styled.div<{ scaleTransform: boolean }>
   `}
 `
 
+export const CompanyPresentationVideoContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: 200px;
+  z-index: 100000;
+  opacity: 1 !important;
+`
+
+export const CompanyPresentationSelectedImage = styled.video`
+  border-radius: 6px;
+  cursor: pointer;
+  width: 900px;
+`
+
 /** Style for tips part of landing page */
 
 export const TipsContainer = styled.div`
@@ -232,10 +248,11 @@ export const TipsContainer = styled.div`
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  gap: 20px;
+  //gap: 20px;
   width: 100%;
   padding: 50px 0;
   background-color: ${Styles.Colours.PALETTE.DANITO._black};
+  flex-wrap: wrap;
 `
 
 const fadeIn = keyframes`
@@ -260,6 +277,13 @@ const fadeOut = keyframes`
     transform: scale(.25);
     opacity: 0;
   }
+`
+export const Card = styled.div`
+  display: flex;
+  min-width: 30%;
+  max-width: 30%;
+  justify-content: center;
+  padding: 20px;
 `
 
 export const CardContainer = styled.div<{ out: boolean }>`

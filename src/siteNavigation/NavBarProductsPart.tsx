@@ -15,6 +15,7 @@ import {
 import { SiteNavigationContext } from './context'
 import { useSelector } from 'react-redux'
 import { _selectNavBarItems } from '../store/SiteNavigation/helpers'
+import { Styles } from 'constants/StyleConstants'
 
 /**
  *
@@ -39,8 +40,8 @@ const NavBarProductsPart = () => {
             <NavBarProductPartHeaderContainer>
                 {
                     selected
-                      ? <ArrowBackIosIcon onClick={goBack} sx={{ fontSize: 30 }}/>
-                      : <ArrowDownwardIcon sx={{ fontSize: 30 }}/>
+                      ? <ArrowBackIosIcon onClick={goBack} sx={{ fontSize: 30, color: Styles.Colours.PALETTE.DANITO._white }}/>
+                      : <ArrowDownwardIcon sx={{ fontSize: 30, color: Styles.Colours.PALETTE.DANITO._white }}/>
                 }
                 <NavBarProductContainerText>{!selected ? 'Izaberite kategoriju' : selected}</NavBarProductContainerText>
             </NavBarProductPartHeaderContainer>

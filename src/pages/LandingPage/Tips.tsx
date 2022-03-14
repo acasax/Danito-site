@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom'
 import { useSelector } from 'react-redux'
 import { _selectorAllTipsData } from 'store/SiteNavigation/helpers'
 import {
+  Card,
   CardContainer,
   CardContentContainer,
   CardFooter,
@@ -46,27 +47,30 @@ const Tips = () => {
         <TipsContainer>
             {tipsData.map((data, key) => {
               return (
-                    <CardContainer key={key} out={scroll >= 1500}>
-                        <CardImageContainer>
-                            <CardImage src={data.coverImg}/>
-                        </CardImageContainer>
-                        <CardContentContainer>
-                            <CardHeaderContainer>
-                                <CardHeaderText>{data.header}</CardHeaderText>
-                            </CardHeaderContainer>
-                            <CardTextContainer>
-                                <CardText>{data.landingPageText}...</CardText>
-                            </CardTextContainer>
-                            <CardFooter>
-                                <Link onClick={() => setSelectedTip(data.header)} to="/TipsPage" style={CardFooterMoreButton}>
-                                    Read
-                                </Link>
-                                <CardFooterDateContainer>
-                                    <CardFooterDateText>{data.date}</CardFooterDateText>
-                                </CardFooterDateContainer>
-                            </CardFooter>
-                        </CardContentContainer>
-                    </CardContainer>
+                    <Card key={key}>
+                        <CardContainer out={scroll >= 1500}>
+                            <CardImageContainer>
+                                <CardImage src={data.coverImg}/>
+                            </CardImageContainer>
+                            <CardContentContainer>
+                                <CardHeaderContainer>
+                                    <CardHeaderText>{data.header}</CardHeaderText>
+                                </CardHeaderContainer>
+                                <CardTextContainer>
+                                    <CardText>{data.landingPageText}...</CardText>
+                                </CardTextContainer>
+                                <CardFooter>
+                                    <Link onClick={() => setSelectedTip(data.header)} to="/TipsPage"
+                                          style={CardFooterMoreButton}>
+                                        Read
+                                    </Link>
+                                    <CardFooterDateContainer>
+                                        <CardFooterDateText>{data.date}</CardFooterDateText>
+                                    </CardFooterDateContainer>
+                                </CardFooter>
+                            </CardContentContainer>
+                        </CardContainer>
+                    </Card>
               )
             })}
         </TipsContainer>

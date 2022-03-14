@@ -23,47 +23,11 @@ export const NavFirstPartContainer = styled.div`
   padding: 0 30px;
 `
 
-export const NavFirstPartLogoPart = styled.a`
-  background-color: transparent;
-  color: white;
-  border: none;
-  cursor: pointer;
-  font-size: 18px;
-  text-decoration: none;
-  display: flex;
-`
-
-export const NavFirstPartLogoPartImg = styled.img`
-  object-fit: contain;
-  height: 40px;
-`
-
-export const NavFirstPartLogoPartTextPart = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-`
-
-export const NavFirstPartLogoPartTextHeading = styled.h3`
-  font-size: 19px;
-  font-family: "Merriweather", serif;
-  letter-spacing: 2px;
-  margin: 0;
-`
-
-export const NavFirstPartLogoPartTextParagraph = styled.p`
-  font-size: 11px;
-  padding-left: 25px;
-  font-family: "Merriweather", serif;
-  letter-spacing: 2px;
-  margin: 0;
-`
-
 /** Style for NavBarSecondPart component */
 export const NavSecondPartContainer = styled.div`
   width: 100%;
   z-index: 1;
-  background-color: rgba(255, 255, 255, 0.88);
+  background-color: rgba(62, 68, 68, 0.9);
   padding: 20px 30px;
   display: flex;
   justify-content: space-between;
@@ -73,7 +37,7 @@ export const NavSecondPartContainer = styled.div`
   top: 70px;
   border-bottom-style: solid;
   border-bottom-width: 1px;
-  border-bottom-color: ${Styles.Colours.PALETTE.DANITO._liteGray};
+  border-bottom-color: ${Styles.Colours.PALETTE.DANITO._darkGray};
 `
 
 export const NavSecondPartMenuBody = styled.div`
@@ -83,7 +47,7 @@ export const NavSecondPartMenuBody = styled.div`
 `
 
 export const NavSecondPartMenuBodyButton = styled.button`
-  color: ${Styles.Colours.PALETTE.DANITO._darkGray};
+  color: ${Styles.Colours.PALETTE.DANITO._white};
   border: none;
   background: none;
   font-size: 16px;
@@ -99,7 +63,7 @@ export const NavSecondPartMenuBodyButton = styled.button`
 
 export const NavSecondPartMenuBodyLink = styled.a`
   text-decoration: none;
-  color: ${Styles.Colours.PALETTE.DANITO._darkGray};
+  color: ${Styles.Colours.PALETTE.DANITO._white};
   transition: 0.5s ease-in-out;
   letter-spacing: 1px;
   font-weight: 700;
@@ -134,6 +98,7 @@ export const NavBarProductContainerText = styled.p`
   font-size: 16px;
   letter-spacing: 1px;
   text-align: center;
+  color: ${Styles.Colours.PALETTE.DANITO._white};
 `
 
 export const NavBarProductPartProductContainer = styled.div`
@@ -145,7 +110,7 @@ export const NavBarProductPartProductContainer = styled.div`
 export const NavBarProductPartHeaderContainer = styled.div`
   display: flex;
   height: 90px;
-  background-color: ${Styles.Colours.PALETTE.DANITO._liteGray};
+  background-color: rgba(62, 68, 68, 0.9);
   align-items: center;
   justify-content: space-evenly;
   min-width: 300px;
@@ -153,7 +118,7 @@ export const NavBarProductPartHeaderContainer = styled.div`
   font-weight: 500;
   padding-left: 5px;
   padding-right: 5px;
-  border-bottom-color: ${Styles.Colours.PALETTE.DANITO._liteGray};
+  border-bottom-color: ${Styles.Colours.PALETTE.DANITO._darkGray};
   border-bottom-width: 1px;
   border-bottom-style: solid;
 `
