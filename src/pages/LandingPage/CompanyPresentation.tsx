@@ -48,7 +48,7 @@ const CompanyPresentation = () => {
                 <LineAnimation
                     header="Pretstavljanje kompanije"
                     scroll={scroll}
-                    scrollY={scrollY}
+                    scrollY={800}
                     backgroundColor={'transparent'}
                     fontSize={40}
                 />
