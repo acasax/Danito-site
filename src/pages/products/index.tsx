@@ -31,6 +31,7 @@ import { SiteNavigationContext } from 'siteNavigation/context'
 
 const ProductPage = () => {
   const { scroll, data, pageName } = useContext(SiteNavigationContext)
+
   useEffect(() => {
     window.scrollTo(0, 0)
   }, [])

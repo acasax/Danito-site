@@ -10,6 +10,7 @@ export const ProductPageContainer = styled.div`
 export const ProductPageHeaderImageContainer = styled.div`
   width: 100%;
   height: auto;
+  min-height: 900px;
 `
 
 export const ProductPageHeaderImage = styled.img`

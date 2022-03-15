@@ -415,9 +415,9 @@ export const ProductData = [
     video: PvcPregradnaVrata,
     imgVideo: 'https://www.drutex.eu/media/_upload/produkty/drzwi-iglo-energy/video/drzwi_iglo_energy.mp4',
     optionHeaders: {
-      first: 'PREGRADNA VRATA/OPIS',
-      second: 'PREGRADNA VRATA/PREDNOSTI',
-      third: 'PREGRADNA VRATA/DEKORI'
+      first: 'OPIS',
+      second: 'PREDNOSTI',
+      third: 'DEKORI'
     },
     options: {
       firstOption: [

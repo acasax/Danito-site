@@ -21,7 +21,7 @@ export type TProductData = {
 export enum ProductsCategory {
     window = 'PROZORI',
     door = 'VRATA',
-    blinds = 'ROLETNE',
+    blinds = 'ROLETNA',
     solomaticVenetians = 'SOLOMATIC VENECIJANERI',
     slidingSystems = 'KLIZNI SISTEMI',
     facade = 'FASADE',
@@ -102,8 +102,8 @@ export enum ProductsDataInfo {
     /** Products for Category windows SubCategory wood Windows */
 
     /** Products for Category windows SubCategory aluminium Windows */
-    aluminiumWindows1 = 'ALUMINIUMSKI PROZOR 1',
-    aluminiumWindows2 = 'ALUMINIUMSKI PROZOR 2',
+    aluminiumWindows1 = 'PROFIL BEZ TERMO PREKIDA',
+    aluminiumWindows2 = 'PROFIL SA TERMOPREKIDOM',
     aluminiumWindows3 = 'ALUMINIUMSKI PROZOR 3',
     aluminiumWindows4 = 'ALUMINIUMSKI PROZOR 4',
 
@@ -111,7 +111,7 @@ export enum ProductsDataInfo {
     woodAluminiumWindows1 = 'ALUMINIUM DRVO PROZORI',
 
     /** Products for Category doors SubCategory pvc door */
-    entrancePvcDoor = 'ULAZNA VRATA',
+    entrancePvcDoor = 'ULAZNA VRATE',
     partitionPvcDoor = 'PREGRADNA VRATA',
 
     /** Products for Category doors SubCategory aluminium door */
@@ -187,12 +187,16 @@ export const navBarData = [
     parentPath: `${ProductsCategory.window}/${ProductsSubCategory.pvcWindow}/`
   },
   {
+    name: ProductsDataInfo.woodAluminiumWindows1,
+    parent: ProductsSubCategory.woodAluminumWindow,
+    parentPath: `${ProductsCategory.window}/${ProductsSubCategory.woodAluminumWindow}/`
+  },
+  {
     name: ProductsSubCategory.aluminumWindow,
     parent: ProductsCategory.window,
     parentPath: `${ProductsCategory.window}/`,
     image: ProductsSubCategoryImages.aluminumWindow
   },
-
   {
     name: ProductsDataInfo.aluminiumWindows1,
     parent: ProductsSubCategory.aluminumWindow,
@@ -204,13 +208,7 @@ export const navBarData = [
     parentPath: `${ProductsCategory.window}/${ProductsSubCategory.aluminumWindow}/`
   },
   {
-    name: ProductsDataInfo.aluminiumWindows3,
-    parent: ProductsSubCategory.aluminumWindow,
-    parentPath: `${ProductsCategory.window}/${ProductsSubCategory.aluminumWindow}/`
-  },
-
-  {
-    name: ProductsDataInfo.aluminiumWindows4,
+    name: ProductsDataInfo.woodAluminiumWindows1,
     parent: ProductsSubCategory.aluminumWindow,
     parentPath: `${ProductsCategory.window}/${ProductsSubCategory.aluminumWindow}/`
   },
@@ -322,64 +320,6 @@ export const navBarData = [
     image: ProductsCategoryImages.solomaticVenetians
   },
   {
-    name: ProductsCategory.facade,
-    parent: '',
-    parentPath: '',
-    image: ProductsCategoryImages.facade
-  },
-
-  {
-    name: ProductsSubCategory.fundermaxFacade,
-    parent: ProductsCategory.facade,
-    parentPath: `${ProductsCategory.facade}/`,
-    image: ProductsSubCategoryImages.fundermaxFacade
-  },
-  {
-    name: ProductsDataInfo.fundermaxFacadeFundermaxFacade,
-    parent: ProductsSubCategory.fundermaxFacade,
-    parentPath: `${ProductsCategory.facade}/${ProductsSubCategory.fundermaxFacade}/`
-  },
-  {
-    name: ProductsSubCategory.ventilatedAlucobondFacade,
-    parent: ProductsCategory.facade,
-    parentPath: `${ProductsCategory.facade}/`,
-    image: ProductsSubCategoryImages.ventilatedAlucobondFacade
-  },
-  {
-    name: ProductsDataInfo.ventilatedAlucobondFacadeVentilatedAlucobondFacade,
-    parent: ProductsSubCategory.ventilatedAlucobondFacade,
-    parentPath: `${ProductsCategory.facade}/${ProductsSubCategory.ventilatedAlucobondFacade}/`
-  },
-
-  {
-    name: ProductsSubCategory.glassFacade,
-    parent: ProductsCategory.facade,
-    parentPath: `${ProductsCategory.facade}/`,
-    image: ProductsSubCategoryImages.glassFacade
-  },
-  {
-    name: ProductsDataInfo.structuralGlassFacade,
-    parent: ProductsSubCategory.glassFacade,
-    parentPath: `${ProductsCategory.facade}/${ProductsSubCategory.glassFacade}/`
-  },
-  {
-    name: ProductsDataInfo.standardGlassFacade,
-    parent: ProductsSubCategory.glassFacade,
-    parentPath: `${ProductsCategory.facade}/${ProductsSubCategory.glassFacade}/`
-  },
-  {
-    name: ProductsSubCategory.graniteFacade,
-    parent: ProductsCategory.facade,
-    parentPath: `${ProductsCategory.facade}/`,
-    image: ProductsSubCategoryImages.graniteFacade
-  },
-
-  {
-    name: ProductsDataInfo.granitFacadeGranitFacade,
-    parent: ProductsSubCategory.graniteFacade,
-    parentPath: `${ProductsCategory.facade}/${ProductsSubCategory.graniteFacade}/`
-  },
-  {
     name: ProductsCategory.slidingSystems,
     parent: '',
     parentPath: '',
@@ -442,6 +382,64 @@ export const navBarData = [
     name: ProductsDataInfo.aluSmartiaM19800AccordionSlidingSystems,
     parent: ProductsSubCategory.accordionSlidingSystems,
     parentPath: `${ProductsCategory.slidingSystems}/${ProductsSubCategory.accordionSlidingSystems}/`
+  },
+  {
+    name: ProductsCategory.facade,
+    parent: '',
+    parentPath: '',
+    image: ProductsCategoryImages.facade
+  },
+
+  {
+    name: ProductsSubCategory.fundermaxFacade,
+    parent: ProductsCategory.facade,
+    parentPath: `${ProductsCategory.facade}/`,
+    image: ProductsSubCategoryImages.fundermaxFacade
+  },
+  {
+    name: ProductsDataInfo.fundermaxFacadeFundermaxFacade,
+    parent: ProductsSubCategory.fundermaxFacade,
+    parentPath: `${ProductsCategory.facade}/${ProductsSubCategory.fundermaxFacade}/`
+  },
+  {
+    name: ProductsSubCategory.ventilatedAlucobondFacade,
+    parent: ProductsCategory.facade,
+    parentPath: `${ProductsCategory.facade}/`,
+    image: ProductsSubCategoryImages.ventilatedAlucobondFacade
+  },
+  {
+    name: ProductsDataInfo.ventilatedAlucobondFacadeVentilatedAlucobondFacade,
+    parent: ProductsSubCategory.ventilatedAlucobondFacade,
+    parentPath: `${ProductsCategory.facade}/${ProductsSubCategory.ventilatedAlucobondFacade}/`
+  },
+
+  {
+    name: ProductsSubCategory.glassFacade,
+    parent: ProductsCategory.facade,
+    parentPath: `${ProductsCategory.facade}/`,
+    image: ProductsSubCategoryImages.glassFacade
+  },
+  {
+    name: ProductsDataInfo.structuralGlassFacade,
+    parent: ProductsSubCategory.glassFacade,
+    parentPath: `${ProductsCategory.facade}/${ProductsSubCategory.glassFacade}/`
+  },
+  {
+    name: ProductsDataInfo.standardGlassFacade,
+    parent: ProductsSubCategory.glassFacade,
+    parentPath: `${ProductsCategory.facade}/${ProductsSubCategory.glassFacade}/`
+  },
+  {
+    name: ProductsSubCategory.graniteFacade,
+    parent: ProductsCategory.facade,
+    parentPath: `${ProductsCategory.facade}/`,
+    image: ProductsSubCategoryImages.graniteFacade
+  },
+
+  {
+    name: ProductsDataInfo.granitFacadeGranitFacade,
+    parent: ProductsSubCategory.graniteFacade,
+    parentPath: `${ProductsCategory.facade}/${ProductsSubCategory.graniteFacade}/`
   }
 
 ]
@@ -484,8 +482,7 @@ export const productSectionData = [
         children: [
           ProductsDataInfo.aluminiumWindows1,
           ProductsDataInfo.aluminiumWindows2,
-          ProductsDataInfo.aluminiumWindows3,
-          ProductsDataInfo.aluminiumWindows4
+          ProductsDataInfo.woodAluminiumWindows1
         ]
       }
     ]
@@ -573,11 +570,11 @@ export const productSectionData = [
 
 /** Part of data for tips */
 export type TTipsData = {
-  coverImg: string | any,
-  header: string,
-  date: Date | string,
-  landingPageText: string,
-  text: string[]
+    coverImg: string | any,
+    header: string,
+    date: Date | string,
+    landingPageText: string,
+    text: string[]
 }
 
 export const TipsImages = {
@@ -592,7 +589,7 @@ export const TipsInitData = [
     header: 'How to choose the best door?',
     date: new Date().toDateString(),
     landingPageText:
-        'Front door is not just a key technical element of the building, but also the showcase of the house. Therefore, it must be pretty, and at the same time it should fulfil our expectations regarding sound insulation, energy efficiency and safety.',
+            'Front door is not just a key technical element of the building, but also the showcase of the house. Therefore, it must be pretty, and at the same time it should fulfil our expectations regarding sound insulation, energy efficiency and safety.',
     text: [
       'DRUTEX has been one of the best-known Polish brands for ages, trusted by clients and business partners worldwide. The position has been confirmed by the Superbrands title, given by a globally famous organization that for 25 years has been awarding the strongest most trusted brands in the world. The research was conducted in over 90 countries,  selecting the winners in each market and presenting their success stories. DRUTEX has gained the title for the seventh time.',
       '- This is the best confirmation that consistent and coherent building of the DRUTEX brand position in Poland and abroad brings the expected results. Today DRUTEX stands for top quality and innovation, as well as business credibility. In the window and door woodwork sector we are among  European leaders. We offer top quality products, which is appreciated by clients all over the world – says Leszek Gierszewski, the founder and president – DRUTEX is also involved in CSR actions, supporting various initiatives i.a. contributing to healthcare. It is appreciated and noticed. ',
@@ -605,7 +602,7 @@ export const TipsInitData = [
     header: 'Are you tired of noise from the street or the yard? Choosing the right windows will help!',
     date: new Date().toDateString(),
     landingPageText:
-        'Drutex SA yet again has been awarded the European Medal in the prestigious contest held by Business Centre Club. This time the leading European producer of woodwork was appreciated for the MB-86 SI aluminum doors.',
+            'Drutex SA yet again has been awarded the European Medal in the prestigious contest held by Business Centre Club. This time the leading European producer of woodwork was appreciated for the MB-86 SI aluminum doors.',
     text: [
       'This is 32nd edition of the initiative organized by BCC under the aegis of the European Economic and Social Committee which aims at awarding and promoting top-quality products and services offered by companies operating in Poland. This year Drutex received the award for the MB-86 SI aluminum doors. Previously, the Bytów company was awarded i.a. for PVC windows, Iglo-HS lift and slide doors, as well as innovative system of roller shutters. ',
       '- We are delighted to have received the award, especially that we received it once again. It proves that the strategy that we have adopted, based on investment in top quality and cutting-edge technology, works out perfectly. As a result, we consistently strengthen our market position, winning over clients all over the world – points out Adam Leik, marketing director at Drutex SA. ',
@@ -619,7 +616,7 @@ export const TipsInitData = [
     header: 'A good window is not all. How about the installation?',
     date: new Date().toDateString(),
     landingPageText:
-        ' DRUTEX yet again has been awarded the Golden Construction Brand of the Year in the ‘elevation windows’ category. The title is given basing on national surveys conducted among construction companies in Poland.',
+            ' DRUTEX yet again has been awarded the Golden Construction Brand of the Year in the ‘elevation windows’ category. The title is given basing on national surveys conducted among construction companies in Poland.',
     text: [
       'The award given to Drutex is a confirmation of top quality of the products, as well as their reputation and popularity with professionals. The Golden Construction Brand ranking has therefore an exceptionally unique and impartial character, and it has been considered to be the most reliable in Poland for many years.',
       '- We are happy to have received the award yet again, especially that it is given, in fact, by numerous professionals in the construction industry. It is a confirmation that investment in cutting-edge technology and top quality bring the expected results, and, above all, clients’ satisfaction and trust all over the world. It has always been our priority and it determines other investment projects that we carry out – says Leszek Gierszewski, the president and founder of Drutex SA.',

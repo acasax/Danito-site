@@ -15,7 +15,7 @@ import { useSelector } from 'react-redux'
 import { _selectorAllSliderElements } from 'store/SiteData/helpers'
 import { TSliderElements } from 'store/SiteData/d'
 
-const AutoPlaySwipeableViews = autoPlay(SwipeableViews)
+const AutoPlaySwipeableViews = autoPlay(SliderElementContentContainer)
 
 /**
  *
@@ -46,18 +46,16 @@ const Slider = () => {
   return (
         <SliderContainer>
             <AutoPlaySwipeableViews
-                className={SliderElementContentContainer}
                 axis={theme.direction === 'rtl' ? 'x-reverse' : 'x'}
                 index={activeStep}
                 onChangeIndex={handleStepChange}
                 enableMouseEvents
-
             >
                 {sliderElements.map((element: TSliderElements, key: number) => (
                     <SliderElementContainer key={key}>
                         {Math.abs(activeStep - key) <= 2
                           ? (
-                                <SliderElementContentContainer>
+                                <SliderElementContainer>
                                     {element.isVideo
                                       ? (
                                             <SliderElementContentVideo muted={true} autoPlay={true} src={element.path}/>
@@ -65,7 +63,7 @@ const Slider = () => {
                                       : (
                                             <SliderElementContentImg src={element.path} alt={element.label}/>
                                         )}
-                                </SliderElementContentContainer>
+                                </SliderElementContainer>
                             )
                           : null}
                     </SliderElementContainer>

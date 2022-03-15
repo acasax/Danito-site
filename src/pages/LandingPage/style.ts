@@ -1,5 +1,6 @@
 import styled, { css, keyframes } from 'styled-components'
 import { Styles } from 'constants/StyleConstants'
+import SwipeableViews from 'react-swipeable-views'
 
 /** Style for main part of landing page */
 export const LandingPageContainer = styled.div``
@@ -11,24 +12,28 @@ export const SliderContainer = styled.div`
   max-width: 100%;
   position: relative;
   margin-top: 70px;
-  height: 850px;
+  height: 900px;
 `
 
 export const SliderElementContainer = styled.div`
   width: 100%;
+  height: 100%;
 `
 
-export const SliderElementContentContainer = styled.div`
+export const SliderElementContentContainer = styled(SwipeableViews)`
   width: 100%;
+  height: 100%;
 `
 
 export const SliderElementContentImg = styled.img`
   width: 100%;
+  height: 100%;
   object-fit: cover;
 `
 
 export const SliderElementContentVideo = styled.video`
   width: 100%;
+  height: 100%;
   object-fit: cover;
 `
 
@@ -37,7 +42,7 @@ export const DotContainer = styled.div`
   justify-content: center;
   gap: 20px;
   position: relative;
-  bottom: 100px;
+  bottom: 50px;
   width: 100%;
 `
 
