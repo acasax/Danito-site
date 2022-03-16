@@ -668,6 +668,82 @@ export const TipsInitData = [
   }
 ]
 
+/** Part of data for products */
+
+export type TThirdPartOptionsColors = {
+    text: string,
+    image: string | any
+}
+
+export type TThirdPartOptions = {
+    description: string,
+    colors: TThirdPartOptionsColors[]
+}
+
+export type TProductsData = {
+    name: string,
+    nameHeader: string,
+    imgCover: string | any,
+    video: any,
+    imgVideo: string,
+    optionHeaders: string[],
+    options: TThirdPartOptions | string[],
+    material: string[]
+}
+
+export const ProductsImages = {
+  pvcWindow1CoverImg: require('constants/img/imgProduct/ImgPageProduct/WindowImg1.jpg').default,
+  pvcWindow2overImg: require('constants/img/imgProduct/ImgPageProduct/WindowImg2.jpg').default,
+  pvcWindow3CoverImg: require('constants/img/imgProduct/ImgPageProduct/WindowImg3.jpg').default,
+  pvcWindow4CoverImg: require('constants/img/imgProduct/ImgPageProduct/WindowImg4.jpg').default,
+  pvcWindow5CoverImg: require('constants/img/imgProduct/ImgPageProduct/WindowImg5.jpg').default,
+  woodWindow1CoverImg: require('constants/img/imgProduct/ImgPageProduct/WindowImg6.jpg').default,
+  woodAluminiumWindow1CoverImg: require('constants/img/imgProduct/ImgPageProduct/WindowImg7.jpg').default,
+  aluminiumWindow1CoverImg: require('constants/img/imgProduct/ImgPageProduct/WindowImg8.jpg').default,
+  aluminiumWindow2CoverImg: require('constants/img/imgProduct/ImgPageProduct/WindowImg9.jpg').default,
+  aluminiumWindow3CoverImg: require('constants/img/imgProduct/ImgPageProduct/WindowImg10.jpg').default,
+  aluminiumWindow4CoverImg: require('constants/img/imgProduct/ImgPageProduct/WindowImg11.jpg').default,
+  entrancePvcDoorCoverImg: require('constants/img/imgProduct/ImgPageProduct/DoorImg1.jpg').default,
+  partitionPvcDoorCoverImg: require('constants/img/imgProduct/ImgPageProduct/DoorImg2.jpg').default,
+  profileWithoutThermalBreakAluminiumDoorCoverImg: require('constants/img/imgProduct/ImgPageProduct/DoorImg4.jpg').default,
+  profileWithThermalBreakAluminiumDoorCoverImg: require('constants/img/imgProduct/ImgPageProduct/DoorImg5.jpg').default,
+  doorWithHiddenWingAluminiumDoorCoverImg: require('constants/img/imgProduct/ImgPageProduct/DoorImg6.jpg').default,
+
+  aluminiumThermoBlindsInsideBlindsCoverImg: require('constants/img/imgProduct/ImgPageProduct/Roletne1.jpg').default,
+  pvcBlindsInsideBlindsCoverImg: require('constants/img/imgProduct/ImgPageProduct/Roletne2.jpg').default,
+  aluminiumOutsideBlindsRoundedOutsideBlindsCoverImg: require('constants/img/imgProduct/ImgPageProduct/Roletne3.jpg').default,
+
+  aluminiumOutsideBlindsPentagonalOutsideBlindsCoverImg: require('constants/img/imgProduct/ImgPageProduct/Fasade1.jpg').default,
+  subFacadeAluminiumBlindsCoverImg: require('constants/img/imgProduct/ImgPageProduct/Fasade2.jpg').default,
+
+  fundermaxFacadeFundermaxFacadeCoverImg: require('constants/img/imgProduct/ImgPageProduct/TerasniSistemi1.jpg').default,
+  ventilatedAlucobondFacadeVentilatedAlucobondFacadeCoverImg: require('constants/img/imgProduct/ImgPageProduct/TerasniSistemi2.jpg').default,
+  structuralGlassFacadeCoverImg: require('constants/img/imgProduct/ImgPageProduct/TerasniSistemi3.jpg').default,
+  standardGlassFacadeCoverImg: require('constants/img/imgProduct/ImgPageProduct/TerasniSistemi4.jpg').default,
+  granitFacadeGranitFacadeCoverImg: require('constants/img/imgProduct/ImgPageProduct/TerasniSistemi5.jpg').default,
+  pvcVekaSlideSlidingSystemCoverImg: require('constants/img/imgProduct/ImgPageProduct/TerasniSistemi6.jpg').default,
+  aluUltraSlideSlidingSystemCoverImg: require('constants/img/imgProduct/ImgPageProduct/TerasniSistemi7.jpg').default,
+  pvcVekaSoftline7082InRowSlidingSystemCoverImg: require('constants/img/imgProduct/ImgPageProduct/TerasniSistemi8.jpg').default,
+  aluInRowSlidingSystemCoverImg: require('constants/img/imgProduct/ImgPageProduct/TerasniSistemi9.jpg').default,
+  pvcAccordionSlidingSystemsCoverImg: require('constants/img/imgProduct/ImgPageProduct/TerasniSistemi10.jpg').default,
+  aluSmartiaM9800AccordionSlidingSystemsCoverImg: require('constants/img/imgProduct/ImgPageProduct/TerasniSistemi11.jpg').default,
+  aluSmartiaM19800AccordionSlidingSystemsCoverImg: require('constants/img/imgProduct/ImgPageProduct/TerasniSistemi12.jpg').default,
+
+  solomaticVenetiansCoverImg: require('constants/img/imgProduct/ImgPageProduct/SolomatikVenecijaneri.jpg').default
+}
+
+/** Sredi init state za products */
+export const ProductsData = [
+  /*    {
+                  name: ProductsDataInfo.veka70,
+                  nameHeader: 'VEKA 70 EFFECTLINE',
+                  imgCover: Products.pvcProzor1CoverImg,
+                  video: veka70Video,
+                  imgVideo: 'https://www.drutex.eu/media/_upload/produkty/iglo_light/video/iglo_light.mp4',
+
+              } */
+]
+
 export type TActionEvent = {
     type:
         typeof SELECTED_ITEM

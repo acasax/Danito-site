@@ -1,7 +1,6 @@
-import Products from './imgObjects/imgProducts'
 import PANEL from './imgObjects/ImgPanels'
 import { PRODUCTS } from './ProductNavBarData'
-import { ProductsDataInfo } from 'store/SiteNavigation/d'
+import { ProductsDataInfo, ProductsImages } from 'store/SiteNavigation/d'
 // @ts-ignore
 import veka70Video from './video/VEKA70.mp4'
 // @ts-ignore
@@ -18,13 +17,13 @@ export const ProductData = [
   {
     name: ProductsDataInfo.veka70,
     nameHeader: 'VEKA 70 EFFECTLINE',
-    imgCover: Products.pvcProzor1CoverImg,
+    imgCover: ProductsImages.pvcWindow1CoverImg,
     video: veka70Video,
     imgVideo: 'https://www.drutex.eu/media/_upload/produkty/iglo_light/video/iglo_light.mp4',
     optionHeaders: {
       first: 'OPIS',
       second: 'PREDNOSTI',
-      third: 'VEKA DEKORI'
+      third: 'DEKORI'
     },
     options: {
       firstOption: [
@@ -70,7 +69,7 @@ export const ProductData = [
   {
     name: ProductsDataInfo.veka82,
     nameHeader: 'VEKA 82 SOFTLINE',
-    imgCover: Products.pvcProzor2overImg,
+    imgCover: ProductsImages.pvcWindow2overImg,
     video: veka82Video,
     imgVideo: 'https://www.drutex.eu/media/_upload/produkty/IGLO_ENERGY/video/iglo_energy.mp4',
     optionHeaders: {
@@ -124,7 +123,7 @@ export const ProductData = [
   },
   {
     name: ProductsDataInfo.woodAluminiumWindows1,
-    imgCover: Products.drvoAluminiumProzor1CoverImg,
+    imgCover: ProductsImages.woodAluminiumWindow1CoverImg,
     imgVideo: 'https://www.drutex.eu/media/_upload/produkty/DUOLINE/video/duoline.mp4',
     options: {
       firstOption: [
@@ -166,7 +165,7 @@ export const ProductData = [
   },
   {
     name: ProductsDataInfo.aluminiumWindows1,
-    imgCover: Products.aluminiumProzor1CoverImg,
+    imgCover: ProductsImages.aluminiumWindow1CoverImg,
     imgVideo: 'https://www.drutex.eu/media/_upload/produkty/mb-45/video-okno/okno_mb_45.mp4',
     options: {
       firstOption: [
@@ -214,7 +213,7 @@ export const ProductData = [
   },
   {
     name: ProductsDataInfo.aluminiumWindows2,
-    imgCover: Products.aluminiumProzor2CoverImg,
+    imgCover: ProductsImages.aluminiumWindow2CoverImg,
     imgVideo: 'https://www.drutex.eu/media/_upload/produkty/mb-70/video-okno/okno_mb_70.mp4',
     options: {
       firstOption: [
@@ -262,7 +261,7 @@ export const ProductData = [
   },
   {
     name: ProductsDataInfo.aluminiumWindows3,
-    imgCover: Products.aluminiumProzor3CoverImg,
+    imgCover: ProductsImages.aluminiumWindow3CoverImg,
     imgVideo: 'https://www.drutex.eu/media/_upload/produkty/mb-70hi/video-okno/okno_mb_70.mp4',
     options: {
       firstOption: [
@@ -310,7 +309,7 @@ export const ProductData = [
   },
   {
     name: ProductsDataInfo.aluminiumWindows4,
-    imgCover: Products.aluminiumProzor4CoverImg,
+    imgCover: ProductsImages.aluminiumWindow4CoverImg,
     imgVideo: 'https://www.drutex.eu/media/_upload/produkty/mb-86si/okna/anim/mb_86_si_okno.mp4',
     options: {
       firstOption: [
@@ -359,7 +358,7 @@ export const ProductData = [
   {
     name: ProductsDataInfo.entrancePvcDoor,
     nameHeader: 'VEKA SOFTLINE 70 AD',
-    imgCover: Products.ulaznaVrataCoverImg,
+    imgCover: ProductsImages.entrancePvcDoorCoverImg,
     video: PvcUlaznaVrata,
     imgVideo: 'https://www.drutex.eu/media/_upload/produkty/drzwi-iglo5/video/drzwi_iglo_5.mp4',
     optionHeaders: {
@@ -411,7 +410,7 @@ export const ProductData = [
   {
     name: ProductsDataInfo.partitionPvcDoor,
     nameHeader: 'VEKA SOFTLINE 70 AD',
-    imgCover: Products.pregradnaVrataCoverImg,
+    imgCover: ProductsImages.partitionPvcDoorCoverImg,
     video: PvcPregradnaVrata,
     imgVideo: 'https://www.drutex.eu/media/_upload/produkty/drzwi-iglo-energy/video/drzwi_iglo_energy.mp4',
     optionHeaders: {
@@ -461,7 +460,7 @@ export const ProductData = [
   {
     name: ProductsDataInfo.profileWithoutThermalBreakAluminiumDoor,
     nameHeader: PRODUCTS.allProducts.vrataHladanProfil,
-    imgCover: Products.vrataHladanProfilCoverImg,
+    imgCover: ProductsImages.profileWithoutThermalBreakAluminiumDoorCoverImg,
     imgVideo: 'https://www.drutex.eu/media/_upload/produkty/mb-45/video-drzwi/drzwi-mb-45.mp4',
     optionHeaders: {
       first: 'OPIS',
@@ -513,7 +512,7 @@ export const ProductData = [
   {
     name: ProductsDataInfo.profileWithThermalBreakAluminiumDoor,
     nameHeader: PRODUCTS.allProducts.vrataProfilTermo,
-    imgCover: Products.vrataProfilTermoCoverImg,
+    imgCover: ProductsImages.profileWithThermalBreakAluminiumDoorCoverImg,
     imgVideo: 'https://www.drutex.eu/media/_upload/produkty/mb-70/video-drzwi/drzwi_mb_70_.mp4',
     optionHeaders: {
       first: 'OPIS',
@@ -561,7 +560,7 @@ export const ProductData = [
   {
     name: ProductsDataInfo.doorWithHiddenWingAluminiumDoor,
     nameHeader: PRODUCTS.allProducts.vrataSkrivenoKrilo,
-    imgCover: Products.vrataSkrivenoKriloCoverImg,
+    imgCover: ProductsImages.doorWithHiddenWingAluminiumDoorCoverImg,
     video: VrataSkrivenioKrilo,
     imgVideo: 'https://www.drutex.eu/media/_upload/produkty/mb-70hi/video-drzwi/drzwi_mb_70_hi.webm',
     optionHeaders: {
@@ -608,7 +607,7 @@ export const ProductData = [
       second: 'PREDNOSTI',
       third: 'DEKORI'
     },
-    imgCover: Products.vrataSkrivenoKriloCoverImg,
+    imgCover: ProductsImages.doorWithHiddenWingAluminiumDoorCoverImg,
     videoImg: SigurnosnaVrataSlika,
     // imgVideo: "https://www.drutex.eu/media/_upload/produkty/drzwi-softline/video/drzwi_softline_68.mp4",
     options: {
@@ -675,7 +674,7 @@ export const ProductData = [
   {
     name: ProductsDataInfo.aluminiumThermoBlindsInsideBlinds,
     nameHeader: PRODUCTS.allProducts.pvcRoletne1,
-    imgCover: Products.pvcRoletne1Img,
+    imgCover: ProductsImages.aluminiumThermoBlindsInsideBlindsCoverImg,
     optionHeaders: {
       first: 'OPIS',
       second: 'PREDNOSTI',
@@ -699,7 +698,7 @@ export const ProductData = [
   },
   {
     name: ProductsDataInfo.pvcBlindsInsideBlinds,
-    imgCover: Products.pvcRoletne2Img,
+    imgCover: ProductsImages.pvcBlindsInsideBlindsCoverImg,
     imgVideo: 'https://www.drutex.eu/media/_upload/produkty/rolety-nakladane/video/roleta-pvc.mp4',
     options: {
       firstOption: [
@@ -747,7 +746,7 @@ export const ProductData = [
   },
   {
     name: ProductsDataInfo.aluminiumOutsideBlindsRoundedOutsideBlinds,
-    imgCover: Products.spoljneRoletneImg,
+    imgCover: ProductsImages.aluminiumOutsideBlindsRoundedOutsideBlindsCoverImg,
     imgVideo: 'https://www.drutex.eu/media/_upload/produkty/rolety_eps/wideo/animacja_produktow_na_www.mp4',
     options: {
       firstOption: [
@@ -795,7 +794,7 @@ export const ProductData = [
   },
   {
     name: ProductsDataInfo.aluminiumOutsideBlindsPentagonalOutsideBlinds,
-    imgCover: Products.unutrasnjeRoletneImg,
+    imgCover: ProductsImages.aluminiumOutsideBlindsPentagonalOutsideBlindsCoverImg,
     imgVideo: 'https://www.drutex.eu/media/_upload/produkty/s-50/video/mb-sr50n_hi_f.mp4',
     options: {
       firstOption: [
@@ -843,7 +842,7 @@ export const ProductData = [
   },
   {
     name: ProductsDataInfo.subFacadeAluminiumBlinds,
-    imgCover: Products.podvasadneRoletneImg,
+    imgCover: ProductsImages.subFacadeAluminiumBlindsCoverImg,
     imgVideo: 'https://www.drutex.eu/media/_upload/produkty/mb-wg60/video/mb-wg60-002.mp4',
     options: {
       firstOption: [
@@ -891,7 +890,7 @@ export const ProductData = [
   },
   {
     name: ProductsDataInfo.fundermaxFacadeFundermaxFacade,
-    imgCover: Products.FunderFasade,
+    imgCover: ProductsImages.fundermaxFacadeFundermaxFacadeCoverImg,
     imgVideo: 'https://www.drutex.eu/media/_upload/produkty/iglo-hs/video/sd/iglo_hs.mp4',
     options: {
       firstOption: [
@@ -939,7 +938,7 @@ export const ProductData = [
   },
   {
     name: ProductsDataInfo.ventilatedAlucobondFacadeVentilatedAlucobondFacade,
-    imgCover: Products.VentilFasade,
+    imgCover: ProductsImages.ventilatedAlucobondFacadeVentilatedAlucobondFacadeCoverImg,
     imgVideo: 'https://www.drutex.eu/media/_upload/produkty/drzwi-mb77-hs/video/mb77hs.mp4',
     options: {
       firstOption: [
@@ -987,7 +986,7 @@ export const ProductData = [
   },
   {
     name: ProductsDataInfo.structuralGlassFacade,
-    imgCover: Products.strukovna,
+    imgCover: ProductsImages.structuralGlassFacadeCoverImg,
     imgVideo: 'https://www.drutex.eu/media/_upload/produkty/duoline-hs/video/duoline_hs.mp4',
     options: {
       firstOption: [
@@ -1035,7 +1034,7 @@ export const ProductData = [
   },
   {
     name: ProductsDataInfo.standardGlassFacade,
-    imgCover: Products.standardna,
+    imgCover: ProductsImages.standardGlassFacadeCoverImg,
     imgVideo: 'https://www.drutex.eu/media/_upload/produkty/softline-hs/video/sl68hs.mp4',
     options: {
       firstOption: [
@@ -1083,7 +1082,7 @@ export const ProductData = [
   },
   {
     name: ProductsDataInfo.granitFacadeGranitFacade,
-    imgCover: Products.granit,
+    imgCover: ProductsImages.granitFacadeGranitFacadeCoverImg,
     imgVideo: 'https://www.drutex.eu/media/_upload/produkty/iglo_light_psk/video/iglo_light_uchylno_przesuwne-1.mp4',
     options: {
       firstOption: [
@@ -1132,7 +1131,7 @@ export const ProductData = [
   {
     name: ProductsDataInfo.pvcVekaSlideSlidingSystem,
     nameHeader: 'PRODUCTS.allProducts.pvcVekaSlide',
-    imgCover: Products.pvcVekaSlide,
+    imgCover: ProductsImages.pvcVekaSlideSlidingSystemCoverImg,
     imgVideo: 'https://www.drutex.eu/media/_upload/produkty/iglo_pks/video/iglo_uchylno_przesowne.mp4',
     optionHeaders: {
       first: 'OPIS',
@@ -1164,7 +1163,7 @@ export const ProductData = [
   },
   {
     name: ProductsDataInfo.aluUltraSlideSlidingSystem,
-    imgCover: Products.aluUltraGlide,
+    imgCover: ProductsImages.aluUltraSlideSlidingSystemCoverImg,
     imgVideo: 'https://www.drutex.eu/media/_upload/produkty/drzwi-iglo5-psk/video/iglo_uchylno_przesowne.mp4',
     options: {
       firstOption: [
@@ -1212,7 +1211,7 @@ export const ProductData = [
   },
   {
     name: ProductsDataInfo.aluVgPlusSlidingSystem,
-    imgCover: Products.aluUltraGlide,
+    imgCover: ProductsImages.aluUltraSlideSlidingSystemCoverImg,
     imgVideo: 'https://www.drutex.eu/media/_upload/produkty/drzwi-iglo5-psk/video/iglo_uchylno_przesowne.mp4',
     options: {
       firstOption: [
@@ -1260,7 +1259,7 @@ export const ProductData = [
   },
   {
     name: ProductsDataInfo.pvcVekaSoftline7082InRowSlidingSystem,
-    imgCover: Products.pvcVekaSoft,
+    imgCover: ProductsImages.pvcVekaSoftline7082InRowSlidingSystemCoverImg,
     imgVideo: 'https://www.drutex.eu/media/_upload/produkty/mb-77-up/video/mb_70_uchylno-przesuwne.mp4',
     options: {
       firstOption: [
@@ -1308,7 +1307,7 @@ export const ProductData = [
   },
   {
     name: ProductsDataInfo.aluInRowSlidingSystem,
-    imgCover: Products.aluVisoglide,
+    imgCover: ProductsImages.aluInRowSlidingSystemCoverImg,
     imgVideo: 'https://www.drutex.eu/media/_upload/produkty/duoline-psk/video/duoline_68_psk.mp4',
     options: {
       firstOption: [
@@ -1356,7 +1355,7 @@ export const ProductData = [
   },
   {
     name: ProductsDataInfo.pvcAccordionSlidingSystems,
-    imgCover: Products.pvcSmatiaM9800,
+    imgCover: ProductsImages.pvcAccordionSlidingSystemsCoverImg,
     imgVideo: 'https://www.drutex.eu/media/_upload/produkty/softline-psk/video/sl_68_uchylno_przesuwne.mp4',
     options: {
       firstOption: [
@@ -1404,7 +1403,7 @@ export const ProductData = [
   },
   {
     name: ProductsDataInfo.aluSmartiaM9800AccordionSlidingSystems,
-    imgCover: Products.pvcSmatiaM1980,
+    imgCover: ProductsImages.aluSmartiaM9800AccordionSlidingSystemsCoverImg,
     imgVideo: 'https://www.drutex.eu/media/_upload/produkty/harmonijka_mb-86_fold_line/video/harmonijka-mb86.mp4',
     options: {
       firstOption: [
@@ -1452,7 +1451,7 @@ export const ProductData = [
   },
   {
     name: ProductsDataInfo.aluSmartiaM19800AccordionSlidingSystems,
-    imgCover: Products.panoramaAliplast,
+    imgCover: ProductsImages.aluSmartiaM19800AccordionSlidingSystemsCoverImg,
     imgVideo: 'https://www.drutex.eu/media/_upload/produkty/softline-68-h/video/harmonijka_sl68.mp4',
     options: {
       firstOption: [
@@ -1501,7 +1500,7 @@ export const ProductData = [
   {
     name: ProductsDataInfo.solomaticVenetians,
     nameHeader: PRODUCTS.allProducts.solomaticVenecijaneri,
-    imgCover: Products.solomaticVenecijaneri,
+    imgCover: ProductsImages.solomaticVenetiansCoverImg,
     optionHeaders: {
       first: 'OPIS',
       second: 'PREDNOSTI'
