@@ -126,6 +126,29 @@ export const ProductPageProfileImgContainer = styled.div`
   gap: 50px;
 `
 
+export const ProductPageProfileContainer = styled.div`
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+`
+
+export const ProductPageProfileTextContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  text-align: center;
+`
+
+export const ProductPageProfileText = styled.p`
+  font-size: 15px;
+  font-weight: bold;
+  color: ${Styles.Colours.PALETTE.DANITO._black};
+`
+
 export const ProductPageProfileImg = styled.img`
   max-height: 200px;
   transition: 0.5s ease-in-out;

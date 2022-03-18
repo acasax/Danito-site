@@ -37,7 +37,7 @@ function a11yProps (index) {
   }
 }
 
-const BasicTabs = ({ pageName, optionsContent }:any) => {
+const BasicTabs = ({ optionsContent }:any) => {
   const [value, setValue] = React.useState(0)
 
   const handleChange = (event, newValue) => {
@@ -47,32 +47,63 @@ const BasicTabs = ({ pageName, optionsContent }:any) => {
     <Box sx={{ width: '100%' }}>
       <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
         <Tabs value={value} onChange={handleChange} aria-label="basic tabs example">
-          <Tab label={optionsContent.optionHeaders?.first || 'OPIS'} {...a11yProps(0)} />
-          <Tab label={optionsContent.optionHeaders?.second || 'PREDNOSTI'} {...a11yProps(1)} />
-          <Tab label={optionsContent.optionHeaders?.third || 'DEKORI'} {...a11yProps(2)} />
+            {
+                optionsContent.optionHeaders.map((item, key) => {
+                  return <Tab label={item} {...a11yProps(key)} key={key} />
+                })
+            }
         </Tabs>
       </Box>
+ {/*       {
+            optionsContent.options.map((item, key) => {
+              return item.description
+                ? (<TabPanel value={value} index={key}>
+                    <ul>
+                      <li>{item.description}</li>
+                    </ul>
+                    {item.colors
+                      ? (
+                            <div className="options__colorContainer">
+                              {item.colors.map((data, key) => {
+                                return (
+                                    <div className="options__colors" key={key}>
+                                      <p>{data.text}</p>
+                                      <img src={data.image} alt="" />
+                                    </div>
+                                )
+                              })}
+                            </div>
+                        )
+                      : null}
+                  </TabPanel>)
+                : <ul>
+                    {item.map((data, key) => {
+                      return <li key={key}>{data}</li>
+                    })}
+                  </ul>
+            })
+        } */}
       <TabPanel value={value} index={0}>
         <h2>{optionsContent.nameHeader}</h2>
-        {optionsContent.options.firstOption.map((data, key) => {
+        {optionsContent.options[0].map((data, key) => {
           return <li key={key}>{data}</li>
         })}
       </TabPanel>
       <TabPanel value={value} index={1}>
         <ul>
-          {optionsContent.options.secondOption.map((data, key) => {
+          {optionsContent.options[1].map((data, key) => {
             return <li key={key}>{data}</li>
           })}
         </ul>
       </TabPanel>
       <TabPanel value={value} index={2}>
         <ul>
-          <li>{optionsContent.options.thirdOption.opis}</li>
+          <li>{optionsContent.options[2].description}</li>
         </ul>
-        {optionsContent.options.thirdOption.boje
+        {optionsContent.options[2].colors
           ? (
           <div className="options__colorContainer">
-            {optionsContent.options.thirdOption.boje.map((data, key) => {
+            {optionsContent.options[2].colors.map((data, key) => {
               return (
                 <div className="options__colors" key={key}>
                   <p>{data.text}</p>

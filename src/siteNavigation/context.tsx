@@ -1,9 +1,13 @@
 import { createContext, ReactNode, useCallback, useEffect, useMemo, useState } from 'react'
 import { TSiteNavigationContext } from './d'
 import { useSelector } from 'react-redux'
-import { _selectNavBarItems, _selectorFlexDirection, _selectSelectedItem } from 'store/SiteNavigation/helpers'
+import {
+  _selectNavBarItems,
+  _selectorFlexDirection,
+  _selectorProductsData,
+  _selectSelectedItem
+} from 'store/SiteNavigation/helpers'
 import { UseProducts } from '../hooks/navBar/useProducts'
-import { ProductData } from 'constants/ProductData'
 import { ProductsDataInfo } from 'store/SiteNavigation/d'
 
 export const SiteNavigationContext = createContext({} as TSiteNavigationContext)
@@ -20,6 +24,7 @@ const siteNavigationContextContainer = ({ children }: { children: ReactNode }) =
   const selectedItems = useSelector(_selectNavBarItems)
   const flexDirection = useSelector(_selectorFlexDirection)
   const selected = useSelector(_selectSelectedItem)
+  const ProductDate = useSelector(_selectorProductsData)
 
   /** Local state */
   const [navRightOpen, setNavRightOpen] = useState(false)
@@ -51,9 +56,8 @@ const siteNavigationContextContainer = ({ children }: { children: ReactNode }) =
     setGoBack()
   }, [selectedItems])
 
-  /** funkcija za stranicu proizvodi */
   const setProductPath = (value: string) => {
-    const newData = ProductData.filter(product => product.name === value)
+    const newData = ProductDate.filter(product => product.name === value)
     setData(newData[0] as any)
     Object.values(ProductsDataInfo).forEach((product) => {
       if (product === value) {

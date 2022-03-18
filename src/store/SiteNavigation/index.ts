@@ -1,5 +1,6 @@
 import {
   navBarData,
+  ProductData,
   ProductsCategory,
   productSectionData,
   TActionEvent,
@@ -17,7 +18,8 @@ const init = {
   flexDirection: 'row',
   productSectionData: productSectionData,
   tipsData: TipsInitData,
-  selectedTip: {} as TTipsData
+  selectedTip: {} as TTipsData,
+  productsDate: ProductData
 } as TStateProducts
 
 export default (

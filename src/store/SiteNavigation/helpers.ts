@@ -36,3 +36,8 @@ export const _selectorSelectedTip = createSelector(
   (state: TReduxState): TStateProducts => state.products,
   products => products.selectedTip
 )
+
+export const _selectorProductsData = createSelector(
+  (state: TReduxState): TStateProducts => state.products,
+  products => products.productsDate
+)
