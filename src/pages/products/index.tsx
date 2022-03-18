@@ -1,4 +1,4 @@
-import React, { useContext, useEffect } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 
 import LineAnimation from 'components/lineAnimation'
 import ProfileIcon from '../../constants/img/icons/Profile.png'
@@ -26,13 +26,33 @@ import {
   ProductPageProfileInfo,
   ProductPageProfilesContainer,
   ProductPageProfileText,
-  ProductPageProfileTextContainer
+  ProductPageProfileTextContainer,
+  ProductsPanelsInfoContainer,
+  ProductsPanelsInfoSelectedImage,
+  ProductsPanelsInfoText,
+  ProductsPanelsInfoTextContainer
 } from './style'
 import { SiteNavigationContext } from 'siteNavigation/context'
 import Options from './Options'
+import Backdrop from '@mui/material/Backdrop'
+import { TPanelsImg } from 'store/SiteNavigation/d'
 
 const ProductPage = () => {
   const { scroll, data, pageName } = useContext(SiteNavigationContext)
+
+  const [panelModal, setPanelModal] = useState({} as TPanelsImg)
+  const [open, setOpen] = useState(false)
+
+  const handlePanelModal = (imageModal: TPanelsImg) => {
+    console.log(imageModal)
+    setPanelModal(imageModal)
+    setOpen(true)
+  }
+
+  const handleClose = () => {
+    setOpen(false)
+    setPanelModal({} as TPanelsImg)
+  }
 
   useEffect(() => {
     window.scrollTo(0, 0)
@@ -124,7 +144,7 @@ const ProductPage = () => {
                                 <ProductPageProfileImgContainer>
                                     {panel.image.map((item, key) => {
                                       return (
-                                          <ProductPageProfileContainer key={key}>
+                                          <ProductPageProfileContainer key={key} onClick={() => handlePanelModal(item)}>
                                               <ProductPageProfileImg src={item.img} alt={item.text} />
                                               <ProductPageProfileTextContainer>
                                                   <ProductPageProfileText>
@@ -138,6 +158,21 @@ const ProductPage = () => {
                             </ProductPagePanelContainer>
                       )
                     })}
+                    <Backdrop
+                        sx={{ color: '#fff', zIndex: (theme) => theme.zIndex.drawer + 1 }}
+                        open={open}
+                        onClick={handleClose}
+                    />
+                    {open
+                      ? (
+                            <ProductsPanelsInfoContainer>
+                                <ProductsPanelsInfoSelectedImage src={panelModal.img}/>
+                                <ProductsPanelsInfoTextContainer>
+                                    <ProductsPanelsInfoText>{panelModal.text}</ProductsPanelsInfoText>
+                                </ProductsPanelsInfoTextContainer>
+                            </ProductsPanelsInfoContainer>
+                        )
+                      : null}
                 </ProductPageProfilesContainer>
             </>
               : null}

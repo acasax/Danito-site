@@ -4,7 +4,7 @@ import GalleryLayout from 'pages/gallery'
 import About from 'pages/about'
 import TipsPageLayout from 'pages/tipsPage'
 import Contact from 'pages/contact'
-import LandingPage from 'pages/LandingPage'
+import LandingPage from 'pages/landingPage'
 import ProductPage from 'pages/products'
 import { SiteNavigationContext } from './context'
 

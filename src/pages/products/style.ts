@@ -161,3 +161,32 @@ export const ProductPageProfileImg = styled.img`
     transition: 0.5s ease-in-out;
   }
 `
+
+export const ProductsPanelsInfoContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  position: fixed;
+  top: 200px;
+  z-index: 100000;
+  opacity: 1 !important;
+`
+
+export const ProductsPanelsInfoSelectedImage = styled.img`
+  border-radius: 6px;
+  cursor: pointer;
+  height: 600px;
+`
+
+export const ProductsPanelsInfoTextContainer = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+`
+
+export const ProductsPanelsInfoText = styled.p`
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  color: ${Styles.Colours.PALETTE.DANITO._white};
+`
