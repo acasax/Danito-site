@@ -162,306 +162,256 @@ export type TGalleyElement = {
 
 export const GalleryContent = [
   {
-    header: 'Žarka Zrenjanina 114, 26000 Pančevo',
+    header: 'Banjica, Beograd',
     scroll: 0,
     images: [
       {
-        name: 'Žarka Zrenjanina 114, 26000 Pančevo',
+        name: 'Banjica, Beograd',
         src: require('constants/img/objects/1/1.jpg').default
       },
       {
-        name: 'Žarka Zrenjanina 114, 26000 Pančevo',
+        name: 'Banjica, Beograd',
         src: require('constants/img/objects/1/2.jpg').default
       },
       {
-        name: 'Žarka Zrenjanina 114, 26000 Pančevo',
+        name: 'Banjica, Beograd',
         src: require('constants/img/objects/1/3.jpg').default
       },
       {
-        name: 'Žarka Zrenjanina 114, 26000 Pančevo',
+        name: 'Banjica, Beograd',
         src: require('constants/img/objects/1/4.jpg').default
       },
       {
-        name: 'Žarka Zrenjanina 114, 26000 Pančevo',
+        name: 'Banjica, Beograd',
         src: require('constants/img/objects/1/5.jpg').default
       },
       {
-        name: 'Žarka Zrenjanina 114, 26000 Pančevo',
+        name: 'Banjica, Beograd',
         src: require('constants/img/objects/1/6.jpg').default
       },
       {
-        name: 'Žarka Zrenjanina 114, 26000 Pančevo',
+        name: 'Banjica, Beograd',
         src: require('constants/img/objects/1/7.jpg').default
-      },
-      {
-        name: 'Žarka Zrenjanina 114, 26000 Pančevo',
-        src: require('constants/img/objects/1/8.jpg').default
-      },
-      {
-        name: 'Žarka Zrenjanina 114, 26000 Pančevo',
-        src: require('constants/img/objects/1/9.jpg').default
-      },
-      {
-        name: 'Žarka Zrenjanina 114, 26000 Pančevo',
-        src: require('constants/img/objects/1/10.jpg').default
-      },
-      {
-        name: 'Žarka Zrenjanina 114, 26000 Pančevo',
-        src: require('constants/img/objects/1/11.jpg').default
-      },
-      {
-        name: 'Žarka Zrenjanina 114, 26000 Pančevo',
-        src: require('constants/img/objects/1/12.jpg').default
-      },
-      {
-        name: 'Žarka Zrenjanina 114, 26000 Pančevo',
-        src: require('constants/img/objects/1/13.jpg').default
-      },
-      {
-        name: 'Žarka Zrenjanina 114, 26000 Pančevo',
-        src: require('constants/img/objects/1/14.jpg').default
       }
     ]
   },
   {
-    header: 'Žarka Zrenjanina 114, 26000 Pančevo',
-    scroll: 250,
+    header: 'Celopečka, Beograd',
+    scroll: 200,
     images: [
       {
-        name: 'Žarka Zrenjanina 114, 26000 Pančevo',
+        name: 'Celopečka, Beograd',
         src: require('constants/img/objects/2/1.jpg').default
       },
       {
-        name: 'Žarka Zrenjanina 114, 26000 Pančevo',
+        name: 'Celopečka, Beograd',
         src: require('constants/img/objects/2/2.jpg').default
       },
       {
-        name: 'Žarka Zrenjanina 114, 26000 Pančevo',
+        name: 'Celopečka, Beograd',
         src: require('constants/img/objects/2/3.jpg').default
       },
       {
-        name: 'Žarka Zrenjanina 114, 26000 Pančevo',
+        name: 'Celopečka, Beograd',
         src: require('constants/img/objects/2/4.jpg').default
       },
       {
-        name: 'Žarka Zrenjanina 114, 26000 Pančevo',
+        name: 'Celopečka, Beograd',
         src: require('constants/img/objects/2/5.jpg').default
       },
       {
-        name: 'Žarka Zrenjanina 114, 26000 Pančevo',
+        name: 'Celopečka, Beograd',
         src: require('constants/img/objects/2/6.jpg').default
-      },
-      {
-        name: 'Žarka Zrenjanina 114, 26000 Pančevo',
-        src: require('constants/img/objects/2/7.jpg').default
-      },
-      {
-        name: 'Žarka Zrenjanina 114, 26000 Pančevo',
-        src: require('constants/img/objects/2/8.jpg').default
-      },
-      {
-        name: 'Žarka Zrenjanina 114, 26000 Pančevo',
-        src: require('constants/img/objects/2/9.jpg').default
-      },
-      {
-        name: 'Žarka Zrenjanina 114, 26000 Pančevo',
-        src: require('constants/img/objects/2/10.jpg').default
-      },
-      {
-        name: 'Žarka Zrenjanina 114, 26000 Pančevo',
-        src: require('constants/img/objects/2/11.jpg').default
-      },
-      {
-        name: 'Žarka Zrenjanina 114, 26000 Pančevo',
-        src: require('constants/img/objects/2/12.jpg').default
-      },
-      {
-        name: 'Žarka Zrenjanina 114, 26000 Pančevo',
-        src: require('constants/img/objects/2/13.jpg').default
-      },
-      {
-        name: 'Žarka Zrenjanina 114, 26000 Pančevo',
-        src: require('constants/img/objects/2/14.jpg').default
       }
     ]
   },
   {
-    header: 'Žarka Zrenjanina 114, 26000 Pančevo',
-    scroll: 600,
+    header: 'Dunavske terase, Beograd',
+    scroll: 400,
     images: [
       {
-        name: 'Žarka Zrenjanina 114, 26000 Pančevo',
+        name: 'Dunavske terase, Beograd',
         src: require('constants/img/objects/3/1.jpg').default
       },
       {
-        name: 'Žarka Zrenjanina 114, 26000 Pančevo',
+        name: 'Dunavske terase, Beograd',
         src: require('constants/img/objects/3/2.jpg').default
       },
       {
-        name: 'Žarka Zrenjanina 114, 26000 Pančevo',
+        name: 'Dunavske terase, Beograd',
         src: require('constants/img/objects/3/3.jpg').default
       },
       {
-        name: 'Žarka Zrenjanina 114, 26000 Pančevo',
+        name: 'Dunavske terase, Beograd',
         src: require('constants/img/objects/3/4.jpg').default
       },
       {
-        name: 'Žarka Zrenjanina 114, 26000 Pančevo',
+        name: 'Dunavske terase, Beograd',
         src: require('constants/img/objects/3/5.jpg').default
       },
       {
-        name: 'Žarka Zrenjanina 114, 26000 Pančevo',
+        name: 'Dunavske terase, Beograd',
         src: require('constants/img/objects/3/6.jpg').default
-      },
-      {
-        name: 'Žarka Zrenjanina 114, 26000 Pančevo',
-        src: require('constants/img/objects/3/7.jpg').default
-      },
-      {
-        name: 'Žarka Zrenjanina 114, 26000 Pančevo',
-        src: require('constants/img/objects/3/8.jpg').default
-      },
-      {
-        name: 'Žarka Zrenjanina 114, 26000 Pančevo',
-        src: require('constants/img/objects/3/9.jpg').default
-      },
-      {
-        name: 'Žarka Zrenjanina 114, 26000 Pančevo',
-        src: require('constants/img/objects/3/10.jpg').default
-      },
-      {
-        name: 'Žarka Zrenjanina 114, 26000 Pančevo',
-        src: require('constants/img/objects/3/11.jpg').default
-      },
-      {
-        name: 'Žarka Zrenjanina 114, 26000 Pančevo',
-        src: require('constants/img/objects/3/12.jpg').default
-      },
-      {
-        name: 'Žarka Zrenjanina 114, 26000 Pančevo',
-        src: require('constants/img/objects/3/13.jpg').default
-      },
-      {
-        name: 'Žarka Zrenjanina 114, 26000 Pančevo',
-        src: require('constants/img/objects/3/14.jpg').default
-      },
-      {
-        name: 'Žarka Zrenjanina 114, 26000 Pančevo',
-        src: require('constants/img/objects/3/15.jpg').default
-      },
-      {
-        name: 'Žarka Zrenjanina 114, 26000 Pančevo',
-        src: require('constants/img/objects/3/16.jpg').default
-      },
-      {
-        name: 'Žarka Zrenjanina 114, 26000 Pančevo',
-        src: require('constants/img/objects/3/17.jpg').default
-      },
-      {
-        name: 'Žarka Zrenjanina 114, 26000 Pančevo',
-        src: require('constants/img/objects/3/18.jpg').default
-      },
-      {
-        name: 'Žarka Zrenjanina 114, 26000 Pančevo',
-        src: require('constants/img/objects/3/19.jpg').default
-      },
-      {
-        name: 'Žarka Zrenjanina 114, 26000 Pančevo',
-        src: require('constants/img/objects/3/20.jpg').default
-      },
-      {
-        name: 'Žarka Zrenjanina 114, 26000 Pančevo',
-        src: require('constants/img/objects/3/21.jpg').default
       }
     ]
   },
   {
-    header: 'Žarka Zrenjanina 114, 26000 Pančevo',
-    scroll: 1200,
+    header: 'Karađorđeva, Beograd',
+    scroll: 700,
     images: [
       {
-        name: 'Žarka Zrenjanina 114, 26000 Pančevo',
+        name: 'Karađorđeva, Beograd',
         src: require('constants/img/objects/4/1.jpg').default
       },
       {
-        name: 'Žarka Zrenjanina 114, 26000 Pančevo',
+        name: 'Karađorđeva, Beograd',
         src: require('constants/img/objects/4/2.jpg').default
       },
       {
-        name: 'Žarka Zrenjanina 114, 26000 Pančevo',
+        name: 'Karađorđeva, Beograd',
         src: require('constants/img/objects/4/3.jpg').default
       },
       {
-        name: 'Žarka Zrenjanina 114, 26000 Pančevo',
+        name: 'Karađorđeva, Beograd',
         src: require('constants/img/objects/4/4.jpg').default
       },
       {
-        name: 'Žarka Zrenjanina 114, 26000 Pančevo',
+        name: 'Karađorđeva, Beograd',
         src: require('constants/img/objects/4/5.jpg').default
       },
       {
-        name: 'Žarka Zrenjanina 114, 26000 Pančevo',
+        name: 'Karađorđeva, Beograd',
         src: require('constants/img/objects/4/6.jpg').default
       },
       {
-        name: 'Žarka Zrenjanina 114, 26000 Pančevo',
+        name: 'Karađorđeva, Beograd',
         src: require('constants/img/objects/4/7.jpg').default
+      }
+    ]
+  },
+  {
+    header: 'Kopaonik',
+    scroll: 950,
+    images: [
+      {
+        name: 'Kopaonik',
+        src: require('constants/img/objects/5/Kopaonik 1.jpg').default
       },
       {
-        name: 'Žarka Zrenjanina 114, 26000 Pančevo',
-        src: require('constants/img/objects/4/8.jpg').default
+        name: 'Kopaonik',
+        src: require('constants/img/objects/5/Kopaonik 1_.jpg').default
       },
       {
-        name: 'Žarka Zrenjanina 114, 26000 Pančevo',
-        src: require('constants/img/objects/4/9.jpg').default
+        name: 'Kopaonik',
+        src: require('constants/img/objects/5/Kopaonik 1_3.jpg').default
       },
       {
-        name: 'Žarka Zrenjanina 114, 26000 Pančevo',
-        src: require('constants/img/objects/4/10.jpg').default
+        name: 'Kopaonik',
+        src: require('constants/img/objects/5/Kopaonik 1_4.jpg').default
       },
       {
-        name: 'Žarka Zrenjanina 114, 26000 Pančevo',
-        src: require('constants/img/objects/4/11.jpg').default
+        name: 'Kopaonik',
+        src: require('constants/img/objects/5/Kopaonik 1_5.jpg').default
       },
       {
-        name: 'Žarka Zrenjanina 114, 26000 Pančevo',
-        src: require('constants/img/objects/4/12.jpg').default
+        name: 'Kopaonik',
+        src: require('constants/img/objects/5/Kopaonik 1_6.jpg').default
       },
       {
-        name: 'Žarka Zrenjanina 114, 26000 Pančevo',
-        src: require('constants/img/objects/4/13.jpg').default
+        name: 'Kopaonik',
+        src: require('constants/img/objects/5/Kopaonik 1_7.jpg').default
       },
       {
-        name: 'Žarka Zrenjanina 114, 26000 Pančevo',
-        src: require('constants/img/objects/4/14.jpg').default
+        name: 'Kopaonik',
+        src: require('constants/img/objects/5/Kopaonik 1_8.jpg').default
       },
       {
-        name: 'Žarka Zrenjanina 114, 26000 Pančevo',
-        src: require('constants/img/objects/4/15.jpg').default
+        name: 'Kopaonik',
+        src: require('constants/img/objects/5/Kopaonik 1_9.jpg').default
+      }
+    ]
+  },
+  {
+    header: 'Mia-Dorćol Beograd',
+    scroll: 1100,
+    images: [
+      {
+        name: 'Mia-Dorćol Beograd',
+        src: require('constants/img/objects/6/Mia-Dorcol Beorad 1.JPG').default
       },
       {
-        name: 'Žarka Zrenjanina 114, 26000 Pančevo',
-        src: require('constants/img/objects/4/16.jpg').default
+        name: 'Mia-Dorćol Beograd',
+        src: require('constants/img/objects/6/Mia-Dorcol Beorad 1_1.JPG').default
       },
       {
-        name: 'Žarka Zrenjanina 114, 26000 Pančevo',
-        src: require('constants/img/objects/4/17.jpg').default
+        name: 'Mia-Dorćol Beograd',
+        src: require('constants/img/objects/6/Mia-Dorcol Beorad 1_2.JPG').default
       },
       {
-        name: 'Žarka Zrenjanina 114, 26000 Pančevo',
-        src: require('constants/img/objects/4/18.jpg').default
+        name: 'Mia-Dorćol Beograd',
+        src: require('constants/img/objects/6/Mia-Dorcol Beorad 1_3.JPG').default
       },
       {
-        name: 'Žarka Zrenjanina 114, 26000 Pančevo',
-        src: require('constants/img/objects/4/19.jpg').default
+        name: 'Mia-Dorćol Beograd',
+        src: require('constants/img/objects/6/Mia-Dorcol Beorad 1_4.JPG').default
       },
       {
-        name: 'Žarka Zrenjanina 114, 26000 Pančevo',
-        src: require('constants/img/objects/4/20.jpg').default
+        name: 'Mia-Dorćol Beograd',
+        src: require('constants/img/objects/6/Mia-Dorcol Beorad 1_5.jpg').default
       },
       {
-        name: 'Žarka Zrenjanina 114, 26000 Pančevo',
-        src: require('constants/img/objects/4/21.jpg').default
+        name: 'Mia-Dorćol Beograd',
+        src: require('constants/img/objects/6/Mia-Dorcol Beorad 1_6.jpg').default
+      },
+      {
+        name: 'Mia-Dorćol Beograd',
+        src: require('constants/img/objects/6/Mia-Dorcol Beorad 1_7.jpg').default
+      },
+      {
+        name: 'Mia-Dorćol Beograd',
+        src: require('constants/img/objects/6/Mia-Dorcol Beorad 1_8.jpg').default
+      },
+      {
+        name: 'Mia-Dorćol Beograd',
+        src: require('constants/img/objects/6/Mia-Dorcol Beorad 1_9.jpg').default
+      }
+    ]
+  },
+  {
+    header: 'Smart Blok Pančeva',
+    scroll: 1300,
+    images: [
+      {
+        name: 'Smart Blok Pančeva',
+        src: require('constants/img/objects/7/Smart Blok Pancevo 1.JPG').default
+      },
+      {
+        name: 'Smart Blok Pančeva',
+        src: require('constants/img/objects/7/Smart Blok Pancevo 1_1.JPG').default
+      },
+      {
+        name: 'Smart Blok Pančeva',
+        src: require('constants/img/objects/7/Smart Blok Pancevo 1_2.JPG').default
+      },
+      {
+        name: 'Smart Blok Pančeva',
+        src: require('constants/img/objects/7/Smart Blok Pancevo 1_3.JPG').default
+      },
+      {
+        name: 'Smart Blok Pančeva',
+        src: require('constants/img/objects/7/Smart Blok Pancevo 1_4.JPG').default
+      },
+      {
+        name: 'Smart Blok Pančeva',
+        src: require('constants/img/objects/7/Smart Blok Pancevo 1_5.JPG').default
+      },
+      {
+        name: 'Smart Blok Pančeva',
+        src: require('constants/img/objects/7/Smart Blok Pancevo 1_6.JPG').default
+      },
+      {
+        name: 'Smart Blok Pančeva',
+        src: require('constants/img/objects/7/Smart Blok Pancevo 1_7.JPG').default
       }
     ]
   }

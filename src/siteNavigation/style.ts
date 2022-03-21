@@ -95,7 +95,7 @@ export const NavBarProductSideBarContainer = styled.div<{ isDisplay: boolean }>`
 `
 
 export const NavBarProductContainerText = styled.p`
-  font-size: 16px;
+  font-size: 14px;
   letter-spacing: 1px;
   text-align: center;
   color: ${Styles.Colours.PALETTE.DANITO._white};

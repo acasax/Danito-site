@@ -64,6 +64,7 @@ export const GalleyCarouselSelectedImage = styled.img`
   border-radius: 6px;
   cursor: pointer;
   width: 900px;
+  max-height: 600px;
 `
 
 export const GalleyCarouselSelectedImageContainerIcons = {

@@ -67,12 +67,12 @@ const ProductPage = () => {
             <LineAnimation header={pageName} scroll={scroll} scrollY={200}/>
             <ProductPageContentContainer>
                 <ProductPageContentVideoContainer>
-                    {data.video || data.imgVideo
+                    {data.imgVideo
                       ? (
-                            <ProductPageContentVideo autoPlay src={data.video || data.imgVideo}/>
+                            <ProductPageContentVideo autoPlay src={data.imgVideo}/>
                         )
                       : (
-                            <ProductPageContentImage src={data.videoImg} alt=""/>
+                            <ProductPageContentImage src={data.img} alt=""/>
                         )}
                 </ProductPageContentVideoContainer>
                 <ProductPageContentOptionsContainer>

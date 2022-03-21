@@ -1,4 +1,5 @@
 import * as React from 'react'
+import { useEffect } from 'react'
 import PropTypes from 'prop-types'
 import Tabs from '@mui/material/Tabs'
 import Tab from '@mui/material/Tab'
@@ -40,6 +41,9 @@ function a11yProps (index) {
 const BasicTabs = ({ optionsContent }:any) => {
   const [value, setValue] = React.useState(0)
 
+  useEffect(() => {
+    console.log(optionsContent)
+  })
   const handleChange = (event, newValue) => {
     setValue(newValue)
   }
@@ -83,38 +87,45 @@ const BasicTabs = ({ optionsContent }:any) => {
                   </ul>
             })
         } */}
-      <TabPanel value={value} index={0}>
-        <h2>{optionsContent.nameHeader}</h2>
-        {optionsContent.options[0].map((data, key) => {
-          return <li key={key}>{data}</li>
-        })}
-      </TabPanel>
-      <TabPanel value={value} index={1}>
-        <ul>
-          {optionsContent.options[1].map((data, key) => {
-            return <li key={key}>{data}</li>
-          })}
-        </ul>
-      </TabPanel>
-      <TabPanel value={value} index={2}>
-        <ul>
-          <li>{optionsContent.options[2].description}</li>
-        </ul>
-        {optionsContent.options[2].colors
-          ? (
-          <div className="options__colorContainer">
-            {optionsContent.options[2].colors.map((data, key) => {
-              return (
-                <div className="options__colors" key={key}>
-                  <p>{data.text}</p>
-                  <img src={data.image} alt="" />
-                </div>
-              )
-            })}
-          </div>
-            )
-          : null}
-      </TabPanel>
+        {
+            optionsContent.options[0] && <TabPanel value={value} index={0}>
+                <h2>{optionsContent.nameHeader}</h2>
+                {optionsContent.options[0].map((data, key) => {
+                  return <li key={key}>{data}</li>
+                })}
+            </TabPanel>
+        }
+        {
+            optionsContent.options[1] && <TabPanel value={value} index={1}>
+                <ul>
+                    {optionsContent.options[1].map((data, key) => {
+                      return <li key={key}>{data}</li>
+                    })}
+                </ul>
+            </TabPanel>
+        }
+        {
+            optionsContent.options[2] && <TabPanel value={value} index={2}>
+                <ul>
+                    <li>{optionsContent.options[2].description}</li>
+                </ul>
+                {optionsContent.options[2].colors
+                  ? (
+                        <div className="options__colorContainer">
+                            {optionsContent.options[2].colors.map((data, key) => {
+                              return (
+                                    <div className="options__colors" key={key}>
+                                        <p>{data.text}</p>
+                                        <img src={data.image} alt="" />
+                                    </div>
+                              )
+                            })}
+                        </div>
+                    )
+                  : null}
+            </TabPanel>
+        }
+
     </Box>
   )
 }

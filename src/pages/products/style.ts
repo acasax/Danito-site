@@ -49,7 +49,7 @@ export const ProductPageContentOptionsContainer = styled.div`
 
 export const ProductPageContainerCharacteristicContainer = styled.div`
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-evenly;
   width: 100%;
   padding: 20px;
