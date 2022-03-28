@@ -37,7 +37,7 @@ export const SliderElements = [
   },
   {
     label: 'Slider image 4',
-    path: 'https://www.drutex.eu/media/_upload/glowna_strona/banery/animacja_iglo_energy_classic_masa_antracyt.mp4',
+    path: require('constants/slider/6.mp4').video,
     isVideo: true
   },
   {
@@ -197,12 +197,8 @@ export const GalleryContent = [
   },
   {
     header: 'Celopečka, Beograd',
-    scroll: 200,
+    scroll: 0,
     images: [
-      {
-        name: 'Celopečka, Beograd',
-        src: require('constants/img/objects/2/1.jpg').default
-      },
       {
         name: 'Celopečka, Beograd',
         src: require('constants/img/objects/2/2.jpg').default
@@ -227,7 +223,7 @@ export const GalleryContent = [
   },
   {
     header: 'Dunavske terase, Beograd',
-    scroll: 400,
+    scroll: 0,
     images: [
       {
         name: 'Dunavske terase, Beograd',
@@ -257,7 +253,7 @@ export const GalleryContent = [
   },
   {
     header: 'Karađorđeva, Beograd',
-    scroll: 700,
+    scroll: 0,
     images: [
       {
         name: 'Karađorđeva, Beograd',
@@ -291,7 +287,7 @@ export const GalleryContent = [
   },
   {
     header: 'Kopaonik',
-    scroll: 950,
+    scroll: 0,
     images: [
       {
         name: 'Kopaonik',
@@ -333,7 +329,7 @@ export const GalleryContent = [
   },
   {
     header: 'Mia-Dorćol Beograd',
-    scroll: 1100,
+    scroll: 0,
     images: [
       {
         name: 'Mia-Dorćol Beograd',
@@ -379,7 +375,7 @@ export const GalleryContent = [
   },
   {
     header: 'Smart Blok Pančeva',
-    scroll: 1300,
+    scroll: 0,
     images: [
       {
         name: 'Smart Blok Pančeva',

@@ -49,12 +49,7 @@ export enum ProductsSubCategory {
     securityDoor = 'SIGURNOSNA VRATA',
 
     /** SubCategory blinds */
-    insideBlinds = 'UNUTRAŠNJE ROLETNE',
     outsideBlinds = 'SPOLJAŠNJE ROLETNE',
-
-    /** SubCategory solomaticVenetians */
-    outsideSolomaticVenetians = 'SPOLJNI VENECIJANERI',
-    underTheFacadeSolomaticVenetians = 'PODFASADNI VENECIJANERI',
 
     /** SubCategory facade */
     fundermaxFacade = 'FUNDERMAX FASADE',
@@ -659,8 +654,8 @@ export type TThirdPartOptions = {
 }
 
 export type TPanelsImg = {
-  img: string,
-  text: string
+    img: string,
+    text: string
 }
 
 export type TPanels = {
@@ -1121,7 +1116,18 @@ export const Panels = {
     }
   ]
 }
+
 /** Sredi init state za products */
+
+export const ProductsDataCoverImage = {
+  aluminiumOutsideBlindsPentagonalOutsideBlinds: require('constants/img/productsCoverImage/aluminiumOutsideBlindsPentagonalOutsideBlinds.mp4').video,
+  aluminiumOutsideBlindsRoundedOutsideBlinds: require('constants/img/productsCoverImage/aluminiumOutsideBlindsRoundedOutsideBlinds.mp4').video,
+  aluminiumWindow1: require('constants/img/productsCoverImage/aluminiumWindows1.mp4').video,
+  aluminiumWindow2: require('constants/img/productsCoverImage/aluminiumWindows2.mp4').video,
+  aluSmartiaM9800AccordionSlidingSystems: require('constants/img/productsCoverImage/aluSmartiaM9800AccordionSlidingSystems.mp4').video,
+  aluSmartiaM19800AccordionSlidingSystems: require('constants/img/productsCoverImage/aluSmartiaM19800AccordionSlidingSystems.mp4').video
+}
+
 export const ProductData = [
   {
     name: ProductsDataInfo.veka70,
@@ -2093,7 +2099,7 @@ export const ProductData = [
   },
   {
     name: ProductsDataInfo.pvcVekaSlideSlidingSystem,
-    nameHeader: 'PRODUCTS.allProducts.pvcVekaSlide',
+    nameHeader: ProductsDataInfo.pvcVekaSlideSlidingSystem,
     imgCover: ProductsImages.pvcVekaSlideSlidingSystemCoverImg,
     imgVideo: 'https://www.drutex.eu/media/_upload/produkty/iglo_pks/video/iglo_uchylno_przesowne.mp4',
     optionHeaders: ['OPIS', 'PREDNOSTI', 'DEKORI'],
@@ -2142,7 +2148,10 @@ export const ProductData = [
       {
         description: 'Veka 82 profil može biti u jednostranom i dvostranom dekoru.  Pored velikog broja dekora izdvajamo standard dekore koji su trenutno u trendu i sa najboljom cenom.',
         colors: [
-          { text: 'Nussbaum (orah)', image: 'https://www.drutex.eu/media/_upload/kolory/okleiny/bialy-fx.jpg' },
+          {
+            text: 'Nussbaum (orah)',
+            image: 'https://www.drutex.eu/media/_upload/kolory/okleiny/bialy-fx.jpg'
+          },
           {
             text: 'Golden Oak (svetli hrast)',
             image: 'https://www.drutex.eu/media/_upload/kolory/okleiny/bialy-fx.jpg'
@@ -2339,7 +2348,10 @@ export const ProductData = [
       {
         description: 'Veka 82 profil može biti u jednostranom i dvostranom dekoru.  Pored velikog broja dekora izdvajamo standard dekore koji su trenutno u trendu i sa najboljom cenom.',
         colors: [
-          { text: 'Nussbaum (orah)', image: 'https://www.drutex.eu/media/_upload/kolory/okleiny/bialy-fx.jpg' },
+          {
+            text: 'Nussbaum (orah)',
+            image: 'https://www.drutex.eu/media/_upload/kolory/okleiny/bialy-fx.jpg'
+          },
           {
             text: 'Golden Oak (svetli hrast)',
             image: 'https://www.drutex.eu/media/_upload/kolory/okleiny/bialy-fx.jpg'
@@ -2436,7 +2448,10 @@ export const ProductData = [
       {
         description: 'Veka 82 profil može biti u jednostranom i dvostranom dekoru.  Pored velikog broja dekora izdvajamo standard dekore koji su trenutno u trendu i sa najboljom cenom.',
         colors: [
-          { text: 'Nussbaum (orah)', image: 'https://www.drutex.eu/media/_upload/kolory/okleiny/bialy-fx.jpg' },
+          {
+            text: 'Nussbaum (orah)',
+            image: 'https://www.drutex.eu/media/_upload/kolory/okleiny/bialy-fx.jpg'
+          },
           {
             text: 'Golden Oak (svetli hrast)',
             image: 'https://www.drutex.eu/media/_upload/kolory/okleiny/bialy-fx.jpg'

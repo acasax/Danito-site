@@ -19,7 +19,8 @@ import {
  * scrollY - y wasp of element on webpage
  *
  *
- * Update
+ * Update Component
+ *
  * @author SaxDev 03.02.2022
  *
  * Update component that she could to use on image in background ( Company presentation component )

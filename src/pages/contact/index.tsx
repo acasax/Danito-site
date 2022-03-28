@@ -12,6 +12,16 @@ import { TextareaAutosize } from '@mui/material'
 import Button from '@mui/material/Button'
 import { SiteNavigationContext } from 'siteNavigation/context'
 
+/**
+ *
+ * About component
+ *
+ * @author SaxDev 03.28.2022
+ *
+ * This is layout for contact page.
+ *
+ */
+
 const Contact = () => {
   const { scroll } = useContext(SiteNavigationContext)
   return (
