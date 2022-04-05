@@ -720,9 +720,9 @@ export const ProductsImages = {
 export const PreviewVideo = {
   veka70Video: require('constants/video/VEKA70.mp4').default,
   veka82Video: require('constants/video/VEKA82.mp4').default,
-  PvcUlaznaVrata: require('constants/video/PvcUlaznaVrata.mp4').video,
-  PvcPregradnaVrata: require('constants/video/PvcPregradnaVrata.mp4').video,
-  VrataSkrivenioKrilo: require('constants/video/VrataSkrivenioKrilo.mp4').video,
+  PvcUlaznaVrata: require('constants/video/PvcUlaznaVrata.mp4').default,
+  PvcPregradnaVrata: require('constants/video/PvcPregradnaVrata.mp4').default,
+  VrataSkrivenioKrilo: require('constants/video/VrataSkrivenioKrilo.mp4').default,
   SigurnosnaVrataSlika: require('constants/video/SigurnosnaVrata.jpg').default
 }
 
@@ -1120,28 +1120,28 @@ export const Panels = {
 /** Sredi init state za products */
 
 export const ProductsDataCoverImage = {
-  aluminiumOutsideBlindsPentagonalOutsideBlinds: require('constants/img/productsCoverImage/aluminiumOutsideBlindsPentagonalOutsideBlinds.mp4').video,
-  aluminiumOutsideBlindsRoundedOutsideBlinds: require('constants/img/productsCoverImage/aluminiumOutsideBlindsRoundedOutsideBlinds.mp4').video,
-  aluminiumWindow1: require('constants/img/productsCoverImage/aluminiumWindows1.mp4').video,
-  aluminiumWindow2: require('constants/img/productsCoverImage/aluminiumWindows2.mp4').video,
-  aluSmartiaM9800AccordionSlidingSystems: require('constants/img/productsCoverImage/aluSmartiaM9800AccordionSlidingSystems.mp4').video,
-  aluSmartiaM19800AccordionSlidingSystems: require('constants/img/productsCoverImage/aluSmartiaM19800AccordionSlidingSystems.mp4').video,
-  aluUltraSlideSlidingSystem: require('constants/img/productsCoverImage/aluUltraSlideSlidingSystem.mp4').video,
-  doorWithHiddenWingAluminiumDoor: require('constants/img/productsCoverImage/doorWithHiddenWingAluminiumDoor.webm').video,
-  entrancePvcDoor: require('constants/img/productsCoverImage/entrancePvcDoor.mp4').video,
-  facade: require('constants/img/productsCoverImage/facade.mp4').video,
-  InRowSlidingSystem: require('constants/img/productsCoverImage/facade.mp4').video,
-  insideBlinds: require('constants/img/productsCoverImage/insideBlinds.mp4').video,
-  partionPvcDoor: require('constants/img/productsCoverImage/partitionPvcDoor.mp4').video,
-  profileWithoutThermalBreakAluminiumDoor: require('constants/img/productsCoverImage/profileWithoutThermalBreakAluminiumDoor.mp4').video,
-  profileWithThermalBreakAluminiumDoor: require('constants/img/productsCoverImage/profileWithThermalBreakAluminiumDoor.mp4').video,
-  pvcAccordionSlidingSystems: require('constants/img/productsCoverImage/pvcAccordionSlidingSystems.mp4').video,
-  pvcVekaSlideSlidingSystem: require('constants/img/productsCoverImage/pvcVekaSlideSlidingSystem.mp4').video,
-  pvcVekaSoftline7082InRowSlidingSystem: require('constants/img/productsCoverImage/pvcVekaSoftline7082InRowSlidingSystem.mp4').video,
-  solomaticVenetians: require('constants/img/productsCoverImage/solomaticVenetians.mp4').video,
-  veka70: require('constants/img/productsCoverImage/veka70.mp4').video,
-  veka82: require('constants/img/productsCoverImage/veka82.mp4').video,
-  woodAluminumWindow: require('constants/img/productsCoverImage/woodAluminiumWindows.mp4').video
+  aluminiumOutsideBlindsPentagonalOutsideBlinds: require('constants/img/productsCoverImage/aluminiumOutsideBlindsPentagonalOutsideBlinds.mp4').default,
+  aluminiumOutsideBlindsRoundedOutsideBlinds: require('constants/img/productsCoverImage/aluminiumOutsideBlindsRoundedOutsideBlinds.mp4').default,
+  aluminiumWindow1: require('constants/img/productsCoverImage/aluminiumWindows1.mp4').default,
+  aluminiumWindow2: require('constants/img/productsCoverImage/aluminiumWindows2.mp4').default,
+  aluSmartiaM9800AccordionSlidingSystems: require('constants/img/productsCoverImage/aluSmartiaM9800AccordionSlidingSystems.mp4').default,
+  aluSmartiaM19800AccordionSlidingSystems: require('constants/img/productsCoverImage/aluSmartiaM19800AccordionSlidingSystems.mp4').default,
+  aluUltraSlideSlidingSystem: require('constants/img/productsCoverImage/aluUltraSlideSlidingSystem.mp4').default,
+  doorWithHiddenWingAluminiumDoor: require('constants/img/productsCoverImage/doorWithHiddenWingAluminiumDoor.webm').default,
+  entrancePvcDoor: require('constants/img/productsCoverImage/entrancePvcDoor.mp4').default,
+  facade: require('constants/img/productsCoverImage/facade.mp4').default,
+  InRowSlidingSystem: require('constants/img/productsCoverImage/facade.mp4').default,
+  insideBlinds: require('constants/img/productsCoverImage/insideBlinds.mp4').default,
+  partionPvcDoor: require('constants/img/productsCoverImage/partitionPvcDoor.mp4').default,
+  profileWithoutThermalBreakAluminiumDoor: require('constants/img/productsCoverImage/profileWithoutThermalBreakAluminiumDoor.mp4').default,
+  profileWithThermalBreakAluminiumDoor: require('constants/img/productsCoverImage/profileWithThermalBreakAluminiumDoor.mp4').default,
+  pvcAccordionSlidingSystems: require('constants/img/productsCoverImage/pvcAccordionSlidingSystems.mp4').default,
+  pvcVekaSlideSlidingSystem: require('constants/img/productsCoverImage/pvcVekaSlideSlidingSystem.mp4').default,
+  pvcVekaSoftline7082InRowSlidingSystem: require('constants/img/productsCoverImage/pvcVekaSoftline7082InRowSlidingSystem.mp4').default,
+  solomaticVenetians: require('constants/img/productsCoverImage/solomaticVenetians.mp4').default,
+  veka70: require('constants/img/productsCoverImage/veka70.mp4').default,
+  veka82: require('constants/img/productsCoverImage/veka82.mp4').default,
+  woodAluminumWindow: require('constants/img/productsCoverImage/woodAluminiumWindows.mp4').default
 }
 
 export const ProductData = [
@@ -1247,43 +1247,24 @@ export const ProductData = [
     optionHeaders: ['OPIS', 'PREDNOSTI', 'DEKORI'],
     options: [
       [
-        'Sedmokomorni profil obezbeđuje optimalnu termičku izolaciju,što omogućava značajnu uštedu energije pri grejanju i hlađenju.',
-        ' Sistem specijalizovan za upotrebu u stambenim i poslovnim objektima.',
-        'Vrhunski kvalitet profila debljine 3 mm.',
-        'Široka paleta boja dekora profila jednostranog i dvostranog dekora omogućava svaki dizajn enterijera.',
-        'Koristi dvoslojni paket termopan stakla ispunjen argonom.'
+        'Kompletan sistem sa termicki prekinutim aluminijumskim profilima,',
+        'oblozen profilima od punog drveta, okovom i gumenim profilima',
+        'moguce je primeniti kod:',
+        '- nagibno-zaokretnih prozora i balkonskih vrata,',
+        '- nagibnih prozora i balkonskih vrata,',
+        '- klizno-uskocni prozora i balkonskih vrata,',
+        '- fiksnih prozora.'
       ],
       [
-        ' Moderan dizajn i odlični parametri u pogledu energetske efikasnosti,    vodootpornosti, otpornosti na vetar i propustljivosti vazduha!',
-        'Visok nivo bezbednosti obezbeđen je visokokvalitetnim petokomornim profilima A klase, napravljenim isključivo od prvoklasnog materijala.',
-        'Mnogo dnevne svetlosti, kao rezultat najužih profila i veće površine zastakljenja u poređenju sa standardnim sistemima.'
+        'Drveni profili sluze kao enterijerska obloga termoizolovanih',
+        'aluminijumskih profila. Drveni profili su ravnih ivica, cistih formi',
+        'i u izgledu pozicije dominira jedan profil kao ram stakla.',
+        'Kit lajsna je utopljena u dimenziju vidnog rama i kod otvarajuceg',
+        'krila montira se zajedno sa oblogom.'
       ],
       {
-        description: 'Veka 70 profil može biti u jednostranom i dvostranom dekoru. Pored velikog broja dekora izdvajamo standard dekore koji su trenutno u trendu i sa najboljom cenom.',
-        colors: [
-          {
-            text: 'Nussbaum (orah)',
-            image: 'https://www.drutex.eu/media/_upload/kolory/okleiny/bialy-fx.jpg'
-          },
-          {
-            text: 'Golden Oak (svetli hrast)',
-            image: 'https://www.drutex.eu/media/_upload/kolory/okleiny/bialy-fx.jpg'
-          },
-          {
-            text: 'Antracit (tamno siva)',
-            image: 'https://www.drutex.eu/media/_upload/kolory/okleiny/winchester_kk.jpg'
-          },
-          {
-            text: 'Mahagoni',
-            image: 'https://www.drutex.eu/media/_upload/kolory/okleiny/szary-kwarcytowy.jpg'
-          }
-        ]
+        description: 'Mogućnost izbora iz širokog spektra RAL boja.'
       }
-    ],
-    material: [
-      'Possibility to choose between profiles with three installation depths: 68mm, 78mm, 88 mm in two types of wood: three- or four-layer solid square timber: meranti 450+, pine, with aluminum clad on the outside.',
-      'Glass – Two-glass package with 24 mm thickness in standard, with thermal transmittance coefficient Ug = 1,0 W/(m2K) according to the PN-EN674 norm; the possibility to apply two- or three-glass packages For Duoline 68 mm – max. glass package thickness is 46 mm with thermal transmittance coefficient - Ug = 0,6 W/(m2K). For Duoline 78 mm – max. glass package thickness is 50 mm with thermal transmittance coefficient - Ug = 0,5 W/(m2K) For Duoline 88 mm – max. glass package thickness is 50 mm with thermal transmittance coefficient - Ug = 0,5 W/(m2K) The possibility to apply glass with enhanced sound insulation, tempered, safety, anti-burglary, ornament or solar protective..',
-      'Maco Multi Matic KS; Two anti-burglary bolts in standard; window is equipped with sash lifting and handle missplacement blockage*; micro-ventilation in a slot **; optionally hidden hinges.'
     ]
   },
   {
@@ -1294,47 +1275,25 @@ export const ProductData = [
     imgVideo: ProductsDataCoverImage.aluminiumWindow1,
     options: [
       [
-        'Petokomorni profil, sa čeličnim ojačanjima, sa tri dihtung gume.',
-        'Energetska efikasnost prve klase: prozori za kuće sa niskom potrošnjom energije kao i za pasivne kuće.',
-        'Vrhunski kvalitet profila debljine 3 mm.',
-        'Široka paleta boja dekora profila jednostranog i dvostranog dekora omogućava svaki dizajn enterijera.',
-        'Koristi troslojni paket termopan stakla ispunjen argonom.',
-        'Rastojanje prozorskih stakala od 28 mm smanjuje pojavu toplotnog mosta. Dodatna srednja guma, neprekidno postavljena duž obima rama prozora  pouzdano štiti i od niskih i od visokih temperatura, promaje i vlage.',
-        'Dodatna srednja guma, neprekidno postavljena duž obima rama prozora  pouzdano štiti i od niskih i od visokih temperatura, promaje i vlage.'
+        'Moderan i stabilan aluminijumski profil omogućava postizanje efekta istog nivoa rama i krila spolja nakon zatvaranja vrata.',
+        'Mogućnost prilagođavanja enterijera kao rezultat širokog spektra RAL boja.',
+        'Sistem hladnog profila je kompatibilan sa ostalim aluminijumskim sistemima iz Danito ponude.'
       ],
       [
-        'Inovativni višekomorni sistem osnovne ugradne dubine od 82mm za vrhunsku toplotnu izolaciju.',
-        'Harmonično se uklapa u sve građevinske stilove, od moderne novogradnje do saniranih starih objekata.',
-        'Mogućnost odabira svih boja iz RAL - palete upotrebom aluminijumskih - obloga..',
-        'Mogućnost oplemenjivanja površine profila sa više od 50 boja i rustikalnih tekstura/dezena, kao i aluminijumskim oblogama.'
+        '- Sistem omogućava primenu raznih ispuna staklenih kao i ukrasnih panela.',
+        '- Nepropusnost se obezbeđuje primenom specijalnih zaptivki od sintetičke EPDM gume.',
+        '- Visoka udobnost upotrebe i minimalna potreba za održavanjem, kao i dugi rok trajanja.',
+        '- U ponudi su vrata dostupna sa niskim pragom ili bez njega.',
+        '- Okovi visoke klase koji se primenjuju u aluminijumskim vratima pružaju odličnu zaštitu od provale.'
       ],
       {
-        description: 'Veka 82 profil može biti u jednostranom i dvostranom dekoru.  Pored velikog broja dekora izdvajamo standard dekore koji su trenutno u trendu i sa najboljom cenom.',
-        colors: [
-          {
-            text: 'Nussbaum (orah)',
-            image: 'https://www.drutex.eu/media/_upload/kolory/okleiny/bialy-fx.jpg'
-          },
-          {
-            text: 'Golden Oak (svetli hrast)',
-            image: 'https://www.drutex.eu/media/_upload/kolory/okleiny/bialy-fx.jpg'
-          },
-          {
-            text: 'Antracit (tamno siva)',
-            image: 'https://www.drutex.eu/media/_upload/kolory/okleiny/winchester_kk.jpg'
-          },
-          {
-            text: 'Mahagoni',
-            image: 'https://www.drutex.eu/media/_upload/kolory/okleiny/szary-kwarcytowy.jpg'
-          }
-        ]
+        description: 'Mogućnost izbora iz širokog spektra RAL boja.'
       }
-
     ],
     material: [
-      'Inovativni višekomorni sistem osnovne ugradne dubine od 82mm za vrhunsku toplotnu izolaciju.Koeficijent prolaska toplote čak i do Uw = 0,67 W/(m²K) upotrebom termo –trostrukog stakla sa Ug = 0,4 W/(m²K). Rastojanje prozorskih stakala od 28 mm smanjuje pojavu toplotnog mosta. Tri nivoa zaptivanja pouzdano štite i od niskih i od visokih temperatura, promaje i vlage. Vrhunski VEKA profils u skladu sa najvišim RAL standardom kvaliteta – klasa A prema DIN EN 12608. Mogućnost odabira svih boja iz RAL - palete upotrebom al - obloga.',
-      'Maksimalna debljina zastakljenja do 48 mm. Staklopaket 4/16/4/16/4 sa toplotnom propusnošću Ug = 0,5 V/(m2K) u standardu. Mogućnost nanošenja stakla sa pojačanom zvučnom izolacijom, kaljeno, sigurnosno, protivprovalno, ukrasno, solarno zaštitno.',
-      'Koristimo najkvalitetniji nemacki okov renomiranog proizvođača ROTO, koji osigurava kvalitetno zatvaranje i poseduje veći stepen protivprovalne zaštite.'
+      'Moderan i stabilan aluminijumski profil omogućava postizanje efekta istog nivoa rama i krila spolja nakon zatvaranja vrata.Mogućnost prilagođavanja enterijera kao rezultat širokog spektra RAL boja.Sistem hladnog profila je kompatibilan sa ostalim aluminijumskim sistemima iz Danito ponude.',
+      'Neiscrpan asortiman oblika i kombinacija vrata – individualna i po meri – ispuniće i najviše zahteve. Jednokrilna, dvokrilna ili vrata sa ispunom od stakla ili ukrasnih panela, sa jednim ili više elemenata sa strane.',
+      'Okovi visoke klase koji se primenjuju u aluminijumskim vratima pružaju odličnu zaštitu od provale.'
     ]
   },
   {
@@ -1345,46 +1304,21 @@ export const ProductData = [
     optionHeaders: ['OPIS', 'PREDNOSTI', 'DEKORI'],
     options: [
       [
-        'Sedmokomorni profil, sa čeličnim ojačanjima, sa tri dihtung gume.',
-        'Energetska efikasnost prve klase: prozori za kuće sa niskom potrošnjom energije kao i za pasivne kuće.',
-        'Vrhunski kvalitet profila debljine 3 mm.',
-        'Široka paleta boja dekora profila jednostranog i dvostranog dekora omogućava svaki dizajn enterijera.',
-        'Koristi troslojni paket termopan stakla ispunjen argonom.',
-        'Rastojanje prozorskih stakala od 28 mm smanjuje pojavu toplotnog mosta. Dodatna srednja guma, neprekidno postavljena duž obima rama prozora  pouzdano štiti i od niskih i od visokih temperatura, promaje i vlage.',
-        'Dodatna srednja guma, neprekidno postavljena duž obima rama prozora  pouzdano štiti i od niskih i od visokih temperatura, promaje i vlage.'
+        'Vrata u sistemu profila sa termoprekidom odlikuju se višim stepenom toplotne izolacije usled primene specijalnih izolacionih umetaka i termičkih prekida, kao i zaptivki od EPDM dvokomponentne sintetičke gume: čvrste i ćelijske.'
       ],
       [
-        'Inovativni višekomorni sistem osnovne ugradne dubine od 82mm za vrhunsku toplotnu izolaciju.',
-        'Harmonično se uklapa u sve građevinske stilove, od moderne novogradnje do saniranih starih objekata.',
-        'Mogućnost odabira svih boja iz RAL - palete upotrebom aluminijumskih - obloga..',
-        'Mogućnost oplemenjivanja površine profila sa više od 50 boja i rustikalnih tekstura/dezena, kao i aluminijumskim oblogama.'
+        'Vrata napravljena u ovom sistemu su odlično rešenje i za energetski efikasnu zgradu.',
+        'Mogućnost izbora iz širokog spektra RAL boja.',
+        'Okovi visoke klase koji se primenjuju u aluminijumskim vratima pružaju odličnu zaštitu od provale.'
       ],
       {
-        description: 'Veka 82 profil može biti u jednostranom i dvostranom dekoru.  Pored velikog broja dekora izdvajamo standard dekore koji su trenutno u trendu i sa najboljom cenom.',
-        colors: [
-          {
-            text: 'Nussbaum (orah)',
-            image: 'https://www.drutex.eu/media/_upload/kolory/okleiny/bialy-fx.jpg'
-          },
-          {
-            text: 'Golden Oak (svetli hrast)',
-            image: 'https://www.drutex.eu/media/_upload/kolory/okleiny/bialy-fx.jpg'
-          },
-          {
-            text: 'Antracit (tamno siva)',
-            image: 'https://www.drutex.eu/media/_upload/kolory/okleiny/winchester_kk.jpg'
-          },
-          {
-            text: 'Mahagoni',
-            image: 'https://www.drutex.eu/media/_upload/kolory/okleiny/szary-kwarcytowy.jpg'
-          }
-        ]
+        description: 'Mogućnost izbora iz širokog spektra RAL boja.'
       }
     ],
     material: [
-      'Inovativni višekomorni sistem osnovne ugradne dubine od 82mm za vrhunsku toplotnu izolaciju.Koeficijent prolaska toplote čak i do Uw = 0,67 W/(m²K) upotrebom termo –trostrukog stakla sa Ug = 0,4 W/(m²K). Rastojanje prozorskih stakala od 28 mm smanjuje pojavu toplotnog mosta. Tri nivoa zaptivanja pouzdano štite i od niskih i od visokih temperatura, promaje i vlage. Vrhunski VEKA profils u skladu sa najvišim RAL standardom kvaliteta – klasa A prema DIN EN 12608. Mogućnost odabira svih boja iz RAL - palete upotrebom al - obloga.',
-      'Maksimalna debljina zastakljenja do 48 mm. Staklopaket 4/16/4/16/4 sa toplotnom propusnošću Ug = 0,5 V/(m2K) u standardu. Mogućnost nanošenja stakla sa pojačanom zvučnom izolacijom, kaljeno, sigurnosno, protivprovalno, ukrasno, solarno zaštitno.',
-      'Koristimo najkvalitetniji nemacki okov renomiranog proizvođača ROTO, koji osigurava kvalitetno zatvaranje i poseduje veći stepen protivprovalne zaštite.'
+      'Vrata u sistemu profila sa termoprekidom odlikuju se višim stepenom toplotne izolacije usled primene specijalnih izolacionih umetaka i termičkih prekida, kao i zaptivki od EPDM dvokomponentne sintetičke gume: čvrste i ćelijske. Vrata napravljena u ovom sistemu su odlično rešenje i za energetski efikasnu zgradu. Mogućnost izbora iz širokog spektra RAL boja. Okovi visoke klase koji se primenjuju u aluminijumskim vratima pružaju odličnu zaštitu od provale.',
+      'Neiscrpan asortiman oblika i kombinacija vrata – individualna i po meri – ispuniće i najviše zahteve. Jednokrilna, dvokrilna ili vrata sa ispunom od stakla ili ukrasnih panela, sa jednim ili više elemenata sa strane.',
+      'Okovi visoke klase koji se primenjuju u aluminijumskim vratima pružaju odličnu zaštitu od provale.'
     ]
   },
   {
@@ -1686,46 +1620,14 @@ export const ProductData = [
     optionHeaders: ['OPIS', 'PREDNOSTI', 'DEKORI'],
     options: [
       [
-        'Sedmokomorni štok, šestokomorno krilo, sa čeličnim ojačanjima, sa tri dihtung gume.',
-        'Energetska efikasnost prve klase: prozori za kuće sa niskom potrošnjom energije kao i za pasivne kuće.',
-        'Vrhunski kvalitet profila debljine 3 mm.',
-        'Široka paleta boja dekora profila jednostranog i dvostranog dekora omogućava svaki dizajn enterijera.',
-        'Koristi troslojni paket termopan stakla ispunjen argonom.',
-        'Rastojanje prozorskih stakala od 28 mm smanjuje pojavu toplotnog mosta. Dodatna srednja guma, neprekidno postavljena duž obima rama prozora  pouzdano štiti i od niskih i od visokih temperatura, promaje i vlage.',
-        'Dodatna srednja guma, neprekidno postavljena duž obima rama prozora  pouzdano štiti i od niskih i od visokih temperatura, promaje i vlage.'
+        'Napravljene su od PVC kutije dimenzija: 15 i 20cm sa pvc ili aluminijumskim zastorom, aluminijumskom zavrsnom lamelom u koju je uvučena guma balonka(MO60) i aluminijumskim ili pvc vodjicama sa četkicama. '
       ],
       [
-        'Inovativni višekomorni sistem osnovne ugradne dubine od 82mm za vrhunsku toplotnu izolaciju.',
-        'Harmonično se uklapa u sve građevinske stilove, od moderne novogradnje do saniranih starih objekata.',
-        'Mogućnost odabira svih boja iz RAL - palete upotrebom aluminijumskih - obloga..',
-        'Mogućnost oplemenjivanja površine profila sa više od 50 boja i rustikalnih tekstura/dezena, kao i aluminijumskim oblogama.'
+        'U kutijama se na zahtev kupca moze nalaziti i termoizolacija od stiropora.Veliki izbor drvo dekora ( zlatni hrast, mahagoni, orah...)'
       ],
       {
-        description: 'Veka 82 profil može biti u jednostranom i dvostranom dekoru.  Pored velikog broja dekora izdvajamo standard dekore koji su trenutno u trendu i sa najboljom cenom.',
-        colors: [
-          {
-            text: 'Nussbaum (orah)',
-            image: 'https://www.drutex.eu/media/_upload/kolory/okleiny/bialy-fx.jpg'
-          },
-          {
-            text: 'Golden Oak (svetli hrast)',
-            image: 'https://www.drutex.eu/media/_upload/kolory/okleiny/bialy-fx.jpg'
-          },
-          {
-            text: 'Antracit (tamno siva)',
-            image: 'https://www.drutex.eu/media/_upload/kolory/okleiny/winchester_kk.jpg'
-          },
-          {
-            text: 'Mahagoni',
-            image: 'https://www.drutex.eu/media/_upload/kolory/okleiny/szary-kwarcytowy.jpg'
-          }
-        ]
+        description: 'Veliki izbor boja po RAL karti.'
       }
-    ],
-    material: [
-      'Inovativni višekomorni sistem osnovne ugradne dubine od 82mm za vrhunsku toplotnu izolaciju.Koeficijent prolaska toplote čak i do Uw = 0,67 W/(m²K) upotrebom termo –trostrukog stakla sa Ug = 0,4 W/(m²K). Rastojanje prozorskih stakala od 28 mm smanjuje pojavu toplotnog mosta. Tri nivoa zaptivanja pouzdano štite i od niskih i od visokih temperatura, promaje i vlage. Vrhunski VEKA profils u skladu sa najvišim RAL standardom kvaliteta – klasa A prema DIN EN 12608. Mogućnost odabira svih boja iz RAL - palete upotrebom al - obloga.',
-      'Maksimalna debljina zastakljenja do 48 mm. Staklopaket 4/16/4/16/4 sa toplotnom propusnošću Ug = 0,5 V/(m2K) u standardu. Mogućnost nanošenja stakla sa pojačanom zvučnom izolacijom, kaljeno, sigurnosno, protivprovalno, ukrasno, solarno zaštitno.',
-      'Koristimo najkvalitetniji nemacki okov renomiranog proizvođača ROTO, koji osigurava kvalitetno zatvaranje i poseduje veći stepen protivprovalne zaštite.'
     ]
   },
   {
@@ -1736,46 +1638,14 @@ export const ProductData = [
     optionHeaders: ['OPIS', 'PREDNOSTI', 'DEKORI'],
     options: [
       [
-        'Sedmokomorni štok, šestokomorno krilo, sa čeličnim ojačanjima, sa tri dihtung gume.',
-        'Energetska efikasnost prve klase: prozori za kuće sa niskom potrošnjom energije kao i za pasivne kuće.',
-        'Vrhunski kvalitet profila debljine 3 mm.',
-        'Široka paleta boja dekora profila jednostranog i dvostranog dekora omogućava svaki dizajn enterijera.',
-        'Koristi troslojni paket termopan stakla ispunjen argonom.',
-        'Rastojanje prozorskih stakala od 28 mm smanjuje pojavu toplotnog mosta. Dodatna srednja guma, neprekidno postavljena duž obima rama prozora  pouzdano štiti i od niskih i od visokih temperatura, promaje i vlage.',
-        'Dodatna srednja guma, neprekidno postavljena duž obima rama prozora  pouzdano štiti i od niskih i od visokih temperatura, promaje i vlage.'
+        'Napravljene su od ALUMINIJUMSKE ekstrudirane kutije dimenzija: 14.5 i 18 cm sa aluminijumskim zastorom, aluminijumskom završnom lamelom u koju je uvučena guma balonka(MO60), aluminijumskim bočnim poklopcima i aluminijumskim vodjicama sa četkicama.'
       ],
       [
-        'Inovativni višekomorni sistem osnovne ugradne dubine od 82mm za vrhunsku toplotnu izolaciju.',
-        'Harmonično se uklapa u sve građevinske stilove, od moderne novogradnje do saniranih starih objekata.',
-        'Mogućnost odabira svih boja iz RAL - palete upotrebom aluminijumskih - obloga..',
-        'Mogućnost oplemenjivanja površine profila sa više od 50 boja i rustikalnih tekstura/dezena, kao i aluminijumskim oblogama.'
+        'Uskoro!'
       ],
       {
-        description: 'Veka 82 profil može biti u jednostranom i dvostranom dekoru.  Pored velikog broja dekora izdvajamo standard dekore koji su trenutno u trendu i sa najboljom cenom.',
-        colors: [
-          {
-            text: 'Nussbaum (orah)',
-            image: 'https://www.drutex.eu/media/_upload/kolory/okleiny/bialy-fx.jpg'
-          },
-          {
-            text: 'Golden Oak (svetli hrast)',
-            image: 'https://www.drutex.eu/media/_upload/kolory/okleiny/bialy-fx.jpg'
-          },
-          {
-            text: 'Antracit (tamno siva)',
-            image: 'https://www.drutex.eu/media/_upload/kolory/okleiny/winchester_kk.jpg'
-          },
-          {
-            text: 'Mahagoni',
-            image: 'https://www.drutex.eu/media/_upload/kolory/okleiny/szary-kwarcytowy.jpg'
-          }
-        ]
+        description: 'Veliki izbor boja po RAL karti.'
       }
-    ],
-    material: [
-      'Inovativni višekomorni sistem osnovne ugradne dubine od 82mm za vrhunsku toplotnu izolaciju.Koeficijent prolaska toplote čak i do Uw = 0,67 W/(m²K) upotrebom termo –trostrukog stakla sa Ug = 0,4 W/(m²K). Rastojanje prozorskih stakala od 28 mm smanjuje pojavu toplotnog mosta. Tri nivoa zaptivanja pouzdano štite i od niskih i od visokih temperatura, promaje i vlage. Vrhunski VEKA profils u skladu sa najvišim RAL standardom kvaliteta – klasa A prema DIN EN 12608. Mogućnost odabira svih boja iz RAL - palete upotrebom al - obloga.',
-      'Maksimalna debljina zastakljenja do 48 mm. Staklopaket 4/16/4/16/4 sa toplotnom propusnošću Ug = 0,5 V/(m2K) u standardu. Mogućnost nanošenja stakla sa pojačanom zvučnom izolacijom, kaljeno, sigurnosno, protivprovalno, ukrasno, solarno zaštitno.',
-      'Koristimo najkvalitetniji nemacki okov renomiranog proizvođača ROTO, koji osigurava kvalitetno zatvaranje i poseduje veći stepen protivprovalne zaštite.'
     ]
   },
   {
@@ -1786,46 +1656,14 @@ export const ProductData = [
     optionHeaders: ['OPIS', 'PREDNOSTI', 'DEKORI'],
     options: [
       [
-        'Sedmokomorni štok, šestokomorno krilo, sa čeličnim ojačanjima, sa tri dihtung gume.',
-        'Energetska efikasnost prve klase: prozori za kuće sa niskom potrošnjom energije kao i za pasivne kuće.',
-        'Vrhunski kvalitet profila debljine 3 mm.',
-        'Široka paleta boja dekora profila jednostranog i dvostranog dekora omogućava svaki dizajn enterijera.',
-        'Koristi troslojni paket termopan stakla ispunjen argonom.',
-        'Rastojanje prozorskih stakala od 28 mm smanjuje pojavu toplotnog mosta. Dodatna srednja guma, neprekidno postavljena duž obima rama prozora  pouzdano štiti i od niskih i od visokih temperatura, promaje i vlage.',
-        'Dodatna srednja guma, neprekidno postavljena duž obima rama prozora  pouzdano štiti i od niskih i od visokih temperatura, promaje i vlage.'
+        'Napravljene su od ALUMINIJUMSKE ekstrudirane kutije dimenzija: 14.5 i 18 cm sa aluminijumskim zastorom, aluminijumskom završnom lamelom u koju je uvučena guma balonka(MO60), aluminijumskim bočnim poklopcima i aluminijumskim vodjicama sa četkicama.'
       ],
       [
-        'Inovativni višekomorni sistem osnovne ugradne dubine od 82mm za vrhunsku toplotnu izolaciju.',
-        'Harmonično se uklapa u sve građevinske stilove, od moderne novogradnje do saniranih starih objekata.',
-        'Mogućnost odabira svih boja iz RAL - palete upotrebom aluminijumskih - obloga..',
-        'Mogućnost oplemenjivanja površine profila sa više od 50 boja i rustikalnih tekstura/dezena, kao i aluminijumskim oblogama.'
+        'Uskoro!'
       ],
       {
-        description: 'Veka 82 profil može biti u jednostranom i dvostranom dekoru.  Pored velikog broja dekora izdvajamo standard dekore koji su trenutno u trendu i sa najboljom cenom.',
-        colors: [
-          {
-            text: 'Nussbaum (orah)',
-            image: 'https://www.drutex.eu/media/_upload/kolory/okleiny/bialy-fx.jpg'
-          },
-          {
-            text: 'Golden Oak (svetli hrast)',
-            image: 'https://www.drutex.eu/media/_upload/kolory/okleiny/bialy-fx.jpg'
-          },
-          {
-            text: 'Antracit (tamno siva)',
-            image: 'https://www.drutex.eu/media/_upload/kolory/okleiny/winchester_kk.jpg'
-          },
-          {
-            text: 'Mahagoni',
-            image: 'https://www.drutex.eu/media/_upload/kolory/okleiny/szary-kwarcytowy.jpg'
-          }
-        ]
+        description: 'Veliki izbor boja po RAL karti.'
       }
-    ],
-    material: [
-      'Inovativni višekomorni sistem osnovne ugradne dubine od 82mm za vrhunsku toplotnu izolaciju.Koeficijent prolaska toplote čak i do Uw = 0,67 W/(m²K) upotrebom termo –trostrukog stakla sa Ug = 0,4 W/(m²K). Rastojanje prozorskih stakala od 28 mm smanjuje pojavu toplotnog mosta. Tri nivoa zaptivanja pouzdano štite i od niskih i od visokih temperatura, promaje i vlage. Vrhunski VEKA profils u skladu sa najvišim RAL standardom kvaliteta – klasa A prema DIN EN 12608. Mogućnost odabira svih boja iz RAL - palete upotrebom al - obloga.',
-      'Maksimalna debljina zastakljenja do 48 mm. Staklopaket 4/16/4/16/4 sa toplotnom propusnošću Ug = 0,5 V/(m2K) u standardu. Mogućnost nanošenja stakla sa pojačanom zvučnom izolacijom, kaljeno, sigurnosno, protivprovalno, ukrasno, solarno zaštitno.',
-      'Koristimo najkvalitetniji nemacki okov renomiranog proizvođača ROTO, koji osigurava kvalitetno zatvaranje i poseduje veći stepen protivprovalne zaštite.'
     ]
   },
   {
@@ -1851,31 +1689,8 @@ export const ProductData = [
         'Mogućnost oplemenjivanja površine profila sa više od 50 boja i rustikalnih tekstura/dezena, kao i aluminijumskim oblogama.'
       ],
       {
-        description: 'Veka 82 profil može biti u jednostranom i dvostranom dekoru.  Pored velikog broja dekora izdvajamo standard dekore koji su trenutno u trendu i sa najboljom cenom.',
-        colors: [
-          {
-            text: 'Nussbaum (orah)',
-            image: 'https://www.drutex.eu/media/_upload/kolory/okleiny/bialy-fx.jpg'
-          },
-          {
-            text: 'Golden Oak (svetli hrast)',
-            image: 'https://www.drutex.eu/media/_upload/kolory/okleiny/bialy-fx.jpg'
-          },
-          {
-            text: 'Antracit (tamno siva)',
-            image: 'https://www.drutex.eu/media/_upload/kolory/okleiny/winchester_kk.jpg'
-          },
-          {
-            text: 'Mahagoni',
-            image: 'https://www.drutex.eu/media/_upload/kolory/okleiny/szary-kwarcytowy.jpg'
-          }
-        ]
+        description: 'Veka 82 profil može biti u jednostranom i dvostranom dekoru.  Pored velikog broja dekora izdvajamo standard dekore koji su trenutno u trendu i sa najboljom cenom.'
       }
-    ],
-    material: [
-      'Inovativni višekomorni sistem osnovne ugradne dubine od 82mm za vrhunsku toplotnu izolaciju.Koeficijent prolaska toplote čak i do Uw = 0,67 W/(m²K) upotrebom termo –trostrukog stakla sa Ug = 0,4 W/(m²K). Rastojanje prozorskih stakala od 28 mm smanjuje pojavu toplotnog mosta. Tri nivoa zaptivanja pouzdano štite i od niskih i od visokih temperatura, promaje i vlage. Vrhunski VEKA profils u skladu sa najvišim RAL standardom kvaliteta – klasa A prema DIN EN 12608. Mogućnost odabira svih boja iz RAL - palete upotrebom al - obloga.',
-      'Maksimalna debljina zastakljenja do 48 mm. Staklopaket 4/16/4/16/4 sa toplotnom propusnošću Ug = 0,5 V/(m2K) u standardu. Mogućnost nanošenja stakla sa pojačanom zvučnom izolacijom, kaljeno, sigurnosno, protivprovalno, ukrasno, solarno zaštitno.',
-      'Koristimo najkvalitetniji nemacki okov renomiranog proizvođača ROTO, koji osigurava kvalitetno zatvaranje i poseduje veći stepen protivprovalne zaštite.'
     ]
   },
   {
@@ -1886,46 +1701,18 @@ export const ProductData = [
     optionHeaders: ['OPIS', 'PREDNOSTI', 'DEKORI'],
     options: [
       [
-        'Sedmokomorni štok, šestokomorno krilo, sa čeličnim ojačanjima, sa tri dihtung gume.',
-        'Energetska efikasnost prve klase: prozori za kuće sa niskom potrošnjom energije kao i za pasivne kuće.',
-        'Vrhunski kvalitet profila debljine 3 mm.',
-        'Široka paleta boja dekora profila jednostranog i dvostranog dekora omogućava svaki dizajn enterijera.',
-        'Koristi troslojni paket termopan stakla ispunjen argonom.',
-        'Rastojanje prozorskih stakala od 28 mm smanjuje pojavu toplotnog mosta. Dodatna srednja guma, neprekidno postavljena duž obima rama prozora  pouzdano štiti i od niskih i od visokih temperatura, promaje i vlage.',
-        'Dodatna srednja guma, neprekidno postavljena duž obima rama prozora  pouzdano štiti i od niskih i od visokih temperatura, promaje i vlage.'
+        'Dekorativne HPL COMPAKTNE fasadne ploce.',
+        'Primenjive za fasade kao i za balkonske ograde'
       ],
       [
-        'Inovativni višekomorni sistem osnovne ugradne dubine od 82mm za vrhunsku toplotnu izolaciju.',
-        'Harmonično se uklapa u sve građevinske stilove, od moderne novogradnje do saniranih starih objekata.',
-        'Mogućnost odabira svih boja iz RAL - palete upotrebom aluminijumskih - obloga..',
-        'Mogućnost oplemenjivanja površine profila sa više od 50 boja i rustikalnih tekstura/dezena, kao i aluminijumskim oblogama.'
+        'Veliki izbor standardnih formata kao I velika paleta dekora',
+        'Mogucnost savijanja elemenata, jednostavnost obrade I montaze',
+        'Visoka tvrdoca povrsine, visoka cvrstoca prilikom savijanja.',
+        'Visoka hemijska I bioloska otpornost na udarce'
       ],
       {
-        description: 'Veka 82 profil može biti u jednostranom i dvostranom dekoru.  Pored velikog broja dekora izdvajamo standard dekore koji su trenutno u trendu i sa najboljom cenom.',
-        colors: [
-          {
-            text: 'Nussbaum (orah)',
-            image: 'https://www.drutex.eu/media/_upload/kolory/okleiny/bialy-fx.jpg'
-          },
-          {
-            text: 'Golden Oak (svetli hrast)',
-            image: 'https://www.drutex.eu/media/_upload/kolory/okleiny/bialy-fx.jpg'
-          },
-          {
-            text: 'Antracit (tamno siva)',
-            image: 'https://www.drutex.eu/media/_upload/kolory/okleiny/winchester_kk.jpg'
-          },
-          {
-            text: 'Mahagoni',
-            image: 'https://www.drutex.eu/media/_upload/kolory/okleiny/szary-kwarcytowy.jpg'
-          }
-        ]
+        description: 'Izbor dekora zadovoljiće svačije zahteve i ukuse. Dekori se dele na kategorije poput onih sa metalnim ili prirodnim dezenom. Tako vaša fasada može izgledati kao da je optočena bakrom,ali i tako kao da je ušuškana u hrast ili bor. Na raspologanju su i živopisne jednoobrazne boje ploča koje su odličan izbor ukoliko želite da istaknete jedna deo objekata kao što su na primer, terase ili ograde. Žute, plave ili zelene ploče učiniće fasadu zanimljivom i koloritnom.'
       }
-    ],
-    material: [
-      'Inovativni višekomorni sistem osnovne ugradne dubine od 82mm za vrhunsku toplotnu izolaciju.Koeficijent prolaska toplote čak i do Uw = 0,67 W/(m²K) upotrebom termo –trostrukog stakla sa Ug = 0,4 W/(m²K). Rastojanje prozorskih stakala od 28 mm smanjuje pojavu toplotnog mosta. Tri nivoa zaptivanja pouzdano štite i od niskih i od visokih temperatura, promaje i vlage. Vrhunski VEKA profils u skladu sa najvišim RAL standardom kvaliteta – klasa A prema DIN EN 12608. Mogućnost odabira svih boja iz RAL - palete upotrebom al - obloga.',
-      'Maksimalna debljina zastakljenja do 48 mm. Staklopaket 4/16/4/16/4 sa toplotnom propusnošću Ug = 0,5 V/(m2K) u standardu. Mogućnost nanošenja stakla sa pojačanom zvučnom izolacijom, kaljeno, sigurnosno, protivprovalno, ukrasno, solarno zaštitno.',
-      'Koristimo najkvalitetniji nemacki okov renomiranog proizvođača ROTO, koji osigurava kvalitetno zatvaranje i poseduje veći stepen protivprovalne zaštite.'
     ]
   },
   {
@@ -1936,46 +1723,16 @@ export const ProductData = [
     optionHeaders: ['OPIS', 'PREDNOSTI', 'DEKORI'],
     options: [
       [
-        'Sedmokomorni štok, šestokomorno krilo, sa čeličnim ojačanjima, sa tri dihtung gume.',
-        'Energetska efikasnost prve klase: prozori za kuće sa niskom potrošnjom energije kao i za pasivne kuće.',
-        'Vrhunski kvalitet profila debljine 3 mm.',
-        'Široka paleta boja dekora profila jednostranog i dvostranog dekora omogućava svaki dizajn enterijera.',
-        'Koristi troslojni paket termopan stakla ispunjen argonom.',
-        'Rastojanje prozorskih stakala od 28 mm smanjuje pojavu toplotnog mosta. Dodatna srednja guma, neprekidno postavljena duž obima rama prozora  pouzdano štiti i od niskih i od visokih temperatura, promaje i vlage.',
-        'Dodatna srednja guma, neprekidno postavljena duž obima rama prozora  pouzdano štiti i od niskih i od visokih temperatura, promaje i vlage.'
+        'Lagane, čvrste i izdržljive kompozitne ploče, sa višestrukom primenom, sastavljene od dve strane aluminijuma i jezgra od polietilena niske gustine (LD-PE) ili mineralnom jezgru visoke temperature ( FR ili A2 klase gorivosti).',
+        'Ploče sa mineralnim jezgrom su klasifikovane kao vatrostalne i imaju A2 klasu gorivosti.',
+        'Slojevi se ucvršćuju hemijskim i mehanickim postupcima, čime se dobija vrlo otporan materijal.'
       ],
       [
-        'Inovativni višekomorni sistem osnovne ugradne dubine od 82mm za vrhunsku toplotnu izolaciju.',
-        'Harmonično se uklapa u sve građevinske stilove, od moderne novogradnje do saniranih starih objekata.',
-        'Mogućnost odabira svih boja iz RAL - palete upotrebom aluminijumskih - obloga..',
-        'Mogućnost oplemenjivanja površine profila sa više od 50 boja i rustikalnih tekstura/dezena, kao i aluminijumskim oblogama.'
+        'Ravnost površine, njegova čvrstina, odličan odnos njegove težine i težine otpora preporučuje Albond kao jedno od najefikasnijih tehničkih rešenja za spoljnu upotrebu.'
       ],
       {
-        description: 'Veka 82 profil može biti u jednostranom i dvostranom dekoru.  Pored velikog broja dekora izdvajamo standard dekore koji su trenutno u trendu i sa najboljom cenom.',
-        colors: [
-          {
-            text: 'Nussbaum (orah)',
-            image: 'https://www.drutex.eu/media/_upload/kolory/okleiny/bialy-fx.jpg'
-          },
-          {
-            text: 'Golden Oak (svetli hrast)',
-            image: 'https://www.drutex.eu/media/_upload/kolory/okleiny/bialy-fx.jpg'
-          },
-          {
-            text: 'Antracit (tamno siva)',
-            image: 'https://www.drutex.eu/media/_upload/kolory/okleiny/winchester_kk.jpg'
-          },
-          {
-            text: 'Mahagoni',
-            image: 'https://www.drutex.eu/media/_upload/kolory/okleiny/szary-kwarcytowy.jpg'
-          }
-        ]
+        description: 'Ploče mogu biti jednostrano ili dvostrano obojene ; na zahtev - posebne boje iz RAL ili Pantone asortimana. Nudimo preko 20 boja koje su stalno na raspolaganju !!!.'
       }
-    ],
-    material: [
-      'Inovativni višekomorni sistem osnovne ugradne dubine od 82mm za vrhunsku toplotnu izolaciju.Koeficijent prolaska toplote čak i do Uw = 0,67 W/(m²K) upotrebom termo –trostrukog stakla sa Ug = 0,4 W/(m²K). Rastojanje prozorskih stakala od 28 mm smanjuje pojavu toplotnog mosta. Tri nivoa zaptivanja pouzdano štite i od niskih i od visokih temperatura, promaje i vlage. Vrhunski VEKA profils u skladu sa najvišim RAL standardom kvaliteta – klasa A prema DIN EN 12608. Mogućnost odabira svih boja iz RAL - palete upotrebom al - obloga.',
-      'Maksimalna debljina zastakljenja do 48 mm. Staklopaket 4/16/4/16/4 sa toplotnom propusnošću Ug = 0,5 V/(m2K) u standardu. Mogućnost nanošenja stakla sa pojačanom zvučnom izolacijom, kaljeno, sigurnosno, protivprovalno, ukrasno, solarno zaštitno.',
-      'Koristimo najkvalitetniji nemacki okov renomiranog proizvođača ROTO, koji osigurava kvalitetno zatvaranje i poseduje veći stepen protivprovalne zaštite.'
     ]
   },
   {
@@ -1986,43 +1743,18 @@ export const ProductData = [
     optionHeaders: ['OPIS', 'PREDNOSTI', 'DEKORI'],
     options: [
       [
-        'Sedmokomorni štok, šestokomorno krilo, sa čeličnim ojačanjima, sa tri dihtung gume.',
-        'Energetska efikasnost prve klase: prozori za kuće sa niskom potrošnjom energije kao i za pasivne kuće.',
-        'Vrhunski kvalitet profila debljine 3 mm.',
-        'Široka paleta boja dekora profila jednostranog i dvostranog dekora omogućava svaki dizajn enterijera.',
-        'Koristi troslojni paket termopan stakla ispunjen argonom.',
-        'Rastojanje prozorskih stakala od 28 mm smanjuje pojavu toplotnog mosta. Dodatna srednja guma, neprekidno postavljena duž obima rama prozora  pouzdano štiti i od niskih i od visokih temperatura, promaje i vlage.',
-        'Dodatna srednja guma, neprekidno postavljena duž obima rama prozora  pouzdano štiti i od niskih i od visokih temperatura, promaje i vlage.'
+        'Staklene fasade predstavljaju samonoseći, u celini zastakljen i toplo izolovan tip fasadne konstrukcije od aluminijumskih i statički odabranih vertikalnih i horizontalnih profila. Vertikalni i horizontalni profili podrazumevaju višekomorne profile i mogu vršiti odvodnjavanje konstrukcije u tri ravni na osnovu preklapanja profila.'
       ],
       [
-        'Inovativni višekomorni sistem osnovne ugradne dubine od 82mm za vrhunsku toplotnu izolaciju.',
-        'Harmonično se uklapa u sve građevinske stilove, od moderne novogradnje do saniranih starih objekata.',
-        'Mogućnost odabira svih boja iz RAL - palete upotrebom aluminijumskih - obloga..',
-        'Mogućnost oplemenjivanja površine profila sa više od 50 boja i rustikalnih tekstura/dezena, kao i aluminijumskim oblogama.'
+        'Kompleksnost staklenih površina predmetnog tipa fasada postavlja definisan uslov u pogledu izrade detaljne ponude širokog spektra aluminijumskih fasada, uključujući:',
+        'Kontinualne fasade',
+        'Polustrukturalne fasade',
+        'Strukturalne fasade',
+        'Spajder fasade'
       ],
       {
-        opis: 'Veka 82 profil može biti u jednostranom i dvostranom dekoru.  Pored velikog broja dekora izdvajamo standard dekore koji su trenutno u trendu i sa najboljom cenom.',
-        boje: [
-          { text: 'Nussbaum (orah)', image: 'https://www.drutex.eu/media/_upload/kolory/okleiny/bialy-fx.jpg' },
-          {
-            text: 'Golden Oak (svetli hrast)',
-            image: 'https://www.drutex.eu/media/_upload/kolory/okleiny/bialy-fx.jpg'
-          },
-          {
-            text: 'Antracit (tamno siva)',
-            image: 'https://www.drutex.eu/media/_upload/kolory/okleiny/winchester_kk.jpg'
-          },
-          {
-            text: 'Mahagoni',
-            image: 'https://www.drutex.eu/media/_upload/kolory/okleiny/szary-kwarcytowy.jpg'
-          }
-        ]
+        description: 'Izbor stakla zadovoljiće svačije zahteve i ukuse.'
       }
-    ],
-    material: [
-      'Inovativni višekomorni sistem osnovne ugradne dubine od 82mm za vrhunsku toplotnu izolaciju.Koeficijent prolaska toplote čak i do Uw = 0,67 W/(m²K) upotrebom termo –trostrukog stakla sa Ug = 0,4 W/(m²K). Rastojanje prozorskih stakala od 28 mm smanjuje pojavu toplotnog mosta. Tri nivoa zaptivanja pouzdano štite i od niskih i od visokih temperatura, promaje i vlage. Vrhunski VEKA profils u skladu sa najvišim RAL standardom kvaliteta – klasa A prema DIN EN 12608. Mogućnost odabira svih boja iz RAL - palete upotrebom al - obloga.',
-      'Maksimalna debljina zastakljenja do 48 mm. Staklopaket 4/16/4/16/4 sa toplotnom propusnošću Ug = 0,5 V/(m2K) u standardu. Mogućnost nanošenja stakla sa pojačanom zvučnom izolacijom, kaljeno, sigurnosno, protivprovalno, ukrasno, solarno zaštitno.',
-      'Koristimo najkvalitetniji nemacki okov renomiranog proizvođača ROTO, koji osigurava kvalitetno zatvaranje i poseduje veći stepen protivprovalne zaštite.'
     ]
   },
   {
@@ -2033,46 +1765,18 @@ export const ProductData = [
     optionHeaders: ['OPIS', 'PREDNOSTI', 'DEKORI'],
     options: [
       [
-        'Sedmokomorni štok, šestokomorno krilo, sa čeličnim ojačanjima, sa tri dihtung gume.',
-        'Energetska efikasnost prve klase: prozori za kuće sa niskom potrošnjom energije kao i za pasivne kuće.',
-        'Vrhunski kvalitet profila debljine 3 mm.',
-        'Široka paleta boja dekora profila jednostranog i dvostranog dekora omogućava svaki dizajn enterijera.',
-        'Koristi troslojni paket termopan stakla ispunjen argonom.',
-        'Rastojanje prozorskih stakala od 28 mm smanjuje pojavu toplotnog mosta. Dodatna srednja guma, neprekidno postavljena duž obima rama prozora  pouzdano štiti i od niskih i od visokih temperatura, promaje i vlage.',
-        'Dodatna srednja guma, neprekidno postavljena duž obima rama prozora  pouzdano štiti i od niskih i od visokih temperatura, promaje i vlage.'
+        'Staklene fasade predstavljaju samonoseći, u celini zastakljen i toplo izolovan tip fasadne konstrukcije od aluminijumskih i statički odabranih vertikalnih i horizontalnih profila. Vertikalni i horizontalni profili podrazumevaju višekomorne profile i mogu vršiti odvodnjavanje konstrukcije u tri ravni na osnovu preklapanja profila.'
       ],
       [
-        'Inovativni višekomorni sistem osnovne ugradne dubine od 82mm za vrhunsku toplotnu izolaciju.',
-        'Harmonično se uklapa u sve građevinske stilove, od moderne novogradnje do saniranih starih objekata.',
-        'Mogućnost odabira svih boja iz RAL - palete upotrebom aluminijumskih - obloga..',
-        'Mogućnost oplemenjivanja površine profila sa više od 50 boja i rustikalnih tekstura/dezena, kao i aluminijumskim oblogama.'
+        'Kompleksnost staklenih površina predmetnog tipa fasada postavlja definisan uslov u pogledu izrade detaljne ponude širokog spektra aluminijumskih fasada, uključujući:',
+        'Kontinualne fasade',
+        'Polustrukturalne fasade',
+        'Strukturalne fasade',
+        'Spajder fasade'
       ],
       {
-        description: 'Veka 82 profil može biti u jednostranom i dvostranom dekoru.  Pored velikog broja dekora izdvajamo standard dekore koji su trenutno u trendu i sa najboljom cenom.',
-        colors: [
-          {
-            text: 'Nussbaum (orah)',
-            image: 'https://www.drutex.eu/media/_upload/kolory/okleiny/bialy-fx.jpg'
-          },
-          {
-            text: 'Golden Oak (svetli hrast)',
-            image: 'https://www.drutex.eu/media/_upload/kolory/okleiny/bialy-fx.jpg'
-          },
-          {
-            text: 'Antracit (tamno siva)',
-            image: 'https://www.drutex.eu/media/_upload/kolory/okleiny/winchester_kk.jpg'
-          },
-          {
-            text: 'Mahagoni',
-            image: 'https://www.drutex.eu/media/_upload/kolory/okleiny/szary-kwarcytowy.jpg'
-          }
-        ]
+        description: 'Izbor stakla zadovoljiće svačije zahteve i ukuse.'
       }
-    ],
-    material: [
-      'Inovativni višekomorni sistem osnovne ugradne dubine od 82mm za vrhunsku toplotnu izolaciju.Koeficijent prolaska toplote čak i do Uw = 0,67 W/(m²K) upotrebom termo –trostrukog stakla sa Ug = 0,4 W/(m²K). Rastojanje prozorskih stakala od 28 mm smanjuje pojavu toplotnog mosta. Tri nivoa zaptivanja pouzdano štite i od niskih i od visokih temperatura, promaje i vlage. Vrhunski VEKA profils u skladu sa najvišim RAL standardom kvaliteta – klasa A prema DIN EN 12608. Mogućnost odabira svih boja iz RAL - palete upotrebom al - obloga.',
-      'Maksimalna debljina zastakljenja do 48 mm. Staklopaket 4/16/4/16/4 sa toplotnom propusnošću Ug = 0,5 V/(m2K) u standardu. Mogućnost nanošenja stakla sa pojačanom zvučnom izolacijom, kaljeno, sigurnosno, protivprovalno, ukrasno, solarno zaštitno.',
-      'Koristimo najkvalitetniji nemacki okov renomiranog proizvođača ROTO, koji osigurava kvalitetno zatvaranje i poseduje veći stepen protivprovalne zaštite.'
     ]
   },
   {
@@ -2083,46 +1787,15 @@ export const ProductData = [
     optionHeaders: ['OPIS', 'PREDNOSTI', 'DEKORI'],
     options: [
       [
-        'Sedmokomorni štok, šestokomorno krilo, sa čeličnim ojačanjima, sa tri dihtung gume.',
-        'Energetska efikasnost prve klase: prozori za kuće sa niskom potrošnjom energije kao i za pasivne kuće.',
-        'Vrhunski kvalitet profila debljine 3 mm.',
-        'Široka paleta boja dekora profila jednostranog i dvostranog dekora omogućava svaki dizajn enterijera.',
-        'Koristi troslojni paket termopan stakla ispunjen argonom.',
-        'Rastojanje prozorskih stakala od 28 mm smanjuje pojavu toplotnog mosta. Dodatna srednja guma, neprekidno postavljena duž obima rama prozora  pouzdano štiti i od niskih i od visokih temperatura, promaje i vlage.',
-        'Dodatna srednja guma, neprekidno postavljena duž obima rama prozora  pouzdano štiti i od niskih i od visokih temperatura, promaje i vlage.'
+        'Coverlam keramika je napravljena od prirodnih materijala : kvarcnog peska, gline i kamena. Izrađuju se tokom procesa glodanja, presovanja pri temperaturi od 1220 c u specijalnim hibridnim pećnicama.',
+        'Materijal nudi visoke karakteristike mehaničke otpornosti na atmosferske agense, udarce i agresivne uslove, veoma je pogodna za širenje i otporna na mraz i sunčevo zračenje. Granit pruža mogućnost izrade svih formata ploča, raznih oblika i dimenzija, a sve prema zahtevu projektanta i investitora.'
       ],
       [
-        'Inovativni višekomorni sistem osnovne ugradne dubine od 82mm za vrhunsku toplotnu izolaciju.',
-        'Harmonično se uklapa u sve građevinske stilove, od moderne novogradnje do saniranih starih objekata.',
-        'Mogućnost odabira svih boja iz RAL - palete upotrebom aluminijumskih - obloga..',
-        'Mogućnost oplemenjivanja površine profila sa više od 50 boja i rustikalnih tekstura/dezena, kao i aluminijumskim oblogama.'
+        'Coverlam fasadne ploče se proizvode pomoću napredne tehnologije pa kao rezultat toga imamo smanjenu debljinu i velike dimenzije sa visokom otpornošću na mehanička naprezanja, hemikalije, habanja, ogrebotine i duboke abrazije. Ploče su otporane na mraz, plesni i efekte UV zraka.'
       ],
       {
-        description: 'Veka 82 profil može biti u jednostranom i dvostranom dekoru.  Pored velikog broja dekora izdvajamo standard dekore koji su trenutno u trendu i sa najboljom cenom.',
-        colors: [
-          {
-            text: 'Nussbaum (orah)',
-            image: 'https://www.drutex.eu/media/_upload/kolory/okleiny/bialy-fx.jpg'
-          },
-          {
-            text: 'Golden Oak (svetli hrast)',
-            image: 'https://www.drutex.eu/media/_upload/kolory/okleiny/bialy-fx.jpg'
-          },
-          {
-            text: 'Antracit (tamno siva)',
-            image: 'https://www.drutex.eu/media/_upload/kolory/okleiny/winchester_kk.jpg'
-          },
-          {
-            text: 'Mahagoni',
-            image: 'https://www.drutex.eu/media/_upload/kolory/okleiny/szary-kwarcytowy.jpg'
-          }
-        ]
+        description: 'Sva kreativnost Coverlama prikazana je u više od 130 tekstura.'
       }
-    ],
-    material: [
-      'Inovativni višekomorni sistem osnovne ugradne dubine od 82mm za vrhunsku toplotnu izolaciju.Koeficijent prolaska toplote čak i do Uw = 0,67 W/(m²K) upotrebom termo –trostrukog stakla sa Ug = 0,4 W/(m²K). Rastojanje prozorskih stakala od 28 mm smanjuje pojavu toplotnog mosta. Tri nivoa zaptivanja pouzdano štite i od niskih i od visokih temperatura, promaje i vlage. Vrhunski VEKA profils u skladu sa najvišim RAL standardom kvaliteta – klasa A prema DIN EN 12608. Mogućnost odabira svih boja iz RAL - palete upotrebom al - obloga.',
-      'Maksimalna debljina zastakljenja do 48 mm. Staklopaket 4/16/4/16/4 sa toplotnom propusnošću Ug = 0,5 V/(m2K) u standardu. Mogućnost nanošenja stakla sa pojačanom zvučnom izolacijom, kaljeno, sigurnosno, protivprovalno, ukrasno, solarno zaštitno.',
-      'Koristimo najkvalitetniji nemacki okov renomiranog proizvođača ROTO, koji osigurava kvalitetno zatvaranje i poseduje veći stepen protivprovalne zaštite.'
     ]
   },
   {
@@ -2159,22 +1832,16 @@ export const ProductData = [
     optionHeaders: ['OPIS', 'PREDNOSTI', 'DEKORI'],
     options: [
       [
-        'Sedmokomorni štok, šestokomorno krilo, sa čeličnim ojačanjima, sa tri dihtung gume.',
-        'Energetska efikasnost prve klase: prozori za kuće sa niskom potrošnjom energije kao i za pasivne kuće.',
-        'Vrhunski kvalitet profila debljine 3 mm.',
-        'Široka paleta boja dekora profila jednostranog i dvostranog dekora omogućava svaki dizajn enterijera.',
-        'Koristi troslojni paket termopan stakla ispunjen argonom.',
-        'Rastojanje prozorskih stakala od 28 mm smanjuje pojavu toplotnog mosta. Dodatna srednja guma, neprekidno postavljena duž obima rama prozora  pouzdano štiti i od niskih i od visokih temperatura, promaje i vlage.',
-        'Dodatna srednja guma, neprekidno postavljena duž obima rama prozora  pouzdano štiti i od niskih i od visokih temperatura, promaje i vlage.'
+        'Sistem sa povećanom sposobnošću termičke izolacije namenjen za projektovanje kliznih ili podizno-kliznih konstrukcija',
+        'Klizne konstrukcije UG su namenjene za primenu kod stambenih objekata, pre svega u stanovima i javnim objektima.',
+        'Sistem je prilagođen najnovijim zahtevima u pogledu termičke izolacije, estetike i bezbednosti: dostupne opcije sistema: UG verzija sa niskim pragom, UG – rešenje sa uglom 90°'
       ],
       [
-        'Inovativni višekomorni sistem osnovne ugradne dubine od 82mm za vrhunsku toplotnu izolaciju.',
-        'Harmonično se uklapa u sve građevinske stilove, od moderne novogradnje do saniranih starih objekata.',
-        'Mogućnost odabira svih boja iz RAL - palete upotrebom aluminijumskih - obloga..',
-        'Mogućnost oplemenjivanja površine profila sa više od 50 boja i rustikalnih tekstura/dezena, kao i aluminijumskim oblogama.'
+        'Zahvaljujući svojim parametrima sistem Ultraglide omogućava projektovanje konstrukcija vrlo velikih dimenzija kliznih krila: maksimalne dimenzije konstrukcije koje je moguće izraditi u ovom sistemu su: visina krila Hs=3300 mm i širina krila Bs=3200 mm.',
+        'Sistem Ultraglide omogućava konstruisanje velikih, a istovremeno i stabilnih prozora i kliznih vrata sa maksimalnom masom krila koja iznosi: 250 kg za kliznu varijantu i 400 kg za podizno-kliznu varijantu.'
       ],
       {
-        description: 'Veka 82 profil može biti u jednostranom i dvostranom dekoru.  Pored velikog broja dekora izdvajamo standard dekore koji su trenutno u trendu i sa najboljom cenom.',
+        description: 'Široki izbor boja – paleta RAL (Qualicoat 1518), strukturne boje, boje koje imitiraju drvo Aliplast Wood..',
         colors: [
           {
             text: 'Nussbaum (orah)',
@@ -2194,11 +1861,6 @@ export const ProductData = [
           }
         ]
       }
-    ],
-    material: [
-      'Inovativni višekomorni sistem osnovne ugradne dubine od 82mm za vrhunsku toplotnu izolaciju.Koeficijent prolaska toplote čak i do Uw = 0,67 W/(m²K) upotrebom termo –trostrukog stakla sa Ug = 0,4 W/(m²K). Rastojanje prozorskih stakala od 28 mm smanjuje pojavu toplotnog mosta. Tri nivoa zaptivanja pouzdano štite i od niskih i od visokih temperatura, promaje i vlage. Vrhunski VEKA profils u skladu sa najvišim RAL standardom kvaliteta – klasa A prema DIN EN 12608. Mogućnost odabira svih boja iz RAL - palete upotrebom al - obloga.',
-      'Maksimalna debljina zastakljenja do 48 mm. Staklopaket 4/16/4/16/4 sa toplotnom propusnošću Ug = 0,5 V/(m2K) u standardu. Mogućnost nanošenja stakla sa pojačanom zvučnom izolacijom, kaljeno, sigurnosno, protivprovalno, ukrasno, solarno zaštitno.',
-      'Koristimo najkvalitetniji nemacki okov renomiranog proizvođača ROTO, koji osigurava kvalitetno zatvaranje i poseduje veći stepen protivprovalne zaštite.'
     ]
   },
   {
@@ -2209,22 +1871,19 @@ export const ProductData = [
     optionHeaders: ['OPIS', 'PREDNOSTI', 'DEKORI'],
     options: [
       [
-        'Sedmokomorni štok, šestokomorno krilo, sa čeličnim ojačanjima, sa tri dihtung gume.',
-        'Energetska efikasnost prve klase: prozori za kuće sa niskom potrošnjom energije kao i za pasivne kuće.',
-        'Vrhunski kvalitet profila debljine 3 mm.',
-        'Široka paleta boja dekora profila jednostranog i dvostranog dekora omogućava svaki dizajn enterijera.',
-        'Koristi troslojni paket termopan stakla ispunjen argonom.',
-        'Rastojanje prozorskih stakala od 28 mm smanjuje pojavu toplotnog mosta. Dodatna srednja guma, neprekidno postavljena duž obima rama prozora  pouzdano štiti i od niskih i od visokih temperatura, promaje i vlage.',
-        'Dodatna srednja guma, neprekidno postavljena duž obima rama prozora  pouzdano štiti i od niskih i od visokih temperatura, promaje i vlage.'
+        'Trokomorni sistem namenjen za projektovanje kliznih vrata.',
+        'Sistem sa termičkom izolacijom (termičke pregrade od materijala sa povećanom sposobnošću termičke izolacije)',
+        'Opcije sistema: klizni i podizno-klizni',
+        'Dostupno je rešenje monorail.'
       ],
       [
-        'Inovativni višekomorni sistem osnovne ugradne dubine od 82mm za vrhunsku toplotnu izolaciju.',
-        'Harmonično se uklapa u sve građevinske stilove, od moderne novogradnje do saniranih starih objekata.',
-        'Mogućnost odabira svih boja iz RAL - palete upotrebom aluminijumskih - obloga..',
-        'Mogućnost oplemenjivanja površine profila sa više od 50 boja i rustikalnih tekstura/dezena, kao i aluminijumskim oblogama.'
+        'Dostupno je rešenje monorail.',
+        'Ekstremno uzak lavirintni stubić, klizna krila i podizno-klizna krila – širina 34mm',
+        'Moguće su kombinacije sa dva, tri, četiri i šest elemenata na bazi okvira sa dve ili tri šine',
+        'Postoji mogućnost montaže sistema Flyscreen (Flyscreen sistem mreža protiv insekata)'
       ],
       {
-        description: 'Veka 82 profil može biti u jednostranom i dvostranom dekoru.  Pored velikog broja dekora izdvajamo standard dekore koji su trenutno u trendu i sa najboljom cenom.',
+        description: 'Široki izbor boja– paleta RAL (Qualicoat 1518), strukturne boje, boje koje imitiraju drvo Aliplast Wood Colour Effect (Qualideco PL-0001), anoda (Qualanod 1808), bikolor',
         colors: [
           {
             text: 'Nussbaum (orah)',
@@ -2244,11 +1903,6 @@ export const ProductData = [
           }
         ]
       }
-    ],
-    material: [
-      'Inovativni višekomorni sistem osnovne ugradne dubine od 82mm za vrhunsku toplotnu izolaciju.Koeficijent prolaska toplote čak i do Uw = 0,67 W/(m²K) upotrebom termo –trostrukog stakla sa Ug = 0,4 W/(m²K). Rastojanje prozorskih stakala od 28 mm smanjuje pojavu toplotnog mosta. Tri nivoa zaptivanja pouzdano štite i od niskih i od visokih temperatura, promaje i vlage. Vrhunski VEKA profils u skladu sa najvišim RAL standardom kvaliteta – klasa A prema DIN EN 12608. Mogućnost odabira svih boja iz RAL - palete upotrebom al - obloga.',
-      'Maksimalna debljina zastakljenja do 48 mm. Staklopaket 4/16/4/16/4 sa toplotnom propusnošću Ug = 0,5 V/(m2K) u standardu. Mogućnost nanošenja stakla sa pojačanom zvučnom izolacijom, kaljeno, sigurnosno, protivprovalno, ukrasno, solarno zaštitno.',
-      'Koristimo najkvalitetniji nemacki okov renomiranog proizvođača ROTO, koji osigurava kvalitetno zatvaranje i poseduje veći stepen protivprovalne zaštite.'
     ]
   },
   {
@@ -2259,22 +1913,17 @@ export const ProductData = [
     optionHeaders: ['OPIS', 'PREDNOSTI', 'DEKORI'],
     options: [
       [
-        'Sedmokomorni štok, šestokomorno krilo, sa čeličnim ojačanjima, sa tri dihtung gume.',
-        'Energetska efikasnost prve klase: prozori za kuće sa niskom potrošnjom energije kao i za pasivne kuće.',
-        'Vrhunski kvalitet profila debljine 3 mm.',
-        'Široka paleta boja dekora profila jednostranog i dvostranog dekora omogućava svaki dizajn enterijera.',
-        'Koristi troslojni paket termopan stakla ispunjen argonom.',
-        'Rastojanje prozorskih stakala od 28 mm smanjuje pojavu toplotnog mosta. Dodatna srednja guma, neprekidno postavljena duž obima rama prozora  pouzdano štiti i od niskih i od visokih temperatura, promaje i vlage.',
-        'Dodatna srednja guma, neprekidno postavljena duž obima rama prozora  pouzdano štiti i od niskih i od visokih temperatura, promaje i vlage.'
+        'Izvrsna toplotna izolacija: Uf = 1,4 W/(m2K)',
+        'Profili kvaliteta klase A',
+        'Debljina zastakljivanja i do 52 mm omogućava upotrebu trostrukog izolacionog stakla, a time se postiže optimalna vrednost Ud = 0,8 W/(m2K)'
       ],
       [
-        'Inovativni višekomorni sistem osnovne ugradne dubine od 82mm za vrhunsku toplotnu izolaciju.',
-        'Harmonično se uklapa u sve građevinske stilove, od moderne novogradnje do saniranih starih objekata.',
-        'Mogućnost odabira svih boja iz RAL - palete upotrebom aluminijumskih - obloga..',
-        'Mogućnost oplemenjivanja površine profila sa više od 50 boja i rustikalnih tekstura/dezena, kao i aluminijumskim oblogama.'
+        'Dupli prekid termičkog mosta u pragu garantuje vrhunsku toplotnu izolaciju, kao i prag „bez barijere“, skoro u nivou sa podom (50 mm visine)',
+        'Klasičan dizajn sa elegantno zaobljenim konturama',
+        'Mogućnost oplemenjivanja površine aluminijumskim oblogama'
       ],
       {
-        description: 'Veka 82 profil može biti u jednostranom i dvostranom dekoru.  Pored velikog broja dekora izdvajamo standard dekore koji su trenutno u trendu i sa najboljom cenom.',
+        description: 'profil može biti u jednostranom i dvostranom dekoru. Pored velikog broja dekora izdvajamo standard dekore koji su trenutno u trendu i sa najboljom cenom.',
         colors: [
           {
             text: 'Nussbaum (orah)',
@@ -2294,11 +1943,6 @@ export const ProductData = [
           }
         ]
       }
-    ],
-    material: [
-      'Inovativni višekomorni sistem osnovne ugradne dubine od 82mm za vrhunsku toplotnu izolaciju.Koeficijent prolaska toplote čak i do Uw = 0,67 W/(m²K) upotrebom termo –trostrukog stakla sa Ug = 0,4 W/(m²K). Rastojanje prozorskih stakala od 28 mm smanjuje pojavu toplotnog mosta. Tri nivoa zaptivanja pouzdano štite i od niskih i od visokih temperatura, promaje i vlage. Vrhunski VEKA profils u skladu sa najvišim RAL standardom kvaliteta – klasa A prema DIN EN 12608. Mogućnost odabira svih boja iz RAL - palete upotrebom al - obloga.',
-      'Maksimalna debljina zastakljenja do 48 mm. Staklopaket 4/16/4/16/4 sa toplotnom propusnošću Ug = 0,5 V/(m2K) u standardu. Mogućnost nanošenja stakla sa pojačanom zvučnom izolacijom, kaljeno, sigurnosno, protivprovalno, ukrasno, solarno zaštitno.',
-      'Koristimo najkvalitetniji nemacki okov renomiranog proizvođača ROTO, koji osigurava kvalitetno zatvaranje i poseduje veći stepen protivprovalne zaštite.'
     ]
   },
   {
@@ -2309,22 +1953,13 @@ export const ProductData = [
     optionHeaders: ['OPIS', 'PREDNOSTI', 'DEKORI'],
     options: [
       [
-        'Sedmokomorni štok, šestokomorno krilo, sa čeličnim ojačanjima, sa tri dihtung gume.',
-        'Energetska efikasnost prve klase: prozori za kuće sa niskom potrošnjom energije kao i za pasivne kuće.',
-        'Vrhunski kvalitet profila debljine 3 mm.',
-        'Široka paleta boja dekora profila jednostranog i dvostranog dekora omogućava svaki dizajn enterijera.',
-        'Koristi troslojni paket termopan stakla ispunjen argonom.',
-        'Rastojanje prozorskih stakala od 28 mm smanjuje pojavu toplotnog mosta. Dodatna srednja guma, neprekidno postavljena duž obima rama prozora  pouzdano štiti i od niskih i od visokih temperatura, promaje i vlage.',
-        'Dodatna srednja guma, neprekidno postavljena duž obima rama prozora  pouzdano štiti i od niskih i od visokih temperatura, promaje i vlage.'
+        'Savremeni profili čine da je ovaj sistem vrata, u kombinaciji sa odgovarajućim ostakljenjem i energetski optimizovanim odstojnicima, veoma energetski efikasan. Dva ili tri nivoa zaptivanja između krila vrata i okvira osiguravaju vrlo dobru nepropusnost kada su zatvoreni.'
       ],
       [
-        'Inovativni višekomorni sistem osnovne ugradne dubine od 82mm za vrhunsku toplotnu izolaciju.',
-        'Harmonično se uklapa u sve građevinske stilove, od moderne novogradnje do saniranih starih objekata.',
-        'Mogućnost odabira svih boja iz RAL - palete upotrebom aluminijumskih - obloga..',
-        'Mogućnost oplemenjivanja površine profila sa više od 50 boja i rustikalnih tekstura/dezena, kao i aluminijumskim oblogama.'
+        'Opcija naginjanja omogućava vam ventilaciju bez otvaranja vrata u potpunosti, što je vrlo važno sa bezbednosnog aspekta. Sigurnosno staklo ili zvučno izolirano staklo pružaju dodatnu sigurnost i udobnost po želji.'
       ],
       {
-        description: 'Veka 82 profil može biti u jednostranom i dvostranom dekoru.  Pored velikog broja dekora izdvajamo standard dekore koji su trenutno u trendu i sa najboljom cenom.',
+        description: 'Široki izbor boja – paleta RAL (Qualicoat 1518), strukturne boje, boje koje imitiraju drvo Aliplast Wood..',
         colors: [
           {
             text: 'Nussbaum (orah)',
@@ -2344,11 +1979,6 @@ export const ProductData = [
           }
         ]
       }
-    ],
-    material: [
-      'Inovativni višekomorni sistem osnovne ugradne dubine od 82mm za vrhunsku toplotnu izolaciju.Koeficijent prolaska toplote čak i do Uw = 0,67 W/(m²K) upotrebom termo –trostrukog stakla sa Ug = 0,4 W/(m²K). Rastojanje prozorskih stakala od 28 mm smanjuje pojavu toplotnog mosta. Tri nivoa zaptivanja pouzdano štite i od niskih i od visokih temperatura, promaje i vlage. Vrhunski VEKA profils u skladu sa najvišim RAL standardom kvaliteta – klasa A prema DIN EN 12608. Mogućnost odabira svih boja iz RAL - palete upotrebom al - obloga.',
-      'Maksimalna debljina zastakljenja do 48 mm. Staklopaket 4/16/4/16/4 sa toplotnom propusnošću Ug = 0,5 V/(m2K) u standardu. Mogućnost nanošenja stakla sa pojačanom zvučnom izolacijom, kaljeno, sigurnosno, protivprovalno, ukrasno, solarno zaštitno.',
-      'Koristimo najkvalitetniji nemacki okov renomiranog proizvođača ROTO, koji osigurava kvalitetno zatvaranje i poseduje veći stepen protivprovalne zaštite.'
     ]
   },
   {
@@ -2359,46 +1989,17 @@ export const ProductData = [
     optionHeaders: ['OPIS', 'PREDNOSTI', 'DEKORI'],
     options: [
       [
-        'Sedmokomorni štok, šestokomorno krilo, sa čeličnim ojačanjima, sa tri dihtung gume.',
-        'Energetska efikasnost prve klase: prozori za kuće sa niskom potrošnjom energije kao i za pasivne kuće.',
-        'Vrhunski kvalitet profila debljine 3 mm.',
-        'Široka paleta boja dekora profila jednostranog i dvostranog dekora omogućava svaki dizajn enterijera.',
-        'Koristi troslojni paket termopan stakla ispunjen argonom.',
-        'Rastojanje prozorskih stakala od 28 mm smanjuje pojavu toplotnog mosta. Dodatna srednja guma, neprekidno postavljena duž obima rama prozora  pouzdano štiti i od niskih i od visokih temperatura, promaje i vlage.',
-        'Dodatna srednja guma, neprekidno postavljena duž obima rama prozora  pouzdano štiti i od niskih i od visokih temperatura, promaje i vlage.'
+        'Harmonika vrata je termički neizolovani sistem harmonika vrata sa pogonom sa gornje strane i pogodan za standardne i velike konstrukcije. Nudi izdržljiva i elegantna rešenja koja se primenjuju na srednje i vrhunske projekte kao što su luksuzni objekti, poslovne zgrade, konferencijske centri, hoteli, restorani i mnogi drugi.'
       ],
       [
-        'Inovativni višekomorni sistem osnovne ugradne dubine od 82mm za vrhunsku toplotnu izolaciju.',
-        'Harmonično se uklapa u sve građevinske stilove, od moderne novogradnje do saniranih starih objekata.',
-        'Mogućnost odabira svih boja iz RAL - palete upotrebom aluminijumskih - obloga..',
-        'Mogućnost oplemenjivanja površine profila sa više od 50 boja i rustikalnih tekstura/dezena, kao i aluminijumskim oblogama.'
+        'Jednostavna obrada i montaža.',
+        'Visoke performanse u pogledu otpornosti na vetar, propustljivost vazduha i vodonepropustljivost.',
+        'Jednostavna obrada i ugradnja velikih dimenzija do visine 2,8 m i 125 kg po otvoru.',
+        'Čvrsta struktura sa besprekornom i dugotrajnom operabilnošću.'
       ],
       {
-        description: 'Veka 82 profil može biti u jednostranom i dvostranom dekoru.  Pored velikog broja dekora izdvajamo standard dekore koji su trenutno u trendu i sa najboljom cenom.',
-        colors: [
-          {
-            text: 'Nussbaum (orah)',
-            image: 'https://www.drutex.eu/media/_upload/kolory/okleiny/bialy-fx.jpg'
-          },
-          {
-            text: 'Golden Oak (svetli hrast)',
-            image: 'https://www.drutex.eu/media/_upload/kolory/okleiny/bialy-fx.jpg'
-          },
-          {
-            text: 'Antracit (tamno siva)',
-            image: 'https://www.drutex.eu/media/_upload/kolory/okleiny/winchester_kk.jpg'
-          },
-          {
-            text: 'Mahagoni',
-            image: 'https://www.drutex.eu/media/_upload/kolory/okleiny/szary-kwarcytowy.jpg'
-          }
-        ]
+        description: 'Mogućnost izbora iz širokog spektra RAL boja.'
       }
-    ],
-    material: [
-      'Inovativni višekomorni sistem osnovne ugradne dubine od 82mm za vrhunsku toplotnu izolaciju.Koeficijent prolaska toplote čak i do Uw = 0,67 W/(m²K) upotrebom termo –trostrukog stakla sa Ug = 0,4 W/(m²K). Rastojanje prozorskih stakala od 28 mm smanjuje pojavu toplotnog mosta. Tri nivoa zaptivanja pouzdano štite i od niskih i od visokih temperatura, promaje i vlage. Vrhunski VEKA profils u skladu sa najvišim RAL standardom kvaliteta – klasa A prema DIN EN 12608. Mogućnost odabira svih boja iz RAL - palete upotrebom al - obloga.',
-      'Maksimalna debljina zastakljenja do 48 mm. Staklopaket 4/16/4/16/4 sa toplotnom propusnošću Ug = 0,5 V/(m2K) u standardu. Mogućnost nanošenja stakla sa pojačanom zvučnom izolacijom, kaljeno, sigurnosno, protivprovalno, ukrasno, solarno zaštitno.',
-      'Koristimo najkvalitetniji nemacki okov renomiranog proizvođača ROTO, koji osigurava kvalitetno zatvaranje i poseduje veći stepen protivprovalne zaštite.'
     ]
   },
   {
@@ -2409,40 +2010,17 @@ export const ProductData = [
     optionHeaders: ['OPIS', 'PREDNOSTI', 'DEKORI'],
     options: [
       [
-        'Sedmokomorni štok, šestokomorno krilo, sa čeličnim ojačanjima, sa tri dihtung gume.',
-        'Energetska efikasnost prve klase: prozori za kuće sa niskom potrošnjom energije kao i za pasivne kuće.',
-        'Vrhunski kvalitet profila debljine 3 mm.',
-        'Široka paleta boja dekora profila jednostranog i dvostranog dekora omogućava svaki dizajn enterijera.',
-        'Koristi troslojni paket termopan stakla ispunjen argonom.',
-        'Rastojanje prozorskih stakala od 28 mm smanjuje pojavu toplotnog mosta. Dodatna srednja guma, neprekidno postavljena duž obima rama prozora  pouzdano štiti i od niskih i od visokih temperatura, promaje i vlage.',
-        'Dodatna srednja guma, neprekidno postavljena duž obima rama prozora  pouzdano štiti i od niskih i od visokih temperatura, promaje i vlage.'
+        'SMARTIA M19800 je termički izolovani sistem harmonika vrata sa pogonom na vrhu i pogodan za standardne i velike konstrukcije. Nudi izdržljiva i elegantna rešenja koja se primenjuju na srednje i vrhunske projekte kao što su luksuzni objekti, poslovne zgrade, konferencijske centri, hoteli, restorani i mnogi drugi.'
       ],
       [
-        'Inovativni višekomorni sistem osnovne ugradne dubine od 82mm za vrhunsku toplotnu izolaciju.',
-        'Harmonično se uklapa u sve građevinske stilove, od moderne novogradnje do saniranih starih objekata.',
-        'Mogućnost odabira svih boja iz RAL - palete upotrebom aluminijumskih - obloga..',
-        'Mogućnost oplemenjivanja površine profila sa više od 50 boja i rustikalnih tekstura/dezena, kao i aluminijumskim oblogama.'
+        'Velike dimenzije do 2.8 m visine i 125 kg po krilu',
+        'Čvrsta struktura sa besprekornom i dugotrajnom operabilnošću',
+        'Visoka termička izolacija i ušteda energije',
+        'Visoke performanse u pogledu otpornosti na vetar, propustljivost vazduha i vodonepropustljivost',
+        'Jednostavna obrada i montaža'
       ],
       {
-        description: 'Veka 82 profil može biti u jednostranom i dvostranom dekoru.  Pored velikog broja dekora izdvajamo standard dekore koji su trenutno u trendu i sa najboljom cenom.',
-        colors: [
-          {
-            text: 'Nussbaum (orah)',
-            image: 'https://www.drutex.eu/media/_upload/kolory/okleiny/bialy-fx.jpg'
-          },
-          {
-            text: 'Golden Oak (svetli hrast)',
-            image: 'https://www.drutex.eu/media/_upload/kolory/okleiny/bialy-fx.jpg'
-          },
-          {
-            text: 'Antracit (tamno siva)',
-            image: 'https://www.drutex.eu/media/_upload/kolory/okleiny/winchester_kk.jpg'
-          },
-          {
-            text: 'Mahagoni',
-            image: 'https://www.drutex.eu/media/_upload/kolory/okleiny/szary-kwarcytowy.jpg'
-          }
-        ]
+        description: 'Mogućnost izbora iz širokog spektra RAL boja.'
       }
     ],
     material: [

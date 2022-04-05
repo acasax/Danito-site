@@ -58,6 +58,7 @@ const siteNavigationContextContainer = ({ children }: { children: ReactNode }) =
 
   const setProductPath = (value: string) => {
     const newData = ProductDate.filter(product => product.name === value)
+    console.log(newData, value, ProductDate)
     setData(newData[0] as any)
     Object.values(ProductsDataInfo).forEach((product) => {
       if (product === value) {

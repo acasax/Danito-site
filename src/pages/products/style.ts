@@ -80,8 +80,22 @@ export const ProductPageCharacteristicItemImageContainer = styled.div`
   padding-bottom: 20px;
 `
 
+export const ProductPageCharacteristicItemHeaderContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+`
+
+export const ProductPageCharacteristicItemHeader = styled.h1`
+  font-size: 25px;
+  font-weight: bolder;
+  margin: 0;
+`
+
 export const ProductPageCharacteristicItemTextContainer = styled.div`
   display: flex;
+  flex-direction: column;
   width: 100%;
   align-items: flex-start;
   justify-content: center;
@@ -179,9 +193,9 @@ export const ProductsPanelsInfoSelectedImage = styled.img`
 `
 
 export const ProductsPanelsInfoTextContainer = styled.div`
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `
 
 export const ProductsPanelsInfoText = styled.p`

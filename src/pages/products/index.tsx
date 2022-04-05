@@ -7,6 +7,8 @@ import FittingsIcon from '../../constants/img/icons/Fittings.png'
 import Footer from 'components/footer'
 import {
   ProductPageCharacteristicItemContainer,
+  ProductPageCharacteristicItemHeader,
+  ProductPageCharacteristicItemHeaderContainer,
   ProductPageCharacteristicItemImageContainer,
   ProductPageCharacteristicItemText,
   ProductPageCharacteristicItemTextContainer,
@@ -81,100 +83,116 @@ const ProductPage = () => {
             </ProductPageContentContainer>
             {
                 data.material && (
-                <>
-                   <LineAnimation header={'Karakteristike'} scroll={scroll} scrollY={1000}/>
-                   <ProductPageContainerCharacteristicContainer>
-                       {
-                           data.material.map((item, key) => {
-                             return key === 0
-                               ? (
-                                   <ProductPageCharacteristicItemContainer key={key}>
-                                       <ProductPageCharacteristicItemImageContainer>
-                                           <img src={ProfileIcon} alt="profile icon"/>
-                                       </ProductPageCharacteristicItemImageContainer>
-                                       <ProductPageCharacteristicItemTextContainer>
-                                           <ProductPageCharacteristicItemText>
-                                               {item}
-                                           </ProductPageCharacteristicItemText>
-                                       </ProductPageCharacteristicItemTextContainer>
-                                   </ProductPageCharacteristicItemContainer>
-                                 )
-                               : key === 1
-                                 ? (
-                                 <ProductPageCharacteristicItemContainer key={key}>
-                                     <ProductPageCharacteristicItemImageContainer>
-                                         <img src={GlassIcon} alt="profile icon"/>
-                                     </ProductPageCharacteristicItemImageContainer>
-                                     <ProductPageCharacteristicItemTextContainer>
-                                         <ProductPageCharacteristicItemText>
-                                             {item}
-                                         </ProductPageCharacteristicItemText>
-                                     </ProductPageCharacteristicItemTextContainer>
-                                 </ProductPageCharacteristicItemContainer>
-                                   )
-                                 : (
-                                 <ProductPageCharacteristicItemContainer key={key}>
-                                     <ProductPageCharacteristicItemImageContainer>
-                                         <img src={FittingsIcon} alt="profile icon"/>
-                                     </ProductPageCharacteristicItemImageContainer>
-                                     <ProductPageCharacteristicItemTextContainer>
-                                         <ProductPageCharacteristicItemText>
-                                             {item}
-                                         </ProductPageCharacteristicItemText>
-                                     </ProductPageCharacteristicItemTextContainer>
-                                 </ProductPageCharacteristicItemContainer>
-                                   )
-                           })
-                       }
-                   </ProductPageContainerCharacteristicContainer>
-                </>
+                    <>
+                        <LineAnimation header={'Karakteristike'} scroll={scroll} scrollY={1000}/>
+                        <ProductPageContainerCharacteristicContainer>
+                            {
+                                data.material.map((item, key) => {
+                                  return key === 0
+                                    ? (
+                                            <ProductPageCharacteristicItemContainer key={key}>
+                                                <ProductPageCharacteristicItemImageContainer>
+                                                    <img src={ProfileIcon} alt="profile icon"/>
+                                                </ProductPageCharacteristicItemImageContainer>
+                                                <ProductPageCharacteristicItemTextContainer>
+                                                    <ProductPageCharacteristicItemHeaderContainer>
+                                                        <ProductPageCharacteristicItemHeader>
+                                                            PROFIL
+                                                        </ProductPageCharacteristicItemHeader>
+                                                    </ProductPageCharacteristicItemHeaderContainer>
+                                                    <ProductPageCharacteristicItemText>
+                                                        {item}
+                                                    </ProductPageCharacteristicItemText>
+                                                </ProductPageCharacteristicItemTextContainer>
+                                            </ProductPageCharacteristicItemContainer>
+                                      )
+                                    : key === 1
+                                      ? (
+                                                <ProductPageCharacteristicItemContainer key={key}>
+                                                    <ProductPageCharacteristicItemImageContainer>
+                                                        <img src={GlassIcon} alt="profile icon"/>
+                                                    </ProductPageCharacteristicItemImageContainer>
+                                                    <ProductPageCharacteristicItemTextContainer>
+                                                        <ProductPageCharacteristicItemHeaderContainer>
+                                                            <ProductPageCharacteristicItemHeader>
+                                                                STAKLO
+                                                            </ProductPageCharacteristicItemHeader>
+                                                        </ProductPageCharacteristicItemHeaderContainer>
+                                                        <ProductPageCharacteristicItemText>
+                                                            {item}
+                                                        </ProductPageCharacteristicItemText>
+                                                    </ProductPageCharacteristicItemTextContainer>
+                                                </ProductPageCharacteristicItemContainer>
+                                        )
+                                      : (
+                                                <ProductPageCharacteristicItemContainer key={key}>
+                                                    <ProductPageCharacteristicItemImageContainer>
+                                                        <img src={FittingsIcon} alt="profile icon"/>
+                                                    </ProductPageCharacteristicItemImageContainer>
+                                                    <ProductPageCharacteristicItemTextContainer>
+                                                        <ProductPageCharacteristicItemHeaderContainer>
+                                                            <ProductPageCharacteristicItemHeader>
+                                                                OKOV
+                                                            </ProductPageCharacteristicItemHeader>
+                                                        </ProductPageCharacteristicItemHeaderContainer>
+                                                        <ProductPageCharacteristicItemText>
+                                                            {item}
+                                                        </ProductPageCharacteristicItemText>
+                                                    </ProductPageCharacteristicItemTextContainer>
+                                                </ProductPageCharacteristicItemContainer>
+                                        )
+                                })
+                            }
+                        </ProductPageContainerCharacteristicContainer>
+                    </>
                 )
             }
             {data.panels
               ? <>
-                <LineAnimation header={'Panels'} scroll={scroll} scrollY={1600}/>
-                <ProductPageProfilesContainer>
-                    {data.panels.map((panel, key) => {
-                      return (
-                            <ProductPagePanelContainer key={key}>
-                                <ProductPageProfileInfo>
-                                    <h2>{panel.name}</h2>
-                                    <p>{panel.text}</p>
-                                </ProductPageProfileInfo>
-                                <ProductPageProfileImgContainer>
-                                    {panel.image.map((item, key) => {
-                                      return (
-                                          <ProductPageProfileContainer key={key} onClick={() => handlePanelModal(item)}>
-                                              <ProductPageProfileImg src={item.img} alt={item.text} />
-                                              <ProductPageProfileTextContainer>
-                                                  <ProductPageProfileText>
-                                                      {item.text}
-                                                  </ProductPageProfileText>
-                                              </ProductPageProfileTextContainer>
-                                          </ProductPageProfileContainer>
-                                      )
-                                    })}
-                                </ProductPageProfileImgContainer>
-                            </ProductPagePanelContainer>
-                      )
-                    })}
-                    <Backdrop
-                        sx={{ color: '#fff', zIndex: (theme) => theme.zIndex.drawer + 1 }}
-                        open={open}
-                        onClick={handleClose}
-                    />
-                    {open
-                      ? (
-                            <ProductsPanelsInfoContainer>
-                                <ProductsPanelsInfoSelectedImage src={panelModal.img}/>
-                                <ProductsPanelsInfoTextContainer>
-                                    <ProductsPanelsInfoText>{panelModal.text}</ProductsPanelsInfoText>
-                                </ProductsPanelsInfoTextContainer>
-                            </ProductsPanelsInfoContainer>
-                        )
-                      : null}
-                </ProductPageProfilesContainer>
-            </>
+                    <LineAnimation header={'Panels'} scroll={scroll} scrollY={1600}/>
+                    <ProductPageProfilesContainer>
+                        {data.panels.map((panel, key) => {
+                          return (
+                                <ProductPagePanelContainer key={key}>
+                                    <ProductPageProfileInfo>
+                                        <h2>{panel.name}</h2>
+                                        <p>{panel.text}</p>
+                                    </ProductPageProfileInfo>
+                                    <ProductPageProfileImgContainer>
+                                        {panel.image.map((item, key) => {
+                                          return (
+                                                <ProductPageProfileContainer key={key}
+                                                                             onClick={() => handlePanelModal(item)}>
+                                                    <ProductPageProfileImg src={item.img} alt={item.text}/>
+                                                    <ProductPageProfileTextContainer>
+                                                        <ProductPageProfileText>
+                                                            {item.text}
+                                                        </ProductPageProfileText>
+                                                    </ProductPageProfileTextContainer>
+                                                </ProductPageProfileContainer>
+                                          )
+                                        })}
+                                    </ProductPageProfileImgContainer>
+                                </ProductPagePanelContainer>
+                          )
+                        })}
+                        <Backdrop
+                            sx={{ color: '#fff', zIndex: (theme) => theme.zIndex.drawer + 1 }}
+                            open={open}
+                            onClick={handleClose}
+                        />
+                        {open
+                          ? (
+                                <ProductsPanelsInfoContainer>
+                                    <ProductsPanelsInfoSelectedImage src={panelModal.img}/>
+                                    <ProductsPanelsInfoTextContainer>
+                                        <ProductsPanelsInfoText>{panelModal.text}</ProductsPanelsInfoText>
+                                    </ProductsPanelsInfoTextContainer>
+                                </ProductsPanelsInfoContainer>
+                            )
+                          : null}
+                    </ProductPageProfilesContainer>
+                </>
               : null}
             <Footer/>
         </ProductPageContainer>
