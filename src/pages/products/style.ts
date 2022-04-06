@@ -51,7 +51,6 @@ export const ProductPageContainerCharacteristicContainer = styled.div`
   display: flex;
   align-items: flex-start;
   justify-content: space-evenly;
-  width: 100%;
   padding: 20px;
 `
 
@@ -199,6 +198,36 @@ export const ProductsPanelsInfoTextContainer = styled.div`
 `
 
 export const ProductsPanelsInfoText = styled.p`
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  color: ${Styles.Colours.PALETTE.DANITO._white};
+`
+
+export const ProductsDecorsInfoContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  position: fixed;
+  top: 200px;
+  left: 40%;
+  z-index: 100000;
+  opacity: 1 !important;
+`
+
+export const ProductsDecorsInfoSelectedImage = styled.img`
+  border-radius: 6px;
+  cursor: pointer;
+  height: 600px;
+`
+
+export const ProductsDecorsInfoTextContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`
+
+export const ProductsDecorsInfoText = styled.p`
   text-align: center;
   font-size: 20px;
   font-weight: bold;

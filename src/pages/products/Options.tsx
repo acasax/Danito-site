@@ -1,27 +1,38 @@
-import * as React from 'react'
-import { useEffect } from 'react'
+import React, { useState } from 'react'
 import PropTypes from 'prop-types'
 import Tabs from '@mui/material/Tabs'
 import Tab from '@mui/material/Tab'
 import Typography from '@mui/material/Typography'
 import Box from '@mui/material/Box'
 import '../../styles/Options/Options.css'
+import Backdrop from '@mui/material/Backdrop'
+import {
+  ProductsDecorsInfoContainer,
+  ProductsDecorsInfoSelectedImage,
+  ProductsDecorsInfoText,
+  ProductsDecorsInfoTextContainer
+} from './style'
+
+export type TImg = {
+    image: string,
+    text: string
+}
 
 const TabPanel = ({ children, value, index, ...other }: any) => {
   return (
-    <div
-      role="tabpanel"
-      hidden={value !== index}
-      id={`simple-tabpanel-${index}`}
-      aria-labelledby={`simple-tab-${index}`}
-      {...other}
-    >
-      {value === index && (
-        <Box sx={{ p: 3 }}>
-          <Typography>{children}</Typography>
-        </Box>
-      )}
-    </div>
+        <div
+            role="tabpanel"
+            hidden={value !== index}
+            id={`simple-tabpanel-${index}`}
+            aria-labelledby={`simple-tab-${index}`}
+            {...other}
+        >
+            {value === index && (
+                <Box sx={{ p: 3 }}>
+                    <Typography>{children}</Typography>
+                </Box>
+            )}
+        </div>
   )
 }
 
@@ -38,95 +49,97 @@ function a11yProps (index) {
   }
 }
 
-const BasicTabs = ({ optionsContent }:any) => {
-  const [value, setValue] = React.useState(0)
+const BasicTabs = ({ optionsContent }: any) => {
+  const [value, setValue] = useState(0)
+  const [open, setOpen] = useState(false)
+  const [colorItem, setColorItem] = useState({} as TImg)
 
-  useEffect(() => {
-    console.log(optionsContent)
-  })
   const handleChange = (event, newValue) => {
     setValue(newValue)
   }
+
+  const handleOpen = (img: TImg) => {
+    setColorItem(img)
+    setOpen(true)
+  }
+
+  const handleClose = () => {
+    setColorItem({} as TImg)
+    setOpen(false)
+  }
+
   return (
-    <Box sx={{ width: '100%' }}>
-      <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
-        <Tabs value={value} onChange={handleChange} aria-label="basic tabs example">
+        <Box sx={{ width: '100%' }}>
+            <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
+                <Tabs value={value} onChange={handleChange} aria-label="basic tabs example">
+                    {
+                        optionsContent.optionHeaders.map((item, key) => {
+                          return <Tab label={item} {...a11yProps(key)} key={key}/>
+                        })
+                    }
+                </Tabs>
+            </Box>
             {
-                optionsContent.optionHeaders.map((item, key) => {
-                  return <Tab label={item} {...a11yProps(key)} key={key} />
-                })
+                optionsContent.options[0] && <TabPanel value={value} index={0}>
+                    <h2>{optionsContent.nameHeader}</h2>
+                    {optionsContent.options[0].map((data, key) => {
+                      return <li key={key}>{data}</li>
+                    })}
+                </TabPanel>
             }
-        </Tabs>
-      </Box>
- {/*       {
-            optionsContent.options.map((item, key) => {
-              return item.description
-                ? (<TabPanel value={value} index={key}>
+            {
+                optionsContent.options[1] && <TabPanel value={value} index={1}>
                     <ul>
-                      <li>{item.description}</li>
+                        {optionsContent.options[1].map((data, key) => {
+                          return <li key={key}>{data}</li>
+                        })}
                     </ul>
-                    {item.colors
+                </TabPanel>
+            }
+            {
+                optionsContent.options[2] && <TabPanel value={value} index={2}>
+                    <ul>
+                        <li>{optionsContent.options[2].description}</li>
+                    </ul>
+                    {optionsContent.options[2].colors
                       ? (
                             <div className="options__colorContainer">
-                              {item.colors.map((data, key) => {
-                                return (
-                                    <div className="options__colors" key={key}>
-                                      <p>{data.text}</p>
-                                      <img src={data.image} alt="" />
-                                    </div>
-                                )
-                              })}
+                                {optionsContent.options[2].colors.map((data, key) => {
+                                  return (
+                                        <>
+                                            <div
+                                                className="options__colors"
+                                                key={key}
+                                                onClick={() => handleOpen(data)}
+                                            >
+                                                <p>{data.text}</p>
+                                                <img src={data.image} className={'options_img'} alt=""/>
+                                            </div>
+                                            <Backdrop
+                                                sx={{ color: '#fff', zIndex: (theme) => theme.zIndex.drawer + 1 }}
+                                                open={open}
+                                                onClick={handleClose}
+                                            />
+                                            {open
+                                              ? (
+                                                    <ProductsDecorsInfoContainer>
+                                                        <ProductsDecorsInfoSelectedImage src={colorItem.image}/>
+                                                        <ProductsDecorsInfoTextContainer>
+                                                            <ProductsDecorsInfoText>{colorItem.text}</ProductsDecorsInfoText>
+                                                        </ProductsDecorsInfoTextContainer>
+                                                    </ProductsDecorsInfoContainer>
+                                                )
+                                              : null}
+                                        </>
+                                  )
+                                })}
                             </div>
                         )
                       : null}
-                  </TabPanel>)
-                : <ul>
-                    {item.map((data, key) => {
-                      return <li key={key}>{data}</li>
-                    })}
-                  </ul>
-            })
-        } */}
-        {
-            optionsContent.options[0] && <TabPanel value={value} index={0}>
-                <h2>{optionsContent.nameHeader}</h2>
-                {optionsContent.options[0].map((data, key) => {
-                  return <li key={key}>{data}</li>
-                })}
-            </TabPanel>
-        }
-        {
-            optionsContent.options[1] && <TabPanel value={value} index={1}>
-                <ul>
-                    {optionsContent.options[1].map((data, key) => {
-                      return <li key={key}>{data}</li>
-                    })}
-                </ul>
-            </TabPanel>
-        }
-        {
-            optionsContent.options[2] && <TabPanel value={value} index={2}>
-                <ul>
-                    <li>{optionsContent.options[2].description}</li>
-                </ul>
-                {optionsContent.options[2].colors
-                  ? (
-                        <div className="options__colorContainer">
-                            {optionsContent.options[2].colors.map((data, key) => {
-                              return (
-                                    <div className="options__colors" key={key}>
-                                        <p>{data.text}</p>
-                                        <img src={data.image} alt="" />
-                                    </div>
-                              )
-                            })}
-                        </div>
-                    )
-                  : null}
-            </TabPanel>
-        }
+                </TabPanel>
+            }
 
-    </Box>
+        </Box>
   )
 }
 

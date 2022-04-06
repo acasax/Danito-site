@@ -46,7 +46,6 @@ const ProductPage = () => {
   const [open, setOpen] = useState(false)
 
   const handlePanelModal = (imageModal: TPanelsImg) => {
-    console.log(imageModal)
     setPanelModal(imageModal)
     setOpen(true)
   }
@@ -58,8 +57,7 @@ const ProductPage = () => {
 
   useEffect(() => {
     window.scrollTo(0, 0)
-    console.log(data)
-  }, [data])
+  }, [])
 
   return (
         <ProductPageContainer>
@@ -161,8 +159,10 @@ const ProductPage = () => {
                                     <ProductPageProfileImgContainer>
                                         {panel.image.map((item, key) => {
                                           return (
-                                                <ProductPageProfileContainer key={key}
-                                                                             onClick={() => handlePanelModal(item)}>
+                                                <ProductPageProfileContainer
+                                                    key={key}
+                                                    onClick={() => handlePanelModal(item)}
+                                                >
                                                     <ProductPageProfileImg src={item.img} alt={item.text}/>
                                                     <ProductPageProfileTextContainer>
                                                         <ProductPageProfileText>

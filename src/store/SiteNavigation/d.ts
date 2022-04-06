@@ -101,7 +101,7 @@ export enum ProductsDataInfo {
     woodAluminiumWindows1 = 'ALUMINIUM DRVO PROZORI',
 
     /** Products for Category doors SubCategory pvc door */
-    entrancePvcDoor = 'ULAZNA VRATE',
+    entrancePvcDoor = 'ULAZNA VRATA',
     partitionPvcDoor = 'PREGRADNA VRATA',
 
     /** Products for Category doors SubCategory aluminium door */
@@ -113,22 +113,19 @@ export enum ProductsDataInfo {
     customSecurityDoor = 'SIGURNOSNA VRATA',
 
     /** Products for Category blinds SubCategory inside Blinds */
-    insideBlinds = 'UNUTRAŠNJE PVC ROLETNE',
+    insideBlinds = 'UNUTRAŠNJE ROLETNE',
 
     /** Products for Category blinds SubCategory outsideBlinds */
-    aluminiumOutsideBlindsRoundedOutsideBlinds = 'ALU SPOLJNE ROLETNE ZAOBLJENE',
-    aluminiumOutsideBlindsPentagonalOutsideBlinds = 'ALU SPOLJNE ROLETNE PETOUGAONE',
-    subFacadeAluminiumBlinds = 'ALU PODFASADNE ROLETNE',
+    outsideBlinds = 'SPOLJAŠNJE ROLETNE',
+
+    /** Products for Category blinds SubCategory outsideBlinds */
+    glassFacade = 'STAKLENE FASADE',
 
     /** Products for Category facade SubCategory fundermax facade */
     fundermaxFacadeFundermaxFacade = 'FUNDERMAX FASADE',
 
     /** Products for Category facade SubCategory ventilated alucobond facade */
     ventilatedAlucobondFacadeVentilatedAlucobondFacade = 'VENTILISANE ALUCOBOND FASADE',
-
-    /** Products for Category facade SubCategory glass facade */
-    structuralGlassFacade = 'STRUKTURNA',
-    standardGlassFacade = 'STANDARDNA',
 
     /** Products for Category facade SubCategory granit facade */
     granitFacadeGranitFacade = 'GRANIT FASADE',
@@ -175,11 +172,11 @@ export const navBarData = [
     parent: ProductsSubCategory.pvcWindow,
     parentPath: `${ProductsCategory.window}/${ProductsSubCategory.pvcWindow}/`
   },
-  {
-    name: ProductsDataInfo.woodAluminiumWindows1,
-    parent: ProductsSubCategory.aluminumWindow,
-    parentPath: `${ProductsCategory.window}/${ProductsSubCategory.aluminumWindow}/`
-  },
+  // {
+  //   name: ProductsDataInfo.woodAluminiumWindows1,
+  //   parent: ProductsSubCategory.aluminumWindow,
+  //   parentPath: `${ProductsCategory.window}/${ProductsSubCategory.aluminumWindow}/`
+  // },
   {
     name: ProductsSubCategory.aluminumWindow,
     parent: ProductsCategory.window,
@@ -272,17 +269,7 @@ export const navBarData = [
     image: ProductsSubCategoryImages.outsideBlinds
   },
   {
-    name: ProductsDataInfo.aluminiumOutsideBlindsRoundedOutsideBlinds,
-    parent: ProductsSubCategory.outsideBlinds,
-    parentPath: `${ProductsCategory.blinds}/${ProductsSubCategory.outsideBlinds}/`
-  },
-  {
-    name: ProductsDataInfo.aluminiumOutsideBlindsPentagonalOutsideBlinds,
-    parent: ProductsSubCategory.outsideBlinds,
-    parentPath: `${ProductsCategory.blinds}/${ProductsSubCategory.outsideBlinds}/`
-  },
-  {
-    name: ProductsDataInfo.subFacadeAluminiumBlinds,
+    name: ProductsDataInfo.outsideBlinds,
     parent: ProductsSubCategory.outsideBlinds,
     parentPath: `${ProductsCategory.blinds}/${ProductsSubCategory.outsideBlinds}/`
   },
@@ -393,16 +380,6 @@ export const navBarData = [
     image: ProductsSubCategoryImages.glassFacade
   },
   {
-    name: ProductsDataInfo.structuralGlassFacade,
-    parent: ProductsSubCategory.glassFacade,
-    parentPath: `${ProductsCategory.facade}/${ProductsSubCategory.glassFacade}/`
-  },
-  {
-    name: ProductsDataInfo.standardGlassFacade,
-    parent: ProductsSubCategory.glassFacade,
-    parentPath: `${ProductsCategory.facade}/${ProductsSubCategory.glassFacade}/`
-  },
-  {
     name: ProductsSubCategory.graniteFacade,
     parent: ProductsCategory.facade,
     parentPath: `${ProductsCategory.facade}/`,
@@ -454,8 +431,8 @@ export const productSectionData = [
         name: ProductsSubCategory.aluminumWindow,
         children: [
           ProductsDataInfo.aluminiumWindows1,
-          ProductsDataInfo.aluminiumWindows2,
-          ProductsDataInfo.woodAluminiumWindows1
+          ProductsDataInfo.aluminiumWindows2
+          // ProductsDataInfo.woodAluminiumWindows1
         ]
       }
     ]
@@ -500,8 +477,7 @@ export const productSectionData = [
       {
         name: ProductsSubCategory.glassFacade,
         children: [
-          ProductsDataInfo.structuralGlassFacade,
-          ProductsDataInfo.standardGlassFacade
+          ProductsDataInfo.glassFacade
         ]
       },
       {
@@ -690,8 +666,8 @@ export const ProductsImages = {
   aluminiumWindow4CoverImg: require('constants/img/imgProduct/ImgPageProduct/WindowImg11.jpg').default,
   entrancePvcDoorCoverImg: require('constants/img/imgProduct/ImgPageProduct/DoorImg1.jpg').default,
   partitionPvcDoorCoverImg: require('constants/img/imgProduct/ImgPageProduct/DoorImg2.jpg').default,
-  profileWithoutThermalBreakAluminiumDoorCoverImg: require('constants/img/imgProduct/ImgPageProduct/DoorImg4.jpg').default,
-  profileWithThermalBreakAluminiumDoorCoverImg: require('constants/img/imgProduct/ImgPageProduct/DoorImg5.jpg').default,
+  profileWithoutThermalBreakAluminiumDoorCoverImg: require('constants/img/imgProduct/ImgPageProduct/AluminijumskiProzorBezTermoPrekida.jpg').default,
+  profileWithThermalBreakAluminiumDoorCoverImg: require('constants/img/imgProduct/ImgPageProduct/AluminijumProzoriProfilSaTermoprekidom.jpg').default,
   doorWithHiddenWingAluminiumDoorCoverImg: require('constants/img/imgProduct/ImgPageProduct/DoorImg6.jpg').default,
 
   aluminiumThermoBlindsInsideBlindsCoverImg: require('constants/img/imgProduct/ImgPageProduct/Roletne1.jpg').default,
@@ -701,16 +677,17 @@ export const ProductsImages = {
   aluminiumOutsideBlindsPentagonalOutsideBlindsCoverImg: require('constants/img/imgProduct/ImgPageProduct/Fasade1.jpg').default,
   subFacadeAluminiumBlindsCoverImg: require('constants/img/imgProduct/ImgPageProduct/Fasade2.jpg').default,
 
-  fundermaxFacadeFundermaxFacadeCoverImg: require('constants/img/imgProduct/ImgPageProduct/TerasniSistemi1.jpg').default,
-  ventilatedAlucobondFacadeVentilatedAlucobondFacadeCoverImg: require('constants/img/imgProduct/ImgPageProduct/TerasniSistemi2.jpg').default,
-  structuralGlassFacadeCoverImg: require('constants/img/imgProduct/ImgPageProduct/TerasniSistemi3.jpg').default,
-  standardGlassFacadeCoverImg: require('constants/img/imgProduct/ImgPageProduct/TerasniSistemi4.jpg').default,
-  granitFacadeGranitFacadeCoverImg: require('constants/img/imgProduct/ImgPageProduct/TerasniSistemi5.jpg').default,
-  pvcVekaSlideSlidingSystemCoverImg: require('constants/img/imgProduct/ImgPageProduct/TerasniSistemi6.jpg').default,
-  aluUltraSlideSlidingSystemCoverImg: require('constants/img/imgProduct/ImgPageProduct/TerasniSistemi7.jpg').default,
+  fundermaxFacadeFundermaxFacadeCoverImg: require('constants/img/imgProduct/ImgPageProduct/FundermaxFasada.jpg').default,
+  ventilatedAlucobondFacadeVentilatedAlucobondFacadeCoverImg: require('constants/img/imgProduct/ImgPageProduct/AlucoBondFasade.jpg').default,
+  structuralGlassFacadeCoverImg: require('constants/img/imgProduct/ImgPageProduct/StaklenaFasada.jpg').default,
+  standardGlassFacadeCoverImg: require('constants/img/imgProduct/ImgPageProduct/StaklenaFasada.jpg').default,
+  granitFacadeGranitFacadeCoverImg: require('constants/img/imgProduct/ImgPageProduct/GranitFasada.jpg').default,
+  pvcVekaSlideSlidingSystemCoverImg: require('constants/img/imgProduct/ImgPageProduct/PodiznoKlizniPvcVekaSlide.jpg').default,
+  aluUltraSlideSlidingSystemCoverImg: require('constants/img/imgProduct/ImgPageProduct/PodiznoKlizniAluUltraSlide.jpg').default,
+  aluVgPlusSlideSlidingSystemCoverImg: require('constants/img/imgProduct/ImgPageProduct/PodiznoKlizniAluVgPlus.jpg').default,
   pvcVekaSoftline7082InRowSlidingSystemCoverImg: require('constants/img/imgProduct/ImgPageProduct/TerasniSistemi8.jpg').default,
   aluInRowSlidingSystemCoverImg: require('constants/img/imgProduct/ImgPageProduct/TerasniSistemi9.jpg').default,
-  pvcAccordionSlidingSystemsCoverImg: require('constants/img/imgProduct/ImgPageProduct/TerasniSistemi10.jpg').default,
+  pvcAccordionSlidingSystemsCoverImg: require('constants/img/imgProduct/ImgPageProduct/HarmonikaAluHarmonika.jpg').default,
   aluSmartiaM9800AccordionSlidingSystemsCoverImg: require('constants/img/imgProduct/ImgPageProduct/TerasniSistemi11.jpg').default,
   aluSmartiaM19800AccordionSlidingSystemsCoverImg: require('constants/img/imgProduct/ImgPageProduct/TerasniSistemi12.jpg').default,
 
@@ -1120,13 +1097,13 @@ export const Panels = {
 /** Sredi init state za products */
 
 export const ProductsDataCoverImage = {
-  aluminiumOutsideBlindsPentagonalOutsideBlinds: require('constants/img/productsCoverImage/aluminiumOutsideBlindsPentagonalOutsideBlinds.mp4').default,
-  aluminiumOutsideBlindsRoundedOutsideBlinds: require('constants/img/productsCoverImage/aluminiumOutsideBlindsRoundedOutsideBlinds.mp4').default,
+  outsideBlinds: require('constants/img/productsCoverImage/aluminiumOutsideBlindsPentagonalOutsideBlinds.mp4').default,
   aluminiumWindow1: require('constants/img/productsCoverImage/aluminiumWindows1.mp4').default,
   aluminiumWindow2: require('constants/img/productsCoverImage/aluminiumWindows2.mp4').default,
   aluSmartiaM9800AccordionSlidingSystems: require('constants/img/productsCoverImage/aluSmartiaM9800AccordionSlidingSystems.mp4').default,
   aluSmartiaM19800AccordionSlidingSystems: require('constants/img/productsCoverImage/aluSmartiaM19800AccordionSlidingSystems.mp4').default,
-  aluUltraSlideSlidingSystem: require('constants/img/productsCoverImage/aluUltraSlideSlidingSystem.mp4').default,
+  aluUltraSlideSlidingSystem: require('constants/img/productsCoverImage/PodiznoKlizniAluUltraSlide.mp4').default,
+  aluVgPluslideSlidingSystem: require('constants/img/productsCoverImage/PodiznoKlizniAluVgPlus.mp4').default,
   doorWithHiddenWingAluminiumDoor: require('constants/img/productsCoverImage/doorWithHiddenWingAluminiumDoor.webm').default,
   entrancePvcDoor: require('constants/img/productsCoverImage/entrancePvcDoor.mp4').default,
   facade: require('constants/img/productsCoverImage/facade.mp4').default,
@@ -1135,13 +1112,24 @@ export const ProductsDataCoverImage = {
   partionPvcDoor: require('constants/img/productsCoverImage/partitionPvcDoor.mp4').default,
   profileWithoutThermalBreakAluminiumDoor: require('constants/img/productsCoverImage/profileWithoutThermalBreakAluminiumDoor.mp4').default,
   profileWithThermalBreakAluminiumDoor: require('constants/img/productsCoverImage/profileWithThermalBreakAluminiumDoor.mp4').default,
-  pvcAccordionSlidingSystems: require('constants/img/productsCoverImage/pvcAccordionSlidingSystems.mp4').default,
-  pvcVekaSlideSlidingSystem: require('constants/img/productsCoverImage/pvcVekaSlideSlidingSystem.mp4').default,
+  pvcAccordionSlidingSystems: require('constants/img/productsCoverImage/HarmonikaAluHarmonika.mp4').default,
+  pvcVekaSlideSlidingSystem: require('constants/img/productsCoverImage/PodiznoKlizniPvcVekaSlide.mp4').default,
   pvcVekaSoftline7082InRowSlidingSystem: require('constants/img/productsCoverImage/pvcVekaSoftline7082InRowSlidingSystem.mp4').default,
   solomaticVenetians: require('constants/img/productsCoverImage/solomaticVenetians.mp4').default,
   veka70: require('constants/img/productsCoverImage/veka70.mp4').default,
   veka82: require('constants/img/productsCoverImage/veka82.mp4').default,
   woodAluminumWindow: require('constants/img/productsCoverImage/woodAluminiumWindows.mp4').default
+}
+
+export const ProductsDataDecorsImages = {
+  antracitWindow: require('constants/img/productsCoverImage/window/PvcProzorAntracit.png').default,
+  goldenOakZlatniWindow: require('constants/img/productsCoverImage/window/PvcProzorGoldenOak-ZlatniHrast.png').default,
+  mahagoniWindow: require('constants/img/productsCoverImage/window/PvcProzorMahagoni.png').default,
+  nussbaumWindow: require('constants/img/productsCoverImage/window/PvcProzorNussbaum-TamniOrah.png').default,
+  antracitDoor: require('constants/img/productsCoverImage/door/PvcVrataUlaznaVrataAntracit.png').default,
+  goldenOakZlatniDoor: require('constants/img/productsCoverImage/door/PvcVrataUlaznaVrataGoldenOak-ZlatniHrast.png').default,
+  mahagoniDoor: require('constants/img/productsCoverImage/door/PvcVrataUlaznaVrataMahagoni.png').default,
+  nussbaumDoor: require('constants/img/productsCoverImage/door/PvcVrataUlaznaVrataNussbaum-TamniOrah.png').default
 }
 
 export const ProductData = [
@@ -1170,19 +1158,19 @@ export const ProductData = [
         colors: [
           {
             text: 'Nussbaum (orah)',
-            image: 'https://www.drutex.eu/media/_upload/kolory/okleiny/bialy-fx.jpg'
+            image: ProductsDataDecorsImages.nussbaumWindow
           },
           {
             text: 'Golden Oak (svetli hrast)',
-            image: 'https://www.drutex.eu/media/_upload/kolory/okleiny/bialy-fx.jpg'
+            image: ProductsDataDecorsImages.goldenOakZlatniWindow
           },
           {
             text: 'Antracit (tamno siva)',
-            image: 'https://www.drutex.eu/media/_upload/kolory/okleiny/winchester_kk.jpg'
+            image: ProductsDataDecorsImages.antracitWindow
           },
           {
             text: 'Mahagoni',
-            image: 'https://www.drutex.eu/media/_upload/kolory/okleiny/szary-kwarcytowy.jpg'
+            image: ProductsDataDecorsImages.mahagoniWindow
           }
         ]
       }
@@ -1216,19 +1204,19 @@ export const ProductData = [
         colors: [
           {
             text: 'Nussbaum (orah)',
-            image: 'https://www.drutex.eu/media/_upload/kolory/okleiny/bialy-fx.jpg'
+            image: ProductsDataDecorsImages.nussbaumWindow
           },
           {
             text: 'Golden Oak (svetli hrast)',
-            image: 'https://www.drutex.eu/media/_upload/kolory/okleiny/bialy-fx.jpg'
+            image: ProductsDataDecorsImages.goldenOakZlatniWindow
           },
           {
             text: 'Antracit (tamno siva)',
-            image: 'https://www.drutex.eu/media/_upload/kolory/okleiny/winchester_kk.jpg'
+            image: ProductsDataDecorsImages.antracitWindow
           },
           {
             text: 'Mahagoni',
-            image: 'https://www.drutex.eu/media/_upload/kolory/okleiny/szary-kwarcytowy.jpg'
+            image: ProductsDataDecorsImages.mahagoniWindow
           }
         ]
       }
@@ -1239,34 +1227,34 @@ export const ProductData = [
       'Koristimo najkvalitetniji nemacki okov renomiranog proizvođača ROTO, koji osigurava kvalitetno zatvaranje i poseduje veći stepen protivprovalne zaštite.'
     ]
   },
-  {
-    name: ProductsDataInfo.woodAluminiumWindows1,
-    nameHeader: ProductsDataInfo.woodAluminiumWindows1,
-    imgCover: ProductsImages.woodAluminiumWindow1CoverImg,
-    imgVideo: ProductsDataCoverImage.woodAluminumWindow,
-    optionHeaders: ['OPIS', 'PREDNOSTI', 'DEKORI'],
-    options: [
-      [
-        'Kompletan sistem sa termicki prekinutim aluminijumskim profilima,',
-        'oblozen profilima od punog drveta, okovom i gumenim profilima',
-        'moguce je primeniti kod:',
-        '- nagibno-zaokretnih prozora i balkonskih vrata,',
-        '- nagibnih prozora i balkonskih vrata,',
-        '- klizno-uskocni prozora i balkonskih vrata,',
-        '- fiksnih prozora.'
-      ],
-      [
-        'Drveni profili sluze kao enterijerska obloga termoizolovanih',
-        'aluminijumskih profila. Drveni profili su ravnih ivica, cistih formi',
-        'i u izgledu pozicije dominira jedan profil kao ram stakla.',
-        'Kit lajsna je utopljena u dimenziju vidnog rama i kod otvarajuceg',
-        'krila montira se zajedno sa oblogom.'
-      ],
-      {
-        description: 'Mogućnost izbora iz širokog spektra RAL boja.'
-      }
-    ]
-  },
+  // {
+  //   name: ProductsDataInfo.woodAluminiumWindows1,
+  //   nameHeader: ProductsDataInfo.woodAluminiumWindows1,
+  //   imgCover: ProductsImages.woodAluminiumWindow1CoverImg,
+  //   imgVideo: ProductsDataCoverImage.woodAluminumWindow,
+  //   optionHeaders: ['OPIS', 'PREDNOSTI', 'DEKORI'],
+  //   options: [
+  //     [
+  //       'Kompletan sistem sa termicki prekinutim aluminijumskim profilima,',
+  //       'oblozen profilima od punog drveta, okovom i gumenim profilima',
+  //       'moguce je primeniti kod:',
+  //       '- nagibno-zaokretnih prozora i balkonskih vrata,',
+  //       '- nagibnih prozora i balkonskih vrata,',
+  //       '- klizno-uskocni prozora i balkonskih vrata,',
+  //       '- fiksnih prozora.'
+  //     ],
+  //     [
+  //       'Drveni profili sluze kao enterijerska obloga termoizolovanih',
+  //       'aluminijumskih profila. Drveni profili su ravnih ivica, cistih formi',
+  //       'i u izgledu pozicije dominira jedan profil kao ram stakla.',
+  //       'Kit lajsna je utopljena u dimenziju vidnog rama i kod otvarajuceg',
+  //       'krila montira se zajedno sa oblogom.'
+  //     ],
+  //     {
+  //       description: 'Mogućnost izbora iz širokog spektra RAL boja.'
+  //     }
+  //   ]
+  // },
   {
     name: ProductsDataInfo.aluminiumWindows1,
     nameHeader: ProductsDataInfo.aluminiumWindows1,
@@ -1346,19 +1334,19 @@ export const ProductData = [
         colors: [
           {
             text: 'Nussbaum (orah)',
-            image: 'https://www.drutex.eu/media/_upload/kolory/okleiny/bialy-fx.jpg'
+            image: ProductsDataDecorsImages.nussbaumDoor
           },
           {
             text: 'Golden Oak (svetli hrast)',
-            image: 'https://www.drutex.eu/media/_upload/kolory/okleiny/bialy-fx.jpg'
+            image: ProductsDataDecorsImages.goldenOakZlatniDoor
           },
           {
             text: 'Antracit (tamno siva)',
-            image: 'https://www.drutex.eu/media/_upload/kolory/okleiny/winchester_kk.jpg'
+            image: ProductsDataDecorsImages.antracitDoor
           },
           {
             text: 'Mahagoni',
-            image: 'https://www.drutex.eu/media/_upload/kolory/okleiny/szary-kwarcytowy.jpg'
+            image: ProductsDataDecorsImages.mahagoniDoor
           }
         ]
       }
@@ -1392,19 +1380,19 @@ export const ProductData = [
         colors: [
           {
             text: 'Nussbaum (orah)',
-            image: 'https://www.drutex.eu/media/_upload/kolory/okleiny/bialy-fx.jpg'
+            image: ProductsDataDecorsImages.nussbaumDoor
           },
           {
             text: 'Golden Oak (svetli hrast)',
-            image: 'https://www.drutex.eu/media/_upload/kolory/okleiny/bialy-fx.jpg'
+            image: ProductsDataDecorsImages.goldenOakZlatniDoor
           },
           {
             text: 'Antracit (tamno siva)',
-            image: 'https://www.drutex.eu/media/_upload/kolory/okleiny/winchester_kk.jpg'
+            image: ProductsDataDecorsImages.antracitDoor
           },
           {
             text: 'Mahagoni',
-            image: 'https://www.drutex.eu/media/_upload/kolory/okleiny/szary-kwarcytowy.jpg'
+            image: ProductsDataDecorsImages.mahagoniDoor
           }
         ]
       }
@@ -1564,14 +1552,6 @@ export const ProductData = [
         description: 'Štok,prag i svi vidni metalni delovi plastificirani u boju po izboru (boja u prahu nanosi se na metal elektrostatičkim putem, a zatim se vrši pečenje na temperature polimerizacije). Završna obrada – krilo obostrano obloženo MDFom po 8mm u dekoru po izboru:',
         colors: [
           {
-            text: 'Bela kora',
-            image: 'https://www.drutex.eu/media/_upload/kolory/okleiny/bialy-fx.jpg'
-          },
-          {
-            text: 'Bela sa texturom drveta',
-            image: 'https://www.drutex.eu/media/_upload/kolory/okleiny/bialy-fx.jpg'
-          },
-          {
             text: 'Crna',
             image: 'https://www.drutex.eu/media/_upload/kolory/okleiny/winchester_kk.jpg'
           },
@@ -1586,30 +1566,14 @@ export const ProductData = [
           {
             text: 'Hrast rover',
             image: 'https://www.drutex.eu/media/_upload/kolory/okleiny/szary-kwarcytowy.jpg'
-          },
-          {
-            text: 'Hrast rover sivi',
-            image: 'https://www.drutex.eu/media/_upload/kolory/okleiny/szary-kwarcytowy.jpg'
-          },
-          {
-            text: 'Rover toskana',
-            image: 'https://www.drutex.eu/media/_upload/kolory/okleiny/szary-kwarcytowy.jpg'
-          },
-          {
-            text: 'Kamen',
-            image: 'https://www.drutex.eu/media/_upload/kolory/okleiny/szary-kwarcytowy.jpg'
-          },
-          {
-            text: 'Tresnja',
-            image: 'https://www.drutex.eu/media/_upload/kolory/okleiny/szary-kwarcytowy.jpg'
           }
         ]
       }
     ],
     material: [
-      '5 – komorni profil sa osnovnom dubinom ugradnje od 70 mm. U standarnoj varijanti usklađeno za dvostruko termo-staklo debljine 24 mm. Debljina zida profila 3mm, u skladu sa najvišim RAL standardom kvaliteta (prema DIN EN 12608, klasa A).',
-      'Jednokomorni staklopaket sa koeficijentom toplotne propusnosti Ug =1,0 V/(m2K) prema PN-EN674 u standardu. Mogućnost nanošenja stakla sa pojačanom zvučnom izolacijom, kaljeno, sigurnosno, protivprovalno, ukrasno, solarno zaštitno.',
-      'Koristimo najkvalitetniji nemacki okov renomiranog proizvođača ROTO, koji osigurava kvalitetno zatvaranje i poseduje veći stepen protivprovalne zaštite.'
+      'Štok je izradjen od  čeličnih kutija 60x40/2.0mm. Krilo izradjeno od ramovske konstrukcije (kutija 50x30), spolja je ugradjen čelični lim 1,5mm sa vertikalnim ojačanjima  od L profila. Ukupna debljina krila je 72mm',
+      'Završna obrada – krilo obostrano obloženo MDFom po 8mm u dekoru po izboru (u ponudi 7 dezena). Štok,prag i svi vidni metalni delovi plastificirani u boju po izboru (boja u prahu nanosi se na metal elektrostatičkim putem, a zatim se vrši pečenje na temperature polimerizacije).',
+      'Brava – Doro, sigurnosna sa Italijanskim cilindrom ISEO. Uz cilindar isporučuju se pet ključeva. Cilindar pokreće bravu koja zaključava u 4 tačke bočno, 2 tačke (gore/dole) + 3 šipa koja se nalaze na strani šarki i koja su fiksna'
     ]
   },
   {
@@ -1631,10 +1595,10 @@ export const ProductData = [
     ]
   },
   {
-    name: ProductsDataInfo.aluminiumOutsideBlindsRoundedOutsideBlinds,
-    nameHeader: ProductsDataInfo.aluminiumOutsideBlindsRoundedOutsideBlinds,
+    name: ProductsDataInfo.outsideBlinds,
+    nameHeader: ProductsDataInfo.outsideBlinds,
     imgCover: ProductsImages.aluminiumOutsideBlindsRoundedOutsideBlindsCoverImg,
-    imgVideo: ProductsDataCoverImage.aluminiumOutsideBlindsRoundedOutsideBlinds,
+    imgVideo: ProductsDataCoverImage.outsideBlinds,
     optionHeaders: ['OPIS', 'PREDNOSTI', 'DEKORI'],
     options: [
       [
@@ -1645,51 +1609,6 @@ export const ProductData = [
       ],
       {
         description: 'Veliki izbor boja po RAL karti.'
-      }
-    ]
-  },
-  {
-    name: ProductsDataInfo.aluminiumOutsideBlindsPentagonalOutsideBlinds,
-    nameHeader: ProductsDataInfo.aluminiumOutsideBlindsPentagonalOutsideBlinds,
-    imgCover: ProductsImages.aluminiumOutsideBlindsPentagonalOutsideBlindsCoverImg,
-    imgVideo: ProductsDataCoverImage.aluminiumOutsideBlindsPentagonalOutsideBlinds,
-    optionHeaders: ['OPIS', 'PREDNOSTI', 'DEKORI'],
-    options: [
-      [
-        'Napravljene su od ALUMINIJUMSKE ekstrudirane kutije dimenzija: 14.5 i 18 cm sa aluminijumskim zastorom, aluminijumskom završnom lamelom u koju je uvučena guma balonka(MO60), aluminijumskim bočnim poklopcima i aluminijumskim vodjicama sa četkicama.'
-      ],
-      [
-        'Uskoro!'
-      ],
-      {
-        description: 'Veliki izbor boja po RAL karti.'
-      }
-    ]
-  },
-  {
-    name: ProductsDataInfo.subFacadeAluminiumBlinds,
-    nameHeader: ProductsDataInfo.subFacadeAluminiumBlinds,
-    imgCover: ProductsImages.subFacadeAluminiumBlindsCoverImg,
-    imgVideo: ProductsDataCoverImage.facade,
-    optionHeaders: ['OPIS', 'PREDNOSTI', 'DEKORI'],
-    options: [
-      [
-        'Sedmokomorni štok, šestokomorno krilo, sa čeličnim ojačanjima, sa tri dihtung gume.',
-        'Energetska efikasnost prve klase: prozori za kuće sa niskom potrošnjom energije kao i za pasivne kuće.',
-        'Vrhunski kvalitet profila debljine 3 mm.',
-        'Široka paleta boja dekora profila jednostranog i dvostranog dekora omogućava svaki dizajn enterijera.',
-        'Koristi troslojni paket termopan stakla ispunjen argonom.',
-        'Rastojanje prozorskih stakala od 28 mm smanjuje pojavu toplotnog mosta. Dodatna srednja guma, neprekidno postavljena duž obima rama prozora  pouzdano štiti i od niskih i od visokih temperatura, promaje i vlage.',
-        'Dodatna srednja guma, neprekidno postavljena duž obima rama prozora  pouzdano štiti i od niskih i od visokih temperatura, promaje i vlage.'
-      ],
-      [
-        'Inovativni višekomorni sistem osnovne ugradne dubine od 82mm za vrhunsku toplotnu izolaciju.',
-        'Harmonično se uklapa u sve građevinske stilove, od moderne novogradnje do saniranih starih objekata.',
-        'Mogućnost odabira svih boja iz RAL - palete upotrebom aluminijumskih - obloga..',
-        'Mogućnost oplemenjivanja površine profila sa više od 50 boja i rustikalnih tekstura/dezena, kao i aluminijumskim oblogama.'
-      ],
-      {
-        description: 'Veka 82 profil može biti u jednostranom i dvostranom dekoru.  Pored velikog broja dekora izdvajamo standard dekore koji su trenutno u trendu i sa najboljom cenom.'
       }
     ]
   },
@@ -1736,31 +1655,9 @@ export const ProductData = [
     ]
   },
   {
-    name: ProductsDataInfo.structuralGlassFacade,
-    nameHeader: ProductsDataInfo.structuralGlassFacade,
+    name: ProductsDataInfo.glassFacade,
+    nameHeader: ProductsDataInfo.glassFacade,
     imgCover: ProductsImages.structuralGlassFacadeCoverImg,
-    imgVideo: ProductsDataCoverImage.facade,
-    optionHeaders: ['OPIS', 'PREDNOSTI', 'DEKORI'],
-    options: [
-      [
-        'Staklene fasade predstavljaju samonoseći, u celini zastakljen i toplo izolovan tip fasadne konstrukcije od aluminijumskih i statički odabranih vertikalnih i horizontalnih profila. Vertikalni i horizontalni profili podrazumevaju višekomorne profile i mogu vršiti odvodnjavanje konstrukcije u tri ravni na osnovu preklapanja profila.'
-      ],
-      [
-        'Kompleksnost staklenih površina predmetnog tipa fasada postavlja definisan uslov u pogledu izrade detaljne ponude širokog spektra aluminijumskih fasada, uključujući:',
-        'Kontinualne fasade',
-        'Polustrukturalne fasade',
-        'Strukturalne fasade',
-        'Spajder fasade'
-      ],
-      {
-        description: 'Izbor stakla zadovoljiće svačije zahteve i ukuse.'
-      }
-    ]
-  },
-  {
-    name: ProductsDataInfo.standardGlassFacade,
-    nameHeader: ProductsDataInfo.standardGlassFacade,
-    imgCover: ProductsImages.standardGlassFacadeCoverImg,
     imgVideo: ProductsDataCoverImage.facade,
     optionHeaders: ['OPIS', 'PREDNOSTI', 'DEKORI'],
     options: [
@@ -1866,8 +1763,8 @@ export const ProductData = [
   {
     name: ProductsDataInfo.aluVgPlusSlidingSystem,
     nameHeader: ProductsDataInfo.aluVgPlusSlidingSystem,
-    imgCover: ProductsImages.aluUltraSlideSlidingSystemCoverImg,
-    imgVideo: ProductsDataCoverImage.aluUltraSlideSlidingSystem,
+    imgCover: ProductsImages.aluVgPlusSlideSlidingSystemCoverImg,
+    imgVideo: ProductsDataCoverImage.aluVgPluslideSlidingSystem,
     optionHeaders: ['OPIS', 'PREDNOSTI', 'DEKORI'],
     options: [
       [
