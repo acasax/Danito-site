@@ -518,12 +518,17 @@ export const productSectionData = [
 ]
 
 /** Part of data for tips */
+export type TTipsTextPart = {
+    header: string,
+    text: string[],
+}
+
 export type TTipsData = {
     coverImg: string | any,
     header: string,
     date: Date | string,
     landingPageText: string,
-    text: string[]
+    text: TTipsTextPart[]
 }
 
 export const TipsImages = {
@@ -535,84 +540,146 @@ export const TipsImages = {
 export const TipsInitData = [
   {
     coverImg: TipsImages.tip1,
-    header: 'How to choose the best door?',
+    header: 'KOJA PVC STOLARIJA JE NAJBOLJA',
     date: new Date().toDateString(),
     landingPageText:
-            'Front door is not just a key technical element of the building, but also the showcase of the house. Therefore, it must be pretty, and at the same time it should fulfil our expectations regarding sound insulation, energy efficiency and safety.',
+            'KOJA PVC STOLARIJA JE NAJBOLJA',
     text: [
-      'DRUTEX has been one of the best-known Polish brands for ages, trusted by clients and business partners worldwide. The position has been confirmed by the Superbrands title, given by a globally famous organization that for 25 years has been awarding the strongest most trusted brands in the world. The research was conducted in over 90 countries,  selecting the winners in each market and presenting their success stories. DRUTEX has gained the title for the seventh time.',
-      '- This is the best confirmation that consistent and coherent building of the DRUTEX brand position in Poland and abroad brings the expected results. Today DRUTEX stands for top quality and innovation, as well as business credibility. In the window and door woodwork sector we are among  European leaders. We offer top quality products, which is appreciated by clients all over the world – says Leszek Gierszewski, the founder and president – DRUTEX is also involved in CSR actions, supporting various initiatives i.a. contributing to healthcare. It is appreciated and noticed. ',
-      'This year, the 15th edition of the Superbrands contest was based on a wide consumer survey conducted among 15 thousand respondents, as well as the opinion of Brands Council experts. They evaluated the market position of the brand in Poland, the quality of products or services, the quality of B2B relations, as well as innovation and CSR actions. They also took into account the development dynamics of the brand and its strength in the specific category.',
-      'DRUTEX received the title on 30 September, during a gala in Warsaw.'
-    ]
-  },
-  {
-    coverImg: TipsImages.tip2,
-    header: 'Are you tired of noise from the street or the yard? Choosing the right windows will help!',
-    date: new Date().toDateString(),
-    landingPageText:
-            'Drutex SA yet again has been awarded the European Medal in the prestigious contest held by Business Centre Club. This time the leading European producer of woodwork was appreciated for the MB-86 SI aluminum doors.',
-    text: [
-      'This is 32nd edition of the initiative organized by BCC under the aegis of the European Economic and Social Committee which aims at awarding and promoting top-quality products and services offered by companies operating in Poland. This year Drutex received the award for the MB-86 SI aluminum doors. Previously, the Bytów company was awarded i.a. for PVC windows, Iglo-HS lift and slide doors, as well as innovative system of roller shutters. ',
-      '- We are delighted to have received the award, especially that we received it once again. It proves that the strategy that we have adopted, based on investment in top quality and cutting-edge technology, works out perfectly. As a result, we consistently strengthen our market position, winning over clients all over the world – points out Adam Leik, marketing director at Drutex SA. ',
-      'The doors awarded in this year’s BCC contest are manufactured in the MB-86 SI system. They are a product for the 21st century. They may be used both in individual development, as well as aluminum facades, and thanks to their enhanced thermal insulation they may be dedicated to energy efficient building.  Their additional advantage is the color range  and wide variety of panel patterns. All external doors offered by Drutex may be equipped with smart access control system that allows to open and lock them with e.g. a smartphone, a tablet or a fingerprint reader. ',
-      'Aluminum windows and doors have been produced by Drutex SA since 1999. The company has been investing in cutting-edge technology for years and just last year it launched i.a. Poland’s most modern powder paint shop for aluminum woodwork which is also one of the most modern in the world. As a result, it is possible to guarantee top-quality products and optimum speed of order execution. ',
-      'The European Medals awards ceremony took place on 23 June in the Lubomirski Palace in Warsaw.'
-    ]
-  },
-  {
-    coverImg: TipsImages.tip3,
-    header: 'A good window is not all. How about the installation?',
-    date: new Date().toDateString(),
-    landingPageText:
-            ' DRUTEX yet again has been awarded the Golden Construction Brand of the Year in the ‘elevation windows’ category. The title is given basing on national surveys conducted among construction companies in Poland.',
-    text: [
-      'The award given to Drutex is a confirmation of top quality of the products, as well as their reputation and popularity with professionals. The Golden Construction Brand ranking has therefore an exceptionally unique and impartial character, and it has been considered to be the most reliable in Poland for many years.',
-      '- We are happy to have received the award yet again, especially that it is given, in fact, by numerous professionals in the construction industry. It is a confirmation that investment in cutting-edge technology and top quality bring the expected results, and, above all, clients’ satisfaction and trust all over the world. It has always been our priority and it determines other investment projects that we carry out – says Leszek Gierszewski, the president and founder of Drutex SA.',
-      'It is worth pointing out that the Bytów company, having launched the most cutting edge paint shop for aluminum woodwork in Poland, also started the construction of an impressive office building and high-bay warehouse. Completion of both investments is planned for 2021, and this year the company will launch the construction of the biggest production hall covering over',
-      '7,5 ha. Apart from that, Drutex constantly invests in the innovative machine park and its own transport fleet consisting of over 400 vehicles. 2020, despite the pandemic, was a record year for the Bytów tycoon. The company – apart the above mentioned investments – for the first time ever exceeded PLN 1 billion of  sales revenue, hiring at the same time extra 550 staff. ',
-      'The ranking of the Construction Brand of the Year has been conducted by ASM ( Market Research and Analysis Centre) for the 17th time. This year ca. 2.6 Polish companies participated in the survey. The award ceremony took place on 10 June at the Windsor Hotel in Jachranka.'
+      {
+        header: 'Kako da odaberete prozore',
+        text: [
+          'U moru onoga što se nudi na tržištu, mi i dalje ne znamo koja PVC stolarija je najbolja. Prvi poriv je uvek da se raspitamo šta se nudi i koliko košta, pa da se odlučimo od koga ćemo kupiti. Ipak, previše netačnih informacija onlajn nas dovede u zabunu, svako hvali svoj proizvod ili nudi sumnjive popuste, i mi i dalje nismo načisto šta bi i kako trebalo da uradimo.',
+          'Upravo zbog toga smo odlučili da vam pomognemo oko toga kako da odaberete prozore, tako da možete lako da steknete utisak na šta bi uopšte trebalo da obratite pažnju.',
+          'Evo nekoliko termina, koje ćete čuti kada se budete raspitivali o zameni prozora.'
+        ]
+      },
+      {
+        header: 'Šta su PVC profili',
+        text: [
+          'PVC profili za prozore se najčešće isporučuju u šipkama od nekoliko metara, koje se nakon toga seku u skladu sa dimenzijama prozora koje su majstori izmerili kod vas. Posle toga se unutra ubacuje čelično ojačanje, koje se šrafi i fiksira. Kada prođe dodatnu obradu, dobije se krilo prozora ili štok, što je zapravo gotov profil. Na to se dalje postavljaju okov i stakla.',
+          'Ranije je važilo pravilo da je profil kvalitetniji što ima više komora, ali kako je na tržištu počelo da se pojavljuje sve više nekvalitenih prozvoda, tako ni ovo više nije slučaj. Ipak, kada kupite nemački proizvod, bar o kvalitetu ne morate da brinete. Tu i broj komora ima svoj značaj.'
+        ]
+      },
+      {
+        header: 'Šta je okov',
+        text: [
+          'Okov je mehanizam koji omogućava da se prozor otvara i zatvara. Bez obzira na to na koji način se prozor otvara, on mora da ima kvalitetan okov da bi besprekorno funkcionisao. Kvalitet okova zavisi od izrade, i uvek je bolje da se uzme nemački nego turski ili kineski.',
+          'Kada menjate prozore, povedite računa i o tome da vam sleduje i garancija nemačkog proizvođača, kako na profile, tako i na okove, i da ona uvek traje više godina. Često možete da čujete i da treba uzeti okove koji su na domaćem tržištu dosta zastupljeni, jer onda lakše možete da nađete delove i servis.',
+          'Ali, ne treba vi da brinete o tome. U Srbiji smo navikli sami da prekrajamo i popravljamo i neretko upadamo u krpljenja kojima nema kraja, a zapravo samo treba da se odlučite za ozbiljnog prodavca koji ima svoj servis i sam daje garanciju. (Kod nas, na primer, garancija traje dve godine.)',
+          'Kvalitetan okov izrađuje se od nerđajućeg čelika, što znači da dugo traje i da je otporan na vremenske prilike i spoljne uticaje. '
+        ]
+      },
+      {
+        header: 'Kako se bira staklo',
+        text: [
+          'Najveća površina kod prozora ide na staklo, što vam daje ne samo dovoljno svetlosti u stanu ili kući, već i dobru izolaciju. Zato je važno da prodavcu naznačite ako želite bolju termo i zvučnu izolaciju, da može, na primer, da vam ponudi troslojno staklo. Postoje stakla koja su idealna za određene temperature, pa tako leti odbijaju toplotu, a zimi će pomoći da se ona zadrži u prostoriji.',
+          'Takođe, PVC stolarija je danas tako uznapredovala da možete da odaberete i staklo koje će biti bezbednije za dečije sobe. To su takozvana sigurnosna stakla, koja se ne raspadaju u komade ako se kojim slučajem razbiju, te samim tim smanjuju opasnost od povreda.'
+        ]
+      },
+      {
+        header: 'Naša preporuka',
+        text: [
+          'Ako tražite ekonomična rešenja i najbolji odnos kvaliteta i cene, onda su VEKA profili svakako na prvom mestu. Nemačka izrada im garantuje kvalitet po visokim standardima, a iskustva naših kupaca su više nego pozitivna. Odlični su kada je u pitanju izolacija, lako se održavaju, i biće vam napravljeni i ugrađeni za oko tri nedelje.'
+        ]
+      }
     ]
   },
   {
     coverImg: TipsImages.tip1,
-    header: 'How to choose the best door?',
+    header: 'NAJBOLJA STOLARIJA ZA KUĆU',
     date: new Date().toDateString(),
     landingPageText:
-            'Front door is not just a key technical element of the building, but also the showcase of the house. Therefore, it must be pretty, and at the same time it should fulfil our expectations regarding sound insulation, energy efficiency and safety.',
+            'Hoćete da menjate prozore ili vrata, a ne znate odakle da počnete?',
     text: [
-      'DRUTEX has been one of the best-known Polish brands for ages, trusted by clients and business partners worldwide. The position has been confirmed by the Superbrands title, given by a globally famous organization that for 25 years has been awarding the strongest most trusted brands in the world. The research was conducted in over 90 countries,  selecting the winners in each market and presenting their success stories. DRUTEX has gained the title for the seventh time.',
-      '- This is the best confirmation that consistent and coherent building of the DRUTEX brand position in Poland and abroad brings the expected results. Today DRUTEX stands for top quality and innovation, as well as business credibility. In the window and door woodwork sector we are among  European leaders. We offer top quality products, which is appreciated by clients all over the world – says Leszek Gierszewski, the founder and president – DRUTEX is also involved in CSR actions, supporting various initiatives i.a. contributing to healthcare. It is appreciated and noticed. ',
-      'This year, the 15th edition of the Superbrands contest was based on a wide consumer survey conducted among 15 thousand respondents, as well as the opinion of Brands Council experts. They evaluated the market position of the brand in Poland, the quality of products or services, the quality of B2B relations, as well as innovation and CSR actions. They also took into account the development dynamics of the brand and its strength in the specific category.',
-      'DRUTEX received the title on 30 September, during a gala in Warsaw.'
+      {
+        header: 'NAJBOLJA STOLARIJA ZA KUĆU: Kako da naručite',
+        text: [
+          'Hoćete da menjate prozore ili vrata, a ne znate odakle da počnete?',
+          'Nije ni čudo, kada smo zatrpani svakakvim informacijama preko interneta i društvenih mreža, i prilično zaplašeni nejasnim procedurama i lošim iskustvima. Upravo zbog toga vam donosimo ovaj vodič - kako da naručite najbolju stolariju za kuću, i to korak po korak, da znate šta kupujete i budete zadovoljni kvalitetom i ugradnjom.'
+        ]
+      },
+      {
+        header: 'Pozovite ili pošaljite mejl',
+        text: [
+          'Kontaktirajte nas telefonom (013367700) ili imejlom (office@danito.rs). To je prvi korak kada menjate stolariju. Jer, treba da čujemo šta vam tačno treba, i da se sa vama dogovorimo kada da pošaljemo naš tim da uzmu dimenzije i pogledaju prostor za vašu novu stolariju. (Dolazak i merenje su BESPLATNI.) Za prozore se, recimo, meri otvor na zidu sa unutrašnje strane, širina i visina od zida do zida. Ako imate roletne, meri se i ukupna visina prozora bez kutije za roletne.',
+          'Od momenta kada pozovete ili pošaljete mejl, mi dolazimo za nekoliko dana. Dakle, nema čekanja i odugovlačenja. Umesto da gubite vreme na pretraživanje po internetu, da čitate "uputstva" o tome kako da izmerite svoj prozor ili vrata, jednostavnije je da pozovete one koji se u to razumeju. I mi stižemo!'
+        ]
+      },
+      {
+        header: 'Dođite u naš salon',
+        text: [
+          'Zašto je ovo važno? Kada dođete kod nas, na licu mesta možemo da vam pokažemo kako izgledaju nemački profili, prozori ili vrata, klizni sistemi koji se prave i prodaju u našem salonu.',
+          'Nakon što je naša ekipa bila kod vas u kući ili stanu i uzela mere, najbolje je da uživo vidite šta bi najbolje moglo da se uklopi u vaš prostor. Jer, svakom kupcu se posvećuje posebna pažnja, ne odgovara isti profil svima, niti svi imaju isti ukus. Ovo je, takođe, prilika da postavite sva pitanja koja eventualno imate i da vam objasnimo ono što vas možda zbunjuje.'
+        ]
+      },
+      {
+        header: 'Posebna ponuda za vas',
+        text: [
+          'Na osnovu dimenzija i vašeg izbora profila, stakla i sličnog, kao i toga da li ste se odlučili za PVC ili alu stolariju, da li biste i roletne ili ne, i tako dalje, formira se specijalna cena. Jer, stolarija se ne ugrađuje po kvadratu, već prema tome da li vam treba dvokrilni ili trokrilni prozor, na primer, da li biste posebno staklo za vrata ili klizni sistem duž čitavog zida. Postoji puno kombinacija, koje samim tim i različito koštaju.',
+          'Kada nam dođete u posetu, sve ćemo varijante da pretresemo i napravićemo najbolju moguću ponudu.'
+        ]
+      },
+      {
+        header: 'Pravljenje stolarije i ugradnja',
+        text: [
+          'Nakon što prihvatite našu ponudu i legne uplata, više ne morate da brinete. Tog momenta pripremamo stolariju za koju ste se odučili i najavljujemo se da dođemo za ugradnju.',
+          'Svesni smo da se ljudi često suočavaju sa lošim nastupom majstora, da kolege koje rade manje kvalitetno ili nude nerealne popuste a onda štede na materijalu - izazivaju sumnju i podozrenje koje utiče na sve nas. Upravo zato, naš tim je uvek tačan, ne troši vaše vreme uludo, i završava posao u rekordnom roku. Od uplate do završetka ugradnje proći će oko tri nedelje. Mi skidamo i staru stolariju, a sama ugradnja nove gotova je za jedan dan.',
+          'Treba napomenuti da završni radovi oko prozora ili vrata ne spadaju u naš domen, već u molerske radove. Ali, da ne biste dodatno gubili vreme na traženje još jednog majstora, i da bi vam sve bilo gotovo odjednom, nudimo i uslugu angažovanja molera koji će brzo obaviti ove sitne estetske popravke.'
+        ]
+      },
+      {
+        header: 'Garancija i servis',
+        text: [
+          'Kada sve završimo, daćemo vam i osnovne smernice kako da održavate svoju novu stolariju. Sa naše strane, dobijete garanciju nemačkog proizvođača na sve proizvode, kao i garanciju naše firme na 24 meseca. Sve što se eventualno dogodi u tom periodu, rešavamo za kratko vreme.',
+          'Ako prođu dve godine od ugradnje, a vi imate problema sa našom stolarijom, rado ćemo doći da proverimo šta se događa. Doduše, PVC ili alu stolarija je izuzetno otporna i dugo traje, te će joj posle mnogo godina korišćenja, zatrebati tek zatezanje ponekog šrafa.'
+        ]
+      }
     ]
   },
   {
-    coverImg: TipsImages.tip2,
-    header: 'Are you tired of noise from the street or the yard? Choosing the right windows will help!',
+    coverImg: TipsImages.tip1,
+    header: 'KOJA PVC STOLARIJA JE NAJBOLJA',
     date: new Date().toDateString(),
     landingPageText:
-            'Drutex SA yet again has been awarded the European Medal in the prestigious contest held by Business Centre Club. This time the leading European producer of woodwork was appreciated for the MB-86 SI aluminum doors.',
+            'KOJA PVC STOLARIJA JE NAJBOLJA',
     text: [
-      'This is 32nd edition of the initiative organized by BCC under the aegis of the European Economic and Social Committee which aims at awarding and promoting top-quality products and services offered by companies operating in Poland. This year Drutex received the award for the MB-86 SI aluminum doors. Previously, the Bytów company was awarded i.a. for PVC windows, Iglo-HS lift and slide doors, as well as innovative system of roller shutters. ',
-      '- We are delighted to have received the award, especially that we received it once again. It proves that the strategy that we have adopted, based on investment in top quality and cutting-edge technology, works out perfectly. As a result, we consistently strengthen our market position, winning over clients all over the world – points out Adam Leik, marketing director at Drutex SA. ',
-      'The doors awarded in this year’s BCC contest are manufactured in the MB-86 SI system. They are a product for the 21st century. They may be used both in individual development, as well as aluminum facades, and thanks to their enhanced thermal insulation they may be dedicated to energy efficient building.  Their additional advantage is the color range  and wide variety of panel patterns. All external doors offered by Drutex may be equipped with smart access control system that allows to open and lock them with e.g. a smartphone, a tablet or a fingerprint reader. ',
-      'Aluminum windows and doors have been produced by Drutex SA since 1999. The company has been investing in cutting-edge technology for years and just last year it launched i.a. Poland’s most modern powder paint shop for aluminum woodwork which is also one of the most modern in the world. As a result, it is possible to guarantee top-quality products and optimum speed of order execution. ',
-      'The European Medals awards ceremony took place on 23 June in the Lubomirski Palace in Warsaw.'
-    ]
-  },
-  {
-    coverImg: TipsImages.tip3,
-    header: 'A good window is not all. How about the installation?',
-    date: new Date().toDateString(),
-    landingPageText:
-            ' DRUTEX yet again has been awarded the Golden Construction Brand of the Year in the ‘elevation windows’ category. The title is given basing on national surveys conducted among construction companies in Poland.',
-    text: [
-      'The award given to Drutex is a confirmation of top quality of the products, as well as their reputation and popularity with professionals. The Golden Construction Brand ranking has therefore an exceptionally unique and impartial character, and it has been considered to be the most reliable in Poland for many years.',
-      '- We are happy to have received the award yet again, especially that it is given, in fact, by numerous professionals in the construction industry. It is a confirmation that investment in cutting-edge technology and top quality bring the expected results, and, above all, clients’ satisfaction and trust all over the world. It has always been our priority and it determines other investment projects that we carry out – says Leszek Gierszewski, the president and founder of Drutex SA.',
-      'It is worth pointing out that the Bytów company, having launched the most cutting edge paint shop for aluminum woodwork in Poland, also started the construction of an impressive office building and high-bay warehouse. Completion of both investments is planned for 2021, and this year the company will launch the construction of the biggest production hall covering over',
-      '7,5 ha. Apart from that, Drutex constantly invests in the innovative machine park and its own transport fleet consisting of over 400 vehicles. 2020, despite the pandemic, was a record year for the Bytów tycoon. The company – apart the above mentioned investments – for the first time ever exceeded PLN 1 billion of  sales revenue, hiring at the same time extra 550 staff. ',
-      'The ranking of the Construction Brand of the Year has been conducted by ASM ( Market Research and Analysis Centre) for the 17th time. This year ca. 2.6 Polish companies participated in the survey. The award ceremony took place on 10 June at the Windsor Hotel in Jachranka.'
+      {
+        header: 'Kako da odaberete prozore',
+        text: [
+          'U moru onoga što se nudi na tržištu, mi i dalje ne znamo koja PVC stolarija je najbolja. Prvi poriv je uvek da se raspitamo šta se nudi i koliko košta, pa da se odlučimo od koga ćemo kupiti. Ipak, previše netačnih informacija onlajn nas dovede u zabunu, svako hvali svoj proizvod ili nudi sumnjive popuste, i mi i dalje nismo načisto šta bi i kako trebalo da uradimo.',
+          'Upravo zbog toga smo odlučili da vam pomognemo oko toga kako da odaberete prozore, tako da možete lako da steknete utisak na šta bi uopšte trebalo da obratite pažnju.',
+          'Evo nekoliko termina, koje ćete čuti kada se budete raspitivali o zameni prozora.'
+        ]
+      },
+      {
+        header: 'Šta su PVC profili',
+        text: [
+          'PVC profili za prozore se najčešće isporučuju u šipkama od nekoliko metara, koje se nakon toga seku u skladu sa dimenzijama prozora koje su majstori izmerili kod vas. Posle toga se unutra ubacuje čelično ojačanje, koje se šrafi i fiksira. Kada prođe dodatnu obradu, dobije se krilo prozora ili štok, što je zapravo gotov profil. Na to se dalje postavljaju okov i stakla.',
+          'Ranije je važilo pravilo da je profil kvalitetniji što ima više komora, ali kako je na tržištu počelo da se pojavljuje sve više nekvalitenih prozvoda, tako ni ovo više nije slučaj. Ipak, kada kupite nemački proizvod, bar o kvalitetu ne morate da brinete. Tu i broj komora ima svoj značaj.'
+        ]
+      },
+      {
+        header: 'Šta je okov',
+        text: [
+          'Okov je mehanizam koji omogućava da se prozor otvara i zatvara. Bez obzira na to na koji način se prozor otvara, on mora da ima kvalitetan okov da bi besprekorno funkcionisao. Kvalitet okova zavisi od izrade, i uvek je bolje da se uzme nemački nego turski ili kineski.',
+          'Kada menjate prozore, povedite računa i o tome da vam sleduje i garancija nemačkog proizvođača, kako na profile, tako i na okove, i da ona uvek traje više godina. Često možete da čujete i da treba uzeti okove koji su na domaćem tržištu dosta zastupljeni, jer onda lakše možete da nađete delove i servis.',
+          'Ali, ne treba vi da brinete o tome. U Srbiji smo navikli sami da prekrajamo i popravljamo i neretko upadamo u krpljenja kojima nema kraja, a zapravo samo treba da se odlučite za ozbiljnog prodavca koji ima svoj servis i sam daje garanciju. (Kod nas, na primer, garancija traje dve godine.)',
+          'Kvalitetan okov izrađuje se od nerđajućeg čelika, što znači da dugo traje i da je otporan na vremenske prilike i spoljne uticaje. '
+        ]
+      },
+      {
+        header: 'Kako se bira staklo',
+        text: [
+          'Najveća površina kod prozora ide na staklo, što vam daje ne samo dovoljno svetlosti u stanu ili kući, već i dobru izolaciju. Zato je važno da prodavcu naznačite ako želite bolju termo i zvučnu izolaciju, da može, na primer, da vam ponudi troslojno staklo. Postoje stakla koja su idealna za određene temperature, pa tako leti odbijaju toplotu, a zimi će pomoći da se ona zadrži u prostoriji.',
+          'Takođe, PVC stolarija je danas tako uznapredovala da možete da odaberete i staklo koje će biti bezbednije za dečije sobe. To su takozvana sigurnosna stakla, koja se ne raspadaju u komade ako se kojim slučajem razbiju, te samim tim smanjuju opasnost od povreda.'
+        ]
+      },
+      {
+        header: 'Naša preporuka',
+        text: [
+          'Ako tražite ekonomična rešenja i najbolji odnos kvaliteta i cene, onda su VEKA profili svakako na prvom mestu. Nemačka izrada im garantuje kvalitet po visokim standardima, a iskustva naših kupaca su više nego pozitivna. Odlični su kada je u pitanju izolacija, lako se održavaju, i biće vam napravljeni i ugrađeni za oko tri nedelje.'
+        ]
+      }
     ]
   }
 ]

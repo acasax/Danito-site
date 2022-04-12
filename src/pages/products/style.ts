@@ -10,7 +10,6 @@ export const ProductPageContainer = styled.div`
 export const ProductPageHeaderImageContainer = styled.div`
   width: 100%;
   height: auto;
-  min-height: 900px;
 `
 
 export const ProductPageHeaderImage = styled.img`
@@ -150,10 +149,11 @@ export const ProductPageProfileContainer = styled.div`
 export const ProductPageProfileTextContainer = styled.div`
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   width: 100%;
   height: 50px;
   text-align: center;
+  margin-top: 10px;
 `
 
 export const ProductPageProfileText = styled.p`
@@ -165,11 +165,11 @@ export const ProductPageProfileText = styled.p`
 export const ProductPageProfileImg = styled.img`
   max-height: 200px;
   transition: 0.5s ease-in-out;
-  border: 1px solid black;
+  border: 1px solid ${Styles.Colours.PALETTE.DANITO._liteGray};
 
 
   &:hover {
-    box-shadow: 5px 5px 15px 5px #000000;
+    box-shadow: 3px 3px 10px 3px ${Styles.Colours.PALETTE.DANITO._darkGray};
     transform: scale(1.05);
     transition: 0.5s ease-in-out;
   }
@@ -181,6 +181,7 @@ export const ProductsPanelsInfoContainer = styled.div`
   flex-direction: column;
   position: fixed;
   top: 200px;
+  left: 42%;
   z-index: 100000;
   opacity: 1 !important;
 `

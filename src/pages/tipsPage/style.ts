@@ -23,14 +23,20 @@ export const TipsPageTextContainer = styled.div`
   margin: auto;
   flex-direction: column;
   padding: 50px 0;
-  gap: 50px;
   width: 70%;
 `
 
-export const TipsPageTextHeader = styled.h3`
-  font-size: 17px;
+export const TipsTextItemContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+`
+
+export const TipsPageTextHeader = styled.h1`
+  font-size: 22px;
   font-weight: bold;
   color: ${Styles.Colours.PALETTE.DANITO._black};
+  margin: 15px 0;
+  letter-spacing: 1px;
 `
 
 export const TipsPageTextPContainer = styled.div`
@@ -40,9 +46,11 @@ export const TipsPageTextPContainer = styled.div`
 `
 
 export const TipsPageTextP = styled.p`
-  font-size: 15px;
+  font-size: 17px;
   font-weight: normal;
   color: ${Styles.Colours.PALETTE.DANITO._darkGray};
+  margin: 10px 0;
+  letter-spacing: 1px;
 `
 
 export const TipsPageDatePosted = styled.p`
@@ -53,4 +61,17 @@ export const TipsPageDatePosted = styled.p`
   font-size: 12px;
   width: -moz-fit-content;
   width: fit-content;
+`
+
+export const TipsPageContactUsContainer = styled.div`
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+`
+
+export const TipsPageContactUsText = styled.a`
+  font-size: 35px;
+  font-weight: bolder;
+  color: ${Styles.Colours.PALETTE.DANITO._black};
 `
