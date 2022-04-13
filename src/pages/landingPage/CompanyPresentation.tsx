@@ -14,6 +14,7 @@ import BackgroundImage from 'constants/companyPresentation/2.png'
 import Backdrop from '@mui/material/Backdrop'
 // @ts-ignore
 import link from 'constants/companyPresentation/Video.mp4'
+import { Translate } from '../../translate/data'
 
 /**
  *
@@ -46,7 +47,7 @@ const CompanyPresentation = () => {
             />
             <CompanyPresentationContentContainer>
                 <LineAnimation
-                    header="Pretstavljanje kompanije"
+                    header={Translate.COMPANY_PRESENTATION_TEXT}
                     scroll={scroll}
                     scrollY={800}
                     backgroundColor={'transparent'}
@@ -56,7 +57,7 @@ const CompanyPresentation = () => {
                     scaleTransform={scroll >= 800}
                     onClick={handleOpenVideoModal}
                 >
-                    SEE VIDEO
+                    {Translate.COMPANY_PRESENTATION_SEE_VIDEO}
                 </CompanyPresentationButton>
             </CompanyPresentationContentContainer>
             <Backdrop

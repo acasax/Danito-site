@@ -18,6 +18,7 @@ import {
   TipsPageTextPContainer,
   TipsTextItemContainer
 } from './style'
+import { Translate } from '../../translate/data'
 
 const TipsPageLayout = () => {
   const { scroll } = useContext(SiteNavigationContext)
@@ -44,7 +45,7 @@ const TipsPageLayout = () => {
                       )
                     })}
                     <TipsPageContactUsContainer>
-                        <TipsPageContactUsText href="/kontakt">Kontaktirajte nas</TipsPageContactUsText>
+                        <TipsPageContactUsText href="/kontakt">{Translate.TIPS_PAGE_CONTACT_OS}</TipsPageContactUsText>
                     </TipsPageContactUsContainer>
                 </TipsPageTextPContainer>
                 <TipsPageDatePosted>{selectedTip[0].date}</TipsPageDatePosted>

@@ -10,6 +10,7 @@ import {
 } from './style'
 import { SiteNavigationContext } from './context'
 import { Styles } from 'constants/StyleConstants'
+import { Translate } from '../translate/data'
 
 /**
  *
@@ -39,12 +40,12 @@ const NavBarSecondPart = () => {
                     )}
 
                 <NavSecondPartMenuBodyButton
-                    onClick={handleNavRightOpen}>PROIZVODI</NavSecondPartMenuBodyButton>
+                    onClick={handleNavRightOpen}>{Translate.NAV_BAR_SECOND_PART_PRODUCTS}</NavSecondPartMenuBodyButton>
 
-                <NavSecondPartMenuBodyLink href="/">POČETNA</NavSecondPartMenuBodyLink>
-                <NavSecondPartMenuBodyLink href="/onama">O NAMA</NavSecondPartMenuBodyLink>
-                <NavSecondPartMenuBodyLink href="/galerija">GALERIJA</NavSecondPartMenuBodyLink>
-                <NavSecondPartMenuBodyLink href="/kontakt">KONTAKT</NavSecondPartMenuBodyLink>
+                <NavSecondPartMenuBodyLink href="/">{Translate.NAV_BAR_SECOND_PART_HOME}</NavSecondPartMenuBodyLink>
+                <NavSecondPartMenuBodyLink href="/onama">{Translate.NAV_BAR_SECOND_PART_ABOUT}</NavSecondPartMenuBodyLink>
+                <NavSecondPartMenuBodyLink href="/galerija">{Translate.NAV_BAR_SECOND_PART_GALLERY}</NavSecondPartMenuBodyLink>
+                <NavSecondPartMenuBodyLink href="/kontakt">{Translate.NAV_BAR_SECOND_PART_CONTACT}</NavSecondPartMenuBodyLink>
             </NavSecondPartMenuBody>
         </NavSecondPartContainer>
   )

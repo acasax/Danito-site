@@ -38,6 +38,7 @@ import { SiteNavigationContext } from 'siteNavigation/context'
 import Options from './Options'
 import Backdrop from '@mui/material/Backdrop'
 import { TPanelsImg } from 'store/SiteNavigation/d'
+import { Translate } from '../../translate/data'
 
 const ProductPage = () => {
   const { scroll, data, pageName } = useContext(SiteNavigationContext)
@@ -82,7 +83,7 @@ const ProductPage = () => {
             {
                 data.material && (
                     <>
-                        <LineAnimation header={'Karakteristike'} scroll={scroll} scrollY={1000}/>
+                        <LineAnimation header={Translate.PRODUCT_CHARACTERISTICS} scroll={scroll} scrollY={1000}/>
                         <ProductPageContainerCharacteristicContainer>
                             {
                                 data.material.map((item, key) => {
@@ -95,7 +96,7 @@ const ProductPage = () => {
                                                 <ProductPageCharacteristicItemTextContainer>
                                                     <ProductPageCharacteristicItemHeaderContainer>
                                                         <ProductPageCharacteristicItemHeader>
-                                                            PROFIL
+                                                            {Translate.PRODUCT_CHARACTERISTICS_PROFILE}
                                                         </ProductPageCharacteristicItemHeader>
                                                     </ProductPageCharacteristicItemHeaderContainer>
                                                     <ProductPageCharacteristicItemText>
@@ -113,7 +114,7 @@ const ProductPage = () => {
                                                     <ProductPageCharacteristicItemTextContainer>
                                                         <ProductPageCharacteristicItemHeaderContainer>
                                                             <ProductPageCharacteristicItemHeader>
-                                                                STAKLO
+                                                                {Translate.PRODUCT_CHARACTERISTICS_CHAINS}
                                                             </ProductPageCharacteristicItemHeader>
                                                         </ProductPageCharacteristicItemHeaderContainer>
                                                         <ProductPageCharacteristicItemText>
@@ -130,7 +131,7 @@ const ProductPage = () => {
                                                     <ProductPageCharacteristicItemTextContainer>
                                                         <ProductPageCharacteristicItemHeaderContainer>
                                                             <ProductPageCharacteristicItemHeader>
-                                                                OKOV
+                                                                {Translate.PRODUCT_CHARACTERISTICS_GLASS}
                                                             </ProductPageCharacteristicItemHeader>
                                                         </ProductPageCharacteristicItemHeaderContainer>
                                                         <ProductPageCharacteristicItemText>

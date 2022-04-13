@@ -2,6 +2,7 @@ import React from 'react'
 import { LogoHeaderText, LogoImagePart, LogoImagePartContainer, LogoTextPartContainer, LogoTextSubHeader } from './style'
 import LogoImg from 'constants/img/Logo.png'
 import { TLogoComponent } from './d'
+import { Translate } from '../../translate/data'
 
 /**
  *
@@ -23,8 +24,8 @@ const LogoComponent = ({ imgSize, fontColor, headerTextFontSize, headerSubTextFo
         <LogoImagePartContainer href={'/'} color={fontColor}>
             <LogoImagePart src={LogoImg} alt={'danito logo'} imageSize={imgSize}/>
             <LogoTextPartContainer>
-                <LogoHeaderText fontSize={headerTextFontSize}>DANITO</LogoHeaderText>
-                <LogoTextSubHeader fontSize={headerSubTextFontSize}>construction</LogoTextSubHeader>
+                <LogoHeaderText fontSize={headerTextFontSize}>{Translate.COMPANY_NAME}</LogoHeaderText>
+                <LogoTextSubHeader fontSize={headerSubTextFontSize}>{Translate.COMPANY_NAME_I}</LogoTextSubHeader>
             </LogoTextPartContainer>
         </LogoImagePartContainer>
   )
