@@ -1,6 +1,7 @@
 import styled, { css } from 'styled-components'
 import { Styles } from 'constants/StyleConstants'
 import FooterBackground from 'constants/img/footerBackground.png'
+import { calcSize, devices } from '../../constants/ResponsiveBreakpoints'
 
 export const FooterContainer = styled.div`
   display: flex;
@@ -22,6 +23,31 @@ export const FooterFirstPartContainer = styled.div`
   border-bottom-style: solid;
   background-image: url(${FooterBackground});
   background-position: center;
+
+  @media ${devices.xs} {
+    padding: 3px 6px;
+    height: 60px;
+  }
+
+  @media ${devices.sm} {
+    padding: 4px 8px;
+    height: 80px;
+  }
+
+  @media ${devices.md} {
+    padding: 5px 10px;
+    height: 103px;
+  }
+
+  @media ${devices.lg} {
+    padding: 6px 12px;
+    height: 125px;
+  }
+
+  @media ${devices.xl} {
+    padding: 7px 14px;
+    height: 145px;
+  }
 `
 
 export const FooterFirstPartCell = styled.div<{ alignItems?: string }>`
@@ -52,8 +78,27 @@ export const FooterFirstPartTextContainer = styled.div <{
   flex-direction: row;
   align-items: center;
   text-align: left;
-  min-width: 100px;
   max-width: 370px;
+
+  @media ${devices.xs} {
+    max-width: 111px;
+  }
+
+  @media ${devices.sm} {
+    max-width: 148px;
+  }
+
+  @media ${devices.md} {
+    max-width: 191px;
+  }
+
+  @media ${devices.lg} {
+    max-width: 231px;
+  }
+
+  @media ${devices.xl} {
+    max-width: 269px;
+  }
 
   ${props => props.flexDirection && css`
     flex-direction: ${props.flexDirection};
@@ -69,6 +114,27 @@ export const FooterFirstPartTextContainer = styled.div <{
 
   ${props => props.minWidth && css`
     min-width: ${props.minWidth}px;
+
+    @media ${devices.xs} {
+      width: calc(${calcSize.xsmall} * ${props.minWidth} / 1920)px;
+    }
+
+    @media ${devices.sm} {
+      width: calc(${calcSize.small} * ${props.minWidth} / 1920)px;
+    }
+
+    @media ${devices.md} {
+      width: calc(${calcSize.medium} * ${props.minWidth} / 1920)px;
+    }
+
+    @media ${devices.lg} {
+      width: calc(${calcSize.large} * ${props.minWidth} / 1920)px;
+    }
+
+    @media ${devices.xl} {
+      width: calc(${calcSize.extralarge} * ${props.minWidth} / 1920)px;
+    }
+
   `}
 `
 
@@ -78,6 +144,31 @@ export const FooterFirstPartCellHeaderText = styled.h1`
   font-size: 30px;
   font-weight: bolder;
   color: ${Styles.Colours.PALETTE.DANITO._darkGray};
+
+  @media ${devices.xs} {
+    font-size: 9px;
+    padding-bottom: 1px;
+  }
+
+  @media ${devices.sm} {
+    font-size: 12px;
+    padding-bottom: 2px;
+  }
+
+  @media ${devices.md} {
+    font-size: 15px;
+    padding-bottom: 2px;
+  }
+
+  @media ${devices.lg} {
+    font-size: 18px;
+    padding-bottom: 3px;
+  }
+
+  @media ${devices.xl} {
+    font-size: 21px;
+    padding-bottom: 3px;
+  }
 `
 
 export const FooterFirstPartCellText = styled.a<{ paddingLeft?: number }>`
@@ -88,8 +179,53 @@ export const FooterFirstPartCellText = styled.a<{ paddingLeft?: number }>`
   text-decoration: none;
   text-align: left;
 
+  @media ${devices.xs} {
+    margin: 2px 0;
+    font-size: 6px;
+  }
+
+  @media ${devices.sm} {
+    margin: 3px 0;
+    font-size: 8px;
+  }
+
+  @media ${devices.md} {
+    margin: 4px 0;
+    font-size: 10px;
+  }
+
+  @media ${devices.lg} {
+    margin: 5px 0;
+    font-size: 12px;
+  }
+
+  @media ${devices.xl} {
+    margin: 5px 0;
+    font-size: 14px;
+  }
+
   ${props => props.paddingLeft && css`
     padding-left: ${props.paddingLeft}px;
+
+    @media ${devices.xs} {
+      padding-left: calc(${calcSize.xsmall} * ${props.paddingLeft} / 1920) px;
+    }
+
+    @media ${devices.sm} {
+      padding-left: calc(${calcSize.small} * ${props.paddingLeft} / 1920) px;
+    }
+
+    @media ${devices.md} {
+      padding-left: calc(${calcSize.medium} * ${props.paddingLeft} / 1920) px;
+    }
+
+    @media ${devices.lg} {
+      padding-left: calc(${calcSize.large} * ${props.paddingLeft} / 1920) px;
+    }
+
+    @media ${devices.xl} {
+      padding-left: calc(${calcSize.extralarge} * ${props.paddingLeft} / 1920) px;
+    }
   `}
 `
 
@@ -109,12 +245,58 @@ export const FooterSecondPartContainer = styled.div`
   justify-content: space-between;
   align-items: center;
   padding: 0 20px;
+
+  @media ${devices.xs} {
+    height: 15px;
+    padding: 0 6px;
+  }
+
+  @media ${devices.sm} {
+    height: 20px;
+    padding: 0 8px;
+  }
+
+  @media ${devices.md} {
+    height: 25px;
+    padding: 0 10px;
+  }
+
+  @media ${devices.lg} {
+    height: 31px;
+    padding: 0 12px;
+  }
+
+  @media ${devices.xl} {
+    height: 36px;
+    padding: 0 14px;
+  }
+
 `
 
 export const FooterSecondPartText = styled.p`
   font-size: 13px;
   color: ${Styles.Colours.PALETTE.DANITO._white};
   font-weight: normal;
+
+  @media ${devices.xs} {
+    font-size: 3px;
+  }
+
+  @media ${devices.sm} {
+    font-size: 5px;
+  }
+
+  @media ${devices.md} {
+    font-size: 6px;
+  }
+
+  @media ${devices.lg} {
+    font-size: 8px;
+  }
+
+  @media ${devices.xl} {
+    font-size: 9px;
+  }
 `
 
 export const FooterSecondPartLinkText = styled.a`
@@ -124,4 +306,24 @@ export const FooterSecondPartLinkText = styled.a`
   text-decoration: none;
   margin-right: 5px;
   margin-left: 5px;
+
+  @media ${devices.xs} {
+    font-size: 3px;
+  }
+
+  @media ${devices.sm} {
+    font-size: 5px;
+  }
+
+  @media ${devices.md} {
+    font-size: 6px;
+  }
+
+  @media ${devices.lg} {
+    font-size: 8px;
+  }
+
+  @media ${devices.xl} {
+    font-size: 9px;
+  }
 `

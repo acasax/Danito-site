@@ -2,19 +2,19 @@ export const Images = {
   EMPTY_IMAGES: 'https://www.generationsforpeace.org/wp-content/uploads/2018/03/empty.jpg'
 }
 
-export const size = {
-  xs: '320px',
-  sm: '768px',
-  md: '1370px',
-  lg: '1600px'
-}
-
-export const device = {
-  miniMobile: `(max-width: ${size.xs})`,
-  mobile: `(max-width: ${size.sm})`,
-  tablet: `(max-width: ${size.md})`,
-  desktop: `(max-width: ${size.lg})`
-}
+// export const size = {
+//   xs: '320px',
+//   sm: '768px',
+//   md: '1370px',
+//   lg: '1600px'
+// }
+//
+// export const device = {
+//   miniMobile: `(max-width: ${size.xs})`,
+//   mobile: `(max-width: ${size.sm})`,
+//   tablet: `(max-width: ${size.md})`,
+//   desktop: `(max-width: ${size.lg})`
+// }
 
 export const Styles = {
   Colours: {
