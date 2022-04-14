@@ -215,7 +215,7 @@ export const CompanyPresentationButton = styled.button<{ scaleTransform: boolean
   border: 3px solid ${Styles.Colours.PALETTE.DANITO._yellow};
   font-size: 18px;
   width: 150px;
-  height: 50px;
+  height: 60px;
   color: ${Styles.Colours.PALETTE.DANITO._white};
   font-weight: bold;
   cursor: pointer;
