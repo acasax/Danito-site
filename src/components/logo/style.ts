@@ -1,5 +1,5 @@
 import styled, { css } from 'styled-components'
-import { calcSize, devices } from '../../constants/ResponsiveBreakpoints'
+import { devices } from '../../constants/ResponsiveBreakpoints'
 
 export const LogoImagePartContainer = styled.a<{ color?: string }>`
   background-color: transparent;
@@ -61,27 +61,27 @@ export const LogoImagePart = styled.img<{ imageSize?: number }>`
 
   ${props => props.imageSize && css`
     height: ${props.imageSize}px;
-    
+
     @media ${devices.xs} {
-      height: calc(${calcSize.xsmall} / 1920 * ${props.imageSize}px);
+      height: 27px;
     }
 
     @media ${devices.sm} {
-      height: calc(${calcSize.small} / 1920 * ${props.imageSize}px);
+      height: 36px;
     }
 
     @media ${devices.md} {
-      height: calc(${calcSize.medium} / 1920 * ${props.imageSize}px);
+      height: 46px;
     }
 
     @media ${devices.lg} {
-      height: calc(${calcSize.large} / 1920 * ${props.imageSize}px);
+      height: 56px;
     }
 
     @media ${devices.xl} {
-      height: calc(${calcSize.extralarge} / 1920 * ${props.imageSize}px);
+      height: 65px;
     }
-    
+
   `}
 `
 
@@ -122,23 +122,23 @@ export const LogoHeaderText = styled.h3<{ fontSize?: number }>`
     font-size: ${props.fontSize}px;
 
     @media ${devices.xs} {
-      font-size: calc(${calcSize.xsmall} * ${props.fontSize} / 1920)px;
+      font-size: 9px;
     }
 
     @media ${devices.sm} {
-      font-size: calc(${calcSize.small} * ${props.fontSize} / 1920)px;
+      font-size: 12px;
     }
 
     @media ${devices.md} {
-      font-size: calc(${calcSize.medium} * ${props.fontSize} / 1920)px;
+      font-size: 15px;
     }
 
     @media ${devices.lg} {
-      font-size: calc(${calcSize.large} * ${props.fontSize} / 1920)px;
+      font-size: 19px;
     }
 
     @media ${devices.xl} {
-      font-size: calc(${calcSize.extralarge} * ${props.fontSize} / 1920)px;
+      font-size: 22px;
     }
 
   `}
@@ -180,23 +180,23 @@ export const LogoTextSubHeader = styled.p<{ fontSize?: number }>`
     font-size: ${props.fontSize}px;
 
     @media ${devices.xs} {
-      font-size: calc(${calcSize.xsmall} * ${props.fontSize} / 1920)px;
+      font-size: 6px;
     }
 
     @media ${devices.sm} {
-      font-size: calc(${calcSize.small} * ${props.fontSize} / 1920)px;
+      font-size: 8px;
     }
 
     @media ${devices.md} {
-      font-size: calc(${calcSize.medium} * ${props.fontSize} / 1920)px;
+      font-size: 11px;
     }
 
     @media ${devices.lg} {
-      font-size: calc(${calcSize.large} * ${props.fontSize} / 1920)px;
+      font-size: 13px;
     }
 
     @media ${devices.xl} {
-      font-size: calc(${calcSize.extralarge} * ${props.fontSize} / 1920)px;
+      font-size: 15px;
     }
 
   `}

@@ -55,6 +55,27 @@ export const FooterFirstPartCell = styled.div<{ alignItems?: string }>`
   flex: 1;
   flex-direction: column;
   align-items: center;
+  max-width: 370px;
+
+  @media ${devices.xs} {
+    max-width: 111px;
+  }
+
+  @media ${devices.sm} {
+    max-width: 148px;
+  }
+
+  @media ${devices.md} {
+    max-width: 191px;
+  }
+
+  @media ${devices.lg} {
+    max-width: 231px;
+  }
+
+  @media ${devices.xl} {
+    max-width: 269px;
+  }
 
   ${props => props.alignItems && css`
     align-items: ${props.alignItems};
@@ -114,26 +135,6 @@ export const FooterFirstPartTextContainer = styled.div <{
 
   ${props => props.minWidth && css`
     min-width: ${props.minWidth}px;
-
-    @media ${devices.xs} {
-      width: calc(${calcSize.xsmall} * ${props.minWidth} / 1920)px;
-    }
-
-    @media ${devices.sm} {
-      width: calc(${calcSize.small} * ${props.minWidth} / 1920)px;
-    }
-
-    @media ${devices.md} {
-      width: calc(${calcSize.medium} * ${props.minWidth} / 1920)px;
-    }
-
-    @media ${devices.lg} {
-      width: calc(${calcSize.large} * ${props.minWidth} / 1920)px;
-    }
-
-    @media ${devices.xl} {
-      width: calc(${calcSize.extralarge} * ${props.minWidth} / 1920)px;
-    }
 
   `}
 `
@@ -208,23 +209,23 @@ export const FooterFirstPartCellText = styled.a<{ paddingLeft?: number }>`
     padding-left: ${props.paddingLeft}px;
 
     @media ${devices.xs} {
-      padding-left: calc(${calcSize.xsmall} * ${props.paddingLeft} / 1920) px;
+      padding-left: 2px;
     }
 
     @media ${devices.sm} {
-      padding-left: calc(${calcSize.small} * ${props.paddingLeft} / 1920) px;
+      padding-left: 3px;
     }
 
     @media ${devices.md} {
-      padding-left: calc(${calcSize.medium} * ${props.paddingLeft} / 1920) px;
+      padding-left: 3px;
     }
 
     @media ${devices.lg} {
-      padding-left: calc(${calcSize.large} * ${props.paddingLeft} / 1920) px;
+      padding-left: 4px;
     }
 
     @media ${devices.xl} {
-      padding-left: calc(${calcSize.extralarge} * ${props.paddingLeft} / 1920) px;
+      padding-left: 5px;
     }
   `}
 `

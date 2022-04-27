@@ -1,6 +1,7 @@
 import styled, { css, keyframes } from 'styled-components'
 import { Styles } from 'constants/StyleConstants'
 import SwipeableViews from 'react-swipeable-views'
+import { devices } from '../../constants/ResponsiveBreakpoints'
 
 /** Style for main part of landing page */
 export const LandingPageContainer = styled.div``
@@ -13,6 +14,31 @@ export const SliderContainer = styled.div`
   position: relative;
   margin-top: 70px;
   height: 900px;
+
+  @media ${devices.xs} {
+    margin-top: 21px;
+    height: 270px;
+  }
+
+  @media ${devices.sm} {
+    margin-top: 28px;
+    height: 360px;
+  }
+
+  @media ${devices.md} {
+    margin-top: 36px;
+    height: 465px;
+  }
+
+  @media ${devices.lg} {
+    margin-top: 44px;
+    height: 562px;
+  }
+
+  @media ${devices.xl} {
+    margin-top: 51px;
+    height: 656px;
+  }
 `
 
 export const SliderElementContainer = styled.div`
@@ -44,6 +70,31 @@ export const DotContainer = styled.div`
   position: relative;
   bottom: 50px;
   width: 100%;
+
+  @media ${devices.xs} {
+    gap: 6px;
+    bottom: 15px;
+  }
+
+  @media ${devices.sm} {
+    gap: 8px;
+    bottom: 20px;
+  }
+
+  @media ${devices.md} {
+    gap: 10px;
+    bottom: 26px;
+  }
+
+  @media ${devices.lg} {
+    gap: 13px;
+    bottom: 31px;
+  }
+
+  @media ${devices.xl} {
+    gap: 15px;
+    bottom: 36px;
+  }
 `
 
 export const DotContainerElements = styled.span<{ isActive: boolean }>`
@@ -54,6 +105,31 @@ export const DotContainerElements = styled.span<{ isActive: boolean }>`
   background-color: ${Styles.Colours.PALETTE.GRAY._500};
   display: block;
   transition: background-color 0.6s ease;
+
+  @media ${devices.xs} {
+    height: 1px;
+    width: 30px;
+  }
+
+  @media ${devices.sm} {
+    height: 2px;
+    width: 40px;
+  }
+
+  @media ${devices.md} {
+    height: 2px;
+    width: 52px;
+  }
+
+  @media ${devices.lg} {
+    height: 3px;
+    width: 62px;
+  }
+
+  @media ${devices.xl} {
+    height: 4px;
+    width: 73px;
+  }
 
   ${props => props.isActive && css`
     background-color: ${Styles.Colours.PALETTE.DANITO._yellow};
@@ -72,6 +148,26 @@ export const ProductPartContainer = styled.div`
   position: relative;
   min-height: 400px;
   max-height: 400px;
+
+  @media ${devices.xs} {
+    height: 120px;
+  }
+
+  @media ${devices.sm} {
+    height: 160px;
+  }
+
+  @media ${devices.md} {
+    height: 207px;
+  }
+
+  @media ${devices.lg} {
+    height: 250px;
+  }
+
+  @media ${devices.xl} {
+    height: 291px;
+  }
 `
 
 export const ProductPartHeaderContainer = styled.div`
@@ -79,12 +175,52 @@ export const ProductPartHeaderContainer = styled.div`
   justify-content: center;
   align-items: center;
   height: 50px;
+
+  @media ${devices.xs} {
+    height: 15px;
+  }
+
+  @media ${devices.sm} {
+    height: 20px;
+  }
+
+  @media ${devices.md} {
+    height: 26px;
+  }
+
+  @media ${devices.lg} {
+    height: 32px;
+  }
+
+  @media ${devices.xl} {
+    height: 37px;
+  }
 `
 
 export const ProductPartHeaderText = styled.p`
   font-size: 22px;
   font-weight: normal;
   color: ${Styles.Colours.PALETTE.DANITO._darkGray};
+
+  @media ${devices.xs} {
+    font-size: 7px;
+  }
+
+  @media ${devices.sm} {
+    font-size: 9px;
+  }
+
+  @media ${devices.md} {
+    font-size: 11px;
+  }
+
+  @media ${devices.lg} {
+    font-size: 14px;
+  }
+
+  @media ${devices.xl} {
+    font-size: 16px;
+  }
 `
 
 export const ProductPartElementContainer = styled.div`
@@ -106,11 +242,56 @@ export const ProductPartElementImageContainer = styled.div`
   max-height: 300px;
   min-height: 300px;
   padding-top: 25px;
+
+  @media ${devices.xs} {
+    height: 90px;
+    padding-top: 8px;
+  }
+
+  @media ${devices.sm} {
+    height: 120px;
+    padding-top: 10px;
+  }
+
+  @media ${devices.md} {
+    height: 155px;
+    padding-top: 13px;
+  }
+
+  @media ${devices.lg} {
+    height: 187px;
+    padding-top: 15px;
+  }
+
+  @media ${devices.xl} {
+    height: 219px;
+    padding-top: 18px;
+  }
 `
 
 export const ProductPartElementImage = styled.img`
   width: 80%;
   max-height: 350px;
+
+  @media ${devices.xs} {
+    height: 105px;
+  }
+
+  @media ${devices.sm} {
+    height: 140px;
+  }
+
+  @media ${devices.md} {
+    height: 180px;
+  }
+
+  @media ${devices.lg} {
+    height: 218px;
+  }
+
+  @media ${devices.xl} {
+    height: 255px;
+  }
 `
 
 export const ProductPartChildrenContainer = styled.div`
@@ -127,6 +308,26 @@ export const ProductPartChildrenContainer = styled.div`
   opacity: 0;
   transition: 0.3s;
   gap: 10px;
+
+  @media ${devices.xs} {
+    gap: 3px;
+  }
+
+  @media ${devices.sm} {
+    gap: 4px;
+  }
+
+  @media ${devices.md} {
+    gap: 5px;
+  }
+
+  @media ${devices.lg} {
+    gap: 6px;
+  }
+
+  @media ${devices.xl} {
+    gap: 8px;
+  }
 
   &:hover {
     opacity: 1;
@@ -151,6 +352,36 @@ export const ProductPartChildrenButton = styled.button<{ isOpen?: boolean }>`
   cursor: pointer;
   transition: 0.3s;
 
+  @media ${devices.xs} {
+    font-size: 5px;
+    width: 90px;
+    height: 15px;
+  }
+
+  @media ${devices.sm} {
+    font-size: 7px;
+    width: 120px;
+    height: 20px;
+  }
+
+  @media ${devices.md} {
+    font-size: 9px;
+    width: 155px;
+    height: 25px;
+  }
+
+  @media ${devices.lg} {
+    font-size: 10px;
+    width: 187px;
+    height: 31px;
+  }
+
+  @media ${devices.xl} {
+    font-size: 13px;
+    width: 219px;
+    height: 36px;
+  }
+
   ${props => props.isOpen && css`
     border-bottom: ${Styles.Colours.PALETTE.DANITO._yellow} 2px solid;
   `}
@@ -167,8 +398,40 @@ export const ProductPartChildrenLinksContainer = styled.div`
   gap: 15px;
   margin-top: 15px;
   margin-bottom: 15px;
+
+  @media ${devices.xs} {
+    gap: 4px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+  }
+
+  @media ${devices.sm} {
+    gap: 6px;
+    margin-top: 6px;
+    margin-bottom: 6px;
+  }
+
+  @media ${devices.md} {
+    gap: 8px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
+
+  @media ${devices.lg} {
+    gap: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  @media ${devices.xl} {
+    gap: 11px;
+    margin-top: 11px;
+    margin-bottom: 11px;
+  }
+
 `
 
+/** Stigao za responsiv **/
 export const ProductPartChildrenLinksText = {
   fontSize: 15,
   textDecoration: 'none',

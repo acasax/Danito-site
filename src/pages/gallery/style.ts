@@ -1,10 +1,31 @@
 import styled from 'styled-components'
 import { Styles } from 'constants/StyleConstants'
+import { devices } from '../../constants/ResponsiveBreakpoints'
 
 export const GalleyContainer = styled.div`
   display: flex;
   flex-direction: column;
   margin-top: 70px;
+
+  @media ${devices.xs} {
+    margin-top: 21px;
+  }
+
+  @media ${devices.sm} {
+    margin-top: 28px;
+  }
+
+  @media ${devices.md} {
+    margin-top: 36px;
+  }
+
+  @media ${devices.lg} {
+    margin-top: 44px;
+  }
+
+  @media ${devices.xl} {
+    margin-top: 51px;
+  }
 `
 
 export const GalleryContentContainer = styled.div`
@@ -15,6 +36,32 @@ export const GalleryContentContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  @media ${devices.xs} {
+    padding: 36px 0;
+    gap: 15px;
+  }
+
+  @media ${devices.sm} {
+    padding: 48px 0;
+    gap: 20px;
+  }
+
+  @media ${devices.md} {
+    padding: 62px 0;
+    gap: 26px;
+  }
+
+  @media ${devices.lg} {
+    padding: 75px 0;
+    gap: 31px;
+  }
+
+  @media ${devices.xl} {
+    padding: 87px 0;
+    gap: 36px;
+  }
+
 `
 
 export const GalleryElementContainer = styled.div`
@@ -27,6 +74,31 @@ export const GalleryElementContainer = styled.div`
   gap: 10px;
   justify-content: center;
   width: 80%;
+
+  @media ${devices.xs} {
+    padding: 3px;
+    gap: 3px;
+  }
+
+  @media ${devices.sm} {
+    padding: 4px;
+    gap: 4px;
+  }
+
+  @media ${devices.md} {
+    padding: 5px;
+    gap: 5px;
+  }
+
+  @media ${devices.lg} {
+    padding: 6px;
+    gap: 6px;
+  }
+
+  @media ${devices.xl} {
+    padding: 7px;
+    gap: 7px;
+  }
 `
 
 export const GalleyCarouselContainer = styled.div`
@@ -36,6 +108,32 @@ export const GalleyCarouselContainer = styled.div`
   flex-wrap: wrap;
   gap: 20px;
   padding: 20px;
+
+  @media ${devices.xs} {
+    padding: 6px;
+    gap: 6px;
+  }
+
+  @media ${devices.sm} {
+    padding: 8px;
+    gap: 8px;
+  }
+
+  @media ${devices.md} {
+    padding: 10px;
+    gap: 10px;
+  }
+
+  @media ${devices.lg} {
+    padding: 12px;
+    gap: 12px;
+  }
+
+  @media ${devices.xl} {
+    padding: 15px;
+    gap: 15px;
+  }
+
 `
 
 export const GalleyCarouselImage = styled.img`
@@ -45,6 +143,31 @@ export const GalleyCarouselImage = styled.img`
   cursor: pointer;
   border-radius: 3px;
   border: none;
+
+  @media ${devices.xs} {
+    width: 75px;
+    height: 45px;
+  }
+
+  @media ${devices.sm} {
+    width: 100px;
+    height: 60px;
+  }
+
+  @media ${devices.md} {
+    width: 130px;
+    height: 77px;
+  }
+
+  @media ${devices.lg} {
+    width: 156px;
+    height: 93px;
+  }
+
+  @media ${devices.xl} {
+    width: 180px;
+    height: 110px;
+  }
 
   &:hover {
     transform: scale(1.1);
@@ -58,6 +181,26 @@ export const GalleyCarouselSelectedImageContainer = styled.div`
   top: 250px;
   z-index: 100000;
   opacity: 1 !important;
+
+  @media ${devices.xs} {
+    top: 75px;
+  }
+
+  @media ${devices.sm} {
+    top: 100px;
+  }
+
+  @media ${devices.md} {
+    top: 130px;
+  }
+
+  @media ${devices.lg} {
+    top: 156px;
+  }
+
+  @media ${devices.xl} {
+    top: 180px;
+  }
 `
 
 export const GalleyCarouselSelectedImage = styled.img`
@@ -65,6 +208,31 @@ export const GalleyCarouselSelectedImage = styled.img`
   cursor: pointer;
   width: 900px;
   max-height: 600px;
+
+  @media ${devices.xs} {
+    width: 270px;
+    max-height: 180px;
+  }
+
+  @media ${devices.sm} {
+    width: 360px;
+    max-height: 240px;
+  }
+
+  @media ${devices.md} {
+    width: 465px;
+    max-height: 310px;
+  }
+
+  @media ${devices.lg} {
+    width: 562px;
+    max-height: 375px;
+  }
+
+  @media ${devices.xl} {
+    width: 656px;
+    max-height: 437px;
+  }
 `
 
 export const GalleyCarouselSelectedImageContainerIcons = {
@@ -74,6 +242,14 @@ export const GalleyCarouselSelectedImageContainerIcons = {
   color: Styles.Colours.PALETTE.DANITO._white,
   cursor: 'pointer'
 }
+
+// export const GalleyCarouselSelectedImageContainerIcons = styled.icon`
+//   font-size: 60px;
+//   position: relative;
+//   top: 250px;
+//   color: ${Styles.Colours.PALETTE.DANITO._white};
+//   cursor: pointer;
+// `
 
 export const GalleyCarouselSelectedImageContainerIconsLeft = {
   left: 70
@@ -91,6 +267,26 @@ export const GalleryCarouselSelectedImageHeaderContainer = styled.div`
   justify-content: center;
   align-items: center;
   background-color: rgba(0, 0, 0, 0.50);
+
+  @media ${devices.xs} {
+    width: 270px;
+  }
+
+  @media ${devices.sm} {
+    width: 360px;
+  }
+
+  @media ${devices.md} {
+    width: 465px;
+  }
+
+  @media ${devices.lg} {
+    width: 562px;
+  }
+
+  @media ${devices.xl} {
+    width: 656px;
+  }
 `
 
 export const GalleryCarouselSelectedImageHeader = styled.h1`
@@ -98,4 +294,29 @@ export const GalleryCarouselSelectedImageHeader = styled.h1`
   color: ${Styles.Colours.PALETTE.DANITO._white};
   text-transform: uppercase;
   letter-spacing: 2px;
+
+  @media ${devices.xs} {
+    font-size: 6px;
+    letter-spacing: 1px;
+  }
+
+  @media ${devices.sm} {
+    font-size: 8px;
+    letter-spacing: 1px;
+  }
+
+  @media ${devices.md} {
+    font-size: 10px;
+    letter-spacing: 2px;
+  }
+
+  @media ${devices.lg} {
+    font-size: 13px;
+    letter-spacing: 2px;
+  }
+
+  @media ${devices.xl} {
+    font-size: 15px;
+    letter-spacing: 2px;
+  }
 `

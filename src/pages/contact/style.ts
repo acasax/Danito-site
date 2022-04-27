@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { devices } from '../../constants/ResponsiveBreakpoints'
 
 export const ContactLayoutContainer = styled.div`
   display: flex;
@@ -10,6 +11,26 @@ export const ContactMapContainer = styled.div`
   display: flex;
   width: 100%;
   height: 300px;
+
+  @media ${devices.xs} {
+    height: 90px;
+  }
+
+  @media ${devices.sm} {
+    height: 120px;
+  }
+
+  @media ${devices.md} {
+    height: 155px;
+  }
+
+  @media ${devices.lg} {
+    height: 187px;
+  }
+
+  @media ${devices.xl} {
+    height: 219px;
+  }
 `
 
 export const ContactFormContainer = styled.div`
