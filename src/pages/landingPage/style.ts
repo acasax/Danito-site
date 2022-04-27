@@ -489,6 +489,46 @@ export const CompanyPresentationButton = styled.button<{ scaleTransform: boolean
   justify-content: center;
   letter-spacing: 2px;
 
+  @media ${devices.xs} {
+    border: 1px solid ${Styles.Colours.PALETTE.DANITO._yellow};
+    font-size: 5px;
+    width: 45px;
+    height: 18px;
+    letter-spacing: 1px;
+  }
+
+  @media ${devices.sm} {
+    border: 1.2px solid ${Styles.Colours.PALETTE.DANITO._yellow};
+    font-size: 7px;
+    width: 60px;
+    height: 24px;
+    letter-spacing: 1px;
+  }
+
+  @media ${devices.md} {
+    border: 1.5px solid ${Styles.Colours.PALETTE.DANITO._yellow};
+    font-size: 9px;
+    width: 77px;
+    height: 31px;
+    letter-spacing: 1px;
+  }
+
+  @media ${devices.lg} {
+    border: 2px solid ${Styles.Colours.PALETTE.DANITO._yellow};
+    font-size: 11px;
+    width: 93px;
+    height: 37px;
+    letter-spacing: 1px;
+  }
+
+  @media ${devices.xl} {
+    border: 2px solid ${Styles.Colours.PALETTE.DANITO._yellow};
+    font-size: 13px;
+    width: 110px;
+    height: 44px;
+    letter-spacing: 2px;
+  }
+
   ${props => props.scaleTransform && css`
     transform: scale(1);
   `}
@@ -501,12 +541,52 @@ export const CompanyPresentationVideoContainer = styled.div`
   top: 200px;
   z-index: 100000;
   opacity: 1 !important;
+
+  @media ${devices.xs} {
+    top: 60px;
+  }
+
+  @media ${devices.sm} {
+    top: 80px;
+  }
+
+  @media ${devices.md} {
+    top: 103px;
+  }
+
+  @media ${devices.lg} {
+    top: 125px;
+  }
+
+  @media ${devices.xl} {
+    top: 145px;
+  }
 `
 
 export const CompanyPresentationSelectedImage = styled.video`
   border-radius: 6px;
   cursor: pointer;
   width: 900px;
+
+  @media ${devices.xs} {
+    width: 270px;
+  }
+
+  @media ${devices.sm} {
+    width: 360px;
+  }
+
+  @media ${devices.md} {
+    width: 465px;
+  }
+
+  @media ${devices.lg} {
+    width: 562px;
+  }
+
+  @media ${devices.xl} {
+    width: 656px;
+  }
 `
 
 /** Style for tips part of landing page */
@@ -516,11 +596,30 @@ export const TipsContainer = styled.div`
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  //gap: 20px;
   width: 100%;
   padding: 50px 0;
   background-color: ${Styles.Colours.PALETTE.DANITO._black};
   flex-wrap: wrap;
+
+  @media ${devices.xs} {
+    padding: 15px 0;
+  }
+
+  @media ${devices.sm} {
+    padding: 20px 0;
+  }
+
+  @media ${devices.md} {
+    padding: 26px 0;
+  }
+
+  @media ${devices.lg} {
+    padding: 31px 0;
+  }
+
+  @media ${devices.xl} {
+    padding: 36px 0;
+  }
 `
 
 const fadeIn = keyframes`
@@ -552,6 +651,26 @@ export const Card = styled.div`
   max-width: 30%;
   justify-content: center;
   padding: 20px;
+
+  @media ${devices.xs} {
+    padding: 6px;
+  }
+
+  @media ${devices.sm} {
+    padding: 8px;
+  }
+
+  @media ${devices.md} {
+    padding: 10px;
+  }
+
+  @media ${devices.lg} {
+    padding: 13px;
+  }
+
+  @media ${devices.xl} {
+    padding: 15px;
+  }
 `
 
 export const CardContainer = styled.div<{ out: boolean }>`
@@ -564,6 +683,41 @@ export const CardContainer = styled.div<{ out: boolean }>`
   max-width: 400px;
   padding: 10px;
   border-radius: 10px;
+
+  @media ${devices.xs} {
+    max-height: 150px;
+    max-width: 120px;
+    padding: 3px;
+    border-radius: 3px;
+  }
+
+  @media ${devices.sm} {
+    max-height: 200px;
+    max-width: 160px;
+    padding: 4px;
+    border-radius: 4px;
+  }
+
+  @media ${devices.md} {
+    max-height: 258px;
+    max-width: 207px;
+    padding: 5px;
+    border-radius: 5px;
+  }
+
+  @media ${devices.lg} {
+    max-height: 312px;
+    max-width: 250px;
+    padding: 6px;
+    border-radius: 6px;
+  }
+
+  @media ${devices.xl} {
+    max-height: 365px;
+    max-width: 291px;
+    padding: 7px;
+    border-radius: 7px;
+  }
 
   visibility: ${props => props.out ? 'visible' : 'hidden'};
   animation: ${props => props.out ? fadeIn : fadeOut} 1s linear;
@@ -581,6 +735,26 @@ export const CardImage = styled.img`
   width: 100%;
   max-height: 200px;
   object-fit: cover;
+
+  @media ${devices.xs} {
+    max-height: 60px;
+  }
+
+  @media ${devices.sm} {
+    max-height: 80px;
+  }
+
+  @media ${devices.md} {
+    max-height: 103px;
+  }
+
+  @media ${devices.lg} {
+    max-height: 125px;
+  }
+
+  @media ${devices.xl} {
+    max-height: 145px;
+  }
 `
 
 export const CardContentContainer = styled.div`
@@ -590,6 +764,26 @@ export const CardContentContainer = styled.div`
   align-items: flex-start;
   width: 100%;
   padding: 15px 0;
+
+  @media ${devices.xs} {
+    padding: 5px 0;
+  }
+
+  @media ${devices.sm} {
+    padding: 6px 0;
+  }
+
+  @media ${devices.md} {
+    padding: 8px 0;
+  }
+
+  @media ${devices.lg} {
+    padding: 9px 0;
+  }
+
+  @media ${devices.xl} {
+    padding: 11px 0;
+  }
 `
 
 export const CardHeaderContainer = styled.div`
@@ -605,6 +799,41 @@ export const CardHeaderContainer = styled.div`
   border-top-color: ${Styles.Colours.PALETTE.DANITO._yellow};
   min-height: 50px;
   padding: 20px 0;
+
+  @media ${devices.xs} {
+    border-bottom-width: 0.6px;
+    border-top-width: 0.6px;
+    height: 15px;
+    padding: 6px 0;
+  }
+
+  @media ${devices.sm} {
+    border-bottom-width: 0.8px;
+    border-top-width: 0.8px;
+    height: 20px;
+    padding: 8px 0;
+  }
+
+  @media ${devices.md} {
+    border-bottom-width: 1px;
+    border-top-width: 1px;
+    height: 25px;
+    padding: 10px 0;
+  }
+
+  @media ${devices.lg} {
+    border-bottom-width: 1.2px;
+    border-top-width: 1.2px;
+    height: 31px;
+    padding: 13px 0;
+  }
+
+  @media ${devices.xl} {
+    border-bottom-width: 1.5px;
+    border-top-width: 1.5px;
+    height: 36px;
+    padding: 15px 0;
+  }
 `
 
 export const CardHeaderText = styled.h3`
@@ -613,6 +842,26 @@ export const CardHeaderText = styled.h3`
   color: ${Styles.Colours.PALETTE.DANITO._black};
   text-align: center;
   margin: 0;
+
+  @media ${devices.xs} {
+    font-size: 6px;
+  }
+
+  @media ${devices.sm} {
+    font-size: 8px;
+  }
+
+  @media ${devices.md} {
+    font-size: 10px;
+  }
+
+  @media ${devices.lg} {
+    font-size: 13px;
+  }
+
+  @media ${devices.xl} {
+    font-size: 15px;
+  }
 `
 
 export const CardTextContainer = styled.div`
@@ -626,6 +875,26 @@ export const CardText = styled.p`
   font-size: 17px;
   font-weight: normal;
   color: ${Styles.Colours.PALETTE.DANITO._black};
+
+  @media ${devices.xs} {
+    font-size: 5px;
+  }
+
+  @media ${devices.sm} {
+    font-size: 7px;
+  }
+
+  @media ${devices.md} {
+    font-size: 9px;
+  }
+
+  @media ${devices.lg} {
+    font-size: 10px;
+  }
+
+  @media ${devices.xl} {
+    font-size: 13px;
+  }
 `
 
 export const CardFooter = styled.div`
@@ -635,6 +904,26 @@ export const CardFooter = styled.div`
   justify-content: space-between;
   width: 100%;
   min-height: 50px;
+
+  @media ${devices.xs} {
+    height: 15px;
+  }
+
+  @media ${devices.sm} {
+    height: 20px;
+  }
+
+  @media ${devices.md} {
+    height: 25px;
+  }
+
+  @media ${devices.lg} {
+    height: 31px;
+  }
+
+  @media ${devices.xl} {
+    height: 36px;
+  }
 `
 
 export const CardFooterMoreButton = {
@@ -662,9 +951,54 @@ export const CardFooterDateContainer = styled.div`
   background-color: ${Styles.Colours.PALETTE.DANITO._darkGray};
   height: 35px;
   width: 150px;
+
+  @media ${devices.xs} {
+    height: 10px;
+    width: 45px;
+  }
+
+  @media ${devices.sm} {
+    height: 14px;
+    width: 60px;
+  }
+
+  @media ${devices.md} {
+    height: 18px;
+    width: 77px;
+  }
+
+  @media ${devices.lg} {
+    height: 22px;
+    width: 94px;
+  }
+
+  @media ${devices.xl} {
+    height: 25px;
+    width: 110px;
+  }
 `
 
 export const CardFooterDateText = styled.p`
   font-size: 15px;
   color: ${Styles.Colours.PALETTE.DANITO._white};
+
+  @media ${devices.xs} {
+    font-size: 5px;
+  }
+
+  @media ${devices.sm} {
+    font-size: 6px;
+  }
+
+  @media ${devices.md} {
+    font-size: 8px;
+  }
+
+  @media ${devices.lg} {
+    font-size: 9px;
+  }
+
+  @media ${devices.xl} {
+    font-size: 11px;
+  }
 `
