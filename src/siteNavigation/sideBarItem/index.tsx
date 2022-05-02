@@ -1,6 +1,11 @@
 import React, { useContext } from 'react'
 import { TSideNavBatItem } from './d'
-import { SideNavBarItemButton, SideNavBarItemContainer, SideNavBarItemContainerImg } from './style'
+import {
+  SideNavBarItemButton,
+  SideNavBarItemCategoryContainerImg,
+  SideNavBarItemContainer,
+  SideNavBarItemContainerImg
+} from './style'
 import { SiteNavigationContext } from '../context'
 
 /**
@@ -19,11 +24,12 @@ import { SiteNavigationContext } from '../context'
 const SideNavBarItem = ({ buttonText, img }: TSideNavBatItem) => {
   const { handleSetSelectedSideNavBarItem, flexDirection } = useContext(SiteNavigationContext)
   return (
-        <SideNavBarItemContainer onClick={() => handleSetSelectedSideNavBarItem(buttonText)} flexDirection={flexDirection}>
+        <SideNavBarItemContainer onClick={() => handleSetSelectedSideNavBarItem(buttonText)}
+                                 flexDirection={flexDirection}>
             {img
               ? flexDirection === 'row'
                 ? <SideNavBarItemContainerImg src={img} alt="img icon"/>
-                : <img src={img} alt="img icon"/>
+                : <SideNavBarItemCategoryContainerImg src={img} alt="img icon"/>
               : null}
             <SideNavBarItemButton
                 textAlign={flexDirection === 'column' ? 'center' : 'left'}>{buttonText}</SideNavBarItemButton>
