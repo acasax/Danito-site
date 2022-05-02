@@ -56,6 +56,7 @@ export const FooterFirstPartCell = styled.div<{ alignItems?: string }>`
   flex-direction: column;
   align-items: center;
   max-width: 370px;
+  padding: 0 10px;
 
   @media ${devices.xs} {
     max-width: 111px;
@@ -135,6 +136,26 @@ export const FooterFirstPartTextContainer = styled.div <{
 
   ${props => props.minWidth && css`
     min-width: ${props.minWidth}px;
+
+    @media ${devices.xs} {
+      min-width: 111px;
+    }
+
+    @media ${devices.sm} {
+      min-width: 148px;
+    }
+
+    @media ${devices.md} {
+      min-width: 191px;
+    }
+
+    @media ${devices.lg} {
+      min-width: 231px;
+    }
+
+    @media ${devices.xl} {
+      min-width: 269px;
+    }
 
   `}
 `
@@ -280,23 +301,23 @@ export const FooterSecondPartText = styled.p`
   font-weight: normal;
 
   @media ${devices.xs} {
-    font-size: 3px;
-  }
-
-  @media ${devices.sm} {
     font-size: 5px;
   }
 
-  @media ${devices.md} {
-    font-size: 6px;
-  }
-
-  @media ${devices.lg} {
+  @media ${devices.sm} {
     font-size: 8px;
   }
 
+  @media ${devices.md} {
+    font-size: 8px;
+  }
+
+  @media ${devices.lg} {
+    font-size: 10px;
+  }
+
   @media ${devices.xl} {
-    font-size: 9px;
+    font-size: 12px;
   }
 `
 
@@ -309,22 +330,30 @@ export const FooterSecondPartLinkText = styled.a`
   margin-left: 5px;
 
   @media ${devices.xs} {
-    font-size: 3px;
-  }
-
-  @media ${devices.sm} {
     font-size: 5px;
   }
 
-  @media ${devices.md} {
-    font-size: 6px;
-  }
-
-  @media ${devices.lg} {
+  @media ${devices.sm} {
     font-size: 8px;
   }
 
-  @media ${devices.xl} {
-    font-size: 9px;
+  @media ${devices.md} {
+    font-size: 8px;
   }
+
+  @media ${devices.lg} {
+    font-size: 10px;
+  }
+
+  @media ${devices.xl} {
+    font-size: 12px;
+  }
+`
+
+export const FooterContentContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 `

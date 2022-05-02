@@ -49,12 +49,12 @@ const CompanyPresentation = () => {
                 <LineAnimation
                     header={Translate.COMPANY_PRESENTATION_TEXT}
                     scroll={scroll}
-                    scrollY={800}
+                    scrollY={0}
                     backgroundColor={'transparent'}
                     fontSize={40}
                 />
                 <CompanyPresentationButton
-                    scaleTransform={scroll >= 800}
+                    scaleTransform={scroll >= 0}
                     onClick={handleOpenVideoModal}
                 >
                     {Translate.COMPANY_PRESENTATION_SEE_VIDEO}

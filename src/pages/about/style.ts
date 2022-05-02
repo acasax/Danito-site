@@ -191,12 +191,20 @@ export const AboutInfoTextHeader = styled.h3`
 export const AboutInfoRow = styled.div`
   display: flex;
   flex-direction: row;
+
+  @media ${devices.xs} {
+    flex-direction: column;
+  }
+  
+  @media ${devices.sm} {
+    flex-direction: column;
+  }
 `
 
 export const AboutInfoGalleyContainer = styled.div`
   display: flex;
   flex: 1;
-  width: 100%;
+  width: 95%;
   justify-content: center;
   align-items: center;
   max-height: 800px;

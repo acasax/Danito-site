@@ -25,10 +25,10 @@ const LandingPage = () => {
   return (
         <LandingPageContainer>
             <Slider/>
-            <LineAnimation header={'Select your windows'} scroll={scroll} scrollY={200}/>
+            <LineAnimation header={'Select your windows'} scroll={scroll} scrollY={0}/>
             <ProductWindow/>
-            <CompanyPresentation />
-            <LineAnimation header={'Tips'} scroll={scroll} scrollY={1200}/>
+            <CompanyPresentation/>
+            <LineAnimation header={'Tips'} scroll={scroll} scrollY={0}/>
             <Tips/>
             <Footer/>
         </LandingPageContainer>

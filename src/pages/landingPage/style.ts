@@ -146,11 +146,11 @@ export const ProductPartContainer = styled.div`
   flex-direction: row;
   width: 100%;
   position: relative;
-  min-height: 400px;
-  max-height: 400px;
+  height: 400px;
 
   @media ${devices.xs} {
-    height: 120px;
+    height: auto;
+    flex-direction: column;
   }
 
   @media ${devices.sm} {
@@ -175,6 +175,7 @@ export const ProductPartHeaderContainer = styled.div`
   justify-content: center;
   align-items: center;
   height: 50px;
+  margin-top: 10px;
 
   @media ${devices.xs} {
     height: 15px;
@@ -239,8 +240,7 @@ export const ProductPartElementImageContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  max-height: 300px;
-  min-height: 300px;
+  height: 300px;
   padding-top: 25px;
 
   @media ${devices.xs} {
@@ -264,33 +264,34 @@ export const ProductPartElementImageContainer = styled.div`
   }
 
   @media ${devices.xl} {
-    height: 219px;
+    height: 255px;
     padding-top: 18px;
   }
 `
 
 export const ProductPartElementImage = styled.img`
   width: 80%;
+  height: auto;
   max-height: 350px;
-
+  
   @media ${devices.xs} {
-    height: 105px;
+    max-height: 90px;
   }
 
   @media ${devices.sm} {
-    height: 140px;
+    max-height: 120px;
   }
 
   @media ${devices.md} {
-    height: 180px;
+    max-height: 155px;
   }
 
   @media ${devices.lg} {
-    height: 218px;
+    max-height: 187px;
   }
 
   @media ${devices.xl} {
-    height: 255px;
+    max-height: 255px;
   }
 `
 

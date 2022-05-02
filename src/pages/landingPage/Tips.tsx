@@ -48,7 +48,7 @@ const Tips = () => {
             {tipsData.map((data, key) => {
               return (
                     <Card key={key}>
-                        <CardContainer out={scroll >= 1500}>
+                        <CardContainer out={scroll >= 0}>
                             <CardImageContainer>
                                 <CardImage src={data.coverImg}/>
                             </CardImageContainer>
