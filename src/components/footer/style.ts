@@ -229,25 +229,25 @@ export const FooterFirstPartCellText = styled.a<{ paddingLeft?: number }>`
   ${props => props.paddingLeft && css`
     padding-left: ${props.paddingLeft}px;
 
-    @media ${devices.xs} {
-      padding-left: 2px;
-    }
-
-    @media ${devices.sm} {
-      padding-left: 3px;
-    }
-
-    @media ${devices.md} {
-      padding-left: 3px;
-    }
-
-    @media ${devices.lg} {
-      padding-left: 4px;
-    }
-
-    @media ${devices.xl} {
-      padding-left: 5px;
-    }
+    // @media ${devices.xs} {
+    //   padding-left: 2px;
+    // }
+    //
+    // @media ${devices.sm} {
+    //   padding-left: 3px;
+    // }
+    //
+    // @media ${devices.md} {
+    //   padding-left: 3px;
+    // }
+    //
+    // @media ${devices.lg} {
+    //   padding-left: 4px;
+    // }
+    //
+    // @media ${devices.xl} {
+    //   padding-left: 5px;
+    // }
   `}
 `
 

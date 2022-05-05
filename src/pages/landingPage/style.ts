@@ -273,7 +273,7 @@ export const ProductPartElementImage = styled.img`
   width: 80%;
   height: auto;
   max-height: 350px;
-  
+
   @media ${devices.xs} {
     max-height: 90px;
   }
@@ -432,25 +432,6 @@ export const ProductPartChildrenLinksContainer = styled.div`
 
 `
 
-/** Stigao za responsiv **/
-export const ProductPartChildrenLinksText = {
-  fontSize: 15,
-  textDecoration: 'none',
-  color: Styles.Colours.PALETTE.DANITO._white,
-  fontWeight: 'normal',
-  letterSpacing: 2,
-  transition: '0.5s ease-in-out',
-  borderBottomColor: Styles.Colours.PALETTE.DANITO._white,
-  borderBlockWidth: 1,
-  borderBottomStyle: 'solid',
-
-  hover: {
-    borderBottomColor: Styles.Colours.PALETTE.DANITO._yellow,
-    borderBlockWidth: 2,
-    borderBottomStyle: 'solid'
-  }
-}
-
 /** Style for Company Presentation part of landing page */
 
 export const CompanyPresentationContainer = styled.div`
@@ -604,6 +585,7 @@ export const TipsContainer = styled.div`
 
   @media ${devices.xs} {
     padding: 15px 0;
+    flex-direction: column;
   }
 
   @media ${devices.sm} {
@@ -683,6 +665,7 @@ export const CardContainer = styled.div<{ out: boolean }>`
   max-height: 500px;
   max-width: 400px;
   padding: 10px;
+  margin: 20px 0;
   border-radius: 10px;
 
   @media ${devices.xs} {
@@ -798,7 +781,7 @@ export const CardHeaderContainer = styled.div`
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: ${Styles.Colours.PALETTE.DANITO._yellow};
-  min-height: 50px;
+  height: 50px;
   padding: 20px 0;
 
   @media ${devices.xs} {
@@ -904,7 +887,6 @@ export const CardFooter = styled.div`
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  min-height: 50px;
 
   @media ${devices.xs} {
     height: 15px;

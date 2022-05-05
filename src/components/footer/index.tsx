@@ -14,10 +14,6 @@ import {
   FooterSecondPartText
 } from './style'
 import { Styles } from 'constants/StyleConstants'
-import RoomIcon from '@mui/icons-material/Room'
-import LocalPhoneIcon from '@mui/icons-material/LocalPhone'
-import MailIcon from '@mui/icons-material/Mail'
-import LanguageIcon from '@mui/icons-material/Language'
 import LogoComponent from '../logo'
 import { Translate } from '../../translate/data'
 
@@ -76,9 +72,8 @@ const Footer = () => {
                             <FooterFirstPartTextContainer
                                 minWidth={370}
                             >
-                                <RoomIcon/>
+                                {/* <RoomIcon/> */}
                                 <FooterFirstPartCellText
-                                    paddingLeft={7}
                                     href="https://www.google.rs/maps/place/%C5%BDarka+Zrenjanina+114,+Pan%C4%8Devo+260000/@44.8576638,20.6522046,17z/data=!3m1!4b1!4m5!3m4!1s0x475a7ed857157abf:0x47141fd5145e027d!8m2!3d44.85766!4d20.6543933"
                                     target="_blank"
                                     rel="noreferrer">
@@ -88,9 +83,8 @@ const Footer = () => {
                             <FooterFirstPartTextContainer
                                 minWidth={370}
                             >
-                                <LocalPhoneIcon/>
+                                {/* <LocalPhoneIcon/> */}
                                 <FooterFirstPartCellText
-                                    paddingLeft={7}
                                     href="tel:013-367-700">
                                     {Translate.FOOTER_PHONE}
                                 </FooterFirstPartCellText>
@@ -98,18 +92,16 @@ const Footer = () => {
                             <FooterFirstPartTextContainer
                                 minWidth={370}
                             >
-                                <MailIcon/>
-                                <FooterFirstPartCellText
-                                    paddingLeft={7}>
+                                {/* <MailIcon/> */}
+                                <FooterFirstPartCellText>
                                     {Translate.FOOTER_EMAIL}
                                 </FooterFirstPartCellText>
                             </FooterFirstPartTextContainer>
                             <FooterFirstPartTextContainer
                                 minWidth={370}
                             >
-                                <LanguageIcon/>
+                                {/* <LanguageIcon/> */}
                                 <FooterFirstPartCellText
-                                    paddingLeft={7}
                                     href={Translate.FOOTER_WEBSITE}>
                                     {Translate.FOOTER_WEBSITE}
                                 </FooterFirstPartCellText>

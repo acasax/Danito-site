@@ -1,4 +1,4 @@
-import React, { useCallback, useContext, useState } from 'react'
+import React, { useCallback, useContext, useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import '../../styles/ProductWindow/ProductWindow.css'
 import { SiteNavigationContext } from 'siteNavigation/context'
@@ -7,7 +7,6 @@ import {
   ProductPartChildrenButtonContainer,
   ProductPartChildrenContainer,
   ProductPartChildrenLinksContainer,
-  ProductPartChildrenLinksText,
   ProductPartContainer,
   ProductPartElementContainer,
   ProductPartElementImage,
@@ -17,6 +16,8 @@ import {
 } from './style'
 import { _selectProductSectionData } from 'store/SiteNavigation/helpers'
 import { useSelector } from 'react-redux'
+import { Styles } from '../../constants/StyleConstants'
+import { calcSize } from '../../constants/ResponsiveBreakpoints'
 
 /**
  *
@@ -36,6 +37,65 @@ const ProductWindow = () => {
   const { setProductPath } = useContext(SiteNavigationContext)
   const [selectedSubCategory, setSelectedSubCategory] = useState('')
   const productData = useSelector(_selectProductSectionData)
+  const [width, setWidth] = useState(0)
+
+  const updateDimension = () => {
+    const width = window.innerWidth
+    setWidth(width)
+  }
+
+  useEffect(() => {
+    updateDimension()
+  }, [updateDimension])
+
+  const ProductPartChildrenLinksText = {
+    fontSize:
+            width > calcSize.large && width <= calcSize.extralarge
+              ? calcSize.extralarge * 15 / calcSize.hd
+              : width > calcSize.medium && width <= calcSize.large
+                ? calcSize.large * 15 / calcSize.hd
+                : width > calcSize.small && width <= calcSize.medium
+                  ? calcSize.medium * 15 / calcSize.hd
+                  : width > calcSize.xsmall && width <= calcSize.small
+                    ? calcSize.small * 15 / calcSize.hd
+                    : width > 0 && width <= calcSize.xsmall
+                      ? calcSize.xsmall * 15 / calcSize.hd
+                      : 15,
+    textDecoration: 'none',
+    color: Styles.Colours.PALETTE.DANITO._white,
+    fontWeight: 'normal',
+    letterSpacing: width > calcSize.large && width <= calcSize.extralarge
+      ? calcSize.extralarge * 2 / calcSize.hd
+      : width > calcSize.medium && width <= calcSize.large
+        ? calcSize.large * 2 / calcSize.hd
+        : width > calcSize.small && width <= calcSize.medium
+          ? calcSize.medium * 2 / calcSize.hd
+          : width > calcSize.xsmall && width <= calcSize.small
+            ? calcSize.small * 2 / calcSize.hd
+            : width > 0 && width <= calcSize.xsmall
+              ? calcSize.xsmall * 2 / calcSize.hd
+              : 2,
+    transition: '0.5s ease-in-out',
+    borderBottomColor: Styles.Colours.PALETTE.DANITO._white,
+    borderBlockWidth: 1,
+    borderBottomStyle: 'solid',
+
+    hover: {
+      borderBottomColor: Styles.Colours.PALETTE.DANITO._yellow,
+      borderBlockWidth: width > calcSize.large && width <= calcSize.extralarge
+        ? calcSize.extralarge * 2 / calcSize.hd
+        : width > calcSize.medium && width <= calcSize.large
+          ? calcSize.large * 2 / calcSize.hd
+          : width > calcSize.small && width <= calcSize.medium
+            ? calcSize.medium * 2 / calcSize.hd
+            : width > calcSize.xsmall && width <= calcSize.small
+              ? calcSize.small * 2 / calcSize.hd
+              : width > 0 && width <= calcSize.xsmall
+                ? calcSize.xsmall * 2 / calcSize.hd
+                : 2,
+      borderBottomStyle: 'solid'
+    }
+  }
 
   const handleSetSelectedSubCategory = useCallback((selectedSubCategoryName: string) => {
     if (selectedSubCategoryName === selectedSubCategory) {

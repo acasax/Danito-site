@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import '../../styles/GalerijaFunc/GalerijaFunc.css'
 
 import Backdrop from '@mui/material/Backdrop'
@@ -10,9 +10,10 @@ import {
   GalleyCarouselContainer,
   GalleyCarouselImage,
   GalleyCarouselSelectedImage,
-  GalleyCarouselSelectedImageContainer,
-  GalleyCarouselSelectedImageContainerIcons
+  GalleyCarouselSelectedImageContainer
 } from './style'
+import { Styles } from '../../constants/StyleConstants'
+import { calcSize } from '../../constants/ResponsiveBreakpoints'
 
 /**
  *
@@ -31,6 +32,45 @@ import {
 const GalleyCarousel = ({ ImgObj, ImgHeader }: any) => {
   const [open, setOpen] = useState(false)
   const [imageModal, setImageModal] = useState('')
+  const [width, setWidth] = useState(0)
+
+  const updateDimension = () => {
+    const width = window.innerWidth
+    setWidth(width)
+  }
+
+  useEffect(() => {
+    updateDimension()
+  }, [updateDimension])
+
+  const GalleyCarouselSelectedImageContainerIcons = {
+    fontSize:
+            width > calcSize.large && width <= calcSize.extralarge
+              ? calcSize.extralarge * 60 / calcSize.hd
+              : width > calcSize.medium && width <= calcSize.large
+                ? calcSize.large * 60 / calcSize.hd
+                : width > calcSize.small && width <= calcSize.medium
+                  ? calcSize.medium * 60 / calcSize.hd
+                  : width > calcSize.xsmall && width <= calcSize.small
+                    ? calcSize.small * 60 / calcSize.hd
+                    : width > 0 && width <= calcSize.xsmall
+                      ? calcSize.xsmall * 60 / calcSize.hd
+                      : 60,
+    position: 'relative',
+    top: width > calcSize.large && width <= calcSize.extralarge
+      ? calcSize.extralarge * 250 / calcSize.hd
+      : width > calcSize.medium && width <= calcSize.large
+        ? calcSize.large * 250 / calcSize.hd
+        : width > calcSize.small && width <= calcSize.medium
+          ? calcSize.medium * 250 / calcSize.hd
+          : width > calcSize.xsmall && width <= calcSize.small
+            ? calcSize.small * 250 / calcSize.hd
+            : width > 0 && width <= calcSize.xsmall
+              ? calcSize.xsmall * 250 / calcSize.hd
+              : 250,
+    color: Styles.Colours.PALETTE.DANITO._white,
+    cursor: 'pointer'
+  }
 
   const setModalOpenImage = (image) => {
     setImageModal(image)

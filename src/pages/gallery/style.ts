@@ -235,29 +235,13 @@ export const GalleyCarouselSelectedImage = styled.img`
   }
 `
 
-export const GalleyCarouselSelectedImageContainerIcons = {
-  fontSize: 60,
-  position: 'relative',
-  top: 250,
-  color: Styles.Colours.PALETTE.DANITO._white,
-  cursor: 'pointer'
-}
-
-// export const GalleyCarouselSelectedImageContainerIcons = styled.icon`
-//   font-size: 60px;
-//   position: relative;
-//   top: 250px;
-//   color: ${Styles.Colours.PALETTE.DANITO._white};
-//   cursor: pointer;
-// `
-
-export const GalleyCarouselSelectedImageContainerIconsLeft = {
-  left: 70
-}
-
-export const GalleyCarouselSelectedImageContainerIconsRight = {
-  right: 70
-}
+export const GCSICI = styled.svg`
+  font-size: 60px;
+  position: relative;
+  top: 250px;
+  color: ${Styles.Colours.PALETTE.DANITO._white};
+  cursor: pointer;
+`
 
 export const GalleryCarouselSelectedImageHeaderContainer = styled.div`
   position: absolute;

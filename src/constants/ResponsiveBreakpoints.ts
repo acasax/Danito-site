@@ -11,7 +11,8 @@ export const calcSize = {
   small: 768,
   medium: 992,
   large: 1200,
-  extralarge: 1400
+  extralarge: 1400,
+  hd: 1920
 }
 
 export const devices = {
