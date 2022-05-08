@@ -37,7 +37,7 @@ export const SliderElements = [
   },
   {
     label: 'Slider image 4',
-    path: require('constants/slider/6.mp4').video,
+    path: require('constants/slider/6.mp4').default,
     isVideo: true
   },
   {

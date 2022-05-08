@@ -1,6 +1,5 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { useTheme } from '@mui/material/styles'
-import SwipeableViews from 'react-swipeable-views'
 import { autoPlay } from 'react-swipeable-views-utils'
 import {
   DotContainer,
@@ -42,6 +41,10 @@ const Slider = () => {
   const handleStepChange = (sliderStep: number) => {
     setActiveStep(sliderStep)
   }
+
+  useEffect(() => {
+    console.log('slider', sliderElements)
+  }, [])
 
   return (
         <SliderContainer>

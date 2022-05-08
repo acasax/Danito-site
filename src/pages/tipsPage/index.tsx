@@ -29,7 +29,7 @@ const TipsPageLayout = () => {
             <TipsPageHeaderImageContainer>
                 <TipsPageHeaderImage src={selectedTip[0].coverImg} alt="some img"/>
             </TipsPageHeaderImageContainer>
-            <LineAnimation header={selectedTip[0].landingPageText} scroll={scroll} scrollY={250} fontSize={20}/>
+            <LineAnimation header={selectedTip[0].landingPageText} scroll={scroll} scrollY={0} fontSize={20}/>
             <TipsPageTextContainer>
                 <TipsPageTextPContainer>
                     {selectedTip[0].text.map((data, key) => {
