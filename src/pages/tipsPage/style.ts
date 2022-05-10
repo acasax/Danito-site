@@ -224,9 +224,59 @@ export const InTipsImageD = styled.img`
   max-width: 600px;
   width: auto;
   max-height: 600px;
+  
+  @media ${devices.xs} {
+    max-width: 180px;
+    max-height: 180px;
+  }
+
+  @media ${devices.sm} {
+    max-width: 240px;
+    max-height: 240px;
+  }
+
+  @media ${devices.md} {
+    max-width: 310px;
+    max-height: 310px;
+  }
+
+  @media ${devices.lg} {
+    max-width: 375px;
+    max-height: 375px;
+  }
+
+  @media ${devices.xl} {
+    max-width: 437px;
+    max-height: 437px;
+  }
 `
 
 export const InTipsDefaultImage = styled.img`
   max-width: 150px;
   max-height: 150px;
+  
+  @media ${devices.xs} {
+    max-width: 45px;
+    max-height: 45px;
+  }
+
+  @media ${devices.sm} {
+    max-width: 60px;
+    max-height: 60px;
+  }
+
+  @media ${devices.md} {
+    max-width: 78px;
+    max-height: 78px;
+  }
+
+  @media ${devices.lg} {
+    max-width: 94px;
+    max-height: 94px;
+  }
+
+  @media ${devices.xl} {
+    max-width: 110px;
+    max-height: 110px;
+  }
 `

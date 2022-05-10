@@ -14,7 +14,6 @@ export const FooterFirstPartContainer = styled.div`
   display: flex;
   flex-direction: column;
   padding: 10px 20px;
-  height: 200px;
   border-top-style: solid;
   border-top-width: 1px;
   border-top-color: ${Styles.Colours.PALETTE.DANITO._yellow};
@@ -26,7 +25,6 @@ export const FooterFirstPartContainer = styled.div`
 
   @media ${devices.xs} {
     padding: 3px 6px;
-    height: 60px;
   }
 
   @media ${devices.sm} {
@@ -60,6 +58,8 @@ export const FooterFirstPartCell = styled.div<{ alignItems?: string }>`
 
   @media ${devices.xs} {
     max-width: 111px;
+    padding: 5px 0;
+    justify-content: center;
   }
 
   @media ${devices.sm} {
@@ -89,6 +89,11 @@ export const FooterFirstPartRow = styled.div`
   flex-direction: row;
   align-content: center;
   justify-content: left;
+
+  @media ${devices.xs} {
+    flex-direction: column;
+  }
+  
 `
 
 export const FooterFirstPartTextContainer = styled.div <{
@@ -104,6 +109,8 @@ export const FooterFirstPartTextContainer = styled.div <{
 
   @media ${devices.xs} {
     max-width: 111px;
+    text-align: center;
+    justify-content: center;
   }
 
   @media ${devices.sm} {
@@ -269,8 +276,13 @@ export const FooterSecondPartContainer = styled.div`
   padding: 0 20px;
 
   @media ${devices.xs} {
+    padding: 0;
     height: 15px;
-    padding: 0 6px;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    right: 0;
+    left: 0
   }
 
   @media ${devices.sm} {
@@ -356,4 +368,9 @@ export const FooterContentContainer = styled.div`
   justify-content: center;
   align-items: center;
   width: 100%;
+
+  @media ${devices.xs} {
+    flex-direction: column;
+  }
+  
 `
