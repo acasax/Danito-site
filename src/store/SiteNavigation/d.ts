@@ -538,6 +538,17 @@ export const TipsImages = {
   tip3: require('constants/img/imgProduct/ImgPageProduct/WindowImg6.jpg').default
 }
 
+export const InTipsImages = {
+  default: require('constants/img/tips/in/default.png').default,
+  img1: require('constants/img/tips/in/img1.jpg').default,
+  img2: require('constants/img/tips/in/img2.jpg').default,
+  img3: require('constants/img/tips/in/img3.png').default,
+  img4: require('constants/img/tips/in/img4.png').default,
+  img5: require('constants/img/tips/in/img5.jpg').default,
+  img6: require('constants/img/tips/in/img6.jpg').default,
+  img7: require('constants/img/tips/in/img7.jpg').default
+}
+
 export const TipsInitData = [
   {
     coverImg: TipsImages.tip1,
@@ -552,7 +563,8 @@ export const TipsInitData = [
           'U moru onoga što se nudi na tržištu, mi i dalje ne znamo koja PVC stolarija je najbolja. Prvi poriv je uvek da se raspitamo šta se nudi i koliko košta, pa da se odlučimo od koga ćemo kupiti. Ipak, previše netačnih informacija onlajn nas dovede u zabunu, svako hvali svoj proizvod ili nudi sumnjive popuste, i mi i dalje nismo načisto šta bi i kako trebalo da uradimo.',
           'Upravo zbog toga smo odlučili da vam pomognemo oko toga kako da odaberete prozore, tako da možete lako da steknete utisak na šta bi uopšte trebalo da obratite pažnju.',
           'Evo nekoliko termina, koje ćete čuti kada se budete raspitivali o zameni prozora.'
-        ]
+        ],
+        img: InTipsImages.img4
       },
       {
         header: 'Šta su PVC profili',
@@ -568,14 +580,16 @@ export const TipsInitData = [
           'Kada menjate prozore, povedite računa i o tome da vam sleduje i garancija nemačkog proizvođača, kako na profile, tako i na okove, i da ona uvek traje više godina. Često možete da čujete i da treba uzeti okove koji su na domaćem tržištu dosta zastupljeni, jer onda lakše možete da nađete delove i servis.',
           'Ali, ne treba vi da brinete o tome. U Srbiji smo navikli sami da prekrajamo i popravljamo i neretko upadamo u krpljenja kojima nema kraja, a zapravo samo treba da se odlučite za ozbiljnog prodavca koji ima svoj servis i sam daje garanciju. (Kod nas, na primer, garancija traje dve godine.)',
           'Kvalitetan okov izrađuje se od nerđajućeg čelika, što znači da dugo traje i da je otporan na vremenske prilike i spoljne uticaje. '
-        ]
+        ],
+        img: InTipsImages.img3
       },
       {
         header: 'Kako se bira staklo',
         text: [
           'Najveća površina kod prozora ide na staklo, što vam daje ne samo dovoljno svetlosti u stanu ili kući, već i dobru izolaciju. Zato je važno da prodavcu naznačite ako želite bolju termo i zvučnu izolaciju, da može, na primer, da vam ponudi troslojno staklo. Postoje stakla koja su idealna za određene temperature, pa tako leti odbijaju toplotu, a zimi će pomoći da se ona zadrži u prostoriji.',
           'Takođe, PVC stolarija je danas tako uznapredovala da možete da odaberete i staklo koje će biti bezbednije za dečije sobe. To su takozvana sigurnosna stakla, koja se ne raspadaju u komade ako se kojim slučajem razbiju, te samim tim smanjuju opasnost od povreda.'
-        ]
+        ],
+        img: InTipsImages.img6
       },
       {
         header: 'Naša preporuka',
@@ -597,28 +611,32 @@ export const TipsInitData = [
         text: [
           'Hoćete da menjate prozore ili vrata, a ne znate odakle da počnete?',
           'Nije ni čudo, kada smo zatrpani svakakvim informacijama preko interneta i društvenih mreža, i prilično zaplašeni nejasnim procedurama i lošim iskustvima. Upravo zbog toga vam donosimo ovaj vodič - kako da naručite najbolju stolariju za kuću, i to korak po korak, da znate šta kupujete i budete zadovoljni kvalitetom i ugradnjom.'
-        ]
+        ],
+        img: InTipsImages.img1
       },
       {
         header: 'Pozovite ili pošaljite mejl',
         text: [
           'Kontaktirajte nas telefonom (013367700) ili imejlom (office@danito.rs). To je prvi korak kada menjate stolariju. Jer, treba da čujemo šta vam tačno treba, i da se sa vama dogovorimo kada da pošaljemo naš tim da uzmu dimenzije i pogledaju prostor za vašu novu stolariju. (Dolazak i merenje su BESPLATNI.) Za prozore se, recimo, meri otvor na zidu sa unutrašnje strane, širina i visina od zida do zida. Ako imate roletne, meri se i ukupna visina prozora bez kutije za roletne.',
           'Od momenta kada pozovete ili pošaljete mejl, mi dolazimo za nekoliko dana. Dakle, nema čekanja i odugovlačenja. Umesto da gubite vreme na pretraživanje po internetu, da čitate "uputstva" o tome kako da izmerite svoj prozor ili vrata, jednostavnije je da pozovete one koji se u to razumeju. I mi stižemo!'
-        ]
+        ],
+        img: InTipsImages.img3
       },
       {
         header: 'Dođite u naš salon',
         text: [
           'Zašto je ovo važno? Kada dođete kod nas, na licu mesta možemo da vam pokažemo kako izgledaju nemački profili, prozori ili vrata, klizni sistemi koji se prave i prodaju u našem salonu.',
           'Nakon što je naša ekipa bila kod vas u kući ili stanu i uzela mere, najbolje je da uživo vidite šta bi najbolje moglo da se uklopi u vaš prostor. Jer, svakom kupcu se posvećuje posebna pažnja, ne odgovara isti profil svima, niti svi imaju isti ukus. Ovo je, takođe, prilika da postavite sva pitanja koja eventualno imate i da vam objasnimo ono što vas možda zbunjuje.'
-        ]
+        ],
+        img: InTipsImages.img5
       },
       {
         header: 'Posebna ponuda za vas',
         text: [
           'Na osnovu dimenzija i vašeg izbora profila, stakla i sličnog, kao i toga da li ste se odlučili za PVC ili alu stolariju, da li biste i roletne ili ne, i tako dalje, formira se specijalna cena. Jer, stolarija se ne ugrađuje po kvadratu, već prema tome da li vam treba dvokrilni ili trokrilni prozor, na primer, da li biste posebno staklo za vrata ili klizni sistem duž čitavog zida. Postoji puno kombinacija, koje samim tim i različito koštaju.',
           'Kada nam dođete u posetu, sve ćemo varijante da pretresemo i napravićemo najbolju moguću ponudu.'
-        ]
+        ],
+        img: InTipsImages.img2
       },
       {
         header: 'Pravljenje stolarije i ugradnja',
@@ -626,14 +644,16 @@ export const TipsInitData = [
           'Nakon što prihvatite našu ponudu i legne uplata, više ne morate da brinete. Tog momenta pripremamo stolariju za koju ste se odučili i najavljujemo se da dođemo za ugradnju.',
           'Svesni smo da se ljudi često suočavaju sa lošim nastupom majstora, da kolege koje rade manje kvalitetno ili nude nerealne popuste a onda štede na materijalu - izazivaju sumnju i podozrenje koje utiče na sve nas. Upravo zato, naš tim je uvek tačan, ne troši vaše vreme uludo, i završava posao u rekordnom roku. Od uplate do završetka ugradnje proći će oko tri nedelje. Mi skidamo i staru stolariju, a sama ugradnja nove gotova je za jedan dan.',
           'Treba napomenuti da završni radovi oko prozora ili vrata ne spadaju u naš domen, već u molerske radove. Ali, da ne biste dodatno gubili vreme na traženje još jednog majstora, i da bi vam sve bilo gotovo odjednom, nudimo i uslugu angažovanja molera koji će brzo obaviti ove sitne estetske popravke.'
-        ]
+        ],
+        img: InTipsImages.img4
       },
       {
         header: 'Garancija i servis',
         text: [
           'Kada sve završimo, daćemo vam i osnovne smernice kako da održavate svoju novu stolariju. Sa naše strane, dobijete garanciju nemačkog proizvođača na sve proizvode, kao i garanciju naše firme na 24 meseca. Sve što se eventualno dogodi u tom periodu, rešavamo za kratko vreme.',
           'Ako prođu dve godine od ugradnje, a vi imate problema sa našom stolarijom, rado ćemo doći da proverimo šta se događa. Doduše, PVC ili alu stolarija je izuzetno otporna i dugo traje, te će joj posle mnogo godina korišćenja, zatrebati tek zatezanje ponekog šrafa.'
-        ]
+        ],
+        img: InTipsImages.img6
       }
     ]
   },
@@ -649,7 +669,8 @@ export const TipsInitData = [
         text: [
           'Mnogi ljudi danas ne znaju kako da promene stolariju. Plaše se onoga što ih čeka, iako se godinama kane da konačno zamene stare prozore koji škripe i koje nam je mučno više i da peremo. Živimo u Srbiji, pa moramo dobro da razmislimo pre nego što se upustimo u bilo kakvu „vanrednu“ investiciju, jer će nam to dodatno istanjiti kućni buždet. Ipak, u želji da sve prođe što lakše i jeftinije, često dobijemo lošu robu, navučemo na vrat majstore, dodatne troškove, i nikad kraja gunguli i prašini po kući!',
           'U ovom tekstu ćete naći smernice kako da sve ovo izbegnete. Jer, kao firma koja se stolarijom uspešno bavi punu deceniju i imala je klijente poput Strabaga, Messer-a, BigPizze, SrbijaGasa, AMSS-a, shvatili smo da niko ne posvećuje dovoljno pažnje običnim ljudima, koji u današnjim uslovima pokušavaju da vode računa o sopstvenim domaćinstvima i porodici – najbolje što mogu. I to, bez bilo čije pomoći.'
-        ]
+        ],
+        img: InTipsImages.img4
       },
       {
         header: 'Cena PVC prozora: Šta je skuplje',
@@ -665,7 +686,8 @@ export const TipsInitData = [
           'Na primer, ljudi se istroše oko renoviranja stana i već su izgubili i novac i vreme (i živce), a onda ispadne da treba prepravljati i dorađivati prozore. Taman kad ste mislili da ste gotovi i da ćete svu onu prašinu da isperete iz kose i odeće, morate da tražite - novog majstora. („Zar opet?!“)',
           'Ali, ne treba vi da brinete o tome. U Srbiji smo navikli sami da prekrajamo i popravljamo i neretko upadamo u krpljenja kojima nema kraja, a zapravo samo treba da se odlučite za ozbiljnog prodavca koji ima svoj servis i sam daje garanciju. (Kod nas, na primer, garancija traje dve godine.)',
           'Ovakve situacije se lako izbegnu ako se obratite ljudima koji znaju šta rade. Zašto vas da boli glava oko toga koje su vam dimenzije potrebne? Naša firma lepo pošalje svoje ljude sve da izmere, a vi uz kafu izaberete kako bi da vam novi prozori izgledaju. I posle dve-tri nedelje imate – novi i lepši „pogled na svet“. '
-        ]
+        ],
+        img: InTipsImages.img1
       },
       {
         header: 'Da, ali to sigurno papreno košta kad se sve sabere.',
@@ -684,7 +706,8 @@ export const TipsInitData = [
           'Takođe jedan od najtraženijih – VEKA 82, trokrilni model koji predstavlja višekomorni sistem ugradnje dubine od 82mm, čime dobijate još bolju toplotnu izolaciju. Ima tri nivoa zaptivanja, što ga štiti od niskih i visokih temperatura, promaje i vlage. Ovaj sistem je stabilan i dobro izoluje čak i kod staklenih zidova. Nećete morati da brinete ni o buci sa ulice, jer VEKA 82 ima odličnu zvučnu izolaciju.',
           'PVC prozori sa aluminijumskom oblogom su kombinacija koju naši klijenti rado uzimaju, jer jednim udarcem dobijaju i trajnost i konfor. Pored toga, obloge možemo da plastificiramo u svim bojama.',
           'Naravno da u našoj ponudi imamo i aluminijumske prozore, aluminijumske sa termoprekidom, kao i kombijanciju alu-drvo, ali su VEKA 70 i VEKA 82 dva ubedljivo najtraženija i najisplativija modela, zbog čega smo sigurni da će najpre zanimati i vas.'
-        ]
+        ],
+        img: InTipsImages.img2
       },
       {
         header: 'Zašto baš VEKA prozori',
@@ -694,14 +717,16 @@ export const TipsInitData = [
           'Postoje podaci da će vam u ovom smislu, dobar PVC prozor na godišnjem nivou uštedeti čak 1.000 evra, a samo zamislite koliko ste novca već bacili svih ovih godina!',
           'Naravno da VEKA nije jedini nemački proizvođač, ali ima još jednu bitnu osobinu zbog koje smo ga odabrali. Firma je osnovana još 1969. godine i sve vreme se modernizuje i prati svetske trendove. Tako je i poslednjih decenija dala svoj doprinos zaštiti životne sredine. VEKA reciklira stare prozore i na taj način pravi manje otpada. Svi njeni sistemi profila mogu gotovo u potpunosti da se recikliraju, tako da stari elementi postaju vredna sirovina, a novi sadrže ekološki materijal koji se dalje prerađuje - bez gubitka kvaliteta.',
           'Za nas kojima je zagađen vazduh postao svakodnevica, vrlo smo zainteresovani kako da i sami doprinesemo očuvanju životne sredine, pa zato koristimo društveno odgovorne partnere. Pride, kad je napolju zagađeno, važno je da možete lepo da zatvorite prozor i ne brinete da li će deca da vam udišu štetni vazduh.'
-        ]
+        ],
+        img: InTipsImages.img6
       },
       {
         header: 'PVC stolarija u boji drveta, vi birate',
         text: [
           'Još jedan mit koji kruži jeste da PVC stolarija uvek ide u dosadnoj beloj boji. Tačno je da ona neznatno manje košta, ali je prosto šteta ne odabrati neku iz palete boja ako vam prozor ima aluminijumsku oblogu.',
           'VEKA prozori su elegantnog dizajna, a onda vam samo ostaje da izaberete boju i ukopite je uz ostatak enterijera. Možda biste mahagoni, ili boju zlatnog hrasta, ili neku već boju drveta koja vam najviše leži.'
-        ]
+        ],
+        img: InTipsImages.img5
       },
       {
         header: 'I ne samo to!',
@@ -714,7 +739,8 @@ export const TipsInitData = [
           'Čak i kada prođe vreme garancije, kad god da vam zatreba pomoć oko prozora koji ste ugradili kod nas, slobodno nas pozovite. Na prozorima će posle puno godina možda biti potrebno da se pritegne poneki šraf.',
           'Završni radovi',
           'Da bi iza nas sve ostalo čisto, kao da niste ni imali majstore, možemo vam pomoći i tako što ćemo angažovati molera da obradi sve pozicije oko prozora. Na taj način, dobijate sve cakum-pakum sređeno.'
-        ]
+        ],
+        img: InTipsImages.img7
       },
       {
         header: 'Česta pitanja:',
@@ -729,7 +755,8 @@ export const TipsInitData = [
           'Da, dobijate garanciju od nemačkih proizvođača profila i okova, a od nas i dodatnu garanciju na 24 meseca koja uključuje besplatan servis za sve eventualne probleme nakon ugradnje.',
           'Da li su profili nemački?',
           'Da, oni se prave u Nemačkoj i odande stižu u našu firmu.'
-        ]
+        ],
+        img: InTipsImages.img3
       },
       {
         header: 'KAKO NARUČITI',

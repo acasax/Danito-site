@@ -6,6 +6,9 @@ import { useSelector } from 'react-redux'
 import { _selectorSelectedTip } from 'store/SiteNavigation/helpers'
 import { SiteNavigationContext } from 'siteNavigation/context'
 import {
+  InTipsDefaultImage,
+  InTipsImageContainer,
+  InTipsImageD,
   TipsPageContactUsContainer,
   TipsPageContactUsText,
   TipsPageDatePosted,
@@ -19,6 +22,7 @@ import {
   TipsTextItemContainer
 } from './style'
 import { Translate } from '../../translate/data'
+import { InTipsImages } from '../../store/SiteNavigation/d'
 
 const TipsPageLayout = () => {
   const { scroll } = useContext(SiteNavigationContext)
@@ -40,6 +44,15 @@ const TipsPageLayout = () => {
                                     data.text.map((text, key) => {
                                       return <TipsPageTextP key={key}>{text}</TipsPageTextP>
                                     })
+                                }
+                                {
+                                    data.img
+                                      ? <InTipsImageContainer>
+                                        <InTipsImageD src={data.img}/>
+                                    </InTipsImageContainer>
+                                      : <InTipsImageContainer>
+                                            <InTipsDefaultImage src={InTipsImages.default}/>
+                                        </InTipsImageContainer>
                                 }
                             </TipsTextItemContainer>
                       )

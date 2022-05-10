@@ -211,3 +211,22 @@ export const TipsPageContactUsText = styled.a`
     font-size: 25px;
   }
 `
+
+export const InTipsImageContainer = styled.div`
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+`
+
+export const InTipsImageD = styled.img`
+  max-width: 600px;
+  width: auto;
+  max-height: 600px;
+`
+
+export const InTipsDefaultImage = styled.img`
+  max-width: 150px;
+  max-height: 150px;
+`
