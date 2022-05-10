@@ -521,6 +521,7 @@ export const productSectionData = [
 export type TTipsTextPart = {
     header: string,
     text: string[],
+    img?: string | any
 }
 
 export type TTipsData = {
