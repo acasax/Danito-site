@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 
 import MenuIcon from '@mui/icons-material/Menu'
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos'
@@ -11,6 +11,7 @@ import {
 import { SiteNavigationContext } from './context'
 import { Styles } from 'constants/StyleConstants'
 import { Translate } from '../translate/data'
+import { calcSize } from '../constants/ResponsiveBreakpoints'
 
 /**
  *
@@ -27,25 +28,54 @@ import { Translate } from '../translate/data'
 
 const NavBarSecondPart = () => {
   const { navRightOpen, handleNavRightOpen } = useContext(SiteNavigationContext)
+  const [width, setWidth] = useState(0)
+
+  const updateDimension = () => {
+    const width = window.innerWidth
+    setWidth(width)
+  }
+
+  useEffect(() => {
+    updateDimension()
+  }, [updateDimension])
+
+  const NavMenuIcon = {
+    fontSize:
+            width > calcSize.large && width <= calcSize.extralarge
+              ? calcSize.extralarge * 35 / calcSize.hd
+              : width > calcSize.medium && width <= calcSize.large
+                ? calcSize.large * 35 / calcSize.hd
+                : width > calcSize.small && width <= calcSize.medium
+                  ? calcSize.medium * 35 / calcSize.hd
+                  : width > calcSize.xsmall && width <= calcSize.small
+                    ? calcSize.small * 35 / calcSize.hd
+                    : width > 0 && width <= calcSize.xsmall
+                      ? calcSize.xsmall * 35 / calcSize.hd
+                      : 35,
+    color: Styles.Colours.PALETTE.DANITO._white
+  }
+
   return (
         <NavSecondPartContainer>
             <NavSecondPartMenuBody>
                 {navRightOpen
                   ? (
-                        <ArrowBackIosIcon onClick={handleNavRightOpen}
-                                          sx={{ fontSize: 35, color: Styles.Colours.PALETTE.DANITO._white }}/>
+                        <ArrowBackIosIcon onClick={handleNavRightOpen} sx={NavMenuIcon}/>
                     )
                   : (
-                        <MenuIcon onClick={handleNavRightOpen} sx={{ fontSize: 35, color: Styles.Colours.PALETTE.DANITO._white }}/>
+                        <MenuIcon onClick={handleNavRightOpen} sx={NavMenuIcon}/>
                     )}
 
                 <NavSecondPartMenuBodyButton
                     onClick={handleNavRightOpen}>{Translate.NAV_BAR_SECOND_PART_PRODUCTS}</NavSecondPartMenuBodyButton>
 
                 <NavSecondPartMenuBodyLink href="/">{Translate.NAV_BAR_SECOND_PART_HOME}</NavSecondPartMenuBodyLink>
-                <NavSecondPartMenuBodyLink href="/onama">{Translate.NAV_BAR_SECOND_PART_ABOUT}</NavSecondPartMenuBodyLink>
-                <NavSecondPartMenuBodyLink href="/galerija">{Translate.NAV_BAR_SECOND_PART_GALLERY}</NavSecondPartMenuBodyLink>
-                <NavSecondPartMenuBodyLink href="/kontakt">{Translate.NAV_BAR_SECOND_PART_CONTACT}</NavSecondPartMenuBodyLink>
+                <NavSecondPartMenuBodyLink
+                    href="/onama">{Translate.NAV_BAR_SECOND_PART_ABOUT}</NavSecondPartMenuBodyLink>
+                <NavSecondPartMenuBodyLink
+                    href="/galerija">{Translate.NAV_BAR_SECOND_PART_GALLERY}</NavSecondPartMenuBodyLink>
+                <NavSecondPartMenuBodyLink
+                    href="/kontakt">{Translate.NAV_BAR_SECOND_PART_CONTACT}</NavSecondPartMenuBodyLink>
             </NavSecondPartMenuBody>
         </NavSecondPartContainer>
   )

@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import '../styles/NavProducts/NavProducs.css'
 import SideNavBarItem from './sideBarItem'
@@ -17,6 +17,7 @@ import { useSelector } from 'react-redux'
 import { _selectNavBarItems } from '../store/SiteNavigation/helpers'
 import { Styles } from 'constants/StyleConstants'
 import { Translate } from '../translate/data'
+import { calcSize } from '../constants/ResponsiveBreakpoints'
 
 /**
  *
@@ -35,15 +36,40 @@ import { Translate } from '../translate/data'
 const NavBarProductsPart = () => {
   const selectedItems = useSelector(_selectNavBarItems)
   const { navRightOpen, selected, goBack, setProductPath } = useContext(SiteNavigationContext)
+  const [width, setWidth] = useState(0)
+
+  const updateDimension = () => {
+    const width = window.innerWidth
+    setWidth(width)
+  }
+
+  useEffect(() => {
+    updateDimension()
+  }, [updateDimension])
+
+  const NavMenuIcon = {
+    fontSize:
+            width > calcSize.large && width <= calcSize.extralarge
+              ? calcSize.extralarge * 30 / calcSize.hd
+              : width > calcSize.medium && width <= calcSize.large
+                ? calcSize.large * 30 / calcSize.hd
+                : width > calcSize.small && width <= calcSize.medium
+                  ? calcSize.medium * 30 / calcSize.hd
+                  : width > calcSize.xsmall && width <= calcSize.small
+                    ? calcSize.small * 30 / calcSize.hd
+                    : width > 0 && width <= calcSize.xsmall
+                      ? calcSize.xsmall * 30 / calcSize.hd
+                      : 30,
+    color: Styles.Colours.PALETTE.DANITO._white
+  }
 
   return (
         <NavBarProductSideBarContainer isDisplay={navRightOpen}>
             <NavBarProductPartHeaderContainer>
                 {
                     selected
-                      ? <ArrowBackIosIcon onClick={goBack}
-                                            sx={{ fontSize: 30, color: Styles.Colours.PALETTE.DANITO._white }}/>
-                      : <ArrowDownwardIcon sx={{ fontSize: 30, color: Styles.Colours.PALETTE.DANITO._white }}/>
+                      ? <ArrowBackIosIcon onClick={goBack} sx={NavMenuIcon}/>
+                      : <ArrowDownwardIcon sx={NavMenuIcon}/>
                 }
                 <NavBarProductContainerText>{!selected ? Translate.CHOSE_CATEGORY : selected}</NavBarProductContainerText>
             </NavBarProductPartHeaderContainer>
