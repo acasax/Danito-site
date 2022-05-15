@@ -24,6 +24,20 @@ import { SiteNavigationContext } from 'siteNavigation/context'
 
 const Contact = () => {
   const { scroll } = useContext(SiteNavigationContext)
+
+  const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault()
+    const data = new FormData(event.currentTarget)
+    // eslint-disable-next-line no-console
+    console.log({
+      email: data.get('email'),
+      name: data.get('name'),
+      company: data.get('company'),
+      phone: data.get('phone'),
+      msg: data.get('msg')
+    })
+  }
+
   return (
         <ContactLayoutContainer>
             <AboutHeaderImageContainer>
@@ -40,8 +54,7 @@ const Contact = () => {
                           alignItems: 'center'
                         }}
                     >
-                        <Box component="form" noValidate onSubmit={() => {
-                        }} sx={{ mt: 3, width: '100%' }}>
+                        <Box component="form" noValidate onSubmit={e => handleSubmit(e)} sx={{ mt: 3, width: '100%' }}>
                             <Grid item xs={12} sx={{ mb: 2 }}>
                                 <TextField
                                     required

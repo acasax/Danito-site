@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import { devices } from '../../constants/ResponsiveBreakpoints'
+import { Styles } from '../../constants/StyleConstants'
 
 export const ContactLayoutContainer = styled.div`
   display: flex;
@@ -39,10 +40,15 @@ export const ContactFormContainer = styled.div`
   width: 100%;
 `
 
-export const ContactFormRow = styled.div`
-  display: flex;
-  flex-direction: row;
-  flex: 1;
-  align-items: center;
-  justify-content: space-around;
+export const ContactSubmitButton = styled.input`
+  background-color: ${Styles.Colours.PALETTE.LIGHT_BLUE._400};
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: ${Styles.Colours.PALETTE.LIGHT_BLUE._800};
+  }
 `
