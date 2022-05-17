@@ -11,6 +11,7 @@ import TextField from '@mui/material/TextField'
 import { TextareaAutosize } from '@mui/material'
 import Button from '@mui/material/Button'
 import { SiteNavigationContext } from 'siteNavigation/context'
+import { UseContact } from '../../hooks/contact/useContact'
 
 /**
  *
@@ -24,11 +25,13 @@ import { SiteNavigationContext } from 'siteNavigation/context'
 
 const Contact = () => {
   const { scroll } = useContext(SiteNavigationContext)
-
+  /** Functions from hook **/
+  const { sendEmail } = UseContact()
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault()
     const data = new FormData(event.currentTarget)
     // eslint-disable-next-line no-console
+    sendEmail(data)
     console.log({
       email: data.get('email'),
       name: data.get('name'),
@@ -97,6 +100,8 @@ const Contact = () => {
                             </Grid>
                             <Grid item xs={12} sx={{ mt: 3, mb: 2 }}>
                                 <TextareaAutosize
+                                    id="msg"
+                                    name="msg"
                                     aria-label="empty textarea"
                                     placeholder="Poruka"
                                     style={{ width: '100%', height: 200 }}

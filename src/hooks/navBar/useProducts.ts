@@ -24,7 +24,7 @@ export const UseProducts = () => {
   const setGoBack = useCallback(
     () => {
       dispatch(_actionGoBack())
-    }, [_actionGoBack()]
+    }, [_actionGoBack]
   )
 
   const clearState = useCallback(
