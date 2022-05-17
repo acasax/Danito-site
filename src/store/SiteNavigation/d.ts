@@ -1511,6 +1511,23 @@ export const ProductData = [
       'Sistem ulaznih vrata sa ugradnom dubinom od 70 mm opciono 82mm. U standarnoj varijanti usklađeno za dvostruko termo-staklo ili ispuna ukrasnim panelima. Debljina zida profila 3mm, u skladu sa najvišim RAL standardom kvaliteta (prema DIN EN 12608, klasa A). Profil specijalno namenjen za izradu vrata, sa ojačanim čelicima u krilu, sa specijalnim ugaonim spojnicama koje omogućavaju jedinstvenost vara i daju izuzetnu čvrstinu vratima.',
       'Neiscrpan asortiman oblika i kombinacija vrata – individualna i po meri – ispuniće i najviše zahteve. Jednokrilna, dvokrilna ili vrata sa više elemenata za velike kuće, klasičnog ili modernog stila, sa ispunom od stakla ili ukrasnih panela, sa jednim ili više elemenata sa strane.',
       'Koristimo najkvalitetniji nemacki okov renomiranog proizvođača ROTO, koji osigurava kvalitetno zatvaranje i poseduje veći stepen protivprovalne zaštite.'
+    ],
+    panels: [
+      {
+        name: 'Inox',
+        image: Panels.inox,
+        text: 'Aluminijumski paneli sa INOX aplikacijama.'
+      },
+      {
+        name: 'Elegant',
+        image: Panels.elegant,
+        text: 'Mogu biti sastavljeni od dve aluminijumske table sa različitim bojama, aplikacije mogu biti od aluminijuma ili inoxa. Najčešće staklo koje se ugradjuje je flot + saten.'
+      },
+      {
+        name: 'Aluminium',
+        image: Panels.aluminium,
+        text: 'Aluminijumski panels sa kornizama.'
+      }
     ]
   },
   {

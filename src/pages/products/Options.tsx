@@ -4,9 +4,11 @@ import Tabs from '@mui/material/Tabs'
 import Tab from '@mui/material/Tab'
 import Typography from '@mui/material/Typography'
 import Box from '@mui/material/Box'
-import '../../styles/Options/Options.css'
 import Backdrop from '@mui/material/Backdrop'
 import {
+  OptionsColor,
+  OptionsColorContainer,
+  OptionsImg,
   ProductsDecorsInfoContainer,
   ProductsDecorsInfoSelectedImage,
   ProductsDecorsInfoText,
@@ -103,18 +105,17 @@ const BasicTabs = ({ optionsContent }: any) => {
                     </ul>
                     {optionsContent.options[2].colors
                       ? (
-                            <div className="options__colorContainer">
+                            <OptionsColorContainer>
                                 {optionsContent.options[2].colors.map((data, key) => {
                                   return (
                                         <>
-                                            <div
-                                                className="options__colors"
+                                            <OptionsColor
                                                 key={key}
                                                 onClick={() => handleOpen(data)}
                                             >
                                                 <p>{data.text}</p>
-                                                <img src={data.image} className={'options_img'} alt=""/>
-                                            </div>
+                                                <OptionsImg src={data.image} className={'options_img'} alt=""/>
+                                            </OptionsColor>
                                             <Backdrop
                                                 sx={{ color: '#fff', zIndex: (theme) => theme.zIndex.drawer + 1 }}
                                                 open={open}
@@ -133,7 +134,7 @@ const BasicTabs = ({ optionsContent }: any) => {
                                         </>
                                   )
                                 })}
-                            </div>
+                            </OptionsColorContainer>
                         )
                       : null}
                 </TabPanel>

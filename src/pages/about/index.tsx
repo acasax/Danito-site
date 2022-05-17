@@ -1,5 +1,4 @@
 import React, { useContext } from 'react'
-import '../../styles/About/About.css'
 import LineAnimation from 'components/lineAnimation'
 import CompanyImgCover from '../../constants/img/showRoom/19.jpg'
 import Footer from 'components/footer'
@@ -47,7 +46,7 @@ const AboutLayout = () => {
             <AboutHeaderImageContainer>
                 <AboutHeaderImage src={CompanyImgCover} alt="company img cover"/>
             </ AboutHeaderImageContainer>
-            <LineAnimation header={Translate.COMPANY_NAME} scroll={scroll} scrollY={300}/>
+            <LineAnimation header={Translate.COMPANY_NAME} scroll={scroll} scrollY={0}/>
             <AboutContentContainer>
                 <AboutHeaderTextContainer>
                     <AboutHeaderText>

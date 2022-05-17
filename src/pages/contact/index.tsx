@@ -46,7 +46,7 @@ const Contact = () => {
             <AboutHeaderImageContainer>
                 <AboutHeaderImage src={CompanyImgCover} alt="company img cover"/>
             </ AboutHeaderImageContainer>
-            <LineAnimation header="Kontaktiraj nas" scroll={scroll} scrollY={300}/>
+            <LineAnimation header="Kontaktiraj nas" scroll={scroll} scrollY={0}/>
             <ContactFormContainer>
                 <Container sx={{ width: '100%' }}>
                     <Box

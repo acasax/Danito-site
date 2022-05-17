@@ -1,6 +1,5 @@
 import React, { useContext, useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
-import '../styles/NavProducts/NavProducs.css'
 import SideNavBarItem from './sideBarItem'
 
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos'

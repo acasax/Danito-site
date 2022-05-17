@@ -1,6 +1,5 @@
 import * as React from 'react'
 import { useContext, useEffect, useState } from 'react'
-import '../../styles/Tips/Tips.css'
 import { Link } from 'react-router-dom'
 import { useSelector } from 'react-redux'
 import { _selectorAllTipsData } from 'store/SiteNavigation/helpers'

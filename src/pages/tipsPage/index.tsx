@@ -1,5 +1,4 @@
 import React, { useContext } from 'react'
-import '../../styles/TipsPage/TipsPage.css'
 import LineAnimation from 'components/lineAnimation'
 import Footer from '../../components/footer'
 import { useSelector } from 'react-redux'

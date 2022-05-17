@@ -700,3 +700,66 @@ export const ProductsDecorsInfoText = styled.p`
     font-size: 15px;
   }
 `
+
+export const OptionsColorContainer = styled.div`
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+
+  @media ${devices.xs} {
+    margin-top: 15px;
+    gap: 6px;
+  }
+
+  @media ${devices.sm} {
+    margin-top: 20px;
+    gap: 8px;
+  }
+
+  @media ${devices.md} {
+    margin-top: 26px;
+    gap: 10px;
+  }
+
+  @media ${devices.lg} {
+    margin-top: 32px;
+    gap: 12px;
+  }
+
+  @media ${devices.xl} {
+    margin-top: 37px;
+    gap: 15px;
+  }
+`
+
+export const OptionsColor = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+`
+
+export const OptionsImg = styled.img`
+  width: 50px;
+
+  @media ${devices.xs} {
+    width: 15px;
+  }
+
+  @media ${devices.sm} {
+    width: 20px;
+  }
+
+  @media ${devices.md} {
+    width: 26px;
+  }
+
+  @media ${devices.lg} {
+    width: 32px;
+  }
+  
+  @media ${devices.xl} {
+    width: 37px;
+  }
+`

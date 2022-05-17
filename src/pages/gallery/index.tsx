@@ -1,5 +1,4 @@
-import React, { useContext, useEffect } from 'react'
-import '../../styles/Galerija/Galerija.css'
+import React, { useContext } from 'react'
 import GalleyCarousel from './galleyCarousel'
 import Footer from 'components/footer'
 import { GalleryContentContainer, GalleryElementContainer, GalleyContainer } from './style'

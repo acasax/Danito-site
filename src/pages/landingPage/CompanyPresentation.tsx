@@ -1,5 +1,4 @@
 import React, { useContext, useState } from 'react'
-import '../../styles/CompanyPresentation/CompanyPresentation.css'
 import LineAnimation from 'components/lineAnimation'
 import {
   CompanyPresentationButton,

@@ -252,35 +252,35 @@ export const GalleryContent = [
     ]
   },
   {
-    header: 'Karađorđeva, Beograd',
+    header: 'Karađorđeva, Pančevo',
     scroll: 0,
     images: [
       {
-        name: 'Karađorđeva, Beograd',
+        name: 'Karađorđeva, Pančevo',
         src: require('constants/img/objects/4/1.jpg').default
       },
       {
-        name: 'Karađorđeva, Beograd',
+        name: 'Karađorđeva, Pančevo',
         src: require('constants/img/objects/4/2.jpg').default
       },
       {
-        name: 'Karađorđeva, Beograd',
+        name: 'Karađorđeva, Pančevo',
         src: require('constants/img/objects/4/3.jpg').default
       },
       {
-        name: 'Karađorđeva, Beograd',
+        name: 'Karađorđeva, Pančevo',
         src: require('constants/img/objects/4/4.jpg').default
       },
       {
-        name: 'Karađorđeva, Beograd',
+        name: 'Karađorđeva, Pančevo',
         src: require('constants/img/objects/4/5.jpg').default
       },
       {
-        name: 'Karađorđeva, Beograd',
+        name: 'Karađorđeva, Pančevo',
         src: require('constants/img/objects/4/6.jpg').default
       },
       {
-        name: 'Karađorđeva, Beograd',
+        name: 'Karađorđeva, Pančevo',
         src: require('constants/img/objects/4/7.jpg').default
       }
     ]

@@ -1,6 +1,5 @@
 import React, { useCallback, useContext, useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
-import '../../styles/ProductWindow/ProductWindow.css'
 import { SiteNavigationContext } from 'siteNavigation/context'
 import {
   ProductPartChildrenButton,

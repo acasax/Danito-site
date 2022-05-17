@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react'
-import '../../styles/GalerijaFunc/GalerijaFunc.css'
 
 import Backdrop from '@mui/material/Backdrop'
 import ArrowBackIosNewIcon from '@mui/icons-material/ArrowBackIosNew'
