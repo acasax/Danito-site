@@ -27,18 +27,11 @@ const Contact = () => {
   const { scroll } = useContext(SiteNavigationContext)
   /** Functions from hook **/
   const { sendEmail } = UseContact()
-  const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault()
     const data = new FormData(event.currentTarget)
     // eslint-disable-next-line no-console
-    sendEmail(data)
-    console.log({
-      email: data.get('email'),
-      name: data.get('name'),
-      company: data.get('company'),
-      phone: data.get('phone'),
-      msg: data.get('msg')
-    })
+    await sendEmail(data)
   }
 
   return (

@@ -13,19 +13,25 @@ import axios from 'axios'
  */
 
 // DEV PATH
-const API_PATH = 'http://loaclhost/api/contact/index.php'
+const API_PATH = 'http://loaclhost:3000/api/index.php'
 
 export const UseContact = () => {
-  const sendEmail = useCallback((data: any) => {
-    axios({
-      method: 'post',
-      url: `${API_PATH}`,
-      headers: { 'content-type': 'application/json' },
-      data: data
+  const sendEmail = async (data: any) => {
+    axios.post('/api/contact/index.php', data, {
+      headers: { 'Content-Type': 'multipart/form-data' },
+      baseURL: 'http://localhost'
     }).then(result => {
       console.log('send email', result)
     }).catch(error => console.log('send email error', error.message))
-  }, [axios])
+    /* axios({
+      method: 'POST',
+      url: `${API_PATH}`,
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      data: JSON.stringify(data)
+    }).then(result => {
+      console.log('send email', result)
+    }).catch(error => console.log('send email error', error.message)) */
+  }
 
   const data = useMemo(
     () => ({
