@@ -6,6 +6,9 @@ import TipsPageLayout from 'pages/tipsPage'
 import Contact from 'pages/contact'
 import LandingPage from 'pages/landingPage'
 import ProductPage from 'pages/products'
+import GdprPage from 'pages/policy/gdpr'
+import PolicyPage from 'pages/policy/privacy'
+
 import { SiteNavigationContext } from './context'
 
 /**
@@ -30,7 +33,7 @@ const SiteRoutes = () => {
   return (
         <Switch>
             <Route path={pathTo}>
-                <ProductPage />
+                <ProductPage/>
             </Route>
             <Route path="/galerija">
                 <GalleryLayout/>
@@ -39,10 +42,16 @@ const SiteRoutes = () => {
                 <About/>
             </Route>
             <Route path="/TipsPage">
-                <TipsPageLayout />
+                <TipsPageLayout/>
             </Route>
             <Route path="/kontakt">
                 <Contact/>
+            </Route>
+            <Route path="/gdpr">
+                <GdprPage/>
+            </Route>
+            <Route path="/policy">
+                <PolicyPage/>
             </Route>
             <Route path="/">
                 <LandingPage/>

@@ -1,6 +1,9 @@
 import {
   AboutInfoCarouselImages,
-  AboutTechnologyCarouselImages, GalleryContent,
+  AboutTechnologyCarouselImages,
+  GalleryContent,
+  GdprContent,
+  PolicyContent,
   SliderElements,
   TActionEvent,
   TStateWebSiteData
@@ -11,7 +14,9 @@ const init = {
   sliderElements: SliderElements,
   aboutInfoImages: AboutInfoCarouselImages,
   aboutTechnologyImages: AboutTechnologyCarouselImages,
-  galleryContent: GalleryContent
+  galleryContent: GalleryContent,
+  gdprContent: GdprContent,
+  policyContent: PolicyContent
 } as TStateWebSiteData
 
 export default (

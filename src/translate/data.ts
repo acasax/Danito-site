@@ -61,6 +61,12 @@ export const Translate = {
   NAV_BAR_SECOND_PART_PRODUCTS: 'PROIZVODI',
   NAV_BAR_SECOND_PART_ABOUT: 'O NAMA',
   NAV_BAR_SECOND_PART_GALLERY: 'GALERIJA',
-  NAV_BAR_SECOND_PART_CONTACT: 'KONTAKT'
+  NAV_BAR_SECOND_PART_CONTACT: 'KONTAKT',
+
+  /** GDPR **/
+  GDPR_PAGE_HEADER: 'Informativna klauzula u vezi sa zaštitom podataka o ličnosti',
+
+  /** Policy **/
+  POLICY_PAGE_HEADER: 'Politika privatnosti'
 
 } as any

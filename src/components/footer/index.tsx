@@ -140,9 +140,8 @@ const Footer = () => {
                     <FooterSecondPartLinkText href={'https://github.com/acasax'}>SaxDev</FooterSecondPartLinkText>
                 </FooterSecondPartText>
                 <FooterSecondPartText>
-                    <FooterSecondPartLinkText>{Translate.FOOTER_PRIVACY_POLICY}</FooterSecondPartLinkText>
-                    <FooterSecondPartLinkText>{Translate.FOOTER_COOKIES_POLICY}</FooterSecondPartLinkText>
-                    <FooterSecondPartLinkText>{Translate.FOOTER_GDPR}</FooterSecondPartLinkText>
+                    <FooterSecondPartLinkText href="/policy">{Translate.FOOTER_PRIVACY_POLICY}</FooterSecondPartLinkText>
+                    <FooterSecondPartLinkText href="/gdpr">{Translate.FOOTER_GDPR}</FooterSecondPartLinkText>
                 </FooterSecondPartText>
             </FooterSecondPartContainer>
         </FooterContainer>

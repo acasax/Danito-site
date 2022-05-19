@@ -21,3 +21,13 @@ export const _selectorGalleyContent = createSelector(
   (state: TReduxState): TStateWebSiteData => state.webSiteData,
   webSiteData => webSiteData.galleryContent
 )
+
+export const _selectorGdprContent = createSelector(
+  (state: TReduxState): TStateWebSiteData => state.webSiteData,
+  webSiteData => webSiteData.gdprContent
+)
+
+export const _selectorPolicyContent = createSelector(
+  (state: TReduxState): TStateWebSiteData => state.webSiteData,
+  webSiteData => webSiteData.policyContent
+)
