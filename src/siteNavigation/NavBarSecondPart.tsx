@@ -69,13 +69,13 @@ const NavBarSecondPart = () => {
                 <NavSecondPartMenuBodyButton
                     onClick={handleNavRightOpen}>{Translate.NAV_BAR_SECOND_PART_PRODUCTS}</NavSecondPartMenuBodyButton>
 
-                <NavSecondPartMenuBodyLink href="/">{Translate.NAV_BAR_SECOND_PART_HOME}</NavSecondPartMenuBodyLink>
+                <NavSecondPartMenuBodyLink to="/">{Translate.NAV_BAR_SECOND_PART_HOME}</NavSecondPartMenuBodyLink>
                 <NavSecondPartMenuBodyLink
-                    href="/onama">{Translate.NAV_BAR_SECOND_PART_ABOUT}</NavSecondPartMenuBodyLink>
+                    to="/onama">{Translate.NAV_BAR_SECOND_PART_ABOUT}</NavSecondPartMenuBodyLink>
                 <NavSecondPartMenuBodyLink
-                    href="/galerija">{Translate.NAV_BAR_SECOND_PART_GALLERY}</NavSecondPartMenuBodyLink>
+                    to="/galerija">{Translate.NAV_BAR_SECOND_PART_GALLERY}</NavSecondPartMenuBodyLink>
                 <NavSecondPartMenuBodyLink
-                    href="/kontakt">{Translate.NAV_BAR_SECOND_PART_CONTACT}</NavSecondPartMenuBodyLink>
+                    to="/kontakt">{Translate.NAV_BAR_SECOND_PART_CONTACT}</NavSecondPartMenuBodyLink>
             </NavSecondPartMenuBody>
         </NavSecondPartContainer>
   )

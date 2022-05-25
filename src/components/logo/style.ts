@@ -1,7 +1,8 @@
 import styled, { css } from 'styled-components'
 import { devices } from '../../constants/ResponsiveBreakpoints'
+import { Link } from 'react-router-dom'
 
-export const LogoImagePartContainer = styled.a<{ color?: string }>`
+export const LogoImagePartContainer = styled(Link)<{ color?: string }>`
   background-color: transparent;
   color: white;
   border: none;

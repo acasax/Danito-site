@@ -27,7 +27,7 @@ const SiteNavigation = () => {
   return (
       <SiteNavigationContainer>
           <NavBarContainer>
-            <Router>
+            <Router basename={'/'}>
                 <ScrollToTop/>
                 <NavBarFirstPart/>
                 <FlexContainer>

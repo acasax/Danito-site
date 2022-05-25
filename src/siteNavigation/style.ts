@@ -1,6 +1,7 @@
 import styled, { css } from 'styled-components'
 import { Styles } from '../constants/StyleConstants'
 import { devices } from '../constants/ResponsiveBreakpoints'
+import { Link } from 'react-router-dom'
 
 /** Style for NavBar */
 
@@ -163,7 +164,7 @@ export const NavSecondPartMenuBodyButton = styled.button`
   }
 `
 
-export const NavSecondPartMenuBodyLink = styled.a`
+export const NavSecondPartMenuBodyLink = styled(Link)`
   text-decoration: none;
   color: ${Styles.Colours.PALETTE.DANITO._white};
   transition: 0.5s ease-in-out;
