@@ -116,7 +116,8 @@ export const Styles = {
         _white: '#fefefe',
         _yellow: '#f7fb3f',
         _darkGray: '#3e4444',
-        _liteGray: '#eeeff0'
+        _liteGray: '#eeeff0',
+        _blue: '#42aee3'
       }
 
     }

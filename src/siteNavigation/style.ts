@@ -9,6 +9,7 @@ export const NavBarContainer = styled.div`
   position: relative;
   display: flex;
   flex-direction: column;
+  height: 100%;
 `
 
 /** Style for NavBarFirstPart component */
@@ -245,25 +246,25 @@ export const NavBarProductSideBarContainer = styled.div<{ isDisplay: boolean }>`
     width: 300px;
     opacity: 1;
 
-    @media ${devices.xs} {
-      width: 90px;
-    }
-
-    @media ${devices.sm} {
-      width: 120px;
-    }
-
-    @media ${devices.md} {
-      width: 155px;
-    }
-
-    @media ${devices.lg} {
-      width: 187px;
-    }
-
-    @media ${devices.xl} {
-      width: 219px;
-    }
+      @media ${devices.xs} {
+        width: 90px;
+      }
+  
+      @media ${devices.sm} {
+        width: 120px;
+      }
+  
+      @media ${devices.md} {
+        width: 155px;
+      }
+  
+      @media ${devices.lg} {
+        width: 187px;
+      }
+  
+      @media ${devices.xl} {
+        width: 219px;
+      }
 
   `}
 `

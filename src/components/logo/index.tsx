@@ -21,7 +21,7 @@ import { Translate } from '../../translate/data'
 
 const LogoComponent = ({ imgSize, fontColor, headerTextFontSize, headerSubTextFontSize }: TLogoComponent) => {
   return (
-        <LogoImagePartContainer href={'/'} color={fontColor}>
+        <LogoImagePartContainer to={'/'} color={fontColor}>
             <LogoImagePart src={LogoImg} alt={'danito logo'} imageSize={imgSize}/>
             <LogoTextPartContainer>
                 <LogoHeaderText fontSize={headerTextFontSize}>{Translate.COMPANY_NAME}</LogoHeaderText>

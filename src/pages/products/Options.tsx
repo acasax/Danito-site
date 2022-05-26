@@ -31,7 +31,7 @@ const TabPanel = ({ children, value, index, ...other }: any) => {
         >
             {value === index && (
                 <Box sx={{ p: 3 }}>
-                    <Typography>{children}</Typography>
+                  {children}
                 </Box>
             )}
         </div>
@@ -76,16 +76,16 @@ const BasicTabs = ({ optionsContent }: any) => {
                 <Tabs value={value} onChange={handleChange} aria-label="basic tabs example">
                     {
                         optionsContent.optionHeaders.map((item, key) => {
-                          return <Tab label={item} {...a11yProps(key)} key={key}/>
+                          return <Tab label={item} {...a11yProps(key)} key={`opt1-${key}`}/>
                         })
                     }
                 </Tabs>
             </Box>
             {
                 optionsContent.options[0] && <TabPanel value={value} index={0}>
-                    <h2>{optionsContent.nameHeader}</h2>
+                    <Typography variant={'h2'}>{optionsContent.nameHeader}</Typography>
                     {optionsContent.options[0].map((data, key) => {
-                      return <li key={key}>{data}</li>
+                      return <li key={`opt2-${key}`} >{data}</li>
                     })}
                 </TabPanel>
             }
@@ -93,7 +93,7 @@ const BasicTabs = ({ optionsContent }: any) => {
                 optionsContent.options[1] && <TabPanel value={value} index={1}>
                     <ul>
                         {optionsContent.options[1].map((data, key) => {
-                          return <li key={key}>{data}</li>
+                          return <li key={`opt3-${key}`}>{data}</li>
                         })}
                     </ul>
                 </TabPanel>
@@ -108,9 +108,8 @@ const BasicTabs = ({ optionsContent }: any) => {
                             <OptionsColorContainer>
                                 {optionsContent.options[2].colors.map((data, key) => {
                                   return (
-                                        <>
+                                        <div key={`opt4-${key}`}>
                                             <OptionsColor
-                                                key={key}
                                                 onClick={() => handleOpen(data)}
                                             >
                                                 <p>{data.text}</p>
@@ -131,7 +130,7 @@ const BasicTabs = ({ optionsContent }: any) => {
                                                     </ProductsDecorsInfoContainer>
                                                 )
                                               : null}
-                                        </>
+                                        </div>
                                   )
                                 })}
                             </OptionsColorContainer>

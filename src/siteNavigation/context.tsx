@@ -63,6 +63,7 @@ const siteNavigationContextContainer = ({ children }: { children: ReactNode }) =
       if (product === value) {
         setPathTo(`/${product.replace(/\s/g, '')}`)
         setPageName(value)
+        handleNavRightOpen()
       }
     })
   }

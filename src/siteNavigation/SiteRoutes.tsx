@@ -1,15 +1,18 @@
 import React, { useContext } from 'react'
 import { Route, Switch } from 'react-router-dom'
-import GalleryLayout from 'pages/gallery'
-import About from 'pages/about'
-import TipsPageLayout from 'pages/tipsPage'
-import Contact from 'pages/contact'
-import LandingPage from 'pages/landingPage'
-import ProductPage from 'pages/products'
-import GdprPage from 'pages/policy/gdpr'
-import PolicyPage from 'pages/policy/privacy'
 
 import { SiteNavigationContext } from './context'
+import SpinnerLoading from '../components/Spinner/SpinnerLoading'
+import { get } from 'lodash'
+
+const GalleryLayout = React.lazy(() => import('pages/gallery'))
+const About = React.lazy(() => import('pages/about'))
+const TipsPageLayout = React.lazy(() => import('pages/tipsPage'))
+const Contact = React.lazy(() => import('pages/contact'))
+const LandingPage = React.lazy(() => import('pages/landingPage'))
+const ProductPage = React.lazy(() => import('pages/products'))
+const GdprPage = React.lazy(() => import('pages/policy/gdpr'))
+const PolicyPage = React.lazy(() => import('pages/policy/privacy'))
 
 /**
  *
@@ -28,33 +31,42 @@ import { SiteNavigationContext } from './context'
  *
  * */
 
+export const ComponentLazy = (props: any) => {
+  const {
+    component,
+    ...rest
+  } = props
+  const C = component
+  return (get(component, '$$typeof') === Symbol.for('react.lazy')) ? <React.Suspense fallback={<SpinnerLoading />}><C {...rest}/></React.Suspense> : <C {...rest} />
+}
+
 const SiteRoutes = () => {
   const { pathTo } = useContext(SiteNavigationContext)
   return (
         <Switch>
             <Route path={pathTo}>
-                <ProductPage/>
+                <ComponentLazy component={ProductPage} />
             </Route>
             <Route path="/galerija">
-                <GalleryLayout/>
+                <ComponentLazy component={GalleryLayout} />
             </Route>
             <Route path="/onama">
-                <About/>
+                <ComponentLazy component={About} />
             </Route>
             <Route path="/TipsPage">
-                <TipsPageLayout/>
+                <ComponentLazy component={TipsPageLayout} />
             </Route>
             <Route path="/kontakt">
-                <Contact/>
+                <ComponentLazy component={Contact} />
             </Route>
             <Route path="/gdpr">
-                <GdprPage/>
+                <ComponentLazy component={GdprPage} />
             </Route>
             <Route path="/policy">
-                <PolicyPage/>
+                <ComponentLazy component={PolicyPage} />
             </Route>
             <Route path="/">
-                <LandingPage/>
+                <ComponentLazy component={LandingPage} />
             </Route>
         </Switch>
   )

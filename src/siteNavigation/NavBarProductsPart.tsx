@@ -75,7 +75,7 @@ const NavBarProductsPart = () => {
             <NavBarProductsPartProductsContainer>
                 {selectedItems.length > 1 && selectedItems.map((x, key) => {
                   return (
-                        <Link to={`/${x.name.replace(/\s/g, '')}`}
+                        <Link to={`/${(x?.name || '').replace(/\s/g, '')}`}
                               onClick={() => setProductPath(x.name)} key={key}
                               style={NavBarProductsPartProductsText}>
                             <SideNavBarItem
