@@ -533,9 +533,9 @@ export type TTipsData = {
 }
 
 export const TipsImages = {
-  tip1: require('constants/img/tips/tip1.jpg').default,
-  tip2: require('constants/img/tips/tip2.png').default,
-  tip3: require('constants/img/imgProduct/ImgPageProduct/WindowImg6.jpg').default
+  tip1: require('constants/img/tips/card/img1.jpg').default,
+  tip2: require('constants/img/tips/card/img4.png').default,
+  tip3: require('constants/img/tips/card/WindowImg6.jpg').default
 }
 
 export const InTipsImages = {
