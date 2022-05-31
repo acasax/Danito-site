@@ -1,6 +1,6 @@
 import React, { useContext } from 'react'
 import LineAnimation from 'components/lineAnimation'
-import CompanyImgCover from '../../constants/img/showRoom/19.jpg'
+import CompanyImgCover from '../../constants/img/about/cover.jpg'
 import Footer from 'components/footer'
 import {
   AboutContainer,
