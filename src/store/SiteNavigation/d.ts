@@ -525,6 +525,7 @@ export type TTipsTextPart = {
 }
 
 export type TTipsData = {
+    cardImg: string | any,
     coverImg: string | any,
     header: string,
     date: Date | string,
@@ -546,12 +547,14 @@ export const InTipsImages = {
   img4: require('constants/img/tips/in/img4.png').default,
   img5: require('constants/img/tips/in/img5.jpg').default,
   img6: require('constants/img/tips/in/img6.jpg').default,
-  img7: require('constants/img/tips/in/img7.jpg').default
+  img7: require('constants/img/tips/in/img7.jpg').default,
+  img8: require('constants/img/tips/in/img8.jpg').default
 }
 
 export const TipsInitData = [
   {
-    coverImg: TipsImages.tip1,
+    cardImg: TipsImages.tip1,
+    coverImg: InTipsImages.img1,
     header: 'KOJA PVC STOLARIJA JE NAJBOLJA',
     date: new Date().toDateString(),
     landingPageText:
@@ -600,7 +603,8 @@ export const TipsInitData = [
     ]
   },
   {
-    coverImg: TipsImages.tip2,
+    cardImg: TipsImages.tip2,
+    coverImg: InTipsImages.img4,
     header: 'NAJBOLJA STOLARIJA ZA KUĆU',
     date: new Date().toDateString(),
     landingPageText:
@@ -658,7 +662,8 @@ export const TipsInitData = [
     ]
   },
   {
-    coverImg: TipsImages.tip3,
+    cardImg: TipsImages.tip3,
+    coverImg: InTipsImages.img8,
     header: 'PVC PROZORI: Cena, ugradnja i zablude',
     date: new Date().toDateString(),
     landingPageText:

@@ -136,7 +136,7 @@ const Tips = () => {
                     <Card key={key}>
                         <CardContainer out={scroll >= 0}>
                             <CardImageContainer>
-                                <CardImage src={data.coverImg}/>
+                                <CardImage src={data.cardImg}/>
                             </CardImageContainer>
                             <CardContentContainer>
                                 <CardHeaderContainer>
