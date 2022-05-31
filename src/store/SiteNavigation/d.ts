@@ -792,7 +792,8 @@ export type TThirdPartOptions = {
 
 export type TPanelsImg = {
     img: string,
-    text: string
+    smallImg: string,
+    text: string,
 }
 
 export type TPanels = {
@@ -868,388 +869,483 @@ export const Panels = {
   inox: [
     {
       img: require('constants/img/panels/newPanels/pvcPanels/PVC 51-126E i 51_1-72E.jpg').default,
+      smallImg: require('constants/img/panels/newPanels/pvcPanels/small/PVC 51-126E i 51_1-72E.jpg').default,
       text: 'PVC 51 cena: 126e i 51_1 cena: 72e'
     },
     {
       img: require('constants/img/panels/newPanels/pvcPanels/PVC 52-150E.jpg').default,
+      smallImg: require('constants/img/panels/newPanels/pvcPanels/small/PVC 52-150E.jpg').default,
       text: 'PVC 52 cena: 150e'
     },
     {
       img: require('constants/img/panels/newPanels/pvcPanels/PVC 53-114E.jpg').default,
+      smallImg: require('constants/img/panels/newPanels/pvcPanels/small/PVC 53-114E.jpg').default,
       text: 'PVC 53 cena: 114e'
     },
     {
       img: require('constants/img/panels/newPanels/pvcPanels/PVC 60-150E i 60_1-84E.jpg').default,
+      smallImg: require('constants/img/panels/newPanels/pvcPanels/small/PVC 60-150E i 60_1-84E.jpg').default,
       text: 'PVC 60 cena: 150e i 60_1 cena: 84e'
     },
     {
       img: require('constants/img/panels/newPanels/pvcPanels/PVC 61-144E i 61_1-84E.jpg').default,
+      smallImg: require('constants/img/panels/newPanels/pvcPanels/small/PVC 61-144E i 61_1-84E.jpg').default,
       text: 'PVC 61 cena: 144e i 61_1 cena: 84e'
     },
     {
       img: require('constants/img/panels/newPanels/pvcPanels/PVC 70-150E i 70_1-84E.jpg').default,
+      smallImg: require('constants/img/panels/newPanels/pvcPanels/small/PVC 70-150E i 70_1-84E.jpg').default,
       text: 'PVC 70 cena: 150e i 70_1 cena: 84e'
     },
     {
       img: require('constants/img/panels/newPanels/pvcPanels/PVC 71-144E.jpg').default,
+      smallImg: require('constants/img/panels/newPanels/pvcPanels/small/PVC 71-144E.jpg').default,
       text: 'PVC 71 cena: 144e'
     },
     {
       img: require('constants/img/panels/newPanels/pvcPanels/PVC 80-162E.jpg').default,
+      smallImg: require('constants/img/panels/newPanels/pvcPanels/small/PVC 80-162E.jpg').default,
       text: 'PVC 80 cena: 162e'
     },
     {
       img: require('constants/img/panels/newPanels/pvcPanels/PVC 90-144E i 90_1-78E.jpg').default,
+      smallImg: require('constants/img/panels/newPanels/pvcPanels/small/PVC 90-144E i 90_1-78E.jpg').default,
       text: 'PVC 90 cena: 144e i 90_1 cena: 78e'
     },
     {
       img: require('constants/img/panels/newPanels/pvcPanels/PVC 91-144E.jpg').default,
+      smallImg: require('constants/img/panels/newPanels/pvcPanels/small/PVC 91-144E.jpg').default,
       text: 'PVC 91 cena: 144e'
     },
     {
       img: require('constants/img/panels/newPanels/pvcPanels/PVC 100-144E.jpg').default,
+      smallImg: require('constants/img/panels/newPanels/pvcPanels/small/PVC 100-144E.jpg').default,
       text: 'PVC 100 cena: 144e'
     },
     {
       img: require('constants/img/panels/newPanels/pvcPanels/PVC 110-156E i 110_1-84E.jpg').default,
+      smallImg: require('constants/img/panels/newPanels/pvcPanels/small/PVC 110-156E i 110_1-84E.jpg').default,
       text: 'PVC 110 cena: 156e i 110_1 cena: 84e'
     },
     {
       img: require('constants/img/panels/newPanels/pvcPanels/PVC 120-150E.jpg').default,
+      smallImg: require('constants/img/panels/newPanels/pvcPanels/small/PVC 120-150E.jpg').default,
       text: 'PVC 120 cena: 150e'
     },
     {
       img: require('constants/img/panels/newPanels/pvcPanels/PVC-M 1-144E I PVC-M 1_1-96E.jpg').default,
+      smallImg: require('constants/img/panels/newPanels/pvcPanels/small/PVC-M 1-144E I PVC-M 1_1-96E.jpg').default,
       text: 'PVC-M 1 cena: 144e i PVC-M 1_1 cena: 96e'
     },
     {
       img: require('constants/img/panels/newPanels/pvcPanels/PVC-M 2-144E I PVC-M 2_1-108E.jpg').default,
+      smallImg: require('constants/img/panels/newPanels/pvcPanels/small/PVC-M 2-144E I PVC-M 2_1-108E.jpg').default,
       text: 'PVC-M 2 cena: 144e i PVC-M 2_1 cena: 108e'
     },
     {
       img: require('constants/img/panels/newPanels/pvcPanels/PVC-M 3-132E I PVC-M 3_1-108E.jpg').default,
+      smallImg: require('constants/img/panels/newPanels/pvcPanels/small/PVC-M 3-132E I PVC-M 3_1-108E.jpg').default,
       text: 'PVC-M 3 cena: 132e i PVC-M 3_1 cena: 108e'
     },
     {
       img: require('constants/img/panels/newPanels/pvcPanels/PVC-M 4-132E I PVC-M 4_1-108E.jpg').default,
+      smallImg: require('constants/img/panels/newPanels/pvcPanels/small/PVC-M 4-132E I PVC-M 4_1-108E.jpg').default,
       text: 'PVC-M 4 cena: 132e i PVC-M 4_1 cena: 108e'
     },
     {
       img: require('constants/img/panels/newPanels/pvcPanels/PVC-M 5-132E I PVC-M 5_1-96E.jpg').default,
+      smallImg: require('constants/img/panels/newPanels/pvcPanels/small/PVC-M 5-132E I PVC-M 5_1-96E.jpg').default,
       text: 'PVC-M 5 cena: 132e i PVC-M 5_1 cena: 96e'
     },
     {
       img: require('constants/img/panels/newPanels/pvcPanels/PVC-M 6-132E I PVC-M 6_1-108E.jpg').default,
+      smallImg: require('constants/img/panels/newPanels/pvcPanels/small/PVC-M 6-132E I PVC-M 6_1-108E.jpg').default,
       text: 'PVC-M 6 cena: 132e i PVC-M 6_1 cena: 108e'
     },
     {
       img: require('constants/img/panels/newPanels/pvcPanels/PVC-M 7-144E I PVC-M 7_1-108E.jpg').default,
+      smallImg: require('constants/img/panels/newPanels/pvcPanels/small/PVC-M 7-144E I PVC-M 7_1-108E.jpg').default,
       text: 'PVC-M 7 cena: 144e i PVC-M 7_1 cena: 108e'
     },
     {
       img: require('constants/img/panels/newPanels/pvcPanels/PVC-S-1- INOX-180E.png').default,
+      smallImg: require('constants/img/panels/newPanels/pvcPanels/small/PVC-S-1- INOX-180E.png').default,
       text: 'PVC-S-1-INOX cena: 180e'
     },
     {
       img: require('constants/img/panels/newPanels/pvcPanels/PVC-S-1-144E.png').default,
+      smallImg: require('constants/img/panels/newPanels/pvcPanels/small/PVC-S-1-144E.png').default,
       text: 'PVC-S-1 cena: 144e'
     },
     {
       img: require('constants/img/panels/newPanels/pvcPanels/PVC-S-2-144E.jpg').default,
+      smallImg: require('constants/img/panels/newPanels/pvcPanels/small/PVC-S-2-144E.jpg').default,
       text: 'PVC-S-2 cena: 144e'
     },
     {
       img: require('constants/img/panels/newPanels/pvcPanels/PVC-S-2-INOX-180E.png').default,
+      smallImg: require('constants/img/panels/newPanels/pvcPanels/small/PVC-S-2-INOX-180E.png').default,
       text: 'PVC-S-2-INOX cena: 180e'
     },
     {
       img: require('constants/img/panels/newPanels/pvcPanels/PVC-S-3- INOX-180E.jpg').default,
+      smallImg: require('constants/img/panels/newPanels/pvcPanels/small/PVC-S-3- INOX-180E.jpg').default,
       text: 'PVC-S-3-INOX cena: 180e'
     },
     {
       img: require('constants/img/panels/newPanels/pvcPanels/PVC-S-3-120E.jpg').default,
+      smallImg: require('constants/img/panels/newPanels/pvcPanels/small/PVC-S-3-120E.jpg').default,
       text: 'PVC-S-3 cena: 120e'
     },
     {
       img: require('constants/img/panels/newPanels/pvcPanels/PVC-S-4 INOX-180E.jpg').default,
+      smallImg: require('constants/img/panels/newPanels/pvcPanels/small/PVC-S-4 INOX-180E.jpg').default,
       text: 'PVC-S-4-INOX cena: 180e'
     },
     {
       img: require('constants/img/panels/newPanels/pvcPanels/PVC-S-4-144E.jpg').default,
+      smallImg: require('constants/img/panels/newPanels/pvcPanels/small/PVC-S-4-144E.jpg').default,
       text: 'PVC-S-4 cena: 144e'
     },
     {
       img: require('constants/img/panels/newPanels/pvcPanels/PVC-S-5 - INOX-180E.jpg').default,
+      smallImg: require('constants/img/panels/newPanels/pvcPanels/small/PVC-S-5 - INOX-180E.jpg').default,
       text: 'PVC-S-5-INOX cena: 180e'
     },
     {
       img: require('constants/img/panels/newPanels/pvcPanels/PVC-S-5-144E.jpg').default,
+      smallImg: require('constants/img/panels/newPanels/pvcPanels/small/PVC-S-5-144E.jpg').default,
       text: 'PVC-S-5 cena: 144e'
     },
     {
       img: require('constants/img/panels/newPanels/pvcPanels/PVC-S-6 - INOX-180E.jpg').default,
+      smallImg: require('constants/img/panels/newPanels/pvcPanels/small/PVC-S-6 - INOX-180E.jpg').default,
       text: 'PVC-S-6-INOX cena: 180e'
     },
     {
       img: require('constants/img/panels/newPanels/pvcPanels/PVC-S-6-144E.jpg').default,
+      smallImg: require('constants/img/panels/newPanels/pvcPanels/small/PVC-S-6-144E.jpg').default,
       text: 'PVC-S-6 cena: 144e'
     }
   ],
   premium: [
     {
       img: require('constants/img/panels/newPanels/premiumPanels/PREMIUM-1-540e.jpg').default,
+      smallImg: require('constants/img/panels/newPanels/premiumPanels/small/PREMIUM-1-540e.jpg').default,
       text: 'PREMIUM-1 cena: 540e'
     },
     {
       img: require('constants/img/panels/newPanels/premiumPanels/PREMIUM-2-504e.jpg').default,
+      smallImg: require('constants/img/panels/newPanels/premiumPanels/small/PREMIUM-2-504e.jpg').default,
       text: 'PREMIUM-2 cena: 504e'
     },
     {
       img: require('constants/img/panels/newPanels/premiumPanels/PREMIUM-3-576e.jpg').default,
+      smallImg: require('constants/img/panels/newPanels/premiumPanels/small/PREMIUM-3-576e.jpg').default,
       text: 'PREMIUM-3 cena: 576e'
     },
     {
       img: require('constants/img/panels/newPanels/premiumPanels/PREMIUM-4-660e.jpg').default,
+      smallImg: require('constants/img/panels/newPanels/premiumPanels/small/PREMIUM-4-660e.jpg').default,
       text: 'PREMIUM-4 cena: 660e'
     },
     {
       img: require('constants/img/panels/newPanels/premiumPanels/PREMIUM-5-504e.jpg').default,
+      smallImg: require('constants/img/panels/newPanels/premiumPanels/small/PREMIUM-5-504e.jpg').default,
       text: 'PREMIUM-5 cena: 504e'
     },
     {
       img: require('constants/img/panels/newPanels/premiumPanels/PREMIUM-6-540e.jpg').default,
+      smallImg: require('constants/img/panels/newPanels/premiumPanels/small/PREMIUM-6-540e.jpg').default,
       text: 'PREMIUM-6 cena: 540e'
     },
     {
       img: require('constants/img/panels/newPanels/premiumPanels/PREMIUM-7-720e.jpg').default,
+      smallImg: require('constants/img/panels/newPanels/premiumPanels/small/PREMIUM-7-720e.jpg').default,
       text: 'PREMIUM-7 cena: 720e'
     },
     {
       img: require('constants/img/panels/newPanels/premiumPanels/PREMIUM-8-540e.jpg').default,
+      smallImg: require('constants/img/panels/newPanels/premiumPanels/small/PREMIUM-8-540e.jpg').default,
       text: 'PREMIUM-8 cena: 540e'
     },
     {
       img: require('constants/img/panels/newPanels/premiumPanels/PREMIUM-9-600e.jpg').default,
+      smallImg: require('constants/img/panels/newPanels/premiumPanels/small/PREMIUM-9-600e.jpg').default,
       text: 'PREMIUM-9 cena: 600e'
     },
     {
       img: require('constants/img/panels/newPanels/premiumPanels/PREMIUM-10-540e.jpg').default,
+      smallImg: require('constants/img/panels/newPanels/premiumPanels/small/PREMIUM-10-540e.jpg').default,
       text: 'PREMIUM-10 cena: 540e'
     },
     {
       img: require('constants/img/panels/newPanels/premiumPanels/PREMIUM-11-540e.jpg').default,
+      smallImg: require('constants/img/panels/newPanels/premiumPanels/small/PREMIUM-11-540e.jpg').default,
       text: 'PREMIUM-11 cena: 540e'
     },
     {
       img: require('constants/img/panels/newPanels/premiumPanels/PREMIUM-12-504e.jpg').default,
+      smallImg: require('constants/img/panels/newPanels/premiumPanels/small/PREMIUM-12-504e.jpg').default,
       text: 'PREMIUM-12 cena: 504e'
     },
     {
       img: require('constants/img/panels/newPanels/premiumPanels/PREMIUM-14-480e.jpg').default,
+      smallImg: require('constants/img/panels/newPanels/premiumPanels/small/PREMIUM-14-480e.jpg').default,
       text: 'PREMIUM-14 cena: 480e'
     },
     {
       img: require('constants/img/panels/newPanels/premiumPanels/PREMIUM-15-540e.jpg').default,
+      smallImg: require('constants/img/panels/newPanels/premiumPanels/small/PREMIUM-15-540e.jpg').default,
       text: 'PREMIUM-15 cena: 540e'
     },
     {
       img: require('constants/img/panels/newPanels/premiumPanels/PREMIUM-16-480e.jpg').default,
+      smallImg: require('constants/img/panels/newPanels/premiumPanels/small/PREMIUM-16-480e.jpg').default,
       text: 'PREMIUM-16 cena: 480e'
     },
     {
       img: require('constants/img/panels/newPanels/premiumPanels/PREMIUM-17-696e.jpg').default,
+      smallImg: require('constants/img/panels/newPanels/premiumPanels/small/PREMIUM-17-696e.jpg').default,
       text: 'PREMIUM-17 cena: 696e'
     },
     {
       img: require('constants/img/panels/newPanels/premiumPanels/PREMIUM-18-576.JPG').default,
+      smallImg: require('constants/img/panels/newPanels/premiumPanels/small/PREMIUM-18-576.JPG').default,
       text: 'PREMIUM-18 cena: 576e'
     },
     {
       img: require('constants/img/panels/newPanels/premiumPanels/PREMIUM-19-540e.PNG').default,
+      smallImg: require('constants/img/panels/newPanels/premiumPanels/small/PREMIUM-19-540e.PNG').default,
       text: 'PREMIUM-19 cena: 540e'
     },
     {
       img: require('constants/img/panels/newPanels/premiumPanels/PREMIUM-20-576e.png').default,
+      smallImg: require('constants/img/panels/newPanels/premiumPanels/small/PREMIUM-20-576e.png').default,
       text: 'PREMIUM-20 cena: 576e'
     },
     {
       img: require('constants/img/panels/newPanels/premiumPanels/PREMIUM-21-576e.PNG').default,
+      smallImg: require('constants/img/panels/newPanels/premiumPanels/small/PREMIUM-21-576e.PNG').default,
       text: 'PREMIUM-21 cena: 576e'
     },
     {
       img: require('constants/img/panels/newPanels/premiumPanels/PREMIUM-22-660e.jpg').default,
+      smallImg: require('constants/img/panels/newPanels/premiumPanels/small/PREMIUM-22-660e.jpg').default,
       text: 'PREMIUM-22 cena: 660e'
     },
     {
       img: require('constants/img/panels/newPanels/premiumPanels/PREMIUM-23-576e.jpg').default,
+      smallImg: require('constants/img/panels/newPanels/premiumPanels/small/PREMIUM-23-576e.jpg').default,
       text: 'PREMIUM-23 cena: 576e'
     },
     {
       img: require('constants/img/panels/newPanels/premiumPanels/PREMIUM-24-600e.jpg').default,
+      smallImg: require('constants/img/panels/newPanels/premiumPanels/small/PREMIUM-24-600e.jpg').default,
       text: 'PREMIUM-24 cena: 600e'
     },
     {
       img: require('constants/img/panels/newPanels/premiumPanels/PREMIUM-25-576e.jpg').default,
+      smallImg: require('constants/img/panels/newPanels/premiumPanels/small/PREMIUM-25-576e.jpg').default,
       text: 'PREMIUM-25 cena: 576e'
     },
     {
       img: require('constants/img/panels/newPanels/premiumPanels/PREMIUM-26-660e.jpg').default,
+      smallImg: require('constants/img/panels/newPanels/premiumPanels/small/PREMIUM-26-660e.jpg').default,
       text: 'PREMIUM-26 cena: 660e'
     },
     {
       img: require('constants/img/panels/newPanels/premiumPanels/PREMIUM-27-420e.jpg').default,
+      smallImg: require('constants/img/panels/newPanels/premiumPanels/small/PREMIUM-27-420e.jpg').default,
       text: 'PREMIUM-27 cena: 420e'
     },
     {
       img: require('constants/img/panels/newPanels/premiumPanels/PREMIUM-28-696e.jpg').default,
+      smallImg: require('constants/img/panels/newPanels/premiumPanels/small/PREMIUM-28-696e.jpg').default,
       text: 'PREMIUM-28 cena: 696e'
     },
     {
       img: require('constants/img/panels/newPanels/premiumPanels/PREMIUM-29-600e.jpg').default,
+      smallImg: require('constants/img/panels/newPanels/premiumPanels/small/PREMIUM-29-600e.jpg').default,
       text: 'PREMIUM-29 cena: 600e'
     },
     {
       img: require('constants/img/panels/newPanels/premiumPanels/PREMIUM-30-504e.jpg').default,
+      smallImg: require('constants/img/panels/newPanels/premiumPanels/small/PREMIUM-30-504e.jpg').default,
       text: 'PREMIUM-30 cena: 504e'
     },
     {
       img: require('constants/img/panels/newPanels/premiumPanels/PREMIUM-31-720e.jpg').default,
+      smallImg: require('constants/img/panels/newPanels/premiumPanels/small/PREMIUM-31-720e.jpg').default,
       text: 'PREMIUM-31 cena: 720e'
     },
     {
       img: require('constants/img/panels/newPanels/premiumPanels/PREMIUM-32-540e.jpg').default,
+      smallImg: require('constants/img/panels/newPanels/premiumPanels/small/PREMIUM-32-540e.jpg').default,
       text: 'PREMIUM-32 cena: 540e'
     }
   ],
   aluminium: [
     {
       img: require('constants/img/panels/newPanels/aluPanels/INOX - 101-264E.jpg').default,
+      smallImg: require('constants/img/panels/newPanels/aluPanels/small/INOX - 101-264E.jpg').default,
       text: 'INOX  101 cena: 264e'
     },
     {
       img: require('constants/img/panels/newPanels/aluPanels/INOX 102-216E.jpg').default,
+      smallImg: require('constants/img/panels/newPanels/aluPanels/small/INOX 102-216E.jpg').default,
       text: 'INOX  102 cena: 216e'
     },
     {
       img: require('constants/img/panels/newPanels/aluPanels/INOX 103-216E.jpg').default,
+      smallImg: require('constants/img/panels/newPanels/aluPanels/small/INOX 103-216E.jpg').default,
       text: 'INOX 103 cena: 216e'
     },
     {
       img: require('constants/img/panels/newPanels/aluPanels/INOX 104-216E.jpg').default,
+      smallImg: require('constants/img/panels/newPanels/aluPanels/small/INOX 104-216E.jpg').default,
       text: 'INOX 104 cena: 216e'
     },
     {
       img: require('constants/img/panels/newPanels/aluPanels/INOX 105-264E.jpg').default,
+      smallImg: require('constants/img/panels/newPanels/aluPanels/small/INOX 105-264E.jpg').default,
       text: 'INOX 105 cena: 264e'
     },
     {
       img: require('constants/img/panels/newPanels/aluPanels/INOX 106-240E.jpg').default,
+      smallImg: require('constants/img/panels/newPanels/aluPanels/small/INOX 106-240E.jpg').default,
       text: 'INOX 106 cena: 240e'
     },
     {
       img: require('constants/img/panels/newPanels/aluPanels/INOX 107-216E.jpg').default,
+      smallImg: require('constants/img/panels/newPanels/aluPanels/small/INOX 107-216E.jpg').default,
       text: 'INOX 107 cena: 216e'
     },
     {
       img: require('constants/img/panels/newPanels/aluPanels/INOX 108-216E.jpg').default,
+      smallImg: require('constants/img/panels/newPanels/aluPanels/small/INOX 108-216E.jpg').default,
       text: 'INOX 108 cena: 216e'
     },
     {
       img: require('constants/img/panels/newPanels/aluPanels/INOX 109-276E.jpg').default,
+      smallImg: require('constants/img/panels/newPanels/aluPanels/small/INOX 109-276E.jpg').default,
       text: 'INOX 109 cena: 276e'
     },
     {
       img: require('constants/img/panels/newPanels/aluPanels/INOX 110-156E.jpg').default,
+      smallImg: require('constants/img/panels/newPanels/aluPanels/small/INOX 110-156E.jpg').default,
       text: 'INOX 110 cena: 156e'
     },
     {
       img: require('constants/img/panels/newPanels/aluPanels/INOX 111-216E.jpg').default,
+      smallImg: require('constants/img/panels/newPanels/aluPanels/small/INOX 111-216E.jpg').default,
       text: 'INOX 111 cena: 216e'
     },
     {
       img: require('constants/img/panels/newPanels/aluPanels/INOX 112-240E.jpg').default,
+      smallImg: require('constants/img/panels/newPanels/aluPanels/small/INOX 112-240E.jpg').default,
       text: 'INOX 112 cena: 240e'
     },
     {
       img: require('constants/img/panels/newPanels/aluPanels/INOX 113-216.jpg').default,
+      smallImg: require('constants/img/panels/newPanels/aluPanels/small/INOX 113-216.jpg').default,
       text: 'INOX 113 cena: 216e'
     },
     {
       img: require('constants/img/panels/newPanels/aluPanels/INOX 114-240E.jpg').default,
+      smallImg: require('constants/img/panels/newPanels/aluPanels/small/INOX 114-240E.jpg').default,
       text: 'INOX 114 cena: 240e'
     },
     {
       img: require('constants/img/panels/newPanels/aluPanels/INOX 115-360E.jpg').default,
+      smallImg: require('constants/img/panels/newPanels/aluPanels/small/INOX 115-360E.jpg').default,
       text: 'INOX 115 cena: 360e'
     },
     {
       img: require('constants/img/panels/newPanels/aluPanels/INOX 116-336E.jpg').default,
+      smallImg: require('constants/img/panels/newPanels/aluPanels/small/INOX 116-336E.jpg').default,
       text: 'INOX 116 cena: 336e'
     }
   ],
   elegant: [
     {
       img: require('constants/img/panels/newPanels/elegantPanels/E-1001-264E.jpg').default,
+      smallImg: require('constants/img/panels/newPanels/elegantPanels/small/E-1001-264E.jpg').default,
       text: 'E-1001 cena: 264e'
     },
     {
       img: require('constants/img/panels/newPanels/elegantPanels/E-1002-204E.png').default,
+      smallImg: require('constants/img/panels/newPanels/elegantPanels/small/E-1002-204E.png').default,
       text: 'E-1002 cena: 204e'
     },
     {
       img: require('constants/img/panels/newPanels/elegantPanels/E-1003-216EE.png').default,
+      smallImg: require('constants/img/panels/newPanels/elegantPanels/small/E-1003-216EE.png').default,
       text: 'E-1003 cena: 216e'
     },
     {
       img: require('constants/img/panels/newPanels/elegantPanels/E-1005-216E.png').default,
+      smallImg: require('constants/img/panels/newPanels/elegantPanels/small/E-1005-216E.png').default,
       text: 'E-1005 cena: 216e'
     },
     {
       img: require('constants/img/panels/newPanels/elegantPanels/E-1007-216E.jpg').default,
+      smallImg: require('constants/img/panels/newPanels/elegantPanels/small/E-1007-216E.jpg').default,
       text: 'E-1007 cena: 216e'
     },
     {
       img: require('constants/img/panels/newPanels/elegantPanels/E-1008-216E.png').default,
+      smallImg: require('constants/img/panels/newPanels/elegantPanels/small/E-1008-216E.png').default,
       text: 'E-1008 cena: 216e'
     },
     {
       img: require('constants/img/panels/newPanels/elegantPanels/E-1009-216E.png').default,
+      smallImg: require('constants/img/panels/newPanels/elegantPanels/small/E-1009-216E.png').default,
       text: 'E-1009 cena: 216e'
     },
     {
       img: require('constants/img/panels/newPanels/elegantPanels/E-1010-204E.png').default,
+      smallImg: require('constants/img/panels/newPanels/elegantPanels/small/E-1010-204E.png').default,
       text: 'E-1010 cena: 204e'
     },
     {
       img: require('constants/img/panels/newPanels/elegantPanels/E-1011-204E.png').default,
+      smallImg: require('constants/img/panels/newPanels/elegantPanels/small/E-1011-204E.png').default,
       text: 'E-1011 cena: 204e'
     },
     {
       img: require('constants/img/panels/newPanels/elegantPanels/E-1012-216E.png').default,
+      smallImg: require('constants/img/panels/newPanels/elegantPanels/small/E-1012-216E.png').default,
       text: 'E-1012 cena: 216e'
     },
     {
       img: require('constants/img/panels/newPanels/elegantPanels/E-1013-216E.png').default,
+      smallImg: require('constants/img/panels/newPanels/elegantPanels/small/E-1013-216E.png').default,
       text: 'E-1013 cena: 216e'
     },
     {
       img: require('constants/img/panels/newPanels/elegantPanels/E-1014-264E.png').default,
+      smallImg: require('constants/img/panels/newPanels/elegantPanels/small/E-1014-264E.png').default,
       text: 'E-1014 cena: 264e'
     },
     {
       img: require('constants/img/panels/newPanels/elegantPanels/E-1015-264E.png').default,
+      smallImg: require('constants/img/panels/newPanels/elegantPanels/small/E-1015-264E.png').default,
       text: 'E-1015 cena: 264e'
     },
     {
       img: require('constants/img/panels/newPanels/elegantPanels/E-1016-264E.png').default,
+      smallImg: require('constants/img/panels/newPanels/elegantPanels/small/E-1016-264E.png').default,
       text: 'E-1016 cena: 264e'
     },
     {
       img: require('constants/img/panels/newPanels/elegantPanels/E-1017-288E.jpg').default,
+      smallImg: require('constants/img/panels/newPanels/elegantPanels/small/E-1017-288E.jpg').default,
       text: 'E-1017 cena: 288e'
     },
     {
       img: require('constants/img/panels/newPanels/elegantPanels/E-1018-204E.jpg').default,
+      smallImg: require('constants/img/panels/newPanels/elegantPanels/small/E-1018-204E.jpg').default,
       text: 'E-1018 cena: 204e'
     }
   ]

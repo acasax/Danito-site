@@ -65,7 +65,7 @@ const ProductPage = () => {
             <ProductPageHeaderImageContainer>
                 <ProductPageHeaderImage src={data.imgCover} alt={data.name}/>
             </ProductPageHeaderImageContainer>
-            <LineAnimation header={pageName} scroll={scroll} scrollY={200}/>
+            <LineAnimation header={pageName} scroll={scroll} scrollY={0}/>
             <ProductPageContentContainer>
                 <ProductPageContentVideoContainer>
                     {data.imgVideo
@@ -83,7 +83,7 @@ const ProductPage = () => {
             {
                 data.material && (
                     <>
-                        <LineAnimation header={Translate.PRODUCT_CHARACTERISTICS} scroll={scroll} scrollY={1000}/>
+                        <LineAnimation header={Translate.PRODUCT_CHARACTERISTICS} scroll={scroll} scrollY={0}/>
                         <ProductPageContainerCharacteristicContainer>
                             {
                                 data.material.map((item, key) => {
@@ -148,7 +148,7 @@ const ProductPage = () => {
             }
             {data.panels
               ? <>
-                    <LineAnimation header={'Panels'} scroll={scroll} scrollY={1600}/>
+                    <LineAnimation header={'Panels'} scroll={scroll} scrollY={0}/>
                     <ProductPageProfilesContainer>
                         {data.panels.map((panel, key) => {
                           return (
@@ -164,7 +164,7 @@ const ProductPage = () => {
                                                     key={key}
                                                     onClick={() => handlePanelModal(item)}
                                                 >
-                                                    <ProductPageProfileImg src={item.img} alt={item.text}/>
+                                                    <ProductPageProfileImg src={item.smallImg} alt={item.text}/>
                                                     <ProductPageProfileTextContainer>
                                                         <ProductPageProfileText>
                                                             {item.text}
