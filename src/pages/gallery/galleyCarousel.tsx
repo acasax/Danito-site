@@ -108,7 +108,7 @@ const GalleyCarousel = ({ ImgObj, ImgHeader }: any) => {
                         onClick={() => setModalOpenImage(item.src)}
                         key={key}
                         alt={item.name}// Dodaj u opjekat iz stora opis slika
-                        src={item.src}
+                        src={item.smallSrc}
                     />
               )
             })}
