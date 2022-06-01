@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import React, { useContext, useState } from 'react'
 import Footer from 'components/footer'
 import { ContactFormContainer, ContactLayoutContainer, ContactMapContainer } from './style'
 import { AboutHeaderImage, AboutHeaderImageContainer } from '../about/style'
@@ -11,7 +11,7 @@ import TextField from '@mui/material/TextField'
 import { TextareaAutosize } from '@mui/material'
 import Button from '@mui/material/Button'
 import { SiteNavigationContext } from 'siteNavigation/context'
-import { UseContact } from '../../hooks/contact/useContact'
+import axios from 'axios'
 
 /**
  *
@@ -25,13 +25,37 @@ import { UseContact } from '../../hooks/contact/useContact'
 
 const Contact = () => {
   const { scroll } = useContext(SiteNavigationContext)
-  /** Functions from hook **/
-  const { sendEmail } = UseContact()
-  const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
+  const [state, setState] = useState({
+    name: '',
+    email: '',
+    phone: '',
+    msg: ''
+  })
+
+  const setField = (field: string, data: any) => {
+    setState(v => ({
+      ...v,
+      [field]: data
+    }))
+  }
+
+  const handleSubmit = async (event: any) => {
     event.preventDefault()
-    const data = new FormData(event.currentTarget)
-    // eslint-disable-next-line no-console
-    await sendEmail(data)
+    const data = { ...state }
+    try {
+      const response = await axios('https://react.danito.rs/api/index.php', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Access-Control-Allow-Origin': '*'
+        },
+        data: data,
+        withCredentials: true
+      })
+      console.log('response', response)
+    } catch (e) {
+      console.log(e)
+    }
   }
 
   return (
@@ -50,7 +74,7 @@ const Contact = () => {
                           alignItems: 'center'
                         }}
                     >
-                        <Box component="form" noValidate onSubmit={e => handleSubmit(e)} sx={{ mt: 3, width: '100%' }}>
+                        <Box component="form" sx={{ mt: 3, width: '100%' }}>
                             <Grid item xs={12} sx={{ mb: 2 }}>
                                 <TextField
                                     required
@@ -59,15 +83,8 @@ const Contact = () => {
                                     label="Ime i prezime"
                                     name="name"
                                     autoFocus
-                                />
-                            </Grid>
-                            <Grid item xs={12} sx={{ mt: 3, mb: 2 }}>
-                                <TextField
-                                    required
-                                    fullWidth
-                                    id="company"
-                                    label="Ime firme"
-                                    name="company"
+                                    value={state.name}
+                                    onChange={(e) => setField('name', e.target.value)}
                                 />
                             </Grid>
                             <Grid container spacing={2} sx={{ mt: 3, mb: 2 }}>
@@ -79,6 +96,8 @@ const Contact = () => {
                                         fullWidth
                                         id="email"
                                         label="E-mail"
+                                        value={state.email}
+                                        onChange={(e) => setField('email', e.target.value)}
                                     />
                                 </Grid>
                                 <Grid item xs={12} sm={6}>
@@ -88,6 +107,8 @@ const Contact = () => {
                                         id="phone"
                                         label="Broj telefona"
                                         name="phone"
+                                        value={state.phone}
+                                        onChange={(e) => setField('phone', e.target.value)}
                                     />
                                 </Grid>
                             </Grid>
@@ -97,6 +118,8 @@ const Contact = () => {
                                     name="msg"
                                     aria-label="empty textarea"
                                     placeholder="Poruka"
+                                    value={state.msg}
+                                    onChange={(e) => setField('msg', e.target.value)}
                                     style={{ width: '100%', height: 200 }}
                                 />
                             </Grid>
@@ -104,6 +127,7 @@ const Contact = () => {
                                 type="submit"
                                 variant="contained"
                                 sx={{ mt: 3, mb: 2 }}
+                                onClick={e => handleSubmit(e)}
                             >
                                 Posalji
                             </Button>

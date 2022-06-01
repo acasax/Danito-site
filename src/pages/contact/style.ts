@@ -34,7 +34,7 @@ export const ContactMapContainer = styled.div`
   }
 `
 
-export const ContactFormContainer = styled.div`
+export const ContactFormContainer = styled.form`
   display: flex;
   flex-direction: column;
   width: 100%;

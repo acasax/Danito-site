@@ -17,9 +17,9 @@ const API_PATH = 'http://loaclhost:3000/api/index.php'
 
 export const UseContact = () => {
   const sendEmail = async (data: any) => {
-    axios.post('/api/contact/index.php', data, {
-      headers: { 'Content-Type': 'multipart/form-data' },
-      baseURL: 'http://localhost'
+    axios.post('/api/index.php', data, {
+      headers: { 'Content-Type': 'application/json' },
+      baseURL: 'https://react.danito.rs'
     }).then(result => {
       console.log('send email', result)
     }).catch(error => console.log('send email error', error.message))

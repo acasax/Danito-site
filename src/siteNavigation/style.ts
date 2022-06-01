@@ -68,21 +68,21 @@ export const NavSecondPartContainer = styled.div`
   border-bottom-color: ${Styles.Colours.PALETTE.DANITO._darkGray};
 
   @media ${devices.xs} {
-    height: 15px;
-    padding: 6px 9px;
-    top: 21px;
+    top: 0;
+    height: 35px;
+    padding: 0 10px;
   }
 
   @media ${devices.sm} {
-    height: 20px;
-    padding: 8px 12px;
-    top: 28px;
+    top: 0;
+    height: 35px;
+    padding: 0 10px;
   }
 
   @media ${devices.md} {
-    height: 26px;
-    padding: 10px 15px;
-    top: 36px;
+    top: 0;
+    height: 35px;
+    padding: 0 10px;
   }
 
   @media ${devices.lg} {
@@ -245,27 +245,6 @@ export const NavBarProductSideBarContainer = styled.div<{ isDisplay: boolean }>`
   ${props => props.isDisplay && css`
     width: 300px;
     opacity: 1;
-
-      @media ${devices.xs} {
-        width: 90px;
-      }
-  
-      @media ${devices.sm} {
-        width: 120px;
-      }
-  
-      @media ${devices.md} {
-        width: 155px;
-      }
-  
-      @media ${devices.lg} {
-        width: 187px;
-      }
-  
-      @media ${devices.xl} {
-        width: 219px;
-      }
-
   `}
 `
 
@@ -274,26 +253,6 @@ export const NavBarProductContainerText = styled.p`
   letter-spacing: 1px;
   text-align: center;
   color: ${Styles.Colours.PALETTE.DANITO._white};
-
-  @media ${devices.xs} {
-    font-size: 6px;
-  }
-
-  @media ${devices.sm} {
-    font-size: 8px;
-  }
-
-  @media ${devices.md} {
-    font-size: 9px;
-  }
-
-  @media ${devices.lg} {
-    font-size: 11px;
-  }
-
-  @media ${devices.xl} {
-    font-size: 13px;
-  }
 `
 
 export const NavBarProductPartHeaderContainer = styled.div`

@@ -11,7 +11,6 @@ import {
 import { SiteNavigationContext } from './context'
 import { Styles } from 'constants/StyleConstants'
 import { Translate } from '../translate/data'
-import { calcSize } from '../constants/ResponsiveBreakpoints'
 
 /**
  *
@@ -39,33 +38,18 @@ const NavBarSecondPart = () => {
     updateDimension()
   }, [updateDimension])
 
-  const NavMenuIcon = {
-    fontSize:
-            width > calcSize.large && width <= calcSize.extralarge
-              ? calcSize.extralarge * 35 / calcSize.hd
-              : width > calcSize.medium && width <= calcSize.large
-                ? calcSize.large * 35 / calcSize.hd
-                : width > calcSize.small && width <= calcSize.medium
-                  ? calcSize.medium * 35 / calcSize.hd
-                  : width > calcSize.xsmall && width <= calcSize.small
-                    ? calcSize.small * 35 / calcSize.hd
-                    : width > 0 && width <= calcSize.xsmall
-                      ? calcSize.xsmall * 35 / calcSize.hd
-                      : 35,
-    color: Styles.Colours.PALETTE.DANITO._white
-  }
-
   return (
         <NavSecondPartContainer>
             <NavSecondPartMenuBody>
                 {navRightOpen
                   ? (
-                        <ArrowBackIosIcon onClick={handleNavRightOpen} sx={NavMenuIcon}/>
+                        <ArrowBackIosIcon onClick={handleNavRightOpen}
+                                          sx={{ fontSize: 30, color: Styles.Colours.PALETTE.DANITO._white }}/>
                     )
                   : (
-                        <MenuIcon onClick={handleNavRightOpen} sx={NavMenuIcon}/>
+                        <MenuIcon onClick={handleNavRightOpen}
+                                  sx={{ fontSize: 30, color: Styles.Colours.PALETTE.DANITO._white }}/>
                     )}
-
                 <NavSecondPartMenuBodyButton
                     onClick={handleNavRightOpen}>{Translate.NAV_BAR_SECOND_PART_PRODUCTS}</NavSecondPartMenuBodyButton>
 

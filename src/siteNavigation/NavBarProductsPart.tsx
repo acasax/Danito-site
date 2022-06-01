@@ -46,29 +46,13 @@ const NavBarProductsPart = () => {
     updateDimension()
   }, [updateDimension])
 
-  const NavMenuIcon = {
-    fontSize:
-            width > calcSize.large && width <= calcSize.extralarge
-              ? calcSize.extralarge * 30 / calcSize.hd
-              : width > calcSize.medium && width <= calcSize.large
-                ? calcSize.large * 30 / calcSize.hd
-                : width > calcSize.small && width <= calcSize.medium
-                  ? calcSize.medium * 30 / calcSize.hd
-                  : width > calcSize.xsmall && width <= calcSize.small
-                    ? calcSize.small * 30 / calcSize.hd
-                    : width > 0 && width <= calcSize.xsmall
-                      ? calcSize.xsmall * 30 / calcSize.hd
-                      : 30,
-    color: Styles.Colours.PALETTE.DANITO._white
-  }
-
   return (
         <NavBarProductSideBarContainer isDisplay={navRightOpen}>
             <NavBarProductPartHeaderContainer>
                 {
                     selected
-                      ? <ArrowBackIosIcon onClick={goBack} sx={NavMenuIcon}/>
-                      : <ArrowDownwardIcon sx={NavMenuIcon}/>
+                      ? <ArrowBackIosIcon onClick={goBack} sx={{ fontSize: 30, color: Styles.Colours.PALETTE.DANITO._white }}/>
+                      : <ArrowDownwardIcon sx={{ fontSize: 30, color: Styles.Colours.PALETTE.DANITO._white }}/>
                 }
                 <NavBarProductContainerText>{!selected ? Translate.CHOSE_CATEGORY : selected}</NavBarProductContainerText>
             </NavBarProductPartHeaderContainer>
