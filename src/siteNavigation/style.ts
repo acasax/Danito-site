@@ -10,6 +10,7 @@ export const NavBarContainer = styled.div`
   display: flex;
   flex-direction: column;
   height: 100%;
+  overflow-y: hidden;
 `
 
 /** Style for NavBarFirstPart component */
@@ -52,7 +53,7 @@ export const NavFirstPartContainer = styled.div`
 `
 
 /** Style for NavBarSecondPart component */
-export const NavSecondPartContainer = styled.div`
+export const NavSecondPartContainer = styled.div<{ isDisplay: boolean }>`
   width: 100%;
   z-index: 1;
   background-color: rgba(62, 68, 68, 0.9);
@@ -69,19 +70,19 @@ export const NavSecondPartContainer = styled.div`
 
   @media ${devices.xs} {
     top: 0;
-    height: 35px;
+    height: 60px;
     padding: 0 10px;
   }
 
   @media ${devices.sm} {
     top: 0;
-    height: 35px;
+    height: 60px;
     padding: 0 10px;
   }
 
   @media ${devices.md} {
     top: 0;
-    height: 35px;
+    height: 60px;
     padding: 0 10px;
   }
 
@@ -97,12 +98,19 @@ export const NavSecondPartContainer = styled.div`
     top: 51px;
   }
 
+  ${props => props.isDisplay && css`
+    width: -webkit-calc(100% - 280px);
+    width: -moz-calc(100% - 280px);
+    width: calc(100% - 280px);
+  `}
+
 `
 
 export const NavSecondPartMenuBody = styled.div`
   display: flex;
   align-items: center;
   gap: 30px;
+  width: 100%;
 
   @media ${devices.xs} {
     gap: 9px;
@@ -218,17 +226,17 @@ export const NavBarProductSideBarContainer = styled.div<{ isDisplay: boolean }>`
   opacity: 0;
 
   @media ${devices.xs} {
-    top: 21px;
+    top: 0;
     gap: 6px;
   }
 
   @media ${devices.sm} {
-    top: 28px;
+    top: 0;
     gap: 8px;
   }
 
   @media ${devices.md} {
-    top: 36px;
+    top: 0;
     gap: 10px;
   }
 
@@ -243,8 +251,9 @@ export const NavBarProductSideBarContainer = styled.div<{ isDisplay: boolean }>`
   }
 
   ${props => props.isDisplay && css`
-    width: 300px;
+    width: 280px;
     opacity: 1;
+    z-index: 10000;
   `}
 `
 
@@ -261,52 +270,35 @@ export const NavBarProductPartHeaderContainer = styled.div`
   background-color: rgba(62, 68, 68, 0.9);
   align-items: center;
   justify-content: space-evenly;
-  width: 300px;
+  width: 280px;
   font-weight: 500;
-  padding-left: 5px;
-  padding-right: 5px;
   border-bottom-color: ${Styles.Colours.PALETTE.DANITO._darkGray};
   border-bottom-width: 1px;
   border-bottom-style: solid;
 
   @media ${devices.xs} {
-    height: 27px;
-    width: 90px;
+    height: 60px;
     font-weight: 200;
-    padding-left: 2px;
-    padding-right: 2px;
   }
 
   @media ${devices.sm} {
-    height: 36px;
-    width: 120px;
+    height: 60px;
     font-weight: 200;
-    padding-left: 2px;
-    padding-right: 2px;
   }
 
   @media ${devices.md} {
-    height: 46px;
-    width: 155px;
+    height: 60px;
     font-weight: 300;
-    padding-left: 3px;
-    padding-right: 3px;
   }
 
   @media ${devices.lg} {
     height: 56px;
-    width: 187px;
     font-weight: 300;
-    padding-left: 3px;
-    padding-right: 3px;
   }
 
   @media ${devices.xl} {
     height: 65px;
-    width: 219px;
     font-weight: 400;
-    padding-left: 4px;
-    padding-right: 4px;
   }
 
 `
@@ -347,3 +339,27 @@ export const NavBarProductsPartProductsText = {
   textDecoration: 'none',
   marginVertical: 5
 }
+
+export const NavBarProductPartPrimaryLinksContainer = {
+  textDecoration: 'none',
+  borderBottomWidth: 1,
+  borderTopWidth: 1,
+  borderLeftWidth: 0,
+  borderRightWidth: 0,
+  borderStyle: 'solid',
+  borderColor: Styles.Colours.PALETTE.DANITO._darkGray
+  // backgroundColor: Styles.Colours.PALETTE.DANITO._liteGray
+}
+
+export const NavBarSecondPartContainer = styled.div<{ isDisplay: boolean }>`
+  display: flex;
+  flex: 1;
+  width: 100%;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-right: 20px;
+
+  ${props => props.isDisplay && css`
+    display: none;
+  `}
+`

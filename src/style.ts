@@ -6,13 +6,16 @@ export const Application = styled.div`
 
 export const FlexContainer = styled.div`
   display: flex;
-  flex: 2;
+  flex: 1;
   height: 100%;
   width: 100%;
+  overflow: hidden;
 `
 
-export const RelativeContainer = styled.div`
+export const RelativeContainer = styled.div<{ isDisplay: boolean }>`
   position: relative;
   height: 100%;
   width: 100%;
+  z-index: 0;
+  overflow: initial;
 `

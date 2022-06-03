@@ -16,17 +16,17 @@ export const SliderContainer = styled.div`
   height: 900px;
 
   @media ${devices.xs} {
-    margin-top: 21px;
+    margin-top: 60px;
     height: 270px;
   }
 
   @media ${devices.sm} {
-    margin-top: 28px;
+    margin-top: 60px;
     height: 360px;
   }
 
   @media ${devices.md} {
-    margin-top: 36px;
+    margin-top: 60px;
     height: 465px;
   }
 

@@ -29,12 +29,12 @@ export enum ProductsCategory {
 }
 
 export const ProductsCategoryImages = {
-  window: require('constants/img/imgProduct/window.png').default,
-  door: require('constants/img/imgProduct/door.png').default,
-  blinds: require('constants/img/imgProduct/roletne.png').default,
-  solomaticVenetians: require('constants/img/imgProduct/solomaticVenecijaneri.png').default,
-  facade: require('constants/img/imgProduct/fasadaPVC.png').default,
-  slidingSystems: require('constants/img/imgProduct/terasniSistemi.png').default
+  window: require('constants/img/imgProduct/window.png'),
+  door: require('constants/img/imgProduct/door.png'),
+  blinds: require('constants/img/imgProduct/roletne.png'),
+  solomaticVenetians: require('constants/img/imgProduct/solomaticVenecijaneri.png'),
+  facade: require('constants/img/imgProduct/fasadaPVC.png'),
+  slidingSystems: require('constants/img/imgProduct/terasniSistemi.png')
 }
 
 export enum ProductsSubCategory {
@@ -65,29 +65,29 @@ export enum ProductsSubCategory {
 
 export const ProductsSubCategoryImages = {
   /** SubCategory windows */
-  pvcWindow: require('constants/img/imgProduct/windowPVC.png').default,
-  woodAluminumWindow: require('constants/img/imgProduct/windowWOODALUMINIUM.png').default,
-  aluminumWindow: require('constants/img/imgProduct/windowALUMINIUM.png').default,
+  pvcWindow: require('constants/img/imgProduct/windowPVC.png'),
+  woodAluminumWindow: require('constants/img/imgProduct/windowWOODALUMINIUM.png'),
+  aluminumWindow: require('constants/img/imgProduct/windowALUMINIUM.png'),
 
   /** SubCategory door */
-  pvcDoor: require('constants/img/imgProduct/doorPVC.png').default,
-  aluminumDoor: require('constants/img/imgProduct/doorALUMINIUM.png').default,
-  securityDoor: require('constants/img/imgProduct/doorWOOD.png').default,
+  pvcDoor: require('constants/img/imgProduct/doorPVC.png'),
+  aluminumDoor: require('constants/img/imgProduct/doorALUMINIUM.png'),
+  securityDoor: require('constants/img/imgProduct/doorWOOD.png'),
 
   /** SubCategory blinds */
-  insideBlinds: require('constants/img/imgProduct/roletneAluminium.png').default,
-  outsideBlinds: require('constants/img/imgProduct/roletnePvc.png').default,
+  insideBlinds: require('constants/img/imgProduct/roletneAluminium.png'),
+  outsideBlinds: require('constants/img/imgProduct/roletnePvc.png'),
 
   /** SubCategory facade */
-  fundermaxFacade: require('constants/img/imgProduct/fasadaPVC.png').default,
-  ventilatedAlucobondFacade: require('constants/img/imgProduct/fasadaPVC.png').default,
-  glassFacade: require('constants/img/imgProduct/fasadaPVC.png').default,
-  graniteFacade: require('constants/img/imgProduct/fasadaPVC.png').default,
+  fundermaxFacade: require('constants/img/imgProduct/fasadaPVC.png'),
+  ventilatedAlucobondFacade: require('constants/img/imgProduct/fasadaPVC.png'),
+  glassFacade: require('constants/img/imgProduct/fasadaPVC.png'),
+  graniteFacade: require('constants/img/imgProduct/fasadaPVC.png'),
 
   /** SubCategory slidingSystems */
-  liftingSlidingSystems: require('constants/img/imgProduct/terasePvc.png').default,
-  inRowSlidingSystems: require('constants/img/imgProduct/teraseDrvo.png').default,
-  accordionSlidingSystems: require('constants/img/imgProduct/teraseAluminium.png').default
+  liftingSlidingSystems: require('constants/img/imgProduct/terasePvc.png'),
+  inRowSlidingSystems: require('constants/img/imgProduct/teraseDrvo.png'),
+  accordionSlidingSystems: require('constants/img/imgProduct/teraseAluminium.png')
 }
 
 export enum ProductsDataInfo {
@@ -397,10 +397,10 @@ export const navBarData = [
 /** Part of Product Section Landing Page */
 
 export const ProductSectionImages = {
-  window: require('constants/img/landingPageCategoryPart/prozori.png').default,
-  door: require('constants/img/landingPageCategoryPart/vrata.png').default,
-  facade: require('constants/img/landingPageCategoryPart/fasade.png').default,
-  slidingSystems: require('constants/img/landingPageCategoryPart/klizni-sistemi.png').default
+  window: require('constants/img/landingPageCategoryPart/prozori.png'),
+  door: require('constants/img/landingPageCategoryPart/vrata.png'),
+  facade: require('constants/img/landingPageCategoryPart/fasade.png'),
+  slidingSystems: require('constants/img/landingPageCategoryPart/klizni-sistemi.png')
 }
 
 export type TProductSectionSubCategory = {
@@ -534,21 +534,21 @@ export type TTipsData = {
 }
 
 export const TipsImages = {
-  tip1: require('constants/img/tips/card/img1.jpg').default,
-  tip2: require('constants/img/tips/card/img4.png').default,
-  tip3: require('constants/img/tips/card/WindowImg6.jpg').default
+  tip1: require('constants/img/tips/card/img1.jpg'),
+  tip2: require('constants/img/tips/card/img4.png'),
+  tip3: require('constants/img/tips/card/WindowImg6.jpg')
 }
 
 export const InTipsImages = {
-  default: require('constants/img/tips/in/default.png').default,
-  img1: require('constants/img/tips/in/img1.jpg').default,
-  img2: require('constants/img/tips/in/img2.jpg').default,
-  img3: require('constants/img/tips/in/img3.png').default,
-  img4: require('constants/img/tips/in/img4.png').default,
-  img5: require('constants/img/tips/in/img5.jpg').default,
-  img6: require('constants/img/tips/in/img6.jpg').default,
-  img7: require('constants/img/tips/in/img7.jpg').default,
-  img8: require('constants/img/tips/in/img8.jpg').default
+  default: require('constants/img/tips/in/default.png'),
+  img1: require('constants/img/tips/in/img1.jpg'),
+  img2: require('constants/img/tips/in/img2.jpg'),
+  img3: require('constants/img/tips/in/img3.png'),
+  img4: require('constants/img/tips/in/img4.png'),
+  img5: require('constants/img/tips/in/img5.jpg'),
+  img6: require('constants/img/tips/in/img6.jpg'),
+  img7: require('constants/img/tips/in/img7.jpg'),
+  img8: require('constants/img/tips/in/img8.jpg')
 }
 
 export const TipsInitData = [
@@ -815,537 +815,537 @@ export type TProductsData = {
 }
 
 export const ProductsImages = {
-  pvcWindow1CoverImg: require('constants/img/imgProduct/ImgPageProduct/WindowImg1.jpg').default,
-  pvcWindow2overImg: require('constants/img/imgProduct/ImgPageProduct/WindowImg2.jpg').default,
-  pvcWindow3CoverImg: require('constants/img/imgProduct/ImgPageProduct/WindowImg3.jpg').default,
-  pvcWindow4CoverImg: require('constants/img/imgProduct/ImgPageProduct/WindowImg4.jpg').default,
-  pvcWindow5CoverImg: require('constants/img/imgProduct/ImgPageProduct/WindowImg5.jpg').default,
-  woodWindow1CoverImg: require('constants/img/imgProduct/ImgPageProduct/WindowImg6.jpg').default,
-  woodAluminiumWindow1CoverImg: require('constants/img/imgProduct/ImgPageProduct/WindowImg7.jpg').default,
-  aluminiumWindow1CoverImg: require('constants/img/imgProduct/ImgPageProduct/WindowImg8.jpg').default,
-  aluminiumWindow2CoverImg: require('constants/img/imgProduct/ImgPageProduct/WindowImg9.jpg').default,
-  aluminiumWindow3CoverImg: require('constants/img/imgProduct/ImgPageProduct/WindowImg10.jpg').default,
-  aluminiumWindow4CoverImg: require('constants/img/imgProduct/ImgPageProduct/WindowImg11.jpg').default,
-  entrancePvcDoorCoverImg: require('constants/img/imgProduct/ImgPageProduct/DoorImg1.jpg').default,
-  partitionPvcDoorCoverImg: require('constants/img/imgProduct/ImgPageProduct/DoorImg2.jpg').default,
-  profileWithoutThermalBreakAluminiumDoorCoverImg: require('constants/img/imgProduct/ImgPageProduct/AluminijumskiProzorBezTermoPrekida.jpg').default,
-  profileWithThermalBreakAluminiumDoorCoverImg: require('constants/img/imgProduct/ImgPageProduct/AluminijumProzoriProfilSaTermoprekidom.jpg').default,
-  doorWithHiddenWingAluminiumDoorCoverImg: require('constants/img/imgProduct/ImgPageProduct/DoorImg6.jpg').default,
+  pvcWindow1CoverImg: require('constants/img/imgProduct/ImgPageProduct/WindowImg1.jpg'),
+  pvcWindow2overImg: require('constants/img/imgProduct/ImgPageProduct/WindowImg2.jpg'),
+  pvcWindow3CoverImg: require('constants/img/imgProduct/ImgPageProduct/WindowImg3.jpg'),
+  pvcWindow4CoverImg: require('constants/img/imgProduct/ImgPageProduct/WindowImg4.jpg'),
+  pvcWindow5CoverImg: require('constants/img/imgProduct/ImgPageProduct/WindowImg5.jpg'),
+  woodWindow1CoverImg: require('constants/img/imgProduct/ImgPageProduct/WindowImg6.jpg'),
+  woodAluminiumWindow1CoverImg: require('constants/img/imgProduct/ImgPageProduct/WindowImg7.jpg'),
+  aluminiumWindow1CoverImg: require('constants/img/imgProduct/ImgPageProduct/WindowImg8.jpg'),
+  aluminiumWindow2CoverImg: require('constants/img/imgProduct/ImgPageProduct/WindowImg9.jpg'),
+  aluminiumWindow3CoverImg: require('constants/img/imgProduct/ImgPageProduct/WindowImg10.jpg'),
+  aluminiumWindow4CoverImg: require('constants/img/imgProduct/ImgPageProduct/WindowImg11.jpg'),
+  entrancePvcDoorCoverImg: require('constants/img/imgProduct/ImgPageProduct/DoorImg1.jpg'),
+  partitionPvcDoorCoverImg: require('constants/img/imgProduct/ImgPageProduct/DoorImg2.jpg'),
+  profileWithoutThermalBreakAluminiumDoorCoverImg: require('constants/img/imgProduct/ImgPageProduct/AluminijumskiProzorBezTermoPrekida.jpg'),
+  profileWithThermalBreakAluminiumDoorCoverImg: require('constants/img/imgProduct/ImgPageProduct/AluminijumProzoriProfilSaTermoprekidom.jpg'),
+  doorWithHiddenWingAluminiumDoorCoverImg: require('constants/img/imgProduct/ImgPageProduct/DoorImg6.jpg'),
 
-  aluminiumThermoBlindsInsideBlindsCoverImg: require('constants/img/imgProduct/ImgPageProduct/Roletne1.jpg').default,
-  pvcBlindsInsideBlindsCoverImg: require('constants/img/imgProduct/ImgPageProduct/Roletne2.jpg').default,
-  aluminiumOutsideBlindsRoundedOutsideBlindsCoverImg: require('constants/img/imgProduct/ImgPageProduct/Roletne3.jpg').default,
+  aluminiumThermoBlindsInsideBlindsCoverImg: require('constants/img/imgProduct/ImgPageProduct/Roletne1.jpg'),
+  pvcBlindsInsideBlindsCoverImg: require('constants/img/imgProduct/ImgPageProduct/Roletne2.jpg'),
+  aluminiumOutsideBlindsRoundedOutsideBlindsCoverImg: require('constants/img/imgProduct/ImgPageProduct/Roletne3.jpg'),
 
-  aluminiumOutsideBlindsPentagonalOutsideBlindsCoverImg: require('constants/img/imgProduct/ImgPageProduct/Fasade1.jpg').default,
-  subFacadeAluminiumBlindsCoverImg: require('constants/img/imgProduct/ImgPageProduct/Fasade2.jpg').default,
+  aluminiumOutsideBlindsPentagonalOutsideBlindsCoverImg: require('constants/img/imgProduct/ImgPageProduct/Fasade1.jpg'),
+  subFacadeAluminiumBlindsCoverImg: require('constants/img/imgProduct/ImgPageProduct/Fasade2.jpg'),
 
-  fundermaxFacadeFundermaxFacadeCoverImg: require('constants/img/imgProduct/ImgPageProduct/FundermaxFasada.jpg').default,
-  ventilatedAlucobondFacadeVentilatedAlucobondFacadeCoverImg: require('constants/img/imgProduct/ImgPageProduct/AlucoBondFasade.jpg').default,
-  structuralGlassFacadeCoverImg: require('constants/img/imgProduct/ImgPageProduct/StaklenaFasada.jpg').default,
-  standardGlassFacadeCoverImg: require('constants/img/imgProduct/ImgPageProduct/StaklenaFasada.jpg').default,
-  granitFacadeGranitFacadeCoverImg: require('constants/img/imgProduct/ImgPageProduct/GranitFasada.jpg').default,
-  pvcVekaSlideSlidingSystemCoverImg: require('constants/img/imgProduct/ImgPageProduct/PodiznoKlizniPvcVekaSlide.jpg').default,
-  aluUltraSlideSlidingSystemCoverImg: require('constants/img/imgProduct/ImgPageProduct/PodiznoKlizniAluUltraSlide.jpg').default,
-  aluVgPlusSlideSlidingSystemCoverImg: require('constants/img/imgProduct/ImgPageProduct/PodiznoKlizniAluVgPlus.jpg').default,
-  pvcVekaSoftline7082InRowSlidingSystemCoverImg: require('constants/img/imgProduct/ImgPageProduct/TerasniSistemi8.jpg').default,
-  aluInRowSlidingSystemCoverImg: require('constants/img/imgProduct/ImgPageProduct/TerasniSistemi9.jpg').default,
-  pvcAccordionSlidingSystemsCoverImg: require('constants/img/imgProduct/ImgPageProduct/HarmonikaAluHarmonika.jpg').default,
-  aluSmartiaM9800AccordionSlidingSystemsCoverImg: require('constants/img/imgProduct/ImgPageProduct/TerasniSistemi11.jpg').default,
-  aluSmartiaM19800AccordionSlidingSystemsCoverImg: require('constants/img/imgProduct/ImgPageProduct/TerasniSistemi12.jpg').default,
+  fundermaxFacadeFundermaxFacadeCoverImg: require('constants/img/imgProduct/ImgPageProduct/FundermaxFasada.jpg'),
+  ventilatedAlucobondFacadeVentilatedAlucobondFacadeCoverImg: require('constants/img/imgProduct/ImgPageProduct/AlucoBondFasade.jpg'),
+  structuralGlassFacadeCoverImg: require('constants/img/imgProduct/ImgPageProduct/StaklenaFasada.jpg'),
+  standardGlassFacadeCoverImg: require('constants/img/imgProduct/ImgPageProduct/StaklenaFasada.jpg'),
+  granitFacadeGranitFacadeCoverImg: require('constants/img/imgProduct/ImgPageProduct/GranitFasada.jpg'),
+  pvcVekaSlideSlidingSystemCoverImg: require('constants/img/imgProduct/ImgPageProduct/PodiznoKlizniPvcVekaSlide.jpg'),
+  aluUltraSlideSlidingSystemCoverImg: require('constants/img/imgProduct/ImgPageProduct/PodiznoKlizniAluUltraSlide.jpg'),
+  aluVgPlusSlideSlidingSystemCoverImg: require('constants/img/imgProduct/ImgPageProduct/PodiznoKlizniAluVgPlus.jpg'),
+  pvcVekaSoftline7082InRowSlidingSystemCoverImg: require('constants/img/imgProduct/ImgPageProduct/TerasniSistemi8.jpg'),
+  aluInRowSlidingSystemCoverImg: require('constants/img/imgProduct/ImgPageProduct/TerasniSistemi9.jpg'),
+  pvcAccordionSlidingSystemsCoverImg: require('constants/img/imgProduct/ImgPageProduct/HarmonikaAluHarmonika.jpg'),
+  aluSmartiaM9800AccordionSlidingSystemsCoverImg: require('constants/img/imgProduct/ImgPageProduct/TerasniSistemi11.jpg'),
+  aluSmartiaM19800AccordionSlidingSystemsCoverImg: require('constants/img/imgProduct/ImgPageProduct/TerasniSistemi12.jpg'),
 
-  solomaticVenetiansCoverImg: require('constants/img/imgProduct/ImgPageProduct/SolomatikVenecijaneri.jpg').default
+  solomaticVenetiansCoverImg: require('constants/img/imgProduct/ImgPageProduct/SolomatikVenecijaneri.jpg')
 }
 
 export const PreviewVideo = {
-  veka70Video: require('constants/video/VEKA70.mp4').default,
-  veka82Video: require('constants/video/VEKA82.mp4').default,
-  PvcUlaznaVrata: require('constants/video/PvcUlaznaVrata.mp4').default,
-  PvcPregradnaVrata: require('constants/video/PvcPregradnaVrata.mp4').default,
-  VrataSkrivenioKrilo: require('constants/video/VrataSkrivenioKrilo.mp4').default,
-  SigurnosnaVrataSlika: require('constants/video/SigurnosnaVrata.jpg').default
+  veka70Video: require('constants/video/VEKA70.mp4'),
+  veka82Video: require('constants/video/VEKA82.mp4'),
+  PvcUlaznaVrata: require('constants/video/PvcUlaznaVrata.mp4'),
+  PvcPregradnaVrata: require('constants/video/PvcPregradnaVrata.mp4'),
+  VrataSkrivenioKrilo: require('constants/video/VrataSkrivenioKrilo.mp4'),
+  SigurnosnaVrataSlika: require('constants/video/SigurnosnaVrata.jpg')
 }
 
 export const Panels = {
   inox: [
     {
-      img: require('constants/img/panels/newPanels/pvcPanels/PVC 51-126E i 51_1-72E.jpg').default,
-      smallImg: require('constants/img/panels/newPanels/pvcPanels/small/PVC 51-126E i 51_1-72E.jpg').default,
+      img: require('constants/img/panels/newPanels/pvcPanels/PVC 51-126E i 51_1-72E.jpg'),
+      smallImg: require('constants/img/panels/newPanels/pvcPanels/small/PVC 51-126E i 51_1-72E.jpg'),
       text: 'PVC 51 cena: 126e i 51_1 cena: 72e'
     },
     {
-      img: require('constants/img/panels/newPanels/pvcPanels/PVC 52-150E.jpg').default,
-      smallImg: require('constants/img/panels/newPanels/pvcPanels/small/PVC 52-150E.jpg').default,
+      img: require('constants/img/panels/newPanels/pvcPanels/PVC 52-150E.jpg'),
+      smallImg: require('constants/img/panels/newPanels/pvcPanels/small/PVC 52-150E.jpg'),
       text: 'PVC 52 cena: 150e'
     },
     {
-      img: require('constants/img/panels/newPanels/pvcPanels/PVC 53-114E.jpg').default,
-      smallImg: require('constants/img/panels/newPanels/pvcPanels/small/PVC 53-114E.jpg').default,
+      img: require('constants/img/panels/newPanels/pvcPanels/PVC 53-114E.jpg'),
+      smallImg: require('constants/img/panels/newPanels/pvcPanels/small/PVC 53-114E.jpg'),
       text: 'PVC 53 cena: 114e'
     },
     {
-      img: require('constants/img/panels/newPanels/pvcPanels/PVC 60-150E i 60_1-84E.jpg').default,
-      smallImg: require('constants/img/panels/newPanels/pvcPanels/small/PVC 60-150E i 60_1-84E.jpg').default,
+      img: require('constants/img/panels/newPanels/pvcPanels/PVC 60-150E i 60_1-84E.jpg'),
+      smallImg: require('constants/img/panels/newPanels/pvcPanels/small/PVC 60-150E i 60_1-84E.jpg'),
       text: 'PVC 60 cena: 150e i 60_1 cena: 84e'
     },
     {
-      img: require('constants/img/panels/newPanels/pvcPanels/PVC 61-144E i 61_1-84E.jpg').default,
-      smallImg: require('constants/img/panels/newPanels/pvcPanels/small/PVC 61-144E i 61_1-84E.jpg').default,
+      img: require('constants/img/panels/newPanels/pvcPanels/PVC 61-144E i 61_1-84E.jpg'),
+      smallImg: require('constants/img/panels/newPanels/pvcPanels/small/PVC 61-144E i 61_1-84E.jpg'),
       text: 'PVC 61 cena: 144e i 61_1 cena: 84e'
     },
     {
-      img: require('constants/img/panels/newPanels/pvcPanels/PVC 70-150E i 70_1-84E.jpg').default,
-      smallImg: require('constants/img/panels/newPanels/pvcPanels/small/PVC 70-150E i 70_1-84E.jpg').default,
+      img: require('constants/img/panels/newPanels/pvcPanels/PVC 70-150E i 70_1-84E.jpg'),
+      smallImg: require('constants/img/panels/newPanels/pvcPanels/small/PVC 70-150E i 70_1-84E.jpg'),
       text: 'PVC 70 cena: 150e i 70_1 cena: 84e'
     },
     {
-      img: require('constants/img/panels/newPanels/pvcPanels/PVC 71-144E.jpg').default,
-      smallImg: require('constants/img/panels/newPanels/pvcPanels/small/PVC 71-144E.jpg').default,
+      img: require('constants/img/panels/newPanels/pvcPanels/PVC 71-144E.jpg'),
+      smallImg: require('constants/img/panels/newPanels/pvcPanels/small/PVC 71-144E.jpg'),
       text: 'PVC 71 cena: 144e'
     },
     {
-      img: require('constants/img/panels/newPanels/pvcPanels/PVC 80-162E.jpg').default,
-      smallImg: require('constants/img/panels/newPanels/pvcPanels/small/PVC 80-162E.jpg').default,
+      img: require('constants/img/panels/newPanels/pvcPanels/PVC 80-162E.jpg'),
+      smallImg: require('constants/img/panels/newPanels/pvcPanels/small/PVC 80-162E.jpg'),
       text: 'PVC 80 cena: 162e'
     },
     {
-      img: require('constants/img/panels/newPanels/pvcPanels/PVC 90-144E i 90_1-78E.jpg').default,
-      smallImg: require('constants/img/panels/newPanels/pvcPanels/small/PVC 90-144E i 90_1-78E.jpg').default,
+      img: require('constants/img/panels/newPanels/pvcPanels/PVC 90-144E i 90_1-78E.jpg'),
+      smallImg: require('constants/img/panels/newPanels/pvcPanels/small/PVC 90-144E i 90_1-78E.jpg'),
       text: 'PVC 90 cena: 144e i 90_1 cena: 78e'
     },
     {
-      img: require('constants/img/panels/newPanels/pvcPanels/PVC 91-144E.jpg').default,
-      smallImg: require('constants/img/panels/newPanels/pvcPanels/small/PVC 91-144E.jpg').default,
+      img: require('constants/img/panels/newPanels/pvcPanels/PVC 91-144E.jpg'),
+      smallImg: require('constants/img/panels/newPanels/pvcPanels/small/PVC 91-144E.jpg'),
       text: 'PVC 91 cena: 144e'
     },
     {
-      img: require('constants/img/panels/newPanels/pvcPanels/PVC 100-144E.jpg').default,
-      smallImg: require('constants/img/panels/newPanels/pvcPanels/small/PVC 100-144E.jpg').default,
+      img: require('constants/img/panels/newPanels/pvcPanels/PVC 100-144E.jpg'),
+      smallImg: require('constants/img/panels/newPanels/pvcPanels/small/PVC 100-144E.jpg'),
       text: 'PVC 100 cena: 144e'
     },
     {
-      img: require('constants/img/panels/newPanels/pvcPanels/PVC 110-156E i 110_1-84E.jpg').default,
-      smallImg: require('constants/img/panels/newPanels/pvcPanels/small/PVC 110-156E i 110_1-84E.jpg').default,
+      img: require('constants/img/panels/newPanels/pvcPanels/PVC 110-156E i 110_1-84E.jpg'),
+      smallImg: require('constants/img/panels/newPanels/pvcPanels/small/PVC 110-156E i 110_1-84E.jpg'),
       text: 'PVC 110 cena: 156e i 110_1 cena: 84e'
     },
     {
-      img: require('constants/img/panels/newPanels/pvcPanels/PVC 120-150E.jpg').default,
-      smallImg: require('constants/img/panels/newPanels/pvcPanels/small/PVC 120-150E.jpg').default,
+      img: require('constants/img/panels/newPanels/pvcPanels/PVC 120-150E.jpg'),
+      smallImg: require('constants/img/panels/newPanels/pvcPanels/small/PVC 120-150E.jpg'),
       text: 'PVC 120 cena: 150e'
     },
     {
-      img: require('constants/img/panels/newPanels/pvcPanels/PVC-M 1-144E I PVC-M 1_1-96E.jpg').default,
-      smallImg: require('constants/img/panels/newPanels/pvcPanels/small/PVC-M 1-144E I PVC-M 1_1-96E.jpg').default,
+      img: require('constants/img/panels/newPanels/pvcPanels/PVC-M 1-144E I PVC-M 1_1-96E.jpg'),
+      smallImg: require('constants/img/panels/newPanels/pvcPanels/small/PVC-M 1-144E I PVC-M 1_1-96E.jpg'),
       text: 'PVC-M 1 cena: 144e i PVC-M 1_1 cena: 96e'
     },
     {
-      img: require('constants/img/panels/newPanels/pvcPanels/PVC-M 2-144E I PVC-M 2_1-108E.jpg').default,
-      smallImg: require('constants/img/panels/newPanels/pvcPanels/small/PVC-M 2-144E I PVC-M 2_1-108E.jpg').default,
+      img: require('constants/img/panels/newPanels/pvcPanels/PVC-M 2-144E I PVC-M 2_1-108E.jpg'),
+      smallImg: require('constants/img/panels/newPanels/pvcPanels/small/PVC-M 2-144E I PVC-M 2_1-108E.jpg'),
       text: 'PVC-M 2 cena: 144e i PVC-M 2_1 cena: 108e'
     },
     {
-      img: require('constants/img/panels/newPanels/pvcPanels/PVC-M 3-132E I PVC-M 3_1-108E.jpg').default,
-      smallImg: require('constants/img/panels/newPanels/pvcPanels/small/PVC-M 3-132E I PVC-M 3_1-108E.jpg').default,
+      img: require('constants/img/panels/newPanels/pvcPanels/PVC-M 3-132E I PVC-M 3_1-108E.jpg'),
+      smallImg: require('constants/img/panels/newPanels/pvcPanels/small/PVC-M 3-132E I PVC-M 3_1-108E.jpg'),
       text: 'PVC-M 3 cena: 132e i PVC-M 3_1 cena: 108e'
     },
     {
-      img: require('constants/img/panels/newPanels/pvcPanels/PVC-M 4-132E I PVC-M 4_1-108E.jpg').default,
-      smallImg: require('constants/img/panels/newPanels/pvcPanels/small/PVC-M 4-132E I PVC-M 4_1-108E.jpg').default,
+      img: require('constants/img/panels/newPanels/pvcPanels/PVC-M 4-132E I PVC-M 4_1-108E.jpg'),
+      smallImg: require('constants/img/panels/newPanels/pvcPanels/small/PVC-M 4-132E I PVC-M 4_1-108E.jpg'),
       text: 'PVC-M 4 cena: 132e i PVC-M 4_1 cena: 108e'
     },
     {
-      img: require('constants/img/panels/newPanels/pvcPanels/PVC-M 5-132E I PVC-M 5_1-96E.jpg').default,
-      smallImg: require('constants/img/panels/newPanels/pvcPanels/small/PVC-M 5-132E I PVC-M 5_1-96E.jpg').default,
+      img: require('constants/img/panels/newPanels/pvcPanels/PVC-M 5-132E I PVC-M 5_1-96E.jpg'),
+      smallImg: require('constants/img/panels/newPanels/pvcPanels/small/PVC-M 5-132E I PVC-M 5_1-96E.jpg'),
       text: 'PVC-M 5 cena: 132e i PVC-M 5_1 cena: 96e'
     },
     {
-      img: require('constants/img/panels/newPanels/pvcPanels/PVC-M 6-132E I PVC-M 6_1-108E.jpg').default,
-      smallImg: require('constants/img/panels/newPanels/pvcPanels/small/PVC-M 6-132E I PVC-M 6_1-108E.jpg').default,
+      img: require('constants/img/panels/newPanels/pvcPanels/PVC-M 6-132E I PVC-M 6_1-108E.jpg'),
+      smallImg: require('constants/img/panels/newPanels/pvcPanels/small/PVC-M 6-132E I PVC-M 6_1-108E.jpg'),
       text: 'PVC-M 6 cena: 132e i PVC-M 6_1 cena: 108e'
     },
     {
-      img: require('constants/img/panels/newPanels/pvcPanels/PVC-M 7-144E I PVC-M 7_1-108E.jpg').default,
-      smallImg: require('constants/img/panels/newPanels/pvcPanels/small/PVC-M 7-144E I PVC-M 7_1-108E.jpg').default,
+      img: require('constants/img/panels/newPanels/pvcPanels/PVC-M 7-144E I PVC-M 7_1-108E.jpg'),
+      smallImg: require('constants/img/panels/newPanels/pvcPanels/small/PVC-M 7-144E I PVC-M 7_1-108E.jpg'),
       text: 'PVC-M 7 cena: 144e i PVC-M 7_1 cena: 108e'
     },
     {
-      img: require('constants/img/panels/newPanels/pvcPanels/PVC-S-1- INOX-180E.png').default,
-      smallImg: require('constants/img/panels/newPanels/pvcPanels/small/PVC-S-1- INOX-180E.png').default,
+      img: require('constants/img/panels/newPanels/pvcPanels/PVC-S-1- INOX-180E.png'),
+      smallImg: require('constants/img/panels/newPanels/pvcPanels/small/PVC-S-1- INOX-180E.png'),
       text: 'PVC-S-1-INOX cena: 180e'
     },
     {
-      img: require('constants/img/panels/newPanels/pvcPanels/PVC-S-1-144E.png').default,
-      smallImg: require('constants/img/panels/newPanels/pvcPanels/small/PVC-S-1-144E.png').default,
+      img: require('constants/img/panels/newPanels/pvcPanels/PVC-S-1-144E.png'),
+      smallImg: require('constants/img/panels/newPanels/pvcPanels/small/PVC-S-1-144E.png'),
       text: 'PVC-S-1 cena: 144e'
     },
     {
-      img: require('constants/img/panels/newPanels/pvcPanels/PVC-S-2-144E.jpg').default,
-      smallImg: require('constants/img/panels/newPanels/pvcPanels/small/PVC-S-2-144E.jpg').default,
+      img: require('constants/img/panels/newPanels/pvcPanels/PVC-S-2-144E.jpg'),
+      smallImg: require('constants/img/panels/newPanels/pvcPanels/small/PVC-S-2-144E.jpg'),
       text: 'PVC-S-2 cena: 144e'
     },
     {
-      img: require('constants/img/panels/newPanels/pvcPanels/PVC-S-2-INOX-180E.png').default,
-      smallImg: require('constants/img/panels/newPanels/pvcPanels/small/PVC-S-2-INOX-180E.png').default,
+      img: require('constants/img/panels/newPanels/pvcPanels/PVC-S-2-INOX-180E.png'),
+      smallImg: require('constants/img/panels/newPanels/pvcPanels/small/PVC-S-2-INOX-180E.png'),
       text: 'PVC-S-2-INOX cena: 180e'
     },
     {
-      img: require('constants/img/panels/newPanels/pvcPanels/PVC-S-3- INOX-180E.jpg').default,
-      smallImg: require('constants/img/panels/newPanels/pvcPanels/small/PVC-S-3- INOX-180E.jpg').default,
+      img: require('constants/img/panels/newPanels/pvcPanels/PVC-S-3- INOX-180E.jpg'),
+      smallImg: require('constants/img/panels/newPanels/pvcPanels/small/PVC-S-3- INOX-180E.jpg'),
       text: 'PVC-S-3-INOX cena: 180e'
     },
     {
-      img: require('constants/img/panels/newPanels/pvcPanels/PVC-S-3-120E.jpg').default,
-      smallImg: require('constants/img/panels/newPanels/pvcPanels/small/PVC-S-3-120E.jpg').default,
+      img: require('constants/img/panels/newPanels/pvcPanels/PVC-S-3-120E.jpg'),
+      smallImg: require('constants/img/panels/newPanels/pvcPanels/small/PVC-S-3-120E.jpg'),
       text: 'PVC-S-3 cena: 120e'
     },
     {
-      img: require('constants/img/panels/newPanels/pvcPanels/PVC-S-4 INOX-180E.jpg').default,
-      smallImg: require('constants/img/panels/newPanels/pvcPanels/small/PVC-S-4 INOX-180E.jpg').default,
+      img: require('constants/img/panels/newPanels/pvcPanels/PVC-S-4 INOX-180E.jpg'),
+      smallImg: require('constants/img/panels/newPanels/pvcPanels/small/PVC-S-4 INOX-180E.jpg'),
       text: 'PVC-S-4-INOX cena: 180e'
     },
     {
-      img: require('constants/img/panels/newPanels/pvcPanels/PVC-S-4-144E.jpg').default,
-      smallImg: require('constants/img/panels/newPanels/pvcPanels/small/PVC-S-4-144E.jpg').default,
+      img: require('constants/img/panels/newPanels/pvcPanels/PVC-S-4-144E.jpg'),
+      smallImg: require('constants/img/panels/newPanels/pvcPanels/small/PVC-S-4-144E.jpg'),
       text: 'PVC-S-4 cena: 144e'
     },
     {
-      img: require('constants/img/panels/newPanels/pvcPanels/PVC-S-5 - INOX-180E.jpg').default,
-      smallImg: require('constants/img/panels/newPanels/pvcPanels/small/PVC-S-5 - INOX-180E.jpg').default,
+      img: require('constants/img/panels/newPanels/pvcPanels/PVC-S-5 - INOX-180E.jpg'),
+      smallImg: require('constants/img/panels/newPanels/pvcPanels/small/PVC-S-5 - INOX-180E.jpg'),
       text: 'PVC-S-5-INOX cena: 180e'
     },
     {
-      img: require('constants/img/panels/newPanels/pvcPanels/PVC-S-5-144E.jpg').default,
-      smallImg: require('constants/img/panels/newPanels/pvcPanels/small/PVC-S-5-144E.jpg').default,
+      img: require('constants/img/panels/newPanels/pvcPanels/PVC-S-5-144E.jpg'),
+      smallImg: require('constants/img/panels/newPanels/pvcPanels/small/PVC-S-5-144E.jpg'),
       text: 'PVC-S-5 cena: 144e'
     },
     {
-      img: require('constants/img/panels/newPanels/pvcPanels/PVC-S-6 - INOX-180E.jpg').default,
-      smallImg: require('constants/img/panels/newPanels/pvcPanels/small/PVC-S-6 - INOX-180E.jpg').default,
+      img: require('constants/img/panels/newPanels/pvcPanels/PVC-S-6 - INOX-180E.jpg'),
+      smallImg: require('constants/img/panels/newPanels/pvcPanels/small/PVC-S-6 - INOX-180E.jpg'),
       text: 'PVC-S-6-INOX cena: 180e'
     },
     {
-      img: require('constants/img/panels/newPanels/pvcPanels/PVC-S-6-144E.jpg').default,
-      smallImg: require('constants/img/panels/newPanels/pvcPanels/small/PVC-S-6-144E.jpg').default,
+      img: require('constants/img/panels/newPanels/pvcPanels/PVC-S-6-144E.jpg'),
+      smallImg: require('constants/img/panels/newPanels/pvcPanels/small/PVC-S-6-144E.jpg'),
       text: 'PVC-S-6 cena: 144e'
     }
   ],
   premium: [
     {
-      img: require('constants/img/panels/newPanels/premiumPanels/PREMIUM-1-540e.jpg').default,
-      smallImg: require('constants/img/panels/newPanels/premiumPanels/small/PREMIUM-1-540e.jpg').default,
+      img: require('constants/img/panels/newPanels/premiumPanels/PREMIUM-1-540e.jpg'),
+      smallImg: require('constants/img/panels/newPanels/premiumPanels/small/PREMIUM-1-540e.jpg'),
       text: 'PREMIUM-1 cena: 540e'
     },
     {
-      img: require('constants/img/panels/newPanels/premiumPanels/PREMIUM-2-504e.jpg').default,
-      smallImg: require('constants/img/panels/newPanels/premiumPanels/small/PREMIUM-2-504e.jpg').default,
+      img: require('constants/img/panels/newPanels/premiumPanels/PREMIUM-2-504e.jpg'),
+      smallImg: require('constants/img/panels/newPanels/premiumPanels/small/PREMIUM-2-504e.jpg'),
       text: 'PREMIUM-2 cena: 504e'
     },
     {
-      img: require('constants/img/panels/newPanels/premiumPanels/PREMIUM-3-576e.jpg').default,
-      smallImg: require('constants/img/panels/newPanels/premiumPanels/small/PREMIUM-3-576e.jpg').default,
+      img: require('constants/img/panels/newPanels/premiumPanels/PREMIUM-3-576e.jpg'),
+      smallImg: require('constants/img/panels/newPanels/premiumPanels/small/PREMIUM-3-576e.jpg'),
       text: 'PREMIUM-3 cena: 576e'
     },
     {
-      img: require('constants/img/panels/newPanels/premiumPanels/PREMIUM-4-660e.jpg').default,
-      smallImg: require('constants/img/panels/newPanels/premiumPanels/small/PREMIUM-4-660e.jpg').default,
+      img: require('constants/img/panels/newPanels/premiumPanels/PREMIUM-4-660e.jpg'),
+      smallImg: require('constants/img/panels/newPanels/premiumPanels/small/PREMIUM-4-660e.jpg'),
       text: 'PREMIUM-4 cena: 660e'
     },
     {
-      img: require('constants/img/panels/newPanels/premiumPanels/PREMIUM-5-504e.jpg').default,
-      smallImg: require('constants/img/panels/newPanels/premiumPanels/small/PREMIUM-5-504e.jpg').default,
+      img: require('constants/img/panels/newPanels/premiumPanels/PREMIUM-5-504e.jpg'),
+      smallImg: require('constants/img/panels/newPanels/premiumPanels/small/PREMIUM-5-504e.jpg'),
       text: 'PREMIUM-5 cena: 504e'
     },
     {
-      img: require('constants/img/panels/newPanels/premiumPanels/PREMIUM-6-540e.jpg').default,
-      smallImg: require('constants/img/panels/newPanels/premiumPanels/small/PREMIUM-6-540e.jpg').default,
+      img: require('constants/img/panels/newPanels/premiumPanels/PREMIUM-6-540e.jpg'),
+      smallImg: require('constants/img/panels/newPanels/premiumPanels/small/PREMIUM-6-540e.jpg'),
       text: 'PREMIUM-6 cena: 540e'
     },
     {
-      img: require('constants/img/panels/newPanels/premiumPanels/PREMIUM-7-720e.jpg').default,
-      smallImg: require('constants/img/panels/newPanels/premiumPanels/small/PREMIUM-7-720e.jpg').default,
+      img: require('constants/img/panels/newPanels/premiumPanels/PREMIUM-7-720e.jpg'),
+      smallImg: require('constants/img/panels/newPanels/premiumPanels/small/PREMIUM-7-720e.jpg'),
       text: 'PREMIUM-7 cena: 720e'
     },
     {
-      img: require('constants/img/panels/newPanels/premiumPanels/PREMIUM-8-540e.jpg').default,
-      smallImg: require('constants/img/panels/newPanels/premiumPanels/small/PREMIUM-8-540e.jpg').default,
+      img: require('constants/img/panels/newPanels/premiumPanels/PREMIUM-8-540e.jpg'),
+      smallImg: require('constants/img/panels/newPanels/premiumPanels/small/PREMIUM-8-540e.jpg'),
       text: 'PREMIUM-8 cena: 540e'
     },
     {
-      img: require('constants/img/panels/newPanels/premiumPanels/PREMIUM-9-600e.jpg').default,
-      smallImg: require('constants/img/panels/newPanels/premiumPanels/small/PREMIUM-9-600e.jpg').default,
+      img: require('constants/img/panels/newPanels/premiumPanels/PREMIUM-9-600e.jpg'),
+      smallImg: require('constants/img/panels/newPanels/premiumPanels/small/PREMIUM-9-600e.jpg'),
       text: 'PREMIUM-9 cena: 600e'
     },
     {
-      img: require('constants/img/panels/newPanels/premiumPanels/PREMIUM-10-540e.jpg').default,
-      smallImg: require('constants/img/panels/newPanels/premiumPanels/small/PREMIUM-10-540e.jpg').default,
+      img: require('constants/img/panels/newPanels/premiumPanels/PREMIUM-10-540e.jpg'),
+      smallImg: require('constants/img/panels/newPanels/premiumPanels/small/PREMIUM-10-540e.jpg'),
       text: 'PREMIUM-10 cena: 540e'
     },
     {
-      img: require('constants/img/panels/newPanels/premiumPanels/PREMIUM-11-540e.jpg').default,
-      smallImg: require('constants/img/panels/newPanels/premiumPanels/small/PREMIUM-11-540e.jpg').default,
+      img: require('constants/img/panels/newPanels/premiumPanels/PREMIUM-11-540e.jpg'),
+      smallImg: require('constants/img/panels/newPanels/premiumPanels/small/PREMIUM-11-540e.jpg'),
       text: 'PREMIUM-11 cena: 540e'
     },
     {
-      img: require('constants/img/panels/newPanels/premiumPanels/PREMIUM-12-504e.jpg').default,
-      smallImg: require('constants/img/panels/newPanels/premiumPanels/small/PREMIUM-12-504e.jpg').default,
+      img: require('constants/img/panels/newPanels/premiumPanels/PREMIUM-12-504e.jpg'),
+      smallImg: require('constants/img/panels/newPanels/premiumPanels/small/PREMIUM-12-504e.jpg'),
       text: 'PREMIUM-12 cena: 504e'
     },
     {
-      img: require('constants/img/panels/newPanels/premiumPanels/PREMIUM-14-480e.jpg').default,
-      smallImg: require('constants/img/panels/newPanels/premiumPanels/small/PREMIUM-14-480e.jpg').default,
+      img: require('constants/img/panels/newPanels/premiumPanels/PREMIUM-14-480e.jpg'),
+      smallImg: require('constants/img/panels/newPanels/premiumPanels/small/PREMIUM-14-480e.jpg'),
       text: 'PREMIUM-14 cena: 480e'
     },
     {
-      img: require('constants/img/panels/newPanels/premiumPanels/PREMIUM-15-540e.jpg').default,
-      smallImg: require('constants/img/panels/newPanels/premiumPanels/small/PREMIUM-15-540e.jpg').default,
+      img: require('constants/img/panels/newPanels/premiumPanels/PREMIUM-15-540e.jpg'),
+      smallImg: require('constants/img/panels/newPanels/premiumPanels/small/PREMIUM-15-540e.jpg'),
       text: 'PREMIUM-15 cena: 540e'
     },
     {
-      img: require('constants/img/panels/newPanels/premiumPanels/PREMIUM-16-480e.jpg').default,
-      smallImg: require('constants/img/panels/newPanels/premiumPanels/small/PREMIUM-16-480e.jpg').default,
+      img: require('constants/img/panels/newPanels/premiumPanels/PREMIUM-16-480e.jpg'),
+      smallImg: require('constants/img/panels/newPanels/premiumPanels/small/PREMIUM-16-480e.jpg'),
       text: 'PREMIUM-16 cena: 480e'
     },
     {
-      img: require('constants/img/panels/newPanels/premiumPanels/PREMIUM-17-696e.jpg').default,
-      smallImg: require('constants/img/panels/newPanels/premiumPanels/small/PREMIUM-17-696e.jpg').default,
+      img: require('constants/img/panels/newPanels/premiumPanels/PREMIUM-17-696e.jpg'),
+      smallImg: require('constants/img/panels/newPanels/premiumPanels/small/PREMIUM-17-696e.jpg'),
       text: 'PREMIUM-17 cena: 696e'
     },
     {
-      img: require('constants/img/panels/newPanels/premiumPanels/PREMIUM-18-576.JPG').default,
-      smallImg: require('constants/img/panels/newPanels/premiumPanels/small/PREMIUM-18-576.JPG').default,
+      img: require('constants/img/panels/newPanels/premiumPanels/PREMIUM-18-576.JPG'),
+      smallImg: require('constants/img/panels/newPanels/premiumPanels/small/PREMIUM-18-576.JPG'),
       text: 'PREMIUM-18 cena: 576e'
     },
     {
-      img: require('constants/img/panels/newPanels/premiumPanels/PREMIUM-19-540e.PNG').default,
-      smallImg: require('constants/img/panels/newPanels/premiumPanels/small/PREMIUM-19-540e.PNG').default,
+      img: require('constants/img/panels/newPanels/premiumPanels/PREMIUM-19-540e.PNG'),
+      smallImg: require('constants/img/panels/newPanels/premiumPanels/small/PREMIUM-19-540e.PNG'),
       text: 'PREMIUM-19 cena: 540e'
     },
     {
-      img: require('constants/img/panels/newPanels/premiumPanels/PREMIUM-20-576e.png').default,
-      smallImg: require('constants/img/panels/newPanels/premiumPanels/small/PREMIUM-20-576e.png').default,
+      img: require('constants/img/panels/newPanels/premiumPanels/PREMIUM-20-576e.png'),
+      smallImg: require('constants/img/panels/newPanels/premiumPanels/small/PREMIUM-20-576e.png'),
       text: 'PREMIUM-20 cena: 576e'
     },
     {
-      img: require('constants/img/panels/newPanels/premiumPanels/PREMIUM-21-576e.PNG').default,
-      smallImg: require('constants/img/panels/newPanels/premiumPanels/small/PREMIUM-21-576e.PNG').default,
+      img: require('constants/img/panels/newPanels/premiumPanels/PREMIUM-21-576e.PNG'),
+      smallImg: require('constants/img/panels/newPanels/premiumPanels/small/PREMIUM-21-576e.PNG'),
       text: 'PREMIUM-21 cena: 576e'
     },
     {
-      img: require('constants/img/panels/newPanels/premiumPanels/PREMIUM-22-660e.jpg').default,
-      smallImg: require('constants/img/panels/newPanels/premiumPanels/small/PREMIUM-22-660e.jpg').default,
+      img: require('constants/img/panels/newPanels/premiumPanels/PREMIUM-22-660e.jpg'),
+      smallImg: require('constants/img/panels/newPanels/premiumPanels/small/PREMIUM-22-660e.jpg'),
       text: 'PREMIUM-22 cena: 660e'
     },
     {
-      img: require('constants/img/panels/newPanels/premiumPanels/PREMIUM-23-576e.jpg').default,
-      smallImg: require('constants/img/panels/newPanels/premiumPanels/small/PREMIUM-23-576e.jpg').default,
+      img: require('constants/img/panels/newPanels/premiumPanels/PREMIUM-23-576e.jpg'),
+      smallImg: require('constants/img/panels/newPanels/premiumPanels/small/PREMIUM-23-576e.jpg'),
       text: 'PREMIUM-23 cena: 576e'
     },
     {
-      img: require('constants/img/panels/newPanels/premiumPanels/PREMIUM-24-600e.jpg').default,
-      smallImg: require('constants/img/panels/newPanels/premiumPanels/small/PREMIUM-24-600e.jpg').default,
+      img: require('constants/img/panels/newPanels/premiumPanels/PREMIUM-24-600e.jpg'),
+      smallImg: require('constants/img/panels/newPanels/premiumPanels/small/PREMIUM-24-600e.jpg'),
       text: 'PREMIUM-24 cena: 600e'
     },
     {
-      img: require('constants/img/panels/newPanels/premiumPanels/PREMIUM-25-576e.jpg').default,
-      smallImg: require('constants/img/panels/newPanels/premiumPanels/small/PREMIUM-25-576e.jpg').default,
+      img: require('constants/img/panels/newPanels/premiumPanels/PREMIUM-25-576e.jpg'),
+      smallImg: require('constants/img/panels/newPanels/premiumPanels/small/PREMIUM-25-576e.jpg'),
       text: 'PREMIUM-25 cena: 576e'
     },
     {
-      img: require('constants/img/panels/newPanels/premiumPanels/PREMIUM-26-660e.jpg').default,
-      smallImg: require('constants/img/panels/newPanels/premiumPanels/small/PREMIUM-26-660e.jpg').default,
+      img: require('constants/img/panels/newPanels/premiumPanels/PREMIUM-26-660e.jpg'),
+      smallImg: require('constants/img/panels/newPanels/premiumPanels/small/PREMIUM-26-660e.jpg'),
       text: 'PREMIUM-26 cena: 660e'
     },
     {
-      img: require('constants/img/panels/newPanels/premiumPanels/PREMIUM-27-420e.jpg').default,
-      smallImg: require('constants/img/panels/newPanels/premiumPanels/small/PREMIUM-27-420e.jpg').default,
+      img: require('constants/img/panels/newPanels/premiumPanels/PREMIUM-27-420e.jpg'),
+      smallImg: require('constants/img/panels/newPanels/premiumPanels/small/PREMIUM-27-420e.jpg'),
       text: 'PREMIUM-27 cena: 420e'
     },
     {
-      img: require('constants/img/panels/newPanels/premiumPanels/PREMIUM-28-696e.jpg').default,
-      smallImg: require('constants/img/panels/newPanels/premiumPanels/small/PREMIUM-28-696e.jpg').default,
+      img: require('constants/img/panels/newPanels/premiumPanels/PREMIUM-28-696e.jpg'),
+      smallImg: require('constants/img/panels/newPanels/premiumPanels/small/PREMIUM-28-696e.jpg'),
       text: 'PREMIUM-28 cena: 696e'
     },
     {
-      img: require('constants/img/panels/newPanels/premiumPanels/PREMIUM-29-600e.jpg').default,
-      smallImg: require('constants/img/panels/newPanels/premiumPanels/small/PREMIUM-29-600e.jpg').default,
+      img: require('constants/img/panels/newPanels/premiumPanels/PREMIUM-29-600e.jpg'),
+      smallImg: require('constants/img/panels/newPanels/premiumPanels/small/PREMIUM-29-600e.jpg'),
       text: 'PREMIUM-29 cena: 600e'
     },
     {
-      img: require('constants/img/panels/newPanels/premiumPanels/PREMIUM-30-504e.jpg').default,
-      smallImg: require('constants/img/panels/newPanels/premiumPanels/small/PREMIUM-30-504e.jpg').default,
+      img: require('constants/img/panels/newPanels/premiumPanels/PREMIUM-30-504e.jpg'),
+      smallImg: require('constants/img/panels/newPanels/premiumPanels/small/PREMIUM-30-504e.jpg'),
       text: 'PREMIUM-30 cena: 504e'
     },
     {
-      img: require('constants/img/panels/newPanels/premiumPanels/PREMIUM-31-720e.jpg').default,
-      smallImg: require('constants/img/panels/newPanels/premiumPanels/small/PREMIUM-31-720e.jpg').default,
+      img: require('constants/img/panels/newPanels/premiumPanels/PREMIUM-31-720e.jpg'),
+      smallImg: require('constants/img/panels/newPanels/premiumPanels/small/PREMIUM-31-720e.jpg'),
       text: 'PREMIUM-31 cena: 720e'
     },
     {
-      img: require('constants/img/panels/newPanels/premiumPanels/PREMIUM-32-540e.jpg').default,
-      smallImg: require('constants/img/panels/newPanels/premiumPanels/small/PREMIUM-32-540e.jpg').default,
+      img: require('constants/img/panels/newPanels/premiumPanels/PREMIUM-32-540e.jpg'),
+      smallImg: require('constants/img/panels/newPanels/premiumPanels/small/PREMIUM-32-540e.jpg'),
       text: 'PREMIUM-32 cena: 540e'
     }
   ],
   aluminium: [
     {
-      img: require('constants/img/panels/newPanels/aluPanels/INOX - 101-264E.jpg').default,
-      smallImg: require('constants/img/panels/newPanels/aluPanels/small/INOX - 101-264E.jpg').default,
+      img: require('constants/img/panels/newPanels/aluPanels/INOX - 101-264E.jpg'),
+      smallImg: require('constants/img/panels/newPanels/aluPanels/small/INOX - 101-264E.jpg'),
       text: 'INOX  101 cena: 264e'
     },
     {
-      img: require('constants/img/panels/newPanels/aluPanels/INOX 102-216E.jpg').default,
-      smallImg: require('constants/img/panels/newPanels/aluPanels/small/INOX 102-216E.jpg').default,
+      img: require('constants/img/panels/newPanels/aluPanels/INOX 102-216E.jpg'),
+      smallImg: require('constants/img/panels/newPanels/aluPanels/small/INOX 102-216E.jpg'),
       text: 'INOX  102 cena: 216e'
     },
     {
-      img: require('constants/img/panels/newPanels/aluPanels/INOX 103-216E.jpg').default,
-      smallImg: require('constants/img/panels/newPanels/aluPanels/small/INOX 103-216E.jpg').default,
+      img: require('constants/img/panels/newPanels/aluPanels/INOX 103-216E.jpg'),
+      smallImg: require('constants/img/panels/newPanels/aluPanels/small/INOX 103-216E.jpg'),
       text: 'INOX 103 cena: 216e'
     },
     {
-      img: require('constants/img/panels/newPanels/aluPanels/INOX 104-216E.jpg').default,
-      smallImg: require('constants/img/panels/newPanels/aluPanels/small/INOX 104-216E.jpg').default,
+      img: require('constants/img/panels/newPanels/aluPanels/INOX 104-216E.jpg'),
+      smallImg: require('constants/img/panels/newPanels/aluPanels/small/INOX 104-216E.jpg'),
       text: 'INOX 104 cena: 216e'
     },
     {
-      img: require('constants/img/panels/newPanels/aluPanels/INOX 105-264E.jpg').default,
-      smallImg: require('constants/img/panels/newPanels/aluPanels/small/INOX 105-264E.jpg').default,
+      img: require('constants/img/panels/newPanels/aluPanels/INOX 105-264E.jpg'),
+      smallImg: require('constants/img/panels/newPanels/aluPanels/small/INOX 105-264E.jpg'),
       text: 'INOX 105 cena: 264e'
     },
     {
-      img: require('constants/img/panels/newPanels/aluPanels/INOX 106-240E.jpg').default,
-      smallImg: require('constants/img/panels/newPanels/aluPanels/small/INOX 106-240E.jpg').default,
+      img: require('constants/img/panels/newPanels/aluPanels/INOX 106-240E.jpg'),
+      smallImg: require('constants/img/panels/newPanels/aluPanels/small/INOX 106-240E.jpg'),
       text: 'INOX 106 cena: 240e'
     },
     {
-      img: require('constants/img/panels/newPanels/aluPanels/INOX 107-216E.jpg').default,
-      smallImg: require('constants/img/panels/newPanels/aluPanels/small/INOX 107-216E.jpg').default,
+      img: require('constants/img/panels/newPanels/aluPanels/INOX 107-216E.jpg'),
+      smallImg: require('constants/img/panels/newPanels/aluPanels/small/INOX 107-216E.jpg'),
       text: 'INOX 107 cena: 216e'
     },
     {
-      img: require('constants/img/panels/newPanels/aluPanels/INOX 108-216E.jpg').default,
-      smallImg: require('constants/img/panels/newPanels/aluPanels/small/INOX 108-216E.jpg').default,
+      img: require('constants/img/panels/newPanels/aluPanels/INOX 108-216E.jpg'),
+      smallImg: require('constants/img/panels/newPanels/aluPanels/small/INOX 108-216E.jpg'),
       text: 'INOX 108 cena: 216e'
     },
     {
-      img: require('constants/img/panels/newPanels/aluPanels/INOX 109-276E.jpg').default,
-      smallImg: require('constants/img/panels/newPanels/aluPanels/small/INOX 109-276E.jpg').default,
+      img: require('constants/img/panels/newPanels/aluPanels/INOX 109-276E.jpg'),
+      smallImg: require('constants/img/panels/newPanels/aluPanels/small/INOX 109-276E.jpg'),
       text: 'INOX 109 cena: 276e'
     },
     {
-      img: require('constants/img/panels/newPanels/aluPanels/INOX 110-156E.jpg').default,
-      smallImg: require('constants/img/panels/newPanels/aluPanels/small/INOX 110-156E.jpg').default,
+      img: require('constants/img/panels/newPanels/aluPanels/INOX 110-156E.jpg'),
+      smallImg: require('constants/img/panels/newPanels/aluPanels/small/INOX 110-156E.jpg'),
       text: 'INOX 110 cena: 156e'
     },
     {
-      img: require('constants/img/panels/newPanels/aluPanels/INOX 111-216E.jpg').default,
-      smallImg: require('constants/img/panels/newPanels/aluPanels/small/INOX 111-216E.jpg').default,
+      img: require('constants/img/panels/newPanels/aluPanels/INOX 111-216E.jpg'),
+      smallImg: require('constants/img/panels/newPanels/aluPanels/small/INOX 111-216E.jpg'),
       text: 'INOX 111 cena: 216e'
     },
     {
-      img: require('constants/img/panels/newPanels/aluPanels/INOX 112-240E.jpg').default,
-      smallImg: require('constants/img/panels/newPanels/aluPanels/small/INOX 112-240E.jpg').default,
+      img: require('constants/img/panels/newPanels/aluPanels/INOX 112-240E.jpg'),
+      smallImg: require('constants/img/panels/newPanels/aluPanels/small/INOX 112-240E.jpg'),
       text: 'INOX 112 cena: 240e'
     },
     {
-      img: require('constants/img/panels/newPanels/aluPanels/INOX 113-216.jpg').default,
-      smallImg: require('constants/img/panels/newPanels/aluPanels/small/INOX 113-216.jpg').default,
+      img: require('constants/img/panels/newPanels/aluPanels/INOX 113-216.jpg'),
+      smallImg: require('constants/img/panels/newPanels/aluPanels/small/INOX 113-216.jpg'),
       text: 'INOX 113 cena: 216e'
     },
     {
-      img: require('constants/img/panels/newPanels/aluPanels/INOX 114-240E.jpg').default,
-      smallImg: require('constants/img/panels/newPanels/aluPanels/small/INOX 114-240E.jpg').default,
+      img: require('constants/img/panels/newPanels/aluPanels/INOX 114-240E.jpg'),
+      smallImg: require('constants/img/panels/newPanels/aluPanels/small/INOX 114-240E.jpg'),
       text: 'INOX 114 cena: 240e'
     },
     {
-      img: require('constants/img/panels/newPanels/aluPanels/INOX 115-360E.jpg').default,
-      smallImg: require('constants/img/panels/newPanels/aluPanels/small/INOX 115-360E.jpg').default,
+      img: require('constants/img/panels/newPanels/aluPanels/INOX 115-360E.jpg'),
+      smallImg: require('constants/img/panels/newPanels/aluPanels/small/INOX 115-360E.jpg'),
       text: 'INOX 115 cena: 360e'
     },
     {
-      img: require('constants/img/panels/newPanels/aluPanels/INOX 116-336E.jpg').default,
-      smallImg: require('constants/img/panels/newPanels/aluPanels/small/INOX 116-336E.jpg').default,
+      img: require('constants/img/panels/newPanels/aluPanels/INOX 116-336E.jpg'),
+      smallImg: require('constants/img/panels/newPanels/aluPanels/small/INOX 116-336E.jpg'),
       text: 'INOX 116 cena: 336e'
     }
   ],
   elegant: [
     {
-      img: require('constants/img/panels/newPanels/elegantPanels/E-1001-264E.jpg').default,
-      smallImg: require('constants/img/panels/newPanels/elegantPanels/small/E-1001-264E.jpg').default,
+      img: require('constants/img/panels/newPanels/elegantPanels/E-1001-264E.jpg'),
+      smallImg: require('constants/img/panels/newPanels/elegantPanels/small/E-1001-264E.jpg'),
       text: 'E-1001 cena: 264e'
     },
     {
-      img: require('constants/img/panels/newPanels/elegantPanels/E-1002-204E.png').default,
-      smallImg: require('constants/img/panels/newPanels/elegantPanels/small/E-1002-204E.png').default,
+      img: require('constants/img/panels/newPanels/elegantPanels/E-1002-204E.png'),
+      smallImg: require('constants/img/panels/newPanels/elegantPanels/small/E-1002-204E.png'),
       text: 'E-1002 cena: 204e'
     },
     {
-      img: require('constants/img/panels/newPanels/elegantPanels/E-1003-216EE.png').default,
-      smallImg: require('constants/img/panels/newPanels/elegantPanels/small/E-1003-216EE.png').default,
+      img: require('constants/img/panels/newPanels/elegantPanels/E-1003-216EE.png'),
+      smallImg: require('constants/img/panels/newPanels/elegantPanels/small/E-1003-216EE.png'),
       text: 'E-1003 cena: 216e'
     },
     {
-      img: require('constants/img/panels/newPanels/elegantPanels/E-1005-216E.png').default,
-      smallImg: require('constants/img/panels/newPanels/elegantPanels/small/E-1005-216E.png').default,
+      img: require('constants/img/panels/newPanels/elegantPanels/E-1005-216E.png'),
+      smallImg: require('constants/img/panels/newPanels/elegantPanels/small/E-1005-216E.png'),
       text: 'E-1005 cena: 216e'
     },
     {
-      img: require('constants/img/panels/newPanels/elegantPanels/E-1007-216E.jpg').default,
-      smallImg: require('constants/img/panels/newPanels/elegantPanels/small/E-1007-216E.jpg').default,
+      img: require('constants/img/panels/newPanels/elegantPanels/E-1007-216E.jpg'),
+      smallImg: require('constants/img/panels/newPanels/elegantPanels/small/E-1007-216E.jpg'),
       text: 'E-1007 cena: 216e'
     },
     {
-      img: require('constants/img/panels/newPanels/elegantPanels/E-1008-216E.png').default,
-      smallImg: require('constants/img/panels/newPanels/elegantPanels/small/E-1008-216E.png').default,
+      img: require('constants/img/panels/newPanels/elegantPanels/E-1008-216E.png'),
+      smallImg: require('constants/img/panels/newPanels/elegantPanels/small/E-1008-216E.png'),
       text: 'E-1008 cena: 216e'
     },
     {
-      img: require('constants/img/panels/newPanels/elegantPanels/E-1009-216E.png').default,
-      smallImg: require('constants/img/panels/newPanels/elegantPanels/small/E-1009-216E.png').default,
+      img: require('constants/img/panels/newPanels/elegantPanels/E-1009-216E.png'),
+      smallImg: require('constants/img/panels/newPanels/elegantPanels/small/E-1009-216E.png'),
       text: 'E-1009 cena: 216e'
     },
     {
-      img: require('constants/img/panels/newPanels/elegantPanels/E-1010-204E.png').default,
-      smallImg: require('constants/img/panels/newPanels/elegantPanels/small/E-1010-204E.png').default,
+      img: require('constants/img/panels/newPanels/elegantPanels/E-1010-204E.png'),
+      smallImg: require('constants/img/panels/newPanels/elegantPanels/small/E-1010-204E.png'),
       text: 'E-1010 cena: 204e'
     },
     {
-      img: require('constants/img/panels/newPanels/elegantPanels/E-1011-204E.png').default,
-      smallImg: require('constants/img/panels/newPanels/elegantPanels/small/E-1011-204E.png').default,
+      img: require('constants/img/panels/newPanels/elegantPanels/E-1011-204E.png'),
+      smallImg: require('constants/img/panels/newPanels/elegantPanels/small/E-1011-204E.png'),
       text: 'E-1011 cena: 204e'
     },
     {
-      img: require('constants/img/panels/newPanels/elegantPanels/E-1012-216E.png').default,
-      smallImg: require('constants/img/panels/newPanels/elegantPanels/small/E-1012-216E.png').default,
+      img: require('constants/img/panels/newPanels/elegantPanels/E-1012-216E.png'),
+      smallImg: require('constants/img/panels/newPanels/elegantPanels/small/E-1012-216E.png'),
       text: 'E-1012 cena: 216e'
     },
     {
-      img: require('constants/img/panels/newPanels/elegantPanels/E-1013-216E.png').default,
-      smallImg: require('constants/img/panels/newPanels/elegantPanels/small/E-1013-216E.png').default,
+      img: require('constants/img/panels/newPanels/elegantPanels/E-1013-216E.png'),
+      smallImg: require('constants/img/panels/newPanels/elegantPanels/small/E-1013-216E.png'),
       text: 'E-1013 cena: 216e'
     },
     {
-      img: require('constants/img/panels/newPanels/elegantPanels/E-1014-264E.png').default,
-      smallImg: require('constants/img/panels/newPanels/elegantPanels/small/E-1014-264E.png').default,
+      img: require('constants/img/panels/newPanels/elegantPanels/E-1014-264E.png'),
+      smallImg: require('constants/img/panels/newPanels/elegantPanels/small/E-1014-264E.png'),
       text: 'E-1014 cena: 264e'
     },
     {
-      img: require('constants/img/panels/newPanels/elegantPanels/E-1015-264E.png').default,
-      smallImg: require('constants/img/panels/newPanels/elegantPanels/small/E-1015-264E.png').default,
+      img: require('constants/img/panels/newPanels/elegantPanels/E-1015-264E.png'),
+      smallImg: require('constants/img/panels/newPanels/elegantPanels/small/E-1015-264E.png'),
       text: 'E-1015 cena: 264e'
     },
     {
-      img: require('constants/img/panels/newPanels/elegantPanels/E-1016-264E.png').default,
-      smallImg: require('constants/img/panels/newPanels/elegantPanels/small/E-1016-264E.png').default,
+      img: require('constants/img/panels/newPanels/elegantPanels/E-1016-264E.png'),
+      smallImg: require('constants/img/panels/newPanels/elegantPanels/small/E-1016-264E.png'),
       text: 'E-1016 cena: 264e'
     },
     {
-      img: require('constants/img/panels/newPanels/elegantPanels/E-1017-288E.jpg').default,
-      smallImg: require('constants/img/panels/newPanels/elegantPanels/small/E-1017-288E.jpg').default,
+      img: require('constants/img/panels/newPanels/elegantPanels/E-1017-288E.jpg'),
+      smallImg: require('constants/img/panels/newPanels/elegantPanels/small/E-1017-288E.jpg'),
       text: 'E-1017 cena: 288e'
     },
     {
-      img: require('constants/img/panels/newPanels/elegantPanels/E-1018-204E.jpg').default,
-      smallImg: require('constants/img/panels/newPanels/elegantPanels/small/E-1018-204E.jpg').default,
+      img: require('constants/img/panels/newPanels/elegantPanels/E-1018-204E.jpg'),
+      smallImg: require('constants/img/panels/newPanels/elegantPanels/small/E-1018-204E.jpg'),
       text: 'E-1018 cena: 204e'
     }
   ]
@@ -1354,39 +1354,39 @@ export const Panels = {
 /** Sredi init state za products */
 
 export const ProductsDataCoverImage = {
-  outsideBlinds: require('constants/img/productsCoverImage/aluminiumOutsideBlindsPentagonalOutsideBlinds.mp4').default,
-  aluminiumWindow1: require('constants/img/productsCoverImage/aluminiumWindows1.mp4').default,
-  aluminiumWindow2: require('constants/img/productsCoverImage/aluminiumWindows2.mp4').default,
-  aluSmartiaM9800AccordionSlidingSystems: require('constants/img/productsCoverImage/aluSmartiaM9800AccordionSlidingSystems.mp4').default,
-  aluSmartiaM19800AccordionSlidingSystems: require('constants/img/productsCoverImage/aluSmartiaM19800AccordionSlidingSystems.mp4').default,
-  aluUltraSlideSlidingSystem: require('constants/img/productsCoverImage/PodiznoKlizniAluUltraSlide.mp4').default,
-  aluVgPluslideSlidingSystem: require('constants/img/productsCoverImage/PodiznoKlizniAluVgPlus.mp4').default,
-  doorWithHiddenWingAluminiumDoor: require('constants/img/productsCoverImage/doorWithHiddenWingAluminiumDoor.webm').default,
-  entrancePvcDoor: require('constants/img/productsCoverImage/entrancePvcDoor.mp4').default,
-  facade: require('constants/img/productsCoverImage/facade.mp4').default,
-  InRowSlidingSystem: require('constants/img/productsCoverImage/facade.mp4').default,
-  insideBlinds: require('constants/img/productsCoverImage/insideBlinds.mp4').default,
-  partionPvcDoor: require('constants/img/productsCoverImage/partitionPvcDoor.mp4').default,
-  profileWithoutThermalBreakAluminiumDoor: require('constants/img/productsCoverImage/profileWithoutThermalBreakAluminiumDoor.mp4').default,
-  profileWithThermalBreakAluminiumDoor: require('constants/img/productsCoverImage/profileWithThermalBreakAluminiumDoor.mp4').default,
-  pvcAccordionSlidingSystems: require('constants/img/productsCoverImage/HarmonikaAluHarmonika.mp4').default,
-  pvcVekaSlideSlidingSystem: require('constants/img/productsCoverImage/PodiznoKlizniPvcVekaSlide.mp4').default,
-  pvcVekaSoftline7082InRowSlidingSystem: require('constants/img/productsCoverImage/pvcVekaSoftline7082InRowSlidingSystem.mp4').default,
-  solomaticVenetians: require('constants/img/productsCoverImage/solomaticVenetians.mp4').default,
-  veka70: require('constants/img/productsCoverImage/veka70.mp4').default,
-  veka82: require('constants/img/productsCoverImage/veka82.mp4').default,
-  woodAluminumWindow: require('constants/img/productsCoverImage/woodAluminiumWindows.mp4').default
+  outsideBlinds: require('constants/img/productsCoverImage/aluminiumOutsideBlindsPentagonalOutsideBlinds.mp4'),
+  aluminiumWindow1: require('constants/img/productsCoverImage/aluminiumWindows1.mp4'),
+  aluminiumWindow2: require('constants/img/productsCoverImage/aluminiumWindows2.mp4'),
+  aluSmartiaM9800AccordionSlidingSystems: require('constants/img/productsCoverImage/aluSmartiaM9800AccordionSlidingSystems.mp4'),
+  aluSmartiaM19800AccordionSlidingSystems: require('constants/img/productsCoverImage/aluSmartiaM19800AccordionSlidingSystems.mp4'),
+  aluUltraSlideSlidingSystem: require('constants/img/productsCoverImage/PodiznoKlizniAluUltraSlide.mp4'),
+  aluVgPluslideSlidingSystem: require('constants/img/productsCoverImage/PodiznoKlizniAluVgPlus.mp4'),
+  doorWithHiddenWingAluminiumDoor: require('constants/img/productsCoverImage/doorWithHiddenWingAluminiumDoor.webm'),
+  entrancePvcDoor: require('constants/img/productsCoverImage/entrancePvcDoor.mp4'),
+  facade: require('constants/img/productsCoverImage/facade.mp4'),
+  InRowSlidingSystem: require('constants/img/productsCoverImage/facade.mp4'),
+  insideBlinds: require('constants/img/productsCoverImage/insideBlinds.mp4'),
+  partionPvcDoor: require('constants/img/productsCoverImage/partitionPvcDoor.mp4'),
+  profileWithoutThermalBreakAluminiumDoor: require('constants/img/productsCoverImage/profileWithoutThermalBreakAluminiumDoor.mp4'),
+  profileWithThermalBreakAluminiumDoor: require('constants/img/productsCoverImage/profileWithThermalBreakAluminiumDoor.mp4'),
+  pvcAccordionSlidingSystems: require('constants/img/productsCoverImage/HarmonikaAluHarmonika.mp4'),
+  pvcVekaSlideSlidingSystem: require('constants/img/productsCoverImage/PodiznoKlizniPvcVekaSlide.mp4'),
+  pvcVekaSoftline7082InRowSlidingSystem: require('constants/img/productsCoverImage/pvcVekaSoftline7082InRowSlidingSystem.mp4'),
+  solomaticVenetians: require('constants/img/productsCoverImage/solomaticVenetians.mp4'),
+  veka70: require('constants/img/productsCoverImage/veka70.mp4'),
+  veka82: require('constants/img/productsCoverImage/veka82.mp4'),
+  woodAluminumWindow: require('constants/img/productsCoverImage/woodAluminiumWindows.mp4')
 }
 
 export const ProductsDataDecorsImages = {
-  antracitWindow: require('constants/img/productsCoverImage/window/PvcProzorAntracit.png').default,
-  goldenOakZlatniWindow: require('constants/img/productsCoverImage/window/PvcProzorGoldenOak-ZlatniHrast.png').default,
-  mahagoniWindow: require('constants/img/productsCoverImage/window/PvcProzorMahagoni.png').default,
-  nussbaumWindow: require('constants/img/productsCoverImage/window/PvcProzorNussbaum-TamniOrah.png').default,
-  antracitDoor: require('constants/img/productsCoverImage/door/PvcVrataUlaznaVrataAntracit.png').default,
-  goldenOakZlatniDoor: require('constants/img/productsCoverImage/door/PvcVrataUlaznaVrataGoldenOak-ZlatniHrast.png').default,
-  mahagoniDoor: require('constants/img/productsCoverImage/door/PvcVrataUlaznaVrataMahagoni.png').default,
-  nussbaumDoor: require('constants/img/productsCoverImage/door/PvcVrataUlaznaVrataNussbaum-TamniOrah.png').default
+  antracitWindow: require('constants/img/productsCoverImage/window/PvcProzorAntracit.png'),
+  goldenOakZlatniWindow: require('constants/img/productsCoverImage/window/PvcProzorGoldenOak-ZlatniHrast.png'),
+  mahagoniWindow: require('constants/img/productsCoverImage/window/PvcProzorMahagoni.png'),
+  nussbaumWindow: require('constants/img/productsCoverImage/window/PvcProzorNussbaum-TamniOrah.png'),
+  antracitDoor: require('constants/img/productsCoverImage/door/PvcVrataUlaznaVrataAntracit.png'),
+  goldenOakZlatniDoor: require('constants/img/productsCoverImage/door/PvcVrataUlaznaVrataGoldenOak-ZlatniHrast.png'),
+  mahagoniDoor: require('constants/img/productsCoverImage/door/PvcVrataUlaznaVrataMahagoni.png'),
+  nussbaumDoor: require('constants/img/productsCoverImage/door/PvcVrataUlaznaVrataNussbaum-TamniOrah.png')
 }
 
 export const ProductData = [

@@ -1,6 +1,6 @@
-import React from 'react'
+import React, { useContext, useEffect } from 'react'
 import NavBarFirstPart from './NavBarFirstPart'
-import SiteNavigationContainer from './context'
+import { SiteNavigationContext } from './context'
 import NavBarSecondPart from './NavBarSecondPart'
 import NavProduct from './NavBarProductsPart'
 import { NavBarContainer } from './style'
@@ -24,22 +24,26 @@ import SiteRoutes from 'siteNavigation/SiteRoutes'
  * */
 
 const SiteNavigation = () => {
+  const { navRightOpen } = useContext(SiteNavigationContext)
+
+  useEffect(() => {
+    console.log('navRightOpen', navRightOpen)
+  }, [])
+
   return (
-      <SiteNavigationContainer>
-          <NavBarContainer>
+        <NavBarContainer>
             <Router basename={'/'}>
                 <ScrollToTop/>
                 <NavBarFirstPart/>
                 <FlexContainer>
-                    <NavProduct />
-                    <RelativeContainer>
+                    <NavProduct/>
+                    <RelativeContainer isDisplay={navRightOpen}>
                         <NavBarSecondPart/>
-                        <SiteRoutes />
+                        <SiteRoutes/>
                     </RelativeContainer>
                 </FlexContainer>
             </Router>
-          </NavBarContainer>
-      </SiteNavigationContainer>
+        </NavBarContainer>
   )
 }
 

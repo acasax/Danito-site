@@ -23,6 +23,7 @@ import { SiteNavigationContext } from '../context'
 
 const SideNavBarItem = ({ buttonText, img }: TSideNavBatItem) => {
   const { handleSetSelectedSideNavBarItem, flexDirection } = useContext(SiteNavigationContext)
+
   return (
         <SideNavBarItemContainer onClick={() => handleSetSelectedSideNavBarItem(buttonText)}
                                  flexDirection={flexDirection}>

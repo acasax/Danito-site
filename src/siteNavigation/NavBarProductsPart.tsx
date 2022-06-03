@@ -7,6 +7,7 @@ import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward'
 import {
   NavBarProductContainerText,
   NavBarProductPartHeaderContainer,
+  NavBarProductPartPrimaryLinksContainer,
   NavBarProductSideBarContainer,
   NavBarProductsPartProductsContainer,
   NavBarProductsPartProductsText
@@ -51,7 +52,8 @@ const NavBarProductsPart = () => {
             <NavBarProductPartHeaderContainer>
                 {
                     selected
-                      ? <ArrowBackIosIcon onClick={goBack} sx={{ fontSize: 30, color: Styles.Colours.PALETTE.DANITO._white }}/>
+                      ? <ArrowBackIosIcon onClick={goBack}
+                                            sx={{ fontSize: 30, color: Styles.Colours.PALETTE.DANITO._white }}/>
                       : <ArrowDownwardIcon sx={{ fontSize: 30, color: Styles.Colours.PALETTE.DANITO._white }}/>
                 }
                 <NavBarProductContainerText>{!selected ? Translate.CHOSE_CATEGORY : selected}</NavBarProductContainerText>
@@ -69,6 +71,48 @@ const NavBarProductsPart = () => {
                         </Link>
                   )
                 })}
+                {
+                    width < calcSize.large && (
+                        <>
+                            <Link
+                                to="/"
+                                style={NavBarProductPartPrimaryLinksContainer}
+                            >
+                                <SideNavBarItem
+                                    buttonText={Translate.NAV_BAR_SECOND_PART_HOME}
+                                    img={''}
+                                />
+                            </Link>
+                            <Link
+                                to="/onama"
+                                style={NavBarProductPartPrimaryLinksContainer}
+                            >
+                                <SideNavBarItem
+                                    buttonText={Translate.NAV_BAR_SECOND_PART_ABOUT}
+                                    img={''}
+                                />
+                            </Link>
+                            <Link
+                                to="/galerija"
+                                style={NavBarProductPartPrimaryLinksContainer}
+                            >
+                                <SideNavBarItem
+                                    buttonText={Translate.NAV_BAR_SECOND_PART_GALLERY}
+                                    img={''}
+                                />
+                            </Link>
+                            <Link
+                                to="/kontakt"
+                                style={NavBarProductPartPrimaryLinksContainer}
+                            >
+                                <SideNavBarItem
+                                    buttonText={Translate.NAV_BAR_SECOND_PART_CONTACT}
+                                    img={''}
+                                />
+                            </Link>
+                        </>
+                    )
+                }
             </NavBarProductsPartProductsContainer>
         </NavBarProductSideBarContainer>
   )

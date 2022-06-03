@@ -42,10 +42,6 @@ const Slider = () => {
     setActiveStep(sliderStep)
   }
 
-  useEffect(() => {
-    console.log('slider', sliderElements)
-  }, [])
-
   return (
         <SliderContainer>
             <AutoPlaySwipeableViews

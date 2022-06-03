@@ -39,7 +39,7 @@ export const SliderElements = [
   },
   {
     label: 'Slider image 4',
-    path: require('constants/slider/6.mp4').default,
+    path: require('constants/slider/6.mp4'),
     isVideo: true
   },
   {
@@ -61,91 +61,91 @@ export type TAboutCarouselImages = {
 
 export const AboutInfoCarouselImages = [
   {
-    src: require('constants/img/company/2.jpg').default
+    src: require('constants/img/company/2.jpg')
   },
   {
-    src: require('constants/img/company/3.jpg').default
+    src: require('constants/img/company/3.jpg')
   },
   {
-    src: require('constants/img/company/4.jpg').default
+    src: require('constants/img/company/4.jpg')
   },
   {
-    src: require('constants/img/company/5.jpg').default
+    src: require('constants/img/company/5.jpg')
   },
   {
-    src: require('constants/img/company/6.jpg').default
+    src: require('constants/img/company/6.jpg')
   },
   {
-    src: require('constants/img/company/7.jpg').default
+    src: require('constants/img/company/7.jpg')
   },
   {
-    src: require('constants/img/company/8.jpg').default
+    src: require('constants/img/company/8.jpg')
   },
   {
-    src: require('constants/img/company/9.jpg').default
+    src: require('constants/img/company/9.jpg')
   },
   {
-    src: require('constants/img/company/10.jpg').default
+    src: require('constants/img/company/10.jpg')
   },
   {
-    src: require('constants/img/company/11.jpg').default
+    src: require('constants/img/company/11.jpg')
   },
   {
-    src: require('constants/img/company/12.jpg').default
+    src: require('constants/img/company/12.jpg')
   },
   {
-    src: require('constants/img/company/13.jpg').default
+    src: require('constants/img/company/13.jpg')
   },
   {
-    src: require('constants/img/company/14.jpg').default
+    src: require('constants/img/company/14.jpg')
   },
   {
-    src: require('constants/img/company/15.jpg').default
+    src: require('constants/img/company/15.jpg')
   },
   {
-    src: require('constants/img/company/16.jpg').default
+    src: require('constants/img/company/16.jpg')
   },
   {
-    src: require('constants/img/company/17.jpg').default
+    src: require('constants/img/company/17.jpg')
   },
   {
-    src: require('constants/img/company/18.jpg').default
+    src: require('constants/img/company/18.jpg')
   },
   {
-    src: require('constants/img/company/19.jpg').default
+    src: require('constants/img/company/19.jpg')
   },
   {
-    src: require('constants/img/company/20.jpg').default
+    src: require('constants/img/company/20.jpg')
   },
   {
-    src: require('constants/img/company/21.jpg').default
+    src: require('constants/img/company/21.jpg')
   },
   {
-    src: require('constants/img/company/22.jpg').default
+    src: require('constants/img/company/22.jpg')
   },
   {
-    src: require('constants/img/company/23.jpg').default
+    src: require('constants/img/company/23.jpg')
   },
   {
-    src: require('constants/img/company/24.jpg').default
+    src: require('constants/img/company/24.jpg')
   },
   {
-    src: require('constants/img/company/25.jpg').default
+    src: require('constants/img/company/25.jpg')
   }
 ]
 
 export const AboutTechnologyCarouselImages = [
   {
-    src: require('constants/img/aboutTech/1.jpg').default
+    src: require('constants/img/aboutTech/1.jpg')
   },
   {
-    src: require('constants/img/aboutTech/2.jpg').default
+    src: require('constants/img/aboutTech/2.jpg')
   },
   {
-    src: require('constants/img/aboutTech/3.jpg').default
+    src: require('constants/img/aboutTech/3.jpg')
   },
   {
-    src: require('constants/img/aboutTech/4.jpg').default
+    src: require('constants/img/aboutTech/4.jpg')
   }
 ]
 
@@ -170,38 +170,38 @@ export const GalleryContent = [
     images: [
       {
         name: 'Banjica, Beograd',
-        src: require('constants/img/objects/1/1.jpg').default,
-        smallSrc: require('constants/img/objects/1/small/1.jpg').default
+        src: require('constants/img/objects/1/1.jpg'),
+        smallSrc: require('constants/img/objects/1/small/1.jpg')
       },
       {
         name: 'Banjica, Beograd',
-        src: require('constants/img/objects/1/2.jpg').default,
-        smallSrc: require('constants/img/objects/1/small/2.jpg').default
+        src: require('constants/img/objects/1/2.jpg'),
+        smallSrc: require('constants/img/objects/1/small/2.jpg')
       },
       {
         name: 'Banjica, Beograd',
-        src: require('constants/img/objects/1/3.jpg').default,
-        smallSrc: require('constants/img/objects/1/small/3.jpg').default
+        src: require('constants/img/objects/1/3.jpg'),
+        smallSrc: require('constants/img/objects/1/small/3.jpg')
       },
       {
         name: 'Banjica, Beograd',
-        src: require('constants/img/objects/1/4.jpg').default,
-        smallSrc: require('constants/img/objects/1/small/4.jpg').default
+        src: require('constants/img/objects/1/4.jpg'),
+        smallSrc: require('constants/img/objects/1/small/4.jpg')
       },
       {
         name: 'Banjica, Beograd',
-        src: require('constants/img/objects/1/5.jpg').default,
-        smallSrc: require('constants/img/objects/1/small/5.jpg').default
+        src: require('constants/img/objects/1/5.jpg'),
+        smallSrc: require('constants/img/objects/1/small/5.jpg')
       },
       {
         name: 'Banjica, Beograd',
-        src: require('constants/img/objects/1/6.jpg').default,
-        smallSrc: require('constants/img/objects/1/small/6.jpg').default
+        src: require('constants/img/objects/1/6.jpg'),
+        smallSrc: require('constants/img/objects/1/small/6.jpg')
       },
       {
         name: 'Banjica, Beograd',
-        src: require('constants/img/objects/1/7.jpg').default,
-        smallSrc: require('constants/img/objects/1/small/7.jpg').default
+        src: require('constants/img/objects/1/7.jpg'),
+        smallSrc: require('constants/img/objects/1/small/7.jpg')
       }
     ]
   },
@@ -211,28 +211,28 @@ export const GalleryContent = [
     images: [
       {
         name: 'Celopečka, Beograd',
-        src: require('constants/img/objects/2/2.jpg').default,
-        smallSrc: require('constants/img/objects/2/small/2.jpg').default
+        src: require('constants/img/objects/2/2.jpg'),
+        smallSrc: require('constants/img/objects/2/small/2.jpg')
       },
       {
         name: 'Celopečka, Beograd',
-        src: require('constants/img/objects/2/3.jpg').default,
-        smallSrc: require('constants/img/objects/2/small/3.jpg').default
+        src: require('constants/img/objects/2/3.jpg'),
+        smallSrc: require('constants/img/objects/2/small/3.jpg')
       },
       {
         name: 'Celopečka, Beograd',
-        src: require('constants/img/objects/2/4.jpg').default,
-        smallSrc: require('constants/img/objects/2/small/4.jpg').default
+        src: require('constants/img/objects/2/4.jpg'),
+        smallSrc: require('constants/img/objects/2/small/4.jpg')
       },
       {
         name: 'Celopečka, Beograd',
-        src: require('constants/img/objects/2/5.jpg').default,
-        smallSrc: require('constants/img/objects/2/small/5.jpg').default
+        src: require('constants/img/objects/2/5.jpg'),
+        smallSrc: require('constants/img/objects/2/small/5.jpg')
       },
       {
         name: 'Celopečka, Beograd',
-        src: require('constants/img/objects/2/6.jpg').default,
-        smallSrc: require('constants/img/objects/2/small/6.jpg').default
+        src: require('constants/img/objects/2/6.jpg'),
+        smallSrc: require('constants/img/objects/2/small/6.jpg')
       }
     ]
   },
@@ -242,33 +242,33 @@ export const GalleryContent = [
     images: [
       {
         name: 'Dunavske terase, Beograd',
-        src: require('constants/img/objects/3/1.jpg').default,
-        smallSrc: require('constants/img/objects/3/small/1.jpg').default
+        src: require('constants/img/objects/3/1.jpg'),
+        smallSrc: require('constants/img/objects/3/small/1.jpg')
       },
       {
         name: 'Dunavske terase, Beograd',
-        src: require('constants/img/objects/3/2.jpg').default,
-        smallSrc: require('constants/img/objects/3/small/2.jpg').default
+        src: require('constants/img/objects/3/2.jpg'),
+        smallSrc: require('constants/img/objects/3/small/2.jpg')
       },
       {
         name: 'Dunavske terase, Beograd',
-        src: require('constants/img/objects/3/3.jpg').default,
-        smallSrc: require('constants/img/objects/3/small/3.jpg').default
+        src: require('constants/img/objects/3/3.jpg'),
+        smallSrc: require('constants/img/objects/3/small/3.jpg')
       },
       {
         name: 'Dunavske terase, Beograd',
-        src: require('constants/img/objects/3/4.jpg').default,
-        smallSrc: require('constants/img/objects/3/small/4.jpg').default
+        src: require('constants/img/objects/3/4.jpg'),
+        smallSrc: require('constants/img/objects/3/small/4.jpg')
       },
       {
         name: 'Dunavske terase, Beograd',
-        src: require('constants/img/objects/3/5.jpg').default,
-        smallSrc: require('constants/img/objects/3/small/5.jpg').default
+        src: require('constants/img/objects/3/5.jpg'),
+        smallSrc: require('constants/img/objects/3/small/5.jpg')
       },
       {
         name: 'Dunavske terase, Beograd',
-        src: require('constants/img/objects/3/6.jpg').default,
-        smallSrc: require('constants/img/objects/3/small/6.jpg').default
+        src: require('constants/img/objects/3/6.jpg'),
+        smallSrc: require('constants/img/objects/3/small/6.jpg')
       }
     ]
   },
@@ -278,38 +278,38 @@ export const GalleryContent = [
     images: [
       {
         name: 'Karađorđeva, Pančevo',
-        src: require('constants/img/objects/4/1.jpg').default,
-        smallSrc: require('constants/img/objects/4/small/1.jpg').default
+        src: require('constants/img/objects/4/1.jpg'),
+        smallSrc: require('constants/img/objects/4/small/1.jpg')
       },
       {
         name: 'Karađorđeva, Pančevo',
-        src: require('constants/img/objects/4/2.jpg').default,
-        smallSrc: require('constants/img/objects/4/small/2.jpg').default
+        src: require('constants/img/objects/4/2.jpg'),
+        smallSrc: require('constants/img/objects/4/small/2.jpg')
       },
       {
         name: 'Karađorđeva, Pančevo',
-        src: require('constants/img/objects/4/3.jpg').default,
-        smallSrc: require('constants/img/objects/4/small/3.jpg').default
+        src: require('constants/img/objects/4/3.jpg'),
+        smallSrc: require('constants/img/objects/4/small/3.jpg')
       },
       {
         name: 'Karađorđeva, Pančevo',
-        src: require('constants/img/objects/4/4.jpg').default,
-        smallSrc: require('constants/img/objects/4/small/4.jpg').default
+        src: require('constants/img/objects/4/4.jpg'),
+        smallSrc: require('constants/img/objects/4/small/4.jpg')
       },
       {
         name: 'Karađorđeva, Pančevo',
-        src: require('constants/img/objects/4/5.jpg').default,
-        smallSrc: require('constants/img/objects/4/small/5.jpg').default
+        src: require('constants/img/objects/4/5.jpg'),
+        smallSrc: require('constants/img/objects/4/small/5.jpg')
       },
       {
         name: 'Karađorđeva, Pančevo',
-        src: require('constants/img/objects/4/6.jpg').default,
-        smallSrc: require('constants/img/objects/4/small/6.jpg').default
+        src: require('constants/img/objects/4/6.jpg'),
+        smallSrc: require('constants/img/objects/4/small/6.jpg')
       },
       {
         name: 'Karađorđeva, Pančevo',
-        src: require('constants/img/objects/4/7.jpg').default,
-        smallSrc: require('constants/img/objects/4/small/7.jpg').default
+        src: require('constants/img/objects/4/7.jpg'),
+        smallSrc: require('constants/img/objects/4/small/7.jpg')
       }
     ]
   },
@@ -319,48 +319,48 @@ export const GalleryContent = [
     images: [
       {
         name: 'Kopaonik',
-        src: require('constants/img/objects/5/Kopaonik 1.jpg').default,
-        smallSrc: require('constants/img/objects/5/small/Kopaonik 1.jpg').default
+        src: require('constants/img/objects/5/Kopaonik 1.jpg'),
+        smallSrc: require('constants/img/objects/5/small/Kopaonik 1.jpg')
       },
       {
         name: 'Kopaonik',
-        src: require('constants/img/objects/5/Kopaonik 1_.jpg').default,
-        smallSrc: require('constants/img/objects/5/small/Kopaonik 1_.jpg').default
+        src: require('constants/img/objects/5/Kopaonik 1_.jpg'),
+        smallSrc: require('constants/img/objects/5/small/Kopaonik 1_.jpg')
       },
       {
         name: 'Kopaonik',
-        src: require('constants/img/objects/5/Kopaonik 1_3.jpg').default,
-        smallSrc: require('constants/img/objects/5/small/Kopaonik 1_3.jpg').default
+        src: require('constants/img/objects/5/Kopaonik 1_3.jpg'),
+        smallSrc: require('constants/img/objects/5/small/Kopaonik 1_3.jpg')
       },
       {
         name: 'Kopaonik',
-        src: require('constants/img/objects/5/Kopaonik 1_4.jpg').default,
-        smallSrc: require('constants/img/objects/5/small/Kopaonik 1_4.jpg').default
+        src: require('constants/img/objects/5/Kopaonik 1_4.jpg'),
+        smallSrc: require('constants/img/objects/5/small/Kopaonik 1_4.jpg')
       },
       {
         name: 'Kopaonik',
-        src: require('constants/img/objects/5/Kopaonik 1_5.jpg').default,
-        smallSrc: require('constants/img/objects/5/small/Kopaonik 1_5.jpg').default
+        src: require('constants/img/objects/5/Kopaonik 1_5.jpg'),
+        smallSrc: require('constants/img/objects/5/small/Kopaonik 1_5.jpg')
       },
       {
         name: 'Kopaonik',
-        src: require('constants/img/objects/5/Kopaonik 1_6.jpg').default,
-        smallSrc: require('constants/img/objects/5/small/Kopaonik 1_6.jpg').default
+        src: require('constants/img/objects/5/Kopaonik 1_6.jpg'),
+        smallSrc: require('constants/img/objects/5/small/Kopaonik 1_6.jpg')
       },
       {
         name: 'Kopaonik',
-        src: require('constants/img/objects/5/Kopaonik 1_7.jpg').default,
-        smallSrc: require('constants/img/objects/5/small/Kopaonik 1_7.jpg').default
+        src: require('constants/img/objects/5/Kopaonik 1_7.jpg'),
+        smallSrc: require('constants/img/objects/5/small/Kopaonik 1_7.jpg')
       },
       {
         name: 'Kopaonik',
-        src: require('constants/img/objects/5/Kopaonik 1_8.jpg').default,
-        smallSrc: require('constants/img/objects/5/small/Kopaonik 1_8.jpg').default
+        src: require('constants/img/objects/5/Kopaonik 1_8.jpg'),
+        smallSrc: require('constants/img/objects/5/small/Kopaonik 1_8.jpg')
       },
       {
         name: 'Kopaonik',
-        src: require('constants/img/objects/5/Kopaonik 1_9.jpg').default,
-        smallSrc: require('constants/img/objects/5/small/Kopaonik 1_9.jpg').default
+        src: require('constants/img/objects/5/Kopaonik 1_9.jpg'),
+        smallSrc: require('constants/img/objects/5/small/Kopaonik 1_9.jpg')
       }
     ]
   },
@@ -370,53 +370,53 @@ export const GalleryContent = [
     images: [
       {
         name: 'Mia-Dorćol Beograd',
-        src: require('constants/img/objects/6/Mia-Dorcol Beorad 1.JPG').default,
-        smallSrc: require('constants/img/objects/6/small/Mia-Dorcol Beorad 1.JPG').default
+        src: require('constants/img/objects/6/Mia-Dorcol Beorad 1.JPG'),
+        smallSrc: require('constants/img/objects/6/small/Mia-Dorcol Beorad 1.JPG')
       },
       {
         name: 'Mia-Dorćol Beograd',
-        src: require('constants/img/objects/6/Mia-Dorcol Beorad 1_1.JPG').default,
-        smallSrc: require('constants/img/objects/6/small/Mia-Dorcol Beorad 1_1.JPG').default
+        src: require('constants/img/objects/6/Mia-Dorcol Beorad 1_1.JPG'),
+        smallSrc: require('constants/img/objects/6/small/Mia-Dorcol Beorad 1_1.JPG')
       },
       {
         name: 'Mia-Dorćol Beograd',
-        src: require('constants/img/objects/6/Mia-Dorcol Beorad 1_2.JPG').default,
-        smallSrc: require('constants/img/objects/6/small/Mia-Dorcol Beorad 1_2.JPG').default
+        src: require('constants/img/objects/6/Mia-Dorcol Beorad 1_2.JPG'),
+        smallSrc: require('constants/img/objects/6/small/Mia-Dorcol Beorad 1_2.JPG')
       },
       {
         name: 'Mia-Dorćol Beograd',
-        src: require('constants/img/objects/6/Mia-Dorcol Beorad 1_3.JPG').default,
-        smallSrc: require('constants/img/objects/6/small/Mia-Dorcol Beorad 1_3.JPG').default
+        src: require('constants/img/objects/6/Mia-Dorcol Beorad 1_3.JPG'),
+        smallSrc: require('constants/img/objects/6/small/Mia-Dorcol Beorad 1_3.JPG')
       },
       {
         name: 'Mia-Dorćol Beograd',
-        src: require('constants/img/objects/6/Mia-Dorcol Beorad 1_4.JPG').default,
-        smallSrc: require('constants/img/objects/6/small/Mia-Dorcol Beorad 1_4.JPG').default
+        src: require('constants/img/objects/6/Mia-Dorcol Beorad 1_4.JPG'),
+        smallSrc: require('constants/img/objects/6/small/Mia-Dorcol Beorad 1_4.JPG')
       },
       {
         name: 'Mia-Dorćol Beograd',
-        src: require('constants/img/objects/6/Mia-Dorcol Beorad 1_5.jpg').default,
-        smallSrc: require('constants/img/objects/6/small/Mia-Dorcol Beorad 1_5.jpg').default
+        src: require('constants/img/objects/6/Mia-Dorcol Beorad 1_5.jpg'),
+        smallSrc: require('constants/img/objects/6/small/Mia-Dorcol Beorad 1_5.jpg')
       },
       {
         name: 'Mia-Dorćol Beograd',
-        src: require('constants/img/objects/6/Mia-Dorcol Beorad 1_6.jpg').default,
-        smallSrc: require('constants/img/objects/6/small/Mia-Dorcol Beorad 1_6.jpg').default
+        src: require('constants/img/objects/6/Mia-Dorcol Beorad 1_6.jpg'),
+        smallSrc: require('constants/img/objects/6/small/Mia-Dorcol Beorad 1_6.jpg')
       },
       {
         name: 'Mia-Dorćol Beograd',
-        src: require('constants/img/objects/6/Mia-Dorcol Beorad 1_7.jpg').default,
-        smallSrc: require('constants/img/objects/6/small/Mia-Dorcol Beorad 1_7.jpg').default
+        src: require('constants/img/objects/6/Mia-Dorcol Beorad 1_7.jpg'),
+        smallSrc: require('constants/img/objects/6/small/Mia-Dorcol Beorad 1_7.jpg')
       },
       {
         name: 'Mia-Dorćol Beograd',
-        src: require('constants/img/objects/6/Mia-Dorcol Beorad 1_8.jpg').default,
-        smallSrc: require('constants/img/objects/6/small/Mia-Dorcol Beorad 1_8.jpg').default
+        src: require('constants/img/objects/6/Mia-Dorcol Beorad 1_8.jpg'),
+        smallSrc: require('constants/img/objects/6/small/Mia-Dorcol Beorad 1_8.jpg')
       },
       {
         name: 'Mia-Dorćol Beograd',
-        src: require('constants/img/objects/6/Mia-Dorcol Beorad 1_9.jpg').default,
-        smallSrc: require('constants/img/objects/6/small/Mia-Dorcol Beorad 1_9.jpg').default
+        src: require('constants/img/objects/6/Mia-Dorcol Beorad 1_9.jpg'),
+        smallSrc: require('constants/img/objects/6/small/Mia-Dorcol Beorad 1_9.jpg')
       }
     ]
   },
@@ -426,43 +426,43 @@ export const GalleryContent = [
     images: [
       {
         name: 'Smart Blok Pančeva',
-        src: require('constants/img/objects/7/Smart Blok Pancevo 1.JPG').default,
-        smallSrc: require('constants/img/objects/7/small/Smart Blok Pancevo 1.JPG').default
+        src: require('constants/img/objects/7/Smart Blok Pancevo 1.JPG'),
+        smallSrc: require('constants/img/objects/7/small/Smart Blok Pancevo 1.JPG')
       },
       {
         name: 'Smart Blok Pančeva',
-        src: require('constants/img/objects/7/Smart Blok Pancevo 1_1.JPG').default,
-        smallSrc: require('constants/img/objects/7/small/Smart Blok Pancevo 1_1.JPG').default
+        src: require('constants/img/objects/7/Smart Blok Pancevo 1_1.JPG'),
+        smallSrc: require('constants/img/objects/7/small/Smart Blok Pancevo 1_1.JPG')
       },
       {
         name: 'Smart Blok Pančeva',
-        src: require('constants/img/objects/7/Smart Blok Pancevo 1_2.JPG').default,
-        smallSrc: require('constants/img/objects/7/small/Smart Blok Pancevo 1_2.JPG').default
+        src: require('constants/img/objects/7/Smart Blok Pancevo 1_2.JPG'),
+        smallSrc: require('constants/img/objects/7/small/Smart Blok Pancevo 1_2.JPG')
       },
       {
         name: 'Smart Blok Pančeva',
-        src: require('constants/img/objects/7/Smart Blok Pancevo 1_3.JPG').default,
-        smallSrc: require('constants/img/objects/7/small/Smart Blok Pancevo 1_3.JPG').default
+        src: require('constants/img/objects/7/Smart Blok Pancevo 1_3.JPG'),
+        smallSrc: require('constants/img/objects/7/small/Smart Blok Pancevo 1_3.JPG')
       },
       {
         name: 'Smart Blok Pančeva',
-        src: require('constants/img/objects/7/Smart Blok Pancevo 1_4.JPG').default,
-        smallSrc: require('constants/img/objects/7/small/Smart Blok Pancevo 1_4.JPG').default
+        src: require('constants/img/objects/7/Smart Blok Pancevo 1_4.JPG'),
+        smallSrc: require('constants/img/objects/7/small/Smart Blok Pancevo 1_4.JPG')
       },
       {
         name: 'Smart Blok Pančeva',
-        src: require('constants/img/objects/7/Smart Blok Pancevo 1_5.JPG').default,
-        smallSrc: require('constants/img/objects/7/small/Smart Blok Pancevo 1_5.JPG').default
+        src: require('constants/img/objects/7/Smart Blok Pancevo 1_5.JPG'),
+        smallSrc: require('constants/img/objects/7/small/Smart Blok Pancevo 1_5.JPG')
       },
       {
         name: 'Smart Blok Pančeva',
-        src: require('constants/img/objects/7/Smart Blok Pancevo 1_6.JPG').default,
-        smallSrc: require('constants/img/objects/7/small/Smart Blok Pancevo 1_6.JPG').default
+        src: require('constants/img/objects/7/Smart Blok Pancevo 1_6.JPG'),
+        smallSrc: require('constants/img/objects/7/small/Smart Blok Pancevo 1_6.JPG')
       },
       {
         name: 'Smart Blok Pančeva',
-        src: require('constants/img/objects/7/Smart Blok Pancevo 1_7.JPG').default,
-        smallSrc: require('constants/img/objects/7/small/Smart Blok Pancevo 1_7.JPG').default
+        src: require('constants/img/objects/7/Smart Blok Pancevo 1_7.JPG'),
+        smallSrc: require('constants/img/objects/7/small/Smart Blok Pancevo 1_7.JPG')
       }
     ]
   }
