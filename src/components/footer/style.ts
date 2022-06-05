@@ -24,27 +24,27 @@ export const FooterFirstPartContainer = styled.div`
   background-position: center;
 
   @media ${devices.xs} {
-    padding: 3px 6px;
+    padding: 20px;
   }
 
   @media ${devices.sm} {
     padding: 4px 8px;
-    height: 80px;
+    height: 140px;
   }
 
   @media ${devices.md} {
     padding: 5px 10px;
-    height: 103px;
+    height: 140px;
   }
 
   @media ${devices.lg} {
     padding: 6px 12px;
-    height: 125px;
+    height: 150px;
   }
 
   @media ${devices.xl} {
     padding: 7px 14px;
-    height: 145px;
+    height: 170px;
   }
 `
 
@@ -57,25 +57,25 @@ export const FooterFirstPartCell = styled.div<{ alignItems?: string }>`
   padding: 0 10px;
 
   @media ${devices.xs} {
-    max-width: 111px;
+    max-width: 200px;
     padding: 5px 0;
     justify-content: center;
   }
 
   @media ${devices.sm} {
-    max-width: 148px;
+    max-width: 220px;
   }
 
   @media ${devices.md} {
-    max-width: 191px;
+    max-width: 220px;
   }
 
   @media ${devices.lg} {
-    max-width: 231px;
+    max-width: 250px;
   }
 
   @media ${devices.xl} {
-    max-width: 269px;
+    max-width: 270px;
   }
 
   ${props => props.alignItems && css`
@@ -108,25 +108,25 @@ export const FooterFirstPartTextContainer = styled.div <{
   max-width: 370px;
 
   @media ${devices.xs} {
-    max-width: 111px;
+    max-width: 200px;
     text-align: center;
     justify-content: center;
   }
 
   @media ${devices.sm} {
-    max-width: 148px;
+    max-width: 200px;
   }
 
   @media ${devices.md} {
-    max-width: 191px;
+    max-width: 200px;
   }
 
   @media ${devices.lg} {
-    max-width: 231px;
+    max-width: 240px;
   }
 
   @media ${devices.xl} {
-    max-width: 269px;
+    max-width: 270px;
   }
 
   ${props => props.flexDirection && css`
@@ -175,28 +175,23 @@ export const FooterFirstPartCellHeaderText = styled.h1`
   color: ${Styles.Colours.PALETTE.DANITO._darkGray};
 
   @media ${devices.xs} {
-    font-size: 9px;
-    padding-bottom: 1px;
+    font-size: 15px;
   }
 
   @media ${devices.sm} {
-    font-size: 12px;
-    padding-bottom: 2px;
+    font-size: 15px;
   }
 
   @media ${devices.md} {
     font-size: 15px;
-    padding-bottom: 2px;
   }
 
   @media ${devices.lg} {
-    font-size: 18px;
-    padding-bottom: 3px;
+    font-size: 20px;
   }
 
   @media ${devices.xl} {
-    font-size: 21px;
-    padding-bottom: 3px;
+    font-size: 25px;
   }
 `
 
@@ -209,28 +204,29 @@ export const FooterFirstPartCellText = styled.a<{ paddingLeft?: number }>`
   text-align: left;
 
   @media ${devices.xs} {
-    margin: 2px 0;
-    font-size: 6px;
+    margin: 4px 0;
+    font-size: 13px;
+    text-align: center;
   }
 
   @media ${devices.sm} {
-    margin: 3px 0;
-    font-size: 8px;
+    margin: 4px 0;
+    font-size: 13px;
   }
 
   @media ${devices.md} {
     margin: 4px 0;
-    font-size: 10px;
+    font-size: 13px;
   }
 
   @media ${devices.lg} {
     margin: 5px 0;
-    font-size: 12px;
+    font-size: 15px;
   }
 
   @media ${devices.xl} {
     margin: 5px 0;
-    font-size: 14px;
+    font-size: 27px;
   }
 
   ${props => props.paddingLeft && css`
@@ -276,13 +272,14 @@ export const FooterSecondPartContainer = styled.div`
   padding: 0 20px;
 
   @media ${devices.xs} {
-    padding: 0;
-    height: 15px;
+    padding: 0 5px;
+    height: 25px;
     position: absolute;
     width: 100%;
     bottom: 0;
     right: 0;
-    left: 0
+    left: 0;
+    justify-content: space-around;
   }
 
   @media ${devices.sm} {
@@ -296,40 +293,40 @@ export const FooterSecondPartContainer = styled.div`
   }
 
   @media ${devices.lg} {
-    height: 31px;
+    height: 35px;
     padding: 0 12px;
   }
 
   @media ${devices.xl} {
-    height: 36px;
-    padding: 0 14px;
+    height: 40px;
+    padding: 0 15px;
   }
 
 `
 
 export const FooterSecondPartText = styled.p`
-  font-size: 13px;
+  font-size: 15px;
   color: ${Styles.Colours.PALETTE.DANITO._white};
   font-weight: normal;
 
   @media ${devices.xs} {
-    font-size: 5px;
-  }
-
-  @media ${devices.sm} {
-    font-size: 8px;
-  }
-
-  @media ${devices.md} {
-    font-size: 8px;
-  }
-
-  @media ${devices.lg} {
     font-size: 10px;
   }
 
+  @media ${devices.sm} {
+    font-size: 10px;
+  }
+
+  @media ${devices.md} {
+    font-size: 10px;
+  }
+
+  @media ${devices.lg} {
+    font-size: 13px;
+  }
+
   @media ${devices.xl} {
-    font-size: 12px;
+    font-size: 13px;
   }
 `
 
@@ -342,23 +339,29 @@ export const FooterSecondPartLinkText = styled.a`
   margin-left: 5px;
 
   @media ${devices.xs} {
-    font-size: 5px;
+    font-size: 8px;
+    margin-right: 2px;
+    margin-left: 2px;
   }
 
   @media ${devices.sm} {
     font-size: 8px;
+    margin-right: 2px;
+    margin-left: 2px;
   }
 
   @media ${devices.md} {
     font-size: 8px;
+    margin-right: 2px;
+    margin-left: 2px;
   }
 
   @media ${devices.lg} {
-    font-size: 10px;
+    font-size: 13px;
   }
 
   @media ${devices.xl} {
-    font-size: 12px;
+    font-size: 13px;
   }
 `
 
@@ -366,11 +369,13 @@ export const FooterContentContainer = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   width: 100%;
+  padding: 10px 0;
 
   @media ${devices.xs} {
     flex-direction: column;
+    align-items: center;
   }
   
 `

@@ -8,24 +8,17 @@ export const GalleyContainer = styled.div`
   margin-top: 70px;
 
   @media ${devices.xs} {
-    margin-top: 21px;
+    margin-top: 0px;
   }
 
   @media ${devices.sm} {
-    margin-top: 28px;
+    margin-top: 0px;
   }
 
   @media ${devices.md} {
-    margin-top: 36px;
+    margin-top: 0px;
   }
-
-  @media ${devices.lg} {
-    margin-top: 44px;
-  }
-
-  @media ${devices.xl} {
-    margin-top: 51px;
-  }
+  
 `
 
 export const GalleryContentContainer = styled.div`
@@ -38,12 +31,12 @@ export const GalleryContentContainer = styled.div`
   align-items: center;
 
   @media ${devices.xs} {
-    padding: 36px 0;
+    padding: 50px 0;
     gap: 15px;
   }
 
   @media ${devices.sm} {
-    padding: 48px 0;
+    padding: 50px 0;
     gap: 20px;
   }
 
@@ -76,13 +69,13 @@ export const GalleryElementContainer = styled.div`
   width: 80%;
 
   @media ${devices.xs} {
-    padding: 3px;
-    gap: 3px;
+    padding: 5px;
+    gap: 5px;
   }
 
   @media ${devices.sm} {
-    padding: 4px;
-    gap: 4px;
+    padding: 5px;
+    gap: 5px;
   }
 
   @media ${devices.md} {
@@ -91,12 +84,12 @@ export const GalleryElementContainer = styled.div`
   }
 
   @media ${devices.lg} {
-    padding: 6px;
+    padding: 10px;
     gap: 6px;
   }
 
   @media ${devices.xl} {
-    padding: 7px;
+    padding: 10px;
     gap: 7px;
   }
 `
@@ -145,23 +138,23 @@ export const GalleyCarouselImage = styled.img`
   border: none;
 
   @media ${devices.xs} {
-    width: 75px;
-    height: 45px;
+    width: 130px;
+    height: 80px;
   }
 
   @media ${devices.sm} {
-    width: 100px;
-    height: 60px;
+    width: 130px;
+    height: 80px;
   }
 
   @media ${devices.md} {
     width: 130px;
-    height: 77px;
+    height: 80px;
   }
 
   @media ${devices.lg} {
-    width: 156px;
-    height: 93px;
+    width: 160px;
+    height: 100px;
   }
 
   @media ${devices.xl} {
@@ -183,11 +176,11 @@ export const GalleyCarouselSelectedImageContainer = styled.div`
   opacity: 1 !important;
 
   @media ${devices.xs} {
-    top: 75px;
+    top: 35%;
   }
 
   @media ${devices.sm} {
-    top: 100px;
+    top: 35%;
   }
 
   @media ${devices.md} {

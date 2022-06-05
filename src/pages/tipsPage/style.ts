@@ -6,6 +6,18 @@ export const TipsPageLayoutContainer = styled.div`
   display: flex;
   width: 100%;
   flex-direction: column;
+
+  @media ${devices.xs} {
+    margin-top: 61px;
+  }
+
+  @media ${devices.sm} {
+    margin-top: 61px;
+  }
+
+  @media ${devices.md} {
+    margin-top: 61px;
+  }
 `
 
 export const TipsPageHeaderImageContainer = styled.div`
@@ -28,10 +40,12 @@ export const TipsPageTextContainer = styled.div`
 
   @media ${devices.xs} {
     padding: 15px 0;
+    width: 85%;
   }
 
   @media ${devices.sm} {
     padding: 20px 0;
+    width: 85%;
   }
 
   @media ${devices.md} {
@@ -60,27 +74,27 @@ export const TipsPageTextHeader = styled.h1`
   letter-spacing: 1px;
 
   @media ${devices.xs} {
-    font-size: 6px;
+    font-size: 13px;
     margin: 4.5px 0;
   }
 
   @media ${devices.sm} {
-    font-size: 9px;
+    font-size: 13px;
     margin: 6px 0;
   }
 
   @media ${devices.md} {
-    font-size: 11px;
+    font-size: 15px;
     margin: 8px 0;
   }
 
   @media ${devices.lg} {
-    font-size: 14px;
+    font-size: 15px;
     margin: 9px 0;
   }
 
   @media ${devices.xl} {
-    font-size: 16px;
+    font-size: 17px;
     margin: 11px 0;
   }
 `
@@ -117,29 +131,30 @@ export const TipsPageTextP = styled.p`
   color: ${Styles.Colours.PALETTE.DANITO._darkGray};
   margin: 10px 0;
   letter-spacing: 1px;
+  line-height: 15px;
 
   @media ${devices.xs} {
-    font-size: 5px;
+    font-size: 11px;
     margin: 3px 0;
   }
 
   @media ${devices.sm} {
-    font-size: 7px;
+    font-size: 11px;
     margin: 4px 0;
   }
 
   @media ${devices.md} {
-    font-size: 9px;
+    font-size: 15px;
     margin: 5px 0;
   }
 
   @media ${devices.lg} {
-    font-size: 11px;
+    font-size: 15px;
     margin: 6px 0;
   }
 
   @media ${devices.xl} {
-    font-size: 13px;
+    font-size: 15px;
     margin: 7px 0;
   }
 `
@@ -154,28 +169,23 @@ export const TipsPageDatePosted = styled.p`
   width: fit-content;
 
   @media ${devices.xs} {
-    font-size: 4px;
-    padding: 3px;
+    font-size: 10px;
   }
 
   @media ${devices.sm} {
-    font-size: 5px;
-    padding: 3px;
+    font-size: 10px;
   }
 
   @media ${devices.md} {
-    font-size: 6px;
-    padding: 4px;
+    font-size: 10px;
   }
 
   @media ${devices.lg} {
-    font-size: 8px;
-    padding: 5px;
+    font-size: 12px;
   }
 
   @media ${devices.xl} {
-    font-size: 9px;
-    padding: 5px;
+    font-size: 12px;
   }
 `
 
@@ -192,11 +202,11 @@ export const TipsPageContactUsText = styled.a`
   color: ${Styles.Colours.PALETTE.DANITO._black};
 
   @media ${devices.xs} {
-    font-size: 11px;
+    font-size: 15px;
   }
 
   @media ${devices.sm} {
-    font-size: 14px;
+    font-size: 15px;
   }
 
   @media ${devices.md} {
@@ -226,28 +236,28 @@ export const InTipsImageD = styled.img`
   max-height: 600px;
   
   @media ${devices.xs} {
-    max-width: 180px;
-    max-height: 180px;
+    max-width: 300px;
+    max-height: 300px;
   }
 
   @media ${devices.sm} {
-    max-width: 240px;
-    max-height: 240px;
+    max-width: 300px;
+    max-height: 300px;
   }
 
   @media ${devices.md} {
-    max-width: 310px;
-    max-height: 310px;
+    max-width: 350px;
+    max-height: 350px;
   }
 
   @media ${devices.lg} {
-    max-width: 375px;
-    max-height: 375px;
+    max-width: 400px;
+    max-height: 400px;
   }
 
   @media ${devices.xl} {
-    max-width: 437px;
-    max-height: 437px;
+    max-width: 450px;
+    max-height: 450px;
   }
 `
 
@@ -256,23 +266,23 @@ export const InTipsDefaultImage = styled.img`
   max-height: 150px;
   
   @media ${devices.xs} {
-    max-width: 45px;
-    max-height: 45px;
+    max-width: 80px;
+    max-height: 80px;
   }
 
   @media ${devices.sm} {
-    max-width: 60px;
-    max-height: 60px;
+    max-width: 80px;
+    max-height: 80px;
   }
 
   @media ${devices.md} {
-    max-width: 78px;
-    max-height: 78px;
+    max-width: 100px;
+    max-height: 100px;
   }
 
   @media ${devices.lg} {
-    max-width: 94px;
-    max-height: 94px;
+    max-width: 100px;
+    max-height: 100px;
   }
 
   @media ${devices.xl} {

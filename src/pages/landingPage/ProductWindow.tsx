@@ -54,11 +54,11 @@ const ProductWindow = () => {
               : width > calcSize.medium && width <= calcSize.large
                 ? calcSize.large * 15 / calcSize.hd
                 : width > calcSize.small && width <= calcSize.medium
-                  ? calcSize.medium * 15 / calcSize.hd
+                  ? calcSize.large * 15 / calcSize.hd
                   : width > calcSize.xsmall && width <= calcSize.small
-                    ? calcSize.small * 15 / calcSize.hd
+                    ? calcSize.large * 15 / calcSize.hd
                     : width > 0 && width <= calcSize.xsmall
-                      ? calcSize.xsmall * 15 / calcSize.hd
+                      ? calcSize.large * 15 / calcSize.hd
                       : 15,
     textDecoration: 'none',
     color: Styles.Colours.PALETTE.DANITO._white,
@@ -68,11 +68,11 @@ const ProductWindow = () => {
       : width > calcSize.medium && width <= calcSize.large
         ? calcSize.large * 2 / calcSize.hd
         : width > calcSize.small && width <= calcSize.medium
-          ? calcSize.medium * 2 / calcSize.hd
+          ? calcSize.large * 2 / calcSize.hd
           : width > calcSize.xsmall && width <= calcSize.small
-            ? calcSize.small * 2 / calcSize.hd
+            ? calcSize.large * 2 / calcSize.hd
             : width > 0 && width <= calcSize.xsmall
-              ? calcSize.xsmall * 2 / calcSize.hd
+              ? calcSize.large * 2 / calcSize.hd
               : 2,
     transition: '0.5s ease-in-out',
     borderBottomColor: Styles.Colours.PALETTE.DANITO._white,
@@ -86,11 +86,11 @@ const ProductWindow = () => {
         : width > calcSize.medium && width <= calcSize.large
           ? calcSize.large * 2 / calcSize.hd
           : width > calcSize.small && width <= calcSize.medium
-            ? calcSize.medium * 2 / calcSize.hd
+            ? calcSize.large * 2 / calcSize.hd
             : width > calcSize.xsmall && width <= calcSize.small
-              ? calcSize.small * 2 / calcSize.hd
+              ? calcSize.large * 2 / calcSize.hd
               : width > 0 && width <= calcSize.xsmall
-                ? calcSize.xsmall * 2 / calcSize.hd
+                ? calcSize.large * 2 / calcSize.hd
                 : 2,
       borderBottomStyle: 'solid'
     }

@@ -22,6 +22,14 @@ export const LogoImagePart = styled.img<{ imageSize?: number }>`
 
   ${props => props.imageSize && css`
     height: ${props.imageSize}px;
+    
+    @media ${devices.sm} {
+      max-height: 50px;
+    }
+
+    @media ${devices.md} {
+      max-height: 50px;
+    }
   `}
 `
 
@@ -40,6 +48,14 @@ export const LogoHeaderText = styled.h3<{ fontSize?: number }>`
 
   ${props => props.fontSize && css`
     font-size: ${props.fontSize}px;
+
+    @media ${devices.sm} {
+      font-size: 17px;
+    }
+
+    @media ${devices.md} {
+      font-size: 17px;
+    }
   `}
 `
 
@@ -52,5 +68,13 @@ export const LogoTextSubHeader = styled.p<{ fontSize?: number }>`
 
   ${props => props.fontSize && css`
     font-size: ${props.fontSize}px;
+
+    @media ${devices.sm} {
+      font-size: 13px;
+    }
+
+    @media ${devices.md} {
+      font-size: 13px;
+    }
   `}
 `

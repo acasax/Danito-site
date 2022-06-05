@@ -9,10 +9,12 @@ export const AboutContainer = styled.div`
 export const AboutHeaderImageContainer = styled.div`
   width: 100%;
   height: auto;
+  margin-bottom: -5px;
 `
 
 export const AboutHeaderImage = styled.img`
   width: 100%;
+  height: auto;
 `
 
 export const AboutContentContainer = styled.div`
@@ -28,23 +30,23 @@ export const AboutHeaderTextContainer = styled.div`
   min-height: 100px;
 
   @media ${devices.xs} {
-    height: 30px;
+    min-height: 30px;
   }
 
   @media ${devices.sm} {
-    height: 40px;
+    min-height: 40px;
   }
 
   @media ${devices.md} {
-    height: 52px;
+    min-height: 52px;
   }
 
   @media ${devices.lg} {
-    height: 63px;
+    min-height: 63px;
   }
 
   @media ${devices.xl} {
-    height: 73px;
+    min-height: 73px;
   }
 `
 
@@ -56,11 +58,11 @@ export const AboutHeaderText = styled.h1`
   font-style: italic;
 
   @media ${devices.xs} {
-    font-size: 8px;
+    font-size: 13px;
   }
 
   @media ${devices.sm} {
-    font-size: 10px;
+    font-size: 13px;
   }
 
   @media ${devices.md} {
@@ -86,15 +88,15 @@ export const AboutInfoContainer = styled.div`
   text-align: left;
 
   @media ${devices.xs} {
-    padding: 15px 9px;
+    padding: 10px;
   }
 
   @media ${devices.sm} {
-    padding: 20px 12px;
+    padding: 10px 12px;
   }
 
   @media ${devices.md} {
-    padding: 26px 15px;
+    padding: 10px 15px;
   }
 
   @media ${devices.lg} {
@@ -113,23 +115,23 @@ export const AboutInfoHeaderText = styled.h2`
   width: 100%;
 
   @media ${devices.xs} {
-    font-size: 7px;
+    font-size: 15px;
   }
 
   @media ${devices.sm} {
-    font-size: 9px;
+    font-size: 15px;
   }
 
   @media ${devices.md} {
-    font-size: 11px;
+    font-size: 15px;
   }
 
   @media ${devices.lg} {
-    font-size: 14px;
+    font-size: 15px;
   }
 
   @media ${devices.xl} {
-    font-size: 16px;
+    font-size: 17px;
   }
 `
 
@@ -139,23 +141,23 @@ export const AboutInfoText = styled.p`
   width: 100%;
 
   @media ${devices.xs} {
-    font-size: 5px;
+    font-size: 13px;
   }
 
   @media ${devices.sm} {
-    font-size: 7px;
+    font-size: 13px;
   }
 
   @media ${devices.md} {
-    font-size: 9px;
+    font-size: 13px;
   }
 
   @media ${devices.lg} {
-    font-size: 11px;
+    font-size: 13px;
   }
 
   @media ${devices.xl} {
-    font-size: 13px;
+    font-size: 15px;
   }
 `
 
@@ -211,15 +213,15 @@ export const AboutInfoGalleyContainer = styled.div`
   padding: 50px 30px;
 
   @media ${devices.xs} {
-    padding: 15px 9px;
+    padding: 10px 10px;
   }
 
   @media ${devices.sm} {
-    padding: 20px 12px;
+    padding: 10px 10px;
   }
 
   @media ${devices.md} {
-    padding: 26px 15px;
+    padding: 10px 15px;
   }
 
   @media ${devices.lg} {

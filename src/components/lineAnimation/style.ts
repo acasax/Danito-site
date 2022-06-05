@@ -11,11 +11,11 @@ export const LiveAnimationContainer = styled.div<{ backgroundColor?: string }>`
   justify-content: center;
 
   @media ${devices.xs} {
-    height: 42px;
+    height: 72px;
   }
 
   @media ${devices.sm} {
-    height: 56px;
+    height: 72px;
   }
 
   @media ${devices.md} {
@@ -53,11 +53,11 @@ export const LiveAnimationHeading = styled.h2<{ scaleTransform: boolean, fontSiz
   letter-spacing: 3px;
 
   @media ${devices.xs} {
-    font-size: 9px;
+    font-size: 13px;
   }
 
   @media ${devices.sm} {
-    font-size: 12px;
+    font-size: 13px;
   }
 
   @media ${devices.md} {

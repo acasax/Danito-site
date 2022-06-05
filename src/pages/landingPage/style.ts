@@ -178,23 +178,23 @@ export const ProductPartHeaderContainer = styled.div`
   margin-top: 10px;
 
   @media ${devices.xs} {
-    height: 15px;
+    height: 30px;
   }
 
   @media ${devices.sm} {
-    height: 20px;
+    height: 30px;
   }
 
   @media ${devices.md} {
-    height: 26px;
+    height: 30px;
   }
 
   @media ${devices.lg} {
-    height: 32px;
+    height: 35px;
   }
 
   @media ${devices.xl} {
-    height: 37px;
+    height: 40px;
   }
 `
 
@@ -204,19 +204,19 @@ export const ProductPartHeaderText = styled.p`
   color: ${Styles.Colours.PALETTE.DANITO._darkGray};
 
   @media ${devices.xs} {
-    font-size: 7px;
+    font-size: 12px;
   }
 
   @media ${devices.sm} {
-    font-size: 9px;
+    font-size: 12px;
   }
 
   @media ${devices.md} {
-    font-size: 11px;
+    font-size: 12px;
   }
 
   @media ${devices.lg} {
-    font-size: 14px;
+    font-size: 15px;
   }
 
   @media ${devices.xl} {
@@ -244,23 +244,23 @@ export const ProductPartElementImageContainer = styled.div`
   padding-top: 25px;
 
   @media ${devices.xs} {
-    height: 90px;
-    padding-top: 8px;
+    height: 160px;
+    padding-top: 15px;
   }
 
   @media ${devices.sm} {
-    height: 120px;
-    padding-top: 10px;
+    height: 160px;
+    padding-top: 15px;
   }
 
   @media ${devices.md} {
-    height: 155px;
-    padding-top: 13px;
+    height: 160px;
+    padding-top: 15px;
   }
 
   @media ${devices.lg} {
-    height: 187px;
-    padding-top: 15px;
+    height: 190px;
+    padding-top: 20px;
   }
 
   @media ${devices.xl} {
@@ -275,19 +275,19 @@ export const ProductPartElementImage = styled.img`
   max-height: 350px;
 
   @media ${devices.xs} {
-    max-height: 90px;
+    max-height: 160px;
   }
 
   @media ${devices.sm} {
-    max-height: 120px;
+    max-height: 160px;
   }
 
   @media ${devices.md} {
-    max-height: 155px;
+    max-height: 160px;
   }
 
   @media ${devices.lg} {
-    max-height: 187px;
+    max-height: 190px;
   }
 
   @media ${devices.xl} {
@@ -354,32 +354,32 @@ export const ProductPartChildrenButton = styled.button<{ isOpen?: boolean }>`
   transition: 0.3s;
 
   @media ${devices.xs} {
-    font-size: 5px;
-    width: 90px;
-    height: 15px;
+    font-size: 15px;
+    width: 200px;
+    height: 25px;
   }
 
   @media ${devices.sm} {
-    font-size: 7px;
-    width: 120px;
-    height: 20px;
+    font-size: 15px;
+    width: 200px;
+    height: 25px;
   }
 
   @media ${devices.md} {
-    font-size: 9px;
-    width: 155px;
+    font-size: 15px;
+    width: 200px;
     height: 25px;
   }
 
   @media ${devices.lg} {
-    font-size: 10px;
-    width: 187px;
-    height: 31px;
+    font-size: 15px;
+    width: 200px;
+    height: 35px;
   }
 
   @media ${devices.xl} {
     font-size: 13px;
-    width: 219px;
+    width: 250px;
     height: 36px;
   }
 
@@ -401,33 +401,33 @@ export const ProductPartChildrenLinksContainer = styled.div`
   margin-bottom: 15px;
 
   @media ${devices.xs} {
-    gap: 4px;
-    margin-top: 4px;
-    margin-bottom: 4px;
-  }
-
-  @media ${devices.sm} {
-    gap: 6px;
-    margin-top: 6px;
-    margin-bottom: 6px;
-  }
-
-  @media ${devices.md} {
-    gap: 8px;
-    margin-top: 8px;
-    margin-bottom: 8px;
-  }
-
-  @media ${devices.lg} {
     gap: 10px;
     margin-top: 10px;
     margin-bottom: 10px;
   }
 
+  @media ${devices.sm} {
+    gap: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  @media ${devices.md} {
+    gap: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  @media ${devices.lg} {
+    gap: 15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
   @media ${devices.xl} {
-    gap: 11px;
-    margin-top: 11px;
-    margin-bottom: 11px;
+    gap: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
 
 `
@@ -584,24 +584,24 @@ export const TipsContainer = styled.div`
   flex-wrap: wrap;
 
   @media ${devices.xs} {
-    padding: 15px 0;
+    padding: 20px 0;
     flex-direction: column;
   }
 
   @media ${devices.sm} {
-    padding: 20px 0;
+    padding: 02px 0;
   }
 
   @media ${devices.md} {
-    padding: 26px 0;
+    padding: 20px 0;
   }
 
   @media ${devices.lg} {
-    padding: 31px 0;
+    padding: 25px 0;
   }
 
   @media ${devices.xl} {
-    padding: 36px 0;
+    padding: 30px 0;
   }
 `
 
@@ -636,23 +636,29 @@ export const Card = styled.div`
   padding: 20px;
 
   @media ${devices.xs} {
-    padding: 6px;
+    padding: 5px;
+    min-width: 70%;
+    max-width: 70%;
   }
 
   @media ${devices.sm} {
-    padding: 8px;
+    padding: 5px;
+    min-width: 70%;
+    max-width: 70%;
   }
 
   @media ${devices.md} {
-    padding: 10px;
+    padding: 5px;
+    min-width: 70%;
+    max-width: 70%;
   }
 
   @media ${devices.lg} {
-    padding: 13px;
+    padding: 10px;
   }
 
   @media ${devices.xl} {
-    padding: 15px;
+    padding: 10px;
   }
 `
 
@@ -669,38 +675,38 @@ export const CardContainer = styled.div<{ out: boolean }>`
   border-radius: 10px;
 
   @media ${devices.xs} {
-    max-height: 150px;
-    max-width: 120px;
-    padding: 3px;
-    border-radius: 3px;
+    max-height: 370px;
+    max-width: 300px;
+    padding: 10px;
+    border-radius: 10px;
   }
 
   @media ${devices.sm} {
-    max-height: 200px;
-    max-width: 160px;
-    padding: 4px;
-    border-radius: 4px;
+    max-height: 370px;
+    max-width: 300px;
+    padding: 10px;
+    border-radius: 10px;
   }
 
   @media ${devices.md} {
-    max-height: 258px;
-    max-width: 207px;
-    padding: 5px;
-    border-radius: 5px;
+    max-height: 370px;
+    max-width: 300px;
+    padding: 10px;
+    border-radius: 10px;
   }
 
   @media ${devices.lg} {
-    max-height: 312px;
-    max-width: 250px;
-    padding: 6px;
-    border-radius: 6px;
+    max-height: 370px;
+    max-width: 300px;
+    padding: 10px;
+    border-radius: 10px;
   }
 
   @media ${devices.xl} {
-    max-height: 365px;
-    max-width: 291px;
-    padding: 7px;
-    border-radius: 7px;
+    max-height: 370px;
+    max-width: 300px;
+    padding: 10px;
+    border-radius: 10px;
   }
 
   visibility: ${props => props.out ? 'visible' : 'hidden'};
@@ -721,23 +727,23 @@ export const CardImage = styled.img`
   object-fit: cover;
 
   @media ${devices.xs} {
-    max-height: 60px;
+    max-height: 130px;
   }
 
   @media ${devices.sm} {
-    max-height: 80px;
+    max-height: 130px;
   }
 
   @media ${devices.md} {
-    max-height: 103px;
+    max-height: 130px;
   }
 
   @media ${devices.lg} {
-    max-height: 125px;
+    max-height: 140px;
   }
 
   @media ${devices.xl} {
-    max-height: 145px;
+    max-height: 150px;
   }
 `
 
@@ -747,26 +753,26 @@ export const CardContentContainer = styled.div`
   justify-content: center;
   align-items: flex-start;
   width: 100%;
-  padding: 15px 0;
+  padding: 20px 0;
 
   @media ${devices.xs} {
-    padding: 5px 0;
+    padding: 10px 0;
   }
 
   @media ${devices.sm} {
-    padding: 6px 0;
+    padding: 10px 0;
   }
 
   @media ${devices.md} {
-    padding: 8px 0;
+    padding: 10px 0;
   }
 
   @media ${devices.lg} {
-    padding: 9px 0;
+    padding: 10px 0;
   }
 
   @media ${devices.xl} {
-    padding: 11px 0;
+    padding: 15px 0;
   }
 `
 
@@ -787,35 +793,35 @@ export const CardHeaderContainer = styled.div`
   @media ${devices.xs} {
     border-bottom-width: 0.6px;
     border-top-width: 0.6px;
-    height: 15px;
-    padding: 6px 0;
+    height: 30px;
+    padding: 10px 0;
   }
 
   @media ${devices.sm} {
     border-bottom-width: 0.8px;
     border-top-width: 0.8px;
-    height: 20px;
-    padding: 8px 0;
+    height: 30px;
+    padding: 10px 0;
   }
 
   @media ${devices.md} {
     border-bottom-width: 1px;
     border-top-width: 1px;
-    height: 25px;
+    height: 30px;
     padding: 10px 0;
   }
 
   @media ${devices.lg} {
     border-bottom-width: 1.2px;
     border-top-width: 1.2px;
-    height: 31px;
-    padding: 13px 0;
+    height: 40px;
+    padding: 15px 0;
   }
 
   @media ${devices.xl} {
     border-bottom-width: 1.5px;
     border-top-width: 1.5px;
-    height: 36px;
+    height: 40px;
     padding: 15px 0;
   }
 `
@@ -828,23 +834,23 @@ export const CardHeaderText = styled.h3`
   margin: 0;
 
   @media ${devices.xs} {
-    font-size: 6px;
-  }
-
-  @media ${devices.sm} {
-    font-size: 8px;
-  }
-
-  @media ${devices.md} {
-    font-size: 10px;
-  }
-
-  @media ${devices.lg} {
     font-size: 13px;
   }
 
-  @media ${devices.xl} {
+  @media ${devices.sm} {
+    font-size: 13px;
+  }
+
+  @media ${devices.md} {
+    font-size: 13px;
+  }
+
+  @media ${devices.lg} {
     font-size: 15px;
+  }
+
+  @media ${devices.xl} {
+    font-size: 17px;
   }
 `
 
@@ -856,28 +862,28 @@ export const CardTextContainer = styled.div`
 
 export const CardText = styled.p`
   text-align: left;
-  font-size: 17px;
+  font-size: 20px;
   font-weight: normal;
   color: ${Styles.Colours.PALETTE.DANITO._black};
 
   @media ${devices.xs} {
-    font-size: 5px;
+    font-size: 13px;
   }
 
   @media ${devices.sm} {
-    font-size: 7px;
+    font-size: 13px;
   }
 
   @media ${devices.md} {
-    font-size: 9px;
+    font-size: 13px;
   }
 
   @media ${devices.lg} {
-    font-size: 10px;
+    font-size: 15px;
   }
 
   @media ${devices.xl} {
-    font-size: 13px;
+    font-size: 17px;
   }
 `
 
@@ -936,23 +942,23 @@ export const CardFooterDateContainer = styled.div`
   width: 150px;
 
   @media ${devices.xs} {
-    height: 10px;
-    width: 45px;
+    height: 20px;
+    width: 100px;
   }
 
   @media ${devices.sm} {
-    height: 14px;
-    width: 60px;
+    height: 20px;
+    width: 100px;
   }
 
   @media ${devices.md} {
-    height: 18px;
-    width: 77px;
+    height: 20px;
+    width: 100px;
   }
 
   @media ${devices.lg} {
-    height: 22px;
-    width: 94px;
+    height: 25px;
+    width: 110px;
   }
 
   @media ${devices.xl} {
@@ -962,26 +968,26 @@ export const CardFooterDateContainer = styled.div`
 `
 
 export const CardFooterDateText = styled.p`
-  font-size: 15px;
+  font-size: 17px;
   color: ${Styles.Colours.PALETTE.DANITO._white};
 
   @media ${devices.xs} {
-    font-size: 5px;
+    font-size: 10px;
   }
 
   @media ${devices.sm} {
-    font-size: 6px;
+    font-size: 10px;
   }
 
   @media ${devices.md} {
-    font-size: 8px;
+    font-size: 10px;
   }
 
   @media ${devices.lg} {
-    font-size: 9px;
+    font-size: 15px;
   }
 
   @media ${devices.xl} {
-    font-size: 11px;
+    font-size: 15px;
   }
 `

@@ -60,11 +60,11 @@ const Tips = () => {
       : width > calcSize.medium && width < calcSize.large
         ? calcSize.large * 2 / calcSize.hd
         : width > calcSize.small && width < calcSize.medium
-          ? calcSize.medium * 2 / calcSize.hd
+          ? calcSize.large * 2 / calcSize.hd
           : width > calcSize.xsmall && width < calcSize.small
-            ? calcSize.small * 2 / calcSize.hd
+            ? calcSize.large * 2 / calcSize.hd
             : width > 0 && width < calcSize.xsmall
-              ? calcSize.xsmall * 2 / calcSize.hd
+              ? calcSize.large * 2 / calcSize.hd
               : 2,
     borderStyle: 'solid',
     borderColor: Styles.Colours.PALETTE.DANITO._yellow,
@@ -73,22 +73,22 @@ const Tips = () => {
       : width > calcSize.medium && width < calcSize.large
         ? calcSize.large * 4 / calcSize.hd
         : width > calcSize.small && width < calcSize.medium
-          ? calcSize.medium * 4 / calcSize.hd
+          ? calcSize.large * 4 / calcSize.hd
           : width > calcSize.xsmall && width < calcSize.small
-            ? calcSize.small * 4 / calcSize.hd
+            ? calcSize.large * 4 / calcSize.hd
             : width > 0 && width < calcSize.xsmall
-              ? calcSize.xsmall * 4 / calcSize.hd
+              ? calcSize.large * 4 / calcSize.hd
               : 4,
     paddingVertical: width > calcSize.large && width < calcSize.extralarge
       ? calcSize.extralarge * 20 / calcSize.hd
       : width > calcSize.medium && width < calcSize.large
         ? calcSize.large * 20 / calcSize.hd
         : width > calcSize.small && width < calcSize.medium
-          ? calcSize.medium * 20 / calcSize.hd
+          ? calcSize.large * 20 / calcSize.hd
           : width > calcSize.xsmall && width < calcSize.small
-            ? calcSize.small * 20 / calcSize.hd
+            ? calcSize.large * 20 / calcSize.hd
             : width > 0 && width < calcSize.xsmall
-              ? calcSize.xsmall * 20 / calcSize.hd
+              ? calcSize.large * 20 / calcSize.hd
               : 20,
     color: Styles.Colours.PALETTE.DANITO._black,
     fontSize: width > calcSize.large && width < calcSize.extralarge
@@ -96,11 +96,11 @@ const Tips = () => {
       : width > calcSize.medium && width < calcSize.large
         ? calcSize.large * 15 / calcSize.hd
         : width > calcSize.small && width < calcSize.medium
-          ? calcSize.medium * 15 / calcSize.hd
+          ? calcSize.large * 15 / calcSize.hd
           : width > calcSize.xsmall && width < calcSize.small
-            ? calcSize.small * 15 / calcSize.hd
+            ? calcSize.large * 15 / calcSize.hd
             : width > 0 && width < calcSize.xsmall
-              ? calcSize.xsmall * 15 / calcSize.hd
+              ? calcSize.large * 15 / calcSize.hd
               : 15,
     fontWeight: 600,
     height: width > calcSize.large && width < calcSize.extralarge
@@ -108,22 +108,22 @@ const Tips = () => {
       : width > calcSize.medium && width < calcSize.large
         ? calcSize.large * 30 / calcSize.hd
         : width > calcSize.small && width < calcSize.medium
-          ? calcSize.medium * 30 / calcSize.hd
+          ? calcSize.large * 30 / calcSize.hd
           : width > calcSize.xsmall && width < calcSize.small
-            ? calcSize.small * 30 / calcSize.hd
+            ? calcSize.large * 30 / calcSize.hd
             : width > 0 && width < calcSize.xsmall
-              ? calcSize.xsmall * 30 / calcSize.hd
+              ? calcSize.large * 30 / calcSize.hd
               : 30,
     minWidth: width > calcSize.large && width < calcSize.extralarge
       ? calcSize.extralarge * 80 / calcSize.hd
       : width > calcSize.medium && width < calcSize.large
         ? calcSize.large * 80 / calcSize.hd
         : width > calcSize.small && width < calcSize.medium
-          ? calcSize.medium * 80 / calcSize.hd
+          ? calcSize.large * 80 / calcSize.hd
           : width > calcSize.xsmall && width < calcSize.small
-            ? calcSize.small * 80 / calcSize.hd
+            ? calcSize.large * 80 / calcSize.hd
             : width > 0 && width < calcSize.xsmall
-              ? calcSize.xsmall * 80 / calcSize.hd
+              ? calcSize.large * 80 / calcSize.hd
               : 80,
     display: 'flex',
     justifyContent: 'center',

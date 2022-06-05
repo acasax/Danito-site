@@ -272,23 +272,26 @@ export const NavBarProductPartHeaderContainer = styled.div`
   justify-content: space-evenly;
   width: 280px;
   font-weight: 500;
-  border-bottom-color: ${Styles.Colours.PALETTE.DANITO._darkGray};
-  border-bottom-width: 1px;
-  border-bottom-style: solid;
+  border-top-color: ${Styles.Colours.PALETTE.DANITO._darkGray};
+  border-top-width: 2px;
+  border-top-style: solid;
 
   @media ${devices.xs} {
     height: 60px;
     font-weight: 200;
+    border-top-width: 1px;
   }
 
   @media ${devices.sm} {
     height: 60px;
     font-weight: 200;
+    border-top-width: 1px;
   }
 
   @media ${devices.md} {
     height: 60px;
     font-weight: 300;
+    border-top-width: 1px;
   }
 
   @media ${devices.lg} {
