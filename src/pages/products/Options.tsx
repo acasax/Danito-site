@@ -83,7 +83,7 @@ const BasicTabs = ({ optionsContent }: any) => {
             </Box>
             {
                 optionsContent.options[0] && <TabPanel value={value} index={0}>
-                    <Typography variant={'h2'}>{optionsContent.nameHeader}</Typography>
+                    <Typography variant={'h4'}>{optionsContent.nameHeader}</Typography>
                     {optionsContent.options[0].map((data, key) => {
                       return <li key={`opt2-${key}`} >{data}</li>
                     })}

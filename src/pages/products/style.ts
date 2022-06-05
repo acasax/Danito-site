@@ -6,11 +6,24 @@ export const ProductPageContainer = styled.div`
   display: flex;
   flex-direction: column;
   width: 100%;
+
+  @media ${devices.xs} {
+    margin-top: 61px;
+  }
+
+  @media ${devices.sm} {
+    margin-top: 61px;
+  }
+
+  @media ${devices.md} {
+    margin-top: 61px;
+  }
 `
 
 export const ProductPageHeaderImageContainer = styled.div`
   width: 100%;
   height: auto;
+  margin-bottom: -5px;
 `
 
 export const ProductPageHeaderImage = styled.img`
@@ -25,10 +38,12 @@ export const ProductPageContentContainer = styled.div`
 
   @media ${devices.xs} {
     padding: 3px;
+    flex-direction: column;
   }
 
   @media ${devices.sm} {
     padding: 4px;
+    flex-direction: column;
   }
 
   @media ${devices.md} {
@@ -49,20 +64,22 @@ export const ProductPageContentVideoContainer = styled.div`
   padding: 30px;
   max-height: 500px;
   justify-content: center;
+  align-items: center;
+  flex: 1;
+  width: 100%;
 
   @media ${devices.xs} {
-    padding: 9px;
-    max-height: 150px;
+    padding: 0px;
   }
 
   @media ${devices.sm} {
-    padding: 12px;
-    max-height: 200px;
+    padding: 0px;
   }
 
   @media ${devices.md} {
     padding: 15px;
-    max-height: 258px;
+    max-height: 400px;
+    max-width: 350px;
   }
 
   @media ${devices.lg} {
@@ -78,6 +95,24 @@ export const ProductPageContentVideoContainer = styled.div`
 
 export const ProductPageContentVideo = styled.video`
   height: 100%;
+
+  @media ${devices.xs} {
+    padding: 9px;
+    max-height: 250px;
+    max-width: 230px;
+  }
+
+  @media ${devices.sm} {
+    padding: 12px;
+    max-height: 250px;
+    max-width: 230px;
+  }
+
+  @media ${devices.md} {
+    padding: 15px;
+    max-height: 400px;
+    max-width: 350px;
+  }
 `
 
 export const ProductPageContentImage = styled.img`
@@ -90,6 +125,7 @@ export const ProductPageContentOptionsContainer = styled.div`
   align-items: flex-start;
   width: 100%;
   padding-top: 40px;
+  flex: 2;
 
   @media ${devices.xs} {
     padding-top: 12px;
@@ -101,6 +137,7 @@ export const ProductPageContentOptionsContainer = styled.div`
 
   @media ${devices.md} {
     padding-top: 20px;
+    
   }
 
   @media ${devices.lg} {
@@ -120,10 +157,16 @@ export const ProductPageContainerCharacteristicContainer = styled.div`
 
   @media ${devices.xs} {
     padding: 6px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
   }
 
   @media ${devices.sm} {
     padding: 8px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
   }
 
   @media ${devices.md} {
@@ -153,17 +196,17 @@ export const ProductPageCharacteristicItemContainer = styled.div`
   min-height: 450px;
 
   @media ${devices.xs} {
-    gap: 6px;
+    gap: 15px;
     line-height: 7px;
-    width: 135px;
-    height: 135px;
+    width: 80%;
+    min-height: 230px;
   }
 
   @media ${devices.sm} {
-    gap: 8px;
+    gap: 15px;
     line-height: 9px;
-    width: 180px;
-    height: 180px;
+    width: 80%;
+    min-height: 230px;
   }
 
   @media ${devices.md} {
@@ -242,23 +285,23 @@ export const ProductPageCharacteristicItemHeader = styled.h1`
   margin: 0;
 
   @media ${devices.xs} {
-    font-size: 7.5px;
-  }
-
-  @media ${devices.sm} {
-    font-size: 10px;
-  }
-
-  @media ${devices.md} {
-    font-size: 13px;
-  }
-
-  @media ${devices.lg} {
     font-size: 15px;
   }
 
+  @media ${devices.sm} {
+    font-size: 15px;
+  }
+
+  @media ${devices.md} {
+    font-size: 15px;
+  }
+
+  @media ${devices.lg} {
+    font-size: 17px;
+  }
+
   @media ${devices.xl} {
-    font-size: 18px;
+    font-size: 20px;
   }
 `
 
@@ -274,29 +317,30 @@ export const ProductPageCharacteristicItemText = styled.p`
   font-size: 17px;
   color: ${Styles.Colours.PALETTE.DANITO._black};
   padding: 10px;
+  line-height: 15px;
 
   @media ${devices.xs} {
-    font-size: 5px;
+    font-size: 11px;
     padding: 3px;
   }
 
   @media ${devices.sm} {
-    font-size: 7px;
+    font-size: 11px;
     padding: 4px;
   }
 
   @media ${devices.md} {
-    font-size: 9px;
+    font-size: 11px;
     padding: 5px;
   }
 
   @media ${devices.lg} {
-    font-size: 10px;
+    font-size: 13px;
     padding: 6px;
   }
 
   @media ${devices.xl} {
-    font-size: 12px;
+    font-size: 15px;
     padding: 7px;
   }
 `
@@ -367,6 +411,7 @@ export const ProductPageProfileInfo = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
+  text-align: center;
   align-items: center;
   gap: 20px;
 
@@ -435,56 +480,31 @@ export const ProductPageProfileTextContainer = styled.div`
   height: 50px;
   text-align: center;
   margin-top: 10px;
-
-  @media ${devices.xs} {
-    height: 15px;
-    margin-top: 3px;
-  }
-
-  @media ${devices.sm} {
-    height: 20px;
-    margin-top: 4px;
-  }
-
-  @media ${devices.md} {
-    height: 25px;
-    margin-top: 5px;
-  }
-
-  @media ${devices.lg} {
-    height: 31px;
-    margin-top: 6px;
-  }
-
-  @media ${devices.xl} {
-    height: 36px;
-    margin-top: 7px;
-  }
 `
 
 export const ProductPageProfileText = styled.p`
-  font-size: 15px;
+  font-size: 17px;
   font-weight: bold;
   color: ${Styles.Colours.PALETTE.DANITO._black};
 
   @media ${devices.xs} {
-    font-size: 5px;
+    font-size: 13px;
   }
 
   @media ${devices.sm} {
-    font-size: 7px;
+    font-size: 13px;
   }
 
   @media ${devices.md} {
-    font-size: 9px;
+    font-size: 13px;
   }
 
   @media ${devices.lg} {
-    font-size: 10px;
+    font-size: 15px;
   }
 
   @media ${devices.xl} {
-    font-size: 12px;
+    font-size: 15px;
   }
 `
 
@@ -494,23 +514,23 @@ export const ProductPageProfileImg = styled.img`
   border: 1px solid ${Styles.Colours.PALETTE.DANITO._liteGray};
 
   @media ${devices.xs} {
-    max-height: 60px;
+    max-height: 130px;
   }
 
   @media ${devices.sm} {
-    max-height: 80px;
+    max-height: 130px;
   }
 
   @media ${devices.md} {
-    max-height: 103px;
+    max-height: 150px;
   }
 
   @media ${devices.lg} {
-    max-height: 125px;
+    max-height: 150px;
   }
 
   @media ${devices.xl} {
-    max-height: 146px;
+    max-height: 180px;
   }
 
   &:hover {
@@ -525,30 +545,20 @@ export const ProductsPanelsInfoContainer = styled.div`
   justify-content: center;
   flex-direction: column;
   position: fixed;
-  top: 200px;
+  top: 30%;
   left: 42%;
   z-index: 100000;
   opacity: 1 !important;
 
   @media ${devices.xs} {
-    top: 60px;
+    left: 35%;
   }
 
   @media ${devices.sm} {
-    top: 80px;
+    left: 35%;
   }
 
-  @media ${devices.md} {
-    top: 103px;
-  }
 
-  @media ${devices.lg} {
-    top: 125px;
-  }
-
-  @media ${devices.xl} {
-    top: 146px;
-  }
 `
 
 export const ProductsPanelsInfoSelectedImage = styled.img`
@@ -557,23 +567,23 @@ export const ProductsPanelsInfoSelectedImage = styled.img`
   height: 600px;
 
   @media ${devices.xs} {
-    height: 180px;
+    height: 300px;
   }
 
   @media ${devices.sm} {
-    height: 240px;
+    height: 350px;
   }
 
   @media ${devices.md} {
-    height: 310px;
+    height: 350px;
   }
 
   @media ${devices.lg} {
-    height: 375px;
+    height: 400px;
   }
 
   @media ${devices.xl} {
-    height: 437px;
+    height: 450px;
   }
 `
 
@@ -590,23 +600,23 @@ export const ProductsPanelsInfoText = styled.p`
   color: ${Styles.Colours.PALETTE.DANITO._white};
 
   @media ${devices.xs} {
-    font-size: 6px;
-  }
-
-  @media ${devices.sm} {
-    font-size: 8px;
-  }
-
-  @media ${devices.md} {
-    font-size: 10px;
-  }
-
-  @media ${devices.lg} {
     font-size: 13px;
   }
 
-  @media ${devices.xl} {
+  @media ${devices.sm} {
+    font-size: 13px;
+  }
+
+  @media ${devices.md} {
+    font-size: 13px;
+  }
+
+  @media ${devices.lg} {
     font-size: 15px;
+  }
+
+  @media ${devices.xl} {
+    font-size: 17px;
   }
 
 `
