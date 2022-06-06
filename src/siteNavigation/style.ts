@@ -217,7 +217,7 @@ export const NavBarProductSideBarContainer = styled.div<{ isDisplay: boolean }>`
   display: flex;
   flex-direction: column;
   background-color: ${Styles.Colours.PALETTE.DANITO._white};
-  position: sticky;
+  position: fixed;
   top: 70px;
   height: 100%;
   gap: 20px;

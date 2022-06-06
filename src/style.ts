@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 
 export const Application = styled.div`
   margin: 0;
@@ -18,4 +18,10 @@ export const RelativeContainer = styled.div<{ isDisplay: boolean }>`
   width: 100%;
   z-index: 0;
   overflow: initial;
+  
+  ${props => props.isDisplay && css`
+    //width: calc(100% - 280px);
+    transition: all 0.3s;
+    margin-left: 280px;
+  `}
 `

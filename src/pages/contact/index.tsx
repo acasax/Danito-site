@@ -12,6 +12,7 @@ import { TextareaAutosize } from '@mui/material'
 import Button from '@mui/material/Button'
 import { SiteNavigationContext } from 'siteNavigation/context'
 import axios from 'axios'
+import ContactModal from '../../components/modal'
 
 /**
  *
@@ -31,6 +32,10 @@ const Contact = () => {
     phone: '',
     msg: ''
   })
+  const [showModal, setShowModal] = useState(false)
+  const [title, setTitle] = useState('')
+  const [content, setContent] = useState('')
+  const handleOnClose = () => setShowModal(false)
 
   const setField = (field: string, data: any) => {
     setState(v => ({
@@ -52,8 +57,14 @@ const Contact = () => {
         data: data,
         withCredentials: true
       })
+      setTitle('Uspesno ste poslali e-mail.')
+      setContent('Hvala na poverenju odgovoricemo u najkracem roku!')
+      setShowModal(true)
       console.log('response', response)
     } catch (e) {
+      setTitle('Niste uspesno ste poslali e-mail.')
+      setContent('Doslo je do greske nas tim radi na otklanjaju iste. Hvala na razumevanju!')
+      setShowModal(true)
       console.log(e)
     }
   }
@@ -146,6 +157,16 @@ const Contact = () => {
                     loading="lazy"/>
             </ContactMapContainer>
             <Footer/>
+            {
+                showModal && (
+                    <ContactModal
+                         title={title}
+                         content={content}
+                         open={showModal}
+                         onClose={handleOnClose}
+                        />
+                )
+            }
         </ContactLayoutContainer>
   )
 }

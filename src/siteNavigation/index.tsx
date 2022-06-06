@@ -26,10 +26,6 @@ import SiteRoutes from 'siteNavigation/SiteRoutes'
 const SiteNavigation = () => {
   const { navRightOpen } = useContext(SiteNavigationContext)
 
-  useEffect(() => {
-    console.log('navRightOpen', navRightOpen)
-  }, [])
-
   return (
         <NavBarContainer>
             <Router basename={'/'}>
