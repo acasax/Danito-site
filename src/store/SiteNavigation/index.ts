@@ -9,7 +9,8 @@ import {
   TStateProducts,
   TTipsData
 } from './d'
-import { CLEAR_STATE, GO_BACK, SELECTED_ITEM, SET_SELECTED_TIPS } from './types'
+import { CLEAR_STATE, GO_BACK, SELECTED_ITEM, SET_SELECTED_PAGE, SET_SELECTED_TIPS } from './types'
+import { Translate } from '../../translate/data'
 
 const init = {
   data: navBarData,
@@ -19,7 +20,8 @@ const init = {
   productSectionData: productSectionData,
   tipsData: TipsInitData,
   selectedTip: {} as TTipsData,
-  productsDate: ProductData
+  productsDate: ProductData,
+  selectedPage: Translate.NAV_BAR_SECOND_PART_HOME
 } as TStateProducts
 
 export default (
@@ -59,6 +61,13 @@ export default (
       return {
         ...state,
         selectedTip: selectedTip
+      }
+    }
+
+    case SET_SELECTED_PAGE: {
+      return {
+        ...state,
+        selectedPage: action.payload
       }
     }
     default:

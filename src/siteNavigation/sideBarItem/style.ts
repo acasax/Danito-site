@@ -9,7 +9,7 @@ export const SideNavBarItemContainer = styled.div<{ flexDirection?: 'row' | 'col
   max-width: 300px;
   text-align: left;
   width: 100%;
-  padding: 5px 0;
+  padding: 2px 0;
 
   ${props => props.flexDirection && css`
     flex-direction: ${props.flexDirection};
@@ -17,7 +17,7 @@ export const SideNavBarItemContainer = styled.div<{ flexDirection?: 'row' | 'col
 `
 
 export const SideNavBarItemContainerImg = styled.img`
-  width: 60px;
+  width: 65px;
 `
 
 export const SideNavBarItemCategoryContainerImg = styled.img`
@@ -26,7 +26,7 @@ export const SideNavBarItemCategoryContainerImg = styled.img`
 
 export const SideNavBarItemButton = styled.button<{ textAlign?: string }>`
   height: 50px;
-  letter-spacing: 1px;
+  letter-spacing: 1.5px;
   cursor: pointer;
   border: none;
   border-bottom: 1px solid transparent;
@@ -34,6 +34,7 @@ export const SideNavBarItemButton = styled.button<{ textAlign?: string }>`
   transition: 0.3s ease-in-out;
   border-bottom-width: 0;
   width: 100%;
+  font-size: 15px;
 
   ${props => props.textAlign && css`
     text-align: ${props.textAlign};

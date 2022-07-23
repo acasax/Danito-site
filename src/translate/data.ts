@@ -55,6 +55,7 @@ export const Translate = {
 
   /** NavBar Product Part **/
   CHOSE_CATEGORY: 'Izaberite kategoriju',
+  CHOSE_PAGES: 'Izaberi stranu',
 
   /** NavBar Second Part **/
   NAV_BAR_SECOND_PART_HOME: 'POČETNA',

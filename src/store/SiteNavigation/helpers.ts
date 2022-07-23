@@ -41,3 +41,8 @@ export const _selectorProductsData = createSelector(
   (state: TReduxState): TStateProducts => state.products,
   products => products.productsDate
 )
+
+export const _selectorSelectedPage = createSelector(
+  (state: TReduxState): TStateProducts => state.products,
+  products => products.selectedPage
+)

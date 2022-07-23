@@ -5,10 +5,12 @@ import {
   _selectNavBarItems,
   _selectorFlexDirection,
   _selectorProductsData,
+  _selectorSelectedPage,
   _selectSelectedItem
 } from 'store/SiteNavigation/helpers'
 import { UseProducts } from '../hooks/navBar/useProducts'
-import { ProductsDataInfo } from 'store/SiteNavigation/d'
+import { ProductsCategory, ProductsDataInfo, ProductsSubCategory } from 'store/SiteNavigation/d'
+import { Translate } from '../translate/data'
 
 export const SiteNavigationContext = createContext({} as TSiteNavigationContext)
 
@@ -25,6 +27,7 @@ const siteNavigationContextContainer = ({ children }: { children: ReactNode }) =
   const flexDirection = useSelector(_selectorFlexDirection)
   const selected = useSelector(_selectSelectedItem)
   const ProductDate = useSelector(_selectorProductsData)
+  const selectedPage = useSelector(_selectorSelectedPage)
 
   /** Local state */
   const [navRightOpen, setNavRightOpen] = useState(false)
@@ -34,9 +37,23 @@ const siteNavigationContextContainer = ({ children }: { children: ReactNode }) =
   const [pathToTipsPage, setPathToTipsPage] = useState('')
   const [tipsData, setTipsData] = useState('')
   const [data, setData] = useState('')
+  const pagesArr = [
+    Translate.NAV_BAR_SECOND_PART_ABOUT,
+    Translate.NAV_BAR_SECOND_PART_GALLERY,
+    Translate.NAV_BAR_SECOND_PART_CONTACT,
+    Translate.NAV_BAR_SECOND_PART_HOME]
+  const productCategory = (Object.keys(ProductsCategory) as Array<keyof typeof ProductsCategory>).map((key) => {
+    return key
+  })
+  const productSubCategory = (Object.keys(ProductsSubCategory) as Array<keyof typeof ProductsCategory>).map((key) => {
+    return key
+  })
+  const products = (Object.keys(ProductsDataInfo) as Array<keyof typeof ProductsCategory>).map((key) => {
+    return key
+  })
 
   /** Functions from hook */
-  const { setSelectedItem, setGoBack } = UseProducts()
+  const { setSelectedItem, setGoBack, setSelectedPage } = UseProducts()
 
   useEffect(() => {
     window.onscroll = () => {
@@ -49,8 +66,13 @@ const siteNavigationContextContainer = ({ children }: { children: ReactNode }) =
   }, [setNavRightOpen, navRightOpen])
 
   const handleSetSelectedSideNavBarItem = useCallback((selectedName: string) => {
-    setSelectedItem(selectedName)
-  }, [setSelectedItem])
+    if (pagesArr.includes(selectedName)) {
+      setSelectedPage(selectedName)
+      handleNavRightOpen()
+    } else {
+      setSelectedItem(selectedName)
+    }
+  }, [setSelectedItem, setSelectedPage, handleNavRightOpen])
 
   const goBack = useCallback(() => {
     setGoBack()
@@ -89,7 +111,12 @@ const siteNavigationContextContainer = ({ children }: { children: ReactNode }) =
         setData,
         setProductPath,
         pathToTipsPage,
-        setPathToTipsPage
+        setPathToTipsPage,
+        selectedPage,
+        pagesArr,
+        productCategory,
+        productSubCategory,
+        products
       }),
     [
       navRightOpen,
@@ -110,7 +137,12 @@ const siteNavigationContextContainer = ({ children }: { children: ReactNode }) =
       setData,
       setProductPath,
       pathToTipsPage,
-      setPathToTipsPage
+      setPathToTipsPage,
+      selectedPage,
+      pagesArr,
+      productCategory,
+      productSubCategory,
+      products
     ]
   )
   return (

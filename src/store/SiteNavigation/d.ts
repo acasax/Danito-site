@@ -1,4 +1,4 @@
-import { CLEAR_STATE, GO_BACK, SELECTED_ITEM, SET_SELECTED_TIPS } from './types'
+import { CLEAR_STATE, GO_BACK, SELECTED_ITEM, SET_SELECTED_PAGE, SET_SELECTED_TIPS } from './types'
 
 export type TStateProducts = {
     data: TProductData[],
@@ -8,7 +8,8 @@ export type TStateProducts = {
     productSectionData: TProductSectionData[],
     tipsData: TTipsData[],
     selectedTip: TTipsData,
-    productsDate: TProductsData[]
+    productsDate: TProductsData[],
+    selectedPage: string,
 }
 
 export type TProductData = {
@@ -2286,7 +2287,8 @@ export type TActionEvent = {
         typeof SELECTED_ITEM
         | typeof GO_BACK
         | typeof CLEAR_STATE
-        | typeof SET_SELECTED_TIPS;
+        | typeof SET_SELECTED_TIPS
+        | typeof SET_SELECTED_PAGE;
     payload?:
         undefined
         | string

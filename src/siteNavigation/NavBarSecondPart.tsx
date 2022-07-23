@@ -3,6 +3,7 @@ import React, { useContext, useEffect, useState } from 'react'
 import MenuIcon from '@mui/icons-material/Menu'
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos'
 import {
+  NavBarSecondPartBackButtonContainer,
   NavBarSecondPartContainer,
   NavSecondPartContainer,
   NavSecondPartMenuBody,
@@ -44,51 +45,53 @@ const NavBarSecondPart = () => {
   return (
         <NavSecondPartContainer isDisplay={navRightOpen}>
             <NavSecondPartMenuBody>
-                {navRightOpen
-                  ? (
-                        <ArrowBackIosIcon onClick={handleNavRightOpen}
-                                          sx={{ fontSize: 30, color: Styles.Colours.PALETTE.DANITO._white }}/>
-                    )
-                  : (
-                        <MenuIcon onClick={handleNavRightOpen}
-                                  sx={{ fontSize: 30, color: Styles.Colours.PALETTE.DANITO._white }}/>
-                    )}
+                <NavBarSecondPartBackButtonContainer onClick={handleNavRightOpen}>
+                    {navRightOpen
+                      ? (
+                            <ArrowBackIosIcon
+                                sx={{ fontSize: 35, color: Styles.Colours.PALETTE.DANITO._white }}/>
+                        )
+                      : (
+                            <MenuIcon
+                                sx={{ fontSize: 35, color: Styles.Colours.PALETTE.DANITO._white }}/>
+                        )}
+                </NavBarSecondPartBackButtonContainer>
                 {
                     width < calcSize.large
                       ? (
-                        <NavBarSecondPartContainer isDisplay={navRightOpen}>
-                            <LogoComponent />
-                        </NavBarSecondPartContainer>
+                            <NavBarSecondPartContainer isDisplay={navRightOpen}>
+                                <LogoComponent/>
+                            </NavBarSecondPartContainer>
                         )
                       : (
-                        <>
-                            <NavSecondPartMenuBodyButton
-                                onClick={handleNavRightOpen}
-                            >
-                                {Translate.NAV_BAR_SECOND_PART_PRODUCTS}
-                            </NavSecondPartMenuBodyButton>
+                            <>
+                                <NavSecondPartMenuBodyButton
+                                    onClick={handleNavRightOpen}
+                                >
+                                    {Translate.NAV_BAR_SECOND_PART_PRODUCTS}
+                                </NavSecondPartMenuBodyButton>
 
-                            <NavSecondPartMenuBodyLink
-                                to="/"
-                            >
-                                {Translate.NAV_BAR_SECOND_PART_HOME}
-                            </NavSecondPartMenuBodyLink>
-                            <NavSecondPartMenuBodyLink
-                                to="/onama"
-                            >
-                                {Translate.NAV_BAR_SECOND_PART_ABOUT}
-                            </NavSecondPartMenuBodyLink>
-                            <NavSecondPartMenuBodyLink
-                                to="/galerija"
-                            >
-                                {Translate.NAV_BAR_SECOND_PART_GALLERY}
-                            </NavSecondPartMenuBodyLink>
-                            <NavSecondPartMenuBodyLink
-                                to="/kontakt"
-                            >
-                                {Translate.NAV_BAR_SECOND_PART_CONTACT}
-                            </NavSecondPartMenuBodyLink>
-                        </>
+                                <NavSecondPartMenuBodyLink
+                                    to="/"
+                                >
+                                    {Translate.NAV_BAR_SECOND_PART_HOME}
+                                </NavSecondPartMenuBodyLink>
+                                <NavSecondPartMenuBodyLink
+                                    to="/onama"
+                                >
+                                    {Translate.NAV_BAR_SECOND_PART_ABOUT}
+                                </NavSecondPartMenuBodyLink>
+                                <NavSecondPartMenuBodyLink
+                                    to="/galerija"
+                                >
+                                    {Translate.NAV_BAR_SECOND_PART_GALLERY}
+                                </NavSecondPartMenuBodyLink>
+                                <NavSecondPartMenuBodyLink
+                                    to="/kontakt"
+                                >
+                                    {Translate.NAV_BAR_SECOND_PART_CONTACT}
+                                </NavSecondPartMenuBodyLink>
+                            </>
                         )
                 }
             </NavSecondPartMenuBody>

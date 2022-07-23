@@ -1,5 +1,5 @@
 import { TActionEvent } from './d'
-import { CLEAR_STATE, GO_BACK, SELECTED_ITEM, SET_SELECTED_TIPS } from './types'
+import { CLEAR_STATE, GO_BACK, SELECTED_ITEM, SET_SELECTED_PAGE, SET_SELECTED_TIPS } from './types'
 
 export const _actionSetSelectedItem = (itemName: string): TActionEvent => ({
   type: SELECTED_ITEM,
@@ -17,4 +17,9 @@ export const _actionProductRemove = (): TActionEvent => ({
 export const _actionSetSelectedTips = (tipsHeader: string): TActionEvent => ({
   type: SET_SELECTED_TIPS,
   payload: tipsHeader
+})
+
+export const _actionSetSelectedPage = (selectedPage: string): TActionEvent => ({
+  type: SET_SELECTED_PAGE,
+  payload: selectedPage
 })

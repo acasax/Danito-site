@@ -22,6 +22,6 @@ export const RelativeContainer = styled.div<{ isDisplay: boolean }>`
   ${props => props.isDisplay && css`
     //width: calc(100% - 280px);
     transition: all 0.3s;
-    margin-left: 280px;
+    margin-left: 85%;
   `}
 `

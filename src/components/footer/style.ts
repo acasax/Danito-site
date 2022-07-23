@@ -272,7 +272,7 @@ export const FooterSecondPartContainer = styled.div`
   padding: 0 20px;
 
   @media ${devices.xs} {
-    padding: 0 5px;
+    padding: 0px;
     height: 25px;
     position: absolute;
     width: 100%;

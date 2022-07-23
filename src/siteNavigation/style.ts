@@ -70,7 +70,7 @@ export const NavSecondPartContainer = styled.div<{ isDisplay: boolean }>`
 
   @media ${devices.xs} {
     top: 0;
-    height: 60px;
+    min-height: 60px;
     padding: 0 10px;
   }
 
@@ -211,6 +211,14 @@ export const NavSecondPartMenuBodyLink = styled(Link)`
   }
 `
 
+export const NavBarSecondPartBackButtonContainer = styled.div`
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+`
+
 /** Style for NavBarProductPart component */
 
 export const NavBarProductSideBarContainer = styled.div<{ isDisplay: boolean }>`
@@ -251,15 +259,16 @@ export const NavBarProductSideBarContainer = styled.div<{ isDisplay: boolean }>`
   }
 
   ${props => props.isDisplay && css`
-    width: 280px;
+    width: 85%;
     opacity: 1;
     z-index: 10000;
   `}
 `
 
 export const NavBarProductContainerText = styled.p`
-  font-size: 14px;
+  font-size: 18px;
   letter-spacing: 1px;
+  font-weight: 600;
   text-align: center;
   color: ${Styles.Colours.PALETTE.DANITO._white};
 `
@@ -270,7 +279,7 @@ export const NavBarProductPartHeaderContainer = styled.div`
   background-color: rgba(62, 68, 68, 0.9);
   align-items: center;
   justify-content: space-evenly;
-  width: 280px;
+  width: 100%;
   font-weight: 500;
   border-top-color: ${Styles.Colours.PALETTE.DANITO._darkGray};
   border-top-width: 2px;
@@ -346,12 +355,13 @@ export const NavBarProductsPartProductsText = {
 export const NavBarProductPartPrimaryLinksContainer = {
   textDecoration: 'none',
   borderBottomWidth: 1,
-  borderTopWidth: 1,
+  borderTopWidth: 0,
   borderLeftWidth: 0,
   borderRightWidth: 0,
   borderStyle: 'solid',
-  borderColor: Styles.Colours.PALETTE.DANITO._darkGray
-  // backgroundColor: Styles.Colours.PALETTE.DANITO._liteGray
+  borderColor: Styles.Colours.PALETTE.DANITO._darkGray,
+  backgroundColor: Styles.Colours.PALETTE.DANITO._liteGray,
+  marginTop: -3
 }
 
 export const NavBarSecondPartContainer = styled.div<{ isDisplay: boolean }>`
@@ -365,4 +375,24 @@ export const NavBarSecondPartContainer = styled.div<{ isDisplay: boolean }>`
   ${props => props.isDisplay && css`
     display: none;
   `}
+`
+
+export const NavBarProductPagesTitleContainer = styled.div<{ height?: number }>`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: ${Styles.Colours.PALETTE.DANITO._darkGray};
+
+  ${props => props.height && css`
+    height: ${props.height}px;
+  `}
+`
+
+export const NavBarProductsPagesTitle = styled.p`
+  text-align: center;
+  font-size: 17px;
+  color: ${Styles.Colours.PALETTE.DANITO._white};
+  font-weight: bold;
+  letter-spacing: 1.5px;
 `
