@@ -55,75 +55,35 @@ const Tips = () => {
 
   const CardFooterMoreButton = {
     textDecoration: 'none',
-    borderWidth: width > calcSize.large && width < calcSize.extralarge
-      ? calcSize.extralarge * 2 / calcSize.hd
-      : width > calcSize.medium && width < calcSize.large
-        ? calcSize.large * 2 / calcSize.hd
-        : width > calcSize.small && width < calcSize.medium
-          ? calcSize.large * 2 / calcSize.hd
-          : width > calcSize.xsmall && width < calcSize.small
-            ? calcSize.large * 2 / calcSize.hd
-            : width > 0 && width < calcSize.xsmall
-              ? calcSize.large * 2 / calcSize.hd
-              : 2,
+    borderWidth: 2,
     borderStyle: 'solid',
     borderColor: Styles.Colours.PALETTE.DANITO._yellow,
-    paddingHorizontal: width > calcSize.large && width < calcSize.extralarge
-      ? calcSize.extralarge * 4 / calcSize.hd
-      : width > calcSize.medium && width < calcSize.large
-        ? calcSize.large * 4 / calcSize.hd
-        : width > calcSize.small && width < calcSize.medium
-          ? calcSize.large * 4 / calcSize.hd
-          : width > calcSize.xsmall && width < calcSize.small
-            ? calcSize.large * 4 / calcSize.hd
-            : width > 0 && width < calcSize.xsmall
-              ? calcSize.large * 4 / calcSize.hd
-              : 4,
-    paddingVertical: width > calcSize.large && width < calcSize.extralarge
-      ? calcSize.extralarge * 20 / calcSize.hd
-      : width > calcSize.medium && width < calcSize.large
-        ? calcSize.large * 20 / calcSize.hd
-        : width > calcSize.small && width < calcSize.medium
-          ? calcSize.large * 20 / calcSize.hd
-          : width > calcSize.xsmall && width < calcSize.small
-            ? calcSize.large * 20 / calcSize.hd
-            : width > 0 && width < calcSize.xsmall
-              ? calcSize.large * 20 / calcSize.hd
-              : 20,
+    paddingHorizontal: 4,
+    paddingVertical: 20,
     color: Styles.Colours.PALETTE.DANITO._black,
-    fontSize: width > calcSize.large && width < calcSize.extralarge
-      ? calcSize.extralarge * 15 / calcSize.hd
-      : width > calcSize.medium && width < calcSize.large
-        ? calcSize.large * 15 / calcSize.hd
-        : width > calcSize.small && width < calcSize.medium
-          ? calcSize.large * 15 / calcSize.hd
-          : width > calcSize.xsmall && width < calcSize.small
-            ? calcSize.large * 15 / calcSize.hd
-            : width > 0 && width < calcSize.xsmall
-              ? calcSize.large * 15 / calcSize.hd
-              : 15,
+    fontSize: 15,
     fontWeight: 600,
     height: width > calcSize.large && width < calcSize.extralarge
-      ? calcSize.extralarge * 30 / calcSize.hd
+      ? 30
       : width > calcSize.medium && width < calcSize.large
-        ? calcSize.large * 30 / calcSize.hd
+        ? 30
         : width > calcSize.small && width < calcSize.medium
-          ? calcSize.large * 30 / calcSize.hd
+          ? 30
           : width > calcSize.xsmall && width < calcSize.small
-            ? calcSize.large * 30 / calcSize.hd
+            ? 25
             : width > 0 && width < calcSize.xsmall
-              ? calcSize.large * 30 / calcSize.hd
+              ? 25
               : 30,
     minWidth: width > calcSize.large && width < calcSize.extralarge
-      ? calcSize.extralarge * 80 / calcSize.hd
+      ? 80
       : width > calcSize.medium && width < calcSize.large
-        ? calcSize.large * 80 / calcSize.hd
+        ? 80
         : width > calcSize.small && width < calcSize.medium
-          ? calcSize.large * 80 / calcSize.hd
+          ? 80
           : width > calcSize.xsmall && width < calcSize.small
-            ? calcSize.large * 80 / calcSize.hd
+            ? 70
             : width > 0 && width < calcSize.xsmall
-              ? calcSize.large * 80 / calcSize.hd
+              ? 70
               : 80,
     display: 'flex',
     justifyContent: 'center',

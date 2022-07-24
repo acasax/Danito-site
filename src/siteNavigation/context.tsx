@@ -78,14 +78,16 @@ const siteNavigationContextContainer = ({ children }: { children: ReactNode }) =
     setGoBack()
   }, [selectedItems])
 
-  const setProductPath = (value: string) => {
+  const setProductPath = (value: string, open = true) => {
     const newData = ProductDate.filter(product => product.name === value)
     setData(newData[0] as any)
     Object.values(ProductsDataInfo).forEach((product) => {
       if (product === value) {
         setPathTo(`/${product.replace(/\s/g, '')}`)
         setPageName(value)
-        handleNavRightOpen()
+        if (open) {
+          handleNavRightOpen()
+        }
       }
     })
   }

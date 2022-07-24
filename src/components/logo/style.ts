@@ -61,7 +61,7 @@ export const LogoHeaderText = styled.h3<{ fontSize?: number }>`
 
 export const LogoTextSubHeader = styled.p<{ fontSize?: number }>`
   font-size: 11px;
-  padding-left: 25px;
+  padding-left: 15px;
   font-family: "Merriweather", serif;
   letter-spacing: 2px;
   margin: 0;

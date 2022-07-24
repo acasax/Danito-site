@@ -201,18 +201,21 @@ export const ProductPartHeaderContainer = styled.div`
 export const ProductPartHeaderText = styled.p`
   font-size: 22px;
   font-weight: normal;
+  letter-spacing: 2px;
   color: ${Styles.Colours.PALETTE.DANITO._darkGray};
 
   @media ${devices.xs} {
-    font-size: 12px;
+    font-size: 15px;
+    font-weight: bolder;
   }
 
   @media ${devices.sm} {
-    font-size: 12px;
+    font-size: 15px;
+    font-weight: bolder;
   }
 
   @media ${devices.md} {
-    font-size: 12px;
+    font-size: 15px;
   }
 
   @media ${devices.lg} {
@@ -584,12 +587,12 @@ export const TipsContainer = styled.div`
   flex-wrap: wrap;
 
   @media ${devices.xs} {
-    padding: 20px 0;
+    padding: 0;
     flex-direction: column;
   }
 
   @media ${devices.sm} {
-    padding: 02px 0;
+    padding: 0px 0;
   }
 
   @media ${devices.md} {
@@ -791,36 +794,26 @@ export const CardHeaderContainer = styled.div`
   padding: 20px 0;
 
   @media ${devices.xs} {
-    border-bottom-width: 0.6px;
-    border-top-width: 0.6px;
     height: 30px;
     padding: 10px 0;
   }
 
   @media ${devices.sm} {
-    border-bottom-width: 0.8px;
-    border-top-width: 0.8px;
     height: 30px;
     padding: 10px 0;
   }
 
   @media ${devices.md} {
-    border-bottom-width: 1px;
-    border-top-width: 1px;
     height: 30px;
     padding: 10px 0;
   }
 
   @media ${devices.lg} {
-    border-bottom-width: 1.2px;
-    border-top-width: 1.2px;
     height: 40px;
     padding: 15px 0;
   }
 
   @media ${devices.xl} {
-    border-bottom-width: 1.5px;
-    border-top-width: 1.5px;
     height: 40px;
     padding: 15px 0;
   }
@@ -943,17 +936,17 @@ export const CardFooterDateContainer = styled.div`
 
   @media ${devices.xs} {
     height: 20px;
-    width: 100px;
+    width: 110px;
   }
 
   @media ${devices.sm} {
     height: 20px;
-    width: 100px;
+    width: 110px;
   }
 
   @media ${devices.md} {
     height: 20px;
-    width: 100px;
+    width: 110px;
   }
 
   @media ${devices.lg} {
@@ -972,15 +965,15 @@ export const CardFooterDateText = styled.p`
   color: ${Styles.Colours.PALETTE.DANITO._white};
 
   @media ${devices.xs} {
-    font-size: 10px;
+    font-size: 13px;
   }
 
   @media ${devices.sm} {
-    font-size: 10px;
+    font-size: 13px;
   }
 
   @media ${devices.md} {
-    font-size: 10px;
+    font-size: 13px;
   }
 
   @media ${devices.lg} {

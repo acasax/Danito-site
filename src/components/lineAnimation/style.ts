@@ -51,13 +51,14 @@ export const LiveAnimationHeading = styled.h2<{ scaleTransform: boolean, fontSiz
   transform: scale(0);
   font-weight: bolder;
   letter-spacing: 3px;
+  margin: 7px 10px;
 
   @media ${devices.xs} {
-    font-size: 13px;
+    font-size: 15px;
   }
 
   @media ${devices.sm} {
-    font-size: 13px;
+    font-size: 15px;
   }
 
   @media ${devices.md} {

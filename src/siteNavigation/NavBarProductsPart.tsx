@@ -97,11 +97,11 @@ const NavBarProductsPart = () => {
                   )
                 })}
                 {
-                    ((width < calcSize.large && !productCategory.includes(selected)))
+                    ((width < calcSize.large && (productCategory.includes(selected) || selected === '')))
                       ? (
                             <>
 
-                                <NavBarProductPagesTitleContainer number={40}>
+                                <NavBarProductPagesTitleContainer height={35}>
                                     <NavBarProductsPagesTitle>
                                         {Translate.CHOSE_PAGES}
                                     </NavBarProductsPagesTitle>

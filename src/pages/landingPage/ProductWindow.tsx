@@ -48,18 +48,7 @@ const ProductWindow = () => {
   }, [updateDimension])
 
   const ProductPartChildrenLinksText = {
-    fontSize:
-            width > calcSize.large && width <= calcSize.extralarge
-              ? calcSize.extralarge * 15 / calcSize.hd
-              : width > calcSize.medium && width <= calcSize.large
-                ? calcSize.large * 15 / calcSize.hd
-                : width > calcSize.small && width <= calcSize.medium
-                  ? calcSize.large * 15 / calcSize.hd
-                  : width > calcSize.xsmall && width <= calcSize.small
-                    ? calcSize.large * 15 / calcSize.hd
-                    : width > 0 && width <= calcSize.xsmall
-                      ? calcSize.large * 15 / calcSize.hd
-                      : 15,
+    fontSize: 15,
     textDecoration: 'none',
     color: Styles.Colours.PALETTE.DANITO._white,
     fontWeight: 'normal',
@@ -131,7 +120,7 @@ const ProductWindow = () => {
                                                                   return (
                                                                         <Link
                                                                             to={`/${c.replace(/\s/g, '')}`}
-                                                                            onClick={(event) => setProductPath(event.currentTarget.innerHTML)}
+                                                                            onClick={(event) => setProductPath(event.currentTarget.innerHTML, false)}
                                                                             style={ProductPartChildrenLinksText}
                                                                             key={key}
                                                                         >

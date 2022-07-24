@@ -377,7 +377,7 @@ export const NavBarSecondPartContainer = styled.div<{ isDisplay: boolean }>`
   `}
 `
 
-export const NavBarProductPagesTitleContainer = styled.div<{ height?: number }>`
+export const NavBarProductPagesTitleContainer = styled.div<{ height: number }>`
   display: flex;
   justify-content: center;
   align-items: center;
