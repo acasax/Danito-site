@@ -69,12 +69,12 @@ export const GalleryElementContainer = styled.div`
   width: 80%;
 
   @media ${devices.xs} {
-    padding: 5px;
+    padding: 10px;
     gap: 5px;
   }
 
   @media ${devices.sm} {
-    padding: 5px;
+    padding: 10px;
     gap: 5px;
   }
 
@@ -104,12 +104,12 @@ export const GalleyCarouselContainer = styled.div`
 
   @media ${devices.xs} {
     padding: 6px;
-    gap: 6px;
+    gap: 25px;
   }
 
   @media ${devices.sm} {
     padding: 8px;
-    gap: 8px;
+    gap: 25px;
   }
 
   @media ${devices.md} {
@@ -138,13 +138,13 @@ export const GalleyCarouselImage = styled.img`
   border: none;
 
   @media ${devices.xs} {
-    width: 130px;
-    height: 80px;
+    width: 250px;
+    max-height: 150px;
   }
 
   @media ${devices.sm} {
-    width: 130px;
-    height: 80px;
+    width: 250px;
+    max-height: 150px;
   }
 
   @media ${devices.md} {
@@ -203,8 +203,8 @@ export const GalleyCarouselSelectedImage = styled.img`
   max-height: 600px;
 
   @media ${devices.xs} {
-    width: 270px;
-    max-height: 180px;
+    width: 360px;
+    max-height: 240px;
   }
 
   @media ${devices.sm} {
@@ -246,7 +246,7 @@ export const GalleryCarouselSelectedImageHeaderContainer = styled.div`
   background-color: rgba(0, 0, 0, 0.50);
 
   @media ${devices.xs} {
-    width: 270px;
+    width: 360px;
   }
 
   @media ${devices.sm} {

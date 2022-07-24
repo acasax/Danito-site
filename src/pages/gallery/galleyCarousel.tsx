@@ -53,7 +53,7 @@ const GalleyCarousel = ({ ImgObj, ImgHeader }: any) => {
                   : width > calcSize.xsmall && width <= calcSize.small
                     ? calcSize.small * 60 / calcSize.hd
                     : width > 0 && width <= calcSize.xsmall
-                      ? calcSize.xsmall * 60 / calcSize.hd
+                      ? calcSize.small * 60 / calcSize.hd
                       : 60,
     position: 'relative',
     top: width > calcSize.large && width <= calcSize.extralarge
@@ -65,7 +65,7 @@ const GalleyCarousel = ({ ImgObj, ImgHeader }: any) => {
           : width > calcSize.xsmall && width <= calcSize.small
             ? calcSize.small * 250 / calcSize.hd
             : width > 0 && width <= calcSize.xsmall
-              ? calcSize.xsmall * 250 / calcSize.hd
+              ? calcSize.small * 250 / calcSize.hd
               : 250,
     color: Styles.Colours.PALETTE.DANITO._white,
     cursor: 'pointer'
