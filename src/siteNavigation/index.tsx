@@ -1,4 +1,4 @@
-import React, { useContext, useEffect } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import NavBarFirstPart from './NavBarFirstPart'
 import { SiteNavigationContext } from './context'
 import NavBarSecondPart from './NavBarSecondPart'
@@ -8,6 +8,7 @@ import ScrollToTop from 'ScrollToTop'
 import { FlexContainer, RelativeContainer } from 'style'
 import { BrowserRouter as Router } from 'react-router-dom'
 import SiteRoutes from 'siteNavigation/SiteRoutes'
+import { calcSize } from '../constants/ResponsiveBreakpoints'
 
 /**
  *
@@ -25,6 +26,17 @@ import SiteRoutes from 'siteNavigation/SiteRoutes'
 
 const SiteNavigation = () => {
   const { navRightOpen } = useContext(SiteNavigationContext)
+  const [width, setWidth] = useState(0)
+
+  const updateDimension = () => {
+    const width = window.innerWidth
+    setWidth(width)
+    console.log(width <= calcSize.small)
+  }
+
+  useEffect(() => {
+    updateDimension()
+  }, [updateDimension])
 
   return (
         <NavBarContainer>
@@ -33,7 +45,11 @@ const SiteNavigation = () => {
                 <NavBarFirstPart/>
                 <FlexContainer>
                     <NavProduct/>
-                    <RelativeContainer isDisplay={navRightOpen}>
+                    <RelativeContainer
+                        isDisplay={navRightOpen}
+                        isMobile={width <= calcSize.small}
+                        isPc={width >= calcSize.small}
+                    >
                         <NavBarSecondPart/>
                         <SiteRoutes/>
                     </RelativeContainer>

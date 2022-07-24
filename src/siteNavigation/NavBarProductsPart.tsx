@@ -62,12 +62,6 @@ const NavBarProductsPart = () => {
     navRightOpen ? disableBodyScroll(document) : enableBodyScroll(document)
   }, [navRightOpen])
 
-  useEffect(() => {
-    console.log('selected', selected)
-    console.log('pg', productCategory.includes(selected))
-    console.log('a', width < calcSize.large && productCategory.includes(selected))
-  }, [selected])
-
   return (
         <NavBarProductSideBarContainer isDisplay={navRightOpen}>
             {

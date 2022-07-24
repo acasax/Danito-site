@@ -11,6 +11,7 @@ import {
   OptionsImg,
   ProductsDecorsInfoContainer,
   ProductsDecorsInfoSelectedImage,
+  ProductsDecorsInfoSelectedImageContainer,
   ProductsDecorsInfoText,
   ProductsDecorsInfoTextContainer
 } from './style'
@@ -31,7 +32,7 @@ const TabPanel = ({ children, value, index, ...other }: any) => {
         >
             {value === index && (
                 <Box sx={{ p: 3 }}>
-                  {children}
+                    {children}
                 </Box>
             )}
         </div>
@@ -85,7 +86,7 @@ const BasicTabs = ({ optionsContent }: any) => {
                 optionsContent.options[0] && <TabPanel value={value} index={0}>
                     <Typography variant={'h4'}>{optionsContent.nameHeader}</Typography>
                     {optionsContent.options[0].map((data, key) => {
-                      return <li key={`opt2-${key}`} >{data}</li>
+                      return <li key={`opt2-${key}`}>{data}</li>
                     })}
                 </TabPanel>
             }
@@ -123,7 +124,9 @@ const BasicTabs = ({ optionsContent }: any) => {
                                             {open
                                               ? (
                                                     <ProductsDecorsInfoContainer>
-                                                        <ProductsDecorsInfoSelectedImage src={colorItem.image}/>
+                                                        <ProductsDecorsInfoSelectedImageContainer>
+                                                            <ProductsDecorsInfoSelectedImage src={colorItem.image}/>
+                                                        </ProductsDecorsInfoSelectedImageContainer>
                                                         <ProductsDecorsInfoTextContainer>
                                                             <ProductsDecorsInfoText>{colorItem.text}</ProductsDecorsInfoText>
                                                         </ProductsDecorsInfoTextContainer>

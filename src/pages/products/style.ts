@@ -137,7 +137,7 @@ export const ProductPageContentOptionsContainer = styled.div`
 
   @media ${devices.md} {
     padding-top: 20px;
-    
+
   }
 
   @media ${devices.lg} {
@@ -243,31 +243,26 @@ export const ProductPageCharacteristicItemImageContainer = styled.div`
 
   @media ${devices.xs} {
     width: 90px;
-    border-bottom-width: 0.6px;
     padding-bottom: 6px;
   }
 
   @media ${devices.sm} {
     width: 120px;
-    border-bottom-width: 0.8px;
     padding-bottom: 8px;
   }
 
   @media ${devices.md} {
     width: 155px;
-    border-bottom-width: 1px;
     padding-bottom: 10px;
   }
 
   @media ${devices.lg} {
     width: 187px;
-    border-bottom-width: 1.2px;
     padding-bottom: 12.5px;
   }
 
   @media ${devices.xl} {
     width: 218px;
-    border-bottom-width: 1.5px;
     padding-bottom: 14.5px;
   }
 `
@@ -317,30 +312,31 @@ export const ProductPageCharacteristicItemText = styled.p`
   font-size: 17px;
   color: ${Styles.Colours.PALETTE.DANITO._black};
   padding: 10px;
-  line-height: 15px;
+  line-height: 20px;
+  letter-spacing: 0.5px;
 
   @media ${devices.xs} {
-    font-size: 11px;
+    font-size: 15px;
     padding: 3px;
   }
 
   @media ${devices.sm} {
-    font-size: 11px;
+    font-size: 15px;
     padding: 4px;
   }
 
   @media ${devices.md} {
-    font-size: 11px;
+    font-size: 15px;
     padding: 5px;
   }
 
   @media ${devices.lg} {
-    font-size: 13px;
+    font-size: 15px;
     padding: 6px;
   }
 
   @media ${devices.xl} {
-    font-size: 15px;
+    font-size: 17px;
     padding: 7px;
   }
 `
@@ -546,19 +542,8 @@ export const ProductsPanelsInfoContainer = styled.div`
   flex-direction: column;
   position: fixed;
   top: 30%;
-  left: 42%;
   z-index: 100000;
   opacity: 1 !important;
-
-  @media ${devices.xs} {
-    left: 35%;
-  }
-
-  @media ${devices.sm} {
-    left: 35%;
-  }
-
-
 `
 
 export const ProductsPanelsInfoSelectedImage = styled.img`
@@ -587,6 +572,14 @@ export const ProductsPanelsInfoSelectedImage = styled.img`
   }
 `
 
+export const ProductsPanelsInfoSelectedImageContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+`
+
 export const ProductsPanelsInfoTextContainer = styled.div`
   display: flex;
   justify-content: center;
@@ -598,17 +591,18 @@ export const ProductsPanelsInfoText = styled.p`
   font-size: 20px;
   font-weight: bold;
   color: ${Styles.Colours.PALETTE.DANITO._white};
+  letter-spacing: 1px;
 
   @media ${devices.xs} {
-    font-size: 13px;
+    font-size: 15px;
   }
 
   @media ${devices.sm} {
-    font-size: 13px;
+    font-size: 15px;
   }
 
   @media ${devices.md} {
-    font-size: 13px;
+    font-size: 15px;
   }
 
   @media ${devices.lg} {
@@ -627,16 +621,18 @@ export const ProductsDecorsInfoContainer = styled.div`
   flex-direction: column;
   position: fixed;
   top: 200px;
-  left: 40%;
   z-index: 100000;
   opacity: 1 !important;
+  width: 100%;
+  right: 50%;
+  left: 0%;
 
   @media ${devices.xs} {
-    top: 60px;
+    top: 35%;
   }
 
   @media ${devices.sm} {
-    top: 80px;
+    top: 35%;
   }
 
   @media ${devices.md} {
@@ -652,17 +648,25 @@ export const ProductsDecorsInfoContainer = styled.div`
   }
 `
 
+export const ProductsDecorsInfoSelectedImageContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+`
+
 export const ProductsDecorsInfoSelectedImage = styled.img`
   border-radius: 6px;
   cursor: pointer;
   height: 600px;
 
   @media ${devices.xs} {
-    height: 180px;
+    height: 310px;
   }
 
   @media ${devices.sm} {
-    height: 240px;
+    height: 310px;
   }
 
   @media ${devices.md} {
@@ -689,25 +693,26 @@ export const ProductsDecorsInfoText = styled.p`
   font-size: 20px;
   font-weight: bold;
   color: ${Styles.Colours.PALETTE.DANITO._white};
+  letter-spacing: 2px;
 
   @media ${devices.xs} {
-    font-size: 6px;
+    font-size: 15px;
   }
 
   @media ${devices.sm} {
-    font-size: 8px;
+    font-size: 15px;
   }
 
   @media ${devices.md} {
-    font-size: 10px;
+    font-size: 15px;
   }
 
   @media ${devices.lg} {
-    font-size: 13px;
+    font-size: 15px;
   }
 
   @media ${devices.xl} {
-    font-size: 15px;
+    font-size: 17px;
   }
 `
 
@@ -752,24 +757,4 @@ export const OptionsColor = styled.div`
 
 export const OptionsImg = styled.img`
   width: 50px;
-
-  @media ${devices.xs} {
-    width: 15px;
-  }
-
-  @media ${devices.sm} {
-    width: 20px;
-  }
-
-  @media ${devices.md} {
-    width: 26px;
-  }
-
-  @media ${devices.lg} {
-    width: 32px;
-  }
-  
-  @media ${devices.xl} {
-    width: 37px;
-  }
 `

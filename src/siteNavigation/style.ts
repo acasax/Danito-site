@@ -232,6 +232,7 @@ export const NavBarProductSideBarContainer = styled.div<{ isDisplay: boolean }>`
   width: 0;
   transition: 0.5s;
   opacity: 0;
+  max-width: 320px;
 
   @media ${devices.xs} {
     top: 0;

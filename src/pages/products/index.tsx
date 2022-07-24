@@ -31,6 +31,7 @@ import {
   ProductPageProfileTextContainer,
   ProductsPanelsInfoContainer,
   ProductsPanelsInfoSelectedImage,
+  ProductsPanelsInfoSelectedImageContainer,
   ProductsPanelsInfoText,
   ProductsPanelsInfoTextContainer
 } from './style'
@@ -185,7 +186,9 @@ const ProductPage = () => {
                         {open
                           ? (
                                 <ProductsPanelsInfoContainer>
-                                    <ProductsPanelsInfoSelectedImage src={panelModal.img}/>
+                                    <ProductsPanelsInfoSelectedImageContainer>
+                                        <ProductsPanelsInfoSelectedImage src={panelModal.img}/>
+                                    </ProductsPanelsInfoSelectedImageContainer>
                                     <ProductsPanelsInfoTextContainer>
                                         <ProductsPanelsInfoText>{panelModal.text}</ProductsPanelsInfoText>
                                     </ProductsPanelsInfoTextContainer>
