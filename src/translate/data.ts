@@ -18,7 +18,7 @@ export const Translate = {
   FOOTER_WORK_HOUR_WEEKEND_I: 'Subota: 09:00 - 13:00',
   FOOTER_WORK_HOUR_WEEKEND_II: 'Nedeljom ne radimo',
   FOOTER_COPY_RIGHT_TEXT: 'Copyright Danito Construction All Right Reserved',
-  FOOTER_PRIVACY_POLICY: 'PRIVACY POLICY',
+  FOOTER_PRIVACY_POLICY: 'PRIVACY',
   FOOTER_COOKIES_POLICY: 'COOKIES POLICY',
   FOOTER_GDPR: 'GDPR',
 

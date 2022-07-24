@@ -56,17 +56,18 @@ export const AboutHeaderText = styled.h1`
   color: ${Styles.Colours.PALETTE.DANITO._darkGray};
   font-weight: normal;
   font-style: italic;
+  letter-spacing: 1px;
 
   @media ${devices.xs} {
-    font-size: 13px;
+    font-size: 15px;
   }
 
   @media ${devices.sm} {
-    font-size: 13px;
+    font-size: 15px;
   }
 
   @media ${devices.md} {
-    font-size: 13px;
+    font-size: 15px;
   }
 
   @media ${devices.lg} {
@@ -113,25 +114,26 @@ export const AboutInfoHeaderText = styled.h2`
   font-weight: bold;
   color: ${Styles.Colours.PALETTE.DANITO._black};
   width: 100%;
+  letter-spacing: 1px;
 
   @media ${devices.xs} {
-    font-size: 15px;
+    font-size: 17px;
   }
 
   @media ${devices.sm} {
-    font-size: 15px;
+    font-size: 17px;
   }
 
   @media ${devices.md} {
-    font-size: 15px;
+    font-size: 17px;
   }
 
   @media ${devices.lg} {
-    font-size: 15px;
+    font-size: 18px;
   }
 
   @media ${devices.xl} {
-    font-size: 17px;
+    font-size: 20px;
   }
 `
 
@@ -139,21 +141,23 @@ export const AboutInfoText = styled.p`
   font-size: 18px;
   color: ${Styles.Colours.PALETTE.DANITO._black};
   width: 100%;
+  line-height: 20px;
+  letter-spacing: 0.5px;
 
   @media ${devices.xs} {
-    font-size: 13px;
+    font-size: 15px;
   }
 
   @media ${devices.sm} {
-    font-size: 13px;
+    font-size: 15px;
   }
 
   @media ${devices.md} {
-    font-size: 13px;
+    font-size: 15px;
   }
 
   @media ${devices.lg} {
-    font-size: 13px;
+    font-size: 15px;
   }
 
   @media ${devices.xl} {
@@ -172,21 +176,22 @@ export const AboutInfoTextHeader = styled.h3`
   font-size: 18px;
   font-weight: bold;
   color: ${Styles.Colours.PALETTE.DANITO._darkGray};
+  letter-spacing: 1px;
 
   @media ${devices.xs} {
-    font-size: 5px;
+    font-size: 16px;
   }
   @media ${devices.sm} {
-    font-size: 7px;
+    font-size: 16px;
   }
   @media ${devices.md} {
-    font-size: 9px;
+    font-size: 16px;
   }
   @media ${devices.lg} {
-    font-size: 11px;
+    font-size: 16px;
   }
   @media ${devices.xl} {
-    font-size: 13px;
+    font-size: 17px;
   }
 `
 

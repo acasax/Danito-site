@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import LineAnimation from 'components/lineAnimation'
 import CompanyImgCover from '../../constants/img/about/cover.jpg'
 import Footer from 'components/footer'
@@ -9,7 +9,6 @@ import {
   AboutHeaderImageContainer,
   AboutHeaderText,
   AboutHeaderTextContainer,
-  AboutInfoCarousel,
   AboutInfoContainer,
   AboutInfoGalleyContainer,
   AboutInfoHeaderText,
@@ -24,6 +23,7 @@ import 'react-gallery-carousel/dist/index.css'
 import { useSelector } from 'react-redux'
 import { _selectAllAboutInfoCarouselImages, _selectAllAboutTechnologyCarouselImages } from 'store/SiteData/helpers'
 import { Translate } from '../../translate/data'
+import { calcSize } from '../../constants/ResponsiveBreakpoints'
 
 /**
  *
@@ -40,6 +40,31 @@ const AboutLayout = () => {
   const { scroll } = useContext(SiteNavigationContext)
   const images = useSelector(_selectAllAboutInfoCarouselImages)
   const techImages = useSelector(_selectAllAboutTechnologyCarouselImages)
+
+  const [width, setWidth] = useState(0)
+  const updateDimension = () => {
+    const width = window.innerWidth
+    setWidth(width)
+  }
+
+  const AboutInfoCarousel = {
+    maxHeight: width > calcSize.large && width <= calcSize.extralarge
+      ? 667
+      : width > calcSize.medium && width <= calcSize.large
+        ? 667
+        : width > calcSize.small && width <= calcSize.medium
+          ? 667
+          : width > calcSize.xsmall && width <= calcSize.small
+            ? 270
+            : width > 0 && width <= calcSize.xsmall
+              ? 270
+              : 2,
+    maxWidth: 1000
+  }
+
+  useEffect(() => {
+    updateDimension()
+  }, [updateDimension])
 
   return (
         <AboutContainer>
@@ -91,7 +116,7 @@ const AboutLayout = () => {
                         </AboutInfoTextHeaderContainer>
                         <AboutInfoText>
                             {Translate.ABOUT_INSTALLATION_TEXT_I}
-                           </AboutInfoText>
+                        </AboutInfoText>
                         <AboutInfoTextHeaderContainer>
                             <AboutInfoTextHeader>{Translate.ABOUT_INSTALLATION_HEADER_II}</AboutInfoTextHeader>
                         </AboutInfoTextHeaderContainer>

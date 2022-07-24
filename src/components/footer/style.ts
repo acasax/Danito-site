@@ -273,7 +273,7 @@ export const FooterSecondPartContainer = styled.div`
 
   @media ${devices.xs} {
     padding: 0px;
-    height: 25px;
+    height: 30px;
     position: absolute;
     width: 100%;
     bottom: 0;
@@ -283,7 +283,7 @@ export const FooterSecondPartContainer = styled.div`
   }
 
   @media ${devices.sm} {
-    height: 20px;
+    height: 30px;
     padding: 0 8px;
   }
 
@@ -311,6 +311,7 @@ export const FooterSecondPartText = styled.p`
 
   @media ${devices.xs} {
     font-size: 10px;
+    text-align: center;
   }
 
   @media ${devices.sm} {
