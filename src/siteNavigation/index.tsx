@@ -31,7 +31,6 @@ const SiteNavigation = () => {
   const updateDimension = () => {
     const width = window.innerWidth
     setWidth(width)
-    console.log(width <= calcSize.small)
   }
 
   useEffect(() => {

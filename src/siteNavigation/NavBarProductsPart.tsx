@@ -43,10 +43,7 @@ const NavBarProductsPart = () => {
     selected,
     goBack,
     setProductPath,
-    pagesArr,
-    productCategory,
-    productSubCategory,
-    products
+    productCategory
   } = useContext(SiteNavigationContext)
   const [width, setWidth] = useState(0)
   const updateDimension = () => {
@@ -63,7 +60,11 @@ const NavBarProductsPart = () => {
   }, [navRightOpen])
 
   return (
-        <NavBarProductSideBarContainer isDisplay={navRightOpen}>
+        <NavBarProductSideBarContainer
+            isDisplay={navRightOpen}
+            isMobile={width <= calcSize.small}
+            isPc={width >= calcSize.small}
+        >
             {
                 <NavBarProductPartHeaderContainer>
                     {

@@ -221,7 +221,7 @@ export const NavBarSecondPartBackButtonContainer = styled.div`
 
 /** Style for NavBarProductPart component */
 
-export const NavBarProductSideBarContainer = styled.div<{ isDisplay: boolean }>`
+export const NavBarProductSideBarContainer = styled.div<{ isDisplay: boolean, isMobile: boolean, isPc: boolean }>`
   display: flex;
   flex-direction: column;
   background-color: ${Styles.Colours.PALETTE.DANITO._white};
@@ -232,7 +232,7 @@ export const NavBarProductSideBarContainer = styled.div<{ isDisplay: boolean }>`
   width: 0;
   transition: 0.5s;
   opacity: 0;
-  max-width: 320px;
+  //max-width: 350px;
 
   @media ${devices.xs} {
     top: 0;
@@ -260,9 +260,15 @@ export const NavBarProductSideBarContainer = styled.div<{ isDisplay: boolean }>`
   }
 
   ${props => props.isDisplay && css`
-    width: 85%;
+    //width: 85%;
     opacity: 1;
     z-index: 10000;
+    ${props => props.isMobile && css`
+      width: 85%;
+    `}
+    ${props => props.isPc && css`
+      width: 300px;
+    `}
   `}
 `
 
